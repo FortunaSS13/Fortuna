@@ -9,6 +9,7 @@
 
 GLOBAL_LIST_EMPTY(auxtools_initialized)
 
+<<<<<<< HEAD
 /proc/AUXTOOLS_CHECK(LIB)
 	if (!GLOB.auxtools_initialized[LIB] && fexists(LIB))
 		var/result = call(LIB,"auxtools_init")()
@@ -21,3 +22,20 @@ GLOBAL_LIST_EMPTY(auxtools_initialized)
 	if (GLOB.auxtools_initialized[LIB] && fexists(LIB))\
 		call(LIB,"auxtools_shutdown")();\
 		GLOB.auxtools_initialized[LIB] = FALSE;\
+=======
+#define AUXTOOLS_CHECK(LIB)\
+	if (!GLOB.auxtools_initialized[LIB] && fexists(LIB)) {\
+		var/string = call(LIB,"auxtools_init")();\
+		if(findtext(string, "SUCCESS")) {\
+			GLOB.auxtools_initialized[LIB] = TRUE;\
+		} else {\
+			CRASH(string);\
+		}\
+	}\
+
+#define AUXTOOLS_SHUTDOWN(LIB)\
+	if (GLOB.auxtools_initialized[LIB] && fexists(LIB)){\
+		call(LIB,"auxtools_shutdown")();\
+		GLOB.auxtools_initialized[LIB] = FALSE;\
+	}\
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)

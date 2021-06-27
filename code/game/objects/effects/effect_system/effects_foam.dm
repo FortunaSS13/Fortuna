@@ -40,8 +40,8 @@
 	if(hotspot && istype(T) && T.air)
 		qdel(hotspot)
 		var/datum/gas_mixture/G = T.air
-		var/plas_amt = min(30,G.get_moles(/datum/gas/plasma))  //Absorb some plasma
-		G.adjust_moles(/datum/gas/plasma,-plas_amt)
+		var/plas_amt = min(30,G.get_moles(GAS_PLASMA))  //Absorb some plasma
+		G.adjust_moles(GAS_PLASMA,-plas_amt)
 		absorbed_plasma += plas_amt
 		if(G.return_temperature() > T20C)
 			G.set_temperature(max(G.return_temperature()/2,T20C))
@@ -319,7 +319,7 @@
 			for(var/obj/effect/hotspot/H in O)
 				qdel(H)
 			for(var/I in G.get_gases())
-				if(I == /datum/gas/oxygen || I == /datum/gas/nitrogen)
+				if(I == GAS_O2 || I == GAS_N2)
 					continue
 				G.set_moles(I, 0)
 			O.air_update_turf()
@@ -338,6 +338,12 @@
 		return TRUE
 	. = ..()
 
+<<<<<<< HEAD
+=======
+/obj/structure/foamedmetal/resin/BlockThermalConductivity()
+	return TRUE
+
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 #undef ALUMINUM_FOAM
 #undef IRON_FOAM
 #undef RESIN_FOAM
