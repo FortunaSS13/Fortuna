@@ -98,11 +98,6 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"dC" = (
-/obj/item/grenade/frag,
-/obj/machinery/smartfridge/bottlerack/lootshelf,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "dE" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_8"
@@ -247,10 +242,7 @@
 /area/f13/tunnel)
 "gT" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf,
-/obj/item/flamethrower,
-/obj/item/weldingtool,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/lighter/greyscale,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "hr" = (
@@ -395,8 +387,8 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/bunker)
 "kN" = (
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/glass/bottle/flu_virion,
+/obj/machinery/smartfridge/bottlerack/lootshelf,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "kT" = (
@@ -422,7 +414,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "lp" = (
-/obj/machinery/computer/pandemic,
+/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "lq" = (
@@ -485,7 +477,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "mV" = (
-/obj/item/twohanded/fireaxe,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "nl" = (
@@ -742,7 +734,6 @@
 "vC" = (
 /obj/machinery/camera,
 /obj/machinery/smartfridge/bottlerack/lootshelf,
-/obj/item/grenade/frag,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
@@ -919,6 +910,7 @@
 	pixel_x = 9;
 	pixel_y = 14
 	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "Ad" = (
@@ -980,9 +972,6 @@
 /area/f13/bunker)
 "BQ" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf,
-/obj/item/flamethrower,
-/obj/item/tank/internals/plasma/full,
-/obj/item/lighter/greyscale,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "BV" = (
@@ -1203,7 +1192,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "Ir" = (
-/obj/structure/nest/radroach,
+/obj/item/grenade/frag,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
 "Iu" = (
@@ -1234,7 +1223,8 @@
 /area/f13/bunker)
 "IF" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "IH" = (
@@ -1394,6 +1384,8 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/grass,
 /area/f13/bunker)
 "Nb" = (
@@ -2309,7 +2301,7 @@ YT
 YT
 WC
 Xm
-kN
+tn
 Ye
 wf
 Xm
@@ -2371,7 +2363,7 @@ YT
 YT
 WC
 Xm
-lp
+Ye
 Ye
 cv
 Xm
@@ -2495,7 +2487,7 @@ WC
 WC
 WC
 Xm
-IF
+kN
 Ye
 Rx
 Xm
@@ -3463,7 +3455,7 @@ VM
 Ye
 Ye
 Ye
-dC
+BQ
 Xm
 WC
 WC
@@ -3587,7 +3579,7 @@ Xm
 Xm
 Ye
 Ye
-Ye
+lp
 Xm
 Kc
 xs
@@ -3653,7 +3645,7 @@ Ye
 Xm
 Kc
 fb
-xs
+Ir
 Kc
 Kc
 WC
@@ -3709,7 +3701,7 @@ Ye
 Ye
 Xm
 Xm
-IF
+BQ
 LR
 Ye
 Xm
@@ -3963,7 +3955,7 @@ Xm
 Xm
 If
 iR
-Ir
+xs
 Kc
 Kc
 Kc
@@ -4024,7 +4016,7 @@ Xm
 Xm
 Xm
 bM
-xs
+Ir
 Kc
 Kc
 Kc
@@ -5188,7 +5180,7 @@ aa
 Vt
 BQ
 ME
-KV
+cL
 KV
 CQ
 fx

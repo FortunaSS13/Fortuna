@@ -218,11 +218,11 @@
 	},
 /area/f13/bunker)
 "hd" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
+	icon_state = "plating"
 	},
 /area/f13/bunker)
 "ho" = (
@@ -255,6 +255,7 @@
 	amount = 5
 	},
 /mob/living/simple_animal/hostile/supermutant,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plating,
 /area/f13/bunker)
 "jQ" = (
@@ -1116,8 +1117,8 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
-/obj/effect/spawner/lootdrop/f13/armor/tier5,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -1516,6 +1517,9 @@
 "WC" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -2145,7 +2149,7 @@ fG
 XM
 XM
 xG
-hd
+Ed
 Eb
 Qe
 Eb
@@ -3301,7 +3305,7 @@ Rl
 Rl
 Rl
 Rl
-Xc
+hd
 xG
 gA
 eN

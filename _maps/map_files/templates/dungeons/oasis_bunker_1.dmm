@@ -86,7 +86,7 @@
 "da" = (
 /obj/structure/spider/stickyweb,
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "dl" = (
@@ -121,6 +121,12 @@
 "dI" = (
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
+	},
+/area/f13/bunker)
+"dM" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
 	},
 /area/f13/bunker)
 "dV" = (
@@ -341,6 +347,7 @@
 	},
 /area/f13/bunker)
 "jC" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "jI" = (
@@ -604,6 +611,11 @@
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
+/area/f13/bunker)
+"sO" = (
+/obj/machinery/light/small,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "th" = (
 /obj/machinery/iv_drip,
@@ -1128,7 +1140,7 @@
 "LH" = (
 /obj/effect/decal/waste,
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "LJ" = (
@@ -1415,7 +1427,8 @@
 	dir = 1
 	},
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "Td" = (
@@ -1917,7 +1930,7 @@ Ct
 NJ
 oE
 Mh
-UW
+sO
 pf
 pf
 pf
@@ -2041,8 +2054,8 @@ YO
 NJ
 WF
 kh
-jC
 NJ
+jC
 UW
 pf
 pf
@@ -2085,7 +2098,7 @@ NJ
 oP
 NJ
 NJ
-ou
+dM
 pW
 Kz
 Kz

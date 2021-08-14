@@ -320,7 +320,7 @@
 "fD" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "fG" = (
@@ -477,6 +477,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/head/radiation,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "iS" = (
@@ -492,7 +493,7 @@
 /obj/structure/table,
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/armor/tier5,
+/obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "jd" = (
@@ -527,6 +528,7 @@
 "jq" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/bomb_suit/security,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "jB" = (
@@ -638,7 +640,6 @@
 "me" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/item/stack/medical/suture,
 /obj/item/stack/medical/mesh,
@@ -772,7 +773,7 @@
 "on" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier10,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -1287,7 +1288,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier9,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
 "yA" = (
@@ -1367,16 +1368,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/radiation)
-"Ah" = (
-/obj/item/paper/crumpled/awaymissions/moonoutpost19/hastey_note{
-	desc = "hugclaw is kill";
-	name = "Hastily Written, Ominous Note"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
-/area/f13/bunker)
 "Ai" = (
 /obj/structure/wreck/trash/three_barrels,
 /obj/effect/decal/cleanable/dirt,
@@ -2122,7 +2113,7 @@
 "NF" = (
 /obj/item/clothing/under/rank/medical/doctor,
 /obj/item/clothing/under/rank/medical/doctor/skirt,
-/obj/effect/spawner/lootdrop/healing_kits,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -2329,7 +2320,7 @@
 /area/f13/bunker)
 "Ro" = (
 /obj/structure/closet/crate/secure/weapon,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -2644,7 +2635,7 @@
 /area/f13/radiation)
 "Vy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier8,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/floor/engine,
 /area/f13/radiation)
 "VA" = (
@@ -4374,7 +4365,7 @@ Wy
 BD
 oo
 Xu
-Ah
+SD
 rW
 Zs
 Zs

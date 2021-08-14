@@ -1403,10 +1403,6 @@
 /obj/structure/weightlifter,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"aFG" = (
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/building)
 "aFK" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
@@ -1836,11 +1832,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "aPN" = (
-/obj/structure/fireplace{
-	dir = 8
+/obj/structure/barricade/tentclothcorner{
+	dir = 1
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "aPQ" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/mountain,
@@ -3663,12 +3659,11 @@
 	},
 /area/f13/wasteland)
 "bFA" = (
-/obj/structure/bed/mattress{
-	icon_state = "mattress3"
+/obj/structure/barricade/tentclothedge{
+	dir = 8
 	},
-/obj/item/soap/homemade,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "bFJ" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
@@ -9151,13 +9146,8 @@
 	},
 /area/f13/city)
 "enn" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/fluff/paper/stack,
-/obj/machinery/light/small{
-	dir = 8;
-	light_color = "#d8b1b1"
-	},
-/turf/open/floor/plasteel/elevatorshaft,
+/obj/structure/barricade/tentclothedge,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "ent" = (
 /obj/effect/decal/cleanable/dirt{
@@ -17523,10 +17513,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hYl" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/light/fo13colored/Pink,
-/obj/item/coin/twoheaded,
-/turf/open/floor/plasteel/elevatorshaft,
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "hYu" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -21446,11 +21437,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
 "jIf" = (
-/mob/living/simple_animal/hostile/ghoul{
-	name = "Jim"
+/obj/item/storage/trash_stack{
+	icon_state = "trash_3"
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "jIn" = (
 /turf/open/floor/carpet/red,
 /area/f13/legion)
@@ -24364,15 +24355,8 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/bar)
 "kZV" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/fluff/broken_flooring,
-/obj/structure/ladder/unbreakable{
-	desc = "A sturdy ladder that leads down deep into the earth... don't fall.";
-	height = 2;
-	id = "digsite";
-	name = "ladder to the depths"
-	},
-/turf/open/floor/plasteel/elevatorshaft,
+/obj/structure/barricade/tentclothcorner,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "lae" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -27069,11 +27053,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "mrQ" = (
-/obj/item/clothing/head/cone,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
+/obj/structure/nest/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "mrY" = (
@@ -27883,9 +27867,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/legion)
 "mOx" = (
-/obj/item/stack/f13Cash/aureus,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/bed/mattress{
+	icon_state = "mattress6"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "mOD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
@@ -28349,12 +28335,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "mZK" = (
-/obj/structure/bed/mattress{
-	icon_state = "mattress3"
-	},
-/obj/item/stack/f13Cash/aureus,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "mZX" = (
 /obj/structure/toilet{
 	dir = 1
@@ -35211,7 +35194,7 @@
 "qly" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -39292,6 +39275,7 @@
 /obj/structure/rack,
 /obj/item/clothing/under/rank/curator/treasure_hunter,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -41404,11 +41388,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"tea" = (
-/obj/structure/barricade/wooden/strong,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building)
 "tec" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -41532,12 +41511,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
-"tin" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "tis" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -45725,12 +45698,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"uVW" = (
-/obj/structure/bed/mattress{
-	icon_state = "mattress3"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "uVX" = (
 /obj/item/bedsheet/brown,
 /obj/effect/landmark/start/f13/recleg,
@@ -49346,6 +49313,7 @@
 	pixel_y = 12
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/head/cone,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "wGc" = (
@@ -50485,10 +50453,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
-"xcp" = (
-/obj/structure/nest/ghoul,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xcq" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -51473,13 +51437,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
-"xxl" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/structure/flora/rock/pile/largejungle,
-/turf/open/indestructible/ground/outside/water,
-/area/f13/caves)
 "xxv" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/desert{
@@ -85389,14 +85346,14 @@ fyf
 fyf
 fyf
 fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-tBN
+qOV
+cWG
+cWG
+cWG
+cWG
+cWG
+cWG
+daU
 mvv
 mvv
 mvv
@@ -85647,14 +85604,14 @@ sGp
 sGp
 sGp
 sGp
-sGp
-sGp
-sGp
-sGp
-sGp
-sGp
-sGp
-sGp
+mvv
+mvv
+aPN
+bFA
+bFA
+bFA
+hGf
+mvv
 jPh
 mvv
 aBH
@@ -85904,14 +85861,14 @@ iBK
 iaX
 grk
 gts
-gts
-sGp
-tOL
-tOL
-tOL
-tOL
+mvv
+mvv
+uVG
+hYl
+cbr
+mZK
 enn
-sGp
+mvv
 mvv
 aBH
 hCg
@@ -86163,12 +86120,12 @@ ybq
 gts
 gts
 sGp
-tOL
-tOL
-tOL
-tOL
-hYl
-sGp
+uVG
+jIf
+hRN
+cbr
+iGZ
+mvv
 mvv
 bpD
 fyf
@@ -86420,12 +86377,12 @@ pvC
 vMR
 qMp
 sGp
-tOL
-tOL
-tOL
-tOL
-aFG
-sGp
+uVG
+mOx
+cbr
+kzN
+enn
+mvv
 mvv
 bpD
 fyf
@@ -86677,12 +86634,12 @@ iZK
 cYK
 ttP
 sGp
-aFG
-aFG
-aFG
-aFG
+deJ
+ruw
+ruw
+ruw
 kZV
-sGp
+mvv
 aBH
 jGe
 fyf
@@ -86934,7 +86891,7 @@ hfl
 vMR
 lax
 sGp
-tea
+sGp
 sGp
 sGp
 sGp
@@ -101319,9 +101276,9 @@ gcK
 gcK
 gcK
 gcK
-ggK
 gcK
-ktB
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -101576,10 +101533,10 @@ gcK
 ktB
 gcK
 gcK
-mZK
-ggK
-tvL
-ktB
+gcK
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -101832,11 +101789,11 @@ gcK
 gcK
 ktB
 gcK
-ggK
-ggK
-ggK
-tvL
-wOS
+gcK
+ktB
+ktB
+gcK
+gcK
 ktB
 gcK
 gcK
@@ -102089,11 +102046,11 @@ gcK
 gcK
 ktB
 gcK
-ggK
-xcp
-ggK
-tvL
-wOS
+gcK
+gcK
+gcK
+gcK
+gcK
 gcK
 ktB
 gcK
@@ -102346,11 +102303,11 @@ gcK
 gcK
 ktB
 gcK
-uVW
-ggK
-ggK
-xxl
-wOS
+gcK
+gcK
+gcK
+ktB
+gcK
 gcK
 gcK
 ktB
@@ -102604,11 +102561,11 @@ gcK
 gcK
 gcK
 gcK
-ggK
-gCL
-tvL
-wOS
 gcK
+gcK
+ktB
+gcK
+ktB
 gcK
 gcK
 gcK
@@ -102861,9 +102818,9 @@ ktB
 ktB
 ktB
 gcK
-ktB
-vwL
-wOS
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -113670,9 +113627,9 @@ gcK
 gcK
 gcK
 gcK
-ggK
-tin
-ggK
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -113927,9 +113884,9 @@ gcK
 gcK
 gcK
 gcK
-ggK
-jIf
-bFA
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -114184,9 +114141,9 @@ gcK
 gcK
 gcK
 gcK
-ggK
-aPN
-mOx
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -114442,7 +114399,7 @@ gcK
 gcK
 gcK
 gcK
-ktB
+gcK
 gcK
 gcK
 gcK
