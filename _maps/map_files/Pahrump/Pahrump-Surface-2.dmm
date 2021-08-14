@@ -1456,7 +1456,7 @@
 /area/f13/building)
 "aHo" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "aHs" = (
@@ -1794,7 +1794,7 @@
 /area/f13/building)
 "aOE" = (
 /obj/structure/displaycase,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/item/clothing/head/soft/baseball,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -3681,7 +3681,7 @@
 "bFV" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -12388,9 +12388,8 @@
 /area/f13/bar)
 "fIT" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fJc" = (
@@ -12633,8 +12632,7 @@
 /area/f13/building)
 "fPv" = (
 /obj/structure/closet/crate,
-/obj/item/reagent_containers/pill/patch/turbo,
-/obj/item/reagent_containers/pill/patch/turbo,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fPL" = (
@@ -12675,7 +12673,7 @@
 /obj/structure/table/wood/poker{
 	name = "felt table"
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "fQA" = (
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -14918,9 +14916,12 @@
 	},
 /area/f13/building)
 "gPq" = (
-/obj/structure/closet/cabinet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/turf/open/floor/f13/wood,
+/obj/structure/displaycase,
+/obj/item/clothing/head/redcoat,
+/obj/item/clothing/under/suit_jacket/female,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
 /area/f13/building)
 "gPy" = (
 /obj/item/bedsheet,
@@ -18602,12 +18603,10 @@
 	},
 /area/f13/building)
 "izr" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/city)
+/obj/structure/fence,
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "izB" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/glass/mortar{
@@ -19971,7 +19970,7 @@
 "jaU" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/lights/bulbs,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jaV" = (
@@ -20085,7 +20084,7 @@
 "jco" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "jcp" = (
@@ -20556,7 +20555,7 @@
 /obj/item/clothing/glasses/sunglasses/big,
 /obj/item/clothing/under/f13/gentlesuit,
 /obj/item/clothing/shoes/f13/fancy,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "jmr" = (
@@ -21871,7 +21870,7 @@
 /area/f13/ncr)
 "jRy" = (
 /obj/structure/table/wood/poker,
-/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "jRB" = (
@@ -22301,7 +22300,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "kai" = (
@@ -23698,7 +23697,6 @@
 	},
 /area/f13/bunker)
 "kJn" = (
-/obj/effect/landmark/start/f13/preacher,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -27921,7 +27919,7 @@
 "mPk" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
 "mPl" = (
@@ -30401,8 +30399,12 @@
 	},
 /area/f13/wasteland)
 "ock" = (
-/obj/item/reagent_containers/food/snacks/f13/mre,
-/turf/closed/wall/f13/store,
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/building)
 "ocw" = (
 /obj/structure/chair/right,
@@ -35026,7 +35028,7 @@
 /area/f13/building)
 "qhm" = (
 /obj/structure/chair/stool/retro,
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "qhs" = (
 /mob/living/simple_animal/hostile/handy,
@@ -36745,9 +36747,10 @@
 /area/f13/building)
 "qTe" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spider/stickyweb,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -39991,7 +39994,7 @@
 /area/f13/legion)
 "swD" = (
 /obj/structure/chair/bench,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "swE" = (
@@ -40042,6 +40045,10 @@
 	dir = 1
 	},
 /turf/open/floor/wood/f13/carpet,
+/area/f13/building)
+"sxW" = (
+/obj/effect/landmark/start/f13/preacher,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "syi" = (
 /obj/structure/grille,
@@ -41256,6 +41263,14 @@
 	icon_state = "greendirtyfull"
 	},
 /area/f13/followers)
+"taq" = (
+/obj/structure/fence{
+	dir = 8;
+	icon_state = "straight"
+	},
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "taF" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -45346,7 +45361,7 @@
 	name = "felt table"
 	},
 /obj/effect/holodeck_effect/cards,
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "uPH" = (
 /obj/structure/closet/crate,
@@ -48319,8 +48334,8 @@
 	},
 /area/f13/ncr)
 "wjI" = (
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
 /obj/structure/spider/stickyweb,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wjR" = (
@@ -60907,7 +60922,7 @@ pNZ
 pNZ
 dLO
 dCV
-rfP
+ock
 rXj
 tMX
 dCV
@@ -64506,7 +64521,7 @@ grv
 gIA
 mXA
 mXA
-izr
+lGV
 mXA
 mXA
 bAH
@@ -75553,7 +75568,7 @@ rpu
 rpu
 jhp
 uCO
-gPq
+ipD
 qfV
 gvW
 sYX
@@ -79173,8 +79188,8 @@ mvv
 mvv
 mvv
 bpD
-pPg
-fyf
+taq
+tFR
 fyf
 gcK
 gcK
@@ -79675,7 +79690,7 @@ rXv
 mvv
 qZD
 bpD
-lPT
+uqa
 uqa
 uqa
 uqa
@@ -80458,7 +80473,7 @@ mfD
 mfD
 mfD
 hCg
-pPg
+taq
 tBN
 bpD
 kdJ
@@ -80715,7 +80730,7 @@ uqa
 lRW
 uqa
 lRW
-uqa
+gCh
 nlO
 hCg
 kdJ
@@ -81729,7 +81744,7 @@ fyf
 fyf
 uqa
 gKP
-rpu
+sxW
 rpu
 sDp
 hAk
@@ -82493,12 +82508,12 @@ vZr
 fRk
 ewO
 fyf
+tFR
+tFR
 fyf
 fyf
 fyf
-fyf
-fyf
-uqa
+gCh
 uqa
 uqa
 lRW
@@ -82754,8 +82769,8 @@ fyf
 fyf
 fyf
 fyf
-fyf
-fyf
+tFR
+tFR
 fyf
 fyf
 fyf
@@ -83265,7 +83280,7 @@ sBH
 sYX
 fyf
 fyf
-fyf
+tFR
 fyf
 fyf
 sqA
@@ -83520,16 +83535,16 @@ sYX
 ewO
 sYX
 sYX
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+uxC
+izr
+izr
+uxC
+uxC
+uxC
+uxC
+uxC
+izr
+izr
 uqa
 ext
 dbW
@@ -103821,7 +103836,7 @@ gts
 kxY
 vYv
 vYv
-ock
+gts
 uwQ
 vYv
 hJQ
@@ -104076,7 +104091,7 @@ cpK
 cpK
 gts
 xff
-fUb
+olP
 mFe
 gts
 oGB
@@ -109050,7 +109065,7 @@ sYV
 aOE
 sYV
 sYV
-aOE
+gPq
 sYV
 sYV
 aSL
@@ -115794,7 +115809,7 @@ fyf
 fyf
 fyf
 fyf
-giZ
+gts
 cuv
 gts
 kuX
@@ -116308,16 +116323,16 @@ gcK
 gcK
 gcK
 gcK
-giZ
+gts
 aug
 sYV
-dbO
+rpu
 aMT
 dJQ
 unG
 qhm
 rpu
-giZ
+gts
 gcK
 gcK
 fyf
@@ -116565,7 +116580,7 @@ gcK
 gcK
 gcK
 gcK
-giZ
+gts
 byT
 rpu
 sKH
@@ -116574,7 +116589,7 @@ fQz
 uPB
 vEw
 rpu
-giZ
+gts
 gcK
 gcK
 gcK
@@ -116822,7 +116837,7 @@ gcK
 gcK
 gcK
 gcK
-giZ
+gts
 rpu
 rpu
 rpu
@@ -117079,7 +117094,7 @@ gcK
 gcK
 gcK
 gcK
-gcK
+gts
 krb
 rpu
 pNw
@@ -117336,7 +117351,7 @@ gbL
 gbL
 gbL
 gbL
-gbL
+gts
 boD
 jaU
 bNt
@@ -117345,7 +117360,7 @@ mjJ
 ndy
 hqr
 rpu
-gcK
+gts
 gbL
 gbL
 gcK
@@ -117602,7 +117617,7 @@ kYH
 rpu
 vXh
 boD
-gcK
+gts
 gbL
 gbL
 gbL
@@ -117850,7 +117865,7 @@ gbL
 gbL
 gbL
 gcK
-giZ
+gts
 rpu
 rpu
 juD
@@ -118108,14 +118123,14 @@ gcK
 gcK
 gcK
 gts
-gcK
-gts
-gcK
-trF
 gts
 gts
 gts
-trF
+gts
+gts
+gts
+gts
+gts
 gts
 gcK
 gcK
