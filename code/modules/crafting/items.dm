@@ -1232,14 +1232,6 @@
 		return
 	if(prob(20))
 		to_chat(user,"You manage to restore the Power Armor!")
-		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/raiderpa))
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
-			qdel(A)
-			return
-		if(istype(A,/obj/item/clothing/suit/armor/f13/power_armor/hotrod))
-			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
-			qdel(A)
-			return
 		if(istype(A, /obj/item/clothing/suit/armor/f13/power_armor/t45b))
 			new /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored(user.loc)
 			qdel(A)

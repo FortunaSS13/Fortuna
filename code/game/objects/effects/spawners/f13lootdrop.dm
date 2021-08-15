@@ -374,8 +374,6 @@
 				/obj/effect/spawner/bundle/f13/armor/riot,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark,
-				/obj/effect/spawner/bundle/f13/armor/raiderpa,
-				/obj/effect/spawner/bundle/f13/armor/hotrodpa
 				)
 
 /obj/effect/spawner/bundle/f13/armor/t45b
@@ -405,21 +403,6 @@
 				/obj/item/clothing/suit/armor/f13/combat/mk2/dark,
 				/obj/item/clothing/head/helmet/f13/combat/mk2/dark
 				)
-
-/obj/effect/spawner/bundle/f13/armor/raiderpa
-	name = "raider power armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/raiderpa,
-				/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
-				)
-
-/obj/effect/spawner/bundle/f13/armor/hotrodpa
-	name = "hotrod power armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/hotrod,
-				/obj/item/clothing/head/helmet/f13/power_armor/hotrod
-				)
-
 
 /obj/effect/spawner/lootdrop/f13/armor/tier5 //TIER 5 ARMOR
 	name = "tier 5 armor"

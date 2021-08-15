@@ -359,8 +359,8 @@
 	item_state = "t45bpowerarmor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 1.40
-	armor_block_chance = 25
+	slowdown = 1
+	armor_block_chance = 40
 	powered = FALSE
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 
@@ -381,33 +381,9 @@
 	item_state = "ncrpowerarmor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 0.4
+	slowdown = 1
 	armor_block_chance = 40
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
-
-/obj/item/clothing/suit/armor/f13/power_armor/raiderpa
-	powered = FALSE
-	name = "raider T-45b power armor"
-	desc = "(VIII) It's a set of T-45b power armor with some of its plating heavily reconditioned. This set has seen better days, metal scrap has been spot welded to the chassis "
-	icon_state = "raiderpa"
-	item_state = "raiderpa"
-	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.4
-	requires_training = FALSE
-	armor_block_chance = 20
-	deflection_chance = 10 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
-
-/obj/item/clothing/suit/armor/f13/power_armor/hotrod
-	powered = FALSE
-	name = "hotrod T-45b power armor"
-	desc = "(VIII) It's a set of T-45b power armor with a with some of its plating removed. This set has exhaust pipes piped to the pauldrons, flames erupting from them."
-	icon_state = "t45hotrod"
-	item_state = "t45hotrod"
-	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.4
-	requires_training = FALSE
-	armor_block_chance = 20
-	deflection_chance = 10 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
 
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttec
 	name = "Vault-Tec power armour"
