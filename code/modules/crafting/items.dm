@@ -1000,3 +1000,4 @@
 	Loot = list(/obj/item/advanced_crafting_components/receiver,
 				/obj/item/advanced_crafting_components/assembly,
 				/obj/item/advanced_crafting_components/alloys)
+
