@@ -21,7 +21,6 @@
 					CAT_MISCWEP
 				),
 				CAT_CRAFTING = list(
-					CAT_SCAVENGING,
 					CAT_FORGING,
 					CAT_TOOL,
 					CAT_ROBOT,
