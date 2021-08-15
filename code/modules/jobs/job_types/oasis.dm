@@ -667,6 +667,8 @@ Mayor
 		/datum/outfit/loadout/properlady,
 		/datum/outfit/loadout/propergent,
 		/datum/outfit/loadout/hombre,
+		/datum/outfit/loadout/secretary,
+		/datum/outfit/loadout/singer,
 	)
 	access = list(ACCESS_BAR)
 	minimal_access = list(ACCESS_BAR)
