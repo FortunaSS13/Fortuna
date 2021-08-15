@@ -27125,7 +27125,6 @@
 	},
 /area/f13/bar)
 "mmT" = (
-/mob/living/simple_animal/hostile/handy/protectron,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -46513,9 +46512,10 @@
 	},
 /area/f13/caves)
 "vhC" = (
+/obj/structure/chair/bench,
 /mob/living/simple_animal/bot/cleanbot,
-/turf/open/floor/f13{
-	icon_state = "neutralfull2"
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
 	},
 /area/f13/village)
 "vhE" = (
@@ -91782,7 +91782,7 @@ vjj
 vjj
 cHk
 vjj
-vhC
+vjj
 vjj
 vjj
 vjj
@@ -94604,7 +94604,7 @@ erY
 gmX
 bdN
 pcG
-olD
+vhC
 pJd
 pJd
 bXw
