@@ -209,14 +209,9 @@
 /turf/closed/indestructible/f13/matrix,
 /area/f13/brotherhood/leisure)
 "aiQ" = (
-/obj/machinery/light/small{
-	dir = 1;
-	pixel_x = 16
-	},
-/turf/open/indestructible/ground/outside/water{
-	desc = "Deep, filtered pool water.";
-	name = "pool water"
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/dresser,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/brotherhood/leisure)
 "aiV" = (
 /obj/effect/decal/cleanable/dirt{
@@ -262,12 +257,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
-"ajU" = (
-/turf/open/indestructible/ground/outside/water{
-	desc = "Deep, filtered pool water.";
-	name = "pool water"
-	},
-/area/f13/brotherhood/leisure)
 "ajZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
@@ -459,13 +448,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/bunker)
-"aqD" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/outside/water{
-	desc = "Deep, filtered pool water.";
-	name = "pool water"
-	},
-/area/f13/brotherhood/leisure)
 "aqW" = (
 /obj/structure/barricade/bars{
 	max_integrity = 9999
@@ -1251,13 +1233,6 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
-"aQe" = (
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/brotherhood/leisure)
 "aQg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
@@ -6042,9 +6017,8 @@
 /area/f13/tunnel)
 "dKk" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/turf/closed/wall/r_wall,
 /area/f13/brotherhood/leisure)
 "dKn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -66338,14 +66312,14 @@ eLE
 (138,1,1) = {"
 eLE
 uoO
-xBs
-xBs
-xBs
-xBs
-xBs
-xBs
-xBs
-xBs
+uoO
+uoO
+uoO
+uoO
+uoO
+uoO
+uoO
+uoO
 uoO
 uoO
 uoO
@@ -66595,14 +66569,14 @@ eLE
 (139,1,1) = {"
 eLE
 uoO
+uoO
+uoO
+uoO
 xBs
-lpY
-lpY
-lpY
-lpY
-lpY
-lpY
-lpY
+xBs
+xBs
+xBs
+xBs
 xBs
 xBs
 xBs
@@ -66852,12 +66826,12 @@ eLE
 (140,1,1) = {"
 eLE
 uoO
+uoO
+uoO
+uoO
 xBs
-lpY
-aiQ
-ajU
-aQe
-dKn
+cIG
+cIG
 dKk
 lpY
 lpY
@@ -67110,11 +67084,11 @@ eLE
 eLE
 uoO
 xBs
-lpY
-ajU
-aqD
-aQe
-dKn
+xBs
+xBs
+xBs
+cIG
+aiQ
 dKo
 cEb
 daK
