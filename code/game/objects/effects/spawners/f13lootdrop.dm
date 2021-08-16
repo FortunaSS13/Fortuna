@@ -373,7 +373,7 @@
 				/obj/effect/spawner/bundle/f13/armor/t45b,
 				/obj/effect/spawner/bundle/f13/armor/riot,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
-				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark,
+				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
 				)
 
 /obj/effect/spawner/bundle/f13/armor/t45b
