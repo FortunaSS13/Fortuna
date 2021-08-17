@@ -219,7 +219,7 @@ Mayor
 	name = "Private Contractor"
 	uniform = /obj/item/clothing/under/f13/combat/militia
 	suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/helmet = 1
+	head = /obj/item/clothing/head/helmet
 	r_hand = /obj/item/gun/ballistic/automatic/marksman/policerifle
 	belt = /obj/item/melee/onehanded/knife/switchblade
 	shoes = /obj/item/clothing/shoes/jackboots
