@@ -7551,9 +7551,6 @@
 	icon_state = "greenrusty"
 	},
 /area/f13/den)
-"exl" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/reactor)
 "exn" = (
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris,
 /turf/closed/wall/r_wall/rust,
@@ -17894,9 +17891,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
-"lEl" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/rnd)
 "lEy" = (
 /obj/machinery/door/unpowered/wooddoor,
 /turf/open/floor/wood/f13/oak,
@@ -18158,9 +18152,6 @@
 	icon_state = "redmark"
 	},
 /area/f13/brotherhood/operations)
-"lOZ" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/caves)
 "lPf" = (
 /obj/structure/table/wood/settler,
 /obj/item/trash/plate,
@@ -19830,9 +19821,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/den)
-"nap" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/offices1st)
 "naB" = (
 /obj/structure/table{
 	layer = 2.9
@@ -21196,9 +21184,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/bunker)
-"nTE" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/mining)
 "nTN" = (
 /obj/structure/chair/comfy/shuttle{
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
@@ -25655,9 +25640,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/den)
-"qIB" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/medical)
 "qIH" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -31316,9 +31298,6 @@
 	icon_state = "bluerustyfull"
 	},
 /area/f13/bunker)
-"uUk" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/offices2nd)
 "uUB" = (
 /obj/structure/simple_door/glass,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -35400,9 +35379,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"yhT" = (
-/turf/closed/indestructible/opshuttle,
-/area/f13/brotherhood/leisure)
 "yia" = (
 /turf/open/floor/carpet,
 /area/f13/brotherhood/rnd)
@@ -88150,59 +88126,59 @@ eLE
 "}
 (206,1,1) = {"
 eLE
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-yhT
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
-nap
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+xNC
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
+nUF
 uoO
 uoO
 aoj
@@ -88407,7 +88383,7 @@ eLE
 "}
 (207,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -88459,7 +88435,7 @@ nUF
 nUF
 nUF
 nUF
-nap
+nUF
 uoO
 uoO
 aoj
@@ -88664,7 +88640,7 @@ eLE
 "}
 (208,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 bbw
 bwp
@@ -88716,7 +88692,7 @@ slg
 uqM
 rPl
 nUF
-nap
+nUF
 uoO
 uoO
 aoj
@@ -88921,7 +88897,7 @@ eLE
 "}
 (209,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -88973,7 +88949,7 @@ rLI
 uqO
 uBO
 nUF
-nap
+nUF
 uoO
 uoO
 uoO
@@ -89178,7 +89154,7 @@ eLE
 "}
 (210,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 vYw
 vMx
@@ -89230,7 +89206,7 @@ slg
 slg
 slg
 nUF
-nap
+nUF
 uoO
 uoO
 aoj
@@ -89435,7 +89411,7 @@ eLE
 "}
 (211,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 beQ
 xNC
@@ -89487,7 +89463,7 @@ nUF
 tYj
 nUF
 nUF
-nap
+nUF
 uoO
 uoO
 aoj
@@ -89692,7 +89668,7 @@ eLE
 "}
 (212,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 vYw
 bxU
@@ -89744,7 +89720,7 @@ nUF
 slg
 slg
 nUF
-nap
+nUF
 uoO
 uoO
 aoj
@@ -89764,20 +89740,6 @@ uoO
 uoO
 uoO
 uoO
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
-exl
 smy
 smy
 smy
@@ -89787,7 +89749,21 @@ smy
 smy
 smy
 smy
-exl
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
+smy
 lYE
 uoO
 uoO
@@ -89949,7 +89925,7 @@ eLE
 "}
 (213,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 vYw
 vMx
@@ -90001,7 +89977,7 @@ nUF
 slg
 uCa
 nUF
-nap
+nUF
 uoO
 uoO
 uoO
@@ -90021,7 +89997,6 @@ uoO
 uoO
 uoO
 uoO
-exl
 smy
 smy
 smy
@@ -90045,7 +90020,8 @@ smy
 smy
 smy
 smy
-exl
+smy
+smy
 uoO
 uoO
 aoj
@@ -90206,7 +90182,7 @@ eLE
 "}
 (214,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 beQ
 xNC
@@ -90258,7 +90234,7 @@ tYj
 slg
 uCh
 nUF
-nap
+nUF
 uoO
 uoO
 uoO
@@ -90278,7 +90254,7 @@ uoO
 uoO
 uoO
 uoO
-exl
+smy
 smy
 uNM
 uNM
@@ -90302,7 +90278,7 @@ vxN
 uNM
 oYQ
 smy
-exl
+smy
 uoO
 uoO
 aoj
@@ -90463,7 +90439,7 @@ eLE
 "}
 (215,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 vYw
 bVO
@@ -90515,27 +90491,27 @@ nUF
 slg
 slg
 nUF
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
 smy
 iPr
 xQY
@@ -90720,7 +90696,7 @@ eLE
 "}
 (216,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 bVO
 bVO
@@ -90772,7 +90748,7 @@ rFR
 slg
 uCh
 nUF
-uUk
+uWC
 uWC
 uWC
 uWC
@@ -90977,7 +90953,7 @@ eLE
 "}
 (217,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 vJC
 vJC
@@ -91029,7 +91005,7 @@ slg
 slg
 uCa
 nUF
-uUk
+uWC
 uWC
 vob
 won
@@ -91234,7 +91210,7 @@ eLE
 "}
 (218,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -91286,7 +91262,7 @@ slg
 slg
 slg
 nUF
-uUk
+uWC
 vfy
 voF
 voF
@@ -91491,7 +91467,7 @@ eLE
 "}
 (219,1,1) = {"
 eLE
-yhT
+xNC
 amC
 biy
 aQg
@@ -91543,7 +91519,7 @@ slg
 smf
 rLI
 nUF
-uUk
+uWC
 uWC
 vrD
 voF
@@ -91748,7 +91724,7 @@ eLE
 "}
 (220,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 bfh
 bzY
@@ -91800,7 +91776,7 @@ rFn
 snP
 rPl
 nUF
-uUk
+uWC
 uWC
 vuM
 wrn
@@ -92005,7 +91981,7 @@ eLE
 "}
 (221,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -92057,7 +92033,7 @@ nUF
 nUF
 uCi
 nUF
-uUk
+uWC
 uWC
 uWC
 wuc
@@ -92262,7 +92238,7 @@ eLE
 "}
 (222,1,1) = {"
 eLE
-yhT
+xNC
 anS
 biy
 aRj
@@ -92314,7 +92290,7 @@ tYS
 nUF
 uCk
 nUF
-uUk
+uWC
 uWC
 vuY
 wvy
@@ -92519,7 +92495,7 @@ eLE
 "}
 (223,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 bfh
 xrz
@@ -92571,7 +92547,7 @@ pis
 nUF
 uCk
 nUF
-uUk
+uWC
 uWC
 vws
 wvy
@@ -92776,7 +92752,7 @@ eLE
 "}
 (224,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -92828,7 +92804,7 @@ tZq
 nUF
 uCk
 nUF
-uUk
+uWC
 uWC
 vwJ
 wvy
@@ -93033,7 +93009,7 @@ eLE
 "}
 (225,1,1) = {"
 eLE
-yhT
+xNC
 apd
 biy
 bAw
@@ -93085,7 +93061,7 @@ nUF
 nUF
 uCk
 nUF
-uUk
+uWC
 uWC
 vzD
 wvy
@@ -93290,7 +93266,7 @@ eLE
 "}
 (226,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 bfh
 bAx
@@ -93342,7 +93318,7 @@ tYS
 nUF
 uCk
 uPX
-uUk
+uWC
 uWC
 vJQ
 wvI
@@ -93547,7 +93523,7 @@ eLE
 "}
 (227,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -93804,7 +93780,7 @@ eLE
 "}
 (228,1,1) = {"
 eLE
-yhT
+xNC
 atO
 biy
 aQg
@@ -94061,7 +94037,7 @@ eLE
 "}
 (229,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 bfh
 bBc
@@ -94318,7 +94294,7 @@ eLE
 "}
 (230,1,1) = {"
 eLE
-yhT
+xNC
 xNC
 xNC
 xNC
@@ -94414,7 +94390,7 @@ kCc
 kCc
 kCc
 vsI
-lEl
+vsI
 uoO
 uoO
 uoO
@@ -94575,7 +94551,7 @@ eLE
 "}
 (231,1,1) = {"
 eLE
-rHV
+wKL
 ayA
 aNX
 fQF
@@ -94671,7 +94647,7 @@ kCc
 kCc
 kCc
 vsI
-lEl
+vsI
 uoO
 uoO
 uoO
@@ -94832,7 +94808,7 @@ eLE
 "}
 (232,1,1) = {"
 eLE
-rHV
+wKL
 ayA
 aNX
 bEx
@@ -95089,7 +95065,7 @@ eLE
 "}
 (233,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 wKL
 wKL
@@ -95346,34 +95322,34 @@ eLE
 "}
 (234,1,1) = {"
 eLE
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
 wKL
 fSI
 utP
@@ -95603,7 +95579,7 @@ eLE
 "}
 (235,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 wKL
 wKL
@@ -95699,7 +95675,7 @@ vsI
 vsI
 vsI
 vsI
-lEl
+vsI
 uoO
 uoO
 uoO
@@ -95860,7 +95836,7 @@ eLE
 "}
 (236,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 wKL
 bFk
@@ -95956,7 +95932,7 @@ eJp
 mMS
 qNP
 qNP
-lOZ
+qla
 uoO
 uoO
 uoO
@@ -96117,7 +96093,7 @@ eLE
 "}
 (237,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 cHA
 bKP
@@ -96374,7 +96350,7 @@ eLE
 "}
 (238,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 aNY
 sCB
@@ -96426,7 +96402,7 @@ tNZ
 tNZ
 uIZ
 rEw
-uUk
+uWC
 uWC
 vcL
 wDB
@@ -96631,7 +96607,7 @@ eLE
 "}
 (239,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 aOD
 bKi
@@ -96683,7 +96659,7 @@ ugU
 pld
 pld
 pld
-uUk
+uWC
 uWC
 vdF
 uWC
@@ -96888,7 +96864,7 @@ eLE
 "}
 (240,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 wKL
 bLk
@@ -96940,7 +96916,7 @@ uhd
 pld
 pld
 pld
-uUk
+uWC
 uWC
 vVW
 qtL
@@ -97145,7 +97121,7 @@ eLE
 "}
 (241,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 wKL
 wKL
@@ -97197,7 +97173,7 @@ uju
 uqU
 uJH
 rEw
-uUk
+uWC
 uWC
 vWQ
 uWC
@@ -97402,7 +97378,7 @@ eLE
 "}
 (242,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 tSI
 tSI
@@ -97659,7 +97635,7 @@ eLE
 "}
 (243,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 tSI
 tSI
@@ -97916,7 +97892,7 @@ eLE
 "}
 (244,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 tSI
 bMA
@@ -98173,7 +98149,7 @@ eLE
 "}
 (245,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 bMA
 tSI
@@ -98430,7 +98406,7 @@ eLE
 "}
 (246,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 tSI
 tSI
@@ -98687,7 +98663,7 @@ eLE
 "}
 (247,1,1) = {"
 eLE
-rHV
+wKL
 wKL
 wKL
 wKL
@@ -98729,13 +98705,13 @@ rHV
 pld
 qUR
 pld
-qIB
-qIB
-qIB
-qIB
-qIB
-qIB
-qIB
+pld
+pld
+pld
+pld
+pld
+pld
+pld
 pld
 uMD
 uSQ
@@ -99253,7 +99229,7 @@ ukI
 uxH
 uMY
 pld
-uUk
+uWC
 uWC
 uWC
 uWC
@@ -99510,7 +99486,7 @@ pld
 pld
 pld
 pld
-uUk
+uWC
 uWC
 wiw
 wMY
@@ -99753,12 +99729,12 @@ pFV
 pkj
 pkj
 wKL
-rHV
-qIB
-qIB
-qIB
-qIB
-qIB
+wKL
+pld
+pld
+pld
+pld
+pld
 rZc
 sZY
 tAy
@@ -99766,8 +99742,8 @@ tTQ
 ulr
 uyl
 sZY
-qIB
-uUk
+pld
+uWC
 uWC
 wkH
 wMY
@@ -100010,7 +99986,7 @@ pGY
 pXp
 pkj
 wKL
-rHV
+wKL
 pld
 pld
 pld
@@ -100267,7 +100243,7 @@ wKL
 wKL
 wKL
 wKL
-rHV
+wKL
 uoO
 uoO
 uoO
@@ -100282,37 +100258,37 @@ sZY
 uPk
 pld
 uoO
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-uUk
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-lEl
-nTE
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+uWC
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+vsI
+qNP
 dYC
 iej
 iej
@@ -100324,7 +100300,7 @@ qNP
 qNP
 qNP
 qNP
-nTE
+qNP
 xVz
 eqT
 xVz
@@ -100516,15 +100492,15 @@ gMX
 gMX
 gMX
 gMX
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
-rHV
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
+wKL
 eLE
 eLE
 eLE
@@ -100569,19 +100545,19 @@ eLE
 eLE
 eLE
 eLE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
-nTE
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
+qNP
 eqT
 uoO
 fJy
