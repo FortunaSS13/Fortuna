@@ -219,13 +219,12 @@ Mayor
 	name = "Private Contractor"
 	uniform = /obj/item/clothing/under/f13/combat/militia
 	suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/soft/f13/utility/olive
-	r_hand = /obj/item/gun/ballistic/automatic/smg/smg10mm/worn
+	head = /obj/item/clothing/head/helmet = 1
+	r_hand = /obj/item/gun/ballistic/automatic/marksman/policerifle
 	belt = /obj/item/melee/onehanded/knife/switchblade
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(
-		/obj/item/clothing/head/helmet = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 1,
+		/obj/item/ammo_box/magazine/m556/rifle,
 		)
 	
 	
