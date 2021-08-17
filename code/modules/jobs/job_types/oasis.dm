@@ -73,7 +73,58 @@ Mayor
 		/obj/item/pen/fountain/captain = 1)
 
 /*--------------------------------------------------------------*/
+/
+/datum/job/oasis/f13secretary
+	title = "Secretary"
+	flag = F13SECRETARY
+	department_flag = DEP_OASIS
+	faction = "Town"
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "The Mayor"
+	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
+	selection_color = "#dcba97"
+	exp_requirements = 800
+	
+	outfit = /datum/outfit/job/den/f13secretary
+	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/oasis,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/oasis,
+			/datum/job/f13enforcer,
+		),
+	)
+	
+	/datum/outfit/job/oasis/f13secretary
+	name = "Secretary"
+	jobtype = /datum/job/oasis/f13secretary
 
+	id = id = /obj/item/card/id/silver
+	ears = /obj/item/radio/headset/headset_town
+	suit = uniform = /obj/item/clothing/under/suit/black
+	glasses = /obj/item/clothing/glasses/regular/hipster
+	gloves = /obj/item/clothing/gloves/color/white
+	backpack = /obj/item/storage/backpack/satchel/leather
+	satchel = /obj/item/storage/backpack/satchel/leather
+	l_pocket = /obj/item/storage/bag/money/small/settler
+	r_pocket = /obj/item/flashlight/flare
+	r_hand = /obj/item/storage/briefcase
+	l_hand = /obj/item/pen/fourcolor
+	shoes = /obj/item/clothing/shoes/f13/fancy
+	backpack_contents = list(
+		/obj/item/clipboard = 1,
+		/obj/item/paper_bin/bundlenatural = 1,
+		/obj/item/clothing/under/suit/black/skirt = 1,
+		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
+		/obj/item/suppressor = 1,
+		)
+/
+
+/*--------------------------------------------------------------*/
 /datum/job/oasis/f13sheriff
 	title = "Sheriff"
 	flag = F13SHERIFF
