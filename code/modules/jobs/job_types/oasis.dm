@@ -73,7 +73,7 @@ Mayor
 		/obj/item/pen/fountain/captain = 1)
 
 /*--------------------------------------------------------------*/
-/
+/*
 /datum/job/oasis/f13secretary
 	title = "Secretary"
 	flag = F13SECRETARY
@@ -122,7 +122,7 @@ Mayor
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
 		/obj/item/suppressor = 1,
 		)
-/
+*/
 
 /*--------------------------------------------------------------*/
 /datum/job/oasis/f13sheriff
