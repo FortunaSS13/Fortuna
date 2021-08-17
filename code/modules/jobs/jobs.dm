@@ -153,6 +153,7 @@ GLOBAL_LIST_INIT(oasis_positions, list(
 	"Mayor",
 	"Sheriff",
 	"Doctor",
+	"Secretary",
 	"Citizen",
 	"Deputy",
 	"Shopkeeper",
