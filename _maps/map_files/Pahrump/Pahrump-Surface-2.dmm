@@ -251,7 +251,11 @@
 "agf" = (
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "agr" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/road{
@@ -326,7 +330,10 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ahg" = (
 /obj/structure/simple_door/metal/fence{
 	dir = 8
@@ -340,7 +347,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ahs" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced,
@@ -1001,9 +1013,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/village)
 "aut" = (
+<<<<<<< HEAD
 /obj/structure/fans/tiny,
 /turf/closed/wall/r_wall/rust,
 /area/f13/wasteland)
+=======
+/obj/structure/tires/five,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "auw" = (
 /mob/living/simple_animal/hostile/poison/giant_spider/hunter,
 /turf/open/water,
@@ -1351,6 +1369,13 @@
 "aDk" = (
 /turf/open/floor/wood/f13/stage_tl,
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"aDn" = (
+/obj/structure/reagent_dispensers/barrel/three,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "aDq" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowbroken"
@@ -1883,6 +1908,19 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/ncr)
+<<<<<<< HEAD
+=======
+"aQe" = (
+/obj/structure/flora/grass/wasteland{
+	pixel_x = 9;
+	pixel_y = 14
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "aQw" = (
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker/waterbottle{
@@ -2230,7 +2268,7 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "aZz" = (
 /obj/structure/bed/mattress/pregame,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
@@ -2952,7 +2990,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "boa" = (
 /obj/structure/chair/comfy/brown,
 /turf/open/floor/f13/wood,
@@ -3153,13 +3191,16 @@
 /turf/closed/wall/f13/supermart,
 /area/f13/followers)
 "brw" = (
-/obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
+	dir = 10;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "brE" = (
 /obj/structure/filingcabinet,
 /obj/effect/turf_decal/stripes/white/box,
@@ -3301,7 +3342,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "bvd" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
@@ -3598,8 +3639,25 @@
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "bBJ" = (
+<<<<<<< HEAD
 /obj/machinery/grill,
 /turf/open/indestructible/ground/outside/desert,
+=======
+<<<<<<< HEAD
+/obj/structure/tires/five,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+=======
+/obj/machinery/grill,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+"bBK" = (
+/obj/structure/flora/tree/joshua,
+/turf/open/indestructible/ground/outside/desert,
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/wasteland)
 "bBX" = (
 /obj/item/instrument/guitar,
@@ -3901,6 +3959,13 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"bIp" = (
+/obj/structure/reagent_dispensers/barrel/two,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "bIv" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -4676,6 +4741,12 @@
 "cbr" = (
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"cbX" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ccz" = (
 /obj/structure/fence/corner,
 /obj/structure/fence{
@@ -5025,7 +5096,11 @@
 "ckZ" = (
 /obj/structure/closet/crate/wicker,
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "clL" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
@@ -5122,7 +5197,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "cnJ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -6015,7 +6090,11 @@
 	layer = 2.1
 	},
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "cKs" = (
 /obj/structure/closet/crate/bin,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
@@ -6080,7 +6159,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "cMx" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress6"
@@ -6153,7 +6232,10 @@
 	},
 /area/f13/ncr)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "cOE" = (
 /obj/structure/fence/corner{
 	dir = 5
@@ -6166,7 +6248,12 @@
 	icon_state = "floordirty"
 	},
 /area/f13/followers)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "cOU" = (
 /obj/machinery/chem_master/primitive,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6683,6 +6770,7 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 "daM" = (
 /obj/structure/simple_door/glass,
@@ -6691,6 +6779,16 @@
 =======
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood)
+=======
+/area/f13/brotherhood/surface)
+"daM" = (
+/obj/structure/simple_door/glass,
+/turf/open/floor/wood,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "daU" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 6;
@@ -7029,6 +7127,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"diK" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirtcorner"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "diU" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/grown/corn,
@@ -8038,7 +8145,11 @@
 "dER" = (
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "dEW" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
@@ -9014,7 +9125,11 @@
 /area/f13/wasteland)
 "edB" = (
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "edD" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating,
@@ -9169,7 +9284,11 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ehx" = (
 /obj/effect/spawner/lootdrop/trash,
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -9326,7 +9445,11 @@
 	dir = 4;
 	icon_state = "dirtcorner"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "els" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -9679,11 +9802,14 @@
 /area/f13/wasteland)
 "esD" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/machinery/light/small,
 /obj/structure/closet/crate/bin,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/brotherhood/surface)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /obj/structure/table/wood,
 /obj/item/clothing/head/hardhat,
 /obj/item/storage/bag/ore,
@@ -9699,7 +9825,16 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/followers)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+/obj/machinery/light/small,
+/obj/structure/closet/crate/bin,
+/turf/open/indestructible/ground/outside/wood,
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "esK" = (
 /obj/item/storage/trash_stack,
 /obj/effect/decal/cleanable/dirt,
@@ -9847,7 +9982,11 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ewI" = (
 /obj/structure/table,
 /obj/item/stack/packageWrap,
@@ -10207,7 +10346,11 @@
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/head/hardhat,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "eEI" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13{
@@ -10311,7 +10454,11 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "eHs" = (
 /obj/structure/wreck/trash/two_tire,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -10654,6 +10801,7 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "eNS" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/metal/fifty,
@@ -10662,6 +10810,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "eNT" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -10671,7 +10821,19 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"eNS" = (
+/obj/structure/rack,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/mineral/titanium/fifty,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "eNU" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -10996,7 +11158,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "eUI" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
@@ -11223,7 +11385,11 @@
 	pixel_y = 16
 	},
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "eZB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -11870,7 +12036,11 @@
 /obj/item/mining_scanner,
 /obj/item/mining_scanner,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "fmP" = (
 /obj/effect/decal/fakelattice{
 	pixel_x = -17
@@ -14701,11 +14871,14 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "gyN" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/rust,
 /area/f13/building)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "gyi" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed/old,
@@ -14713,7 +14886,16 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/brotherhood)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"gyN" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "gzc" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -14814,6 +14996,7 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 "gBh" = (
 /obj/effect/decal/cleanable/dirt{
@@ -14824,6 +15007,18 @@
 =======
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood)
+=======
+/area/f13/brotherhood/surface)
+"gBh" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "gBu" = (
 /obj/structure/tires/two,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -15925,12 +16120,15 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "hcN" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
 	pixel_y = 3;
 	termtag = "Security"
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hcL" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars,
@@ -15940,7 +16138,17 @@
 /obj/structure/sink{
 	dir = 8;
 	pixel_x = -11
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"hcN" = (
+/obj/structure/table/wood,
+/obj/machinery/computer/terminal{
+	pixel_y = 3;
+	termtag = "Security"
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -16831,7 +17039,7 @@
 	pixel_y = 13
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "hvu" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/cans,
 /turf/open/floor/f13,
@@ -17060,7 +17268,11 @@
 	pixel_x = -14
 	},
 /turf/open/indestructible/ground/outside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hBj" = (
 /obj/structure/table/wood,
 /obj/item/door_key{
@@ -17410,6 +17622,7 @@
 /area/f13/building)
 "hIW" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -17428,6 +17641,26 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/obj/machinery/light/small,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
+=======
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
+"hJb" = (
+/obj/item/radio/intercom{
+	frequency = 1891;
+	pixel_y = -33
+	},
+/turf/open/indestructible/ground/outside/wood,
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hJf" = (
 /obj/structure/bed/dogbed{
 	pixel_x = -1;
@@ -17447,7 +17680,11 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hJs" = (
 /obj/structure/barricade/wooden,
 /turf/closed/wall/rust,
@@ -17948,8 +18185,12 @@
 "hUN" = (
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood,
+<<<<<<< HEAD
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hUO" = (
 /obj/structure/weightlifter,
 /turf/open/indestructible/ground/outside/dirt,
@@ -18055,6 +18296,13 @@
 	icon_state = "housebase"
 	},
 /area/f13/building)
+"hXL" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_4";
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
 "hXM" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
@@ -18139,6 +18387,10 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hZm" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -18151,8 +18403,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
+<<<<<<< HEAD
 =======
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "hZw" = (
 /obj/structure/fence/corner/wooden{
 	dir = 4
@@ -18606,7 +18862,7 @@
 	pixel_y = -33
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "ijJ" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -18659,6 +18915,15 @@
 	dir = 8
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"ill" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ilt" = (
 /obj/structure/cargocrate,
 /obj/structure/cargocrate{
@@ -18914,6 +19179,13 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"irQ" = (
+/obj/structure/chair/bench,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "irW" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
@@ -18969,7 +19241,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "itn" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -19153,6 +19425,16 @@
 	},
 /turf/open/floor/f13,
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"ixI" = (
+/obj/structure/simple_door/metal/fence{
+	door_type = "fence_wood";
+	icon_state = "fence_wood"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "iyd" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -19831,7 +20113,10 @@
 	},
 /area/f13/ncr)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "iNo" = (
 /obj/machinery/computer/operating,
 /obj/item/disk/surgery,
@@ -19848,7 +20133,12 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/brotherhood)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "iNx" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -21198,11 +21488,14 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "jmr" = (
 /mob/living/simple_animal/chicken,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "jmt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -21210,7 +21503,16 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/brotherhood)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"jmr" = (
+/mob/living/simple_animal/chicken,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "jmv" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
@@ -21382,6 +21684,10 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "jro" = (
 /obj/structure/fence/post{
 	desc = "A wooden post.";
@@ -21395,15 +21701,23 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "jrx" = (
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /turf/closed/wall/r_wall/rust,
 /area/f13/building)
+<<<<<<< HEAD
 =======
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "jry" = (
 /obj/structure/rack,
 /obj/item/clothing/under/f13/cowboyb,
@@ -21472,6 +21786,7 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building)
+<<<<<<< HEAD
 "jtd" = (
 /obj/structure/fence/corner{
 	dir = 4;
@@ -21481,6 +21796,13 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
+=======
+<<<<<<< HEAD
+"jtc" = (
+/obj/structure/flora/rock/pile/largejungle,
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/outside/desert,
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/wasteland)
 "jth" = (
 /obj/machinery/door/airlock/grunge{
@@ -21490,6 +21812,18 @@
 	name = "metal plating"
 	},
 /area/f13/building)
+=======
+"jtd" = (
+/obj/structure/fence/corner{
+	dir = 4;
+	icon_state = "end"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
 "jtj" = (
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
@@ -22092,6 +22426,14 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
+"jHv" = (
+/obj/structure/flora/rock/pile/largejungle,
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
 "jHF" = (
 /obj/structure/chair,
 /turf/open/floor/f13/wood{
@@ -22515,6 +22857,7 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 "jQL" = (
 /obj/structure/table/booth,
@@ -22531,6 +22874,24 @@
 =======
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood)
+=======
+/area/f13/brotherhood/surface)
+"jQL" = (
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = -5;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "jQS" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -23257,6 +23618,15 @@
 	icon_state = "outermaincornerinner"
 	},
 /area/f13/wasteland)
+<<<<<<< HEAD
+=======
+"kfU" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "kfY" = (
 /obj/machinery/door/airlock/grunge{
 	name = "store airlock";
@@ -23970,6 +24340,11 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
+"kyJ" = (
+/obj/structure/flora/rock/pile/largejungle,
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
 "kyT" = (
 /obj/structure/chair/sofa/corp/corner,
 /obj/effect/decal/cleanable/dirt,
@@ -24029,6 +24404,7 @@
 /obj/structure/lattice/catwalk,
 /turf/open/water,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 "kAu" = (
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -24052,6 +24428,31 @@
 =======
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood)
+=======
+/area/f13/brotherhood/surface)
+"kAu" = (
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 4;
+	pixel_x = 6
+	},
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/building)
+"kAA" = (
+/obj/structure/closet/crate/freezer/blood,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/followers)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "kAJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden,
@@ -24236,7 +24637,11 @@
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "kFn" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -24764,6 +25169,12 @@
 /obj/machinery/photocopier,
 /turf/open/floor/carpet/cyan,
 /area/f13/building)
+"kTq" = (
+/obj/structure/flora/tree/tall{
+	icon_state = "tree_2"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
 "kTu" = (
 /obj/machinery/grill,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -24913,6 +25324,7 @@
 	icon_state = "housewood2"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 "kVt" = (
 /obj/structure/fence/corner{
@@ -24921,12 +25333,26 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/brotherhood)
 "kVv" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/closed/wall/f13/supermart,
 /area/f13/followers)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+/area/f13/brotherhood/surface)
+"kVt" = (
+/obj/structure/fence/corner{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "kVJ" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -25165,8 +25591,11 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/brotherhood)
 "lcm" = (
 /obj/effect/turf_decal/stripes/line,
@@ -25174,7 +25603,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/followers)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "lcV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -25994,7 +26429,7 @@
 	req_access_txt = "120"
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "lyc" = (
 /obj/structure/bed,
 /turf/open/floor/carpet/red,
@@ -26190,7 +26625,7 @@
 	dir = 6;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "lDv" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
@@ -26200,7 +26635,7 @@
 	dir = 8;
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "lDx" = (
 /obj/structure/barricade/bars,
 /obj/structure/fence,
@@ -26318,18 +26753,31 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "lFJ" = (
 /obj/structure/table/wood/settler,
 /obj/item/kitchen/knife,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "lFD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /turf/open/floor/f13/wood,
 /area/f13/brotherhood)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"lFJ" = (
+/obj/structure/table/wood/settler,
+/obj/item/kitchen/knife,
+/turf/open/floor/f13/wood,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "lFM" = (
 /obj/structure/flora/grass/jungle,
 /mob/living/simple_animal/hostile/poison/giant_spider/nurse,
@@ -26873,7 +27321,11 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "lTW" = (
 /obj/machinery/light{
 	light_color = "#e8eaff"
@@ -27292,6 +27744,12 @@
 /obj/structure/spider/stickyweb,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+<<<<<<< HEAD
+=======
+"mcp" = (
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "mcD" = (
 /obj/structure/simple_door/house{
 	icon_state = "interior"
@@ -27909,7 +28367,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "mrQ" = (
 /obj/item/clothing/head/cone,
 /obj/effect/decal/cleanable/dirt,
@@ -28336,6 +28794,16 @@
 	icon_state = "dirt"
 	},
 /area/f13/legion)
+<<<<<<< HEAD
+=======
+"mDn" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_4";
+	layer = 5
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "mEh" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal,
@@ -28590,6 +29058,16 @@
 /turf/open/floor/wood/f13/old/ruinedstraightsouth,
 /area/f13/wasteland)
 "mKm" = (
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/meat/slab/gecko,
+/obj/item/reagent_containers/food/snacks/meat/slab/gecko,
+/obj/item/reagent_containers/food/snacks/meat/slab/gecko,
+/turf/open/indestructible/ground/outside/desert,
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -28597,6 +29075,14 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
+=======
+/area/f13/brotherhood/surface)
+"mKo" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/mountain,
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/wasteland)
 "mKp" = (
 /obj/structure/curtain{
@@ -28743,6 +29229,15 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"mNU" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "mOq" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -29867,7 +30362,11 @@
 	pixel_y = 18
 	},
 /turf/open/indestructible/ground/outside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "nqb" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/ruins{
@@ -30418,6 +30917,15 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"nDk" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirtcorner"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "nDx" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -30718,7 +31226,7 @@
 	pixel_x = -3
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "nLd" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -30759,7 +31267,7 @@
 "nMd" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "nMk" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/f13/wood,
@@ -31186,7 +31694,11 @@
 	dir = 10;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "nWl" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -32413,6 +32925,12 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"oBv" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
 "oBw" = (
 /obj/structure/table/wood,
 /obj/item/folder/blue{
@@ -33102,8 +33620,11 @@
 	icon_state = "neutralrustyfull"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/brotherhood)
 "oSY" = (
 /obj/machinery/shower{
@@ -33122,7 +33643,13 @@
 	name = "grimy tile"
 	},
 /area/f13/building)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "oTa" = (
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -33496,7 +34023,11 @@
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "pcj" = (
 /obj/machinery/camera/autoname{
 	dir = 1;
@@ -33814,7 +34345,11 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "pir" = (
 /obj/machinery/vending/boozeomat{
 	pixel_x = 32;
@@ -34223,7 +34758,11 @@
 	dir = 5;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "prP" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -35172,11 +35711,14 @@
 	},
 /area/f13/followers)
 "pLJ" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "pLK" = (
 /obj/structure/simple_door/interior,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -35300,7 +35842,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "pOL" = (
 /obj/structure/simple_door/metal/store,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -35383,6 +35925,15 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"pQX" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "pRd" = (
 /obj/structure/table/wood,
 /obj/item/storage/backpack{
@@ -35747,7 +36298,11 @@
 /obj/item/pickaxe,
 /obj/item/pickaxe,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "pYH" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -35891,6 +36446,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+<<<<<<< HEAD
+=======
+"qdm" = (
+/obj/structure/table/wood,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qds" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/outside/road{
@@ -35971,6 +36533,15 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"qfo" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 5;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qfp" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/road{
@@ -36011,6 +36582,17 @@
 	icon_state = "housewood2"
 	},
 /area/f13/village)
+<<<<<<< HEAD
+=======
+"qgO" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qgP" = (
 /obj/structure/closet,
 /obj/item/restraints/handcuffs,
@@ -36264,7 +36846,11 @@
 	dir = 9;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qmv" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt{
@@ -36511,7 +37097,11 @@
 	},
 /obj/machinery/plantgenes,
 /turf/closed/wall/f13/wood,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qsu" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -37409,7 +37999,11 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qOd" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13{
@@ -38008,6 +38602,7 @@
 /turf/open/water,
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "qYH" = (
 /obj/machinery/computer/operating,
 /obj/item/disk/surgery,
@@ -38019,6 +38614,8 @@
 	},
 /area/f13/followers)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qYt" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/f13{
@@ -38031,7 +38628,22 @@
 /obj/structure/simple_door/fakeglass,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/brotherhood)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"qYH" = (
+/obj/machinery/computer/operating,
+/obj/item/disk/surgery,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/followers)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "qYK" = (
 /obj/item/trash/f13/tin_large,
 /turf/open/floor/wood/cold,
@@ -38155,7 +38767,11 @@
 	dir = 4;
 	icon_state = "dirtcorner"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "rbr" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -38764,6 +39380,14 @@
 /obj/structure/lattice/catwalk,
 /turf/open/water,
 /area/f13/brotherhood/surface)
+<<<<<<< HEAD
+=======
+"rrC" = (
+/obj/structure/flora/rock/pile/largejungle,
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "rrE" = (
 /turf/closed/wall/f13/wood/interior,
 /area/f13/ncr)
@@ -39064,7 +39688,11 @@
 "rAp" = (
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "rAt" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertopright"
@@ -39603,6 +40231,10 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/building)
+"rPr" = (
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
 "rPI" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/glass/bottle/blackpowder,
@@ -39697,6 +40329,15 @@
 	icon_state = "wasteland33"
 	},
 /area/f13/wasteland)
+<<<<<<< HEAD
+=======
+"rRJ" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "rRP" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -40210,8 +40851,11 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/water,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /area/f13/brotherhood)
 "seF" = (
 /obj/structure/table/reinforced,
@@ -40220,7 +40864,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/followers)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "seG" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
@@ -40230,6 +40880,10 @@
 	icon_state = "redchess2"
 	},
 /area/f13/building)
+"seI" = (
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
 "seQ" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/spray/cleaner,
@@ -40252,6 +40906,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+<<<<<<< HEAD
+=======
+"sfc" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirtcorner"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "sfh" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
@@ -40326,7 +40989,11 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "sgs" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -40572,6 +41239,15 @@
 /obj/structure/wreck/trash/one_barrel,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+<<<<<<< HEAD
+=======
+"slG" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_3"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "slJ" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -40678,6 +41354,7 @@
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 "snY" = (
 /obj/structure/sink{
@@ -40689,6 +41366,19 @@
 =======
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood)
+=======
+/area/f13/brotherhood/surface)
+"snY" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -10
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "soh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -41138,6 +41828,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"swT" = (
+/obj/structure/simple_door/metal/fence,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "sxo" = (
 /obj/machinery/workbench,
 /obj/machinery/light{
@@ -41287,6 +41984,14 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland)
+<<<<<<< HEAD
+=======
+"sCj" = (
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "sCz" = (
 /obj/machinery/light{
 	dir = 4;
@@ -41795,7 +42500,11 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "sNC" = (
 /obj/structure/simple_door/interior,
 /turf/open/floor/f13{
@@ -41945,7 +42654,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "sQL" = (
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13/wood{
@@ -42506,6 +43215,13 @@
 /obj/structure/closet/crate/coffin,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+<<<<<<< HEAD
+=======
+"tcX" = (
+/obj/structure/weightlifter,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tdn" = (
 /obj/machinery/door/unpowered/wooddoor{
 	name = "Commanding Officer"
@@ -42848,6 +43564,18 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+<<<<<<< HEAD
+=======
+"tly" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tlD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
@@ -43738,6 +44466,15 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/surface)
+<<<<<<< HEAD
+=======
+"tGx" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 6;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tGH" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
@@ -43814,7 +44551,11 @@
 	name = "vines"
 	},
 /turf/closed/wall/f13/wood,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tJx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -44224,6 +44965,17 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/caves)
+<<<<<<< HEAD
+=======
+"tSA" = (
+/obj/structure/fence/corner{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtcorner"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tSI" = (
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/outside/dirt,
@@ -44278,7 +45030,11 @@
 	dir = 6;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tUj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -44308,6 +45064,7 @@
 /area/f13/building)
 "tUr" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -44325,11 +45082,34 @@
 	},
 /area/f13/followers)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/brotherhood)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/brotherhood/surface)
+"tUw" = (
+/obj/structure/decoration/clock{
+	pixel_y = 30
+	},
+/obj/structure/chair,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/followers)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tUM" = (
 /obj/structure/bed/roller,
 /turf/open/floor/f13{
@@ -44500,6 +45280,7 @@
 /area/f13/building)
 =======
 "tYV" = (
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair{
 	dir = 8
@@ -44507,6 +45288,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "tZs" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -44839,7 +45625,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "uhi" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/road{
@@ -45293,7 +46079,11 @@
 "urc" = (
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/desert,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "urg" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/road{
@@ -46027,6 +46817,7 @@
 	icon_state = "housewood2"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 "uFK" = (
 /obj/structure/rack,
@@ -46038,6 +46829,19 @@
 =======
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/area/f13/brotherhood)
+=======
+/area/f13/brotherhood/surface)
+"uFK" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/armor/random,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/building)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "uFT" = (
 /obj/item/stack/sheet/mineral/wood,
 /turf/open/floor/wood/f13/oak,
@@ -46199,6 +47003,15 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+<<<<<<< HEAD
+=======
+"uJr" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_3"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "uJB" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/f13/wood,
@@ -46869,7 +47682,7 @@
 	dir = 4;
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "uWX" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -47753,7 +48566,7 @@
 /obj/structure/decoration/vent/rusty,
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "vsm" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/fence/wooden{
@@ -48486,7 +49299,7 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "vIr" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
@@ -48810,6 +49623,16 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+<<<<<<< HEAD
+=======
+"vQS" = (
+/obj/structure/fence,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "vRb" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -49640,6 +50463,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
+"wnZ" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
 "wof" = (
 /obj/structure/chair/sofa/right,
 /obj/structure/curtain{
@@ -49725,7 +50554,11 @@
 "wpf" = (
 /obj/item/clothing/gloves/boxing,
 /turf/open/indestructible/ground/outside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "wph" = (
 /obj/structure/chair/booth{
 	dir = 4
@@ -49750,6 +50583,10 @@
 /obj/structure/simple_door/house,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"wpB" = (
+/obj/structure/wreck/trash/halftire,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
 "wpL" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
@@ -49815,6 +50652,10 @@
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
+"wrS" = (
+/obj/structure/wreck/trash/halftire,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/brotherhood/surface)
 "wrV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -50148,6 +50989,13 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/building)
+<<<<<<< HEAD
+=======
+"wzK" = (
+/obj/structure/fence,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "wzN" = (
 /obj/structure/chair/office/dark,
 /obj/effect/decal/cleanable/dirt,
@@ -50497,7 +51345,11 @@
 	dir = 10;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "wGq" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/condiment/ketchup,
@@ -50760,7 +51612,7 @@
 "wLO" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "wLR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -50826,6 +51678,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "wMD" = (
 /obj/structure/table,
 /obj/item/storage/box/drinkingglasses{
@@ -50839,6 +51692,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/surface)
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "wMR" = (
 /obj/structure/table,
 /obj/item/taperecorder,
@@ -50851,7 +51706,24 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"wMD" = (
+/obj/structure/table,
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = -10
+	},
+/obj/machinery/computer/security/bos{
+	circuit = /obj/item/circuitboard/computer/security;
+	dir = 1;
+	pixel_x = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/brotherhood/surface)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "wNn" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -51003,7 +51875,7 @@
 	dir = 10;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "wPG" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -51848,6 +52720,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "xfQ" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/coffee,
@@ -51857,6 +52730,8 @@
 /turf/open/floor/plasteel/chapel{
 	dir = 5
 =======
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "xgf" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -51867,7 +52742,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
+<<<<<<< HEAD
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+=======
+"xfQ" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/coffee,
+/turf/open/indestructible/ground/outside/wood,
+/area/f13/brotherhood/surface)
+"xgi" = (
+/turf/open/floor/plasteel/chapel{
+	dir = 5
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 	},
 /area/f13/building)
 "xgk" = (
@@ -51963,7 +52851,11 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "xhQ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -52872,7 +53764,7 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "xCI" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt,
@@ -53609,7 +54501,11 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "xTc" = (
 /obj/structure/table,
 /obj/item/kitchen/knife,
@@ -53654,7 +54550,11 @@
 "xTw" = (
 /mob/living/simple_animal/chicken,
 /turf/open/indestructible/ground/inside/dirt,
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "xTF" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt{
@@ -53884,6 +54784,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+<<<<<<< HEAD
+=======
+"xZK" = (
+/obj/structure/stacklifter,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "xZO" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -54025,7 +54932,7 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/brotherhood/surface)
 "yci" = (
 /obj/machinery/autolathe/constructionlathe,
 /obj/item/stack/sheet/metal/twenty,
@@ -54216,7 +55123,11 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "ygv" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
@@ -54344,6 +55255,7 @@
 	color = "000000"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "yiQ" = (
@@ -54358,6 +55270,22 @@
 /turf/open/floor/wood,
 /area/f13/building)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
+=======
+/turf/open/floor/wood,
+/area/f13/building)
+=======
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
+"yiQ" = (
+/obj/structure/flora/rock/pile/largejungle,
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
+>>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "yiU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_large,
@@ -54368,7 +55296,11 @@
 	dir = 5;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/wasteland)
+=======
+/area/f13/brotherhood/surface)
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 "yjn" = (
 /obj/effect/decal/marking,
 /turf/open/indestructible/ground/outside/road{
@@ -90764,8 +91696,8 @@ edB
 edB
 xTw
 prI
-iVE
-cWG
+aQe
+kfU
 uWT
 gcK
 gcK
@@ -91020,9 +91952,15 @@ tJv
 dER
 edB
 edB
+<<<<<<< HEAD
 nQP
 mvv
 mvv
+=======
+ixI
+xSC
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 cnD
 gcK
 gcK
@@ -91278,10 +92216,10 @@ ewd
 edB
 xTw
 gBd
-mvv
-mvv
-bpD
-thG
+xSC
+xSC
+ill
+mNU
 nMd
 gcK
 iFI
@@ -91289,8 +92227,8 @@ anP
 wmI
 iFI
 iFI
-mvv
-mvv
+xSC
+xSC
 uhh
 vYf
 iFI
@@ -91535,10 +92473,10 @@ cKg
 eZs
 cKg
 laZ
-mvv
-mvv
-bpD
-dRo
+xSC
+xSC
+ill
+pLJ
 vrG
 gcK
 iFI
@@ -91546,9 +92484,15 @@ wmI
 iFI
 iFI
 vYf
+<<<<<<< HEAD
 mvv
 mvv
 bpD
+=======
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 vYf
 iFI
 qaq
@@ -91792,10 +92736,10 @@ yga
 yga
 yga
 sNB
-xGH
-mvv
+brw
+xSC
 buW
-thG
+mNU
 nMd
 gcK
 iFI
@@ -91803,21 +92747,35 @@ iFI
 iFI
 vYf
 vYf
+<<<<<<< HEAD
 mvv
 mvv
 bpD
 sND
+=======
+xSC
+xSC
+ill
+kTq
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 iFI
 wpd
 wpd
 wpd
 iFI
-fFu
+aDn
 vYf
 bQI
 eZl
 hZm
 vYf
+<<<<<<< HEAD
+bQI
+eZl
+hZm
+vYf
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 gcK
 fyf
 fyf
@@ -92045,7 +93003,11 @@ ktB
 (147,1,1) = {"
 ktB
 gcK
+<<<<<<< HEAD
 fyf
+=======
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 fOf
 hbA
 fOf
@@ -92059,17 +93021,21 @@ fOf
 fOf
 fOf
 fOf
-tBN
-mvv
-mvv
+sCj
+xSC
+xSC
 itj
-fyf
+mcp
 iFI
 lxW
-mvv
-mvv
+xSC
+xSC
 iFI
+<<<<<<< HEAD
 fyf
+=======
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 pgE
 iKG
 iKG
@@ -92302,7 +93268,11 @@ ktB
 (148,1,1) = {"
 ktB
 gcK
+<<<<<<< HEAD
 fyf
+=======
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 fOf
 prR
 yeL
@@ -92317,6 +93287,7 @@ eWH
 xzd
 fOf
 xCo
+<<<<<<< HEAD
 mvv
 mvv
 bpD
@@ -92327,6 +93298,18 @@ tlj
 mvv
 eUz
 fyf
+=======
+xSC
+xSC
+ill
+mcp
+ehn
+xSC
+hXL
+xSC
+eUz
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 pgE
 iKG
 iKG
@@ -92559,7 +93542,7 @@ ktB
 (149,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fkP
 jbm
 tep
@@ -92573,6 +93556,7 @@ frK
 uKJ
 iyv
 opY
+<<<<<<< HEAD
 tBN
 mvv
 mvv
@@ -92584,6 +93568,19 @@ mvv
 mvv
 bpD
 fyf
+=======
+sCj
+xSC
+xSC
+ill
+mcp
+sCj
+xSC
+xSC
+xSC
+ill
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 vYf
 eJf
 khO
@@ -92816,7 +93813,7 @@ ktB
 (150,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fOf
 enL
 tep
@@ -92831,15 +93828,15 @@ mup
 paM
 fOf
 lCM
-mvv
-mvv
-doX
-cWG
-daU
-mvv
-mvv
-mvv
-doX
+xSC
+xSC
+qfo
+kfU
+tGx
+xSC
+xSC
+xSC
+qfo
 pOC
 vYf
 amd
@@ -93073,7 +94070,7 @@ ktB
 (151,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 gnU
 kGV
 tep
@@ -93087,17 +94084,17 @@ iyv
 iyv
 iyv
 hDf
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
 hvp
-mvv
-mvv
-mvv
-mvv
+xSC
+xSC
+xSC
+xSC
 vnR
 xSC
 nUl
@@ -93330,7 +94327,7 @@ ktB
 (152,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fOf
 lqU
 tep
@@ -93345,6 +94342,7 @@ thO
 bCG
 fOf
 wPE
+<<<<<<< HEAD
 mvv
 mvv
 oCW
@@ -93355,6 +94353,18 @@ mvv
 mvv
 mvv
 mvv
+=======
+xSC
+xSC
+wpB
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xSC
 xSC
 xSC
@@ -93587,7 +94597,7 @@ ktB
 (153,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fOf
 lzE
 tep
@@ -93601,17 +94611,17 @@ frK
 oRS
 iyv
 opY
-tBN
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
+sCj
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
 lZw
 xSC
 xSC
@@ -93844,7 +94854,7 @@ ktB
 (154,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fOf
 qQD
 tGg
@@ -93858,6 +94868,7 @@ mTm
 mup
 xzd
 fOf
+<<<<<<< HEAD
 tBN
 mvv
 mvv
@@ -93869,6 +94880,19 @@ mfD
 mfD
 mKm
 mfD
+=======
+sCj
+xSC
+xSC
+rRJ
+pQX
+mKm
+pQX
+pQX
+pQX
+mKm
+pQX
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 vYf
 vYf
 vYf
@@ -94101,7 +95125,7 @@ ktB
 (155,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fOf
 hbA
 fOf
@@ -94115,10 +95139,17 @@ opY
 opY
 fOf
 fOf
+<<<<<<< HEAD
 daU
 mvv
 mvv
 bpD
+=======
+tGx
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 xOt
 gjj
@@ -94358,16 +95389,22 @@ ktB
 (156,1,1) = {"
 ktB
 gcK
+<<<<<<< HEAD
 fyf
 xHN
+=======
+mcp
+qgO
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 sQv
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
 sQv
+<<<<<<< HEAD
 mvv
 mvv
 mvv
@@ -94375,6 +95412,15 @@ iWi
 mvv
 mvv
 mvv
+=======
+xSC
+xSC
+xSC
+swT
+xSC
+xSC
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 yiW
 xOt
 voe
@@ -94630,9 +95676,15 @@ dvQ
 vCw
 iFI
 wPE
+<<<<<<< HEAD
 mvv
 mvv
 mvv
+=======
+xSC
+xSC
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 jGC
 neo
 neo
@@ -94872,7 +95924,11 @@ ktB
 (158,1,1) = {"
 ktB
 gcK
+<<<<<<< HEAD
 fyf
+=======
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 dvQ
 seE
 nUm
@@ -94886,10 +95942,17 @@ wsM
 nUm
 bbN
 ldb
+<<<<<<< HEAD
 tBN
 mvv
 mvv
 mvv
+=======
+sCj
+xSC
+xSC
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 jGC
 neo
 neo
@@ -94898,12 +95961,19 @@ exD
 rhd
 xOt
 gcK
+<<<<<<< HEAD
+gcK
+=======
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 gcK
 gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
+=======
 gcK
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 eKA
 fyf
 fyf
@@ -95129,7 +96199,7 @@ ktB
 (159,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 qRg
 hIJ
 nUm
@@ -95143,9 +96213,15 @@ wsM
 nUm
 ely
 dvQ
+<<<<<<< HEAD
 tBN
 hhC
 mvv
+=======
+sCj
+uJr
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 qmr
 xOt
 bTY
@@ -95386,7 +96462,7 @@ ktB
 (160,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 dvQ
 sLi
 nUm
@@ -95400,10 +96476,17 @@ nUm
 nUm
 rrl
 dvQ
+<<<<<<< HEAD
 tBN
 mvv
 mvv
 bpD
+=======
+sCj
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 xOt
 gjj
@@ -95643,7 +96726,7 @@ ktB
 (161,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 iFI
 tAN
 nUm
@@ -95657,6 +96740,7 @@ nUm
 nUm
 nUm
 qFF
+<<<<<<< HEAD
 tBN
 mvv
 mvv
@@ -95666,6 +96750,17 @@ cWG
 cWG
 bnY
 cWG
+=======
+sCj
+xSC
+xSC
+qfo
+kfU
+kfU
+kfU
+bnY
+kfU
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 rbl
 xOt
 xOt
@@ -95900,7 +96995,7 @@ ktB
 (162,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 iFI
 kFw
 nUm
@@ -95914,6 +97009,7 @@ nUm
 nUm
 nUm
 qFF
+<<<<<<< HEAD
 tBN
 mvv
 mvv
@@ -95924,6 +97020,18 @@ mvv
 mvv
 tlj
 bpD
+=======
+sCj
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+hXL
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 pLq
 tUr
 tUr
@@ -96157,7 +97265,7 @@ ktB
 (163,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 qRg
 sLi
 nUm
@@ -96171,6 +97279,7 @@ nUm
 nUm
 kAh
 dvQ
+<<<<<<< HEAD
 tBN
 mvv
 mvv
@@ -96181,6 +97290,18 @@ mvv
 mvv
 mvv
 bpD
+=======
+sCj
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 jAG
 tUr
@@ -96414,7 +97535,7 @@ ktB
 (164,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 fkj
 kQq
 nUm
@@ -96428,6 +97549,7 @@ nUm
 nUm
 biN
 qRg
+<<<<<<< HEAD
 nlO
 mfD
 mfD
@@ -96438,6 +97560,18 @@ xGH
 mvv
 mvv
 bpD
+=======
+diK
+pQX
+pQX
+pQX
+pQX
+pQX
+brw
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 xOt
 tqN
@@ -96671,7 +97805,11 @@ ktB
 (165,1,1) = {"
 ktB
 gcK
+<<<<<<< HEAD
 fyf
+=======
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 dvQ
 sgw
 uSZ
@@ -96685,6 +97823,7 @@ whm
 iic
 kAh
 qRg
+<<<<<<< HEAD
 dzm
 vix
 vix
@@ -96706,6 +97845,29 @@ fyf
 fyf
 sND
 xwl
+=======
+tSA
+vQS
+vQS
+vQS
+vQS
+jtd
+tGx
+xSC
+xSC
+ill
+mcp
+mcp
+mcp
+mcp
+wrS
+mDn
+mcp
+mcp
+mcp
+kTq
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 ktB
@@ -96942,6 +98104,7 @@ vCw
 bav
 fzT
 bav
+<<<<<<< HEAD
 xHN
 wpf
 mvv
@@ -96961,6 +98124,27 @@ cWG
 qOb
 cWG
 cWG
+=======
+qgO
+wpf
+xSC
+xSC
+wpB
+oBv
+xSC
+xSC
+xSC
+qfo
+kfU
+cLX
+kfU
+kfU
+kfU
+kfU
+qOb
+kfU
+kfU
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ekX
 urc
 ktB
@@ -97185,9 +98369,9 @@ ktB
 (167,1,1) = {"
 ktB
 gcK
-fyf
+mcp
 aYV
-mvv
+xSC
 iFI
 ooe
 tXY
@@ -97197,8 +98381,9 @@ tXY
 tXY
 tXY
 bav
-fFu
+aDn
 bav
+<<<<<<< HEAD
 xHN
 mvv
 mvv
@@ -97221,6 +98406,30 @@ mvv
 lTT
 urc
 xwl
+=======
+qgO
+xSC
+xSC
+xSC
+xSC
+swT
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+lTT
+urc
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 ktB
@@ -97442,9 +98651,9 @@ ktB
 (168,1,1) = {"
 ktB
 gcK
-nxY
-tBN
-mvv
+mDn
+sCj
+xSC
 iFI
 dRd
 uEg
@@ -97454,8 +98663,9 @@ pqr
 kLv
 lhA
 bav
-fFu
+aDn
 bav
+<<<<<<< HEAD
 xHN
 mvv
 mvv
@@ -97478,6 +98688,30 @@ mvv
 doX
 cWG
 isO
+=======
+qgO
+xSC
+xSC
+xSC
+xSC
+oBv
+xSC
+xSC
+xSC
+rRJ
+nWj
+xSC
+rRJ
+pQX
+pQX
+pQX
+jro
+brw
+xSC
+qfo
+kfU
+jHv
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 isO
@@ -97700,8 +98934,8 @@ ktB
 ktB
 gcK
 gcK
-tBN
-mvv
+sCj
+xSC
 iFI
 fzT
 bav
@@ -97711,8 +98945,9 @@ iFI
 iFI
 vCw
 iFI
-fyf
+mcp
 iFI
+<<<<<<< HEAD
 xHN
 mvv
 mvv
@@ -97723,6 +98958,18 @@ mvv
 mvv
 odZ
 bpD
+=======
+qgO
+xSC
+xSC
+xSC
+wpf
+oBv
+xSC
+xSC
+rPr
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 hDf
 ybm
@@ -97731,9 +98978,15 @@ rPm
 xOt
 xOt
 phM
+<<<<<<< HEAD
 mvv
 mvv
 kWi
+=======
+xSC
+xSC
+kyJ
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 ktB
@@ -97957,20 +99210,21 @@ ktB
 ktB
 gcK
 gcK
-tBN
-mvv
+sCj
+xSC
 mrM
-mvv
-mvv
-mvv
-mvv
-mvv
-mvv
-doX
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+qfo
 bnY
-cWG
+kfU
 iFI
 tUh
+<<<<<<< HEAD
 pXo
 pXo
 pXo
@@ -97980,6 +99234,17 @@ mvv
 mvv
 mvv
 bpD
+=======
+wzK
+wzK
+wzK
+wzK
+kVt
+xSC
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 neo
 neo
@@ -97988,8 +99253,13 @@ neo
 cIR
 xOt
 xCo
+<<<<<<< HEAD
 mvv
 mvv
+=======
+xSC
+xSC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 vIl
 ktB
 ktB
@@ -98215,6 +99485,7 @@ ktB
 gcK
 gcK
 lDv
+<<<<<<< HEAD
 mfD
 mfD
 mfD
@@ -98237,6 +99508,30 @@ mvv
 mvv
 mvv
 bpD
+=======
+pQX
+pQX
+pQX
+brw
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+swT
+xSC
+xSC
+xSC
+xSC
+xSC
+hBd
+xSC
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 ptg
 neo
@@ -98244,9 +99539,15 @@ neo
 neo
 wIO
 xOt
+<<<<<<< HEAD
 nlO
 mfD
 mfD
+=======
+diK
+pQX
+pQX
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 kFa
 ktB
 ktB
@@ -98473,6 +99774,7 @@ gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
 pEv
 fyf
 tBN
@@ -98494,6 +99796,29 @@ npL
 mvv
 mvv
 bpD
+=======
+aut
+mcp
+sCj
+irQ
+qdm
+qdm
+irQ
+rRJ
+ych
+pQX
+tly
+pQX
+wGh
+xSC
+xSC
+xSC
+xSC
+npL
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 vEo
 neo
@@ -98501,10 +99826,17 @@ uom
 neo
 hWd
 xOt
+<<<<<<< HEAD
 fyf
 pYD
 fyf
 xwl
+=======
+mcp
+pYD
+mcp
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 ktB
@@ -98730,6 +100062,7 @@ gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
 fFu
 bBJ
 tBN
@@ -98751,6 +100084,29 @@ mvv
 mvv
 mvv
 bpD
+=======
+aDn
+bBJ
+sCj
+irQ
+qdm
+qdm
+irQ
+ill
+mcp
+mcp
+mNU
+mcp
+vCw
+tcX
+xSC
+tcX
+xSC
+xSC
+xSC
+xSC
+ill
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 xOt
 xOt
 xOt
@@ -98758,10 +100114,17 @@ xOt
 ybm
 xOt
 xOt
+<<<<<<< HEAD
 jWO
 eEB
 fyf
 xwl
+=======
+wnZ
+eEB
+mcp
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 rRT
@@ -98988,6 +100351,7 @@ gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
 dhD
 tBN
 hxO
@@ -99019,6 +100383,39 @@ fyf
 mBd
 fyf
 xwl
+=======
+bIp
+sCj
+irQ
+qdm
+qdm
+irQ
+ill
+slG
+mcp
+mNU
+mcp
+iFI
+xSV
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+qfo
+kfU
+bnY
+kfU
+nDk
+mcp
+mcp
+mcp
+mcp
+seI
+mcp
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 rRT
@@ -99245,6 +100642,7 @@ gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
 gcK
 nlO
 mKm
@@ -99275,6 +100673,38 @@ fmO
 pci
 fyf
 xwl
+=======
+cbX
+diK
+mKm
+pQX
+pQX
+mKm
+sfc
+mcp
+mcp
+mNU
+tYV
+iFI
+xZK
+xSC
+xZK
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+xSC
+hJh
+mcp
+seI
+fmO
+pci
+mcp
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 ktB
@@ -99502,6 +100932,7 @@ gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
 gcK
 gcK
 hBr
@@ -99532,6 +100963,38 @@ fyf
 fyf
 fyf
 xwl
+=======
+cbX
+cbX
+iFI
+iFI
+iFI
+iFI
+cbX
+aut
+mcp
+mNU
+aDn
+iFI
+iFI
+iFI
+vCw
+xhP
+pQX
+pQX
+pQX
+pQX
+pQX
+pQX
+pQX
+sfc
+mcp
+nKC
+mcp
+mcp
+mcp
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 ktB
 ktB
 ktB
@@ -99767,26 +101230,35 @@ ktB
 gcK
 gcK
 gcK
+aut
+mNU
+aDn
+aut
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+<<<<<<< HEAD
 pEv
-thG
-fFu
-pEv
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-pEv
 fyf
 fyf
 fyf
 fyf
 fyf
+=======
+aut
+mcp
+mcp
+mcp
+mcp
+mcp
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 rAp
 cCJ
 ktB
@@ -100041,10 +101513,17 @@ gcK
 gcK
 gcK
 gcK
+<<<<<<< HEAD
 pEv
 fFu
 fyf
 xwl
+=======
+aut
+aDn
+mcp
+rrC
+>>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
 rRT
 ktB
 ktB
