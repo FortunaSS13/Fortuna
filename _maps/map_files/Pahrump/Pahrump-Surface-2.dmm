@@ -252,10 +252,14 @@
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "agr" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/road{
@@ -1014,6 +1018,7 @@
 /area/f13/village)
 "aut" = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 /obj/structure/fans/tiny,
 /turf/closed/wall/r_wall/rust,
 /area/f13/wasteland)
@@ -1022,6 +1027,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/obj/structure/fans/tiny,
+/turf/closed/wall/r_wall/rust,
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "auw" = (
 /mob/living/simple_animal/hostile/poison/giant_spider/hunter,
 /turf/open/water,
@@ -1370,12 +1380,15 @@
 /turf/open/floor/wood/f13/stage_tl,
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "aDn" = (
 /obj/structure/reagent_dispensers/barrel/three,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "aDq" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowbroken"
@@ -1909,6 +1922,7 @@
 	},
 /area/f13/ncr)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "aQe" = (
 /obj/structure/flora/grass/wasteland{
@@ -1921,6 +1935,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "aQw" = (
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker/waterbottle{
@@ -2268,7 +2284,7 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "aZz" = (
 /obj/structure/bed/mattress/pregame,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
@@ -2990,7 +3006,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "boa" = (
 /obj/structure/chair/comfy/brown,
 /turf/open/floor/f13/wood,
@@ -3185,7 +3201,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "bqY" = (
 /obj/structure/sign/departments/botany,
 /turf/closed/wall/f13/supermart,
@@ -3200,7 +3219,12 @@
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
 =======
 /area/f13/brotherhood/surface)
+<<<<<<< HEAD
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+=======
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "brE" = (
 /obj/structure/filingcabinet,
 /obj/effect/turf_decal/stripes/white/box,
@@ -3342,7 +3366,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "bvd" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
@@ -3652,7 +3676,7 @@
 =======
 /obj/machinery/grill,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "bBK" = (
 /obj/structure/flora/tree/joshua,
 /turf/open/indestructible/ground/outside/desert,
@@ -3960,12 +3984,15 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "bIp" = (
 /obj/structure/reagent_dispensers/barrel/two,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "bIv" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -4742,11 +4769,14 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "cbX" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "ccz" = (
 /obj/structure/fence/corner,
 /obj/structure/fence{
@@ -5097,10 +5127,14 @@
 /obj/structure/closet/crate/wicker,
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "clL" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
@@ -5197,7 +5231,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "cnJ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -6091,10 +6125,14 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "cKs" = (
 /obj/structure/closet/crate/bin,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
@@ -6159,7 +6197,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "cMx" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress6"
@@ -7128,6 +7166,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "diK" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -7136,6 +7175,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "diU" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/grown/corn,
@@ -8146,10 +8187,14 @@
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "dEW" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
@@ -9126,10 +9171,14 @@
 "edB" = (
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "edD" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating,
@@ -9285,10 +9334,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "ehx" = (
 /obj/effect/spawner/lootdrop/trash,
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -9446,10 +9499,14 @@
 	icon_state = "dirtcorner"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "els" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -9983,10 +10040,14 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "ewI" = (
 /obj/structure/table,
 /obj/item/stack/packageWrap,
@@ -10347,10 +10408,14 @@
 /obj/item/clothing/head/hardhat,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "eEI" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13{
@@ -10455,10 +10520,14 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "eHs" = (
 /obj/structure/wreck/trash/two_tire,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -11158,7 +11227,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "eUI" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
@@ -11386,10 +11455,14 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "eZB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -12037,10 +12110,14 @@
 /obj/item/mining_scanner,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "fmP" = (
 /obj/effect/decal/fakelattice{
 	pixel_x = -17
@@ -14997,6 +15074,7 @@
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 "gBh" = (
 /obj/effect/decal/cleanable/dirt{
@@ -15008,9 +15086,14 @@
 /area/f13/brotherhood)
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
 =======
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 /area/f13/brotherhood)
 =======
 /area/f13/brotherhood/surface)
+=======
+/area/f13/wasteland)
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
 "gBh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -17039,7 +17122,7 @@
 	pixel_y = 13
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "hvu" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/cans,
 /turf/open/floor/f13,
@@ -17269,10 +17352,14 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "hBj" = (
 /obj/structure/table/wood,
 /obj/item/door_key{
@@ -17681,10 +17768,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "hJs" = (
 /obj/structure/barricade/wooden,
 /turf/closed/wall/rust,
@@ -18172,7 +18263,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/bar)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "hUM" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -18190,7 +18284,12 @@
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
 =======
 /area/f13/brotherhood/surface)
+<<<<<<< HEAD
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+=======
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "hUO" = (
 /obj/structure/weightlifter,
 /turf/open/indestructible/ground/outside/dirt,
@@ -18296,13 +18395,6 @@
 	icon_state = "housebase"
 	},
 /area/f13/building)
-"hXL" = (
-/obj/structure/flora/grass/wasteland{
-	icon_state = "tall_grass_4";
-	layer = 6
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
 "hXM" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
@@ -18862,7 +18954,7 @@
 	pixel_y = -33
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "ijJ" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -18916,6 +19008,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "ill" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -18924,6 +19017,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "ilt" = (
 /obj/structure/cargocrate,
 /obj/structure/cargocrate{
@@ -19180,12 +19275,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "irQ" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "irW" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
@@ -19241,7 +19339,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "itn" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -19426,6 +19524,7 @@
 /turf/open/floor/f13,
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "ixI" = (
 /obj/structure/simple_door/metal/fence{
@@ -19435,6 +19534,8 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "iyd" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -21702,10 +21803,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "jrx" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -21822,8 +21927,12 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 >>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
 "jtj" = (
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
@@ -22426,14 +22535,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"jHv" = (
-/obj/structure/flora/rock/pile/largejungle,
-/obj/structure/flora/rock/jungle,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirt"
-	},
-/area/f13/brotherhood/surface)
 "jHF" = (
 /obj/structure/chair,
 /turf/open/floor/f13/wood{
@@ -23619,6 +23720,7 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "kfU" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -23627,6 +23729,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "kfY" = (
 /obj/machinery/door/airlock/grunge{
 	name = "store airlock";
@@ -24340,11 +24444,6 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
-"kyJ" = (
-/obj/structure/flora/rock/pile/largejungle,
-/obj/structure/flora/rock/jungle,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
 "kyT" = (
 /obj/structure/chair/sofa/corp/corner,
 /obj/effect/decal/cleanable/dirt,
@@ -24638,10 +24737,14 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "kFn" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -25169,12 +25272,6 @@
 /obj/machinery/photocopier,
 /turf/open/floor/carpet/cyan,
 /area/f13/building)
-"kTq" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
 "kTu" = (
 /obj/machinery/grill,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -25350,9 +25447,16 @@
 	dir = 5
 	},
 /turf/open/indestructible/ground/outside/dirt,
+<<<<<<< HEAD
 /area/f13/brotherhood/surface)
 >>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+<<<<<<< HEAD
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+=======
+/area/f13/wasteland)
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "kVJ" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -25592,10 +25696,13 @@
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 =======
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 /area/f13/brotherhood)
 "lcm" = (
 /obj/effect/turf_decal/stripes/line,
@@ -25609,7 +25716,13 @@
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> 68d0fc7a20... Reworks the BoS village to have more of the old stuff.
+<<<<<<< HEAD
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+=======
+/area/f13/wasteland)
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "lcV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -26429,7 +26542,7 @@
 	req_access_txt = "120"
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "lyc" = (
 /obj/structure/bed,
 /turf/open/floor/carpet/red,
@@ -26625,7 +26738,7 @@
 	dir = 6;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "lDv" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
@@ -26635,7 +26748,7 @@
 	dir = 8;
 	icon_state = "dirtcorner"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "lDx" = (
 /obj/structure/barricade/bars,
 /obj/structure/fence,
@@ -27322,10 +27435,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "lTW" = (
 /obj/machinery/light{
 	light_color = "#e8eaff"
@@ -27745,11 +27862,14 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "mcp" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "mcD" = (
 /obj/structure/simple_door/house{
 	icon_state = "interior"
@@ -28367,7 +28487,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "mrQ" = (
 /obj/item/clothing/head/cone,
 /obj/effect/decal/cleanable/dirt,
@@ -28795,6 +28915,7 @@
 	},
 /area/f13/legion)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "mDn" = (
 /obj/structure/flora/grass/wasteland{
@@ -28804,6 +28925,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "mEh" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal,
@@ -29076,8 +29199,12 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /area/f13/brotherhood/surface)
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "mKo" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/indestructible/ground/inside/mountain,
@@ -29230,6 +29357,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "mNU" = (
 /obj/structure/fence{
@@ -29238,6 +29366,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "mOq" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -30363,10 +30493,14 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "nqb" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/ruins{
@@ -30918,6 +31052,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "nDk" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -30926,6 +31061,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "nDx" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -31226,7 +31363,7 @@
 	pixel_x = -3
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "nLd" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -31267,7 +31404,7 @@
 "nMd" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "nMk" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/f13/wood,
@@ -31695,10 +31832,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "nWl" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -32925,12 +33066,6 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"oBv" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
 "oBw" = (
 /obj/structure/table/wood,
 /obj/item/folder/blue{
@@ -34024,10 +34159,14 @@
 /obj/item/storage/bag/ore,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "pcj" = (
 /obj/machinery/camera/autoname{
 	dir = 1;
@@ -34346,10 +34485,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "pir" = (
 /obj/machinery/vending/boozeomat{
 	pixel_x = 32;
@@ -34759,10 +34902,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "prP" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -35703,7 +35850,10 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "pLE" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -35718,7 +35868,12 @@
 >>>>>>> 43b1e5b4f7... [MDB IGNORE] Oasis Remake (done btw) (#14)
 =======
 /area/f13/brotherhood/surface)
+<<<<<<< HEAD
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+=======
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "pLK" = (
 /obj/structure/simple_door/interior,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -35842,7 +35997,7 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "pOL" = (
 /obj/structure/simple_door/metal/store,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -35926,6 +36081,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "pQX" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -35934,6 +36090,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "pRd" = (
 /obj/structure/table/wood,
 /obj/item/storage/backpack{
@@ -36299,10 +36457,14 @@
 /obj/item/pickaxe,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "pYH" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -36447,12 +36609,15 @@
 	},
 /area/f13/bunker)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "qdm" = (
 /obj/structure/table/wood,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "qds" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/outside/road{
@@ -36534,6 +36699,7 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "qfo" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -36542,6 +36708,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "qfp" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/road{
@@ -36583,6 +36751,7 @@
 	},
 /area/f13/village)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "qgO" = (
 /obj/structure/fence{
@@ -36593,6 +36762,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "qgP" = (
 /obj/structure/closet,
 /obj/item/restraints/handcuffs,
@@ -36847,10 +37018,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "qmv" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt{
@@ -37098,10 +37273,14 @@
 /obj/machinery/plantgenes,
 /turf/closed/wall/f13/wood,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "qsu" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -38000,10 +38179,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "qOd" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13{
@@ -38768,10 +38951,14 @@
 	icon_state = "dirtcorner"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "rbr" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -39381,6 +39568,7 @@
 /turf/open/water,
 /area/f13/brotherhood/surface)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "rrC" = (
 /obj/structure/flora/rock/pile/largejungle,
@@ -39388,6 +39576,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "rrE" = (
 /turf/closed/wall/f13/wood/interior,
 /area/f13/ncr)
@@ -39689,10 +39879,14 @@
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "rAt" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertopright"
@@ -40231,10 +40425,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/building)
-"rPr" = (
-/obj/structure/flora/grass/wasteland,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
 "rPI" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/glass/bottle/blackpowder,
@@ -40330,6 +40520,7 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "rRJ" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -40338,6 +40529,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "rRP" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -40880,10 +41073,6 @@
 	icon_state = "redchess2"
 	},
 /area/f13/building)
-"seI" = (
-/obj/structure/ore_box,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
 "seQ" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/spray/cleaner,
@@ -40907,6 +41096,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "sfc" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -40915,6 +41105,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "sfh" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
@@ -40990,10 +41182,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "sgs" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -41240,6 +41436,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "slG" = (
 /obj/structure/flora/grass/wasteland{
@@ -41248,6 +41445,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "slJ" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -41829,12 +42028,15 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "swT" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "sxo" = (
 /obj/machinery/workbench,
 /obj/machinery/light{
@@ -41985,6 +42187,7 @@
 	},
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "sCj" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -41992,6 +42195,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "sCz" = (
 /obj/machinery/light{
 	dir = 4;
@@ -42501,10 +42706,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "sNC" = (
 /obj/structure/simple_door/interior,
 /turf/open/floor/f13{
@@ -42654,7 +42863,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "sQL" = (
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13/wood{
@@ -43216,12 +43425,15 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "tcX" = (
 /obj/structure/weightlifter,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tdn" = (
 /obj/machinery/door/unpowered/wooddoor{
 	name = "Commanding Officer"
@@ -43565,6 +43777,7 @@
 	},
 /area/f13/village)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "tly" = (
 /obj/structure/fence{
@@ -43576,6 +43789,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tlD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
@@ -44467,6 +44682,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/surface)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "tGx" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -44475,6 +44691,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tGH" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
@@ -44552,10 +44770,14 @@
 	},
 /turf/closed/wall/f13/wood,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tJx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -44966,6 +45188,7 @@
 	},
 /area/f13/caves)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "tSA" = (
 /obj/structure/fence/corner{
@@ -44976,6 +45199,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tSI" = (
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/outside/dirt,
@@ -45031,10 +45256,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tUj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -45273,12 +45502,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "tYQ" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/bars,
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/building)
 =======
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tYV" = (
 <<<<<<< HEAD
 /obj/effect/decal/cleanable/dirt,
@@ -45292,7 +45524,17 @@
 /obj/structure/campfire/barrel,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/brotherhood/surface)
+<<<<<<< HEAD
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+=======
+"tYQ" = (
+/obj/structure/window/fulltile/wood,
+/obj/structure/barricade/bars,
+/turf/open/floor/wood/f13/stage_r,
+/area/f13/building)
+>>>>>>> 5c599db70c... Adjusts areas in the surface village.
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "tZs" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -45625,7 +45867,7 @@
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "uhi" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/road{
@@ -46080,10 +46322,14 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/desert,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "urg" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/road{
@@ -47004,6 +47250,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "uJr" = (
 /obj/structure/flora/grass/wasteland{
@@ -47012,6 +47259,8 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "uJB" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/f13/wood,
@@ -47682,7 +47931,7 @@
 	dir = 4;
 	icon_state = "dirtcorner"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "uWX" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -48566,7 +48815,7 @@
 /obj/structure/decoration/vent/rusty,
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "vsm" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/fence/wooden{
@@ -49299,7 +49548,7 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "vIr" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
@@ -49624,6 +49873,7 @@
 	},
 /area/f13/ncr)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "vQS" = (
 /obj/structure/fence,
@@ -49633,6 +49883,8 @@
 	},
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "vRb" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -50463,12 +50715,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
-"wnZ" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
 "wof" = (
 /obj/structure/chair/sofa/right,
 /obj/structure/curtain{
@@ -50555,10 +50801,14 @@
 /obj/item/clothing/gloves/boxing,
 /turf/open/indestructible/ground/outside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "wph" = (
 /obj/structure/chair/booth{
 	dir = 4
@@ -50583,10 +50833,6 @@
 /obj/structure/simple_door/house,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"wpB" = (
-/obj/structure/wreck/trash/halftire,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
 "wpL" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
@@ -50652,10 +50898,6 @@
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
-"wrS" = (
-/obj/structure/wreck/trash/halftire,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/brotherhood/surface)
 "wrV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -50990,12 +51232,15 @@
 	},
 /area/f13/building)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "wzK" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "wzN" = (
 /obj/structure/chair/office/dark,
 /obj/effect/decal/cleanable/dirt,
@@ -51346,10 +51591,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "wGq" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/condiment/ketchup,
@@ -51612,7 +51861,7 @@
 "wLO" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "wLR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -51875,7 +52124,7 @@
 	dir = 10;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "wPG" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -52852,10 +53101,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "xhQ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -53764,7 +54017,7 @@
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "xCI" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt,
@@ -54502,10 +54755,14 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "xTc" = (
 /obj/structure/table,
 /obj/item/kitchen/knife,
@@ -54551,10 +54808,14 @@
 /mob/living/simple_animal/chicken,
 /turf/open/indestructible/ground/inside/dirt,
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "xTF" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt{
@@ -54785,12 +55046,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "xZK" = (
 /obj/structure/stacklifter,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "xZO" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -54932,7 +55196,7 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/wasteland)
 "yci" = (
 /obj/machinery/autolathe/constructionlathe,
 /obj/item/stack/sheet/metal/twenty,
@@ -55124,10 +55388,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "ygv" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
@@ -55297,10 +55565,14 @@
 	icon_state = "dirt"
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 /area/f13/wasteland)
 =======
 /area/f13/brotherhood/surface)
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+/area/f13/wasteland)
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 "yjn" = (
 /obj/effect/decal/marking,
 /turf/open/indestructible/ground/outside/road{
@@ -91696,8 +91968,8 @@ edB
 edB
 xTw
 prI
-aQe
-kfU
+iVE
+cWG
 uWT
 gcK
 gcK
@@ -91953,6 +92225,7 @@ dER
 edB
 edB
 <<<<<<< HEAD
+<<<<<<< HEAD
 nQP
 mvv
 mvv
@@ -91961,6 +92234,11 @@ ixI
 xSC
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+nQP
+mvv
+mvv
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 cnD
 gcK
 gcK
@@ -92216,10 +92494,10 @@ ewd
 edB
 xTw
 gBd
-xSC
-xSC
-ill
-mNU
+mvv
+mvv
+bpD
+thG
 nMd
 gcK
 iFI
@@ -92227,8 +92505,8 @@ anP
 wmI
 iFI
 iFI
-xSC
-xSC
+mvv
+mvv
 uhh
 vYf
 iFI
@@ -92473,10 +92751,10 @@ cKg
 eZs
 cKg
 laZ
-xSC
-xSC
-ill
-pLJ
+mvv
+mvv
+bpD
+dRo
 vrG
 gcK
 iFI
@@ -92484,6 +92762,7 @@ wmI
 iFI
 iFI
 vYf
+<<<<<<< HEAD
 <<<<<<< HEAD
 mvv
 mvv
@@ -92493,6 +92772,11 @@ xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+mvv
+mvv
+bpD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 vYf
 iFI
 qaq
@@ -92736,10 +93020,10 @@ yga
 yga
 yga
 sNB
-brw
-xSC
+xGH
+mvv
 buW
-mNU
+thG
 nMd
 gcK
 iFI
@@ -92748,22 +93032,28 @@ iFI
 vYf
 vYf
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mvv
 mvv
 bpD
 sND
+<<<<<<< HEAD
 =======
 xSC
 xSC
 ill
 kTq
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 iFI
 wpd
 wpd
 wpd
 iFI
-aDn
+fFu
 vYf
 bQI
 eZl
@@ -93004,10 +93294,14 @@ ktB
 ktB
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 fyf
 =======
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 fOf
 hbA
 fOf
@@ -93021,21 +93315,25 @@ fOf
 fOf
 fOf
 fOf
-sCj
-xSC
-xSC
+tBN
+mvv
+mvv
 itj
-mcp
+fyf
 iFI
 lxW
-xSC
-xSC
+mvv
+mvv
 iFI
+<<<<<<< HEAD
 <<<<<<< HEAD
 fyf
 =======
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pgE
 iKG
 iKG
@@ -93269,10 +93567,14 @@ ktB
 ktB
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 fyf
 =======
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 fOf
 prR
 yeL
@@ -93288,10 +93590,14 @@ xzd
 fOf
 xCo
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mvv
 mvv
 bpD
 fyf
+<<<<<<< HEAD
 ehn
 mvv
 tlj
@@ -93303,13 +93609,19 @@ xSC
 xSC
 ill
 mcp
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ehn
-xSC
-hXL
-xSC
+mvv
+tlj
+mvv
 eUz
+<<<<<<< HEAD
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pgE
 iKG
 iKG
@@ -93542,7 +93854,7 @@ ktB
 (149,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fkP
 jbm
 tep
@@ -93557,6 +93869,9 @@ uKJ
 iyv
 opY
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
@@ -93568,6 +93883,7 @@ mvv
 mvv
 bpD
 fyf
+<<<<<<< HEAD
 =======
 sCj
 xSC
@@ -93581,6 +93897,8 @@ xSC
 ill
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 vYf
 eJf
 khO
@@ -93813,7 +94131,7 @@ ktB
 (150,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fOf
 enL
 tep
@@ -93828,15 +94146,15 @@ mup
 paM
 fOf
 lCM
-xSC
-xSC
-qfo
-kfU
-tGx
-xSC
-xSC
-xSC
-qfo
+mvv
+mvv
+doX
+cWG
+daU
+mvv
+mvv
+mvv
+doX
 pOC
 vYf
 amd
@@ -94070,7 +94388,7 @@ ktB
 (151,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 gnU
 kGV
 tep
@@ -94084,17 +94402,17 @@ iyv
 iyv
 iyv
 hDf
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
 hvp
-xSC
-xSC
-xSC
-xSC
+mvv
+mvv
+mvv
+mvv
 vnR
 xSC
 nUl
@@ -94327,7 +94645,7 @@ ktB
 (152,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fOf
 lqU
 tep
@@ -94343,6 +94661,9 @@ bCG
 fOf
 wPE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mvv
 mvv
 oCW
@@ -94353,6 +94674,7 @@ mvv
 mvv
 mvv
 mvv
+<<<<<<< HEAD
 =======
 xSC
 xSC
@@ -94365,6 +94687,8 @@ xSC
 xSC
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xSC
 xSC
 xSC
@@ -94597,7 +94921,7 @@ ktB
 (153,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fOf
 lzE
 tep
@@ -94611,17 +94935,17 @@ frK
 oRS
 iyv
 opY
-sCj
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
+tBN
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
 lZw
 xSC
 xSC
@@ -94854,7 +95178,7 @@ ktB
 (154,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fOf
 qQD
 tGg
@@ -94869,11 +95193,15 @@ mup
 xzd
 fOf
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
 aBH
 mfD
+<<<<<<< HEAD
 mKm
 mfD
 mfD
@@ -94886,13 +95214,19 @@ xSC
 xSC
 rRJ
 pQX
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mKm
-pQX
-pQX
-pQX
+mfD
+mfD
+mfD
 mKm
+<<<<<<< HEAD
 pQX
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+mfD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 vYf
 vYf
 vYf
@@ -95125,7 +95459,7 @@ ktB
 (155,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fOf
 hbA
 fOf
@@ -95140,16 +95474,22 @@ opY
 fOf
 fOf
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 daU
 mvv
 mvv
 bpD
+<<<<<<< HEAD
 =======
 tGx
 xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 xOt
 gjj
@@ -95390,21 +95730,29 @@ ktB
 ktB
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 fyf
 xHN
 =======
 mcp
 qgO
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+xHN
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 sQv
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
 sQv
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mvv
 mvv
 mvv
@@ -95412,6 +95760,7 @@ iWi
 mvv
 mvv
 mvv
+<<<<<<< HEAD
 =======
 xSC
 xSC
@@ -95421,6 +95770,8 @@ xSC
 xSC
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 yiW
 xOt
 voe
@@ -95677,6 +96028,7 @@ vCw
 iFI
 wPE
 <<<<<<< HEAD
+<<<<<<< HEAD
 mvv
 mvv
 mvv
@@ -95685,6 +96037,11 @@ xSC
 xSC
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+mvv
+mvv
+mvv
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 jGC
 neo
 neo
@@ -95925,10 +96282,14 @@ ktB
 ktB
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 fyf
 =======
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 dvQ
 seE
 nUm
@@ -95943,16 +96304,22 @@ nUm
 bbN
 ldb
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
 mvv
+<<<<<<< HEAD
 =======
 sCj
 xSC
 xSC
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 jGC
 neo
 neo
@@ -96199,7 +96566,7 @@ ktB
 (159,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 qRg
 hIJ
 nUm
@@ -96214,6 +96581,7 @@ nUm
 ely
 dvQ
 <<<<<<< HEAD
+<<<<<<< HEAD
 tBN
 hhC
 mvv
@@ -96222,6 +96590,11 @@ sCj
 uJr
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+tBN
+hhC
+mvv
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 qmr
 xOt
 bTY
@@ -96462,7 +96835,7 @@ ktB
 (160,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 dvQ
 sLi
 nUm
@@ -96477,16 +96850,22 @@ nUm
 rrl
 dvQ
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
 bpD
+<<<<<<< HEAD
 =======
 sCj
 xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 xOt
 gjj
@@ -96726,7 +97105,7 @@ ktB
 (161,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 iFI
 tAN
 nUm
@@ -96741,6 +97120,9 @@ nUm
 nUm
 qFF
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
@@ -96748,6 +97130,7 @@ doX
 cWG
 cWG
 cWG
+<<<<<<< HEAD
 bnY
 cWG
 =======
@@ -96761,6 +97144,10 @@ kfU
 bnY
 kfU
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+bnY
+cWG
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 rbl
 xOt
 xOt
@@ -96995,7 +97382,7 @@ ktB
 (162,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 iFI
 kFw
 nUm
@@ -97010,6 +97397,9 @@ nUm
 nUm
 qFF
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
@@ -97020,6 +97410,7 @@ mvv
 mvv
 tlj
 bpD
+<<<<<<< HEAD
 =======
 sCj
 xSC
@@ -97032,6 +97423,8 @@ xSC
 hXL
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pLq
 tUr
 tUr
@@ -97265,7 +97658,7 @@ ktB
 (163,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 qRg
 sLi
 nUm
@@ -97280,6 +97673,9 @@ nUm
 kAh
 dvQ
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 tBN
 mvv
 mvv
@@ -97290,6 +97686,7 @@ mvv
 mvv
 mvv
 bpD
+<<<<<<< HEAD
 =======
 sCj
 xSC
@@ -97302,6 +97699,8 @@ xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 jAG
 tUr
@@ -97535,7 +97934,7 @@ ktB
 (164,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 fkj
 kQq
 nUm
@@ -97550,6 +97949,9 @@ nUm
 biN
 qRg
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 nlO
 mfD
 mfD
@@ -97560,6 +97962,7 @@ xGH
 mvv
 mvv
 bpD
+<<<<<<< HEAD
 =======
 diK
 pQX
@@ -97572,6 +97975,8 @@ xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 xOt
 tqN
@@ -97806,10 +98211,14 @@ ktB
 ktB
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 fyf
 =======
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 dvQ
 sgw
 uSZ
@@ -97824,11 +98233,15 @@ iic
 kAh
 qRg
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 dzm
 vix
 vix
 vix
 vix
+<<<<<<< HEAD
 jtd
 daU
 mvv
@@ -97868,6 +98281,24 @@ mcp
 kTq
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+jtd
+daU
+mvv
+mvv
+bpD
+fyf
+fyf
+fyf
+fyf
+qLa
+nxY
+fyf
+fyf
+fyf
+sND
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 ktB
@@ -98105,6 +98536,7 @@ bav
 fzT
 bav
 <<<<<<< HEAD
+<<<<<<< HEAD
 xHN
 wpf
 mvv
@@ -98126,25 +98558,33 @@ cWG
 cWG
 =======
 qgO
+=======
+xHN
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 wpf
-xSC
-xSC
-wpB
-oBv
-xSC
-xSC
-xSC
-qfo
-kfU
+mvv
+mvv
+oCW
+ucA
+mvv
+mvv
+mvv
+doX
+cWG
 cLX
-kfU
-kfU
-kfU
-kfU
+cWG
+cWG
+cWG
+cWG
 qOb
+<<<<<<< HEAD
 kfU
 kfU
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+cWG
+cWG
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ekX
 urc
 ktB
@@ -98369,9 +98809,9 @@ ktB
 (167,1,1) = {"
 ktB
 gcK
-mcp
+fyf
 aYV
-xSC
+mvv
 iFI
 ooe
 tXY
@@ -98381,9 +98821,12 @@ tXY
 tXY
 tXY
 bav
-aDn
+fFu
 bav
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xHN
 mvv
 mvv
@@ -98403,6 +98846,7 @@ mvv
 mvv
 mvv
 mvv
+<<<<<<< HEAD
 lTT
 urc
 xwl
@@ -98430,6 +98874,11 @@ lTT
 urc
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+lTT
+urc
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 ktB
@@ -98651,9 +99100,9 @@ ktB
 (168,1,1) = {"
 ktB
 gcK
-mDn
-sCj
-xSC
+nxY
+tBN
+mvv
 iFI
 dRd
 uEg
@@ -98663,9 +99112,12 @@ pqr
 kLv
 lhA
 bav
-aDn
+fFu
 bav
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xHN
 mvv
 mvv
@@ -98676,6 +99128,7 @@ mvv
 mvv
 mvv
 aBH
+<<<<<<< HEAD
 nWj
 mvv
 aBH
@@ -98699,19 +99152,29 @@ xSC
 xSC
 xSC
 rRJ
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 nWj
-xSC
-rRJ
-pQX
-pQX
-pQX
+mvv
+aBH
+mfD
+mfD
+mfD
 jro
+<<<<<<< HEAD
 brw
 xSC
 qfo
 kfU
 jHv
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+xGH
+mvv
+doX
+cWG
+isO
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 isO
@@ -98934,8 +99397,8 @@ ktB
 ktB
 gcK
 gcK
-sCj
-xSC
+tBN
+mvv
 iFI
 fzT
 bav
@@ -98945,13 +99408,17 @@ iFI
 iFI
 vCw
 iFI
-mcp
+fyf
 iFI
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xHN
 mvv
 mvv
 mvv
+<<<<<<< HEAD
 wpf
 ucA
 mvv
@@ -98970,6 +99437,14 @@ xSC
 rPr
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+wpf
+ucA
+mvv
+mvv
+odZ
+bpD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 hDf
 ybm
@@ -98979,6 +99454,7 @@ xOt
 xOt
 phM
 <<<<<<< HEAD
+<<<<<<< HEAD
 mvv
 mvv
 kWi
@@ -98987,6 +99463,11 @@ xSC
 xSC
 kyJ
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+mvv
+mvv
+kWi
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 ktB
@@ -99210,25 +99691,29 @@ ktB
 ktB
 gcK
 gcK
-sCj
-xSC
+tBN
+mvv
 mrM
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-qfo
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+doX
 bnY
-kfU
+cWG
 iFI
 tUh
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pXo
 pXo
 pXo
 pXo
+<<<<<<< HEAD
 kVt
 mvv
 mvv
@@ -99245,6 +99730,13 @@ xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+kVt
+mvv
+mvv
+mvv
+bpD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 neo
 neo
@@ -99254,12 +99746,17 @@ cIR
 xOt
 xCo
 <<<<<<< HEAD
+<<<<<<< HEAD
 mvv
 mvv
 =======
 xSC
 xSC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+mvv
+mvv
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 vIl
 ktB
 ktB
@@ -99486,6 +99983,9 @@ gcK
 gcK
 lDv
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mfD
 mfD
 mfD
@@ -99503,6 +100003,7 @@ mvv
 mvv
 mvv
 mvv
+<<<<<<< HEAD
 hBd
 mvv
 mvv
@@ -99532,6 +100033,13 @@ xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+hBd
+mvv
+mvv
+mvv
+bpD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 ptg
 neo
@@ -99539,6 +100047,7 @@ neo
 neo
 wIO
 xOt
+<<<<<<< HEAD
 <<<<<<< HEAD
 nlO
 mfD
@@ -99548,6 +100057,11 @@ diK
 pQX
 pQX
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+nlO
+mfD
+mfD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 kFa
 ktB
 ktB
@@ -99775,6 +100289,9 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pEv
 fyf
 tBN
@@ -99783,6 +100300,7 @@ pSC
 pSC
 hxO
 aBH
+<<<<<<< HEAD
 ych
 mfD
 vtb
@@ -99805,20 +100323,28 @@ qdm
 qdm
 irQ
 rRJ
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ych
-pQX
-tly
-pQX
+mfD
+vtb
+mfD
 wGh
-xSC
-xSC
-xSC
-xSC
+mvv
+mvv
+mvv
+mvv
 npL
+<<<<<<< HEAD
 xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+mvv
+mvv
+bpD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 vEo
 neo
@@ -99826,6 +100352,7 @@ uom
 neo
 hWd
 xOt
+<<<<<<< HEAD
 <<<<<<< HEAD
 fyf
 pYD
@@ -99837,6 +100364,12 @@ pYD
 mcp
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+pYD
+fyf
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 ktB
@@ -100063,6 +100596,7 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 fFu
 bBJ
 tBN
@@ -100107,6 +100641,29 @@ xSC
 xSC
 ill
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fFu
+bBJ
+tBN
+hxO
+pSC
+pSC
+hxO
+bpD
+fyf
+fyf
+thG
+fyf
+aut
+aFF
+mvv
+aFF
+mvv
+mvv
+mvv
+mvv
+bpD
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xOt
 xOt
 xOt
@@ -100114,6 +100671,7 @@ xOt
 ybm
 xOt
 xOt
+<<<<<<< HEAD
 <<<<<<< HEAD
 jWO
 eEB
@@ -100125,6 +100683,12 @@ eEB
 mcp
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+jWO
+eEB
+fyf
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 rRT
@@ -100352,6 +100916,9 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 dhD
 tBN
 hxO
@@ -100364,6 +100931,7 @@ fyf
 thG
 fyf
 pMI
+<<<<<<< HEAD
 xSV
 mvv
 mvv
@@ -100396,16 +100964,19 @@ mcp
 mNU
 mcp
 iFI
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 xSV
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-qfo
-kfU
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+doX
+cWG
 bnY
+<<<<<<< HEAD
 kfU
 nDk
 mcp
@@ -100416,6 +100987,17 @@ seI
 mcp
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+cWG
+wDc
+fyf
+fyf
+fyf
+fyf
+mBd
+fyf
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 rRT
@@ -100643,6 +101225,7 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
 gcK
 nlO
 mKm
@@ -100676,35 +101259,44 @@ xwl
 =======
 cbX
 diK
+=======
+gcK
+nlO
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 mKm
-pQX
-pQX
+mfD
+mfD
 mKm
-sfc
-mcp
-mcp
-mNU
-tYV
-iFI
-xZK
-xSC
-xZK
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
-xSC
+hCg
+fyf
+fyf
+thG
+kEE
+pMI
+agd
+mvv
+agd
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
+mvv
 hJh
-mcp
-seI
+fyf
+mBd
 fmO
 pci
+<<<<<<< HEAD
 mcp
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 ktB
@@ -100933,6 +101525,9 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 gcK
 gcK
 hBr
@@ -100947,6 +101542,7 @@ fFu
 pMI
 pMI
 pMI
+<<<<<<< HEAD
 aut
 xhP
 mfD
@@ -100971,30 +101567,32 @@ iFI
 iFI
 iFI
 cbX
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 aut
-mcp
-mNU
-aDn
-iFI
-iFI
-iFI
-vCw
 xhP
-pQX
-pQX
-pQX
-pQX
-pQX
-pQX
-pQX
-sfc
-mcp
+mfD
+mfD
+mfD
+mfD
+mfD
+mfD
+mfD
+hCg
+fyf
 nKC
+<<<<<<< HEAD
 mcp
 mcp
 mcp
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+fyf
+fyf
+fyf
+xwl
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 ktB
 ktB
 ktB
@@ -101230,10 +101828,10 @@ ktB
 gcK
 gcK
 gcK
-aut
-mNU
-aDn
-aut
+pEv
+thG
+fFu
+pEv
 gcK
 gcK
 gcK
@@ -101245,12 +101843,16 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pEv
 fyf
 fyf
 fyf
 fyf
 fyf
+<<<<<<< HEAD
 =======
 aut
 mcp
@@ -101259,6 +101861,8 @@ mcp
 mcp
 mcp
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 rAp
 cCJ
 ktB
@@ -101514,16 +102118,22 @@ gcK
 gcK
 gcK
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 pEv
 fFu
 fyf
 xwl
+<<<<<<< HEAD
 =======
 aut
 aDn
 mcp
 rrC
 >>>>>>> aa62a08d3d... Reworks the BoS village to have more of the old stuff.
+=======
+>>>>>>> 8797b5aa32... Adjusts areas in the surface village.
 rRT
 ktB
 ktB
