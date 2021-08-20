@@ -240,7 +240,7 @@
 
 /obj/item/fusion_fuel/examine(mob/user)
 	. = ..()
-	to_chat(user, "The charge meter reads [fuel].")
+	. += "The charge meter reads [fuel]."
 
 /obj/item/clothing/suit/armor/f13/power_armor/attackby(obj/item/I, mob/user, params)
 	. = ..()
