@@ -2500,11 +2500,9 @@
 	},
 /area/f13/building)
 "bdE" = (
-/obj/structure/chair/f13chair2,
-/turf/open/floor/f13{
-	icon_state = "floordirty"
-	},
-/area/f13/followers)
+/obj/machinery/jukebox,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "bdF" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -22414,12 +22412,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"jQb" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/building)
 "jQd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -24328,6 +24320,12 @@
 	icon_state = "floordirty"
 	},
 /area/f13/bunker)
+"kIM" = (
+/obj/structure/chair/f13chair2,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/followers)
 "kJn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt{
@@ -48520,6 +48518,12 @@
 	icon_state = "verticalinnermain2top"
 	},
 /area/f13/wasteland)
+"vNe" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
+/area/f13/building)
 "vNg" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile{
@@ -79936,7 +79940,7 @@ eKX
 nms
 vYg
 wPf
-jQb
+vNe
 bgJ
 dCV
 uqa
@@ -86607,7 +86611,7 @@ hyU
 xAx
 ydO
 itv
-bdE
+kIM
 ifU
 kLO
 sHr
@@ -97118,7 +97122,7 @@ ozq
 hRB
 iMu
 aRl
-aRl
+bdE
 uqa
 nbI
 oBj
