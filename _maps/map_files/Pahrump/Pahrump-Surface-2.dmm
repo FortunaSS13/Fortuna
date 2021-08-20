@@ -2647,9 +2647,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
 "bgY" = (
 /obj/structure/rack,
@@ -33625,6 +33623,12 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"pgO" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
+/area/f13/building)
 "phu" = (
 /mob/living/simple_animal/hostile/ghoul,
 /obj/effect/decal/cleanable/dirt,
@@ -39153,9 +39157,7 @@
 	pixel_x = -16;
 	pixel_y = -16
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
 "rHO" = (
 /obj/effect/decal/cleanable/oil,
@@ -43031,9 +43033,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
 "tsQ" = (
 /obj/structure/table/reinforced,
@@ -50804,9 +50804,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
 "wPl" = (
 /obj/machinery/vending/nukacolavend,
@@ -79938,7 +79936,7 @@ eKX
 nms
 vYg
 wPf
-kTf
+pgO
 bgJ
 dCV
 uqa
@@ -95570,7 +95568,7 @@ bFJ
 uqa
 dCV
 dCV
-cPg
+kEI
 oLL
 fky
 fGh
@@ -95827,7 +95825,7 @@ bKv
 uqa
 dCV
 dCV
-cPg
+kEI
 etI
 eHj
 fGr
@@ -96084,7 +96082,7 @@ bKv
 uqa
 dCV
 dCV
-cPg
+kEI
 exL
 eHj
 fQr
@@ -96855,7 +96853,7 @@ wVn
 uqa
 dCV
 dCV
-cPg
+kEI
 eHj
 eHj
 aRl
