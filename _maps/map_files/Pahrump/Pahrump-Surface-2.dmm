@@ -2500,10 +2500,9 @@
 	},
 /area/f13/building)
 "bdE" = (
-/obj/structure/window/reinforced/fulltile,
-/obj/structure/grille,
+/obj/structure/chair/f13chair2,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "floordirty"
 	},
 /area/f13/followers)
 "bdF" = (
@@ -19347,6 +19346,7 @@
 /obj/structure/closet/cabinet/anchored,
 /obj/item/stack/f13Cash/random/high,
 /obj/item/megaphone,
+/obj/item/storage/box/citizenship_permits,
 /turf/open/floor/carpet/royalblack,
 /area/f13/building)
 "iEa" = (
@@ -22413,6 +22413,12 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
+/area/f13/building)
+"jQb" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
 "jQd" = (
 /obj/effect/decal/cleanable/dirt,
@@ -33622,12 +33628,6 @@
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/bars,
 /turf/open/floor/f13/wood,
-/area/f13/building)
-"pgO" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
 "phu" = (
 /mob/living/simple_animal/hostile/ghoul,
@@ -79936,7 +79936,7 @@ eKX
 nms
 vYg
 wPf
-pgO
+jQb
 bgJ
 dCV
 uqa
@@ -86607,7 +86607,7 @@ hyU
 xAx
 ydO
 itv
-ifU
+bdE
 ifU
 kLO
 sHr
@@ -87120,7 +87120,7 @@ rrh
 mMX
 sYX
 ydO
-bdE
+uwa
 dxa
 ifU
 ifU
