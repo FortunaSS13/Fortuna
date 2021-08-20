@@ -84,16 +84,13 @@
 			SELECT id FROM [format_table_name("poll_question")]
 			WHERE (adminonly = 0 OR :isadmin = 1)
 			AND Now() BETWEEN starttime AND endtime
-			AND deleted = 0
 			AND id NOT IN (
 				SELECT pollid FROM [format_table_name("poll_vote")]
 				WHERE ckey = :ckey
-				AND deleted = 0
 			)
 			AND id NOT IN (
 				SELECT pollid FROM [format_table_name("poll_textreply")]
 				WHERE ckey = :ckey
-				AND deleted = 0
 			)
 		"}, list("isadmin" = isadmin, "ckey" = ckey))
 		var/rs = REF(src)
@@ -430,7 +427,7 @@
 		return JOB_UNAVAILABLE_GENERIC
 	if(!client.prefs.pref_species.qualifies_for_rank(rank, client.prefs.features))
 		return JOB_UNAVAILABLE_SPECIESLOCK
-	if(LAZYLEN(SSmapping.config.removed_jobs))
+	if(LAZYLEN(SSmapping?.config?.removed_jobs))
 		for(var/J in SSmapping.config.removed_jobs) //Search through our individual jobs to be removed
 			if(job.title == J) //Found one, abort.
 				return JOB_UNAVAILABLE_GENERIC
