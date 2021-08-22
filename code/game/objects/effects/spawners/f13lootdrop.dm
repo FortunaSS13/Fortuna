@@ -453,7 +453,7 @@
 
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 70,
-			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 20,
+			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 35,
 			/obj/effect/spawner/lootdrop/f13/armor/tier4 = 10
 			///obj/item/traumapack = 1 //one ring to rule them all
 			)
