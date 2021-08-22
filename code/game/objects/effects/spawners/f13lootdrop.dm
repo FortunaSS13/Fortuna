@@ -135,12 +135,7 @@
 				/obj/item/clothing/shoes/laceup
 				)
 
-/obj/effect/spawner/bundle/f13/owo
-	name = "bandage dress and shoes"
-	items = list(
-				/obj/item/clothing/under/f13/erpdress,
-				/obj/item/clothing/shoes/laceup
-				)
+
 
 /obj/effect/spawner/lootdrop/f13/armor/costumes
 	name = "pre-war costumes spawner"
