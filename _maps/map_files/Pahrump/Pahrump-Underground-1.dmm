@@ -6168,7 +6168,10 @@
 	name = "Reactor Camera";
 	network = list("BoS")
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/obj/structure/lattice{
+	density = 1
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/reactor)
 "dIU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6485,7 +6488,10 @@
 "dSo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/obj/structure/lattice{
+	density = 1
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/reactor)
 "dSv" = (
 /obj/structure/rack,
@@ -9893,6 +9899,16 @@
 	baseturfs = /turf/open/floor/plating/f13/outside/desert
 	},
 /area/f13/caves)
+"fRc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice{
+	density = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/reactor)
 "fRK" = (
 /turf/open/floor/f13{
 	dir = 8;
@@ -10989,6 +11005,19 @@
 /obj/structure/ore_box,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"gCj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice{
+	density = 1
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/reactor)
 "gCt" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -26077,10 +26106,10 @@
 /area/f13/followers)
 "rbh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/lattice{
+	density = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/reactor)
 "rbv" = (
 /obj/structure/table/wood,
@@ -27156,10 +27185,6 @@
 /obj/structure/rack,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"rOp" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
-/area/f13/brotherhood/reactor)
 "rOq" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13{
@@ -28980,6 +29005,16 @@
 	},
 /turf/open/floor/wood/f13,
 /area/f13/den)
+"trq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice{
+	density = 1
+	},
+/obj/structure/lattice{
+	density = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/reactor)
 "trA" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 2
@@ -29509,10 +29544,8 @@
 /area/f13/followers)
 "tKG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/reactor)
 "tKU" = (
 /turf/closed/mineral/random/low_chance{
@@ -31701,6 +31734,16 @@
 	icon_state = "whitedirtysolid"
 	},
 /area/f13/den)
+"vrb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice{
+	density = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 5
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/reactor)
 "vrv" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -90730,8 +90773,8 @@ ddQ
 ofM
 biZ
 smy
-rOp
-rOp
+tKG
+vrb
 vHa
 vHa
 vHa
@@ -90988,7 +91031,7 @@ ozQ
 vsI
 smy
 tKG
-rOp
+tKG
 vHa
 vHa
 vHa
@@ -91244,12 +91287,12 @@ vsI
 eYX
 vsI
 smy
-rOp
-rOp
+gCj
+fRc
 vHa
 vHa
 vHa
-rOp
+rbh
 smy
 aVX
 pKy
@@ -91501,12 +91544,12 @@ vsI
 slT
 vsI
 smy
-rOp
-rOp
-rOp
 rbh
-rOp
-rOp
+trq
+rbh
+rbh
+rbh
+rbh
 smy
 fGg
 iJd
