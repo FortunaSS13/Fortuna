@@ -24404,6 +24404,9 @@
 	start_charge = 500
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/rnd)
 "qba" = (
