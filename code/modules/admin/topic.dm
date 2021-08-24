@@ -676,6 +676,23 @@
 	************************************WARNING!***********************************/
 		var/counter = 0
 //Regular jobs
+	//Command (Deep Blue)
+		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
+		dat += "<tr align='center' bgcolor='238dff'><th colspan='[length(GLOB.command_positions)]'><a href='?src=[REF(src)];[HrefToken()];jobban3=commanddept;jobban4=[REF(M)]' style='color: white;'>Command Positions</a></th></tr><tr align='center'>"
+		for(var/jobPos in GLOB.command_positions)
+			if(!jobPos)
+				continue
+			if(jobban_isbanned(M, jobPos))
+				dat += "<td width='15%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[jobPos];jobban4=[REF(M)]'><font color=red>[jobPos]</font></a></td>"
+				counter++
+			else
+				dat += "<td width='15%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[jobPos];jobban4=[REF(M)]'>[jobPos]</a></td>"
+				counter++
+
+			if(counter >= 6) //So things dont get squiiiiished!
+				dat += "</tr><tr>"
+				counter = 0
+		dat += "</tr></table>"
 
 	//BoS (Steel Blue)
 		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
@@ -1005,6 +1022,11 @@
 		//get jobs for department if specified, otherwise just return the one job in a list.
 		var/list/joblist = list()
 		switch(href_list["jobban3"])
+			if("commanddept")
+				for(var/jobPos in GLOB.command_positions)
+					if(!jobPos)
+						continue
+					joblist += jobPos
 			if("brotherhooddept")
 				for(var/jobPos in GLOB.brotherhood_positions)
 					if(!jobPos)
