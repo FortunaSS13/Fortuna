@@ -73,7 +73,6 @@ Mayor
 		/obj/item/pen/fountain/captain = 1)
 
 /*--------------------------------------------------------------*/
-/*
 /datum/job/oasis/f13secretary
 	title = "Secretary"
 	flag = F13SECRETARY
@@ -111,7 +110,8 @@ Mayor
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	l_pocket = /obj/item/storage/bag/money/small/settler
-	r_pocket = /obj/item/flashlight/flare
+	r_pocket = /obj/item/melee/onehanded/knife/switchblade
+	belt = /obj/item/pda
 	r_hand = /obj/item/storage/briefcase
 	l_hand = /obj/item/pen/fourcolor
 	shoes = /obj/item/clothing/shoes/f13/fancy
@@ -119,10 +119,8 @@ Mayor
 		/obj/item/clipboard = 1,
 		/obj/item/paper_bin/bundlenatural = 1,
 		/obj/item/clothing/under/suit/black/skirt = 1,
-		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
-		/obj/item/suppressor = 1,
+		/obj/item/gun/ballistic/automatic/pistol/sig/suppressor = 1,
 		)
-*/
 
 /*--------------------------------------------------------------*/
 /datum/job/oasis/f13sheriff
@@ -271,13 +269,12 @@ Mayor
 	uniform = /obj/item/clothing/under/f13/combat/militia
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	head = /obj/item/clothing/head/helmet
-	r_hand = /obj/item/gun/ballistic/automatic/marksman/policerifle
+	r_hand = /obj/item/gun/ballistic/automatic/smg/smg10mm/worn
 	belt = /obj/item/melee/onehanded/knife/switchblade
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 1,
 		)
-	
 	
 /datum/outfit/job/den/f13deputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
