@@ -112,14 +112,10 @@ Mayor
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/melee/onehanded/knife/switchblade
 	belt = /obj/item/pda
-	r_hand = /obj/item/storage/briefcase
-	l_hand = /obj/item/pen/fourcolor
+	r_hand = /obj/item/storage/briefcase/secretary
 	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack_contents = list(
-		/obj/item/clipboard = 1,
-		/obj/item/paper_bin/bundlenatural = 1,
-		/obj/item/clothing/under/suit/black/skirt = 1,
-		/obj/item/gun/ballistic/automatic/pistol/sig/suppressor = 1,
+	backpack_contents = list(/obj/item/flashlight/seclite = 1,
+		/obj/item/ammo_box/magazine/m9mm = 1,
 		)
 
 /*--------------------------------------------------------------*/
