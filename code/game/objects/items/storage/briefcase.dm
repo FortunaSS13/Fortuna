@@ -106,3 +106,14 @@
 	new /obj/item/healthanalyzer(src)
 	..() //Incase of paperwork
 
+/obj/item/storage/briefcase/secretary
+	name = "fancy briefcase"
+	desc = "a gecko-skin briefcase with nickel-plated hinges and carrying handle, the height of post-war business fashion."
+	
+/obj/item/storage/briefcase/secretary/populate/PopulateContents()
+	new /obj/item/suppressor(src)
+	new /obj/item/gun/ballistic/automatic/pistol/sig(src)
+	new /obj/item/paper_bin/bundlenatural(src)
+	new /obj/item/clothing/under/suit/black/skirt(src)
+	new /obj/item/pen(src)
+	
