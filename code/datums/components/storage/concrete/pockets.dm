@@ -138,13 +138,13 @@
 	. = ..()
 	can_hold = GLOB.storage_holster_can_hold
 
-
-GLOBAL_LIST_INIT(storage_treasurer_can_hold, typecacheof(list(
-	/obj/item/stack/f13Cash,
-	/obj/item/key,
-	/obj/item/melee/onehanded/knife,
-	/obj/item/paper,
-	)))
+/datum/component/storage/concrete/pockets/small/holdout
+	max_items = 1
+	attack_hand_interact = TRUE
+	
+/datum/component/storage/concrete/pockets/small/holdout/Initialize()
+	. = ..()
+	can_hold = GLOB.storage_holdout_can_hold
 
 GLOBAL_LIST_INIT(storage_bartender_can_hold, typecacheof(list(
 	/obj/item/kitchen,
@@ -245,3 +245,9 @@ GLOBAL_LIST_INIT(storage_hat_can_hold, typecacheof(list(
 GLOBAL_LIST_INIT(storage_binocular_can_hold, typecacheof(list(
 	/obj/item/binoculars,
 	)))
+
+GLOBAL_LIST_INIT(storage_holdout_can_hold, typecacheof(list(
+	/obj/item/gun/ballistic/automatic/pistol,
+	/obj/item/gun/ballistic/revolver,
+	/obj/item/gun/energy/laser/pistol,
+)))
