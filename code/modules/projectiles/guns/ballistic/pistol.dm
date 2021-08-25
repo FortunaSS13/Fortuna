@@ -143,7 +143,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	extra_damage = 5
 	fire_delay = 2.6
-	bullet speed +100
+	extra_speed = 100
 	spread = 0
 
 
