@@ -579,7 +579,7 @@
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/ethanol,
-		/datum/reagent/consumable/ethanol/fernet
+		/datum/reagent/consumable/ethanol/fernet,
 		/datum/reagent/consumable/ethanol/applejack,
 	)
 	upgrade_reagents2 = list(
