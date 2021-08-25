@@ -11,7 +11,6 @@
 	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot
 	var/list/speechspan = null
 	armor = list("tier" = 1)
-	//var/tinkered = 0
 
 /obj/item/clothing/head/Initialize()
 	. = ..()
@@ -73,6 +72,21 @@
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_head()
+
+/obj/item/clothing/head/equipped(mob/user, slot)
+	. = ..()
+	if(ishuman(user) && slot == SLOT_HEAD && speechspan)
+		var/mob/living/carbon/human/H = user
+		H.speech_span = speechspan
+
+/obj/item/clothing/head/dropped(mob/user)
+	. = ..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	if(H.get_item_by_slot(SLOT_HEAD) == src && speechspan)
+		H.speech_span = null
+
 /*
 //Hat accessories
 
