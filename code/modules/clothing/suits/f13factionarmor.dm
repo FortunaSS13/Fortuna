@@ -629,11 +629,8 @@
 	icon_state = "warden_alt"
 	item_state = "armor"
 	armor = list("tier" = 5, "linebullet" = 30, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny/holdout
-	
-/datum/component/storage/concrete/pockets/tiny/holdout
-	attack_hand_interact = TRUE
-	
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
+
 /obj/item/clothing/suit/armor/f13/town/deputy
 	name = "deputy trenchcoat"
 	desc = "(V) An armored trench coat with added shoulderpads, a chestplate, and legguards."
