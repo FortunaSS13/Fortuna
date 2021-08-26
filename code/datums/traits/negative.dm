@@ -45,16 +45,18 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/mob/living/carbon/human/H = quirk_holder
 	var/obj/item/heirloom_type
 	switch(quirk_holder.mind.assigned_role)
-		if("Cook")
-			heirloom_type = /obj/item/kitchen/knife/butcher
-		if("Botanist")
-			heirloom_type = pick(/obj/item/cultivator, /obj/item/reagent_containers/glass/bucket, /obj/item/storage/bag/plants, /obj/item/toy/plush/beeplushie)
-		if("Medical Doctor")
-			heirloom_type = /obj/item/healthanalyzer
-		if("Paramedic")
-			heirloom_type = /obj/item/lighter
-		if("Station Engineer")
-			heirloom_type = /obj/item/wirecutters/brass
+		if("Scribe")
+			heirloom_type = pick(/obj/item/trash/f13/electronic/toaster, /obj/item/screwdriver/crude)
+		if("Sheriff")
+			heirloom_type = /obj/item/clothing/accessory/medal
+		if("Shopkeeper")
+			heirloom_type = /obj/item/coin/plasma
+		if("Followers Doctor")
+			heirloom_type = /obj/item/clothing/neck/stethoscope
+		if("Prime Legionnaire")
+			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
+		if("Recruit Legionnaire")
+			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake, /obj/item/toy/plush/mr_buckety)
 		if("Atmospheric Technician")
 			heirloom_type = /obj/item/extinguisher/mini/family
 		if("Lawyer")
@@ -75,7 +77,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		heirloom_type = pick(
 		/obj/item/toy/cards/deck,
 		/obj/item/lighter,
-		/obj/item/dice/d20)
+		/obj/item/card/id/rusted,
+		/obj/item/card/id/rusted/fadedvaultid,
+		/obj/item/clothing/gloves/ring/silver,
+		/obj/item/toy/figure/detective,
+		)
 	heirloom = new heirloom_type(get_turf(quirk_holder))
 	GLOB.family_heirlooms += heirloom
 	var/list/slots = list(
