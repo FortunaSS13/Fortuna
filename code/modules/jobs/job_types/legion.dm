@@ -191,9 +191,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		// 10mm SMG, Thermic lance
-		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, Spatha
-		/datum/outfit/loadout/centurion,	// M1919 Machinegun, Powerfist
+		/datum/outfit/loadout/palacent,		// M1919, military ripper
+		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, AMR
+		/datum/outfit/loadout/centurion,	// 10mm SMG, Powerfist
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -231,7 +231,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
 	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
-		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/melee/powered/ripper/prewar,
 		/obj/item/ammo_box/magazine/mm762 = 1,
 		)
 
