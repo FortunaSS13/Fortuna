@@ -65,8 +65,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
 		if("Recruit Legionnaire")
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake)
-		if("Atmospheric Technician")
-			heirloom_type = /obj/item/extinguisher/mini/family
+		if("Den Mob Boss")
+			heirloom_type = /obj/item/lighter/gold
 		if("Lawyer")
 			heirloom_type = /obj/item/storage/briefcase/lawyer/family
 		if("Janitor")
