@@ -48,15 +48,19 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		if("Scribe")
 			heirloom_type = pick(/obj/item/trash/f13/electronic/toaster, /obj/item/screwdriver/crude)
 		if("Sheriff")
-			heirloom_type = /obj/item/clothing/accessory/medal
+			heirloom_type = /obj/item/clothing/accessory/medal/silver
+		if("Deputy")
+			heirloom_type = /obj/item/clothing/accessory/medal/bronze_heart
 		if("Shopkeeper")
 			heirloom_type = /obj/item/coin/plasma
 		if("Followers Doctor")
 			heirloom_type = /obj/item/clothing/neck/stethoscope
+		if("Followers Administrator")
+			heirloom_type = pick(item/clothing/neck/stethoscope, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
 		if("Prime Legionnaire")
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
 		if("Recruit Legionnaire")
-			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake, /obj/item/toy/plush/mr_buckety)
+			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake)
 		if("Atmospheric Technician")
 			heirloom_type = /obj/item/extinguisher/mini/family
 		if("Lawyer")
