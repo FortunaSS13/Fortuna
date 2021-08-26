@@ -1533,7 +1533,7 @@
 	setDir(pick(GLOB.cardinals))
 
 /obj/item/toy/tragicthegarnering
-	name = ""Tragic: The Garnering" deck"
+	name = "'Tragic: The Garnering' deck"
 	desc = "the greatest pre-war TCG. Dangerously addictive."
 	icon_state = "deck_nanotrasen_full"
 	attack_verb = list("declares an attack against")
