@@ -25842,6 +25842,13 @@
 	icon_state = "housewood2"
 	},
 /area/f13/tunnel)
+"sKj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/wardrobe,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/operations)
 "sLx" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -74052,7 +74059,7 @@ xBs
 yhh
 aGH
 aGH
-yhh
+sKj
 cxR
 cSH
 dwv

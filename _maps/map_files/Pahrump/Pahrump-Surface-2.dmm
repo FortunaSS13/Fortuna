@@ -6615,9 +6615,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "cYu" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/pirate,
-/obj/item/clothing/head/pirate,
+/obj/machinery/vending/wardrobe,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
