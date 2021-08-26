@@ -24495,9 +24495,24 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+<<<<<<< HEAD
 "qcV" = (
 /obj/structure/flora/rock/jungle{
 	density = 1
+=======
+"qcN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/clothing,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/operations)
+"qdj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/grunge{
+	id_tag = null;
+	req_access_txt = "120"
+>>>>>>> fd29a2f682... Wardrobe additions (#46)
 	},
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/fence/handrail{
@@ -74762,6 +74777,75 @@ eLE
 eLE
 uoO
 uoO
+<<<<<<< HEAD
+=======
+xBs
+yhh
+aGH
+aGH
+qcN
+cxR
+cSH
+dwv
+dMH
+ecc
+eom
+ekl
+eME
+fhy
+fon
+xlN
+gcg
+glq
+gEA
+gHY
+gQx
+elv
+ekl
+eMM
+hso
+hOR
+icI
+ija
+ija
+ija
+jCU
+ija
+adx
+kFc
+hVV
+llt
+lDl
+mmQ
+lBX
+mmQ
+lDl
+llt
+hVV
+nEI
+kbH
+kbH
+kbH
+kbH
+xlN
+paF
+ncx
+yhh
+pJP
+ncx
+qmV
+ncx
+qFS
+yhh
+qZt
+rtO
+qZt
+qVG
+ssQ
+sAE
+yhh
+xBs
+>>>>>>> fd29a2f682... Wardrobe additions (#46)
 uoO
 uoO
 uoO
