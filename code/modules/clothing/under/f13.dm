@@ -229,20 +229,6 @@
 	item_state = "vetranger"
 	item_color = "vetranger"
 
-/obj/item/clothing/under/f13/ranger/vet/foxflannel
-	name = "black ranger flannel outfit"
-	desc = "A black flannel ontop of a pair of slim-fitting pre-war jeans that were kept in excellent condition. The back leather panel is worn out but you can barely make out: '512'."
-	icon_state = "foxflannel"
-	item_state = "foxflannel"
-	item_color = "foxflannel"
-
-/obj/item/clothing/under/f13/ranger/vet/thaxflannel
-	name = "Thaxton's ranger flannel outfit"
-	desc = "A simple outfit for a burly, big iron packin' lawman. A golden belt-buckle in the rough shape of a medallion is proudly presented atop a leather gunbelt."
-	icon_state = "thaxflannel"
-	item_state = "thaxflannel"
-	item_color = "thaxflannel"
-
 /obj/item/clothing/under/f13/ranger/erin
 	name = "desert pants"
 	desc = "An old pair of beat up, Pre-War BDUs. These ones are emblazoned with desert patterns, and it has been reinforced around the left knee."
@@ -1439,43 +1425,29 @@
 	icon_state = "jamrock_uniform"
 	item_state = "jamrock_uniform"
 
-/obj/item/clothing/under/f13/keksweater
-	name = "Red Sweater"
+/obj/item/clothing/under/f13/redsweater
+	name = "red sweater"
 	desc = "A dark red-sweater with some cargo-pants. Perfect for when it just gets too cold down in local air-conditioned areas."
 	icon_state = "brahminsss"
 	item_state = "brahminsss"
 
-/obj/item/clothing/under/f13/locust
-	name = "locust uniform"
-	desc = "An ancient pre-war army combat uniform. In use by the locust mercenaries."
-	icon_state = "locust"
-	item_state = "locust"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
-
-/obj/item/clothing/under/f13/gunner
-	name = "gunner combat uniform"
-	desc = "An ancient combat uniform, that went out of use around the time of the Great War. it has scratch marks and a skull painted on it to symbolize that its part of the gunners"
-	icon_state = "GunnerPlates"
-	item_state = "GunnerPlates"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
-
-/obj/item/clothing/under/f13/marlowduds
-	name = "Marlow gang attire"
-	desc = "A washed out crimson overshirt with blue neckerchief and suspended black slacks. The attire is synonymous with the colors of the criminal Marlow gang."
+/obj/item/clothing/under/f13/overshirt
+	name = "crimson overshirt"
+	desc = "A washed out crimson overshirt with blue neckerchief and suspended black slacks."
 	icon_state = "marlowduds"
 	item_state = "marlowduds"
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/ikeduds
-	name = "gunfighter's gang attire"
-	desc = "A washed out crimson overshirt with blue neckerchief and raw buckskin trousers. The attire is synonymous with the colors of the criminal Marlow gang."
+/obj/item/clothing/under/f13/buckskin
+	name = "buckskin attire"
+	desc = "A washed out crimson overshirt with blue neckerchief and raw buckskin trousers."
 	icon_state = "ikeduds"
 	item_state = "ikeduds"
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/helenduds
-	name = "gambler's gang attire"
-	desc = "A worn black dress shirt under a deep crimson vest with blue neckerchief and suspended black slacks. The attire is synonymous with the colors of the criminal Marlow gang."
+/obj/item/clothing/under/f13/gambler
+	name = "gambler attire"
+	desc = "A worn black dress shirt under a deep crimson vest with blue neckerchief and suspended black slacks."
 	icon_state = "helenduds"
 	item_state = "helenduds"
 	can_adjust = TRUE

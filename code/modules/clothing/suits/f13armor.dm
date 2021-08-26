@@ -744,6 +744,18 @@
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 
+/obj/item/clothing/suit/armor/f13/battlecoat/black
+	name = "black combat coat"
+	desc = "(III) A black combat coat lined with metal armor plates. The faded symbol of a skull is visible on the back."
+	icon_state = "black_coat"
+	item_state = "black_coat"
+
+/obj/item/clothing/suit/armor/f13/battlecoat/red
+	name = "red leather overcoat"
+	desc = "(III) A thick double-breasted red leather overcoat."
+	icon_state = "red_overcoat"
+	item_state = "red_overcoat"
+
 /obj/item/clothing/suit/armor/f13/battlecoat/vault
 	name = "command coat"
 	desc = "(III) A heavy pre-war bomber coat, dyed blue with the number '113' embroidered on the back. Most often worn by leaders, such as the Overseer."
@@ -806,108 +818,12 @@
 	item_state = "midwestpa" // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
 	desc = "This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities." // PATREON SUPPORTER CUSTOM GEAR, DO NOT USE.
 
-obj/item/clothing/suit/armor/f13/exile/cust0m
-	name = "Lorica Iudicis"
-	desc = "A set of well maintained though still quite clearly worn armor consisting of a metal vest, a Centurion's shoulder pad, a pair of Centurion's arm guards and an incredibly large, perhaps even over-sized fur cloak. Upon basic examination, one can see that every piece of metal bar the buckles on the leather straps and whatever scratches and blemishes are yet to be retouched is masterfully decorated with silver, in complete contrast to the blackness of the cloak. Though only upon closer examination can the intricacies of the armor set be observed. The most obvious piece is the metal vest which has clearly been engraved, mostly decorationally besides the name 'Iudex Flammae' near the top. Though the engravings provide no tactical advantage whatsoever, the sharp geometric shapes accompanied by smooth, tastefully placed curves would catch the eye of even the most skeptical engraving enjoyer. As for the shoulder pad and arm guards, they hold the same engravings, and though they are recognizable as salvage, they still look incredibly beautiful yet simultaneously sturdy. Not much of the metal seems to exist on the back though that is only due to the fact that the incredibly thick, durable and flexible bear pelt that covers it would definitely provide ample protection. The pelt itself is absolutely covered in thick, almost jet black fur. One can tell from touch that the skin underneath is about as sturdy as skin gets. The pelt hangs across the wearer's back, held up by the neck and shoulders. This armor was competently made, and it shows."
-	icon_state = "exilecust0m"
-	item_state = "exilecust0m"
-	var/adjusted = FALSE
-
-/obj/item/clothing/suit/armor/f13/exile/cust0m/verb/armor_adjust()
-	set name = "Adjust Armor"
-	set category = null
-	set src in usr
-
-	if(!adjusted)
-		adjusted = TRUE
-		icon_state = "exilecust0m_d"
-	else
-		adjusted = FALSE
-		icon_state = "exilecust0m"
-
-	if(ishuman(usr))
-		var/mob/living/carbon/human/H = usr
-		H.update_inv_w_uniform()
-		H.update_body()
-
-/obj/item/clothing/suit/armor/f13/exile/cust0m/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/harpercoat
-	name = "outlaw coat"
-	desc = "(IV) A combat duster"
-	icon_state = "harperduster"
-	armor = list("tier" = 4, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/raider/reptiliatenebris
-	name = "Reptilia Tenebris"
-	desc = "An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic. The color of this duster has been washed out time and time again, giving it a more faded look as if time gripped it heavily. Along with that, the duster has been dyed a deep shade of grey, and the body armor a darker shade of green."
-	icon_state = "reptiliatenebris"
-	item_state = "reptiliatenebris"
-
-/obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/shankduster
-	name = "follower's duster"
-	desc = "An old military-grade pre-war combat armor under a white weathered duster. An emblem of the Followers is painted on the back of it. It appears to be fitted with metal plates to replace the crumbling ceramic."
-	icon_state = "shank_follower"
-	item_state = "shank_follower"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-	strip_delay = 40
-
-/obj/item/clothing/suit/armor/f13/shankduster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/toggle/armor/f13/rangercustomdark
-	name = "tattered recon duster"
-	desc = "(III) A thicker than average duster worn by rangers out in the field. This one has been dyed black and appears to be a little more heavily armoured."
-	icon_state = "duster_recon_custom"
-	item_state = "duster_recon_custom"
-	armor = list("tier" = 3, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = -0.1
-
-/obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
-	name = "Champion of Kanab's Armor"
-	desc = "The armor of the Champion and Conqueror of the city in Utah named Kanab. The armor is made up of pieces of Power Armor and pre-war Riot Gear, the shin guards are spraypainted a dark crimson and the Power Armour pauldron has a red trim. The symbol of a Pheonix is carefully engraved and painted upon the chest piece... I wonder what it means.."
-	icon_state = "palacent_excess"
-	item_state = "palacent_excess"
-
 /obj/item/clothing/suit/donor/soldier
 	name = "Soldier's Greatcoat"
 	desc = "(III) A resistant, tan greatcoat, typically worn by pre-War Generals."
 	icon_state = "soldier"
 	item_state = "soldier"
 	armor = list("tier" = 3, "energy" = 30, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
-
-/obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
-	name = "sniper riot gear"
-	desc = "A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor and slain Centurion armor pieces by the wearer. A sniper's veil is wrapped around the neck."
-	icon_state = "foxranger"
-	item_state = "foxranger"
-
-/obj/item/clothing/suit/armor/f13/rangercombat/degancustom
-	name = "sniper riot gear"
-	desc = "A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor and slain Centurion armor pieces by the wearer. A sniper's veil is wrapped around the neck."
-	icon_state = "elite_riot"
-	item_state = "elite_riot"
-	armor = list("tier" = 2, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 20)
-
-/obj/item/clothing/suit/armor/f13/rangercombat/rigscustom
-	name = "11th armored calvary armor"
-	desc = "A suit of special military grade riot control gear and a duster, worn by 11th Armored Calvary Regiment members in The Divide before the war. Yellow markings are painted on the shoulderpads and forearm guards."
-	icon_state = "rigscustom_suit"
-	item_state = "rigscustom_suit"
-
-/obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
-	name = "spider riot gear"
-	desc = "A customised and faded suit of riot gear, reminiscient of that found near Hopeville in the Divide, with a pair of wrist mounted ammo pouches for easy access to spare munitions with a pair of stripes down the back made from a fire-proof material."
-	icon_state = "price_ranger"
-	item_state = "price_ranger"
 
 /obj/item/clothing/suit/toggle/armor/f13/cloakranger //Reskinned trail ranger gear
 	name = "ranger poncho"
@@ -917,51 +833,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0) //Same armor as trail ranger gear
 	slowdown = -0.14 //Same speed buff as trail ranger gear
 
-/obj/item/clothing/suit/armor/f13/herbertranger //Armor wise, it's reskinned raider armor.
-	name = "weathered desert ranger armor"
-	desc = "(IV) A set of pre-unification desert ranger armor, made using parts of what was once USMC riot armor. It looks as if it has been worn for decades; the coat has become discoloured from years under the Mojave sun and has multiple tears and bullet holes in its leather. The armor plating itself seems to be in relatively good shape, though it could do with some maintenance."
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	icon_state = "usmc_riot_gear"
-	item_state = "usmc_riot_gear"
-	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/herbertranger/Initialize() //HQ parts reinforcement, just like raider gear
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
-	name = "Marlow gang overcoat"
-	desc = "(IV) A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear."
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	icon_state = "marlowsuit"
-	item_state = "marlowsuit"
-	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-	strip_delay = 40
-
-/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
-	name = "gunfighter's overcoat"
-	desc = "(IV) A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes."
-	icon_state = "ikesuit"
-	item_state = "ikesuit"
-
-/obj/item/clothing/suit/armor/f13/ikesuit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
-	name = "vagabond's vest"
-	desc = "(IV) A padded thick red leather vest, coated in stitched pockets and other mends."
-	icon_state = "masonsuit"
-	item_state = "masonsuit"
-
-/obj/item/clothing/suit/armor/f13/masonsuit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING

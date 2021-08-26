@@ -71,6 +71,12 @@
 	cold_protection = CHEST | GROIN | LEGS
 	armor = list("melee" = 30, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 25, "acid" = 10)
 
+/obj/item/clothing/suit/armored/medium/combat/duster/black
+	name = "black combat duster"
+	desc = "An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
+	icon_state = "blackcombat"
+	item_state = "blackcombat"
+
 /obj/item/clothing/suit/armored/medium/combat/swat
 	name = "SWAT combat armor"
 	desc = "A custom version of the pre-war combat armor, slimmed down and minimalist for domestic S.W.A.T. teams."
@@ -176,13 +182,13 @@
 
 
 /obj/item/clothing/suit/armored/medium/armoredcoat
-	name = "armored battlecoat"
-	desc = "A heavy padded leather coat with faded colors, worn over a armor vest."
+	name = "tan battlecoat"
+	desc = "A heavy padded leather coat with faded colors, worn over an armor vest."
 	icon_state = "battlecoat_tan"
 	item_state = "battlecoat_tan"
 	armor = list("melee" = 20, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 20, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
 
-/obj/item/clothing/suit/armored/medium/duster_renegade
+/obj/item/clothing/suit/armored/medium/renegade
 	name = "renegade duster"
 	desc = "Metal armor worn under a stylish duster. For the bad boy who wants to look good while commiting murder."
 	icon_state = "duster-renegade"
@@ -282,7 +288,7 @@
 	armor = list("melee" = 25, "bullet" = 45, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 5)
 
 /obj/item/clothing/suit/armored/medium/ncrarmorofficer/captain
-	name = "NCR captain´s armor"
+	name = "NCR captains armor"
 	desc = "The captain gets to wear a non-regulation coat over his armor because he is in charge, and don't you forget it."
 	icon_state = "ncr_officer_coat"
 	item_state = "ncr_officer_coat"

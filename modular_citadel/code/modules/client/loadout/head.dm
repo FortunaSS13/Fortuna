@@ -263,11 +263,6 @@ datum/gear/head/steelpot_mp
 	path = /obj/item/clothing/head/f13/ranger_hat
 	cost = 2
 
-/datum/gear/head/ranger_banded
-	name = "banded cowboy hat"
-	path = /obj/item/clothing/head/f13/ranger_hat/banded
-	cost = 2
-
 /datum/gear/head/flakhelm
 	name = "(I) Flak Helmet"
 	path = /obj/item/clothing/head/flakhelm

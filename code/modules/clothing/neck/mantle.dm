@@ -103,6 +103,11 @@
 	cold_protection = CHEST|GROIN|ARMS
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
+/obj/item/clothing/neck/mantle/desert
+	name = "desert mantle"
+	desc = "A thin muslin poncho. Tough enough to bear the elements and serve as handy blanket."
+	icon_state = "desert"
+
 /obj/item/clothing/neck/mantle/ragged
 	name = "ragged mantle"
 	desc = "A worn and ripped old primitive mantle, made from sinew and bone."

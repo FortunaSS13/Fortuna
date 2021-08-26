@@ -700,6 +700,13 @@
 	flags_inv = HIDEHAIR
 	armor = list("tier" = 2)
 
+/obj/item/clothing/head/f13/cowboy/felt
+	name = "cowboy hat"
+	desc = "(II) A thick undyed felt cowboy hat."
+	icon_state = "marlowhat"
+	item_state = "marlowhat"
+	flags_inv = HIDEEARS|HIDEHAIR
+
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
 	desc = "(I) A black cowboy hat with a large brim that's curved to the sides.<br>A silver eagle pin is attached to the front."
@@ -840,66 +847,15 @@
 	item_state = "macarthur"
 	armor = list("tier" = 2, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20)
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/rigscustom
-	name = "11th armored calvary helmet"
-	desc = "An advanced combat helmet used by the 11th Armored Calvary Regiment before the war. There is a worn and faded 11th Armored Calvary Regiment's insignia just above the visor. The helmet itself has some scratches and dents sustained from battle."
-	icon_state = "rigscustom_helmet"
-	item_state = "rigscustom_helmet"
-	icon = 'icons/fallout/clothing/hats.dmi'
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
-	name = "spider riot helmet"
-	desc = "A customised riot helmet reminiscient of the more advanced riot helmets found in the Divide, sporting purple lenses over the traditional red or green and a pair of red fangs painted over the respirator. The back of the helmet has a the face of an albino spider painted over it."
-	icon_state = "price_ranger"
-	item_state = "price_ranger"
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
-	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
-	icon_state = "foxranger"
-	item_state = "foxranger"
-	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
-	can_toggle = 1
-	toggle_cooldown = 0
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/degancustom
-	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
-	icon_state = "elite_riot"
-	item_state = "elite_riot"
-	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
-	can_toggle = 1
-	toggle_cooldown = 0
-	armor = list("tier" = 2, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 20)
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/mosshelmet
-	name = "veteran patrol stetson"
-	desc = "A weathered campaign hat tightly fitted over the viscera of a ranger combat helmet. The old stetson is faded with age and heavy use, having seen the green shores of California to the white peaks of the rockies."
-	icon_state = "mosshelmet"
-	item_state = "mosshelmet"
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES
-
 /obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened
 	name = "hardened midwestern power helmet"
 	desc = "This helmet once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here. This particular one has gone through a chemical hardening process, increasing its armor capabilities."
 	icon_state = "midwestpa_helm"
 	item_state = "midwestpa_helm"
 
-/obj/item/clothing/head/helmet/f13/jasonmask
-	name = "jasons mask"
-	desc = "(II) A metal mask made specifically for jason."
-	icon_state = "jasonmask"
-	item_state = "jasonmask"
-	armor = list("tier" = 2, "energy" = 20, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 65, "acid" = 30)
-
 /obj/item/clothing/head/welding/f13/fire
 	name = "cremator welding helmet"
-	desc = "(III) A welding helmet with flames painted on it.<br>It sure is creepy but also badass."
+	desc = "(III) A welding helmet with flames painted on it."
 	icon_state = "welding_fire"
 	item_state = "welding"
 	tint = 1
@@ -921,37 +877,6 @@
 	item_state = "gamblerrang"
 	armor = list("tier" = 4, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
-/obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
-	name = "galerum lacertarex"
-	desc = "(VI) The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
-	icon_state = "diohelmet"
-	item_state = "diohelmet"
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
-
-/obj/item/clothing/head/helmet/f13/herbertranger
-	name = "weathered desert ranger helmet"
-	icon_state = "modified_usmc_riot"
-	item_state = "modified_usmc_riot"
-	desc = "(IV) An ancient USMC riot helmet. This paticular piece retains the classic colouration of the legendary Desert Rangers, and looks as if it has been worn for decades; its night vision no longer seems to be functional. Scratched into the helmet is the sentence: 'Death to the Devils that simulate our freedom.'"
-	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-
-/obj/item/clothing/head/helmet/f13/marlowhat
-	name = "boss of the plains hat"
-	desc = "(IV) A thick undyed felt cowboy hat, bleached from excessive sun exposure and creased from heavy usage."
-	icon_state = "marlowhat"
-	item_state = "marlowhat"
-	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
-	flags_inv = HIDEEARS|HIDEHAIR
-
-/obj/item/clothing/head/helmet/f13/marlowhat/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/f13/ranger_hat
 	name = "grey cowboy hat"
 	desc = "(II) A simple grey cowboy hat."
@@ -959,12 +884,6 @@
 	item_state = "ranger_grey_hat"
 	armor = list("tier" = 2, "energy" = 15, "bomb" = 0, "bio" = 0, "rad" = 70, "fire" = 70, "acid" = 15)
 	flags_inv = HIDEEARS|HIDEHAIR
-	
-/obj/item/clothing/head/f13/ranger_hat/banded
-	name = "banded cowboy hat"
-	desc = "(II) A grey cowboy hat with a hat band decorated with brassen rings."
-	icon_state = "ranger_banded_hat"
-	item_state = "ranger_banded_hat"
 	
 /obj/item/clothing/head/f13/ranger_hat/tan
 	name = "tan cowboy hat"

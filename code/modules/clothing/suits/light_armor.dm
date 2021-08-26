@@ -245,7 +245,7 @@
 	item_state = "leather_armor_mk2"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 12, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
 
-/obj/item/clothing/suit/armored/light/leathersuit
+/obj/item/clothing/suit/armored/light/leather/suit
 	name = "leather suit"
 	desc = "Comfortable suit of tanned leather leaving one arm mostly bare. Keeps you warm and cozy."
 	icon_state = "leather_suit"

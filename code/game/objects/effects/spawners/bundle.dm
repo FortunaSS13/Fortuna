@@ -223,7 +223,7 @@
 /obj/effect/spawner/bundle/teste
 	name = "E"
 	items = list(
-		/obj/item/clothing/suit/armored/light/leathersuit,		
+		/obj/item/clothing/suit/armored/light/leather/suit,		
 		/obj/item/melee/onehanded/machete/swordtesting,
 		/obj/item/gun/ballistic/automatic/pistol/pistoltesting,
 		)
