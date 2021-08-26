@@ -56,7 +56,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		if("Followers Doctor")
 			heirloom_type = /obj/item/clothing/neck/stethoscope
 		if("Followers Administrator")
-			heirloom_type = pick(item/clothing/neck/stethoscope, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
+			heirloom_type = pick(/obj/item/clothing/neck/stethoscope, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
 		if("Prime Legionnaire")
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
 		if("Recruit Legionnaire")
