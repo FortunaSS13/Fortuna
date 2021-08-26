@@ -1251,3 +1251,8 @@
 	item_state = "card-id_leg"
 	assignment = "US dogtags"
 	access = list(ACCESS_ENCLAVE)
+
+/obj/item/card/MDfakepermit
+	name = "faded medical license"
+	desc = "a revoked medical license. This is why we do not remove peoples skeletons "
+	icon_state = "doctor"
