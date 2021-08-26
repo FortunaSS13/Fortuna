@@ -46,7 +46,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/obj/item/heirloom_type
 	switch(quirk_holder.mind.assigned_role)
 		if("Scribe")
-			heirloom_type = pick(/obj/item/trash/f13/electronic/toaster, /obj/item/screwdriver/crude)
+			heirloom_type = pick(/obj/item/trash/f13/electronic/toaster, /obj/item/screwdriver/crude, /obj/item/toy/tragicthegarnering)
+		if("Knight")
+			heirloom_type = /obj/item/gun/ballistic/automatic/toy/pistol
+		if("BoS Off-Duty")
+			heirloom_type = /obj/item/toy/figure/borg
 		if("Sheriff")
 			heirloom_type = /obj/item/clothing/accessory/medal/silver
 		if("Deputy")
@@ -54,9 +58,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		if("Shopkeeper")
 			heirloom_type = /obj/item/coin/plasma
 		if("Followers Doctor")
-			heirloom_type = /obj/item/clothing/neck/stethoscope
+			heirloom_type = pick(/obj/item/clothing/neck/stethoscope,/obj/item/toy/tragicthegarnering)
 		if("Followers Administrator")
-			heirloom_type = pick(/obj/item/clothing/neck/stethoscope, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
+			heirloom_type = pick(/obj/item/toy/nuke, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
 		if("Prime Legionnaire")
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
 		if("Recruit Legionnaire")
@@ -85,6 +89,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		/obj/item/card/id/rusted/fadedvaultid,
 		/obj/item/clothing/gloves/ring/silver,
 		/obj/item/toy/figure/detective,
+		/obj/item/toy/tragicthegarnering,
 		)
 	heirloom = new heirloom_type(get_turf(quirk_holder))
 	GLOB.family_heirlooms += heirloom
