@@ -971,3 +971,9 @@
 	desc = "(II) A thick tanned leather hat, with a Montana Peak crease."
 	icon_state = "ranger_tan_hat"
 	item_state = "ranger_tan_hat"
+
+/obj/item/clothing/head/f13/stealthhelmetdonor
+	name = "chinese stealth helmet"
+	desc = "(II) A bright yellow visor in a timelessly infamous shape makes this helmet immediately recognizable. It's non-ballistic, and it's power unit for the HUD has been long since removed."
+	icon_state = "stealthhelmet"
+	item_state = "stealthhelmet"
