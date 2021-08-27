@@ -1538,6 +1538,12 @@
 	icon_state = "deck_nanotrasen_full"
 	attack_verb = list("declares an attack against")
 	
+/obj/item/toy/tragicthegarnering/attack_self(mob/user)
+	if(Adjacent(user))
+		user.visible_message("<span class='notice'>[user] resists the urge to play with his deck of Tragic, \
+					"<span class='notice'>Your hand is moving on its own! But you cannot allow yourself to get hooked to the game.</span>")
+		add_fingerprint(user)
+
 /obj/item/toy/tragicthegarnering/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] reaches zero life points! It looks like [user.p_they()] [user.p_have()] are about to enter the graveyard!</span>")
 	playsound(src, 'sound/items/cardshuffle.ogg', 50, 1)
