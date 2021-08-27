@@ -839,7 +839,7 @@ Raider
 	ears = /obj/item/radio/headset/headset_den
 	id = /obj/item/card/id/dentattoo
 	backpack_contents = list(
-						 /obj/item/gun/ballistic/automatic/smg/mp5,
+						 /obj/item/gun/ballistic/automatic/smg/mp5
 						)
 
 
@@ -1046,7 +1046,7 @@ backpack_contents = list(
 	name = "Italian Capo"
 	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
 	suit = 	/obj/item/clothing/under/suit_jacket/checkered
-    shoes = /obj/item/clothing/shoes/laceup/
+    shoes = /obj/item/clothing/shoes/laceup
 	belt = /obj/item/storage/belt/military/assault
 	backpack =	/obj/item/storage/backpack/satchel
 	ears = /obj/item/radio/headset/headset_den
@@ -1066,7 +1066,7 @@ backpack_contents = list(
 	backpack_contents = list(
 						/obj/item/clothing/shoes/laceup,
 						/obj/item/reagent/drug/methamphetamine
-						/obj/item/clothing/shoes/sneakers/white)
+						/obj/item/clothing/shoes/sneakers/white}
 
 /datum/outfit/job/wasteland/f13mobboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
