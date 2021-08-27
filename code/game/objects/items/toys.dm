@@ -1540,7 +1540,7 @@
 	
 /obj/item/toy/tragicthegarnering/attack_self(mob/user)
 	if(Adjacent(user))
-		user.visible_message("<span class='notice'>[user] resists the urge to play with his deck of Tragic, \
+		user.visible_message("<span class='notice'>[user] resists the urge to play with his deck of Tragic", \
 					"<span class='notice'>Your hand is moving on its own! But you cannot allow yourself to get hooked to the game.</span>")
 		add_fingerprint(user)
 
