@@ -923,7 +923,7 @@
 	
 /obj/item/card/id/dogtag/MDfakepermit
 	name = "faded medical license"
-	desc = "a revoked medical license. This is why we do not remove peoples skeletons "
+	desc = "a revoked medical license. This is why we do not remove people's skeletons "
 	access = list()
 
 /obj/item/card/id/dogtag/town/ncr
