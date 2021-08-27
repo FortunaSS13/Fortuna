@@ -817,7 +817,7 @@
 	if(HAS_TRAIT(user, TRAIT_SURGERY_MID) || HAS_TRAIT(user, TRAIT_SURGERY_HIGH))
 		to_chat(user, "<span class ='notice'>This book is too basic for you!")
 		return TRUE
-	return FALSE
+	return ..()
 
 /obj/item/book/granter/trait/midsurgery
 	name = "D.C. Journal of Internal Medicine"
@@ -827,11 +827,11 @@
 	traitname = "intermediate surgery"
 	remarks = list("Sterilization is essential before and after surgery.", "Keep track of all your tools, double check body cavities.", "Ensure complete focus while operating on the patient.", "Cauterize incisions once the operation concludes.", "Spare organs and blood must be kept at a low temperature.", "Most prosthesis come with significant trade-offs, and maintenance costs.",)
 
-/obj/item/book/granter/trait/lowsurgery/already_known(mob/user)
+/obj/item/book/granter/trait/midsurgery/already_known(mob/user)
 	if(HAS_TRAIT(user, TRAIT_SURGERY_HIGH))
 		to_chat(user, "<span class ='notice'>This book is too basic for you!")
 		return TRUE
-	return FALSE
+	return ..()
 
 /obj/item/book/granter/trait/techno
 	name = "Dean's Electronics"
