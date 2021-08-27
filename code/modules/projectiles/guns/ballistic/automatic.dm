@@ -552,27 +552,29 @@
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
-	extra_damage = -2
+	extra_damage = 2
 	fire_delay = 4
-	spread = 3
+	spread = 1
 	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
 	scope_y_offset = 15
-	suppressor_x_offset = 26
+	suppressor_x_offset = 26	
 	suppressor_y_offset = 28
 
 
-//Police rifle			Keywords: OASIS, 5.56mm, Semi-auto, 30 (10-50) round magazine
+//Police rifle			Keywords: OASIS, 5.56mm, Semi-auto, 20 (10-50) round magazine
 /obj/item/gun/ballistic/automatic/marksman/policerifle
 	name = "Police  rifle"
-	desc = "This old pre-war rifle made for law enforcement has been passed down generations in the Oasis Police Department, carefully repaired and rebuilt whenever damaged. Dried and crumbling polymers have been replaced with wood and reinforcing strips of leather, the black finish worn down a century ago, but it still works, as good as ever."
+	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Oasis Police Department. Held together by duct tape and prayers, it somehow still shoots."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "rifle-police"
 	item_state = "assault_carbine"
-	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/extended
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	extra_damage = -1
+	spread = 1.1
 	fire_delay = 4.2
 	can_suppress = FALSE
 	can_scope = TRUE
@@ -745,10 +747,11 @@
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
-	fire_delay = 7
+	fire_delay = 10
 	burst_size = 1
-	extra_speed = 500
-	extra_penetration = 0.1
+	extra_speed = 800
+	extra_penetration = 0.2
+	extra_damage = 10
 	zoom_amt = 10
 	zoom_out_amt = 13
 	semi_auto = TRUE
