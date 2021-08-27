@@ -79,13 +79,13 @@ Cyborg
 /datum/job/cyborg
 	title = "Cyborg"
 	flag = F13CYBORG
-	department_flag = VAULT
-	faction = "Vault"
-	total_positions = 0
-	spawn_positions = 0
-	forbids = "The Vault forbids: Disobeying the Overseer. Deserting the Vault unless it is rendered unhospitable. Killing fellow Vault Dwellers. Betraying the Vault and its people."
-	enforces = "The Vault expects: Contributing to Vault society. Adherence to Vault-tec Corporate Regulations. Participation in special projects, as ordered by the Overseer."
-	supervisors = "Overseer/Vault"	//Nodrak
+	department_flag = Oasis
+	faction = "oasis"
+	total_positions = 2
+	spawn_positions = 2
+	forbids = "The Oasis forbids: Disobeying the Mayor or the Sheriff. Deserting the city unless it is rendered unhospitable. Killing fellow Residents. Betraying the Oasis and its people."
+	enforces = "The Oasis expects: Contributing to Oasis society. Adherence to Oasis laws. Participation in special projects, as ordered by the Mayor or the Sheriff."
+	supervisors = "Oasis/Mayor"	//Nodrak
 	selection_color = "#ddffdd"
 	minimal_player_age = 21
 	exp_requirements = 600
@@ -108,8 +108,8 @@ Mr. Handy
 	flag = CYBORG
 	department_flag = ENGSEC
 	//
-	total_positions = 0
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "Your Creators"	//Nodrak
 	selection_color = "#ddffdd"
 	minimal_player_age = 21
