@@ -128,7 +128,7 @@ Mayor
 	suit = /obj/item/clothing/suit/armor/f13/town/sheriff
 	head = /obj/item/clothing/head/f13/town/sheriff
 	r_hand = /obj/item/gun/ballistic/rifle/repeater/brush
-	belt = /obj/item/gun/ballistic/revolver/m29/peacekeeper = 1
+	belt = /obj/item/gun/ballistic/revolver/m29/peacekeeper
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570 = 3,
 		/obj/item/ammo_box/m44 = 2,

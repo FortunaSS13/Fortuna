@@ -139,7 +139,7 @@
 //side grade to the peacemaker 		    Keywords: OASIS, 9mm, Semi-auto, +5 damage, 10 round magazine, 0 spread, faster rate of fire, bullet speed +100, probably needs a new sprite
 /obj/item/gun/ballistic/automatic/pistol/sig/commissioner
 	name = "The Defender"
-	desc = "A modified Sig P225 salvaged from the boneyard. Boasts a faster rate of fire and laser-like accuracy. It has "To Protect and Serve" etched on the side."
+	desc = "A modified Sig P225 salvaged from the boneyard. Boasts a faster rate of fire and laser-like accuracy. It has \"To Protect and Serve\" etched on the side."
 	w_class = WEIGHT_CLASS_SMALL
 	extra_damage = 5
 	fire_delay = 2.6
