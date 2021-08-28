@@ -830,62 +830,62 @@ Raider
 		DM.add_member(H)
 		H.gang = DM
 
- /datum/outfit/loadout/ronin
- name = "Ronin"
- jobtype = /datum/job/wasteland/ronin
- r_hand = /obj/item/katana
- suit = /obj/item/clothing/suit/armor/f13/combat/swat
- shoes = /obj/item/clothing/shoes/laceup
- belt = /obj/item/storage/belt/military/assault
- ears = /obj/item/radio/headset/headset_den
- id = /obj/item/card/id/dentattoo
- backpack_contents = list(
+/datum/outfit/loadout/ronin
+name = "Ronin"
+jobtype = /datum/job/wasteland/ronin
+r_hand = /obj/item/katana
+suit = /obj/item/clothing/suit/armor/f13/combat/swat
+shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
+backpack_contents = list(
 	/obj/item/gun/ballistic/automatic/smg/mp5)
 		
 
 
- /datum/outfit/loadout/ashigari
-	name = "Ashigari"
-	jobtype = /datum/job/wasteland/ashigari
-	r_hand = /obj/item/twohanded/spear
-	suit = /obj/item/clothing/suit/armor/f13/combat/dark
-	shoes = /obj/item/clothing/shoes/laceup
-	belt = /obj/item/storage/belt/military/assault
-	backpack =	/obj/item/storage/backpack/satchel
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+/datum/outfit/loadout/ashigari
+name = "Ashigari"
+jobtype = /datum/job/wasteland/ashigari
+r_hand = /obj/item/twohanded/spear
+suit = /obj/item/clothing/suit/armor/f13/combat/dark
+shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+backpack =	/obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
+backpack_contents = list(
     /obj/item/clothing/suit/jacket/leather,
 	/obj/item/clothing/neck/mantle/poncho,
     /obj/item/clothing/shoes/roman
 	)
 
- /datum/outfit/loadout/soldat
-	name = "Soldat"
-	jobtype = /datum/job/wasteland/soldat
-	r_hand = /obj/item/gun/ballistic/rifle/mosin
-	suit = /obj/item/clothing/suit/armor/vest
-	shoes = /obj/item/clothing/shoes/laceup
-	belt = /obj/item/storage/belt/military/assault
-	backpack =	/obj/item/storage/backpack/satchel
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+/datum/outfit/loadout/soldat
+name = "Soldat"
+jobtype = /datum/job/wasteland/soldat
+r_hand = /obj/item/gun/ballistic/rifle/mosin
+suit = /obj/item/clothing/suit/armor/vest
+shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+backpack =	/obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
+backpack_contents = list(
 		/obj/item/clothing/under/suit_jacket/charcoal,
 		/obj/item/clothing/neck/mantle/brown,
 		/obj/item/clothing/head/mask/black,
 	)
 
- /datum/outfit/loadout/soldatscouter
- jobtype = /datum/job/wasteland/soldatscouter
-  name = "Scouter"
-  r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
-  suit = /obj/item/clothing/under/soviet
-  shoes = /obj/item/clothing/shoes/laceup
-  belt = /obj/item/storage/belt/military/assault
-  backpack = /obj/item/storage/backpack/satchel
-  ears = /obj/item/radio/headset/headset_den
-  backpack_contents = list(
+/datum/outfit/loadout/soldatscouter
+jobtype = /datum/job/wasteland/soldatscouter
+name = "Scouter"
+r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
+suit = /obj/item/clothing/under/soviet
+shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+backpack = /obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+backpack_contents = list(
   /obj/item/ammo_box/magazine/uzim9mm/rockwell/,
 	
 )
@@ -939,16 +939,16 @@ Raider
 
 
 		
- /datum/outfit/loadout/shotgunner
-  name = "CQC"
-  jobtype = /datum/job/wasteland/shotgunner
-  r_hand = /obj/item/gun/ballistic/shotgun/trench
-  suit =	/obj/item/clothing/suit/armor/f13/combat
-  shoes = /obj/item/clothing/shoes/laceup
-  belt = /obj/item/storage/belt/military/assault
-  backpack =	/obj/item/storage/backpack/satchel
-  ears = /obj/item/radio/headset/headset_den
-  id = /obj/item/card/id/dentattoo
+/datum/outfit/loadout/shotgunner
+name = "CQC"
+jobtype = /datum/job/wasteland/shotgunner
+r_hand = /obj/item/gun/ballistic/shotgun/trench
+suit = /obj/item/clothing/suit/armor/f13/combat
+shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+backpack = /obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
   backpack_contents = list(
 		/obj/item/clothing/under/suit_jacket/navy,
 		)
@@ -1000,8 +1000,8 @@ Raider
 	r_pocket = /obj/item/flashlight/seclite
 	uniform = /obj/item/clothing/under/suit/white
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	backpack =	/obj/item/storage/backpack/satchel
-	satchel = 	/obj/item/storage/backpack/satchel
+	backpack = /obj/item/storage/backpack/satchel
+	satchel =  /obj/item/storage/backpack/satchel
 	gloves = /obj/item/clothing/gloves/color/white
 	head = /obj/item/clothing/head/caphat/beret/white
 	mask = /obj/item/clothing/mask/bandana/durathread
@@ -1030,7 +1030,7 @@ r_hand = /obj/item/katana
 suit = /obj/item/clothing/suit/armor/vest
 shoes = /obj/item/clothing/shoes/laceup
 belt = /obj/item/storage/belt/military/assault
-backpack =	/obj/item/storage/backpack/satchel
+backpack = /obj/item/storage/backpack/satchel
 ears = /obj/item/radio/headset/headset_den
 id = /obj/item/card/id/dentattoo
 backpack_contents = list(
@@ -1048,7 +1048,7 @@ backpack_contents = list(
  ears = /obj/item/radio/headset/headset_den
  id = /obj/item/card/id/dentattoo
  backpack_contents = list(
-						/obj/item/clothing/hat/beret/red)
+ /obj/item/clothing/hat/beret/red)
 					
 	                    
 
@@ -1058,7 +1058,7 @@ name = "Italian Capo"
 jobtype = /datum/job/wasteland/capo
 r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
 suit = /obj/item/clothing/suit/hooded/chaplain_hoodie
-   shoes = /obj/item/clothing/shoes/laceup
+shoes = /obj/item/clothing/shoes/laceup
 belt = /obj/item/storage/belt/military/assault
 backpack =	/obj/item/storage/backpack/satchel
 ears = /obj/item/radio/headset/headset_den
@@ -1073,7 +1073,7 @@ jobtype = /datum/job/wasteland/don
 r_hand = /obj/item/gun/ballistic/automatic/r84
 suit = /obj/item/clothing/suit/armor/bulletproof
 belt = /obj/item/storage/belt/military/assault
-backpack =	/obj/item/storage/backpack/satchel
+backpack = /obj/item/storage/backpack/satchel
 ears = /obj/item/radio/headset/headset_den
 id = /obj/item/card/id/dentattoo
 backpack_contents = list(
