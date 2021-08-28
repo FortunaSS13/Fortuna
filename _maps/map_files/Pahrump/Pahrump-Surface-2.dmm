@@ -29351,16 +29351,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nbI" = (
-/obj/structure/table/wood,
-/obj/item/storage/box/drinkingglasses,
-/obj/item/storage/box/drinkingglasses,
 /obj/machinery/light/sign{
 	icon_state = "maltesefalcon";
 	pixel_y = 32
 	},
-/obj/item/reagent_containers/food/drinks/bottle/fernet,
-/obj/item/vending_refill/clothing,
-/obj/item/vending_refill/boozeomat,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "nbJ" = (
@@ -33824,14 +33819,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pir" = (
-/obj/machinery/vending/boozeomat{
-	density = 0;
-	pixel_x = 32;
-	pixel_y = -32
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
+/obj/structure/table/wood,
+/obj/item/storage/box/drinkingglasses,
+/obj/item/storage/box/drinkingglasses,
+/obj/item/reagent_containers/food/drinks/bottle/fernet,
+/obj/item/vending_refill/clothing,
+/obj/item/vending_refill/boozeomat,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "pis" = (
@@ -96901,7 +96894,7 @@ mAA
 ozq
 ozq
 pfk
-nbS
+pir
 uqa
 mvv
 svA
@@ -97414,7 +97407,7 @@ bdE
 uqa
 nbI
 oBj
-pir
+ozq
 pCP
 hJs
 bpD
