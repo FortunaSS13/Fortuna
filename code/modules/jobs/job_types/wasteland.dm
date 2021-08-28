@@ -856,15 +856,14 @@ ears = /obj/item/radio/headset/headset_den
 id = /obj/item/card/id/dentattoo
 backpack_contents = list(
     /obj/item/clothing/suit/jacket/leather,
-	/obj/item/clothing/neck/mantle/poncho,
-    /obj/item/clothing/shoes/roman
+	/obj/item/clothing/neck/mantle/poncho
 	)
 
 /datum/outfit/loadout/soldat
 name = "Soldat"
 jobtype = /datum/job/wasteland/soldat
 r_hand = /obj/item/gun/ballistic/rifle/mosin
-suit = /obj/item/clothing/suit/armor/vest
+suit = /obj/item/clothing/suit/armored/light/duster
 shoes = /obj/item/clothing/shoes/laceup
 belt = /obj/item/storage/belt/military/assault
 backpack =	/obj/item/storage/backpack/satchel
