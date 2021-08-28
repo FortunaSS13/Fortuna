@@ -859,7 +859,7 @@ Raider
     /obj/item/clothing/shoes/roman
 	)
 
-/datum/outfit/loadout/soldat
+ /datum/outfit/loadout/soldat
 	name = "Soldat"
 	r_hand = /obj/item/gun/ballistic/rifle/mosin
 	suit = /obj/item/clothing/suit/armor/vest
@@ -875,20 +875,20 @@ Raider
 	)
 
  /datum/outfit/loadout/soldatscouter
-   name = "Scouter"
-   r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
-   suit = /obj/item/clothing/under/soviet
-   shoes = /obj/item/clothing/shoes/laceup
-   belt = /obj/item/storage/belt/military/assault
-   backpack =	/obj/item/storage/backpack/satchel
-   ears = /obj/item/radio/headset/headset_den
-   backpack_contents = list(
-	/obj/item/ammo_box/magazine/uzim9mm/rockwell/,
+  name = "Scouter"
+  r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
+  suit = /obj/item/clothing/under/soviet
+  shoes = /obj/item/clothing/shoes/laceup
+  belt = /obj/item/storage/belt/military/assault
+  backpack = /obj/item/storage/backpack/satchel
+  ears = /obj/item/radio/headset/headset_den
+  backpack_contents = list(
+  /obj/item/ammo_box/magazine/uzim9mm/rockwell/,
 	
 )
 
 
-  /datum/outfit/loadout/sovietmedic
+ /datum/outfit/loadout/sovietmedic
   name = "Soviet Medic"
   r_hand = /obj/item/gun/ballistic/revolver/colt6520
   suit = /obj/item/clothing/suit/jacket/puffer/vest
@@ -905,7 +905,7 @@ Raider
 
 
 
-  /datum/outfit/loadout/colombianhitman
+ /datum/outfit/loadout/colombianhitman
   name = "colombian Hitman"
   r_hand = /obj/item/gun/ballistic/automatic/pistol/beretta
   suit = /obj/item/clothing/suit/armor/vest
@@ -920,7 +920,7 @@ Raider
 		/obj/item/clothing/under/overalls)
         
 		
-  /datum/outfit/loadout/narcos
+/datum/outfit/loadout/narcos
   name = "infantry"
   r_hand = /obj/item/gun/ballistic/automatic/service
   suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
@@ -933,7 +933,7 @@ Raider
 
 
 		
-  /datum/outfit/loadout/shotgunner
+ /datum/outfit/loadout/shotgunner
   name = "CQC"
   r_hand = /obj/item/gun/ballistic/shotgun/trench
   suit =	/obj/item/clothing/suit/armor/f13/combat
