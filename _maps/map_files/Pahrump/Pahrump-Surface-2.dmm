@@ -33684,6 +33684,7 @@
 /area/f13/building)
 "pir" = (
 /obj/machinery/vending/boozeomat{
+	density = 0;
 	pixel_x = 32;
 	pixel_y = -32
 	},
