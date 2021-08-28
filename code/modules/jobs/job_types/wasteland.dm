@@ -831,21 +831,22 @@ Raider
 		H.gang = DM
 
  /datum/outfit/loadout/ronin
-	name = "Ronin"
-    jobtype = /datum/job/wasteland/ronin
-	r_hand = /obj/item/katana
-	suit = /obj/item/clothing/suit/armor/f13/combat/swat
-	shoes = /obj/item/clothing/shoes/laceup
-	belt = /obj/item/storage/belt/military/assault
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+ name = "Ronin"
+ jobtype = /datum/job/wasteland/ronin
+ r_hand = /obj/item/katana
+ suit = /obj/item/clothing/suit/armor/f13/combat/swat
+ shoes = /obj/item/clothing/shoes/laceup
+ belt = /obj/item/storage/belt/military/assault
+ ears = /obj/item/radio/headset/headset_den
+ id = /obj/item/card/id/dentattoo
+ backpack_contents = list(
 	/obj/item/gun/ballistic/automatic/smg/mp5)
 		
 
 
  /datum/outfit/loadout/ashigari
 	name = "Ashigari"
+	jobtype = /datum/job/wasteland/ashigari
 	r_hand = /obj/item/twohanded/spear
 	suit = /obj/item/clothing/suit/armor/f13/combat/dark
 	shoes = /obj/item/clothing/shoes/laceup
@@ -861,6 +862,7 @@ Raider
 
  /datum/outfit/loadout/soldat
 	name = "Soldat"
+	jobtype = /datum/job/wasteland/soldat
 	r_hand = /obj/item/gun/ballistic/rifle/mosin
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/laceup
@@ -875,6 +877,7 @@ Raider
 	)
 
  /datum/outfit/loadout/soldatscouter
+ jobtype = /datum/job/wasteland/soldatscouter
   name = "Scouter"
   r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
   suit = /obj/item/clothing/under/soviet
@@ -890,6 +893,7 @@ Raider
 
  /datum/outfit/loadout/sovietmedic
   name = "Soviet Medic"
+  jobtype = /datum/job/wasteland/sovietmedic
   r_hand = /obj/item/gun/ballistic/revolver/colt6520
   suit = /obj/item/clothing/suit/jacket/puffer/vest
   shoes = /obj/item/clothing/shoes/laceup
@@ -907,6 +911,7 @@ Raider
 
  /datum/outfit/loadout/colombianhitman
   name = "colombian Hitman"
+  jobtype = /datum/job/wasteland/colombianhitman
   r_hand = /obj/item/gun/ballistic/automatic/pistol/beretta
   suit = /obj/item/clothing/suit/armor/vest
   shoes = /obj/item/clothing/shoes/laceup
@@ -922,6 +927,7 @@ Raider
 		
 /datum/outfit/loadout/narcos
   name = "infantry"
+  jobtype = /datum/job/wasteland/narcos
   r_hand = /obj/item/gun/ballistic/automatic/service
   suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
   shoes = /obj/item/clothing/shoes/laceup
@@ -935,6 +941,7 @@ Raider
 		
  /datum/outfit/loadout/shotgunner
   name = "CQC"
+  jobtype = /datum/job/wasteland/shotgunner
   r_hand = /obj/item/gun/ballistic/shotgun/trench
   suit =	/obj/item/clothing/suit/armor/f13/combat
   shoes = /obj/item/clothing/shoes/laceup
@@ -1018,6 +1025,7 @@ Raider
 	)
 	/datum/outfit/loadout/yakuza
 	name = "Yakuza Boss"
+	jobtype = /datum/job/wasteland/yakuza
 	r_hand = /obj/item/katana
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/laceup
@@ -1032,6 +1040,7 @@ Raider
 
 	/datum/outfit/loadout/kapitan
 	name = "Kapitan"
+	jobtype = /datum/job/wasteland/kapitan
 	r_hand = /obj/item/gun/ballistic/automatic/assault_rifle
 	suit = /obj/item/clothing/suit/armor/vest
 	belt = /obj/item/storage/belt/military/assault
@@ -1039,12 +1048,14 @@ Raider
 	ears = /obj/item/radio/headset/headset_den
 	id = /obj/item/card/id/dentattoo
 	backpack_contents = list(
-						/obj/item/clothing/hat/beret/red
-	                    )
+						/obj/item/clothing/hat/beret/red)
+					
+	                    
 
 
 	/datum/outfit/loadout/capo
 	name = "Italian Capo"
+	jobtype = /datum/job/wasteland/capo
 	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
 	suit = /obj/item/clothing/suit/hooded/chaplain_hoodie
     shoes = /obj/item/clothing/shoes/laceup
@@ -1058,6 +1069,7 @@ Raider
 
 	/datum/outfit/loadout/don
 	name = "Colombian Don"
+	jobtype = /datum/job/wasteland/don
 	r_hand = /obj/item/gun/ballistic/automatic/r84
 	suit = /obj/item/clothing/suit/armor/bulletproof
 	belt = /obj/item/storage/belt/military/assault
