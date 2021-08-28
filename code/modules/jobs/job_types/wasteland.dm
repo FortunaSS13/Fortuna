@@ -1045,7 +1045,7 @@ backpack_contents = list(
 	/datum/outfit/loadout/capo
 	name = "Italian Capo"
 	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
-	suit = 	/obj/item/clothing/under/suit_jacket/checkered
+	suit = /obj/item/clothing/under/suit_jacket/checkered
     shoes = /obj/item/clothing/shoes/laceup
 	belt = /obj/item/storage/belt/military/assault
 	backpack =	/obj/item/storage/backpack/satchel
@@ -1065,7 +1065,7 @@ backpack_contents = list(
 	id = /obj/item/card/id/dentattoo
 	backpack_contents = list(
 						/obj/item/clothing/shoes/laceup,
-						/obj/item/reagent/drug/methamphetamine
+						/obj/item/reagent/drug/methamphetamine,
 						/obj/item/clothing/shoes/sneakers/white
 						)
 
