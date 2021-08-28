@@ -934,7 +934,7 @@ Raider
   belt = /obj/item/storage/belt/military/assault
   ears = /obj/item/radio/headset/headset_den
   id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+  backpack_contents = list(
 		/obj/item/clothing/head/helmet/alt)
 
 
@@ -1023,60 +1023,60 @@ Raider
 		/datum/outfit/loadout/capo,
 		/datum/outfit/loadout/don,
 	)
-	/datum/outfit/loadout/yakuza
-	name = "Yakuza Boss"
-	jobtype = /datum/job/wasteland/yakuza
-	r_hand = /obj/item/katana
-	suit = /obj/item/clothing/suit/armor/vest
-	shoes = /obj/item/clothing/shoes/laceup
-	belt = /obj/item/storage/belt/military/assault
-	backpack =	/obj/item/storage/backpack/satchel
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+/datum/outfit/loadout/yakuza
+name = "Yakuza Boss"
+jobtype = /datum/job/wasteland/yakuza
+r_hand = /obj/item/katana
+suit = /obj/item/clothing/suit/armor/vest
+shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+backpack =	/obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
+backpack_contents = list(
 						/obj/item/grenade/smokebomb
 						)
 
 
-	/datum/outfit/loadout/kapitan
-	name = "Kapitan"
-	jobtype = /datum/job/wasteland/kapitan
-	r_hand = /obj/item/gun/ballistic/automatic/assault_rifle
-	suit = /obj/item/clothing/suit/armor/vest
-	belt = /obj/item/storage/belt/military/assault
-	backpack =	/obj/item/storage/backpack/satchel
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+ /datum/outfit/loadout/kapitan
+ name = "Kapitan"
+ jobtype = /datum/job/wasteland/kapitan
+ r_hand = /obj/item/gun/ballistic/automatic/assault_rifle
+ suit = /obj/item/clothing/suit/armor/vest
+ belt = /obj/item/storage/belt/military/assault
+ backpack =	/obj/item/storage/backpack/satchel
+ ears = /obj/item/radio/headset/headset_den
+ id = /obj/item/card/id/dentattoo
+ backpack_contents = list(
 						/obj/item/clothing/hat/beret/red)
 					
 	                    
 
 
-	/datum/outfit/loadout/capo
-	name = "Italian Capo"
-	jobtype = /datum/job/wasteland/capo
-	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
-	suit = /obj/item/clothing/suit/hooded/chaplain_hoodie
-    shoes = /obj/item/clothing/shoes/laceup
-	belt = /obj/item/storage/belt/military/assault
-	backpack =	/obj/item/storage/backpack/satchel
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+/datum/outfit/loadout/capo
+name = "Italian Capo"
+jobtype = /datum/job/wasteland/capo
+r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
+suit = /obj/item/clothing/suit/hooded/chaplain_hoodie
+   shoes = /obj/item/clothing/shoes/laceup
+belt = /obj/item/storage/belt/military/assault
+backpack =	/obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
+backpack_contents = list(
 						/obj/item/clothing/shoes/laceup
 						)
 
-	/datum/outfit/loadout/don
-	name = "Colombian Don"
-	jobtype = /datum/job/wasteland/don
-	r_hand = /obj/item/gun/ballistic/automatic/r84
-	suit = /obj/item/clothing/suit/armor/bulletproof
-	belt = /obj/item/storage/belt/military/assault
-	backpack =	/obj/item/storage/backpack/satchel
-	ears = /obj/item/radio/headset/headset_den
-	id = /obj/item/card/id/dentattoo
-	backpack_contents = list(
+/datum/outfit/loadout/don
+name = "Colombian Don"
+jobtype = /datum/job/wasteland/don
+r_hand = /obj/item/gun/ballistic/automatic/r84
+suit = /obj/item/clothing/suit/armor/bulletproof
+belt = /obj/item/storage/belt/military/assault
+backpack =	/obj/item/storage/backpack/satchel
+ears = /obj/item/radio/headset/headset_den
+id = /obj/item/card/id/dentattoo
+backpack_contents = list(
 						/obj/item/clothing/shoes/laceup,
 						/obj/item/reagent/drug/methamphetamine,
 						/obj/item/clothing/shoes/sneakers/white
