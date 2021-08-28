@@ -840,8 +840,8 @@ Raider
 	ears = /obj/item/radio/headset/headset_den
 	id = /obj/item/card/id/dentattoo
 	backpack_contents = list(
-						 /obj/item/gun/ballistic/automatic/smg/mp5,
-						)
+	/obj/item/gun/ballistic/automatic/smg/mp5)
+		
 
 
  /datum/outfit/loadout/ashigari
