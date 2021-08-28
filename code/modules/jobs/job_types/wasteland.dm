@@ -839,7 +839,7 @@ Raider
 	ears = /obj/item/radio/headset/headset_den
 	id = /obj/item/card/id/dentattoo
 	backpack_contents = list(
-						 /obj/item/gun/ballistic/automatic/smg/mp5
+						 /obj/item/gun/ballistic/automatic/smg/mp5,
 						)
 
 
@@ -1066,7 +1066,8 @@ backpack_contents = list(
 	backpack_contents = list(
 						/obj/item/clothing/shoes/laceup,
 						/obj/item/reagent/drug/methamphetamine
-						/obj/item/clothing/shoes/sneakers/white}
+						/obj/item/clothing/shoes/sneakers/white
+						)
 
 /datum/outfit/job/wasteland/f13mobboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1283,3 +1284,4 @@ datum/job/wasteland/f13dendoctor
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+
