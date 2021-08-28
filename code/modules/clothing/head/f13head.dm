@@ -10,7 +10,7 @@
 	var/blockTracking = 0 //For AI tracking
 	var/can_toggle = null
 	dynamic_hair_suffix = "+generic"
-	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot
+	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot 
 	var/list/speechspan = null
 
 /obj/item/clothing/head/Initialize()
@@ -208,7 +208,7 @@
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
 
-//Power Armor
+//Power Armour
 
 /obj/item/clothing/head/helmet/f13/power_armor
 	cold_protection = HEAD
