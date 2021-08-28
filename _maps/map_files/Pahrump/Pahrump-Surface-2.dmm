@@ -29244,13 +29244,17 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nbI" = (
-/obj/structure/table,
-/obj/machinery/door/poddoor/shutters{
-	id = "kitchenshutters"
+/obj/structure/table/wood,
+/obj/item/storage/box/drinkingglasses,
+/obj/item/storage/box/drinkingglasses,
+/obj/machinery/light/sign{
+	icon_state = "maltesefalcon";
+	pixel_y = 32
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/item/reagent_containers/food/drinks/bottle/fernet,
+/obj/item/vending_refill/clothing,
+/obj/item/vending_refill/boozeomat,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "nbJ" = (
 /obj/machinery/trading_machine,
@@ -32360,11 +32364,17 @@
 	},
 /area/f13/building)
 "oDC" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
+/obj/structure/table,
+/obj/machinery/door/poddoor/shutters{
+	id = "kitchenshutters"
 	},
-/obj/machinery/vending/boozeomat,
-/turf/open/floor/wood/f13/oak,
+/obj/machinery/smartfridge/bottlerack{
+	density = 0;
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
 /area/f13/building)
 "oDG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -32476,19 +32486,13 @@
 	},
 /area/f13/ncr)
 "oHe" = (
-/obj/item/storage/box/drinkingglasses,
-/obj/item/storage/box/drinkingglasses,
-/obj/machinery/light/sign{
-	icon_state = "maltesefalcon";
-	pixel_y = 32
-	},
-/obj/item/reagent_containers/food/drinks/bottle/fernet,
-/obj/item/vending_refill/clothing,
-/obj/item/vending_refill/boozeomat,
 /obj/structure/table,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess{
 	icon_state = "redrustychess";
 	name = "tile"
@@ -33677,6 +33681,16 @@
 /obj/structure/rack,
 /obj/item/reagent_containers/syringe/medx,
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"pir" = (
+/obj/machinery/vending/boozeomat{
+	pixel_x = 32;
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "pis" = (
 /obj/structure/flora/tree/wasteland,
@@ -45943,11 +45957,6 @@
 	pixel_x = -8;
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess{
 	icon_state = "redrustychess";
 	name = "tile"
@@ -97163,9 +97172,9 @@ iMu
 aRl
 bdE
 uqa
-aRl
+nbI
 oBj
-ozq
+pir
 pCP
 hJs
 bpD
@@ -97420,7 +97429,7 @@ uqa
 jPM
 uqa
 uqa
-nbI
+uqa
 oDC
 qkf
 kEI
