@@ -24898,7 +24898,7 @@
 /area/f13/bunker)
 "qpc" = (
 /obj/structure/chair/wood{
-	dir = 4
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/paladin,
