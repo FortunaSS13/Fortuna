@@ -831,7 +831,7 @@ Raider
 		H.gang = DM
 
 /datum/outfit/loadout/ronin
-name = "Ronin"
+name = "Samurai"
 jobtype = /datum/job/wasteland/ronin
 r_hand = /obj/item/katana
 suit = /obj/item/clothing/suit/armor/f13/combat/swat
@@ -845,7 +845,7 @@ backpack_contents = list(
 
 
 /datum/outfit/loadout/ashigari
-name = "Ashigari"
+name = "Spearman"
 jobtype = /datum/job/wasteland/ashigari
 r_hand = /obj/item/twohanded/spear
 suit = /obj/item/clothing/suit/armor/f13/combat/dark
@@ -860,7 +860,7 @@ backpack_contents = list(
 	)
 
 /datum/outfit/loadout/soldat
-name = "Soldat"
+name = "Solier"
 jobtype = /datum/job/wasteland/soldat
 r_hand = /obj/item/gun/ballistic/rifle/mosin
 suit = /obj/item/clothing/suit/armored/light/duster
@@ -877,7 +877,7 @@ backpack_contents = list(
 
 /datum/outfit/loadout/soldatscouter
 jobtype = /datum/job/wasteland/soldatscouter
-name = "Scouter"
+name = "Scout"
 r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
 suit = /obj/item/clothing/under/soviet
 shoes = /obj/item/clothing/shoes/combat
@@ -891,7 +891,7 @@ backpack_contents = list(
 
 
  /datum/outfit/loadout/sovietmedic
-  name = "Soviet Medic"
+  name = "Combat Medic"
   jobtype = /datum/job/wasteland/sovietmedic
   r_hand = /obj/item/gun/ballistic/revolver/colt6520
   suit = /obj/item/clothing/suit/jacket/puffer/vest
