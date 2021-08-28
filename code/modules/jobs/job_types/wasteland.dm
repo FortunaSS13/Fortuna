@@ -830,7 +830,7 @@ Raider
 		DM.add_member(H)
 		H.gang = DM
 
-/datum/outfit/loadout/ronin
+/datum/outfit/job/wasteland/ronin
 name = "Samurai"
 jobtype = /datum/job/wasteland/ronin
 r_hand = /obj/item/katana
@@ -844,7 +844,7 @@ backpack_contents = list(
 		
 
 
-/datum/outfit/loadout/ashigari
+/datum/outfit/job/wasteland/ashigari
 name = "Spearman"
 jobtype = /datum/job/wasteland/ashigari
 r_hand = /obj/item/twohanded/spear
@@ -859,8 +859,8 @@ backpack_contents = list(
 	/obj/item/clothing/neck/mantle/poncho
 	)
 
-/datum/outfit/loadout/soldat
-name = "Solier"
+/datum/outfit/job/wasteland/soldat
+name = "Soldat"
 jobtype = /datum/job/wasteland/soldat
 r_hand = /obj/item/gun/ballistic/rifle/mosin
 suit = /obj/item/clothing/suit/armored/light/duster
@@ -875,7 +875,7 @@ backpack_contents = list(
 		/obj/item/clothing/head/mask/black,
 	)
 
-/datum/outfit/loadout/soldatscouter
+/datum/outfit/job/wasteland/soldatscouter
 jobtype = /datum/job/wasteland/soldatscouter
 name = "Scout"
 r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
@@ -890,8 +890,8 @@ backpack_contents = list(
 )
 
 
- /datum/outfit/loadout/sovietmedic
-  name = "Combat Medic"
+/datum/outfit/job/wasteland/sovietmedic
+  name = "Soviet Medic"
   jobtype = /datum/job/wasteland/sovietmedic
   r_hand = /obj/item/gun/ballistic/revolver/colt6520
   suit = /obj/item/clothing/suit/jacket/puffer/vest
@@ -908,7 +908,7 @@ backpack_contents = list(
 
 
 
- /datum/outfit/loadout/colombianhitman
+/datum/outfit/job/wasteland/colombianhitman
   name = "colombian Hitman"
   jobtype = /datum/job/wasteland/colombianhitman
   r_hand = /obj/item/gun/ballistic/automatic/pistol/beretta
@@ -924,8 +924,8 @@ backpack_contents = list(
 		/obj/item/clothing/under/overalls)
         
 		
-/datum/outfit/loadout/narcos
-  name = "infantry"
+/datum/outfit/job/wasteland/narcos
+  name = "Narcos"
   jobtype = /datum/job/wasteland/narcos
   r_hand = /obj/item/gun/ballistic/automatic/service
   suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
@@ -938,7 +938,7 @@ backpack_contents = list(
 
 
 		
-/datum/outfit/loadout/shotgunner
+/datum/outfit/job/wasteland/shotgunner
 name = "CQC"
 jobtype = /datum/job/wasteland/shotgunner
 r_hand = /obj/item/gun/ballistic/shotgun/trench
@@ -1022,7 +1022,7 @@ id = /obj/item/card/id/dentattoo
 		/datum/outfit/loadout/capo,
 		/datum/outfit/loadout/don,
 	)
-/datum/outfit/loadout/yakuza
+/datum/outfit/job/wasteland/yakuza
 name = "Yakuza Boss"
 jobtype = /datum/job/wasteland/yakuza
 r_hand = /obj/item/katana
@@ -1037,7 +1037,7 @@ backpack_contents = list(
 						)
 
 
- /datum/outfit/loadout/kapitan
+/datum/outfit/job/wasteland/kapitan
  name = "Kapitan"
  jobtype = /datum/job/wasteland/kapitan
  r_hand = /obj/item/gun/ballistic/automatic/assault_rifle
@@ -1066,7 +1066,7 @@ backpack_contents = list(
 						/obj/item/clothing/shoes/laceup
 						)
 
-/datum/outfit/loadout/don
+/datum/outfit/job/wasteland/don
 name = "Colombian Don"
 jobtype = /datum/job/wasteland/don
 r_hand = /obj/item/gun/ballistic/automatic/r84
