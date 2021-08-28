@@ -79,12 +79,12 @@ Cyborg
 /datum/job/cyborg
 	title = "Cyborg"
 	flag = F13CYBORG
-	department_flag = Oasis
+	department_flag = DEP_OASIS
 	faction = "oasis"
 	total_positions = 2
 	spawn_positions = 2
-	forbids = "The Oasis forbids: Disobeying the Mayor or the Sheriff. Deserting the city unless it is rendered unhospitable. Killing fellow Residents. Betraying the Oasis and its people."
-	enforces = "The Oasis expects: Contributing to Oasis society. Adherence to Oasis laws. Participation in special projects, as ordered by the Mayor or the Sheriff."
+	forbids = "The oasis forbids: Disobeying the Mayor or the Sheriff. Deserting the city unless it is rendered unhospitable. Killing fellow Residents. Betraying the town and its people."
+	enforces = "The oasis expects: Contributing to the town's society. Adherence to the town's laws. Participation in special projects, as ordered by the Mayor or the Sheriff."
 	supervisors = "Oasis/Mayor"	//Nodrak
 	selection_color = "#ddffdd"
 	minimal_player_age = 21
