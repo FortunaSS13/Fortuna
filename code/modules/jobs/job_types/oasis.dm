@@ -88,6 +88,11 @@ Mayor
 	exp_requirements = 1500
 
 	outfit = /datum/outfit/job/den/f13sheriff
+	
+	loadout_options = list(
+	/datum/outfit/loadout/thelaw,
+	/datum/outfit/loadout/dacommissioner,
+	)
 
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -113,7 +118,7 @@ Mayor
 	ears = 			/obj/item/radio/headset/headset_town
 	uniform =  		/obj/item/clothing/under/f13/sheriff
 	neck =			/obj/item/storage/belt/holster
-	shoes = 		/obj/item/clothing/shoes/f13/cowboy	
+	shoes = 		/obj/item/clothing/shoes/f13/cowboy
 	glasses =		/obj/item/clothing/glasses/sunglasses
 	l_pocket =		/obj/item/storage/bag/money/small/den
 	backpack_contents = list(
@@ -122,9 +127,9 @@ Mayor
 		/obj/item/melee/classic_baton = 1,
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		)
-		
+
 /datum/outfit/loadout/thelaw
-	name = "Law Man"
+	name = "The Law Man"
 	suit = /obj/item/clothing/suit/armor/f13/town/sheriff
 	head = /obj/item/clothing/head/f13/town/sheriff
 	r_hand = /obj/item/gun/ballistic/rifle/repeater/brush
