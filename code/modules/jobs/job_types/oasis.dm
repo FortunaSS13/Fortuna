@@ -103,7 +103,7 @@ Mayor
     name = "Secretary"
     jobtype = /datum/job/oasis/f13secretary
 
-    id = id = /obj/item/card/id/silver
+    id = /obj/item/card/id/silver
     ears = /obj/item/radio/headset/headset_town
     suit = /obj/item/clothing/under/suit/black
     glasses = /obj/item/clothing/glasses/regular/hipster
