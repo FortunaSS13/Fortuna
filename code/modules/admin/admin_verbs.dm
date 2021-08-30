@@ -319,7 +319,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set category = "Admin.Game"
 	set name = "Give Player Whitelist"
 
-	var/player_ckey = stripped_input(src, "Player's ckey", "Player's ckey") as null | text
+	var/player_ckey = strip_html(input(src, "Player's ckey", "Player's ckey") as null | text)
 
 	if(!player_ckey)
 		return
@@ -341,7 +341,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set category = "Admin.Game"
 	set name = "Remove Player Whitelist"
 
-	var/player_ckey = stripped_input(src, "Player's ckey", "Player's ckey") as null | text
+	var/player_ckey = strip_html(input(src, "Player's ckey", "Player's ckey") as null | text)
 
 	if(!player_ckey)
 		return
