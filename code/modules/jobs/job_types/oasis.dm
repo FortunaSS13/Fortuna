@@ -95,7 +95,7 @@ Mayor
         ),
         /datum/matchmaking_pref/rival = list(
             /datum/job/oasis,
-            /datum/job/f13enforcer,
+            /datum/job/wasteland/f13enforcer,
         ),
     )
 
