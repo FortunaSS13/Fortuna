@@ -99,7 +99,7 @@ Mayor
         ),
     )
 
-    /datum/outfit/job/oasis/f13secretary
+/datum/outfit/job/oasis/f13secretary
     name = "Secretary"
     jobtype = /datum/job/oasis/f13secretary
 
