@@ -86,7 +86,7 @@ Mayor
     selection_color = "#dcba97"
     exp_requirements = 800
 
-    outfit = /datum/outfit/job/den/f13secretary
+    outfit = /datum/outfit/job/oasis/f13secretary
     access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
     minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
     matchmaking_allowed = list(
