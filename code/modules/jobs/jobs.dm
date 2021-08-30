@@ -56,11 +56,9 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Enclave Lieutenant",
 
 	"NCR Captain",
-	"NCR Lieutenant",
 
 	"Legate",
 	"Legion Centurion",
-	"Legion Veteran Decanus",
 
 	"Overseer",
 	"Chief of Security",

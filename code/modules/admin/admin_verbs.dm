@@ -46,6 +46,8 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/getcurrentlogs,		/*for accessing server logs for the current round*/
 	/client/proc/Getmob,				/*teleports a mob to our location*/
 	/client/proc/Getkey,				/*teleports a mob with a certain ckey to our location*/
+	/client/proc/add_whitelist,		/*adds a player to the whitelist*/
+	/client/proc/remove_whitelist, /*removes a player from the whitelist*/
 //	/client/proc/sendmob,				/*sends a mob somewhere*/ -Removed due to it needing two sorting procs to work, which were executed every time an admin right-clicked. ~Errorage
 	/client/proc/jumptoarea,
 	/client/proc/jumptokey,				/*allows us to jump to the location of a mob with a certain ckey*/
@@ -312,6 +314,50 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		/client/proc/disable_debug_verbs,
 		/client/proc/readmin
 		))
+
+/client/proc/add_whitelist()
+	set category = "Admin.Game"
+	set name = "Give Player Whitelist"
+
+	var/player_ckey = stripped_input(src, "Player's ckey", "Player's ckey") as null | text
+
+	if(!player_ckey)
+		return
+
+	var/datum/db_query/query_whitelist_add = SSdbcore.NewQuery(
+		"INSERT INTO [format_table_name("role_whitelist")] (ckey, whitelist) VALUES (:ckey, 'leadership')",
+		list("ckey" = player_ckey)
+	)
+
+	if(!query_whitelist_add.warn_execute())
+		qdel(query_whitelist_add)
+		return
+
+	log_admin("[key_name(usr)] added [player_ckey] to the head whitelist.")
+	message_admins("[key_name_admin(usr)] added [player_ckey] to the head whitelist.")
+	qdel(query_whitelist_add)
+
+/client/proc/remove_whitelist()
+	set category = "Admin.Game"
+	set name = "Remove Player Whitelist"
+
+	var/player_ckey = stripped_input(src, "Player's ckey", "Player's ckey") as null | text
+
+	if(!player_ckey)
+		return
+
+	var/datum/db_query/query_whitelist_delete = SSdbcore.NewQuery(
+		"DELETE FROM [format_table_name("role_whitelist")] WHERE ckey = :ckey",
+		list("ckey" = player_ckey)
+		)
+
+	if(!query_whitelist_delete.warn_execute())
+		qdel(query_whitelist_delete)
+		return
+
+	log_admin("[key_name(usr)] removed[player_ckey] from the head whitelist.")
+	message_admins("[key_name_admin(usr)] removed [player_ckey] from the head whitelist.")
+	qdel(query_whitelist_delete)
 
 /client/proc/hide_most_verbs()//Allows you to keep some functionality while hiding some verbs
 	set name = "Adminverbs - Hide Most"
