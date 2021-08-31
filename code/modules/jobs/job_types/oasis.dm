@@ -86,7 +86,7 @@ Mayor
     selection_color = "#dcba97"
     exp_requirements = 800
 	
-outfit = /datum/outfit/job/oasis/f13secretary
+	outfit = /datum/outfit/job/oasis/f13secretary
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	matchmaking_allowed = list(
@@ -98,11 +98,6 @@ outfit = /datum/outfit/job/oasis/f13secretary
 			/datum/job/wasteland/f13enforcer
 		),
 	)
-
-/datum/outfit/job/oasis/f13secretary
-	name = "Secretary"
-	jobtype = /datum/job/oasis/f13secretary
-
 	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/headset_town
 	suit = /obj/item/clothing/under/suit/black
