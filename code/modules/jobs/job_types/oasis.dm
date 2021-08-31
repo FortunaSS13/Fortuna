@@ -90,14 +90,14 @@ Mayor
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	matchmaking_allowed = list(
-        /datum/matchmaking_pref/friend = list(
-            /datum/job/oasis
-        ),
-        /datum/matchmaking_pref/rival = list(
-            /datum/job/oasis,
-            /datum/job/wasteland/f13enforcer
-        ),
-    )
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/oasis,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/oasis,
+			/datum/job/wasteland/f13enforcer
+		),
+	)
 
 /datum/outfit/job/oasis/f13secretary
 	name = "Secretary"
