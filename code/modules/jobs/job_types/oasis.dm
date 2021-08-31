@@ -91,11 +91,11 @@ Mayor
     minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
     matchmaking_allowed = list(
         /datum/matchmaking_pref/friend = list(
-            /datum/job/oasis,
+            /datum/job/oasis
         ),
         /datum/matchmaking_pref/rival = list(
             /datum/job/oasis,
-            /datum/job/wasteland/f13enforcer,
+            /datum/job/wasteland/f13enforcer
         ),
     )
 
@@ -117,7 +117,7 @@ Mayor
     shoes = /obj/item/clothing/shoes/f13/fancy
     backpack_contents = list(/obj/item/flashlight/seclite = 1,
         /obj/item/ammo_box/magazine/m9mm = 1,
-		/obj/item/clipboard = 1,
+		/obj/item/clipboard = 1
         )
 /*--------------------------------------------------------------*/
 
