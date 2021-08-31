@@ -827,6 +827,7 @@ Mayor
 	backpack_contents = list(/obj/item/ammo_box/a308 = 2,
 	)
 
+/*
 /datum/outfit/loadout/secretary
 	name = "Secretary"
 	uniform = /obj/item/clothing/under/suit/black
@@ -840,8 +841,8 @@ Mayor
 	/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
 	/obj/item/ammo_box/magazine/m22 = 2,
 	)
-	///placeholder until a proper secretary role is added
-
+	///could be reworked later on
+*/
 /datum/outfit/loadout/singer
 	name = "Saloon Singer"
 	shoes = /obj/item/clothing/shoes/laceup
