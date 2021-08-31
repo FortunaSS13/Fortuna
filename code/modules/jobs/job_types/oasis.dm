@@ -86,10 +86,10 @@ Mayor
     selection_color = "#dcba97"
     exp_requirements = 800
 
-    outfit = /datum/outfit/job/oasis/f13secretary
-    access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-    minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-    matchmaking_allowed = list(
+	outfit = /datum/outfit/job/oasis/f13secretary
+	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	matchmaking_allowed = list(
         /datum/matchmaking_pref/friend = list(
             /datum/job/oasis
         ),
@@ -100,25 +100,25 @@ Mayor
     )
 
 /datum/outfit/job/oasis/f13secretary
-    name = "Secretary"
-    jobtype = /datum/job/oasis/f13secretary
+	name = "Secretary"
+	jobtype = /datum/job/oasis/f13secretary
 
-    id = /obj/item/card/id/silver
-    ears = /obj/item/radio/headset/headset_town
-    suit = /obj/item/clothing/under/suit/black
-    glasses = /obj/item/clothing/glasses/regular/hipster
-    gloves = /obj/item/clothing/gloves/color/white
-    backpack = /obj/item/storage/backpack/satchel/leather
-    satchel = /obj/item/storage/backpack/satchel/leather
-    l_pocket = /obj/item/storage/bag/money/small/settler
-    r_pocket = /obj/item/melee/onehanded/knife/switchblade
-    belt = /obj/item/pda
-    r_hand = /obj/item/storage/briefcase/secretary
-    shoes = /obj/item/clothing/shoes/f13/fancy
-    backpack_contents = list(/obj/item/flashlight/seclite = 1,
+	id = /obj/item/card/id/silver
+	ears = /obj/item/radio/headset/headset_town
+	suit = /obj/item/clothing/under/suit/black
+	glasses = /obj/item/clothing/glasses/regular/hipster
+	gloves = /obj/item/clothing/gloves/color/white
+	backpack = /obj/item/storage/backpack/satchel/leather
+	satchel = /obj/item/storage/backpack/satchel/leather
+	l_pocket = /obj/item/storage/bag/money/small/settler
+	r_pocket = /obj/item/melee/onehanded/knife/switchblade
+	belt = /obj/item/pda
+	r_hand = /obj/item/storage/briefcase/secretary
+	shoes = /obj/item/clothing/shoes/f13/fancy
+	backpack_contents = list(/obj/item/flashlight/seclite = 1,
         /obj/item/ammo_box/magazine/m9mm = 1,
 		/obj/item/clipboard = 1
-        )
+		)
 /*--------------------------------------------------------------*/
 
 /datum/job/oasis/f13sheriff
