@@ -85,7 +85,7 @@ Mayor
     description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
     selection_color = "#dcba97"
     exp_requirements = 800
-
+	
 	outfit = /datum/outfit/job/oasis/f13secretary
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
