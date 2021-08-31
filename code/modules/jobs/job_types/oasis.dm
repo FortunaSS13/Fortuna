@@ -117,6 +117,7 @@ Mayor
     shoes = /obj/item/clothing/shoes/f13/fancy
     backpack_contents = list(/obj/item/flashlight/seclite = 1,
         /obj/item/ammo_box/magazine/m9mm = 1,
+		/obj/item/clipboard = 1,
         )
 /*--------------------------------------------------------------*/
 
