@@ -109,6 +109,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Slave",
 
 "Mayor",
+"Secretary",
 "Sheriff",
 "Deputy",
 "Shopkeeper",
