@@ -973,7 +973,7 @@
 	item_state = "ranger_tan_hat"
 
 /obj/item/clothing/head/f13/chinahelmetcosmetic
-	name = "depreciated chinese stealth helmet"
+	name = "dysfunctional chinese stealth helmet"
 	desc = "(II) A bright yellow visor in a timelessly infamous shape makes this helmet immediately recognizable. It's non-ballistic, and it's power unit for the HUD has been long since removed."
 	icon_state = "stealthhelmet"
 	item_state = "stealthhelmet"
