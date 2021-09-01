@@ -80,7 +80,7 @@
 	else //if on the floor, glowshroom on-floor sprite
 		icon_state = base_icon_state
 
-	addtimer(CALLBACK(src, .proc/Spread), delay)
+	//addtimer(CALLBACK(src, .proc/Spread), delay)
 
 /obj/structure/glowshroom/proc/Spread()
 	return //temp disable
