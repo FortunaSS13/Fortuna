@@ -244,7 +244,7 @@
 
 /datum/reagent/consumable/ethanol/nukavictory
 	name = "Nuka Victory"
-	description = "Nuka Cola with an <BIG>AMERICAN<BIG> twist."
+	description = "Nuka Cola with an AMERICAN twist."
 	color = "#FAEBD7"
 	boozepwr = 45
 	taste_description = "freedom"
