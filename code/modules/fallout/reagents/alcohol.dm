@@ -244,13 +244,13 @@
 
 /datum/reagent/consumable/ethanol/nukavictory
 	name = "Nuka Victory"
-	description = "Nuka Cola with an AMERICAN twist."
+	description = "Nuka Cola with an <BIG>AMERICAN<BIG> twist."
 	color = "#FAEBD7"
 	boozepwr = 45
 	taste_description = "freedom"
 	glass_icon_state = "nukavictoryglass"
 	glass_name = "Nuka Victory"
-	glass_desc = "Nuka Cola with an AMERICAN twist."
+	glass_desc = "Nuka Cola with an <BIG>AMERICAN<BIG> twist."
 
 /datum/reagent/consumable/ethanol/nukavictory/on_mob_life(mob/living/carbon/M)
 	ADD_TRAIT(M, TRAIT_BIG_LEAGUES, "[type]")
