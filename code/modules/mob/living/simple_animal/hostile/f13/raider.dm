@@ -4,7 +4,7 @@
 	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "raidermelee"
 	icon_living = "raidermelee"
-	icon_dead = "raidermelee_dead"
+	icon_dead = "raiderdead"
 	icon_gib = "syndicate_gib"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	speak_chance = 0
@@ -21,13 +21,12 @@
 	attack_verb_simple = "punches"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	a_intent = INTENT_HARM
-	loot = list(/obj/effect/mob_spawn/human/corpse/raidermelee, /obj/item/melee/onehanded/knife/survival)
+	loot = list(/obj/item/melee/onehanded/knife/survival)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
 	faction = list("raider")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
-	del_on_death = 1
 
 /mob/living/simple_animal/hostile/raider/thief
 
