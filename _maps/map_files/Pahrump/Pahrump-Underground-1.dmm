@@ -328,9 +328,6 @@
 	},
 /area/f13/brotherhood/operations)
 "amC" = (
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
 /turf/open/floor/wood,
 /area/f13/brotherhood/operations)
 "amD" = (
@@ -16092,6 +16089,12 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/bunker)
+"jXs" = (
+/obj/structure/curtain{
+	color = "#5c131b"
+	},
+/turf/open/floor/wood/f13/stage_t,
+/area/f13/brotherhood/operations)
 "jXu" = (
 /obj/structure/lattice{
 	density = 1
@@ -98116,7 +98119,7 @@ wKL
 wKL
 wKL
 nqO
-nqO
+jXs
 nqO
 axv
 nqO
@@ -100698,19 +100701,19 @@ eLE
 eLE
 eLE
 eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
+qvn
 eLE
 eLE
 eLE

@@ -38124,6 +38124,15 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
+"rzI" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "oasis3"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland)
 "rzR" = (
 /obj/machinery/light{
 	dir = 8
@@ -84173,7 +84182,7 @@ sgz
 erY
 dma
 erY
-hOl
+rzI
 hOl
 sgz
 sgz
