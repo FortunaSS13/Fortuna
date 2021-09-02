@@ -10,7 +10,7 @@
 	var/blockTracking = 0 //For AI tracking
 	var/can_toggle = null
 	dynamic_hair_suffix = "+generic"
-	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot
+	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot 
 	var/list/speechspan = null
 
 /obj/item/clothing/head/Initialize()
@@ -208,7 +208,7 @@
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
 
-//Power Armor
+//Power Armour
 
 /obj/item/clothing/head/helmet/f13/power_armor
 	cold_protection = HEAD
@@ -248,7 +248,6 @@
 	var/powerLevel = 7000
 	var/powerMode = 3
 	var/powered = TRUE
-	repair_kit = /obj/item/repair_kit/pa
 
 /obj/item/clothing/head/helmet/f13/power_armor/attackby(obj/item/I, mob/user, params)
 	. = ..()
@@ -343,8 +342,6 @@
 /obj/item/clothing/head/helmet/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	. = ..()
 	if(damage >= src.dmg_block_threshold && check_armor_penetration(object) >= 0)
-		return
-	if(src.armor_durability<60)
 		return
 	if(check_armor_penetration(object) <= src.armor_block_threshold && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
 		if(prob(armor_block_chance))
@@ -971,3 +968,9 @@
 	desc = "(II) A thick tanned leather hat, with a Montana Peak crease."
 	icon_state = "ranger_tan_hat"
 	item_state = "ranger_tan_hat"
+
+/obj/item/clothing/head/f13/chinahelmetcosmetic
+	name = "dysfunctional chinese stealth helmet"
+	desc = "(II) A bright yellow visor in a timelessly infamous shape makes this helmet immediately recognizable. It's non-ballistic, and it's power unit for the HUD has been long since removed."
+	icon_state = "stealthhelmet"
+	item_state = "stealthhelmet"
