@@ -4,4 +4,4 @@
 	category = LOADOUT_CATEGORY_UNIFORM
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
 	slot = SLOT_W_UNIFORM
-	ckeywhitelist = list("0xeff")
+	ckeywhitelist = list("plaugewalker")
