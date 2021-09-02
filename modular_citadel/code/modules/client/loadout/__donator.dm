@@ -28,3 +28,9 @@
 
 
 */
+
+/datum/gear/donator/kits/killa
+	name = "Killa's Belongings"
+	path = /obj/item/storage/box/large/custom_kit/killa
+	ckeywhitelist = list("killer402402")
+
