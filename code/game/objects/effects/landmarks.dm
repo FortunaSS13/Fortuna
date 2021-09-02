@@ -734,7 +734,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Mayor"
 
 /obj/effect/landmark/start/f13/secretary
-    name = "Secretary"
+	name = "Secretary"
 
 /obj/effect/landmark/start/f13/sheriff
 	name = "Sheriff"
