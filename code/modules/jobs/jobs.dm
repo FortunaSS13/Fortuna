@@ -115,6 +115,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Doctor",
 "Prospector",
 "Detective",
+"Secretary",
 
 "Chief",
 "Shaman",
