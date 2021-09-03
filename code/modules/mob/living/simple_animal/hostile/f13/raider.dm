@@ -118,17 +118,6 @@
 	aggro_vision_range = 15
 	obj_damage = 300
 
-/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
-	icon_state = "metal_raider"
-	icon_living = "metal_raider"
-	icon_dead = "metal_raider_dead"
-	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom)
-	ranged = 1
-	maxHealth = 180
-	health = 180
-	projectiletype = /obj/item/projectile/bullet/c45/op
-	projectilesound = 'sound/weapons/gunshot.ogg'
-
 /mob/living/simple_animal/hostile/raider/ranged/boss
 	name = "Raider Boss"
 	icon_state = "raider_boss"
@@ -138,7 +127,7 @@
 	health = 170
 	extra_projectiles = 3
 	projectiletype = /obj/item/projectile/bullet/c45/op
-	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun)
+	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/armor/f13/combatrusted)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
 	..()
@@ -208,3 +197,45 @@
 	//mask = /obj/item/clothing/mask/gas
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	//back = /obj/item/weapon/storage/backpack
+
+
+/mob/living/simple_animal/hostile/raider/tribal
+	icon_state = "tribal_raider"
+	icon_living = "tribal_raider"
+	icon_dead = "tribal_raider_dead"
+	icon_gib = "tribal_raider"
+	retreat_distance = 0
+	minimum_distance = 0
+	melee_damage_lower = 40
+	melee_damage_upper = 40
+	loot = list(/obj/item/twohanded/spear)
+	healable = 1
+	ranged = 0
+
+/obj/effect/mob_spawn/human/corpse/raider/tribal
+	uniform = /obj/item/clothing/under/f13/raiderrags
+	suit = /obj/item/clothing/suit/armor/f13/tribal
+	shoes = /obj/item/clothing/shoes/f13/rag
+	//gloves = /obj/item/clothing/gloves/f13/doom
+	//radio = /obj/item/device/radio/headset
+	mask = /obj/item/clothing/mask/facewrap
+	head = /obj/item/clothing/head/helmet/f13/fiend
+	//back = /obj/item/weapon/storage/backpack
+
+/mob/living/simple_animal/hostile/raider/sulphite
+	name = "Sulphite Brawler"
+	desc = "A raider with low military grade armor and a shishkebab"
+	icon_living = "melee_sulphite"
+	icon_state = "melee_sulphite_dead"
+	loot = list(/obj/item/locked_box/misc/money/all/low)
+
+/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
+	icon_state = "metal_raider"
+	icon_living = "metal_raider"
+	icon_dead = "metal_raider_dead"
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom)
+	ranged = 1
+	maxHealth = 180
+	health = 180
+	projectiletype = /obj/item/projectile/bullet/c45/op
+	projectilesound = 'sound/weapons/gunshot.ogg'
