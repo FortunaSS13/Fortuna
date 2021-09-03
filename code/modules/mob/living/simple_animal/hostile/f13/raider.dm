@@ -14,7 +14,7 @@
 	response_harm_simple = "hits"
 	speed = 1
 	maxHealth = 140
-	health = 140
+	health = 140a
 	harm_intent_damage = 8
 	melee_damage_lower = 25
 	melee_damage_upper = 50
@@ -150,7 +150,7 @@
 /mob/living/simple_animal/hostile/raider/biker
 	icon_state = "biker_raider"
 	icon_living = "biker_raider"
-	icon_dead = "biker_raider"
+	icon_dead = "biker_raider_dead"
 	icon_gib = "biker_raider"
 	retreat_distance = 4
 	minimum_distance = 4
