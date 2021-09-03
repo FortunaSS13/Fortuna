@@ -127,7 +127,7 @@
 	health = 170
 	extra_projectiles = 3
 	projectiletype = /obj/item/projectile/bullet/c45/op
-	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/armor/f13/combatrusted)
+	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/armor/f13/combatrusted, /obj/item/clothing/head/helmet/f13/raidercombathelmet)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
 	..()
@@ -228,6 +228,11 @@
 	icon_living = "melee_sulphite"
 	icon_state = "melee_sulphite_dead"
 	loot = list(/obj/item/locked_box/misc/money/all/low)
+	maxHealth = 220
+	health = 220
+	harm_intent_damage = 8
+	melee_damage_lower = 40
+	melee_damage_upper = 55
 
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
 	icon_state = "metal_raider"
