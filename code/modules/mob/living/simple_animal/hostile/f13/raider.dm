@@ -225,8 +225,9 @@
 /mob/living/simple_animal/hostile/raider/sulphite
 	name = "Sulphite Brawler"
 	desc = "A raider with low military grade armor and a shishkebab"
+	icon_state = "melee_sulphite"
 	icon_living = "melee_sulphite"
-	icon_state = "melee_sulphite_dead"
+	icon_dead= "melee_sulphite_dead"
 	loot = list(/obj/item/locked_box/misc/money/all/low)
 	maxHealth = 220
 	health = 220
