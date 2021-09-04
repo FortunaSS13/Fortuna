@@ -944,9 +944,9 @@ datum/job/wasteland/f13dendoctor
 	shoes = /obj/item/clothing/shoes/laceup
 	ears = /obj/item/radio/headset/headset_den
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	backpack =	/obj/item/storage/backpack/medic
-	gloves =  /obj/item/clothing/under/f13/densuit
+	gloves =  /obj/item/clothing/gloves/color/white
 	head = /obj/item/clothing/head/beret/durathread
 	mask =  /obj/item/clothing/mask/bandana/durathread
 	backpack_contents = list(
