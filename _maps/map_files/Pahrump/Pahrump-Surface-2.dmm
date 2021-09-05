@@ -10772,6 +10772,13 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/carpet/black,
 /area/f13/building)
+"eVW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/secretary,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "eWA" = (
 /obj/structure/toilet{
 	dir = 1
@@ -39880,6 +39887,13 @@
 	color = "000000"
 	},
 /obj/structure/closet/cabinet/anchored,
+/obj/item/clothing/under/rank/civilian/lawyer/black/alt,
+/obj/item/clothing/under/rank/civilian/lawyer/black/alt/skirt,
+/obj/item/clothing/under/rank/civilian/lawyer/blue,
+/obj/item/clothing/under/rank/civilian/lawyer/blue/skirt,
+/obj/item/clothing/under/rank/civilian/lawyer/red,
+/obj/item/clothing/under/rank/civilian/lawyer/red/skirt,
+/obj/item/storage/briefcase,
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "srj" = (
@@ -42092,6 +42106,7 @@
 /area/f13/wasteland)
 "tqM" = (
 /obj/structure/bed,
+/obj/item/bedsheet/rd,
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "tqP" = (
@@ -52276,6 +52291,11 @@
 "xRV" = (
 /turf/open/floor/wood/f13/old/ruinedcornertl,
 /area/f13/wasteland)
+"xRZ" = (
+/obj/structure/table/wood,
+/obj/item/storage/secure/briefcase,
+/turf/open/floor/carpet/green,
+/area/f13/building)
 "xSl" = (
 /obj/structure/simple_door/fakeglass,
 /obj/structure/barricade/wooden/planks,
@@ -88503,7 +88523,7 @@ uzO
 aRl
 mXF
 aRl
-ozq
+eVW
 sKe
 ozq
 pVD
@@ -90047,7 +90067,7 @@ qrm
 uqa
 suy
 sQW
-mlm
+xRZ
 xAx
 rPo
 yes
