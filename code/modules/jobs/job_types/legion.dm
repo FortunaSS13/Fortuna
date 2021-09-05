@@ -334,10 +334,10 @@ commented out pending rework*/
 /datum/outfit/loadout/decvetrear
 	name = "Lead from the rear"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
-		/obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/ammo_box/tube/c4570 = 3,
 		)
 
 
