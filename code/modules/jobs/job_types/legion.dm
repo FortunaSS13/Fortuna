@@ -193,7 +193,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	loadout_options = list(
 		/datum/outfit/loadout/palacent,		// M1919, military ripper
 		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, AMR
-		/datum/outfit/loadout/centurion,	// 10mm SMG, Powerfist
+		/datum/outfit/loadout/centurion,	// 14mm pistol, Powerfist
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -251,10 +251,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Frontline Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	backpack_contents = list(
 		/obj/item/melee/powerfist/goliath = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		/obj/item/ammo_box/magazine/m14mm = 3,
 		/obj/item/tank/internals/oxygen = 1
 		)
 
@@ -324,7 +324,7 @@ commented out pending rework*/
 /datum/outfit/loadout/decvetfront
 	name = "Lead from the front"
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
-	suit_store = /obj/item/twohanded/spear/lance
+	suit_store = /obj/item/twohanded/sledgehammer/supersledge
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
 		/obj/item/ammo_box/magazine/greasegun = 2,
@@ -400,9 +400,9 @@ commented out pending rework*/
 
 /datum/outfit/loadout/decprimfront
 	name = "Lead from the front"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		)
 
 /datum/outfit/loadout/decprimrear
@@ -558,9 +558,9 @@ commented out pending rework*/
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		)
 
