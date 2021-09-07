@@ -18029,7 +18029,7 @@
 	id = "bos_entryway";
 	name = "Level 0: Entryway";
 	roundstart_template = /datum/map_template/shuttle/bos/entrance_elevator;
-	width = 4
+	width = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood/operations)
@@ -21850,6 +21850,7 @@
 /obj/structure/grille,
 /obj/structure/grille,
 /obj/structure/window/fulltile/store,
+/obj/machinery/computer/shuttle/bosentryelevator,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -22215,6 +22216,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
+"oVO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/shuttle/bosentryelevator{
+	pixel_x = 16;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/surface)
 "oWl" = (
 /obj/machinery/computer/telecomms/monitor{
 	dir = 4;
@@ -26162,6 +26171,16 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/f13/brotherhood/rnd)
+"rHf" = (
+/obj/machinery/computer/shuttle/bosentryelevator{
+	density = 0;
+	pixel_x = 16;
+	pixel_y = 2
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/brotherhood/operations)
 "rHu" = (
 /obj/machinery/conveyor/auto{
 	dir = 4;
@@ -31384,10 +31403,9 @@
 	area_type = /area/f13;
 	dwidth = 1;
 	height = 4;
-	id = "bos_entryway";
-	name = "Level 0: Entryway";
-	roundstart_template = null;
-	width = 4
+	id = "bos_surface";
+	name = "Surface";
+	width = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood/surface)
@@ -68700,7 +68718,7 @@ uoO
 uoO
 uoO
 oDY
-oel
+oVO
 oel
 ugK
 oel
@@ -94867,7 +94885,7 @@ qPN
 qPN
 lZe
 nJB
-sCB
+rHf
 llp
 kWH
 kWH

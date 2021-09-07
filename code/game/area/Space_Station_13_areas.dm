@@ -1739,7 +1739,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 
 /area/shuttle/bos_entrance_elevator
-	name = "Brotherhood Of Steel Entryway"
+	name = "BOS Entrance Elevator"
 
 
 /area/shuttle/northbunker_elevator
