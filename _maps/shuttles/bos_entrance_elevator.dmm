@@ -3,6 +3,7 @@
 "f" = (/obj/effect/turf_decal/stripes/line{dir = 5},/obj/structure/window/plasma/reinforced{dir = 1},/obj/machinery/light/floor,/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
 "k" = (/obj/effect/turf_decal/stripes/line{dir = 6},/obj/structure/window/plasma/reinforced,/obj/machinery/light/floor,/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
 "q" = (/obj/docking_port/mobile/elevator{dir = 8; dwidth = 1; height = 4; id = "bos_entrance_elevator"; name = "BOS Entrance Elevator"; width = 4},/obj/effect/turf_decal/caution{dir = 4},/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
+"G" = (/obj/machinery/computer/shuttle/bosentryelevator{dir = 4},/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
 "I" = (/obj/effect/turf_decal/stripes/line,/obj/structure/window/plasma/reinforced,/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
 "O" = (/obj/effect/turf_decal/caution{dir = 8},/obj/effect/turf_decal/stripes/line{dir = 8},/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
 "P" = (/turf/open/floor/engine,/area/shuttle/bos_entrance_elevator)
@@ -12,7 +13,7 @@
 
 (1,1,1) = {"
 ZYYf
-TPPb
+TGPb
 OPPq
 aIIk
 "}
