@@ -638,6 +638,7 @@
 /datum/map_template/shuttle/entrance_elevator
 	suffix = "elevator"
 	name = "BOS Entrance Elevator"
+	port_id = "entrance"
 
 /datum/map_template/shuttle/bunker/elevator
 	suffix = "elevator"
