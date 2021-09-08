@@ -1738,7 +1738,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Bunker Elevator"
 
 
-/area/shuttle/bos_entrance_elevator
+/area/shuttle/entrance_elevator
 	name = "BOS Entrance Elevator"
 
 

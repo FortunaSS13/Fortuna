@@ -41,7 +41,7 @@
 	icon_keyboard = "tech_key"
 	light_color = LIGHT_COLOR_CYAN
 	circuit = /obj/item/circuitboard/computer/bos_entry_control
-	shuttleId = "bos_entrance_elevator"
+	shuttleId = "entrance_elevator"
 	possible_destinations = "bos_entryway;bos_surface;"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF

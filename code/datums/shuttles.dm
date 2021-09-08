@@ -635,7 +635,7 @@
 	suffix = "elevator"
 	name = "BOS Elevator"
 
-/datum/map_template/shuttle/bos/entrance_elevator
+/datum/map_template/shuttle/entrance_elevator
 	suffix = "elevator"
 	name = "BOS Entrance Elevator"
 
