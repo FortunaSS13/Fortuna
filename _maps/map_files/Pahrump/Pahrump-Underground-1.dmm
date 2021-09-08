@@ -9948,6 +9948,10 @@
 /obj/machinery/telecomms/processor/preset_one,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"fPK" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/surface)
 "fQz" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13{
@@ -13748,6 +13752,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/bunker)
+"irA" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = bos_alt
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
 "irB" = (
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/f13{
@@ -18049,7 +18060,7 @@
 	id = "bos_entryway";
 	name = "Level 0: Entryway";
 	roundstart_template = /datum/map_template/shuttle/entrance_elevator;
-	width = 6
+	width = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood/operations)
@@ -27431,6 +27442,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood/operations)
+"sEw" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = bos_alt
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/brotherhood/operations)
 "sFo" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -30345,7 +30363,7 @@
 	height = 4;
 	id = "bos_surface";
 	name = "Surface";
-	width = 6
+	width = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood/surface)
@@ -33649,6 +33667,18 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/rnd)
+"xHZ" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/obj/structure/barricade/wooden/planks,
+/obj/structure/barricade/wooden/planks,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/surface)
 "xIe" = (
 /obj/structure/spider/stickyweb,
 /turf/open/indestructible/ground/outside/ruins,
@@ -68232,8 +68262,8 @@ uoO
 aoj
 uoO
 uoO
-aoj
-aoj
+hQE
+hQE
 oDY
 rkN
 wrl
@@ -68489,14 +68519,14 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-oDY
+hQE
+irA
+xHZ
+fPK
 oLX
-wrl
-wrl
-wrl
-wrl
+oLX
+oLX
+oLX
 oel
 eaq
 oDY
@@ -68746,8 +68776,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+hQE
+hQE
 oDY
 oVO
 oel
@@ -95939,7 +95969,7 @@ aeX
 sCB
 aFs
 wKL
-wKL
+sEw
 wKL
 wKL
 wKL
