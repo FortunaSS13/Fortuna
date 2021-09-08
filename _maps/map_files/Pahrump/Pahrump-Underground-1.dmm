@@ -18048,7 +18048,7 @@
 	height = 4;
 	id = "bos_entryway";
 	name = "Level 0: Entryway";
-	roundstart_template = /datum/map_template/shuttle/bos/entrance_elevator;
+	roundstart_template = /datum/map_template/shuttle/entrance_elevator;
 	width = 6
 	},
 /turf/open/floor/plasteel/elevatorshaft,
