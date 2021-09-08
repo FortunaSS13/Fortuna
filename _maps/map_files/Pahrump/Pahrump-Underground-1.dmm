@@ -785,6 +785,14 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"aCY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/broken_flooring,
+/obj/structure/lattice,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/brotherhood/dorms)
 "aDa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
@@ -14613,6 +14621,16 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
+"jdj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/lattice,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/brotherhood/dorms)
 "jdF" = (
 /obj/structure/spider/cocoon,
 /obj/structure/spider/stickyweb,
@@ -16642,6 +16660,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/storage/toolbox/emergency,
+/obj/item/crowbar,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -17706,6 +17725,7 @@
 	pixel_x = 2
 	},
 /obj/effect/decal/cleanable/robot_debris/down,
+/obj/item/crowbar/advanced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "lLd" = (
@@ -18029,7 +18049,7 @@
 	id = "bos_entryway";
 	name = "Level 0: Entryway";
 	roundstart_template = /datum/map_template/shuttle/bos/entrance_elevator;
-	width = 5
+	width = 6
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood/operations)
@@ -23585,10 +23605,13 @@
 /area/f13/caves)
 "pVy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood/surface)
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/crowbar,
+/obj/structure/lattice,
+/turf/open/floor/plating/tunnel,
+/area/f13/brotherhood/dorms)
 "pVA" = (
 /obj/effect/decal/cleanable/shreds{
 	pixel_x = -6;
@@ -30315,6 +30338,17 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/followers)
+"vcW" = (
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dwidth = 1;
+	height = 4;
+	id = "bos_surface";
+	name = "Surface";
+	width = 6
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/brotherhood/surface)
 "vdF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall,
@@ -31399,16 +31433,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/brotherhood/dorms)
 "vYx" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 4;
-	id = "bos_surface";
-	name = "Surface";
-	width = 5
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
 	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/brotherhood/surface)
+/area/f13/brotherhood/dorms)
 "vYY" = (
 /obj/structure/window/reinforced/clockwork/fulltile,
 /obj/structure/grille,
@@ -32175,6 +32205,7 @@
 "wGU" = (
 /obj/item/multitool,
 /obj/structure/rack,
+/obj/item/crowbar,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood/reactor)
 "wHf" = (
@@ -67177,10 +67208,10 @@ uoO
 uoO
 oDY
 oLX
-pVy
-oel
-oel
-oel
+wrl
+wrl
+wrl
+wrl
 oel
 oDY
 uoO
@@ -67437,7 +67468,7 @@ hkx
 wrl
 wrl
 wrl
-wrl
+vcW
 wrz
 oDY
 uoO
@@ -67694,7 +67725,7 @@ oel
 wrl
 wrl
 wrl
-vYx
+wrl
 oel
 oDY
 uoO
@@ -68462,10 +68493,10 @@ uoO
 uoO
 oDY
 oLX
-oel
-oel
-ugK
-ugK
+wrl
+wrl
+wrl
+wrl
 oel
 eaq
 oDY
@@ -68720,9 +68751,9 @@ uoO
 oDY
 oVO
 oel
-ugK
 oel
-ugK
+oel
+oel
 oel
 rns
 qbY
@@ -93336,8 +93367,8 @@ aXV
 aXV
 dTR
 dTR
-dSU
-dSU
+pVy
+jdj
 dTR
 aXl
 xCN
@@ -93593,8 +93624,8 @@ bBc
 dTR
 dTR
 bBc
-dTR
-dTR
+vYx
+aCY
 dTR
 lYO
 bpw
@@ -94108,9 +94139,9 @@ aXV
 aXV
 auF
 aXV
-aXV
-aXV
-aXV
+wKL
+wKL
+wKL
 qXN
 wKL
 wKL
@@ -94366,10 +94397,10 @@ aeX
 yhd
 yhd
 wKL
-wKL
-wKL
-wKL
-wKL
+qPN
+qPN
+qPN
+qPN
 wKL
 wKL
 wKL
@@ -95651,10 +95682,10 @@ aeX
 sCB
 aAE
 wKL
-wKL
-wKL
-wKL
-wKL
+qPN
+qPN
+qPN
+qPN
 wKL
 wKL
 wKL
@@ -95909,10 +95940,10 @@ sCB
 aFs
 wKL
 wKL
-uoO
-uoO
-uoO
-uoO
+wKL
+wKL
+wKL
+wKL
 uoO
 uoO
 uoO
