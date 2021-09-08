@@ -1458,8 +1458,8 @@
 /turf/open/floor/wood/wood_tiled,
 /area/f13/followers)
 "bbq" = (
-/obj/structure/filingcabinet/employment,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/structure/filingcabinet,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/brotherhood/operations)
 "bbE" = (
@@ -10702,7 +10702,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/den)
 "goR" = (
-/obj/structure/filingcabinet/employment,
+/obj/structure/filingcabinet,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -16827,7 +16827,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/den)
 "kVP" = (
-/obj/structure/filingcabinet/employment,
+/obj/structure/filingcabinet,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/offices1st)
 "kWH" = (
@@ -24542,7 +24542,7 @@
 /turf/closed/wall/r_wall,
 /area/f13/tcoms)
 "qzN" = (
-/obj/structure/filingcabinet/employment,
+/obj/structure/filingcabinet,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkyellowfull"
 	},
