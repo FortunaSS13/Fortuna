@@ -13384,6 +13384,7 @@
 	dir = 4;
 	pixel_y = -16
 	},
+/obj/item/circuitboard/machine/vr_sleeper,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "gez" = (
@@ -38933,6 +38934,9 @@
 /area/f13/building)
 "rTQ" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/vr_sleeper{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "rUp" = (
