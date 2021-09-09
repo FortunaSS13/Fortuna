@@ -250,9 +250,11 @@
 
 /obj/effect/landmark/vr_spawn/followers
 	vr_category = "followers"
+	vr_outfit = /datum/outfit/vr/followers
 
 /obj/effect/landmark/vr_spawn/den
 	vr_category = "den"
+	vr_outfit = /datum/outfit/vr/den
 
 /obj/effect/vr_clean_master // Will keep VR areas that have this relatively clean.
 	icon = 'icons/mob/screen_gen.dmi'

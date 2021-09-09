@@ -49,14 +49,45 @@
 /obj/item/card/id/dogtag/virt
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 
+/obj/item/radio/headset/headset_bos/virt
+	name = "Brotherhood VR Radio"
+
+/obj/item/radio/headset/headset_followers/virt
+	name = "Followers VR Radio"
+
+/obj/item/radio/headset/headset_den/virt
+	name = "Den VR Radio"
+
+/obj/item/radio/headset/headset_bos/virt/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+/obj/item/radio/headset/headset_followers/virt/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+/obj/item/radio/headset/headset_den/virt/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
 /datum/outfit/vr/bos
 	name = "Brotherhood"
-	ears = 		/obj/item/radio/headset/headset_bos
+	ears = 		/obj/item/radio/headset/headset_bos/virt
 	uniform =	/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 	/obj/item/clothing/shoes/combat/swat
 	gloves = 	/obj/item/clothing/gloves/combat
 	id = 		/obj/item/card/id/dogtag/virt
 	box = 		/obj/item/storage/survivalkit_adv
+	starting_funds = 0
+
+/datum/outfit/vr/followers
+	name = "Followers"
+	ears =		/obj/item/radio/headset/headset_followers/virt
+	starting_funds = 0
+
+/datum/outfit/vr/den
+	name = "Den"
+	ears =		/obj/item/radio/headset/headset_den/virt
 	starting_funds = 0
 
 /datum/outfit/vr/bos/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
@@ -71,3 +102,20 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmetmk2)
 
+/datum/outfit/vr/followers/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_GENERIC, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, VIRTUAL_REALITY_TRAIT)
+
+/datum/outfit/vr/den/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_GENERIC, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, VIRTUAL_REALITY_TRAIT)
