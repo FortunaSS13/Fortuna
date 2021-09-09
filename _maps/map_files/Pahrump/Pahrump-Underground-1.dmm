@@ -16662,7 +16662,9 @@
 	name = "Den Clinic VR Lounge";
 	req_one_access_txt = "87"
 	},
-/turf/open/space/basic,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
 /area/f13/den)
 "kQs" = (
 /obj/effect/decal/cleanable/dirt,
