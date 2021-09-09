@@ -785,7 +785,6 @@
 /area/awaymission/vr/public/deathmatch)
 "fY" = (
 /obj/structure/closet/crate/large,
-/obj/item/circuitboard/machine/protolathe,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -4490,7 +4489,6 @@
 "Ia" = (
 /obj/structure/closet/crate/large,
 /obj/item/storage/box/stockparts/basic,
-/obj/item/circuitboard/machine/circuit_imprinter,
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
 	},
@@ -5011,15 +5009,6 @@
 	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
-	},
-/area/awaymission/vr/bos/enclavebunker)
-"LR" = (
-/obj/machinery/computer/rdconsole{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "redrustyfull"
 	},
 /area/awaymission/vr/bos/enclavebunker)
 "LS" = (
@@ -15490,7 +15479,7 @@ rb
 rb
 ma
 BB
-LR
+ow
 PH
 Kb
 ma
