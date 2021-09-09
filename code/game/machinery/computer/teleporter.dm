@@ -208,8 +208,9 @@
 	name = "VR Scenario Loader"
 	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios."
 
-/obj/machinery/computer/teleporter/Initialize()
+/obj/machinery/computer/teleporter/vr/Initialize()
 	. = ..()
+	// This cannot be allowed to be deconstructed. We don't want people escaping VR by making a normal teleporter console
 	flags_1 |= NODECONSTRUCT_1
 
 /obj/machinery/computer/teleporter/vr/bos
