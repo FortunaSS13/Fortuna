@@ -1997,11 +1997,7 @@
 	},
 /area/f13/tunnel)
 "brq" = (
-/obj/structure/closet/secure_closet/contraband/armory{
-	req_access_txt = "120"
-	},
-/obj/item/clothing/head/helmet/f13/power_armor/t45d,
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/brotherhood/operations)
 "brI" = (
@@ -2091,10 +2087,6 @@
 /obj/machinery/workbench,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
-"buV" = (
-/obj/structure/closet/crate/bin,
-/turf/open/floor/wood/f13/stage_t,
-/area/f13/brotherhood/operations)
 "buX" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass/ten,
@@ -96914,7 +96906,7 @@ axv
 bLk
 bLk
 wKL
-buV
+bLk
 vZj
 bKi
 djZ
