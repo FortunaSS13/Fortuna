@@ -320,6 +320,10 @@
 	name = "VR environment control console"
 	desc = "A console for interacting with the simulation"
 
+/obj/machinery/computer/holodeck/virtual/LateInitialize()
+	. = ..()
+	obj_flags |= EMAGGED
+
 /obj/machinery/computer/holodeck/virtual/derez(obj/O, silent = TRUE, forced = FALSE)
 	// We don't want to ever despawn things that got out of the holodeck area in this case
 	var/area/AS = get_area(O)
