@@ -34299,10 +34299,7 @@
 	},
 /area/f13/brotherhood/archives)
 "yey" = (
-/obj/machinery/rnd/server/bos{
-	heating_power = 25000;
-	temp_penalty_coefficient = .3
-	},
+/obj/machinery/rnd/server/bos,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "yeD" = (
