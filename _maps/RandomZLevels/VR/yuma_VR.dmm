@@ -2571,8 +2571,7 @@
 "tg" = (
 /obj/structure/simple_door/bunker{
 	name = "Training Ground";
-	req_access = 120;
-	req_access_txt = "120"
+	req_access = null
 	},
 /turf/open/floor/circuit/f13_green,
 /area/awaymission/vr/den)
@@ -5996,8 +5995,7 @@
 "TH" = (
 /obj/structure/simple_door/bunker{
 	name = "Training Ground";
-	req_access = 120;
-	req_access_txt = "120"
+	req_access = null
 	},
 /turf/open/floor/circuit/f13_green,
 /area/awaymission/vr/followers)
@@ -6233,8 +6231,7 @@
 "Vy" = (
 /obj/structure/simple_door/bunker{
 	name = "Training Ground";
-	req_access = 120;
-	req_access_txt = "120"
+	req_access = null
 	},
 /turf/open/floor/circuit/f13_green,
 /area/awaymission/vr/bos)
