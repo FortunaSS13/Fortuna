@@ -13819,7 +13819,7 @@
 "irA" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
-	id = bos_alt
+	id = "bos_alt"
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/surface)
@@ -27573,7 +27573,7 @@
 "sEw" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = bos_alt
+	id = "bos_alt"
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/brotherhood/operations)
