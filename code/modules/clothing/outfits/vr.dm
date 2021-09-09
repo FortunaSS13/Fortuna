@@ -46,13 +46,16 @@
 	name = "Where is my uplink?"
 	info = "Use the radio in your backpack."
 
+/obj/item/card/id/dogtag/virt
+	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
 /datum/outfit/vr/bos
 	name = "Brotherhood"
 	ears = 		/obj/item/radio/headset/headset_bos
 	uniform =	/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 	/obj/item/clothing/shoes/combat/swat
 	gloves = 	/obj/item/clothing/gloves/combat
-	id = 		/obj/item/card/id/dogtag
+	id = 		/obj/item/card/id/dogtag/virt
 	box = 		/obj/item/storage/survivalkit_adv
 	starting_funds = 0
 
@@ -60,9 +63,9 @@
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_GENERIC, VIRTUAL_REALITY_TRAIT)
+	ADD_TRAIT(H, TRAIT_PA_WEAR, VIRTUAL_REALITY_TRAIT)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmormk2)

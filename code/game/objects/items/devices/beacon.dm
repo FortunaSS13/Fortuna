@@ -8,6 +8,7 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	var/enabled = TRUE
 	var/renamed = FALSE
+	var/group = ""
 
 /obj/item/beacon/Initialize()
 	. = ..()
@@ -42,3 +43,16 @@
 		return
 	else	
 		return ..()
+
+/obj/item/beacon/vr
+	name = "\improper VR tracking beacon"
+	invisibility = INVISIBILITY_ABSTRACT
+
+/obj/item/beacon/vr/bos
+	name = "\improper BoS VR tracking beacon"
+
+/obj/item/beacon/vr/followers
+	name = "\improper Followers VR tracking beacon"
+
+/obj/item/beacon/vr/den
+	name = "\improper Den VR tracking beacon"

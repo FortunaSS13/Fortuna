@@ -203,3 +203,35 @@
 	if(!A || A.noteleport)
 		return FALSE
 	return TRUE
+
+/obj/machinery/computer/teleporter/vr
+	name = "VR Scenario Loader"
+	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios."
+
+/obj/machinery/computer/teleporter/Initialize()
+	. = ..()
+	flags_1 |= NODECONSTRUCT_1
+
+/obj/machinery/computer/teleporter/vr/bos
+	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios. This one allows access to combat simulations."
+
+/obj/machinery/computer/teleporter/vr/followers
+	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios. This one allows access various training simulations."
+
+/obj/machinery/computer/teleporter/vr/den
+	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios. This one leads to interesting places."
+
+/obj/machinery/computer/teleporter/vr/bos/is_eligible(atom/movable/AM)
+	if(istype(AM, /obj/item/beacon/vr/bos))
+		return TRUE
+	return ..(AM)
+
+/obj/machinery/computer/teleporter/vr/followers/is_eligible(atom/movable/AM)
+	if(istype(AM, /obj/item/beacon/vr/followers))
+		return TRUE
+	return ..(AM)
+
+/obj/machinery/computer/teleporter/vr/den/is_eligible(atom/movable/AM)
+	if(istype(AM, /obj/item/beacon/vr/den))
+		return TRUE
+	return ..(AM)

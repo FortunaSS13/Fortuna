@@ -137,3 +137,92 @@
 /area/holodeck/rec_center/thunderdome1218
 	name = "Holodeck - 1218 AD"
 	restricted = 1
+
+// BoS Programs
+
+/area/holodeck/bos
+	name = "\improper BOS HOLODECK"
+	has_gravity = STANDARD_GRAVITY
+
+/area/holodeck/bos/medical
+	name = "VR - Medical"
+
+/area/holodeck/bos/armory
+	name = "VR - Armory"
+
+/area/holodeck/bos/bodies
+	name = "VR - Body"
+
+/area/holodeck/bos/offline
+	name = "VR - null"
+
+
+// Den Programs
+
+/area/holodeck/den
+	name = "\improper DEN HOLODECK"
+	has_gravity = STANDARD_GRAVITY
+
+/area/holodeck/den/medical
+	name = "VR - Medical"
+
+/area/holodeck/den/armory
+	name = "VR - Armory"
+
+/area/holodeck/den/bodies
+	name = "VR - Body"
+
+/area/holodeck/den/offline
+	name = "VR - null"
+
+
+// Followers Programs
+
+/area/holodeck/followers
+	name = "\improper FOLLOWERS HOLODECK"
+	has_gravity = STANDARD_GRAVITY
+
+/area/holodeck/followers/medical
+	name = "VR - Medical"
+
+/area/holodeck/followers/bodies
+	name = "VR - Body"
+
+/area/holodeck/followers/offline
+	name = "VR - null"
+
+// Arena programs
+
+/area/holodeck/deathmatch
+	name = "\improper DEATHMATCH"
+	has_gravity = STANDARD_GRAVITY
+
+/area/holodeck/deathmatch/public/blue_1
+	name = "\improper DEATHMATCH BLUE 1"
+
+/area/holodeck/deathmatch/public/blue_2
+	name = "\improper DEATHMATCH BLUE 2"
+
+/area/holodeck/deathmatch/public/red_1
+	name = "\improper DEATHMATCH RED 1"
+
+/area/holodeck/deathmatch/public/red_2
+	name = "\improper DEATHMATCH RED 2"
+
+/area/holodeck/deathmatch/bos/blue_1
+	name = "\improper DEATHMATCH BLUE 1 BOS"
+
+/area/holodeck/deathmatch/bos/blue_2
+	name = "\improper DEATHMATCH BLUE 2 BOS"
+
+/area/holodeck/deathmatch/bos/red_1
+	name = "\improper DEATHMATCH RED 1 BOS"
+
+/area/holodeck/deathmatch/bos/red_2
+	name = "\improper DEATHMATCH RED 2 BOS"
+
+/area/holodeck/deathmatch/rooms/armory
+	name = "Arena - Armory"
+
+/area/holodeck/deathmatch/rooms/offline
+	name = "Arena - Offline"
