@@ -6682,11 +6682,20 @@
 /turf/closed/indestructible/f13,
 /area/awaymission/vr/followers)
 "Zc" = (
-/obj/structure/rack,
-/obj/item/integrated_circuit_printer/upgraded,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
+/obj/structure/rack,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/deathmatch/rooms/armory)
 "Zi" = (
