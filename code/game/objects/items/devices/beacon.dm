@@ -8,7 +8,6 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	var/enabled = TRUE
 	var/renamed = FALSE
-	var/group = ""
 
 /obj/item/beacon/Initialize()
 	. = ..()
