@@ -55,3 +55,6 @@
 
 /obj/item/beacon/vr/den
 	name = "\improper Den VR tracking beacon"
+
+/obj/item/beacon/vr/public
+	name = "\improper Public VR tracking beacon"

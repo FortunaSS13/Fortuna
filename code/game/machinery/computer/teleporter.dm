@@ -222,6 +222,11 @@
 /obj/machinery/computer/teleporter/vr/den
 	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios. This one leads to interesting places."
 
+/obj/machinery/computer/teleporter/vr/is_eligible(atom/movable/AM)
+	if(istype(AM, /obj/item/beacon/vr/public))
+		return TRUE
+	return ..(AM)
+
 /obj/machinery/computer/teleporter/vr/bos/is_eligible(atom/movable/AM)
 	if(istype(AM, /obj/item/beacon/vr/bos))
 		return TRUE

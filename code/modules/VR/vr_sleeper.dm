@@ -203,14 +203,17 @@
 /obj/machinery/vr_sleeper/bos
 	desc = "A sleeper modified to alter the subconscious state of the user, allowing them to visit virtual worlds. This one is configured for combat simulations."
 	vr_category = "bos"
+	circuit = /obj/item/circuitboard/machine/vr_sleeper/bos
 
 /obj/machinery/vr_sleeper/followers
 	desc = "A sleeper modified to alter the subconscious state of the user, allowing them to visit virtual worlds. This one is configured to serve as a medical and botanical training ground."
 	vr_category = "followers"
+	circuit = /obj/item/circuitboard/machine/vr_sleeper/followers
 
 /obj/machinery/vr_sleeper/den
 	desc = "A sleeper modified to alter the subconscious state of the user, allowing them to visit virtual worlds. It's seen better days, and appears to have been tampered with."
 	vr_category = "den"
+	circuit = /obj/item/circuitboard/machine/vr_sleeper/den
 
 /obj/machinery/vr_sleeper/den/new_player(mob/M, location, datum/outfit/outfit, transfer = TRUE)
 	. = ..()
