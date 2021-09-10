@@ -134,15 +134,6 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"agK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/brotherhood/operations)
 "agL" = (
 /obj/structure/ore_box,
 /turf/open/indestructible/ground/inside/mountain,
@@ -348,15 +339,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/followers)
-"aou" = (
-/obj/machinery/light/small{
-	dir = 8;
-	light_color = "#d8b1b1"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/brotherhood/operations)
 "aoJ" = (
 /obj/machinery/light{
 	dir = 4
@@ -13592,7 +13574,7 @@
 /area/f13/tunnel)
 "ijY" = (
 /obj/machinery/door/airlock/medical/glass{
-	name = "VR Lounge";
+	name = "Spare Room";
 	req_one_access_txt = "124"
 	},
 /turf/open/floor/f13{
@@ -16659,7 +16641,7 @@
 "kPB" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
-	name = "Den Clinic VR Lounge";
+	name = "Den Clinic Spare Room";
 	req_one_access_txt = "87"
 	},
 /turf/open/floor/f13{
@@ -18508,12 +18490,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"mwK" = (
-/obj/machinery/vr_sleeper/followers{
-	dir = 1
-	},
-/turf/open/floor/wood/wood_tiled,
-/area/f13/followers)
 "mxa" = (
 /obj/structure/barricade/bars,
 /obj/structure/table,
@@ -26286,10 +26262,6 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/followers)
-"rMV" = (
-/obj/machinery/vr_sleeper/followers,
-/turf/open/floor/wood/wood_tiled,
-/area/f13/followers)
 "rMY" = (
 /obj/structure/sign/poster/prewar/poster94{
 	icon_state = "poster81"
@@ -27342,14 +27314,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood/operations)
-"sEF" = (
-/obj/machinery/vr_sleeper/den{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	icon_state = "white"
-	},
-/area/f13/den)
 "sFo" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -27374,17 +27338,6 @@
 	},
 /turf/closed/wall/f13/supermart,
 /area/f13/followers)
-"sIX" = (
-/obj/machinery/vr_sleeper/den{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/f13{
-	icon_state = "white"
-	},
-/area/f13/den)
 "sJm" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -69172,7 +69125,7 @@ gsS
 kUN
 nqB
 uvy
-sEF
+xUA
 kUN
 fcV
 fcV
@@ -69429,7 +69382,7 @@ xUA
 kUN
 uvy
 vPf
-sIX
+uvy
 kUN
 eTL
 fdp
@@ -74106,10 +74059,10 @@ faj
 faj
 rGH
 utd
-rMV
+rBX
 mXm
 mXm
-mwK
+rBX
 rbg
 tur
 nBk
@@ -74620,10 +74573,10 @@ faj
 faj
 hdP
 rbg
-rMV
+rBX
 rBX
 mXm
-mwK
+rBX
 rbg
 tur
 nBk
@@ -94207,11 +94160,11 @@ eLE
 "}
 (235,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-aeX
-sCB
-aeX
-aou
 aeX
 yhd
 yhd
@@ -94464,12 +94417,12 @@ eLE
 "}
 (236,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-aeX
-yhd
-aeX
-yhd
-aeX
+sCB
 sCB
 hUV
 wKL
@@ -94721,11 +94674,11 @@ eLE
 "}
 (237,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-aeX
-sCB
-aeX
-sCB
 aeX
 hUV
 yhd
@@ -94978,11 +94931,11 @@ eLE
 "}
 (238,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-agK
-sCB
-yhd
-hUV
 yhd
 yhd
 ayK
@@ -95235,11 +95188,11 @@ eLE
 "}
 (239,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-aeX
-sCB
-aeX
-sCB
 aeX
 sCB
 azO
@@ -95492,12 +95445,12 @@ eLE
 "}
 (240,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-aeX
-yhd
-aeX
 sCB
-aeX
 sCB
 aAE
 wKL
@@ -95749,11 +95702,11 @@ eLE
 "}
 (241,1,1) = {"
 eLE
+tSI
+tSI
+tSI
+tSI
 wKL
-aeX
-sCB
-aeX
-aDe
 aeX
 sCB
 aFs
@@ -96006,10 +95959,10 @@ eLE
 "}
 (242,1,1) = {"
 eLE
-wKL
-wKL
-wKL
-wKL
+tSI
+tSI
+tSI
+tSI
 wKL
 wKL
 wKL
