@@ -167,8 +167,8 @@
 	requires_training = TRUE
 	powered = TRUE
 	slowdown = 0.24
-	armor_block_chance = 60
-	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+	armor_block_chance = 30
+	deflection_chance = 0 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttec
 	name = "Vault-Tec power armour"
@@ -178,7 +178,7 @@
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 55, "energy" = 50, "bomb" = 50, "bio" = 60, "rad" = 30, "fire" = 65, "acid" = 15, "wound" = 35)
 	slowdown = 0
 	armor_block_chance = 40
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
+	deflection_chance = 0 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
 /obj/item/clothing/suit/armor/f13/power_armor/excavator
 	name = "excavator power armor"
@@ -188,7 +188,7 @@
 	slowdown = 0.5 //+0.1 from helmet
 	armor = list("melee" = 70, "bullet" = 60, "laser" = 40, "energy" = 35, "bomb" = 45, "bio" = 50, "rad" = 50, "fire" = 60, "acid" = 15, "wound" = 20)
 	armor_block_chance = 40
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
+	deflection_chance = 0 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
@@ -197,8 +197,8 @@
 	item_state = "t45dpowerarmor"
 	slowdown = 0.24
 	armor = list("melee" = 75, "bullet" = 70, "laser" = 45, "energy" = 45, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
-	armor_block_chance = 50
-	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+	armor_block_chance = 45
+	deflection_chance = 0 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
 	name = "sierra power armor"
@@ -221,7 +221,7 @@
 	item_state = "midwestgrey_pa"
 	armor = list("melee" = 75, "bullet" = 70, "laser" = 45, "energy" = 45, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
 	armor_block_chance = 50
-	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+	deflection_chance = 0 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
@@ -254,7 +254,7 @@
 	melee_block_threshold = 40
 	armor_block_threshold = 0.4
 	armor_block_chance = 50
-	deflection_chance = 10
+	deflection_chance = 0
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/tesla
 	name = "T-60b tesla armor"
@@ -281,7 +281,7 @@
 	melee_block_threshold = 45
 	armor_block_threshold = 0.45
 	armor_block_chance = 60
-	deflection_chance = 10 
+	deflection_chance = 0 
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced/hellfire
 	name = "hellfire power armor"
