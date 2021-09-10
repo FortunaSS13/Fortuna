@@ -188,7 +188,7 @@
 	slowdown = 0.5 //+0.1 from helmet
 	armor = list("melee" = 70, "bullet" = 60, "laser" = 40, "energy" = 35, "bomb" = 45, "bio" = 50, "rad" = 50, "fire" = 60, "acid" = 15, "wound" = 20)
 	armor_block_chance = 40
-	deflection_chance = 00 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
+	deflection_chance = 0 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not a heavy combat model
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
@@ -197,7 +197,7 @@
 	item_state = "t45dpowerarmor"
 	slowdown = 0.24
 	armor = list("melee" = 75, "bullet" = 70, "laser" = 45, "energy" = 45, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
-	armor_block_chance = 50
+	armor_block_chance = 35
 	deflection_chance = 0 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
@@ -229,7 +229,7 @@
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
-	armor_block_chance = 50
+	armor_block_chance = 45
 	deflection_chance = 00 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.
 	armor = list("melee" = 75, "bullet" = 70, "laser" = 50, "energy" = 45, "bomb" = 70, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 45)
 	armor_block_threshold = 0.35
