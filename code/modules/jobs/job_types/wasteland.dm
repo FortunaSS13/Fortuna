@@ -292,9 +292,9 @@ Great Khan
 		/obj/item/restraints/handcuffs=2)
 
 /datum/outfit/loadout/brawler
-name = "Brawler"
-gloves = /obj/item/melee/unarmed/brass/spiked
-backpack_contents = list(
+	name = "Brawler"
+	gloves =	/obj/item/melee/unarmed/brass/spiked
+	backpack_contents = list(
 		/obj/item/twohanded/baseball/spiked=1, \
 		/obj/item/reagent_containers/pill/patch/healpoultice=2)
 
@@ -763,7 +763,7 @@ Raider
 		/obj/item/radio=1)
 
 /datum/job/wasteland/f13enforcer
-	name = "Den Mob Enforcer"
+	title = "Den Mob Enforcer"
 	flag = F13ENFORCER
 	faction = "Wastelander"
 	social_faction = "Raiders"
@@ -783,14 +783,6 @@ Raider
 	loadout_options = list(
 		/datum/outfit/loadout/hitman,
 		/datum/outfit/loadout/bodyguard,
-		/datum/outfit/loadout/ronin,
-		/datum/outfit/loadout/ashigari,
-		/datum/outfit/loadout/soldat,
-        /datum/outfit/loadout/soldatscouter,
-		/datum/outfit/loadout/sovietmedic,
-		/datum/outfit/loadout/colombianhitman,
-		/datum/outfit/loadout/narcos,
-		/datum/outfit/loadout/shotgunner
 		)
 
 
@@ -804,7 +796,7 @@ Raider
 	ears = /obj/item/radio/headset/headset_den
 	l_pocket = /obj/item/melee/onehanded/knife/switchblade
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	backpack =	/obj/item/storage/backpack/satchel
 	satchel =  /obj/item/storage/backpack/satchel
 	gloves =  /obj/item/clothing/gloves/color/white
@@ -830,131 +822,24 @@ Raider
 		DM.add_member(H)
 		H.gang = DM
 
-/datum/outfit/job/wasteland/ronin
-name = "Samurai"
-jobtype = /datum/job/wasteland/ronin
-r_hand = /obj/item/katana
-suit = /obj/item/clothing/suit/armor/f13/combat/swat
-shoes = /obj/item/clothing/shoes/laceup
-belt = /obj/item/storage/belt/military/assault
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-backpack_contents = list(
-	/obj/item/gun/ballistic/automatic/smg/mp5)
-		
+/datum/outfit/loadout/hitman
+	name = "Hitman"
+	r_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit = /obj/item/clothing/suit/armor/vest
+	backpack_contents = list(
+						/obj/item/ammo_box/magazine/uzim9mm=3, \
+						/obj/item/suppressor=1
+						)
 
-
-/datum/outfit/job/wasteland/ashigari
-name = "Spearman"
-jobtype = /datum/job/wasteland/ashigari
-r_hand = /obj/item/twohanded/spear
-suit = /obj/item/clothing/suit/armor/f13/combat/dark
-shoes = /obj/item/clothing/shoes/laceup
-belt = /obj/item/storage/belt/military/assault
-backpack =	/obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-backpack_contents = list(
-    /obj/item/clothing/suit/jacket/leather,
-	/obj/item/clothing/neck/mantle/poncho
-	)
-
-/datum/outfit/job/wasteland/soldat
-name = "Soldat"
-jobtype = /datum/job/wasteland/soldat
-r_hand = /obj/item/gun/ballistic/rifle/mosin
-suit = /obj/item/clothing/suit/armored/light/duster
-shoes = /obj/item/clothing/shoes/combat/sneakboots
-belt = /obj/item/storage/belt/military/assault
-backpack =	/obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-backpack_contents = list(
-		/obj/item/clothing/under/suit_jacket/charcoal,
-		/obj/item/clothing/neck/mantle/brown,
-		/obj/item/clothing/head/mask/black,
-	)
-
-/datum/outfit/job/wasteland/soldatscouter
-jobtype = /datum/job/wasteland/soldatscouter
-name = "Scout"
-r_hand = /obj/item/gun/ballistic/automatic/smg/rockwell
-suit = /obj/item/clothing/under/soviet
-shoes = /obj/item/clothing/shoes/combat
-belt = /obj/item/storage/belt/military/assault
-backpack = /obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-backpack_contents = list(
-  /obj/item/ammo_box/magazine/uzim9mm/rockwell/,
-	
-)
-
-
-/datum/outfit/job/wasteland/sovietmedic
-  name = "Soviet Medic"
-  jobtype = /datum/job/wasteland/sovietmedic
-  r_hand = /obj/item/gun/ballistic/revolver/colt6520
-  suit = /obj/item/clothing/suit/jacket/puffer/vest
-  shoes = /obj/item/clothing/shoes/sneakers/noslip
-  belt = /obj/item/storage/belt/military/assault
-  backpack = /obj/item/storage/backpack/satchel
-  ears = /obj/item/radio/headset/headset_den
-  id = /obj/item/card/id/dentattoo
-  backpack_contents = list(
-	/obj/item/ammo_box/l10mm,
-	/obj/item/clothing/head/ushanka,
-	/obj/item/clothing/shoes/laceup,
-	/obj/item/clothing/head/mask)
-
-
-
-/datum/outfit/job/wasteland/colombianhitman
-  name = "colombian Hitman"
-  jobtype = /datum/job/wasteland/colombianhitman
-  r_hand = /obj/item/gun/ballistic/automatic/pistol/beretta
-  suit = /obj/item/clothing/suit/armor/vest
-  shoes = /obj/item/clothing/shoes/winterboots
-  belt = /obj/item/storage/belt/military/assault
-  backpack =	/obj/item/storage/backpack/satchel
-  ears = /obj/item/radio/headset/headset_den
-  id = /obj/item/card/id/dentattoo
-  backpack_contents = list(
-		/obj/item/ammo_box/magazine/m9mmds,
-		/obj/item/clothing/head/flatcap,
-		/obj/item/clothing/under/overalls)
-        
-		
-/datum/outfit/job/wasteland/narcos
-  name = "Narcos"
-  jobtype = /datum/job/wasteland/narcos
-  r_hand = /obj/item/gun/ballistic/automatic/service
-  suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
-  shoes = /obj/item/clothing/shoes/jackboots
-  belt = /obj/item/storage/belt/military/assault
-  ears = /obj/item/radio/headset/headset_den
-  id = /obj/item/card/id/dentattoo
-  backpack_contents = list(
-		/obj/item/clothing/head/helmet/alt)
-
-
-		
-/datum/outfit/job/wasteland/shotgunner
-name = "CQC"
-jobtype = /datum/job/wasteland/shotgunner
-r_hand = /obj/item/gun/ballistic/shotgun/trench
-suit = /obj/item/clothing/suit/armor/f13/combat
-shoes = /obj/item/clothing/shoes/winterboots/ice_boots
-belt = /obj/item/storage/belt/military/assault
-backpack = /obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-  backpack_contents = list(
-		/obj/item/clothing/under/suit_jacket/navy,
+/datum/outfit/loadout/bodyguard
+	name = "Bodyguard"
+	r_hand = /obj/item/gun/ballistic/shotgun/police
+	suit = /obj/item/clothing/suit/armor/vest
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/melee/onehanded/knife/hunting = 1,
 		)
 
-		
-						
-	
 
 
 
@@ -997,10 +882,10 @@ id = /obj/item/card/id/dentattoo
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/melee/onehanded/knife/switchblade
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	backpack = /obj/item/storage/backpack/satchel
-	satchel =  /obj/item/storage/backpack/satchel
+	backpack =	/obj/item/storage/backpack/satchel
+	satchel = 	/obj/item/storage/backpack/satchel
 	gloves = /obj/item/clothing/gloves/color/white
 	head = /obj/item/clothing/head/caphat/beret/white
 	mask = /obj/item/clothing/mask/bandana/durathread
@@ -1015,71 +900,6 @@ id = /obj/item/card/id/dentattoo
 	..()
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-
-	loadout_options = list(
-		/datum/outfit/loadout/yakuza,
-		/datum/outfit/loadout/kapitan,
-		/datum/outfit/loadout/capo,
-		/datum/outfit/loadout/don,
-	)
-/datum/outfit/job/wasteland/yakuza
-name = "Yakuza Boss"
-jobtype = /datum/job/wasteland/yakuza
-r_hand = /obj/item/katana
-suit = /obj/item/clothing/suit/armor/vest
-shoes = /obj/item/clothing/shoes/workboots/mining
-belt = /obj/item/storage/belt/military/assault
-backpack = /obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-backpack_contents = list(
-						/obj/item/grenade/smokebomb
-						)
-
-
-/datum/outfit/job/wasteland/kapitan
- name = "Kapitan"
- jobtype = /datum/job/wasteland/kapitan
- r_hand = /obj/item/gun/ballistic/automatic/assault_rifle
- suit = /obj/item/clothing/suit/armor/vest
- belt = /obj/item/storage/belt/military/assault
- backpack =	/obj/item/storage/backpack/satchel
- ears = /obj/item/radio/headset/headset_den
- id = /obj/item/card/id/dentattoo
- backpack_contents = list(
- /obj/item/clothing/hat/beret/red)
-					
-	                    
-
-
-/datum/outfit/loadout/capo
-name = "Italian Capo"
-jobtype = /datum/job/wasteland/capo
-r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
-suit = /obj/item/clothing/suit/hooded/chaplain_hoodie
-shoes = /obj/item/clothing/shoes/workboots
-belt = /obj/item/storage/belt/military/assault
-backpack =	/obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-backpack_contents = list(
-						/obj/item/clothing/shoes/laceup
-						)
-
-/datum/outfit/job/wasteland/don
-name = "Colombian Don"
-jobtype = /datum/job/wasteland/don
-r_hand = /obj/item/gun/ballistic/automatic/r84
-suit = /obj/item/clothing/suit/armor/bulletproof
-belt = /obj/item/storage/belt/military/assault
-backpack = /obj/item/storage/backpack/satchel
-ears = /obj/item/radio/headset/headset_den
-id = /obj/item/card/id/dentattoo
-backpack_contents = list(
-						/obj/item/clothing/shoes/laceup,
-						/obj/item/reagent/drug/methamphetamine,
-						/obj/item/clothing/shoes/sneakers/white
-						)
 
 /datum/outfit/job/wasteland/f13mobboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1124,7 +944,7 @@ datum/job/wasteland/f13dendoctor
 	shoes = /obj/item/clothing/shoes/laceup
 	ears = /obj/item/radio/headset/headset_den
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	backpack =	/obj/item/storage/backpack/medic
 	gloves =  /obj/item/clothing/gloves/color/white
 	head = /obj/item/clothing/head/beret/durathread
@@ -1161,11 +981,11 @@ datum/job/wasteland/f13dendoctor
 
 /datum/outfit/loadout/dencombatmedic
 	name = "Combat medic"
-	r_hand = /obj/item/gun/ballistic/automatic/pistol/deagle
+	r_hand = /obj/item/gun/ballistic/automatic/smg/american180
 	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
 	backpack_contents = list(
 							/obj/item/clothing/glasses/hud/health/f13=1, \
-							/obj/item/ammo_box/magazine/m44 \
+							/obj/item/ammo_box/magazine/m22smg=1, \
 							)
 
 /datum/outfit/loadout/denchemist
@@ -1174,6 +994,7 @@ datum/job/wasteland/f13dendoctor
 	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
 	backpack_contents = list(
 						/obj/item/ammo_box/magazine/m10mm_adv/simple=1, \
+						/obj/item/grenade/chem_grenade=1, \
 						/obj/item/clothing/mask/gas=1, \
 						/obj/item/reagent_containers/glass/beaker/large=2 \
 						)
@@ -1296,4 +1117,3 @@ datum/job/wasteland/f13dendoctor
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
-
