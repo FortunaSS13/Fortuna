@@ -1117,3 +1117,4 @@ datum/job/wasteland/f13dendoctor
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	
