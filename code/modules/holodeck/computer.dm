@@ -320,16 +320,29 @@
 	name = "VR environment control console"
 	desc = "A console for interacting with the simulation"
 
-/obj/machinery/computer/holodeck/virtual/LateInitialize()
-	. = ..()
-	obj_flags |= EMAGGED
-
 /obj/machinery/computer/holodeck/virtual/derez(obj/O, silent = TRUE, forced = FALSE)
 	// We don't want to ever despawn things that got out of the holodeck area in this case
 	var/area/AS = get_area(O)
 	if(!istype(AS, /area/holodeck))
 		return
-	. = ..()
+
+	if(O && !stat && !forced)
+		if((ismob(O) || ismob(O.loc)))
+			addtimer(CALLBACK(src, .proc/derez, O, silent), 200) // We want virtual objects to last a long time.
+			return
+
+	spawned -= O
+	if(!O)
+		return
+	var/turf/T = get_turf(O)
+	for(var/atom/movable/AM in O) // these should be derezed if they were generated
+		AM.forceMove(T)
+		if(ismob(AM))
+			silent = FALSE					// otherwise make sure they are dropped
+
+	if(!silent)
+		visible_message("<span class='notice'>[O] fades away!</span>")
+	qdel(O)
 
 /obj/machinery/computer/holodeck/virtual/nerf(active)
 	// Custom overloaded nerf proc because we don't need to change damage types in VR
