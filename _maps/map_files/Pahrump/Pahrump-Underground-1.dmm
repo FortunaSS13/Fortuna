@@ -4630,12 +4630,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/leisure)
 "cSN" = (
-/obj/structure/kitchenspike,
-/obj/effect/decal/cleanable/blood/gibs{
-	icon_state = "gibup1"
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/old,
+/obj/item/bedsheet/medical,
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
 	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
+/area/f13/bunker)
 "cSV" = (
 /obj/structure/simple_door/metal/dirtystore,
 /turf/open/floor/f13{
@@ -5777,9 +5780,8 @@
 	anchored = 1;
 	can_be_unanchored = 1
 	},
-/obj/item/clothing/suit/armor/f13/power_armor/t45d,
-/obj/item/clothing/head/helmet/f13/power_armor/t45d,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/unique,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "dwE" = (
@@ -12433,6 +12435,13 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"hoe" = (
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibup1"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "hog" = (
 /obj/structure/barricade/bars,
 /obj/structure/table,
@@ -16182,8 +16191,9 @@
 	desc = "Arguably the most patriotic garand in existence, flag and well-known satisfying ping included, all the while hitting like a truck";
 	name = "M1 Garand"
 	},
-/obj/item/clothing/suit/armor/f13/battlecoat,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/item/clothing/suit/armor/f13/power_armor/t45d,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -17883,6 +17893,7 @@
 	name = "skulls"
 	},
 /obj/structure/decoration/rag,
+/obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "lNS" = (
@@ -24621,8 +24632,12 @@
 	},
 /area/f13/brotherhood/offices1st)
 "qyR" = (
-/mob/living/simple_animal/hostile/supermutant,
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/contraband/smoke{
+	pixel_y = 32
+	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -24793,7 +24808,9 @@
 /area/f13/caves)
 "qFt" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/structure/simple_door/metal/barred,
+/obj/structure/decoration/rag,
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -25410,12 +25427,8 @@
 	},
 /area/f13/den)
 "qYq" = (
-/obj/structure/sign/poster/contraband/smoke{
-	pixel_y = 32
-	},
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -26824,9 +26837,13 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/den)
 "rXk" = (
-/obj/structure/kitchenspike,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/bunker)
 "rXA" = (
 /obj/structure/timeddoor,
 /obj/structure/timeddoor,
@@ -27243,14 +27260,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "smm" = (
-/obj/structure/table,
-/obj/item/reagent_containers/pill/patch/healingpowder,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
+/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/tunnel)
 "snm" = (
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/bunker)
@@ -29543,6 +29555,16 @@
 /obj/item/projectile/magic/animate,
 /turf/closed/wall/f13/wood,
 /area/f13/brotherhood/rnd)
+"ulL" = (
+/obj/structure/table/wood/settler,
+/obj/item/hatchet,
+/obj/item/twohanded/sledgehammer,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "umr" = (
 /obj/item/flag/bos,
 /turf/open/floor/circuit/red/anim{
@@ -31179,7 +31201,6 @@
 "vFx" = (
 /obj/structure/chair/comfy/brown,
 /obj/item/clothing/head/crown,
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -31472,6 +31493,10 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
+"vSp" = (
+/obj/structure/kitchenspike,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "vSH" = (
 /obj/structure/flora/junglebush,
 /turf/open/indestructible/ground/outside/water,
@@ -32642,13 +32667,7 @@
 	},
 /area/f13/den)
 "wRf" = (
-/obj/structure/table/wood/settler,
-/obj/item/hatchet,
-/obj/item/twohanded/sledgehammer,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "wRA" = (
@@ -83746,7 +83765,7 @@ nBk
 tFc
 nBk
 wHi
-uoO
+nBk
 nBk
 nBk
 uoO
@@ -84002,7 +84021,7 @@ rFQ
 nBk
 tGa
 nBk
-uoO
+nBk
 uoO
 uoO
 nBk
@@ -87594,7 +87613,7 @@ axW
 pGw
 pMg
 pZr
-qyR
+dbx
 oPR
 oPR
 fLU
@@ -88108,8 +88127,8 @@ fLU
 pHq
 fLU
 fLU
-fLU
-qYq
+qyR
+oPR
 dbx
 dbx
 uel
@@ -88130,7 +88149,7 @@ uoO
 uoO
 uoO
 uoO
-rXk
+nBk
 myb
 nBk
 xSW
@@ -88363,9 +88382,9 @@ uoO
 fLU
 cfN
 dbx
-pRa
+cSN
 fLU
-dbx
+fLU
 dbx
 rVd
 tsK
@@ -88385,8 +88404,8 @@ uoO
 nBk
 nAf
 uoO
-uoO
 hQE
+ulL
 wRf
 nBk
 nBk
@@ -88621,10 +88640,10 @@ fLU
 gmN
 oPR
 dbx
-pHq
-dbx
-dbx
-smm
+oPR
+qFt
+qYq
+qIH
 qIH
 fLU
 nBk
@@ -88644,7 +88663,7 @@ bau
 nBk
 uoO
 uoO
-cSN
+nBk
 nBk
 nBk
 wHB
@@ -88878,9 +88897,9 @@ fLU
 cfN
 dbx
 pRa
+pRa
 fLU
-qFt
-dbx
+rXk
 sNu
 sNu
 fLU
@@ -88902,8 +88921,8 @@ nBk
 uoO
 uoO
 uoO
-nBk
-nBk
+hoe
+vSp
 tFc
 piI
 cwN
@@ -92234,9 +92253,9 @@ aoj
 uoO
 uoO
 aoj
-aoj
+hQE
 nBk
-uoO
+nBk
 uoO
 uoO
 nBk
@@ -92490,8 +92509,8 @@ wHi
 nBk
 nBk
 nBk
-hQE
-bqO
+nKZ
+bbV
 nBk
 uoO
 uoO
@@ -92747,7 +92766,7 @@ xkh
 iCA
 xkh
 nBk
-aoj
+nKZ
 nBk
 uoO
 uoO
@@ -93000,7 +93019,7 @@ vFx
 nBk
 iCA
 iCA
-iCA
+smm
 iCA
 iCA
 nBk
