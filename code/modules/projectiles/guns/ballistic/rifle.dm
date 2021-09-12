@@ -323,7 +323,8 @@
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	extra_damage = 9
-	fire_delay = 8
+	extra_penetration = 0.1
+	fire_delay = 5
 	spread = 0
 	can_unsuppress = FALSE
 	suppressed = 1

@@ -106,7 +106,7 @@ Head Paladin
 
 	loadout_options = list(
 	/datum/outfit/loadout/sentstand, //Tribeam laser
-	/datum/outfit/loadout/sentvet, //Rangemaster
+	/datum/outfit/loadout/sentvet, //xl70e3
 	/datum/outfit/loadout/sentheavy, //Gauss + Glock
 	/datum/outfit/loadout/sentgat // Gatling
 	)
@@ -148,8 +148,8 @@ Head Paladin
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/gun/ballistic/automatic/pistol/automag = 1,
+		/obj/item/ammo_box/magazine/automag = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		)
 
@@ -163,8 +163,8 @@ Head Paladin
 /datum/outfit/loadout/sentvet
 	name = "Veteran Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/rangemaster = 1,
-		/obj/item/ammo_box/magazine/m762/ext = 3,
+		/obj/item/gun/ballistic/automatic/xl70e3 = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 3,
 	)
 
 /datum/outfit/loadout/sentheavy
@@ -272,7 +272,7 @@ Head Knight
 	exp_requirements = 1500
 
 	loadout_options = list(
-	/datum/outfit/loadout/capstand, //AER14
+	/datum/outfit/loadout/capstand, //Wattz 2k
 	/datum/outfit/loadout/capsap, //Marksman
 	/datum/outfit/loadout/capalt //Neostead with buck because they don't know slugs are better
 	)
@@ -312,7 +312,7 @@ Head Knight
 /datum/outfit/loadout/capstand
 	name = "Standard"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14 = 1,
+		/obj/item/gun/energy/laser/wattz2k = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 	)
 
@@ -320,7 +320,7 @@ Head Knight
 	name = "Close Support"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/marksman = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 3,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 	)
 
 /datum/outfit/loadout/capalt
@@ -350,7 +350,7 @@ Star Paladin
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
-		/datum/outfit/loadout/spaladina, //R91
+		/datum/outfit/loadout/spaladina, //R91 Assault Rifle
 		/datum/outfit/loadout/spaladinc, //AER12
 		)
 
@@ -487,8 +487,6 @@ Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
-		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
 	)
 
@@ -505,8 +503,6 @@ Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/assault_rifle=1,
 		/obj/item/ammo_box/magazine/m556/rifle=2,
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
@@ -682,8 +678,8 @@ Senior Knight
 	exp_requirements = 600
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //RCW
-	/datum/outfit/loadout/sknightb, //Police shotgun
+	/datum/outfit/loadout/sknighta, //AER9
+	/datum/outfit/loadout/sknightb, //Browning Auto-5
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -727,15 +723,15 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
 
 /datum/outfit/loadout/sknightb
 	name = "Knight-Defender"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/service/r82=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
+		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		)
@@ -815,8 +811,8 @@ Knight
 	name = "Junior Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/automatic/service/r82=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/ballistic/rifle/mag/commando=1,
+		/obj/item/ammo_box/magazine/m45exp=2,
 		)
 
 /datum/outfit/loadout/knightc
@@ -831,8 +827,8 @@ Knight
 	name = "Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/automatic/service/r82=1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/ballistic/rifle/mag/commando=1,
+		/obj/item/ammo_box/magazine/m45exp=2,
 		)
 /*
 Initiate
