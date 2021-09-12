@@ -26,7 +26,7 @@
 	blood_volume = 0
 	del_on_death = TRUE
 	healable = FALSE
-	faction = list("wastebot")
+	faction = list("wastebot", "raider")
 	mob_biotypes = MOB_ROBOTIC|MOB_INORGANIC
 	emote_hear = list("Beeps.")
 	speak = list("Stop Right There Criminal.")
