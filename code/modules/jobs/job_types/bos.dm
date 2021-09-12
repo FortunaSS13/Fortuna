@@ -732,7 +732,7 @@ Senior Knight
 /datum/outfit/loadout/sknightb
 	name = "Knight-Defender"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5=1,
+		/obj/item/gun/ballistic/shotgun/police=1,
 		/obj/item/ammo_box/shotgun/buck=2,
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
