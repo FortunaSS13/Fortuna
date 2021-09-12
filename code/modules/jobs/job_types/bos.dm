@@ -820,7 +820,7 @@ Knight
 	name = "Junior Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/automatic/commando=1,
+		/obj/item/gun/ballistic/automatic/delisle/commando=1,
 		/obj/item/ammo_box/magazine/m45exp=2,
 		)
 
@@ -836,7 +836,7 @@ Knight
 	name = "Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/automatic/commando=1,
+		/obj/item/gun/ballistic/automatic/delisle/commando=1,
 		/obj/item/ammo_box/magazine/m45exp=2,
 		)
 /*

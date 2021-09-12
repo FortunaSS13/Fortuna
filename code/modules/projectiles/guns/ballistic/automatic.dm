@@ -534,27 +534,36 @@
 	suppressor_y_offset = 31
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 
-//Commando carbine							Keywords: BoS, .45 ACP, 12 round magazine, Long barrel, Suppressed
-/obj/item/gun/ballistic/automatic/commando
-	name = "commando carbine"
-	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. The few existing examples of this pre-war gun are mostly in Brotherhood hands. Uses .45 socom magazines."
-	icon_state = "commando"
+//De Lisle carbine							Keywords: Pre-war, 9mm, Long barrel, Suppressed
+/obj/item/gun/ballistic/automatic/delisle
+	name = "De Lisle carbine"
+	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. Chambered in 9mm."
+	icon_state = "delisle"
 	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m45exp
+	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	extra_damage = 9
 	extra_penetration = 0.05
 	fire_delay = 9
 	burst_size = 1
 	spread = 0
+	can_scope = FALSE
+	can_unsuppress = FALSE
+	suppressed = 1
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+//Commando carbine (BoS De Lisle variant)							Keywords: BoS, .45 ACP, 12 round magazine, Long barrel, Suppressed
+/obj/item/gun/ballistic/automatic/delisle/commando
+	name = "commando carbine"
+	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. This modified version is often used by the Brotherhood of Steel. Its stock has been replaced by post-war polymer furniture, with space to mount a scope. Chambered in .45 ACP."
+	icon_state = "commando"
+	item_state = "commando"
+	mag_type = /obj/item/ammo_box/magazine/m45exp
 	can_scope = TRUE
 	semi_auto = TRUE
 	automatic_burst_overlay = FALSE
-	can_unsuppress = FALSE
-	suppressed = 1
 	scope_state = "scope_medium"
 	scope_x_offset = 6
 	scope_y_offset = 14
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 //Ratslayer									Keywords: UNIQUE, 5.56, 10/20/30 round magazine, Suppressed, Scoped, Extra damage +3
 /obj/item/gun/ballistic/automatic/varmint/ratslayer
