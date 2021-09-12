@@ -319,7 +319,7 @@ Head Knight
 /datum/outfit/loadout/capsap
 	name = "Close Support"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman = 1,
+		/obj/item/gun/ballistic/automatic/service/alr = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 	)
 
@@ -410,6 +410,7 @@ Star Paladin
 	name = "Mainline Senior Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/attachments/scope = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 	)
 
@@ -725,6 +726,7 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
@@ -813,7 +815,7 @@ Knight
 	name = "Junior Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/rifle/mag/commando=1,
+		/obj/item/gun/ballistic/automatic/commando=1,
 		/obj/item/ammo_box/magazine/m45exp=2,
 		)
 
@@ -829,7 +831,7 @@ Knight
 	name = "Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/rifle/mag/commando=1,
+		/obj/item/gun/ballistic/automatic/commando=1,
 		/obj/item/ammo_box/magazine/m45exp=2,
 		)
 /*
