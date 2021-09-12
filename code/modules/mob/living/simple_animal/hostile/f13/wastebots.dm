@@ -1,9 +1,9 @@
 /*IN THIS FILE:
- - Handy
- - Gutsy
- - Protectrons
- - Robobrains
- - Assaultrons
+-Handy
+-Gutsy
+-Protectrons
+-Robobrains
+-Assaultrons
 */
 
 /mob/living/simple_animal/hostile/handy

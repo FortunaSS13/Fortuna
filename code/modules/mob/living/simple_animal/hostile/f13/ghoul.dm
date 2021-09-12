@@ -1,5 +1,5 @@
 /* IN THIS FILE
- - Ghouls
+-Ghouls
 */
 //Base Ghoul
 /mob/living/simple_animal/hostile/ghoul

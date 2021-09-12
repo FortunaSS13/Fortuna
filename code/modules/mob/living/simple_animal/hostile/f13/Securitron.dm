@@ -1,6 +1,6 @@
 /* IN THIS FILE:
- - Securitron
- - Sentry Bot
+-Securitron
+-Sentry Bot
 */
 
 //Securitron

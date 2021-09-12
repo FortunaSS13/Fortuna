@@ -1,5 +1,5 @@
 /*IN THIS FILE:
- - Deathclaws
+-Deathclaws
 */
 
 //Base Deathclaw

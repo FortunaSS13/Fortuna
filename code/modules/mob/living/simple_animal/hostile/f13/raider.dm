@@ -1,5 +1,5 @@
 /*IN THIS FILE:
- - All Raider Mobs
+-All Raider Mobs
 */
 
 //Base Raider Mob
