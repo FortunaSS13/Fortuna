@@ -1,18 +1,14 @@
 /mob/living/Initialize()
 	. = ..()
-	register_init_signals()
 	if(unique_name)
 		name = "[name] ([rand(1, 1000)])"
 		real_name = name
 	var/datum/atom_hud/data/human/medical/advanced/medhud = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 	medhud.add_to_hud(src)
-	var/datum/atom_hud/data/client/clienthud = GLOB.huds[DATA_HUD_CLIENT]
-	clienthud.add_to_hud(src)
 	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
 		diag_hud.add_to_hud(src)
 	faction += "[REF(src)]"
 	GLOB.mob_living_list += src
-	clienthud.add_hud_to(src)
 
 /mob/living/prepare_huds()
 	..()
@@ -484,7 +480,6 @@
 /mob/living/proc/lay_down()
 	set name = "Rest"
 	set category = "IC"
-
 	resting = !resting
 	to_chat(src, "<span class='notice'>You are now [resting ? "resting" : "getting up"].</span>")
 	update_canmove()
@@ -500,8 +495,9 @@
 			lay_down()
 
 		Knockdown(200)
+		Paralyze(200)
 		visible_message("<span class='big bold'>[src] surrenders!</span>")
-		playsound(loc, 'sound/f13effects/surrender.ogg', 50, 1)
+		playsound(loc, 'sound/f13effects/surrender1.ogg', 80, 1)
 
 //Recursive function to find everything a mob is holding. Really shitty proc tbh.
 /mob/living/get_contents()
@@ -551,10 +547,11 @@
 		GLOB.dead_mob_list -= src
 		GLOB.alive_mob_list += src
 		suiciding = 0
-		set_stat(UNCONSCIOUS) //the mob starts unconscious
+		stat = UNCONSCIOUS //the mob starts unconscious,
 		if(!eye_blind)
 			blind_eyes(1)
 		updatehealth() //then we check if the mob should wake up.
+		update_mobility()
 		update_sight()
 		clear_alert("not_enough_oxy")
 		reload_fullscreen()
@@ -1305,98 +1302,3 @@
 			STAMINA:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=stamina' id='stamina'>[getStaminaLoss()]</a>
 		</font>
 	"}
-
-
-
-/mob/living/set_stat(new_stat)
-	. = ..()
-	if(isnull(.))
-		return
-	update_mobility()
-
-
-/mob/living/verb/give(mob/living/target in (view(1) - usr))
-	set category = "IC"
-	set name = "Give"
-	do_give(target)
-
-
-/mob/living/proc/do_give(mob/living/target)
-	if(incapacitated() || !Adjacent(target))
-		return
-
-	if(INTERACTING_WITH(src, target))
-		to_chat(src, span_warning("You are already interacting with [target]."))
-		return
-
-	if(!target.can_hold_items())
-		to_chat(src, span_warning("[target] does not have the ability to hold items."))
-		return
-
-	var/obj/item/gift = get_active_held_item()
-	if(!gift)
-		gift = get_inactive_held_item()
-		if(!gift)
-			to_chat(src, span_warning("You don't have anything in your hands to give."))
-			return
-	
-	if(SEND_SIGNAL(target, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))
-		to_chat(src, span_warning("[target] is too busy fighting!"))
-		return
-
-	if(target.incapacitated())
-		to_chat(src, span_warning("[target] is in no condition to handle items!"))
-		return
-
-	if(!gift.mob_can_equip(src, target, SLOT_HANDS, TRUE, TRUE))
-		to_chat(src, span_warning("[target] is unable to receive \a [gift] right now."))
-		return
-
-	to_chat(src, span_notice("You offer \a [gift] to [target] ."))
-
-	START_INTERACTING_WITH(src, target)
-	var/target_answer = alert(target, "[src] wants to give you \a [gift]. Will you accept it?", "An offer you can't refuse", "Accept", "Visibly reject", "Quietly ignore")
-	STOP_INTERACTING_WITH(src, target)
-
-	if(QDELING(src) || QDELETED(target) || QDELETED(gift) || incapacitated() || target.incapacitated() || !target.can_hold_items())
-		return
-
-	switch(target_answer)
-		if("Accept")
-			if(!Adjacent(target))
-				to_chat(src, span_warning("[target] is out of range."))
-				to_chat(target, span_warning("\The [src] is out of range."))
-				return
-		if("Visibly reject")
-			if(!Adjacent(target))
-				to_chat(src, span_warning("[target] is out of range."))
-				to_chat(target, span_warning("\The [src] is out of range."))
-				return
-			target.visible_message("<b>[target]</b> visibly rejects [src]'s offer of \a [gift].")
-			return
-		else
-			if(!Adjacent(target))
-				to_chat(src, span_warning("[target] is out of range."))
-				return
-			to_chat(src, span_notice("[target] does not seem interested in receiving \a [gift] at the moment."))
-			return
-
-	if(!is_holding(gift))
-		to_chat(src, span_warning("[target] would accept receiving \a [gift], if you were still offering it."))
-		to_chat(target, span_warning("\The [src] seems to have given up on passing \the [gift] to you."))
-		return
-
-	if(!gift.mob_can_equip(src, target, SLOT_HANDS, TRUE, TRUE))
-		to_chat(src, span_warning("[target] is unable to receive \a [gift] right now."))
-		to_chat(target, span_warning("\The [src] seems to have given up on passing \the [gift] to you."))
-		return
-
-	if(!temporarilyRemoveItemFromInventory(gift))
-		visible_message(span_notice("[src] tries to hand over [gift] but it's stuck to them...."))
-		return
-
-	target.put_in_hands(gift)
-	visible_message(
-		"<b>[src]</b> hands [target] \a [gift].",
-		span_notice("You give \the [target] a [gift].")
-		)
