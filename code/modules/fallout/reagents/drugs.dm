@@ -15,7 +15,7 @@
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You come down from your high. The wild ride is unfortunately over...</span>")
 		M.confused += 2
-	
+
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-20, 0)
 	M.set_drugginess(20)
@@ -84,10 +84,12 @@
 
 /datum/reagent/drug/turbo/on_mob_add(mob/M)
 	..()
-	ADD_TRAIT(M, TRAIT_IGNORESLOWDOWN, "[type]")
+	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
-	REMOVE_TRAIT(M, TRAIT_IGNORESLOWDOWN, "[type]")
+	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	REMOVE_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
 	..()
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)
