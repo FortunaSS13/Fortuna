@@ -1,50 +1,41 @@
 //smelling salts
 /obj/item/smelling_salts
 	name = "large phial of smelling salts"
-	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in cord marking the colors of Caesars Legion,"
+	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted."
 	w_class = WEIGHT_CLASS_NORMAL
 	icon = 'icons/obj/fallout/smelling_salts.dmi'
 	icon_state = "smelling_salts_legion"
-	var/charges = 20
+	var/time_limit = DEFIB_TIME_LIMIT * 5 // half compared to an actual defib
+	var/charges = 8 // a bit lower than a normal defib's 10
 	var/in_use = FALSE
 	var/time_to_use = 10 SECONDS // a defib is 5 seconds
 
-/obj/item/smelling_salts/examine(mob/user)
-	. = ..()
-	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>It currently has <b>[charges]</b> uses remaining.</span>"
-
 /obj/item/smelling_salts/wayfarer
 	icon_state = "smelling_salts_wayfarer"
-	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in primitive cord with blue freyed tips of the Wayfarer tribe."
 
 /obj/item/smelling_salts/crafted
 	name = "small phial of smelling salts"
 	w_class = WEIGHT_CLASS_SMALL // unsure about this balance-wise, given that defibs are bulky
 	desc = "A stoppered glass phial of pungent smelling salts, used to revive those who have fainted."
 	icon_state = "smelling_salts_crafted"
-	charges = 10
+	charges = 4 // half of the premade smelling salts
 
 /obj/item/smelling_salts/attack(mob/target, mob/user)
 	if(in_use)
 		return
-	if(world.time < time_to_use)
-		to_chat(user, "<span class='warning'>They are not ready smell something so pungent yet, I should wait a moment.</span>")
-		return
 	if(!user.IsAdvancedToolUser())
-		to_chat(user, span_warning("You don't know how to use [src]!"))
+		to_chat(user, SPAN_WARNING("You don't know how to use [src]!"))
 		return
 	if(!iscarbon(target))
-		to_chat(user, span_warning("Do smelling salts even work on that?"))
+		to_chat(user, SPAN_WARNING("Do smelling salts even work on that?"))
 		return
 	var/mob/living/carbon/target_carbon = target
 
 	if(user.zone_selected != BODY_ZONE_PRECISE_MOUTH && user.zone_selected != BODY_ZONE_HEAD)
-		to_chat(user, span_warning("[target_carbon] has to smell [src] to be revived, hold it up to their face!"))
-		return
+		to_chat(user, SPAN_WARNING("[target_carbon] has to smell [src] to be revived, hold it up to their face!"))
 
 	if((target_carbon.head?.flags_cover & HEADCOVERSMOUTH) || (target_carbon.wear_mask?.flags_cover & MASKCOVERSMOUTH))
-		to_chat(user, span_notice("You're going to need to remove that [(target_carbon.head?.flags_cover & HEADCOVERSMOUTH) ? "helmet" : "mask"] first."))
+		to_chat(user, SPAN_NOTICE("You're going to need to remove that [(target_carbon.head?.flags_cover & HEADCOVERSMOUTH) ? "helmet" : "mask"] first."))
 		return
 
 	else if(can_revive(target_carbon))
@@ -53,31 +44,18 @@
 	do_revive(target_carbon, user)
 	charges--
 	if(charges <= 0)
-		to_chat(user, span_notice("[src] is now empty and useless; you throw it away."))
+		to_chat(user, SPAN_NOTICE("[src] is now empty and useless; you throw it away."))
 		qdel(src)
 
-/obj/item/smelling_salts/proc/can_revive(mob/living/carbon/T)
-	var/obj/item/organ/brain/BR = T.getorgan(/obj/item/organ/brain)
-	var/obj/item/organ/heart = T.getorgan(/obj/item/organ/heart)
-	var/tlimit = DEFIB_TIME_LIMIT * 10
-	if(T.suiciding || T.hellbound || HAS_TRAIT(src, TRAIT_HUSK) || AmBloodsucker(T))
-		return
-	if ((world.time - T.timeofdeath) < tlimit)
-		return
-	if((T.getBruteLoss() >= 160) || (T.getFireLoss() >= 160))
-		return
-	if(!heart || (heart.organ_flags & ORGAN_FAILING))
-		return
-	if(QDELETED(BR) || BR.brain_death || (BR.organ_flags & ORGAN_FAILING))
-		return
-	return TRUE
+/obj/item/smelling_salts/proc/can_revive(mob/living/carbon/target)
+	var/obj/item/organ/brain/BR = target.getorgan(/obj/item/organ/brain)
+	return (!target.suiciding && !(target.has_trait(TRAIT_NOCLONE)) && !target.hellbound && ((world.time - target.timeofdeath) < time_limit) && (target.getBruteLoss() < 160) && (target.getFireLoss() < 160) && target.getorgan(/obj/item/organ/heart) && BR && !BR.damaged_brain)
 
 /obj/item/smelling_salts/proc/do_revive(mob/living/carbon/revived_mob, mob/living/user)
 	in_use = TRUE
 	if(!do_after(user, time_to_use, target = revived_mob))
-		in_use = FALSE
 		return
-	user.visible_message(span_notice("[user] starts waving [src] under [revived_mob]'s nose."), span_warning("You wave [src] under [revived_mob]'s nose."))
+	user.visible_message(SPAN_NOTICE("[user] starts waving [src] under [revived_mob]'s nose."), SPAN_WARNING("You wave [src] under [revived_mob]'s nose."))
 	var/time_since_death = world.time - revived_mob.timeofdeath
 	// past this much time the patient is unrecoverable
 	// (in deciseconds)
@@ -89,7 +67,7 @@
 		in_use = FALSE
 		return
 	if((revived_mob.head?.flags_cover & HEADCOVERSMOUTH) || (revived_mob.wear_mask?.flags_cover & MASKCOVERSMOUTH)) // should've been checked prior, so it must've been put on during the pause
-		to_chat(user, span_notice("You're going to need to remove that [(revived_mob.head?.flags_cover & HEADCOVERSMOUTH) ? "helmet" : "mask"] again."))
+		to_chat(user, SPAN_NOTICE("You're going to need to remove that [(revived_mob.head?.flags_cover & HEADCOVERSMOUTH) ? "helmet" : "mask"] again."))
 		in_use = FALSE
 		return
 	if(revived_mob.stat != DEAD)
@@ -100,17 +78,16 @@
 	total_burn	= revived_mob.getFireLoss()
 
 	if (!can_revive(revived_mob))
-		revived_mob.visible_message(span_warning("[revived_mob] doesn't respond..."))
+		revived_mob.visible_message(SPAN_WARNING("[revived_mob] doesn't respond..."))
 		in_use = FALSE
 		return
 	else if(revived_mob.get_ghost())
-		revived_mob.visible_message(span_warning("[revived_mob] gasps, but doesn't stir yet."))
-		to_chat(user, span_notice("Perhaps they need another dose?"))
+		revived_mob.visible_message(SPAN_WARNING("[revived_mob] gasps, but doesn't stir yet."))
+		to_chat(user, SPAN_NOTICE("Perhaps they need another dose?"))
 		in_use = FALSE
 		return
 	//If the body has been fixed so that they would not be in crit when revived, give them oxyloss to put them back into crit
 	var/const/threshold = ((HEALTH_THRESHOLD_CRIT + HEALTH_THRESHOLD_DEAD) * 0.5)
-	var/tlimit = DEFIB_TIME_LIMIT * 10
 	if (revived_mob.health > threshold)
 		revived_mob.adjustOxyLoss(revived_mob.health - threshold, 0)
 	else
@@ -121,20 +98,12 @@
 		revived_mob.adjustFireLoss((mobhealth - threshold) * (total_burn / overall_damage), 0)
 		revived_mob.adjustBruteLoss((mobhealth - threshold) * (total_brute / overall_damage), 0)
 	revived_mob.updatehealth() // Previous "adjust" procs don't update health, so we do it manually.
-	revived_mob.visible_message(span_notice("[revived_mob] gasps and stirs!"), span_notice("You're alive!"))
+	revived_mob.visible_message(SPAN_NOTICE("[revived_mob] gasps and stirs!"), SPAN_NOTICE("You're alive!"))
 	revived_mob.set_heartattack(FALSE) // if you can safely be revived without this, then this should be removed; smelling salts aren't a defib
 	revived_mob.revive()
 	revived_mob.emote("gasp")
 	revived_mob.Jitter(20)
-	if(time_since_death > tlimit)
-		revived_mob.adjustOrganLoss(ORGAN_SLOT_BRAIN, max(0, min(99, ((tlimit - time_since_death) / tlimit * 100))), 150)
-	log_combat(revived_mob, revived_mob, "revived", src)
-	var/list/policies = CONFIG_GET(keyed_list/policyconfig)
-	var/memory_limit = CONFIG_GET(number/defib_cmd_time_limit)
-	var/late = memory_limit && (time_since_death > memory_limit)
-	var/policy = late? policies[POLICYCONFIG_ON_DEFIB_LATE] : policies[POLICYCONFIG_ON_DEFIB_INTACT]
-	if(policy)
-		to_chat(revived_mob, policy)
-	revived_mob.log_message("revived using strange reagent, [time_since_death / 10] seconds from time of death, considered [late? "late" : "memory-intact"] revival under configured policy limits.", LOG_GAME)
-	//add_logs(user, revived_mob, "revived (smelling salts)", src)
+	if(time_since_death > time_limit)
+		revived_mob.adjustBrainLoss( max(0, min(99, ((time_limit - time_since_death) / time_limit * 100))), 150)
+	add_logs(user, revived_mob, "revived (smelling salts)", src)
 	in_use = FALSE
