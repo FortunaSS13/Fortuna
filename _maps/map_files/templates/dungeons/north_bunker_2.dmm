@@ -1155,7 +1155,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "zX" = (
-/mob/living/simple_animal/hostile/securitron{
+/mob/living/simple_animal/hostile/handy/securitron{
 	faction = list("hostile","goodboy")
 	},
 /obj/effect/decal/cleanable/dirt,
