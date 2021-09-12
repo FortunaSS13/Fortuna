@@ -13,8 +13,6 @@
 		if(!CHECK_MOBILITY(L, MOBILITY_USE) && !(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
 			to_chat(L, "<span class='warning'>You are unable to swing [src] right now!</span>")
 			return
-		if(min_reach && GET_DIST_EUCLIDEAN(user, target) < min_reach)
-			return
 	. = attackchain_flags
 	if(tool_behaviour && ((. = target.tool_act(user, src, tool_behaviour)) & STOP_ATTACK_PROC_CHAIN))
 		return
@@ -33,8 +31,6 @@
 		if(!CHECK_MOBILITY(L, MOBILITY_USE))
 			to_chat(L, "<span class='warning'>You are unable to raise [src] right now!</span>")
 			return
-		if(max_reach >= 2 && has_range_for_melee_attack(target, user))
-			return ranged_melee_attack(target, user, params)
 	return afterattack(target, user, FALSE, params)
 
 // Called when the item is in the active hand, and clicked; alternately, there is an 'activate held object' verb or you can hit pagedown.
@@ -49,7 +45,10 @@
 	if(!(attackchain_flags & ATTACK_IGNORE_CLICKDELAY) && !CheckAttackCooldown(user, A))
 		return STOP_ATTACK_PROC_CHAIN
 
+// No comment
 /atom/proc/attackby(obj/item/W, mob/user, params)
+	if(linked_attack_parent)
+		linked_attack_parent.attackby(W, user)
 	if(SEND_SIGNAL(src, COMSIG_PARENT_ATTACKBY, W, user, params) & COMPONENT_NO_AFTERATTACK)
 		return STOP_ATTACK_PROC_CHAIN
 
@@ -89,15 +88,12 @@
 		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
 		return
 
-	var/bigleagues = force*0.45
-	var/buffout = force*0.55
-	//var/regular = force*(user.special_s/100)//SPECIAL integration
+	var/bigleagues = force*0.5
+	var/buffout = force*0.6
 
-	//force += regular//SPECIAL integration
-	
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BIG_LEAGUES))
 		force += bigleagues
-	
+
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
 		force += buffout
 
@@ -115,11 +111,9 @@
 	log_combat(user, M, "attacked", src.name, "(INTENT: [uppertext(user.a_intent)]) (DAMTYPE: [uppertext(damtype)])")
 	add_fingerprint(user)
 
-	//force -= regular//SPECIAL integration
-
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BIG_LEAGUES))
 		force -= bigleagues
-	
+
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
 		force -= buffout
 
@@ -224,9 +218,9 @@
 		if(SEND_SIGNAL(user, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_INACTIVE))
 			bad_trait = SKILL_COMBAT_MODE //blacklist combat skills.
 			if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))
-				. *= 0.8
+				. *= 1
 		else if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_INACTIVE))
-			. *= 1.2
+			. *= 1
 
 	if(!user.mind || !I.used_skills)
 		return
@@ -253,20 +247,6 @@
 /obj/item/proc/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	SEND_SIGNAL(src, COMSIG_ITEM_AFTERATTACK, target, user, proximity_flag, click_parameters)
 	SEND_SIGNAL(user, COMSIG_MOB_ITEM_AFTERATTACK, target, user, proximity_flag, click_parameters)
-
-
-/obj/item/proc/has_range_for_melee_attack(atom/target, mob/living/user)
-	if(user.z != target.z)
-		return FALSE
-	var/euclidean_distance = GET_DIST_EUCLIDEAN(user, target)
-	if(euclidean_distance < max(min_reach, 2) || round(euclidean_distance) > max_reach)
-		return FALSE // No need to waste time calculating the path.
-	return user.euclidian_reach(target, max_reach, REACH_ATTACK) == get_turf(target)
-
-
-/obj/item/proc/ranged_melee_attack(atom/target, mob/living/user, params)
-	melee_attack_chain(user, target, params)
-
 
 /obj/item/proc/get_clamped_volume()
 	if(w_class)
