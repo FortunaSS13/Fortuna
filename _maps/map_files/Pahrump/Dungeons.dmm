@@ -5114,7 +5114,7 @@
 /area/f13/underground/cave)
 "gsP" = (
 /obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/handy/securitron,
+/mob/living/simple_animal/hostile/securitron,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "gsV" = (
@@ -5599,7 +5599,7 @@
 /area/f13/vault)
 "gRT" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/mob/living/simple_animal/hostile/handy/securitron,
+/mob/living/simple_animal/hostile/securitron,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "gRV" = (
@@ -7875,7 +7875,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/bunker)
 "jWr" = (
-
 /obj/structure/closet,
 /obj/item/instrument/violin/golden,
 /obj/item/reagent_containers/food/drinks/flask/gold{
@@ -7917,7 +7916,7 @@
 /area/f13/vault)
 "kaY" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/securitron{
+/mob/living/simple_animal/hostile/securitron{
 	faction = list("bonnie")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
@@ -9837,7 +9836,7 @@
 	},
 /area/f13/bunker)
 "mxz" = (
-/mob/living/simple_animal/hostile/handy/securitron,
+/mob/living/simple_animal/hostile/securitron,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "mxL" = (
@@ -10032,7 +10031,7 @@
 /area/f13/underground/cave)
 "mFH" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/securitron,
+/mob/living/simple_animal/hostile/securitron,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "mGp" = (
@@ -12281,7 +12280,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/securitron,
+/mob/living/simple_animal/hostile/securitron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -15117,7 +15116,7 @@
 /area/f13/underground/cave)
 "sVK" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/handy/securitron,
+/mob/living/simple_animal/hostile/securitron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
