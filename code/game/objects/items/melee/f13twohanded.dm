@@ -295,7 +295,7 @@
 	icon_state = "baseballspike"
 	icon_prefix = "baseballspike"
 	force = 15
-	armour_penetration 0.1
+	armour_penetration = 0.1
 	throwforce = 15
 	wound_bonus = 5
 	sharpness = SHARP_POINTY
