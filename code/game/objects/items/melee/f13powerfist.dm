@@ -42,14 +42,14 @@
 	item_state = "powerfist"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 30
-	armour_penetration = 0.45
+	force = 10
+	armour_penetration = 0.3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_NORMAL
-	item_flags = NEEDS_PERMIT //doesn't slow you down
-	fire_delay = 0
+	slowdown = 0.1
+	fire_delay = 2.5
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 
 
@@ -93,10 +93,10 @@
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	force = 10
 	wound_bonus = 25
-	block_chance = 15
 	throw_speed = 3
 	throw_range = 4
 	throwforce = 10
+	armour_penetration = 0.15
 	tool_behaviour = TOOL_SAW
 	sharpness = SHARP_EDGED
 	toolspeed = 1.5
@@ -105,7 +105,7 @@
 	var/on_item_state = "ripper_on"
 	var/off_item_state = "ripper"
 	var/weight_class_on = WEIGHT_CLASS_HUGE
-	var/force_on = 45
+	var/force_on = 50
 	var/force_off = 10
 	var/on = FALSE
 	var/on_icon_state = "ripper_on"

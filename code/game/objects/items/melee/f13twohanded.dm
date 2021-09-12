@@ -39,6 +39,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	force = 25
 	throwforce = 15
+	armour_penetration = 0.15
 	wound_bonus = 10
 	bare_wound_bonus = 10
 	sharpness = SHARP_EDGED
@@ -51,7 +52,7 @@
 /obj/item/twohanded/fireaxe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound) //axes are not known for being precision butchering tools
-	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=45, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=40, icon_wielded="[icon_prefix]2")
 
 /obj/item/twohanded/fireaxe/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] axes [user.p_them()]self from head to toe! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -279,7 +280,7 @@
 
 /obj/item/twohanded/baseball/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 12, force_wielded = 30, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 12, force_wielded = 35, icon_wielded="[icon_prefix]2")
 
 /obj/item/twohanded/baseball/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -294,13 +295,14 @@
 	icon_state = "baseballspike"
 	icon_prefix = "baseballspike"
 	force = 15
+	armour_penetration 0.1
 	throwforce = 15
 	wound_bonus = 5
 	sharpness = SHARP_POINTY
 
 /obj/item/twohanded/baseball/spiked/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 15, force_wielded = 33, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 15, force_wielded = 40, icon_wielded="[icon_prefix]2")
 
 
 // Golf Club		Keywords: Damage 15/32, Damage bonus Stamina
@@ -309,6 +311,7 @@
 	desc = "This old and quite heavy 9 iron is bent and battered after many years of use by anyone who found it good enough to break bones and crash skulls."
 	icon_state = "golfclub"
 	icon_prefix = "golfclub"
+	armour_penetration = 0.15
 	attack_verb = list("smashed", "bashed", "fored", "hit", "bludgeoned", "whacked")
 
 /obj/item/twohanded/baseball/golfclub/ComponentInitialize()
@@ -354,13 +357,14 @@
 	attack_speed = CLICK_CD_MELEE * 1.2
 	force = 25
 	throwforce = 30
+	armour_penetration = 0.2
 	slot_flags = ITEM_SLOT_BACK
 	sharpness = SHARP_NONE
 	attack_verb = list("bashed", "pounded", "bludgeoned", "pummeled", "thrashed")
 
 /obj/item/twohanded/sledgehammer/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 45, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 40, icon_wielded="[icon_prefix]2")
 
 /*
 /obj/item/twohanded/sledgehammer/afterattack(atom/A, mob/living/user, proximity) //Bonus damage to structures, demolition time
@@ -398,13 +402,14 @@
 	slot_flags = null
 	force = 5
 	throwforce = 20
+	armour_penetration = 0.65
 	throw_speed = 2
 	throw_range = 4
 	attack_verb = list("burned", "welded", "cauterized", "melted", "charred")
 	actions_types = list(/datum/action/item_action/toggle_lance)
 	hitsound = "swing_hit"
 	var/on = FALSE
-	var/force_on = 60
+	var/force_on = 40
 
 /obj/item/twohanded/thermic_lance/ComponentInitialize()
 	. = ..()
@@ -447,8 +452,8 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = null
 	force = 20
-	force_on = 32
-	armour_penetration = 0.7
+	force_on = 45
+	armour_penetration = 0.4
 	throwforce = 15
 	throwforce_on = 30
 
@@ -465,10 +470,11 @@
 	icon_state = "hammer-super"
 	icon_prefix = "hammer-super"
 	force = 25
+	armour_penetration = 0.3
 
 obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 60, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 55, icon_wielded="[icon_prefix]2")
 
 
 // Rocket-assisted Sledgehammer			Keywords: Damage 20/52, Mining  Issues left: mining only when dual wielded, sound to play always on hit
@@ -480,6 +486,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	icon_state = "hammer-rocket"
 	icon_prefix = "hammer-rocket"
 	force = 20
+	armour_penetration = 0.2
 	tool_behaviour = TOOL_MINING
 	toolspeed = 0.4
 	hitsound = "sound/f13effects/explosion_distant_2.ogg"
@@ -490,7 +497,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 
 /obj/item/twohanded/sledgehammer/rockethammer/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 52, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 45, icon_wielded="[icon_prefix]2")
 
 // The Court Martial	Keywords: UNIQUE, Damage 20/52, Inferior mining
 /obj/item/twohanded/sledgehammer/rockethammer/courtmartial
@@ -510,10 +517,11 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	icon_state = "hammer-atom"
 	icon_prefix = "hammer-atom"
 	force = 25
+	armour_penetration = 0.2
 
 /obj/item/twohanded/sledgehammer/atomsjudgement/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 60, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 50, icon_wielded="[icon_prefix]2")
 
 /obj/item/twohanded/sledgehammer/atomsjudgement/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -535,7 +543,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 
 /obj/item/twohanded/sledgehammer/atomsjudgement/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 45, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 40, icon_wielded="[icon_prefix]2")
 
 
 // Shaman staff				Keywords: TRIBAL, Damage 15/30
@@ -545,11 +553,12 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	icon_state = "staff-shaman"
 	icon_prefix = "staff-shaman"
 	force = 15
+	armour_penetration = 0.1
 	attack_verb = list("bashed", "pounded", "bludgeoned", "pummeled", "thrashed")
 
 /obj/item/twohanded/sledgehammer/shamanstaff/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 15, force_wielded = 30, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded = 15, force_wielded = 35, icon_wielded="[icon_prefix]2")
 
 
 // Staff of Mars			Keywords: Damage 10/10, Damage bonus Burn + Stamina
@@ -599,6 +608,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	slot_flags = null
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 	force = 7
+	armour_penetration = 0.1
 	wound_bonus = 25
 	throw_speed = 2
 	throw_range = 2
@@ -614,7 +624,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	var/off_item_state = "chainsaw"
 	var/weight_class_on = WEIGHT_CLASS_HUGE
 	var/on = FALSE
-	var/force_on = 55
+	var/force_on = 60
 	var/force_off = 7
 	var/description_on = "<span class ='warning'>You pull the cord, starting up the chainsaw with a roar and letting the blades spin up.</span>"
 	var/description_off = "<span class ='notice'>You press the off button, stopping the noise and the carnage.</span>"

@@ -346,8 +346,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	force = 2
 	throwforce = 10 //This is never used on mobs since this has a 100% embed chance.
 	throw_speed = 4
-	embedding = list("pain_mult" = 4, "embed_chance" = 100, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
-	armour_penetration = 0.65
+	embedding = list("pain_mult" = 4, "embed_chance" = 70, "fall_chance" = 10, "embed_chance_turf_mod" = 15)
+	armour_penetration = 0.5
 
 	w_class = WEIGHT_CLASS_SMALL
 	sharpness = SHARP_EDGED
