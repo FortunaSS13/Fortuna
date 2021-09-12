@@ -1117,7 +1117,7 @@
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"

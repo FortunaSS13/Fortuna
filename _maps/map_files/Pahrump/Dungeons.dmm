@@ -12731,7 +12731,8 @@
 /area/f13/bunker)
 "pWt" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/obj/effect/spawner/lootdrop/f13/armor/random_high,
+/obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "pXf" = (
