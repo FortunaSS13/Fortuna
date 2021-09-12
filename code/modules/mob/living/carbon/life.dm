@@ -453,7 +453,6 @@ Alcohol Poisoning Chart
 Note that all higher effects of alcohol poisoning will inherit effects for smaller amounts (i.e. light poisoning inherts from slight poisoning)
 In addition, severe effects won't always trigger unless the drink is poisonously strong
 All effects don't start immediately, but rather get worse over time; the rate is affected by the imbiber's alcohol tolerance
-
 0: Non-alcoholic
 1-10: Barely classifiable as alcohol - occassional slurring
 11-20: Slight alcohol content - slurring
@@ -479,6 +478,7 @@ GLOBAL_LIST_INIT(ballmer_good_msg, list("Hey guys, what if we rolled out a blues
 										))
 GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put a webserver that's automatically turned on with default admin passwords into every PDA?",
 											"So like, you know how we separate our codebase from the master copy that runs on our consumer boxes? What if we merged the two and undid the separation between codebase and server?",
+											"Dude, radical idea: H.O.N.K mechs but with no bananium required.",
 											"Best idea ever: Disposal pipes instead of hallways.",
 											"What if we use a language that was written on a napkin and created over 1 weekend for all of our servers?",
 											"What if we took a locker, some random trash, and made an exosuit out of it? Wouldn't that be like, super cool and stuff?",
@@ -491,7 +491,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 //this updates all special effects: stun, sleeping, knockdown, druggy, stuttering, etc..
 /mob/living/carbon/handle_status_effects()
 	..()
-	if(getStaminaLoss() && !SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))		//CIT CHANGE - prevents stamina regen while combat mode is active
+	if(getStaminaLoss())		//CIT CHANGE - prevents stamina regen while combat mode is active // WHY ARE YOU LIKE THIS
 		adjustStaminaLoss(!CHECK_MOBILITY(src, MOBILITY_STAND) ? ((combat_flags & COMBAT_FLAG_HARD_STAMCRIT) ? STAM_RECOVERY_STAM_CRIT : STAM_RECOVERY_RESTING) : STAM_RECOVERY_NORMAL)
 
 	if(!(combat_flags & COMBAT_FLAG_HARD_STAMCRIT) && incomingstammult != 1)
