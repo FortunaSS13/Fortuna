@@ -213,6 +213,11 @@
 	// This cannot be allowed to be deconstructed. We don't want people escaping VR by making a normal teleporter console
 	flags_1 |= NODECONSTRUCT_1
 
+
+/obj/machinery/computer/teleporter/vr/reset_regime()
+	target = null
+	regime_set = "Teleporter"
+
 /obj/machinery/computer/teleporter/vr/bos
 	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios. This one allows access to combat simulations."
 

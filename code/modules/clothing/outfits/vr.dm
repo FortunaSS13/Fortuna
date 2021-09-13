@@ -10,6 +10,7 @@
 	H.dna.species.before_equip_job(null, H)
 
 /datum/outfit/vr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	ADD_TRAIT(H, TRAIT_RADIMMUNE, VIRTUAL_REALITY_TRAIT) // This is the easist way to prevent vr teleporter weirdness
 	var/obj/item/card/id/id = H.wear_id
 	if(!istype(id))
 		return
