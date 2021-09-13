@@ -857,7 +857,7 @@
 	name = "commando carbine and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/delisle,
-				/obj/item/ammo_box/magazine/m45exp
+				/obj/item/ammo_box/magazine/m9mm
 	)
 
 /obj/effect/spawner/bundle/f13/mk23

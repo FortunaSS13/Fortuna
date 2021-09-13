@@ -540,10 +540,10 @@
 	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. Chambered in 9mm."
 	icon_state = "delisle"
 	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m9mmds
+	mag_type = /obj/item/ammo_box/magazine/m9mm
 	extra_damage = 9
 	extra_penetration = 0.05
-	fire_delay = 9
+	fire_delay = 10
 	burst_size = 1
 	spread = 0
 	can_scope = FALSE
@@ -557,6 +557,8 @@
 	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. This modified version is often used by the Brotherhood of Steel. Its stock has been replaced by post-war polymer furniture, with space to mount a scope. Chambered in .45 ACP."
 	icon_state = "commando"
 	item_state = "commando"
+	extra_penetration = 0.1
+	fire_delay = 9
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	can_scope = TRUE
 	semi_auto = TRUE
