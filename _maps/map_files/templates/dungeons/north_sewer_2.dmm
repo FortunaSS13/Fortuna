@@ -703,7 +703,7 @@
 /area/f13/tunnel)
 "ns" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "ny" = (
@@ -1211,7 +1211,7 @@
 /area/f13/bunker)
 "vS" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "wm" = (
@@ -2408,7 +2408,7 @@
 /area/f13/bunker)
 "TO" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
 	},
@@ -2491,7 +2491,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "Vx" = (
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "VE" = (
@@ -2570,7 +2570,7 @@
 /turf/open/water,
 /area/f13/tunnel)
 "Xi" = (
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "Xn" = (

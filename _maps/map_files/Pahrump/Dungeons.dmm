@@ -9613,7 +9613,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "mlO" = (
-/mob/living/simple_animal/hostile/raider/biker,
+/mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirtcorner"
