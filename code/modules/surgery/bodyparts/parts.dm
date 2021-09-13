@@ -302,6 +302,7 @@ Cannibal Butchering
 			new /obj/item/reagent_containers/food/snacks/meat/slab/human(user.drop_location(), 1)
 			new /obj/item/stack/sheet/bone(user.drop_location(), 2)
 			new /obj/item/stack/sheet/sinew(user.drop_location(), 1)
+			new /obj/effect/gibspawner(user.drop_location(), 1)
 			use(1)
 			del src
 	else
@@ -316,6 +317,7 @@ Cannibal Butchering
 			new /obj/item/reagent_containers/food/snacks/meat/slab/human(user.drop_location(), 1)
 			new /obj/item/stack/sheet/bone(user.drop_location(), 2)
 			new /obj/item/stack/sheet/sinew(user.drop_location(), 1)
+			new /obj/effect/gibspawner(user.drop_location(), 1)
 			use(1)
 			del src
 	else
@@ -330,6 +332,7 @@ Cannibal Butchering
 			new /obj/item/reagent_containers/food/snacks/meat/slab/human(user.drop_location(), 1)
 			new /obj/item/stack/sheet/bone(user.drop_location(), 2)
 			new /obj/item/stack/sheet/sinew(user.drop_location(), 1)
+			new /obj/effect/gibspawner(user.drop_location(), 1)
 			use(1)
 			del src
 	else
@@ -344,8 +347,9 @@ Cannibal Butchering
 			new /obj/item/reagent_containers/food/snacks/meat/slab/human(user.drop_location(), 1)
 			new /obj/item/stack/sheet/bone(user.drop_location(), 2)
 			new /obj/item/stack/sheet/sinew(user.drop_location(), 1)
+			new /obj/effect/gibspawner(user.drop_location(), 1)
 			use(1)
 			del src
 	else
 		return ..()
-	
+
