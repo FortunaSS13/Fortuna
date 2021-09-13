@@ -144,16 +144,22 @@
 	name = "\improper BOS HOLODECK"
 	has_gravity = STANDARD_GRAVITY
 
-/area/holodeck/bos/medical
+/area/holodeck/bos/sim_1
+	name = "BoS Simulation Chamber 1"
+
+/area/holodeck/bos/sim_2
+	name = "BoS Simulation Chamber 2"
+
+/area/holodeck/bos/programs/medical
 	name = "VR - Medical"
 
-/area/holodeck/bos/armory
+/area/holodeck/bos/programs/armory
 	name = "VR - Armory"
 
-/area/holodeck/bos/bodies
+/area/holodeck/bos/programs/bodies
 	name = "VR - Body"
 
-/area/holodeck/bos/offline
+/area/holodeck/bos/programs/offline
 	name = "VR - null"
 
 
@@ -163,16 +169,22 @@
 	name = "\improper DEN HOLODECK"
 	has_gravity = STANDARD_GRAVITY
 
-/area/holodeck/den/medical
+/area/holodeck/den/sim_1
+	name = "Den Simulation Chamber 1"
+
+/area/holodeck/den/sim_2
+	name = "Den Simulation Chamber 2"
+
+/area/holodeck/den/programs/medical
 	name = "VR - Medical"
 
-/area/holodeck/den/armory
+/area/holodeck/den/programs/armory
 	name = "VR - Armory"
 
-/area/holodeck/den/bodies
+/area/holodeck/den/programs/bodies
 	name = "VR - Body"
 
-/area/holodeck/den/offline
+/area/holodeck/den/programs/offline
 	name = "VR - null"
 
 
@@ -182,13 +194,22 @@
 	name = "\improper FOLLOWERS HOLODECK"
 	has_gravity = STANDARD_GRAVITY
 
-/area/holodeck/followers/medical
+/area/holodeck/followers/sim_1
+	name = "Followers Simulation Chamber 1"
+
+/area/holodeck/followers/sim_2
+	name = "Followers Simulation Chamber 2"
+
+/area/holodeck/followers/programs/garden
+	name = "VR - Garden"
+
+/area/holodeck/followers/programs/medical
 	name = "VR - Medical"
 
-/area/holodeck/followers/bodies
+/area/holodeck/followers/programs/bodies
 	name = "VR - Body"
 
-/area/holodeck/followers/offline
+/area/holodeck/followers/programs/offline
 	name = "VR - null"
 
 // Arena programs

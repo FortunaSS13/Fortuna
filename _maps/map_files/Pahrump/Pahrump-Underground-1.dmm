@@ -2515,6 +2515,15 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/tunnel)
+"bHp" = (
+/obj/machinery/vr_sleeper/bos,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/brotherhood/operations)
 "bHA" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/indestructible/ground/inside/mountain,
@@ -74863,7 +74872,7 @@ shY
 rbg
 xxS
 qmj
-ufQ
+meq
 rbg
 eLE
 tur
@@ -94967,7 +94976,7 @@ tSI
 tSI
 tSI
 wKL
-aeX
+bHp
 sCB
 hUV
 wKL
@@ -95995,7 +96004,7 @@ tSI
 tSI
 tSI
 wKL
-aeX
+bHp
 sCB
 aAE
 wKL
