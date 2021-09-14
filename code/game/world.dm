@@ -14,7 +14,7 @@ GLOBAL_LIST(topic_status_cache)
 	if (debug_server)
 		call(debug_server, "auxtools_init")()
 		enable_debugging()
-	AUXTOOLS_CHECK(AUXMOS)
+	AUXTOOLS_CHECK(EXTOOLS)
 #ifdef REFERENCE_TRACKING
 	enable_reference_tracking()
 #endif
@@ -273,7 +273,7 @@ GLOBAL_LIST(topic_status_cache)
 
 /world/Del()
 	shutdown_logging() // makes sure the thread is closed before end, else we terminate
-	AUXTOOLS_SHUTDOWN(AUXMOS)
+	AUXTOOLS_SHUTDOWN(EXTOOLS)
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
 		call(debug_server, "auxtools_shutdown")()

@@ -30,7 +30,7 @@ GLOBAL_LIST_INIT(auxtools_atmos_initialized,FALSE)
 /datum/gas_mixture/New(volume)
 	if (!isnull(volume))
 		initial_volume = volume
-	AUXTOOLS_CHECK(AUXMOS)
+	AUXTOOLS_CHECK(EXTOOLS)
 	if(!GLOB.auxtools_atmos_initialized && auxtools_atmos_init())
 		GLOB.auxtools_atmos_initialized = TRUE
 	__gasmixture_register()
