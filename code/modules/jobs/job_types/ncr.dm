@@ -347,6 +347,73 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/trench = 1,
 		)
 
+/datum/job/ncr/f13representative
+	title = "NCR Representative"
+	flag = F13REP
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are a representative for the NCR. You are here to further the objective of the NCR, have been supplied with ample amounts of money to do so."
+	supervisors = "The Captain and the NCR"
+	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
+	outfit = /datum/outfit/job/ncr/f13representative
+
+	loadout_options = list(
+		/datum/outfit/loadout/repbrahminbaron,
+		/datum/outfit/loadout/repambassador,
+		/datum/outfit/loadout/repgunrunner
+		)
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/ncr
+			),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/ncr
+			)
+		)
+
+/datum/outfit/job/ncr/f13representative
+	name = "NCR Representative"
+	uniform = /obj/item/clothing/under/f13/ncr/ncr_dress
+	jobtype	= /datum/job/ncr/f13representative
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	neck = /obj/item/storage/belt/holster/legholster
+	backpack = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/ammo_box/c45rev = 2,
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/survivalkit_aid = 1
+		)
+
+/datum/outfit/loadout/repbrahminbaron
+	name = "Brahmin Baron"
+	suit = /obj/item/clothing/under/suit/red
+	shoes = /obj/item/clothing/shoes/f13/cowboy
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
+
+/datum/outfit/loadout/repambassador
+	name = "Ambassador"
+	suit = /obj/item/clothing/suit/toggle/lawyer/black
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1,
+		/obj/item/storage/briefcase
+		)
+
+/datum/outfit/loadout/repgunrunner
+	name = "Gun Runner"
+	suit = /obj/item/clothing/under/suit_jacket/tan
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
 
 ///////////////
 /// Rangers ///
