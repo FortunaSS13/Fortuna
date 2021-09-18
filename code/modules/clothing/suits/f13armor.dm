@@ -54,10 +54,6 @@
 	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	strip_delay = 30
 
-/obj/item/clothing/suit/armor/f13/kit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/punk
 	name = "armor kit"
 	desc = "(III) A couple of armor parts that can be worn over the clothing for moderate protection against the dangers of wasteland.<br>Do you feel lucky now? Well, do ya, punk?"
@@ -67,10 +63,6 @@
 	strip_delay = 30
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
-
-/obj/item/clothing/suit/armor/f13/punk/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/leatherarmor
 	name = "leather armor"
@@ -788,10 +780,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 		H.update_inv_w_uniform()
 		H.update_body()
 
-/obj/item/clothing/suit/armor/f13/exile/cust0m/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/harpercoat
 	name = "outlaw coat"
 	desc = "(IV) A combat duster"
@@ -804,10 +792,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "reptiliatenebris"
 	item_state = "reptiliatenebris"
 
-/obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/shankduster
 	name = "follower's duster"
 	desc = "An old military-grade pre-war combat armor under a white weathered duster. An emblem of the Followers is painted on the back of it. It appears to be fitted with metal plates to replace the crumbling ceramic."
@@ -816,10 +800,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	strip_delay = 40
-
-/obj/item/clothing/suit/armor/f13/shankduster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/toggle/armor/f13/rangercustomdark
 	name = "tattered recon duster"
@@ -884,10 +864,6 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/herbertranger/Initialize() //HQ parts reinforcement, just like raider gear
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
 	name = "Marlow gang overcoat"
 	desc = "(IV) A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear."
@@ -897,29 +873,17 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	armor = list("tier" = 4, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
 	name = "gunfighter's overcoat"
 	desc = "(IV) A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes."
 	icon_state = "ikesuit"
 	item_state = "ikesuit"
 
-/obj/item/clothing/suit/armor/f13/ikesuit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
 	name = "vagabond's vest"
 	desc = "(IV) A padded thick red leather vest, coated in stitched pockets and other mends."
 	icon_state = "masonsuit"
 	item_state = "masonsuit"
-
-/obj/item/clothing/suit/armor/f13/masonsuit/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
