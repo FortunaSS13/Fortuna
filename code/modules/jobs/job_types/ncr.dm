@@ -151,7 +151,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP)
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -350,6 +350,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13representative
 	title = "NCR Representative"
 	flag = F13REP
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are a representative for the NCR. You are here to further the objective of the NCR, have been supplied with ample amounts of money to do so."
@@ -376,7 +377,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	name = "NCR Representative"
 	uniform = /obj/item/clothing/under/f13/ncr/ncr_dress
 	jobtype	= /datum/job/ncr/f13representative
-	id = /obj/item/card/id/dogtag/ncrtrooper
+	id = /obj/item/card/id/dogtag/ncrrep
 	neck = /obj/item/storage/belt/holster/legholster
 	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(

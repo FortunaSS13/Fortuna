@@ -15884,13 +15884,15 @@
 	id = "office_privacy";
 	name = "Office privacy";
 	pixel_x = -5;
-	pixel_y = 9
+	pixel_y = 9;
+	req_one_access_txt = "252"
 	},
 /obj/machinery/button{
 	id = "office_safe";
 	name = "Secure storage";
 	pixel_x = 5;
-	pixel_y = 9
+	pixel_y = 9;
+	req_one_access_txt = "252"
 	},
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
@@ -20863,7 +20865,8 @@
 /area/f13/brotherhood/rnd)
 "nsf" = (
 /obj/machinery/door/airlock/wood{
-	name = "Secure Storage"
+	name = "Secure Storage";
+	req_one_access_txt = "252"
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "office_safe"
@@ -25201,6 +25204,7 @@
 	color = "#FF0000";
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/ncrrep,
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
 "qkN" = (
