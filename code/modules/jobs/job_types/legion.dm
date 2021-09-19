@@ -337,7 +337,7 @@ commented out pending rework*/
 /datum/outfit/loadout/decvetrear
 	name = "Lead from the rear"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle = 1
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
 	backpack_contents = list(
 		/obj/item/melee/powered/ripper = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 3,
@@ -858,7 +858,7 @@ commented out pending rework*/
 
 /datum/outfit/loadout/recruittribal
 	name = "Tribal Recruit"
-	suit_store = /obj/item/twohanded/spear/lance = 1
+	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/book/granter/trait/trekking = 1,
