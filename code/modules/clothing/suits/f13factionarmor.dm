@@ -418,7 +418,7 @@
 
 /obj/item/clothing/suit/armor/f13/trailranger
 	name = "ranger vest"
-	desc = "(III) A quaint little jacket and scarf worn by NCR trail rangers."
+	desc = "(IV) A quaint little jacket and scarf worn by NCR trail rangers."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
