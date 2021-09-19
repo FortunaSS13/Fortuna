@@ -105,8 +105,9 @@
 	var/on_item_state = "ripper_on"
 	var/off_item_state = "ripper"
 	var/weight_class_on = WEIGHT_CLASS_HUGE
-	var/force_on = 45
+	var/force_on = 55
 	var/force_off = 10
+	armour_penetration = 0.1
 	var/on = FALSE
 	var/on_icon_state = "ripper_on"
 	var/off_icon_state = "ripper"
@@ -146,8 +147,8 @@
 	off_icon_state = "prewarrip_off"
 	on_item_state = "prewarrip_on"
 	off_item_state = "prewarrip_off"
-	force_on = 50
-	armour_penetration = 0.15
+	force_on = 60
+	armour_penetration = 0.20
 
 
 // Shishkebab backpack				The shishkebab weapon base unit
@@ -255,7 +256,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	item_flags = ABSTRACT  // don't put in storage
 	slot_flags = 0
-	force = 55
+	force = 70
 	damtype = "fire"
 	tool_behaviour = TOOL_WELDER
 	toolspeed = 0.3
