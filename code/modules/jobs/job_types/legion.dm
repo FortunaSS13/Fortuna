@@ -257,7 +257,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/melee/powerfist/goliath = 1,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14,
 		/obj/item/ammo_box/magazine/m14mm = 3,
-		obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/tank/internals/oxygen = 1,
 		)
 
