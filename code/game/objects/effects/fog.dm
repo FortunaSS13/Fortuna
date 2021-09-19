@@ -22,7 +22,6 @@
 
 /obj/effect/overlay/fog/fog6
 	icon_state = "6"
-	opacity = TRUE
 
 /obj/effect/overlay/fog/fog7
 	icon_state = "7"
