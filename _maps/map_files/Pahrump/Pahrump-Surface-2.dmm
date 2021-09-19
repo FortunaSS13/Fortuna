@@ -1251,6 +1251,12 @@
 	icon_state = "verticaloutermain2top"
 	},
 /area/f13/wasteland)
+"aBR" = (
+/obj/structure/sign/poster/prewar/poster70{
+	pixel_x = -33
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "aCt" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -11048,10 +11054,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"fem" = (
-/obj/structure/sign/poster/official/do_not_question,
-/turf/closed/wall/r_wall/rust,
-/area/f13/building)
 "fep" = (
 /obj/machinery/light{
 	dir = 8
@@ -11668,6 +11670,13 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"frT" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/light,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "fsh" = (
 /obj/structure/table/wood,
 /turf/open/indestructible/ground/outside/road{
@@ -13108,6 +13117,10 @@
 	icon_state = "hole"
 	},
 /area/f13/wasteland)
+"fZZ" = (
+/obj/effect/landmark/start/f13/secretary,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "gak" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -14480,10 +14493,6 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
-"gDc" = (
-/obj/structure/mirror,
-/turf/closed/wall/r_wall/rust,
 /area/f13/building)
 "gDe" = (
 /obj/structure/toilet{
@@ -20324,10 +20333,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"jcE" = (
-/obj/effect/landmark/start/f13/secretary,
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "jcJ" = (
 /obj/effect/spawner/lootdrop/trash,
 /mob/living/simple_animal/hostile/ghoul,
@@ -21131,19 +21136,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
-/area/f13/building)
-"juu" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/paperframes/fifty,
-/obj/item/storage/crayons,
-/obj/item/storage/box/fountainpens,
-/obj/item/paper_bin/bundlenatural,
-/obj/item/wirecutters,
-/obj/item/poster/random_official,
-/obj/item/poster/random_official,
-/obj/item/poster/random_official,
-/obj/item/poster/random_contraband,
-/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "juw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -22948,6 +22940,19 @@
 /obj/structure/chair,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
+"kiD" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/closet,
+/obj/item/clothing/under/lawyer/blue,
+/obj/item/clothing/under/rank/civilian/lawyer/blue/skirt,
+/obj/item/clothing/under/rank/civilian/lawyer/bluesuit,
+/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt,
+/obj/item/clothing/under/rank/civilian/lawyer/red,
+/obj/item/clothing/under/rank/civilian/lawyer/red/skirt,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "kiH" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -23310,6 +23315,10 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/tunnel)
+"ksl" = (
+/obj/structure/mirror,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "kso" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/paper,
@@ -36843,10 +36852,6 @@
 	icon_state = "floordirty"
 	},
 /area/f13/bunker)
-"qSG" = (
-/obj/structure/sign/poster/contraband/pinup_vixen,
-/turf/closed/wall/r_wall/rust,
-/area/f13/building)
 "qSJ" = (
 /obj/structure/table/wood,
 /obj/item/phone,
@@ -37467,10 +37472,6 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/building)
-"riC" = (
-/obj/structure/sign/poster/official/cleanliness,
-/turf/closed/wall/f13/wood,
 /area/f13/building)
 "riF" = (
 /obj/structure/window/fulltile/house{
@@ -40542,6 +40543,10 @@
 /obj/item/screwdriver/nuke,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"sKl" = (
+/obj/structure/sign/poster/official/cleanliness,
+/turf/closed/wall/f13/wood,
+/area/f13/building)
 "sKC" = (
 /obj/structure/tires/five,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -41412,6 +41417,10 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
+"ter" = (
+/obj/structure/sign/poster/official/do_not_question,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "tfz" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/rank/medical/doctor/purple,
@@ -42403,19 +42412,6 @@
 	icon_state = "verticalrightborderleft2top"
 	},
 /area/f13/wasteland)
-"tCB" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/closet,
-/obj/item/clothing/under/lawyer/blue,
-/obj/item/clothing/under/rank/civilian/lawyer/blue/skirt,
-/obj/item/clothing/under/rank/civilian/lawyer/bluesuit,
-/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt,
-/obj/item/clothing/under/rank/civilian/lawyer/red,
-/obj/item/clothing/under/rank/civilian/lawyer/red/skirt,
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "tCL" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -45062,6 +45058,19 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"uNI" = (
+/obj/structure/rack,
+/obj/item/stack/sheet/paperframes/fifty,
+/obj/item/storage/crayons,
+/obj/item/storage/box/fountainpens,
+/obj/item/paper_bin/bundlenatural,
+/obj/item/wirecutters,
+/obj/item/poster/random_official,
+/obj/item/poster/random_official,
+/obj/item/poster/random_official,
+/obj/item/poster/random_contraband,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "uNK" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/f13/wood,
@@ -47662,6 +47671,10 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/building)
+"vUP" = (
+/obj/structure/sign/poster/contraband/pinup_vixen,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "vVa" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/f13/autumn,
@@ -47676,12 +47689,6 @@
 	color = "000000"
 	},
 /turf/open/floor/wood/wood_tiled,
-/area/f13/building)
-"vVw" = (
-/obj/structure/sign/poster/prewar/poster70{
-	pixel_x = -33
-	},
-/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "vVx" = (
 /obj/effect/decal/cleanable/glass,
@@ -72822,9 +72829,9 @@ uqa
 uqa
 dCV
 dCV
-qSG
-gDc
-fem
+vUP
+ksl
+ter
 dCV
 dCV
 uqa
@@ -73079,10 +73086,10 @@ dCV
 dCV
 dCV
 fQr
-tCB
-jcE
-juu
-riC
+kiD
+fZZ
+uNI
+sKl
 dCV
 dCV
 dCV
@@ -73596,7 +73603,7 @@ uqa
 tOF
 tOF
 nJU
-vVw
+aBR
 uqa
 tcq
 sIJ
@@ -74110,7 +74117,7 @@ ftu
 fFF
 fTK
 ghz
-ozq
+frT
 uqa
 gRL
 tAe
