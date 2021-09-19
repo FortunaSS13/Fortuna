@@ -18780,6 +18780,15 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"izI" = (
+/obj/machinery/vending/clothing,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/wasteland)
 "izR" = (
 /obj/structure/chair,
 /obj/effect/decal/remains/human,
@@ -91539,7 +91548,7 @@ tBN
 uqa
 dCV
 dCV
-nsP
+izI
 ydO
 mHj
 mHj
