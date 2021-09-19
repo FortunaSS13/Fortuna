@@ -206,7 +206,7 @@
 
 /obj/item/twohanded/spear/lance/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=40, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=30, force_wielded=50, icon_wielded="[icon_prefix]2")
 
 
 // Scrap spear		Keywords: Damage 17/28, Reach
