@@ -13,3 +13,18 @@
 /obj/item/storage/box/large/custom_kit/mrmannstealthsuit/PopulateContents()
 	new /obj/item/clothing/under/f13/chinasuitcosmetic(src)
 	new /obj/item/clothing/head/f13/chinahelmetcosmetic(src)
+
+/datum/gear/donator/kits/midgetdragonvest
+	name = "Great Beat Vest Bundle"
+	path = /obj/item/clothing/under/f13/bearvest
+	category = LOADOUT_CATEGORY_UNIFORM
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
+	ckeywhitelist = list("midgetdragon")
+
+/obj/item/storage/box/large/custom_kit/midgetdragonvest
+	name = "Great Bear Vest Bundle"
+	desc = "A vest, scarf and a pair of ripped jeans."
+	w_class = WEIGHT_CLASS_BULKY
+
+/obj/item/storage/box/large/custom_kit/mrmannstealthsuit/PopulateContents()
+	new /obj/item/clothing/under/f13/bearvest(src)
