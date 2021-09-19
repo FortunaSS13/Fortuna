@@ -40,7 +40,7 @@
 	name = "machete"
 	desc = "A forged machete made of high quality steel."
 	icon_state = "machete"
-	force = 35
+	force = 37
 	block_chance = 8
 
 /obj/item/melee/onehanded/machete/training
@@ -62,7 +62,8 @@
 	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
 	icon_state = "gladius"
 	item_state = "gladius"
-	force = 36
+	force = 45
+	armour_penetration = 0.075
 	block_chance = 10
 
 /obj/item/melee/onehanded/machete/spatha
@@ -70,7 +71,8 @@
 	desc = "This long blade is favoured by Legion officers and leaders, a finely crafted weapon with good steel and hilt made from bronze and bone."
 	icon_state = "spatha"
 	item_state = "spatha"
-	force = 38
+	force = 50
+	armour_penetration = 0.1
 	block_chance = 18
 
 /obj/item/melee/onehanded/machete/spatha/longblade
