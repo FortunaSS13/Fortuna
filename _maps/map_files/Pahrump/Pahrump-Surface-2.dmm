@@ -321,6 +321,10 @@
 	icon_state = "innermaincornerinner"
 	},
 /area/f13/wasteland)
+"ahf" = (
+/obj/structure/mirror,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "ahg" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/wood,
@@ -1251,12 +1255,6 @@
 	icon_state = "verticaloutermain2top"
 	},
 /area/f13/wasteland)
-"aBR" = (
-/obj/structure/sign/poster/prewar/poster70{
-	pixel_x = -33
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "aCt" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -2671,6 +2669,10 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"bjA" = (
+/obj/structure/sign/poster/contraband/pinup_vixen,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "bjB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
@@ -11670,13 +11672,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
-"frT" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/machinery/light,
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "fsh" = (
 /obj/structure/table/wood,
 /turf/open/indestructible/ground/outside/road{
@@ -13117,10 +13112,6 @@
 	icon_state = "hole"
 	},
 /area/f13/wasteland)
-"fZZ" = (
-/obj/effect/landmark/start/f13/secretary,
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "gak" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -22940,19 +22931,6 @@
 /obj/structure/chair,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
-"kiD" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/closet,
-/obj/item/clothing/under/lawyer/blue,
-/obj/item/clothing/under/rank/civilian/lawyer/blue/skirt,
-/obj/item/clothing/under/rank/civilian/lawyer/bluesuit,
-/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt,
-/obj/item/clothing/under/rank/civilian/lawyer/red,
-/obj/item/clothing/under/rank/civilian/lawyer/red/skirt,
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "kiH" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -23315,10 +23293,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/tunnel)
-"ksl" = (
-/obj/structure/mirror,
-/turf/closed/wall/r_wall/rust,
-/area/f13/building)
 "kso" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/paper,
@@ -23768,6 +23742,19 @@
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer,
 /turf/open/floor/f13/wood,
+/area/f13/building)
+"kEP" = (
+/obj/structure/rack,
+/obj/item/stack/sheet/paperframes/fifty,
+/obj/item/storage/crayons,
+/obj/item/storage/box/fountainpens,
+/obj/item/paper_bin/bundlenatural,
+/obj/item/wirecutters,
+/obj/item/poster/random_official,
+/obj/item/poster/random_official,
+/obj/item/poster/random_official,
+/obj/item/poster/random_contraband,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "kEW" = (
 /obj/structure/bed/mattress{
@@ -24692,6 +24679,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/ncr)
+"lbO" = (
+/obj/structure/sign/poster/prewar/poster70{
+	pixel_x = -33
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "lcm" = (
 /obj/structure/closet,
 /obj/item/clothing/under/rank/prisoner,
@@ -34285,6 +34278,10 @@
 /obj/structure/necropolis_gate,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"pKt" = (
+/obj/effect/landmark/start/f13/secretary,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "pKI" = (
 /obj/structure/pool/ladder{
 	dir = 1;
@@ -34442,6 +34439,10 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
+/area/f13/building)
+"pNt" = (
+/obj/structure/sign/poster/official/cleanliness,
+/turf/closed/wall/f13/wood,
 /area/f13/building)
 "pNw" = (
 /obj/effect/decal/cleanable/oil{
@@ -40039,6 +40040,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"sxu" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/light,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "sxP" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/indestructible/ground/outside/ruins,
@@ -40542,10 +40550,6 @@
 /obj/item/lighter,
 /obj/item/screwdriver/nuke,
 /turf/open/floor/f13/wood,
-/area/f13/building)
-"sKl" = (
-/obj/structure/sign/poster/official/cleanliness,
-/turf/closed/wall/f13/wood,
 /area/f13/building)
 "sKC" = (
 /obj/structure/tires/five,
@@ -41417,10 +41421,6 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
-"ter" = (
-/obj/structure/sign/poster/official/do_not_question,
-/turf/closed/wall/r_wall/rust,
-/area/f13/building)
 "tfz" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/rank/medical/doctor/purple,
@@ -45058,19 +45058,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"uNI" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/paperframes/fifty,
-/obj/item/storage/crayons,
-/obj/item/storage/box/fountainpens,
-/obj/item/paper_bin/bundlenatural,
-/obj/item/wirecutters,
-/obj/item/poster/random_official,
-/obj/item/poster/random_official,
-/obj/item/poster/random_official,
-/obj/item/poster/random_contraband,
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "uNK" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/f13/wood,
@@ -47671,10 +47658,6 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/building)
-"vUP" = (
-/obj/structure/sign/poster/contraband/pinup_vixen,
-/turf/closed/wall/r_wall/rust,
-/area/f13/building)
 "vVa" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/f13/autumn,
@@ -47689,6 +47672,12 @@
 	color = "000000"
 	},
 /turf/open/floor/wood/wood_tiled,
+/area/f13/building)
+"vVe" = (
+/obj/structure/simple_door/wood{
+	name = "Office Supplies"
+	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "vVx" = (
 /obj/effect/decal/cleanable/glass,
@@ -48681,6 +48670,19 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"wxc" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/closet,
+/obj/item/clothing/under/lawyer/blue,
+/obj/item/clothing/under/rank/civilian/lawyer/blue/skirt,
+/obj/item/clothing/under/rank/civilian/lawyer/bluesuit,
+/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt,
+/obj/item/clothing/under/rank/civilian/lawyer/red,
+/obj/item/clothing/under/rank/civilian/lawyer/red/skirt,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "wxi" = (
 /obj/structure/debris/v3,
 /turf/open/indestructible/ground/inside/mountain,
@@ -50682,6 +50684,10 @@
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+"xoK" = (
+/obj/structure/sign/poster/official/do_not_question,
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "xoN" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -72829,9 +72835,9 @@ uqa
 uqa
 dCV
 dCV
-vUP
-ksl
-ter
+bjA
+ahf
+xoK
 dCV
 dCV
 uqa
@@ -73086,10 +73092,10 @@ dCV
 dCV
 dCV
 fQr
-kiD
-fZZ
-uNI
-sKl
+wxc
+pKt
+kEP
+pNt
 dCV
 dCV
 dCV
@@ -73344,7 +73350,7 @@ kEI
 dCV
 uqa
 uqa
-wue
+vVe
 uqa
 uqa
 uqa
@@ -73603,7 +73609,7 @@ uqa
 tOF
 tOF
 nJU
-aBR
+lbO
 uqa
 tcq
 sIJ
@@ -74117,7 +74123,7 @@ ftu
 fFF
 fTK
 ghz
-frT
+sxu
 uqa
 gRL
 tAe
