@@ -14284,6 +14284,17 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
+"gxW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/simple_door/wood{
+	name = "Town Hall"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/building)
 "gxZ" = (
 /obj/machinery/button/door{
 	id = "hospitalgarage1";
@@ -76615,7 +76626,7 @@ doX
 cWG
 daU
 gCh
-llq
+gxW
 llq
 nKA
 sYX
