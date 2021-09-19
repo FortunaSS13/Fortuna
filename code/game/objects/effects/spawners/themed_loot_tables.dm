@@ -298,7 +298,7 @@
 /obj/effect/spawner/lootdrop/weapons/unique
 	name = "weaponspawner unique"
 	loot = list(
-		/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
+		/obj/item/gun/ballistic/automatic/varmint/ratslayer,
 		/obj/item/gun/ballistic/automatic/m1garand/oldglory,
 		/obj/item/gun/ballistic/automatic/m1garand/republicspride,
 		/obj/item/gun/ballistic/rifle/hunting/paciencia,
@@ -306,7 +306,7 @@
 		/obj/item/gun/ballistic/automatic/pistol/pistol14/lildevil,
 		/obj/item/gun/ballistic/automatic/pistol/n99/executive,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
-		/obj/item/gun/energy/laser/plasma/alien,
+		/obj/item/gun/energy/laser/plasma/pistol/alien,
 		/obj/item/melee/unarmed/deathclawgauntlet,
 		)
 
