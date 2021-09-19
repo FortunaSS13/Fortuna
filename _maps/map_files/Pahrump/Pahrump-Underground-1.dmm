@@ -21964,9 +21964,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/clothing/glasses/hud/health/night,
-/obj/item/clothing/glasses/hud/health/night,
 /obj/item/pda,
+/obj/item/clothing/glasses/hud/health/f13,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -35068,7 +35067,8 @@
 /area/f13/bunker)
 "xWQ" = (
 /obj/structure/bookcase/manuals,
-/obj/effect/spawner/lootdrop/f13/traitbooks,
+/obj/item/book/granter/trait/midsurgery,
+/obj/item/book/granter/trait/chemistry,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
