@@ -9893,11 +9893,8 @@
 /turf/open/floor/carpet,
 /area/f13/building)
 "eHj" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "prospectordoor"
-	},
 /obj/machinery/door/airlock/wood{
-	req_one_access_txt = "48"
+	req_one_access_txt = "25"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
