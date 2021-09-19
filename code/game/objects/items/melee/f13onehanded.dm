@@ -62,7 +62,7 @@
 	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
 	icon_state = "gladius"
 	item_state = "gladius"
-	force = 45
+	force = 50
 	armour_penetration = 0.075
 	block_chance = 10
 
