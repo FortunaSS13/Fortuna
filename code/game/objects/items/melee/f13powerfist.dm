@@ -92,6 +92,7 @@
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	force = 10
+	armour_penetration = 0.1
 	wound_bonus = 25
 	block_chance = 15
 	throw_speed = 3
@@ -107,7 +108,6 @@
 	var/weight_class_on = WEIGHT_CLASS_HUGE
 	var/force_on = 55
 	var/force_off = 10
-	armour_penetration = 0.1
 	var/on = FALSE
 	var/on_icon_state = "ripper_on"
 	var/off_icon_state = "ripper"
