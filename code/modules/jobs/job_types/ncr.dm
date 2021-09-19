@@ -361,7 +361,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/repbrahminbaron,
 		/datum/outfit/loadout/repambassador,
-		/datum/outfit/loadout/repgunrunner
+		/datum/outfit/loadout/repexecutive
 		)
 
 	matchmaking_allowed = list(
@@ -383,7 +383,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 2,
-		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/bag/money/small/ncr = 2,
 		/obj/item/storage/survivalkit_aid = 1
 		)
 
@@ -407,8 +407,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/storage/briefcase
 		)
 
-/datum/outfit/loadout/repgunrunner
-	name = "Gun Runner"
+/datum/outfit/loadout/repexecutive
+	name = "Executive"
 	suit = /obj/item/clothing/under/suit_jacket/tan
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(
