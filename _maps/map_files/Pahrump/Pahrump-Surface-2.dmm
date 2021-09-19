@@ -14284,12 +14284,6 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
-"gxW" = (
-/obj/item/flag/yuma,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright0"
-	},
-/area/f13/wasteland)
 "gxZ" = (
 /obj/machinery/button/door{
 	id = "hospitalgarage1";
@@ -18775,14 +18769,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
-"izI" = (
-/obj/item/flag/yuma{
-	icon_state = "cornflag2"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
-/area/f13/wasteland)
 "izR" = (
 /obj/structure/chair,
 /obj/effect/decal/remains/human,
@@ -27266,12 +27252,6 @@
 /obj/machinery/chem_heater,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
-"moy" = (
-/obj/item/flag/yuma,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft0"
-	},
-/area/f13/wasteland)
 "moz" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -77148,7 +77128,7 @@ ydO
 ydO
 ydO
 ydO
-izI
+mHj
 ydO
 ydO
 mHj
@@ -82788,14 +82768,14 @@ mEL
 wKo
 gkv
 ybI
-moy
+ybI
 dCV
 dCV
 ekB
 ekB
 ekB
 jfj
-izI
+mHj
 mHj
 mHj
 yes
@@ -82822,7 +82802,7 @@ lMA
 lMA
 dCV
 dCV
-moy
+ybI
 ybI
 ybI
 ybI
@@ -83816,14 +83796,14 @@ hWk
 rkr
 geM
 ees
-gxW
+ees
 dCV
 dCV
 dCV
 dCV
 dCV
 dCV
-izI
+mHj
 mHj
 mHj
 mHj
@@ -83850,7 +83830,7 @@ dCV
 dCV
 dCV
 dCV
-gxW
+ees
 ees
 kKo
 ees
