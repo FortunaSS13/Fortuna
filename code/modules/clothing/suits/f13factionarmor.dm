@@ -21,19 +21,11 @@
 	icon_state = "raider_rebel_icon"
 	item_state = "raider_rebel_armor"
 
-/obj/item/clothing/suit/armor/f13/raider/rebel/Initialize() //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/sadist
 	name = "sadist raider armor"
 	desc = "(III) A bunch of metal chaps adorned with severed hands at the waist with a leather plate worn on the left shoulder. Very intimidating."
 	icon_state = "sadist"
 	item_state = "sadist"
-
-/obj/item/clothing/suit/armor/f13/raider/sadist/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/blastmaster
 	name = "blastmaster raider armor"
@@ -43,19 +35,11 @@
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	flash_protect = 2
 
-/obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/yankee
 	name = "yankee raider armor"
 	desc = "(III) A set of armor made from bulky plastic and rubber. A faded sports team logo is printed in various places. Go Desert Rats!"
 	icon_state = "yankee"
 	item_state = "yankee"
-
-/obj/item/clothing/suit/armor/f13/raider/yankee/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/badlands
 	name = "badlands raider armor"
@@ -63,29 +47,17 @@
 	icon_state = "badlands"
 	item_state = "badlands"
 
-/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/painspike
 	name = "painspike raider armor"
 	desc = "(III) A particularly unhuggable armor, even by raider standards. Extremely spiky."
 	icon_state = "painspike"
 	item_state = "painspike"
 
-/obj/item/clothing/suit/armor/f13/raider/painspike/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/iconoclast
 	name = "iconoclast raider armor"
 	desc = "(III) A rigid armor set that appears to be fashioned from a radiation suit, or a mining suit."
 	icon_state = "iconoclast"
 	item_state = "iconoclast"
-
-/obj/item/clothing/suit/armor/f13/raider/iconoclast/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster
 	name = "combat duster"
