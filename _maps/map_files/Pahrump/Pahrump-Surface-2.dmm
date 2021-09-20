@@ -36136,13 +36136,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
-"qEU" = (
-/obj/structure/statue/sandstone/gravestone{
-	anchored = 1;
-	desc = "Here lay the body of Articulus Martialis. Proud centurion of the migthy Legion, he slayed hundreds of enemies in the name of Caesar and fell in battle figthing to the end. Some say his life would have been saved if the surviving legionare had stopped digging in the trash piles and actually bothered to provide aid. May he rest well in the hall of Mars."
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "qEZ" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
@@ -38890,13 +38883,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
-"rXv" = (
-/obj/structure/statue/sandstone/gravestone{
-	anchored = 1;
-	desc = "Here lies Sydney Blackhawk. A hero to the republic, she sacrificed much in her life  and died for the republic, may her burial be a reminder of valor and heroism to those who love freedom."
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "rXF" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -41334,13 +41320,6 @@
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
-"tci" = (
-/obj/structure/statue/sandstone/gravestone{
-	anchored = 1;
-	desc = "Therein lay Lucy, born into a simple farming life and captured and forced to fight by raiders, she would battle her own struggles in life against her own mental problems and lose the fight as she commited suicide in her own home. May Lucy Fire-Fly rest well and find peace in death."
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "tcq" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -78028,7 +78007,7 @@ akI
 bpD
 pPg
 tBN
-qEU
+qZD
 mvv
 qZD
 mvv
@@ -78546,7 +78525,7 @@ qZD
 mvv
 ceM
 mvv
-tci
+qZD
 aBH
 mfD
 mfD
@@ -79058,7 +79037,7 @@ ccz
 tBN
 qbF
 mvv
-rXv
+qZD
 mvv
 qZD
 bpD
