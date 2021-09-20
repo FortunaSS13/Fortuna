@@ -565,7 +565,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/junkie/jet
 	name = "Jet Addict"
-	desc = "The jet will make you jittery!"
+	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. The jet will make you jittery!"
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a whiff from a jet inhaler.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in jet.</span>"
@@ -575,7 +575,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/junkie/psycho
 	name = "Psycho Addict"
-	desc = "KILL! DEATH! DESTROY!"
+	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. KILL! DEATH! DESTROY!"
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a shot of psycho.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in psycho.</span>"
@@ -585,7 +585,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	
 /datum/quirk/junkie/turbo
 	name = "Turbo Addict"
-	desc = "Okay, here we go. Focus. Speed. I am speed. One winner, 42 losers. I eat losers for breakfast. Kachow!"
+	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. Okay, here we go. Focus. Speed. I am speed. One winner, 42 losers. I eat losers for breakfast. Kachow!"
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a drink of turbo.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
@@ -595,7 +595,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	
 /datum/quirk/junkie/medx
 	name = "Med-X Addict"
-	desc = "Five doses? Nice. A fella could put himself out of his misery with five doses."
+	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. Five doses? Nice. A fella could put himself out of his misery with five doses."
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a shot of med-x.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in med-x.</span>"
@@ -605,7 +605,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	
 /datum/quirk/junkie/mentats
 	name = "Mentats Addict"
-	desc = "To be fair, you have to have a very high IQ to understand Hegelian dialectics."
+	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. To be fair, you have to have a very high IQ to understand Hegelian dialectics."
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a mentat pill.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in mentats.</span>"
@@ -615,7 +615,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/junkie/buffout
 	name = "Buffout Addict"
-	desc = "Experiment Two: Punch through TEN boards. Results: I'm invincible! This is like, some comic-book level strength."
+	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. Experiment Two: Punch through TEN boards. Results: I'm invincible! This is like, some comic-book level strength."
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a buffout pill.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in buffout.</span>"
