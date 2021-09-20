@@ -682,10 +682,6 @@
 	item_state = "dethat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/head/f13/headscarf/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/f13/pot
 	name = "metal cooking pot"
 	desc = "(III) Step one: Start with the sauce.<br>Step two: Add the noodles.<br>Step three: Stir the pasta.<br>Step four: Turn up the heat.<br>Step five: Burn the house."

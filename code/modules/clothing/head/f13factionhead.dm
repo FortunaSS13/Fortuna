@@ -63,20 +63,12 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 
-/obj/item/clothing/head/helmet/f13/raider/supafly/Initialize() //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/helmet/f13/raider/wastehound
 	name = "wastehound raider helmet"
 	desc = "(IV) A sack hood made out of a suspicious leather with tufts of hair sticking out. This mask would make Leatherface proud."
 	icon_state = "wastehound_hood_icon"
 	item_state = "raider_wastehound_hood"
 	visor_flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE
-
-/obj/item/clothing/head/helmet/f13/raider/wastehound/Initialize() //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/raider/arclight
 	name = "arclight raider helmet"
@@ -88,10 +80,6 @@
 	flash_protect = 2
 	tint = 0.5
 
-/obj/item/clothing/head/helmet/f13/raider/arclight/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/helmet/f13/raider/blastmaster
 	name = "blastmaster raider helmet"
 	desc = "(IV) A sturdy helmet to protect against both the elements and from harm, if only it was not looking in such poor condition."
@@ -100,20 +88,12 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
-/obj/item/clothing/head/helmet/f13/raider/blastmaster/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/helmet/f13/raider/yankee
 	name = "yankee raider helmet"
 	desc = "(IV) Long time ago, it has belonged to a football player, now it belongs to wasteland."
 	icon_state = "yankee"
 	item_state = "yankee"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
-
-/obj/item/clothing/head/helmet/f13/raider/yankee/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/raider/eyebot
 	name = "eyebot helmet"
@@ -127,10 +107,6 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
-/obj/item/clothing/head/helmet/f13/raider/eyebot/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/helmet/f13/raider/psychotic
 	name = "psycho-tic raider helmet"
 	desc = "(IV) A leather skullcap with tufts of hair sticking from each side."
@@ -138,10 +114,6 @@
 	item_state = "psychotic"
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
-
-/obj/item/clothing/head/helmet/f13/raider/psychotic/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/fiend
 	name = "fiend helmet"
@@ -415,10 +387,6 @@
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny
-
-/obj/item/clothing/head/f13/ncr/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	name = "NCR storm helmet"
@@ -793,11 +761,6 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	strip_delay = 20
 
-/obj/item/clothing/head/helmet/f13/khan/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-
 //Wayfarer
 /obj/item/clothing/head/helmet/f13/deathskull
 	name = "eerie helm"
@@ -970,10 +933,6 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 20
-
-/obj/item/clothing/head/helmet/f13/khan/fullhelm/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //Enclave / Remnant
 /obj/item/clothing/head/donor/enclave
