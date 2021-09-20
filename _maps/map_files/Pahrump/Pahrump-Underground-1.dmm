@@ -2157,6 +2157,9 @@
 "bvs" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/machinery/mineral/wasteland_vendor/denchem{
+	pixel_y = 32
+	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bvT" = (
@@ -34223,6 +34226,9 @@
 /obj/structure/table,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/mineral/wasteland_vendor/khanchem{
+	pixel_y = 32
 	},
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
