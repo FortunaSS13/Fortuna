@@ -579,6 +579,47 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -2
 	gain_text = "<span class='danger'>You begin craving a shot of psycho.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in psycho.</span>"
-	medical_record_text = "Patient is a psychi addict."
+	medical_record_text = "Patient is a psycho addict."
 	reagent_type = /datum/reagent/drug/psycho
 	accessory_type = /obj/item/reagent_containers/hypospray/medipen/psycho
+	
+/datum/quirk/junkie/turbo
+	name = "Turbo Addict"
+	desc = "Okay, here we go. Focus. Speed. I am speed. One winner, 42 losers. I eat losers for breakfast. Kachow!"
+	value = -2
+	gain_text = "<span class='danger'>You begin craving a drink of turbo.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
+	medical_record_text = "Patient is a turbo addict."
+	reagent_type = /datum/reagent/drug/turbo
+	accessory_type = /obj/item/reagent_containers/pill/patch/turbo
+	
+/datum/quirk/junkie/medx
+	name = "Med-X Addict"
+	desc = "Five doses? Nice. A fella could put himself out of his misery with five doses."
+	value = -2
+	gain_text = "<span class='danger'>You begin craving a shot of med-x.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in med-x.</span>"
+	medical_record_text = "Patient is a med-x addict."
+	reagent_type = /datum/reagent/medicine/medx
+	accessory_type = /obj/item/reagent_containers/syringe/medx
+	
+/datum/quirk/junkie/mentats
+	name = "Mentats Addict"
+	desc = "To be fair, you have to have a very high IQ to understand Hegelian dialectics."
+	value = -2
+	gain_text = "<span class='danger'>You begin craving a mentat pill.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in mentats.</span>"
+	medical_record_text = "Patient is a mentats addict."
+	reagent_type = /datum/reagent/medicine/mentat
+	accessory_type = /obj/item/reagent_containers/pill/mentat
+
+/datum/quirk/junkie/buffout
+	name = "Buffout Addict"
+	desc = "Experiment Two: Punch through TEN boards. Results: I'm invincible! This is like, some comic-book level strength."
+	value = -2
+	gain_text = "<span class='danger'>You begin craving a buffout pill.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in buffout.</span>"
+	medical_record_text = "Patient is a buffout addict."
+	reagent_type = /datum/reagent/drug/buffout
+	accessory_type = /obj/item/reagent_containers/pill/buffout
+		
