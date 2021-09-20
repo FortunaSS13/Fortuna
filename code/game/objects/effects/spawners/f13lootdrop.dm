@@ -1908,3 +1908,4 @@
 			/obj/effect/spawner/bundle/testi = 10,
 			/obj/effect/spawner/bundle/testj = 10,
 			)
+
