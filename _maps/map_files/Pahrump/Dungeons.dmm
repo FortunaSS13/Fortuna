@@ -421,7 +421,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "azm" = (
-/mob/living/simple_animal/hostile/cazador,
+/mob/living/simple_animal/hostile/cazador{
+	health = 50
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -556,7 +558,9 @@
 /area/f13/bunker)
 "aIt" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/ranged/boss,
+/mob/living/simple_animal/hostile/raider/ranged/boss{
+	health = 200
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
 "aIu" = (
@@ -1738,6 +1742,16 @@
 /mob/living/simple_animal/hostile/molerat,
 /turf/open/floor/f13/wood,
 /area/f13/underground/cave)
+"clq" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2_flesh";
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "cmp" = (
 /obj/machinery/light{
 	dir = 8
@@ -2531,7 +2545,6 @@
 "doS" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/pickaxe,
 /obj/item/storage/toolbox/emergency/old,
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
@@ -3012,7 +3025,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/mob/living/simple_animal/hostile/ghoul,
+/mob/living/simple_animal/hostile/ghoul{
+	health = 100
+	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "dVW" = (
@@ -3440,7 +3455,7 @@
 "euI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/ghoul/glowing/strong{
-	health = 640
+	health = 400
 	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
@@ -4678,6 +4693,16 @@
 	icon_state = "bar"
 	},
 /area/f13/bunker)
+"gbx" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2";
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "gbZ" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
@@ -6941,9 +6966,8 @@
 	pixel_y = -4
 	},
 /obj/structure/debris/v2,
-/turf/open/indestructible/ground/outside/road{
-	dir = 8;
-	icon_state = "innermaincornerinner"
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
 	},
 /area/f13/wasteland)
 "iQu" = (
@@ -9086,7 +9110,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "lSd" = (
-/mob/living/simple_animal/hostile/cazador/young,
+/mob/living/simple_animal/hostile/cazador/young{
+	health = 50
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -9842,8 +9868,8 @@
 /obj/structure/debris/v3{
 	pixel_x = -12
 	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
 	},
 /area/f13/wasteland)
 "mHz" = (
@@ -10103,7 +10129,7 @@
 "mXh" = (
 /obj/structure/closet/bus,
 /obj/structure/ladder/unbreakable{
-	desc = "A short drive back south to Miller in this rusty bucket of bolts, hopefully with gained supplies in tow";
+	desc = "A short drive back south to Miller in this rusty bucket of bolts, hopefully with gained supplies in tow. No way further, anywho!";
 	height = 1;
 	id = "ncrmini";
 	layer = 5;
@@ -11344,7 +11370,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "oFd" = (
-/mob/living/simple_animal/hostile/cazador,
+/mob/living/simple_animal/hostile/cazador{
+	health = 50
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
@@ -11682,8 +11710,8 @@
 	pixel_x = -6
 	},
 /obj/structure/debris/v2,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontaltopborderbottom0"
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
 	},
 /area/f13/wasteland)
 "pau" = (
@@ -12093,6 +12121,16 @@
 	icon_state = "2-i"
 	},
 /area/f13/bunker)
+"pyI" = (
+/obj/item/picket_sign,
+/obj/effect/mob_spawn/human/skeleton/alive{
+	pixel_x = -6;
+	pixel_y = -15
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom2"
+	},
+/area/f13/wasteland)
 "pzh" = (
 /obj/structure/table,
 /obj/item/defibrillator,
@@ -15157,10 +15195,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "tzA" = (
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 8;
-	icon_state = "outermaincornerinner"
-	},
+/turf/closed/wall/f13/tunnel,
 /area/f13/wasteland)
 "tzI" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
@@ -16271,8 +16306,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "vak" = (
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontalbottomborderbottomleft"
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
 	},
 /area/f13/wasteland)
 "vaR" = (
@@ -16819,6 +16854,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
+"vJA" = (
+/obj/item/flag/legion{
+	pixel_x = 29;
+	pixel_y = 19
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "vJG" = (
 /obj/machinery/light/broken,
 /turf/open/floor/f13/wood{
@@ -17128,7 +17173,7 @@
 	color = "000000"
 	},
 /mob/living/simple_animal/hostile/ghoul/reaver{
-	health = 200
+	health = 175
 	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
@@ -18816,19 +18861,26 @@
 /area/f13/bunker)
 "yhp" = (
 /obj/structure/debris/v3{
-	pixel_x = -11;
-	pixel_y = 22
+	pixel_x = -14;
+	pixel_y = 28
 	},
 /obj/structure/debris/v1{
-	pixel_x = -9
+	pixel_x = -9;
+	pixel_y = 16
 	},
-/obj/structure/debris/v4,
-/obj/structure/debris/v4,
-/obj/structure/debris/v2,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 4;
-	icon_state = "outermaincornerouter"
+/obj/structure/debris/v4{
+	pixel_x = 6;
+	pixel_y = 29
 	},
+/obj/structure/debris/v4{
+	pixel_x = -3;
+	pixel_y = 33
+	},
+/obj/structure/debris/v2{
+	pixel_x = -12;
+	pixel_y = 34
+	},
+/turf/closed/wall/f13/tunnel,
 /area/f13/wasteland)
 "yhU" = (
 /obj/effect/turf_decal/box,
@@ -64619,7 +64671,7 @@ bsh
 bsh
 bsh
 bsh
-bsh
+xpD
 dVr
 pam
 mHn
@@ -64876,7 +64928,7 @@ gKr
 gKr
 gKr
 bsh
-bsh
+xpD
 ppF
 ppg
 iXL
@@ -65135,7 +65187,7 @@ gKr
 bsh
 wJM
 jeq
-pjm
+pyI
 iXL
 bFp
 rrM
@@ -81585,7 +81637,7 @@ yec
 bsh
 bsh
 mtM
-mGy
+vJA
 iAH
 xPV
 heT
@@ -81842,7 +81894,7 @@ qcp
 bsh
 bsh
 bsh
-mGy
+clq
 pBl
 bsh
 heT
@@ -82099,7 +82151,7 @@ yec
 bsh
 bsh
 bsh
-mGy
+gbx
 pBl
 bsh
 heT
