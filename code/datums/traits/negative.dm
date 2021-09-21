@@ -448,7 +448,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	. = ..()
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(/datum/brain_trauma/severe/monophobia, TRAUMA_RESILIENCE_ABSOLUTE)
-	
+
 //Junkie
 
 /datum/quirk/junkie
@@ -479,7 +479,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	reagent_instance = new reagent_type()
 	H.reagents.addiction_list.Add(reagent_instance)
 	var/current_turf = get_turf(quirk_holder)
-/*	if (!drug_container_type)
+	if (!drug_container_type)
 		drug_container_type = /obj/item/storage/pill_bottle
 	drug_instance = new drug_container_type(current_turf)
 	if (istype(drug_instance, /obj/item/storage/pill_bottle))
@@ -488,7 +488,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			var/obj/item/reagent_containers/pill/P = new(drug_instance)
 			P.icon_state = pill_state
 			P.list_reagents = list("[reagent_id]" = 1)
-*/
+
 	if (accessory_type)
 		accessory_instance = new accessory_type(current_turf)
 	var/list/slots = list(
@@ -525,7 +525,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	else
 		++tick_counter
 
-/*/datum/quirk/junkie/smoker
+/*
+/datum/quirk/junkie/smoker
 	name = "Smoker"
 	desc = "Sometimes you just really want a smoke. Probably not great for your lungs."
 	value = -1
@@ -567,7 +568,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in jet.</span>"
 	medical_record_text = "Patient is a jet addict."
 	reagent_type = /datum/reagent/drug/jet
-	accessory_type = /obj/item/reagent_containers/pill/patch/jet
+	drug_container_type = /obj/item/reagent_containers/pill/patch/jet
 
 /datum/quirk/junkie/psycho
 	name = "Psycho Addict"
@@ -577,8 +578,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in psycho.</span>"
 	medical_record_text = "Patient is a psycho addict."
 	reagent_type = /datum/reagent/drug/psycho
-	accessory_type = /obj/item/reagent_containers/hypospray/medipen/psycho
-	
+	drug_container_type = /obj/item/reagent_containers/hypospray/medipen/psycho
+
 /datum/quirk/junkie/turbo
 	name = "Turbo Addict"
 	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. Okay, here we go. Focus. Speed. I am speed. One winner, 42 losers. I eat losers for breakfast. Kachow!"
@@ -587,8 +588,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
 	medical_record_text = "Patient is a turbo addict."
 	reagent_type = /datum/reagent/drug/turbo
-	accessory_type = /obj/item/reagent_containers/pill/patch/turbo
-	
+	drug_container_type = /obj/item/reagent_containers/pill/patch/turbo
+
 /datum/quirk/junkie/medx
 	name = "Med-X Addict"
 	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. Five doses? Nice. A fella could put himself out of his misery with five doses."
@@ -597,8 +598,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in med-x.</span>"
 	medical_record_text = "Patient is a med-x addict."
 	reagent_type = /datum/reagent/medicine/medx
-	accessory_type = /obj/item/reagent_containers/syringe/medx
-	
+	drug_container_type = /obj/item/reagent_containers/syringe/medx
+
 /datum/quirk/junkie/mentats
 	name = "Mentats Addict"
 	desc = "WARNING: MERGED AS A TEST, MAY CAUSE ISSUES THAT LEAD TO DEATH. BE WARNED. To be fair, you have to have a very high IQ to understand Hegelian dialectics."
@@ -607,7 +608,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in mentats.</span>"
 	medical_record_text = "Patient is a mentats addict."
 	reagent_type = /datum/reagent/medicine/mentat
-	accessory_type = /obj/item/reagent_containers/pill/mentat
+	drug_container_type = /obj/item/reagent_containers/pill/mentat
 
 /datum/quirk/junkie/buffout
 	name = "Buffout Addict"
@@ -617,5 +618,5 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in buffout.</span>"
 	medical_record_text = "Patient is a buffout addict."
 	reagent_type = /datum/reagent/drug/buffout
-	accessory_type = /obj/item/reagent_containers/pill/buffout
-	
+	drug_container_type = /obj/item/reagent_containers/pill/buffout
+

@@ -3,7 +3,8 @@
 	description = "A chemical used to induce a euphoric high derived from brahmin dung. Fast-acting, powerful, and highly addictive."
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 20
-	addiction_threshold = rand(5=0,15)
+	addiction_threshold = 15
+
 
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
 	..()
@@ -15,7 +16,7 @@
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>Time begins to return to normal speed around you as the high fades...</span>")
 		M.confused += 2
-	
+
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-20, 0)
 	M.set_drugginess(20)
@@ -56,7 +57,6 @@
 			step(M, pick(GLOB.cardinals))
 	M.set_disgust(90)
 	M.blur_eyes(25)
-	M.Headache(15)
 	M.Dizzy(10)
 	if(prob(40))
 		M.emote(pick("twitch","drool","moan"))
@@ -68,8 +68,6 @@
 			step(M, pick(GLOB.cardinals))
 	M.set_disgust(150)
 	M.blur_eyes(50)
-	M.Dizzy(15)
-	M.Fever(15)
 	if(prob(50))
 		M.emote(pick("twitch","drool","moan"))
 	..()
