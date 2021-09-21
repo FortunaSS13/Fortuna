@@ -21,6 +21,13 @@
 	full_name = "Me (emote)"
 	clientside = "me"
 
+/datum/keybinding/client/communication/halt
+	hotkey_keys = list("ShiftR")
+	classic_keys = list("Unbound")
+	name = "Halt"
+	full_name = "Halt Command"
+	clientside = "Halt"
+
 //indicators
 /datum/keybinding/client/communication/say_with_indicator
 	hotkey_keys = list("T")

@@ -23,6 +23,11 @@
 	clear_typing_indicator()		// clear it immediately!
 	say(message)
 
+/mob/verb/halt_verb()
+	set name = "Halt"
+	set category = "IC"
+	say("Halt!")
+
 /mob/verb/me_typing_indicator()
 	set name = "me_indicator"
 	set hidden = TRUE
