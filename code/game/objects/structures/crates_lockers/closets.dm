@@ -34,7 +34,6 @@
 	var/material_drop_amount = 2
 	var/delivery_icon = "deliverycloset" //which icon to use when packagewrapped. null to be unwrappable.
 	var/anchorable = TRUE
-	var/immovable = FALSE //makes the anchored state unable to be toggled with a wrench, should only be used with closets that start anchored
 	var/icon_welded = "welded"
 	var/obj/item/electronics/airlock/lockerelectronics //Installed electronics
 	var/lock_in_use = FALSE //Someone is doing some stuff with the lock here, better not proceed further
@@ -50,8 +49,6 @@
 	update_icon()
 	if(should_populate_contents)
 		PopulateContents()
-	if(anchored)
-		storage_capacity = 30
 	if(mapload && !opened)		// if closed, any item at the crate's loc is put in the contents
 		addtimer(CALLBACK(src, .proc/take_contents), 0)
 	if(secure)
@@ -365,8 +362,6 @@
 	if(istype(W, /obj/item/wrench) && anchorable)
 		if(isinspace() && !anchored)
 			return
-		if(immovable)
-			return
 		if((contents.len > base_storage_capacity) && anchored) //Prevents filling a locker, closing it, and then unanchoring it to move large stacks of objects. Can't just make the locker dump its contents as this could be used to empty locked/welded lockers
 			user.visible_message("<span class='notice'>[user] attempts to unanchor \the [src], however it is too weighed down by its contents.</span>", \
 						"<span class='notice'>You attempt to unanchor \the [src], however it is too weighed down by its contents.</span>")
@@ -391,7 +386,7 @@
 				welder = TRUE
 			if(W.use_tool(src, user, 40, volume=50))
 				if(eigen_teleport)
-					to_chat(user, "<span class='notice'>The unusual construction of \the [src] makes it impossible to [welder ? "slice" : "deconstruct"]!</span>")
+					to_chat(user, "<span class='notice'>The unstable nature of \the [src] makes it impossible to [welder ? "slice" : "deconstruct"]!</span>")
 					return
 				if(!opened)
 					return
@@ -413,7 +408,7 @@
 		to_chat(user, "<span class='notice'>You begin [welded ? "unwelding":"welding"] \the [src]...</span>")
 		if(W.use_tool(src, user, 40, volume=50))
 			if(eigen_teleport)
-				to_chat(user, "<span class='notice'>The unusual construction of \the [src] makes it impossible to weld!</span>")
+				to_chat(user, "<span class='notice'>The unstable nature of \the [src] makes it impossible to weld!</span>")
 				return
 			if(opened)
 				return
