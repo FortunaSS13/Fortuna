@@ -62,7 +62,7 @@
 
 /obj/item/clothing/neck/mantle/chief
 	name = "chieftains mantle"
-	desc = "A symbol of the authority of the Wayfarer Chief."
+	desc = "A symbol of the authority of a tribal Chief."
 	icon_state = "tribechief"
 
 /obj/item/clothing/neck/mantle/jay
