@@ -151,6 +151,7 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 
 GLOBAL_LIST_INIT(oasis_positions, list(
 	"Mayor",
+	"Secretary",
 	"Sheriff",
 	"Doctor",
 	"Citizen",
@@ -193,6 +194,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Captain",
 	"NCR Lieutenant",
 	"NCR Veteran Ranger",
+	"NCR Representative",
 	"NCR Ranger",
 	"NCR Sergeant First Class",
 	"NCR Heavy Trooper",
