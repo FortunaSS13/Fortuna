@@ -539,7 +539,7 @@ obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 // Shaman staff				Keywords: TRIBAL, Damage 15/30
 /obj/item/twohanded/sledgehammer/shamanstaff
 	name = "shaman staff"
-	desc = "An intricate staff, carried for centuries by the shaman class of the Wayfayer Tribe."
+	desc = "An intricate staff of tribal origin."
 	icon_state = "staff-shaman"
 	icon_prefix = "staff-shaman"
 	force = 15
