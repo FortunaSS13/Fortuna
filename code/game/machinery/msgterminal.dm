@@ -61,6 +61,8 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	if(alert(usr,"The default name for this terminal is [terminal]. Would you like to change it?",,"Yes","No") == "Yes")
 		var/newtext = reject_bad_name(stripped_input(usr, "Enter a name for your terminal:", "Terminal Name", "[get_base_area(src)] communications terminal", MAX_NAME_LEN), FALSE)
 		terminal = "[newtext]"
+	else
+		terminal = "[get_base_area(src)] communications terminal"
 
 	GLOB.allTerminals += src
 	switch(terminalType)
@@ -283,7 +285,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	else
 		. = ..()
 
-/obj/machinery/msgterminal/proc/createmessage(source, title, message, priority)
+/obj/machinery/msgterminal/createmessage(source, title, message, priority)
 	var/linkedsender
 	if(istype(source, /obj/machinery/msgterminal))
 		var/obj/machinery/msgterminal/sender = source
