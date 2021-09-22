@@ -645,9 +645,10 @@
 	item_state = "khan_jacket"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
+//Wayfarer
 /obj/item/clothing/suit/armor/f13/lightcloak
 	name = "light tribal cloak"
-	desc = "(IV) Light cloak armor, made of gecko skins and minor metal plating to protect against light weaponry, a favorite amongst tribal scouts"
+	desc = "(IV) Light cloak armor, made of gecko skins and minor metal plating to protect against light weaponry, a favorite amongst scouts of the tribe."
 	icon_state = "lightcloak"
 	item_state = "lightcloak"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
@@ -666,7 +667,7 @@
 
 /obj/item/clothing/suit/armor/f13/tribe_armor
 	name = "light tribal armor"
-	desc = "(IV) Light armor made of leather stips and a large, flat piece of turquoise.."
+	desc = "(IV) Light armor made of leather stips and a large, flat piece of turquoise.Armor commonplace among the Wayfinders."
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
@@ -707,9 +708,9 @@
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 )
 
-/obj/item/clothing/suit/armor/f13/generictribal/tribal_pa
+/obj/item/clothing/suit/armor/f13/wayfarer/tribal_pa
 	name = "tribal full plate armor"
-	desc = "(VI) A set of repainted power armor, seemingly of tribal origin."
+	desc = "(VI) A set of power armor, now reborn in the paints of the Wayfarers, it serves its new owners as an idol to Kwer, as well as being a piece of heavy covering, with removed parts to allow for quick nimble speed, its hardly what it used to be long ago."
 	icon_state = "tribal_power_armor"
 	item_state = "tribal_power_armor"
 	armor = list("tier" = 7, "energy" = 50, "bomb" = 40, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)

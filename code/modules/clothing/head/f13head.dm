@@ -587,7 +587,7 @@
 	deflection_chance = 15
 
 
-//Generic Tribal
+//Generic Tribal - For Wayfarer specific, see f13factionhead.dm
 
 /obj/item/clothing/head/helmet/f13/tribal
 	name = "tribal power helmet"

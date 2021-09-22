@@ -586,7 +586,7 @@
 	item_state = "armor_enclave_officer"
 	armor = list("tier" = 7)
 
-//Generic Tribal
+//Generic Tribal - For Wayfarer specific, see f13factionhead.dm
 //Trying generic tribal armor stats for this one for now.
 /obj/item/clothing/suit/hooded/tribaloutcast
 	name = "patched heavy leather cloak"

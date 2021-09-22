@@ -14,9 +14,9 @@
 	if(in_range(user, src) || isobserver(user))
 		. += "<span class='notice'>It currently has <b>[charges]</b> uses remaining.</span>"
 
-/obj/item/smelling_salts/tribal
+/obj/item/smelling_salts/wayfarer
 	icon_state = "smelling_salts_wayfarer"
-	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in primitive cord with blue frayed tips of some long forgotten tribe."
+	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in primitive cord with blue freyed tips of the Wayfarer tribe."
 
 /obj/item/smelling_salts/crafted
 	name = "small phial of smelling salts"

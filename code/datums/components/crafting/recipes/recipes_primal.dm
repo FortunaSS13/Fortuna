@@ -123,7 +123,7 @@
 			/obj/item/stack/sheet/mineral/diamond = 5,
 			/obj/item/stack/sheet/bone = 20
 			)
-	result = /obj/item/clothing/suit/armor/f13/generictribal/tribal_pa
+	result = /obj/item/clothing/suit/armor/f13/wayfarer/tribal_pa
 	category = CAT_TRIBAL
 	always_availible = FALSE
 	
@@ -138,7 +138,7 @@
 			/obj/item/stack/sheet/mineral/diamond = 10,
 			/obj/item/stack/sheet/bone = 10
 			)
-	result = /obj/item/clothing/head/helmet/f13/generictribal/pa_helmet
+	result = /obj/item/clothing/head/helmet/f13/wayfarer/pa_helmet
 	category = CAT_TRIBAL
 	always_availible = FALSE
 
@@ -166,7 +166,7 @@
 			/obj/item/stack/sheet/animalhide/deathclaw= 1,
 			/obj/item/stack/sheet/bone = 10
 			)
-	result = /obj/item/clothing/head/helmet/f13/combat/generictribal/tribe_helmet
+	result = /obj/item/clothing/head/helmet/f13/combat/wayfarer/tribe_helmet
 	category = CAT_TRIBAL
 	always_availible = FALSE
 

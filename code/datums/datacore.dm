@@ -191,6 +191,11 @@
 		for(var/name in flw)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[flw[name]]</td></tr>"
 			even = !even
+	if(length(tribe))
+		dat += "<tr><th colspan=3>Wayfarer Tribe</th></tr>"
+		for(var/name in tribe)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[tribe[name]]</td></tr>"
+			even = !even
 	if(length(vault))
 		dat += "<tr><th colspan=3>Vault</th></tr>"
 		for(var/name in vault)
