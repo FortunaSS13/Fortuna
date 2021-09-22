@@ -18088,6 +18088,7 @@
 	name = "luxurious fountain pen"
 	},
 /obj/item/key,
+/obj/item/pda,
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
 "lIx" = (
