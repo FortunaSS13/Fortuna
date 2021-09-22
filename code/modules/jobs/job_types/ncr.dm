@@ -413,7 +413,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	name = "Executive"
 	suit = /obj/item/clothing/under/suit_jacket/tan
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	head = /obj/item/clothing/head/helmet/f13/rustedcowboyhat
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
 		/obj/item/storage/box/ration/menu_two = 1
