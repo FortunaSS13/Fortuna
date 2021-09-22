@@ -773,13 +773,12 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/tribe_armor
 	shoes = /obj/item/clothing/shoes/sandal
 	gloves = /obj/item/clothing/gloves/f13/handwraps
-	backpack = 	/obj/item/storage/backpack/explorer
-	satchel = 	/obj/item/storage/backpack/satchel/explorer
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch=1,
 		/obj/item/stack/medical/gauze=1,
-		/obj/item/reagent_containers/pill/patch/healingpowder=2,
-	)
+		/obj/item/reagent_containers/pill/patch/healingpowder=2)
 
 /datum/outfit/loadout/tribal_waster
 	name = "Tribal"
@@ -787,15 +786,13 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/tribe_armor
 	shoes = /obj/item/clothing/shoes/sandal
 	gloves = /obj/item/clothing/gloves/f13/handwraps
-	backpack = 	/obj/item/storage/backpack/explorer
-	satchel = 	/obj/item/storage/backpack/satchel/explorer
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_hand = /obj/item/gun/ballistic/revolver/colt357
 	backpack_contents = list(
 		/obj/item/ammo_box/a357=2,
-		/obj/item/flashlight=1,
-	)
+		/obj/item/flashlight=1)
 	
-
 /datum/job/wasteland/f13enforcer
 	title = "Den Mob Enforcer"
 	flag = F13ENFORCER
