@@ -329,7 +329,7 @@
 	icon_state = "louisville"
 	attack_verb = list("thwacked", "bashed", "slugged", "hit", "bludgeoned", "whacked", "bonked")
 
-/obj/item/twohanded/baseball/golfclub/ComponentInitialize()
+/obj/item/twohanded/baseball/golfclub/louisville/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded = 15, force_wielded = 33, icon_wielded="[icon_prefix]2")
 
