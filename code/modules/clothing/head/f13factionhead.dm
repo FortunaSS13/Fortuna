@@ -797,8 +797,6 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-
-//Wayfarer
 /obj/item/clothing/head/helmet/f13/deathskull
 	name = "eerie helm"
 	desc = "(IV) A helmet fastened from the skull of a deer. Something about it doesn't look right."
@@ -806,41 +804,41 @@
 	item_state = "shamskull"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/head/f13/helmet/wayfarer
+/obj/item/clothing/head/f13/helmet/generictribal
 
-/obj/item/clothing/head/helmet/f13/wayfarer/hunter
+/obj/item/clothing/head/helmet/f13/generictribal/hunter
 	name = "hunter headdress"
-	desc = "(V) Azure decorations dangle from the sturdy cap, it is sung that the wearers of these are watched over by the spirits."
+	desc = "(V) Azure decorations dangle from the sturdy cap."
 	icon_state = "hunterhelm"
 	item_state = "hunterhelm"
 	armor = list("tier" = 5, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/head/helmet/f13/wayfarer/antler
+/obj/item/clothing/head/helmet/f13/generictribal/antler
 	name = "antler skullcap"
 	desc = "(III) An antler skull headdress traditionally worn by the spiritually inclined."
 	icon_state = "antlerhelm"
 	item_state = "antlerhelm"
 	armor = list("tier" = 3, "energy" = 0, "bomb" = 20, "bio" = 70, "rad" = 10, "fire" = 20, "acid" = 0)
 
-/obj/item/clothing/head/helmet/f13/wayfarer/shamanblue
+/obj/item/clothing/head/helmet/f13/generictribal/healerblue
 	name = "ritual headdress"
-	desc = "(IV) An ancient mask fashioned at the coasts of the Great Salt Water, imbued with the ancestral blessing through a long forgotten ritual."
+	desc = "(IV) An ancient mask of tribal origins."
 	icon_state = "shamanblue"
 	item_state = "shamanblue"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 20, "bio" = 70, "rad" = 10, "fire" = 20, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/head/helmet/f13/wayfarer/shamanred
+/obj/item/clothing/head/helmet/f13/generictribal/healercrimson
 	name = "crimson mask"
-	desc = "(IV) An uncanny helm passed down through generations, originating from a tribal culture once situated at the top of a Sonoran mesa."
+	desc = "(IV) An uncanny helmet of tribal origins."
 	icon_state = "shamanred"
 	item_state = "shamanred"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 20, "bio" = 70, "rad" = 10, "fire" = 20, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/head/helmet/f13/wayfarer/chief
-	name = "helm of the steady walk"
-	desc = "(VII) A chief who chooses this protectron mantle embodies the defensive, a stalwart heart that protects their village above all other goals, even if it means hampering the growth of the village to do it."
+/obj/item/clothing/head/helmet/f13/generictribal/chief
+	name = "blue chief helmet"
+	desc = "(VII) A blue helmet of tribal origin, obviously having belonged to someone of great importance."
 	icon_state = "chiefblue"
 	item_state = "chiefblue"
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
@@ -848,34 +846,34 @@
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/head/helmet/f13/combat/wayfarer/tribe_helmet
+/obj/item/clothing/head/helmet/f13/combat/generictribal/tribe_helmet
 	name = "tribalized helmet"
-	desc = "(V) An old military grade pre-war combat helmet, repainted and re purposed with bones and sinew to worship some tribal diety."
+	desc = "(V) An old military grade pre-war combat helmet, repainted and re purposed with bones and sinew."
 	icon_state = "tribe_helmet"
 	item_state = "tribe_helmet"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 35, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
-/obj/item/clothing/head/helmet/f13/wayfarer/pa_helmet
+/obj/item/clothing/head/helmet/f13/generictribal/pa_helmet
 	name = "tribal full plate headdress"
-	desc = "(VII) The once-marvelous helmet of the T-45d power armor set, repurposed and painted with markings of a tribe to signify its holyness to Kwer. It has dye'd feathers addoring it to make it look fierce in battle."
+	desc = "(VII) The once-marvelous helmet of the T-45d power armor set, repurposed and painted with markings of a tribe."
 	icon_state = "tribal_PA_helmet"
 	item_state = "tribal_PA_helmet"
 	armor = list("tier" = 6, "energy" = 50, "bomb" = 40, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 
-/obj/item/clothing/head/helmet/f13/wayfarer/chief/attack_self(mob/user)
+/obj/item/clothing/head/helmet/f13/generictribal/chief/attack_self(mob/user)
 	weldingvisortoggle(user)
 
-/obj/item/clothing/head/helmet/f13/wayfarer/chief/red
-	name = "helm of the piercing gaze"
-	desc = "(VII) A chief who wears this assaultron helm is known for their prowess in battle, aggressiveness, intimidation and raw power in command. They are bold and strong."
+/obj/item/clothing/head/helmet/f13/generictribal/chief/red
+	name = "red chief helmet"
+	desc = "(VII) A red helmet of tribal origin, obviously having belonged to someone of great importance."
 	icon_state = "chiefred"
 	item_state = "chiefred"
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
-/obj/item/clothing/head/helmet/f13/wayfarer/chief/green
-	name = "helm of the helping hand"
-	desc = "(VII) The many eyed helper to the village and all, the Chief that chooses this Mr. Handy based mantle is clever and kind in equal measure, they embody industry and diplomacy. Though they aren't defensive, they are surgically precise in eliminating those who oppose them."
+/obj/item/clothing/head/helmet/f13/generictribal/chief/green
+	name = "green chief helmet"
+	desc = "(VII) A green helmet of tribal origin, obviously having belonged to someone of great importance."
 	icon_state = "chiefgreen"
 	item_state = "chiefgreen"
 	armor = list("tier" = 7, "energy" = 40, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)

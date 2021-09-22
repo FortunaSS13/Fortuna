@@ -1,3 +1,5 @@
+/* Unused, but leaving in code so it may be reused for a new tribal faction in future.
+
 /datum/job/tribals //do NOT use this for anything, it's just to store faction datums
 	department_flag = TRIBAL
 	selection_color = "#ffeeaa"
@@ -523,3 +525,6 @@ Guardian
 		/obj/item/stack/medical/gauze=1,
 		/obj/item/flashlight/flare/torch=1,
 		/obj/item/restraints/legcuffs/bola/tactical=1)
+   */
+   
+ 

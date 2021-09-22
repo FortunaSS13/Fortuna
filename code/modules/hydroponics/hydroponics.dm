@@ -320,7 +320,7 @@
 	to_chat(user, "" )
 
 // Examining more a plant will yield a rough estimation of it's stats.
-// Intended for use by Wayfarer's and Legion to allow their farmers to gauge roughly how it's going.
+
 /obj/machinery/hydroponics/examine_more(user)
 	if(myseed && (in_range(user, src) || isobserver(user)))
 		to_chat(user, "<span class=info>You examine the plant to get a better view of it's harvest...</span>")
