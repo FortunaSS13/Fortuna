@@ -606,7 +606,7 @@
 	item_color = "khan"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
 
-//WAYFARER TRIBAL
+//GENERIC TRIBAL
 /obj/item/clothing/under/f13/tribe
 	name = "tribal rags"
 	desc = "Dusty rags decorated with strips of leather and small pieces of turquoise."
@@ -621,7 +621,7 @@
 
 /obj/item/clothing/under/f13/tribe_Hhunter
 	name = "Razorclaw robes"
-	desc = "Tanned leather robes, decorated with bones of deathclaws and marked with the great machine spirit of earth."
+	desc = "Tanned leather robes decorated with the bones of a large beast."
 	icon_state = "hhunterrags"
 	item_state = "hhunterrags"
 
@@ -631,41 +631,41 @@
 	icon_state = "shamanrags"
 	item_state = "shamanrags"
 
-/obj/item/clothing/under/f13/wayfarer
+/obj/item/clothing/under/f13/generictribal
 	name = "loincloth"
-	desc = "Hand-woven cotton ornated with pieces of turquoise form covering the groin, which can also be adjusted to cover the breasts as well. Well suited for a simpler life lived by the Wayfarer tribe."
+	desc = "Hand-woven cotton ornated with pieces of turquoise form covering the groin, which can also be adjusted to cover the breasts as well."
 	icon_state = "gatherer"
 	item_state = "gatherer"
 	item_color = "gatherer"
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/shamanblue
+/obj/item/clothing/under/f13/generictribal/healerblue
 	name = "blue shaman garbs"
-	desc = "Finely crafted cotton clothing, dyed blue with anil. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe. Can be adjusted to suit the wearer's preferences."
+	desc = "Finely crafted cotton clothing, dyed blue with anil. Can be adjusted to suit the wearer's preferences."
 	icon_state = "shamanblue"
 	item_state = "shamanblue"
 	item_color = "shamanblue"
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/shamanred
+/obj/item/clothing/under/f13/generictribal/healercrimson
 	name = "red shaman garbs"
-	desc = "Finely crafted cotton clothing, dyed red with madder root. The care and craftsmanship put into such an outfit indicates high status in the Wayfarer tribe. Can be adjusted to suit the wearer's preferences."
+	desc = "Finely crafted cotton clothing, dyed red with madder root. Can be adjusted to suit the wearer's preferences."
 	icon_state = "shamanred"
 	item_state = "shamanred"
 	item_color = "shamanred"
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/acolyte
+/obj/item/clothing/under/f13/generictribal/acolyte
 	name = "acolyte's garbs"
-	desc = "Hand-woven cotton ornated with pieces of turquoise form little more than loincloth, which can be adjusted depending on the wearer's preferences. Well suited for a simpler life lived by the Wayfarer tribe."
+	desc = "Hand-woven cotton ornated with pieces of turquoise form little more than loincloth, which can be adjusted depending on the wearer's preferences."
 	icon_state = "acolyte"
 	item_state = "acolyte"
 	item_color = "acolyte"
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/wayfarer/hunter
+/obj/item/clothing/under/f13/generictribal/hunter
 	name = "rugged loincloth"
-	desc = "Minimal yet hardy clothing padded in places by leather which can be taken off if need be, covering no more than it needs to. Ideal for those of the Wayfarer tribe who spend their time away from the tribe in pursuit of the hunt."
+	desc = "Minimal yet hardy clothing padded in places by leather which can be taken off if need be, covering no more than it needs to."
 	icon_state = "hunter"
 	item_state = "hunter"
 	item_color = "hunter"

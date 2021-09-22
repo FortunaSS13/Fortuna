@@ -1,3 +1,5 @@
+/* Unused, but leaving in code so it may be reused for a new tribal faction in future.
+
 /datum/job/tribals //do NOT use this for anything, it's just to store faction datums
 	department_flag = TRIBAL
 	selection_color = "#ffeeaa"
@@ -26,7 +28,6 @@
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
-	H.grant_language(/datum/language/tribal)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/punji_sticks)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_combat_armor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_combat_armor_helmet)
@@ -523,3 +524,6 @@ Guardian
 		/obj/item/stack/medical/gauze=1,
 		/obj/item/flashlight/flare/torch=1,
 		/obj/item/restraints/legcuffs/bola/tactical=1)
+   */
+   
+ 
