@@ -308,6 +308,7 @@
 	name = "Louisville slugger"
 	desc = "Makes a satisfying thwack when hitting people."
 	icon_state = "louisville"
+	icon_prefix = "louisville"
 	attack_verb = list("thwacked", "bashed", "slugged", "hit", "bludgeoned", "whacked", "bonked")
 
 /obj/item/twohanded/baseball/louisville/ComponentInitialize()
