@@ -405,6 +405,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncr = 1,
 		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/clothing/accessory/waistcoat = 1,
+		/obj/item/clothing/suit/toggle/lawyer/black = 1,
 		/obj/item/storage/briefcase
 		)
 
