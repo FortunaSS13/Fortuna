@@ -188,14 +188,14 @@
 	desc = "(II) Legion Recruits carry very basic protection, repurposed old sports gear with bits of leather and other tribal style armor that the wearer has managed to scrounge up."
 	icon_state = "legion_recruit"
 	item_state = "legion_recruit"
-	slowdown = -0.15
+	slowdown = -0.1
 
 /obj/item/clothing/suit/armor/f13/legion/prime
 	name = "legion prime armor"
 	desc = "(III) Legion Primes have survived some skirmishes, and when promoted often recieve a set of armor, padded leather modeled on ancient baseball catcher uniforms and various plates of metal or boiled leather."
 	icon_state = "legion_prime"
 	item_state = "legion_prime"
-	slowdown = -0.13
+	slowdown = -0.1
 	armor = list("tier" = 3, "energy" = 15, "bomb" = 25, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/vet/orator

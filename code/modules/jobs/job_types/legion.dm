@@ -526,7 +526,6 @@ commented out pending rework*/
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
@@ -676,7 +675,6 @@ commented out pending rework*/
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	name = "Veteran Legionnaire"
@@ -857,7 +855,6 @@ commented out pending rework*/
 	suit_store = /obj/item/twohanded/fireaxe
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/book/granter/trait/trekking = 1,
 		)
 
 /datum/outfit/loadout/recruitlegion
