@@ -1128,6 +1128,13 @@
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
+"ayq" = (
+/mob/living/simple_animal/hostile/gecko,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "ayw" = (
 /obj/effect/spawner/lootdrop/crafts,
 /turf/open/floor/plasteel/barber{
@@ -3149,6 +3156,20 @@
 	name = "metal plating"
 	},
 /area/f13/building)
+"bts" = (
+/mob/living/simple_animal/hostile/gecko,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
+"btv" = (
+/mob/living/simple_animal/hostile/raider/tribal{
+	desc = "A fugitive exiled from Oasis. He smells faintly of gecko.";
+	name = "Geckoman"
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "btL" = (
 /obj/machinery/vending/cola/space_up,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -5915,12 +5936,6 @@
 	icon_state = "oakfloor2-broken"
 	},
 /area/f13/building)
-"cNW" = (
-/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubbleplate"
-	},
-/area/f13/village)
 "cOg" = (
 /obj/item/storage/money_stack/legion,
 /turf/open/floor/carpet/black,
@@ -5966,6 +5981,12 @@
 	icon_state = "housewindowvertical"
 	},
 /turf/open/floor/f13/wood,
+/area/f13/village)
+"cPr" = (
+/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
 /area/f13/village)
 "cPF" = (
 /obj/machinery/light/lampost{
@@ -10661,14 +10682,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"eVc" = (
-/obj/item/trash/candy{
-	pixel_x = 7;
-	pixel_y = 6
-	},
-/obj/item/trash/candy,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "eVx" = (
 /obj/structure/table,
 /obj/item/trash/f13/cram,
@@ -16561,13 +16574,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
-"hxC" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/item/trash/candy,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "hxO" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/dirt,
@@ -18973,6 +18979,14 @@
 /obj/structure/tires/five,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"iDf" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/trash/candy,
+/obj/item/trash/sosjerky,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "iDg" = (
 /obj/machinery/light/small/broken{
 	dir = 8
@@ -24308,12 +24322,6 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
-"kRQ" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	name = "police protectron"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "kSd" = (
 /mob/living/simple_animal/hostile/wolf,
 /obj/effect/decal/cleanable/dirt,
@@ -25648,14 +25656,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
-"lzh" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/item/trash/candy,
-/obj/item/trash/sosjerky,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "lzW" = (
 /obj/structure/chair/f13foldupchair{
 	dir = 1
@@ -25928,6 +25928,11 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/wasteland)
+"lGf" = (
+/obj/item/trash/candy,
+/obj/item/trash/sosjerky,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "lGq" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/diy,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -26638,6 +26643,10 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"lWp" = (
+/obj/item/trash/sosjerky,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "lWx" = (
 /obj/structure/table/wood,
 /obj/item/storage/toolbox/mechanical,
@@ -29694,13 +29703,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
-"nwe" = (
-/mob/living/simple_animal/hostile/handy/robobrain{
-	desc = "A next-gen cybor developed by General Atomic International. This one has police markings";
-	name = "police robobrain"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "nwC" = (
 /obj/machinery/workbench,
 /obj/item/crafting/reloader,
@@ -36131,6 +36133,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/building)
+"qBs" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	name = "police protectron"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "qBu" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -39012,6 +39020,10 @@
 /obj/structure/table/wood/settler,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/farm)
+"rVQ" = (
+/mob/living/simple_animal/hostile/gecko,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "rVX" = (
 /obj/structure/table/wood,
 /obj/item/clothing/under/f13/petrochico,
@@ -41373,6 +41385,10 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland)
+"sYt" = (
+/obj/item/trash/candy,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "sYF" = (
 /obj/machinery/light{
 	dir = 1
@@ -43610,6 +43626,14 @@
 /obj/item/reagent_containers/food/snacks/grown/pungafruit,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+"udV" = (
+/obj/item/trash/candy{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/obj/item/trash/candy,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "ued" = (
 /obj/structure/decoration/clock/old/active{
 	pixel_y = 32
@@ -45006,11 +45030,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
-"uFD" = (
-/obj/item/trash/candy,
-/obj/item/trash/sosjerky,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "uFT" = (
 /obj/item/stack/sheet/mineral/wood,
 /turf/open/floor/wood/f13/oak,
@@ -47200,6 +47219,13 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/tunnel)
+"vDU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/trash/candy,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "vEf" = (
 /mob/living/simple_animal/chicken,
 /turf/open/indestructible/ground/outside/dirt,
@@ -47817,10 +47843,6 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
-"vTu" = (
-/obj/item/trash/sosjerky,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "vTz" = (
 /obj/structure/simple_door/house,
 /obj/effect/decal/cleanable/dirt{
@@ -48312,6 +48334,13 @@
 	icon_state = "horizontalbottombordertop2"
 	},
 /area/f13/tunnel)
+"whd" = (
+/mob/living/simple_animal/hostile/handy/robobrain{
+	desc = "A next-gen cybor developed by General Atomic International. This one has police markings";
+	name = "police robobrain"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "why" = (
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/wood/f13/oak,
@@ -52433,10 +52462,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"ybr" = (
-/obj/item/trash/candy,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "ybw" = (
 /obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/road,
@@ -95717,7 +95742,7 @@ mvv
 mvv
 mvv
 odZ
-mvv
+bts
 mvv
 aBH
 hCg
@@ -95973,9 +95998,9 @@ xGH
 odZ
 mvv
 aBH
+ayq
 mfD
-mfD
-mfD
+btv
 hCg
 fyf
 fyf
@@ -96231,7 +96256,7 @@ mfD
 mfD
 hCg
 fyf
-fyf
+rVQ
 fyf
 fyf
 fyf
@@ -97448,8 +97473,8 @@ ieQ
 cZc
 bcV
 pcG
-uFD
-lzh
+lGf
+iDf
 gmg
 kXt
 pcG
@@ -97706,8 +97731,8 @@ cZc
 vfA
 pcG
 enC
-cNW
-vTu
+cPr
+lWp
 leT
 pcG
 pzL
@@ -97962,9 +97987,9 @@ ieQ
 cZc
 bcV
 pcG
-ybr
-eVc
-hxC
+sYt
+udV
+vDU
 leT
 pcG
 vlw
@@ -106658,7 +106683,7 @@ fyf
 trW
 mcp
 fyf
-nwe
+whd
 fyf
 fyf
 fyf
@@ -106913,7 +106938,7 @@ fyf
 fyf
 fyf
 fyf
-kRQ
+qBs
 ieV
 fyf
 ieV
