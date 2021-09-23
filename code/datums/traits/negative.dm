@@ -455,6 +455,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Junkie"
 	desc = "You can't get enough of hard drugs."
 	value = -2
+	locked = TRUE
 	gain_text = "<span class='danger'>You suddenly feel the craving for drugs.</span>"
 	lose_text = "<span class='notice'>You feel like you should kick your drug habit.</span>"
 	medical_record_text = "Patient has a history of hard drugs."
