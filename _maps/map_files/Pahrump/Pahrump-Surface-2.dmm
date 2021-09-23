@@ -5260,6 +5260,13 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"cvZ" = (
+/obj/machinery/msgterminal/legion{
+	pixel_x = 4;
+	pixel_y = 31
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "cwa" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -11531,6 +11538,18 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/building)
+"fow" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "foz" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13/wood,
@@ -29347,6 +29366,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"nqk" = (
+/obj/machinery/msgterminal/oasis/followers,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/followers)
 "nqo" = (
 /obj/item/reagent_containers/blood/radaway,
 /turf/open/indestructible/ground/outside/desert,
@@ -39690,6 +39715,10 @@
 "soZ" = (
 /obj/structure/simple_door/tent,
 /turf/open/indestructible/ground/outside/wood,
+/area/f13/building)
+"spf" = (
+/obj/machinery/msgterminal/oasis,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "spw" = (
 /mob/living/simple_animal/hostile/handy,
@@ -54273,7 +54302,7 @@ pQx
 pQx
 pyX
 rrE
-qzL
+fow
 kzs
 kzs
 dsn
@@ -77772,7 +77801,7 @@ aRl
 aRl
 hgc
 hyb
-rpu
+spf
 rpu
 rpu
 ueA
@@ -86510,7 +86539,7 @@ ydO
 mHj
 mvv
 hIW
-iFn
+nqk
 iJR
 jKe
 jJn
@@ -110748,7 +110777,7 @@ asj
 jei
 xys
 hom
-wPS
+cvZ
 wPS
 xXq
 lkc

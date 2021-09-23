@@ -214,10 +214,10 @@
 	time = 80
 	subcategory = CAT_FARMING
 	category = CAT_MISC
-
+/*
 /datum/crafting_recipe/msgterminal
 	name = "Communications terminal"
-	result = /obj/machinery/msgterminal/
+	result = /obj/machinery/msgterminal/machined
 	reqs = list(/obj/item/stack/crafting/electronicparts = 5,
 				/obj/item/stack/crafting/metalparts = 10,
 				/obj/item/stack/crafting/goodparts = 5,
@@ -238,3 +238,4 @@
 	time = 80
 	subcategory = CAT_FARMING
 	category = CAT_MISC
+*/

@@ -1,9 +1,15 @@
 /******************** Message Terminal ********************/
 /** Ported and condensed version of requests_console.dm using existing telecomms setup. */
 
+GLOBAL_LIST_EMPTY(NCR_req_terminal)
+
+GLOBAL_LIST_EMPTY(LEGION_req_terminal)
+
 GLOBAL_LIST_EMPTY(req_terminal)
+
 GLOBAL_LIST_EMPTY(terminal_info)
 GLOBAL_LIST_EMPTY(allTerminals)
+var/list/admin_departments = list("test", "test2", "test3")
 
 #define NO_NEW_MESSAGE				0
 #define NORMAL_MESSAGE_PRIORITY 	1
@@ -11,13 +17,14 @@ GLOBAL_LIST_EMPTY(allTerminals)
 #define EXTREME_MESSAGE_PRIORITY	3 // is implimented, does require hacking. everything needs to have a hidden feature in this game.
 
 /obj/machinery/msgterminal
-	name = "communication center"
+	name = "communications center"
 	desc = "Where mail is sent and received."
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "computer"
 	plane = ABOVE_WALL_PLANE
+	var/terminalid = ""
 	var/beepsound = 'sound/effects/printer.ogg'
-	var/terminal = "communications terminal" //The list of all terminals on the station (Determined from this variable on each unit) Set this to the same thing if you want several consoles in one terminal
+	var/terminal = "terminal" //The list of all terminals on the station (Determined from this variable on each unit) Set this to the same thing if you want several consoles in one terminal
 	var/list/messages = list() //List of all messages
 	var/terminalType = 2
 		// 1 = unused for now
@@ -57,13 +64,6 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 /obj/machinery/msgterminal/Initialize()
 	. = ..()
-	name = "\improper communications terminal"
-	if(alert(usr,"The default name for this terminal is [terminal]. Would you like to change it?",,"Yes","No") == "Yes")
-		var/newtext = reject_bad_name(stripped_input(usr, "Enter a name for your terminal:", "Terminal Name", "[get_base_area(src)] communications terminal", MAX_NAME_LEN), FALSE)
-		terminal = "[newtext]"
-	else
-		terminal = "[get_base_area(src)] communications terminal"
-
 	GLOB.allTerminals += src
 	switch(terminalType)
 		if(1)
@@ -85,6 +85,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 		return
 
 	var/dat = ""
+	playsound(src, 'sound/f13machines/terminalkeytap01.ogg', 20, 1)
 	switch(screen)
 		if(1)	//choose your target
 			dat += "Select Recipient<br><br>"
@@ -101,6 +102,20 @@ GLOBAL_LIST_EMPTY(allTerminals)
 					dat += "<a href='?src=[REF(src)];write=[ckey(dpt)];priority=3'>EXTREME</a>"
 				dat += "</td>"
 				dat += "</tr>"
+			dat += "<tr>"
+			dat += "<td width='55%'>"
+			if(src.terminalid == "brotherhood")	
+				dat += "<br>Circle of Steel"
+			if(src.terminalid == "legion")	
+				dat += "<br>Cohort War Council of Southwestern Arizona"
+			if(src.terminalid == "ncr")	
+				dat += "<br>Arizona Command Camp Alexander"
+			dat += "</td>"
+			dat += "<td width='45%'>"
+			dat += "<br><A href='?src=[REF(src)];setScreen=11'>Send Message to Command</A><br>"
+			dat += "</td>"
+			dat += "</tr>"
+
 			dat += "</table>"
 			dat += "<br><A href='?src=[REF(src)];setScreen=0'><< Back</A><br>"
 			dat += "<br><div class='panel redborder'><span class='redtext'>(( NOTE: Do not misuse this terminal to send harassing, joke or meme messages to other factions or groups in the terminal list. ))</span></div><br>"
@@ -125,6 +140,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			dat += "<br><a href='?src=[REF(src)];setScreen=0'><< Back</a><br>"
 
 		if(6)	//sent successfully
+			playsound(src, 'sound/f13machines/terminalmenuenter.ogg', 20, 1)
 			dat += "<span class='good'>Message delivered.</span><br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
 
@@ -153,7 +169,30 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			dat += "<a href='?src=[REF(src)];terminal=[dpt]'>Send Message</a> <br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'><< Discard Message</a> <br>"
 
-
+		if(10) //unused for now but may be useful later
+			dat += "<b>Message to Command</b> <br><br>"
+			if(src.terminalid == "ncr")
+				dat += "<b>Arizona Command Camp Alexander</b> <br><br>"
+			if(src.terminalid == "legion")
+				dat += "<b>Cohort War Council of Southwestern Arizona</b> <br><br>"
+			if(src.terminalid == "brotherhood")
+				dat += "<b>Circle of Steel</b> <br><br>"
+			dat += "<a href='?src=[REF(src)];setScreen=11'>Send Message to Command</a> <br><br>"
+		if(11)
+			var/message = input(usr,"Send a message to command staff. Ensure it makes sense IC.","") as message|null
+			if(message)
+				message_admins("[ADMIN_LOOKUPFLW(usr)] has sent <font size=1>COMMAND MESSAGE</font> FROM terminal:[ADMIN_LOOKUPFLW(src)] '[message]' ")
+				log_terminal("[key_name(usr)] sent a COMMAND message, '[message]' from the terminal at [AREACOORD(usr)].")
+				screen = 6
+				dat += "<span class='good'>Message to Command delivered.</span><br><br>"
+				updateUsrDialog()
+				playsound(src, 'sound/f13machines/terminalmenuenter.ogg', 20, 1)
+			else
+				screen = 7
+				dat += "<span class='bad'>Message to Command aborted.</span><br><br>"
+				updateUsrDialog()
+				playsound(src, 'sound/f13machines/terminalmenucancel.ogg', 20, 1)
+			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
 		else	//main menu
 			screen = 0
 			if(newmessagepriority == NORMAL_MESSAGE_PRIORITY)
@@ -171,7 +210,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			else
 				dat += "(( Sound effects <a href='?src=[REF(src)];setSilent=1'>ON</a> ))"
 
-	var/datum/browser/popup = new(user, "req_console", "[terminal]", 450, 440)
+	var/datum/browser/popup = new(user, "req_console", "[terminal]")
 	popup.set_content(dat)
 	popup.open()
 
@@ -188,12 +227,12 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			message = new_message
 			screen = 9
 			priority = text2num(href_list["priority"])
+			log_terminal("[key_name(usr)] sent '[message]' from the terminal at [AREACOORD(usr)].")
 		else
 			dpt = "";
 			screen = 0
-			priority = NORMAL_MESSAGE_PRIORITY //:salt:
-		message_admins("[ADMIN_LOOKUPFLW(usr)] has sent a terminal message: '[message]' FROM [ADMIN_LOOKUPFLW(src)] TO [ADMIN_LOOKUPFLW(dpt)]")
-	
+			priority = NORMAL_MESSAGE_PRIORITY
+		
 	if(href_list["terminal"] && message)
 		var/sending = message
 		sending += "<br>"
@@ -201,11 +240,11 @@ GLOBAL_LIST_EMPTY(allTerminals)
 		var/workingServer = FALSE
 		var/datum/data_rc_msg/log = new(href_list["terminal"], terminal, message, priority)
 		for(var/obj/machinery/telecomms/message_server/MS in GLOB.telecomms_list)
-			if(MS.on) //on does the calculations. why would this server still work even though the apc is off??
+			if(MS.on) // message server on
 				LAZYADD(MS.rc_msgs, log)
 				workingServer = TRUE
 
-		if(!workingServer)
+		if(!workingServer) //can probably remove this but it currently allows us a framework to potentially make communication outage events in the future
 			screen = 7
 			say("NOTICE: No server detected! Please contact your local engineering team.")
 			updateUsrDialog()
@@ -260,10 +299,10 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			screen = 8
 		if(9)		//authentication
 			screen = 9
-		if(10)		//send announcement
-			if(!announcementConsole)
-				return
+		if(10)		//send to command
 			screen = 10
+		if(11)		//message admins
+			screen = 11
 		else		//main menu
 			dpt = ""
 			message = ""
@@ -360,16 +399,41 @@ GLOBAL_LIST_EMPTY(allTerminals)
 #undef EXTREME_MESSAGE_PRIORITY
 
 /obj/machinery/msgterminal/ncr
-	terminal = "NCR"
+	terminalid = "ncr"
+	terminal = "NCR Terminal"
 	terminalType = 2
 
+/obj/machinery/msgterminal/legion
+	terminalid = "legion"
+	icon = 'icons/obj/computer.dmi'
+	icon_state = "pigeoncrate"
+	terminal = "Legion Pigeon Carrier"
+	terminalType = 2
+	beepsound = 'sound/f13effects/pigeons.ogg'
+/*
 /obj/machinery/msgterminal/pigeon
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "pigeoncrate"
-	terminal = "Pigeon Carrier"
+	terminal = "PigeonCarrier"
 	terminalType = 2
 	beepsound = 'sound/f13effects/pigeons.ogg'
 
+
+/obj/machinery/msgterminal/machined
+	terminal = "Terminal"
+	terminalType = 2
+*/
 /obj/machinery/msgterminal/oasis
-	terminal = "Oasis"
+	terminalid = "oasis"
+	terminal = "Oasis Terminal"
+	terminalType = 2
+
+/obj/machinery/msgterminal/oasis/followers
+	terminalid = "follower"
+	terminal = "Oasis Followers Terminal"
+	terminalType = 2
+
+/obj/machinery/msgterminal/oasis/brotherhood
+	terminalid = "brotherhood"
+	terminal = "Brotherhood Communcations Terminal"
 	terminalType = 2
