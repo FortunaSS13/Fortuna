@@ -9,7 +9,6 @@ GLOBAL_LIST_EMPTY(req_terminal)
 
 GLOBAL_LIST_EMPTY(terminal_info)
 GLOBAL_LIST_EMPTY(allTerminals)
-var/list/admin_departments = list("test", "test2", "test3")
 
 #define NO_NEW_MESSAGE				0
 #define NORMAL_MESSAGE_PRIORITY 	1
@@ -433,7 +432,7 @@ var/list/admin_departments = list("test", "test2", "test3")
 	terminal = "Oasis Followers Terminal"
 	terminalType = 2
 
-/obj/machinery/msgterminal/oasis/brotherhood
+/obj/machinery/msgterminal/brotherhood
 	terminalid = "brotherhood"
 	terminal = "Brotherhood Communcations Terminal"
 	terminalType = 2

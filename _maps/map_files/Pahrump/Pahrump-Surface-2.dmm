@@ -1262,6 +1262,17 @@
 /mob/living/simple_animal/hostile/handy,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
+"aCv" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	pixel_x = -17;
+	pixel_y = 24;
+	terminal = "NCRSGTTerminal2"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "aCN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4662,6 +4673,17 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
+"cgN" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	pixel_x = -17;
+	pixel_y = 24;
+	terminal = "NCRCMDTerminal"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "chb" = (
 /obj/structure/simple_door/metal/fence{
 	dir = 8
@@ -7446,6 +7468,18 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"dyU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	dir = 4;
+	pixel_x = -24;
+	pixel_y = -2;
+	terminal = "NCR1STSGTTerminal"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "dyZ" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/white,
@@ -11539,16 +11573,15 @@
 	},
 /area/f13/building)
 "fow" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/msgterminal/ncr,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
+/obj/machinery/msgterminal/ncr{
+	pixel_x = -17;
+	pixel_y = 24;
+	terminal = "NCRSGTTerminal1"
 	},
+/turf/open/floor/carpet,
 /area/f13/ncr)
 "foz" = (
 /obj/item/storage/trash_stack,
@@ -54302,7 +54335,7 @@ pQx
 pQx
 pyX
 rrE
-fow
+qzL
 kzs
 kzs
 dsn
@@ -56619,15 +56652,15 @@ kzs
 kzs
 jGz
 rrE
-aIS
+fow
 tvE
 aIS
 rrE
-aIS
+aCv
 tvE
 aIS
 rrE
-aIS
+cgN
 xIo
 vzw
 xEc
@@ -57909,7 +57942,7 @@ aIS
 aIS
 uzG
 aIS
-aIS
+dyU
 uEK
 rrE
 wJz
