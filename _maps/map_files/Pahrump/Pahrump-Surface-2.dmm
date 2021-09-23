@@ -5488,6 +5488,7 @@
 /area/f13/bar)
 "cDe" = (
 /obj/item/gun/ballistic/automatic/pistol/type17,
+/obj/item/storage/briefcase,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "cDh" = (
@@ -5914,6 +5915,12 @@
 	icon_state = "oakfloor2-broken"
 	},
 /area/f13/building)
+"cNW" = (
+/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
+/area/f13/village)
 "cOg" = (
 /obj/item/storage/money_stack/legion,
 /turf/open/floor/carpet/black,
@@ -8683,12 +8690,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet,
 /area/f13/ncr)
-"ect" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	name = "police protectron"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "ecy" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
@@ -10660,6 +10661,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"eVc" = (
+/obj/item/trash/candy{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/obj/item/trash/candy,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "eVx" = (
 /obj/structure/table,
 /obj/item/trash/f13/cram,
@@ -13637,14 +13646,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/legion)
-"gko" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/item/trash/candy,
-/obj/item/trash/sosjerky,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "gku" = (
 /obj/structure/spider/stickyweb,
 /obj/machinery/mineral/wasteland_vendor/mining,
@@ -13752,7 +13753,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/trash/f13/blamco,
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblepillar"
 	},
@@ -16425,10 +16425,6 @@
 	name = "metal plating"
 	},
 /area/f13/building)
-"huo" = (
-/obj/item/trash/sosjerky,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "huu" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "shadowright"
@@ -16564,6 +16560,13 @@
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
+/area/f13/village)
+"hxC" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/trash/candy,
+/turf/open/indestructible/ground/outside/ruins,
 /area/f13/village)
 "hxO" = (
 /obj/structure/chair/bench,
@@ -18413,13 +18416,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/ncr)
-"ipc" = (
-/mob/living/simple_animal/hostile/handy/robobrain{
-	desc = "A next-gen cybor developed by General Atomic International. This one has police markings";
-	name = "police robobrain"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "ipj" = (
 /turf/open/floor/wood/f13/old/ruinedcornerbr,
 /area/f13/wasteland)
@@ -22952,10 +22948,10 @@
 /area/f13/building)
 "kgV" = (
 /obj/effect/decal/remains/human,
-/obj/item/storage/briefcase,
-/obj/item/disk/nuclear/fake/obvious{
-	desc = "A badly damaged holodisk. It has the words 'nuclear launch codes' scribbled on it  with crayon. ";
-	name = "Cracked Datadisk"
+/obj/item/disk/design_disk{
+	desc = "A beat up pre-war data disk. it has 'Nuclear Launch codes' written with marker on the side.";
+	icon_state = "nucleardisk";
+	name = "ruined launch codes"
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -24312,6 +24308,12 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
+"kRQ" = (
+/mob/living/simple_animal/hostile/handy/protectron{
+	name = "police protectron"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "kSd" = (
 /mob/living/simple_animal/hostile/wolf,
 /obj/effect/decal/cleanable/dirt,
@@ -25646,6 +25648,14 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"lzh" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/trash/candy,
+/obj/item/trash/sosjerky,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "lzW" = (
 /obj/structure/chair/f13foldupchair{
 	dir = 1
@@ -27518,11 +27528,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"mss" = (
-/obj/item/trash/candy,
-/obj/item/trash/sosjerky,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "msw" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -29689,6 +29694,13 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+"nwe" = (
+/mob/living/simple_animal/hostile/handy/robobrain{
+	desc = "A next-gen cybor developed by General Atomic International. This one has police markings";
+	name = "police robobrain"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "nwC" = (
 /obj/machinery/workbench,
 /obj/item/crafting/reloader,
@@ -44994,6 +45006,11 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"uFD" = (
+/obj/item/trash/candy,
+/obj/item/trash/sosjerky,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "uFT" = (
 /obj/item/stack/sheet/mineral/wood,
 /turf/open/floor/wood/f13/oak,
@@ -45799,12 +45816,6 @@
 "uXj" = (
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
-"uXk" = (
-/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubbleplate"
-	},
-/area/f13/village)
 "uXs" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/sneakers/black,
@@ -47806,6 +47817,10 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
+"vTu" = (
+/obj/item/trash/sosjerky,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "vTz" = (
 /obj/structure/simple_door/house,
 /obj/effect/decal/cleanable/dirt{
@@ -48763,10 +48778,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"wtJ" = (
-/obj/item/trash/candy,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "wtN" = (
 /obj/structure/fluff/paper/stack{
 	desc = "A stack of various papers, all saying you really shouldnt see this. The name Dr. Possum is signed at the bottom."
@@ -51327,13 +51338,6 @@
 	icon_state = "innershade"
 	},
 /area/f13/wasteland)
-"xAg" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/item/trash/candy,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "xAm" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/followers)
@@ -52429,6 +52433,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
+"ybr" = (
+/obj/item/trash/candy,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/village)
 "ybw" = (
 /obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/road,
@@ -52483,14 +52491,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
-"ycj" = (
-/obj/item/trash/candy{
-	pixel_x = 7;
-	pixel_y = 6
-	},
-/obj/item/trash/candy,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/village)
 "ycm" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -97448,8 +97448,8 @@ ieQ
 cZc
 bcV
 pcG
-mss
-gko
+uFD
+lzh
 gmg
 kXt
 pcG
@@ -97706,8 +97706,8 @@ cZc
 vfA
 pcG
 enC
-uXk
-huo
+cNW
+vTu
 leT
 pcG
 pzL
@@ -97962,9 +97962,9 @@ ieQ
 cZc
 bcV
 pcG
-wtJ
-ycj
-xAg
+ybr
+eVc
+hxC
 leT
 pcG
 vlw
@@ -106658,7 +106658,7 @@ fyf
 trW
 mcp
 fyf
-ipc
+nwe
 fyf
 fyf
 fyf
@@ -106913,7 +106913,7 @@ fyf
 fyf
 fyf
 fyf
-ect
+kRQ
 ieV
 fyf
 ieV
