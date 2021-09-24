@@ -583,9 +583,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/junkie/turbo
 	name = "Turbo Addict"
-	desc = "Okay, here we go. Focus. Speed. I am speed. One winner, 42 losers. I eat losers for breakfast. Kachow!"
+	desc = "See, old Jesus Mordino wanted something that the Redding miners would get addicted to fast AND make them work harder. So, I said, 'no prob,' right?"
 	value = -2
-	gain_text = "<span class='danger'>You begin craving a drink of turbo.</span>"
+	gain_text = "<span class='danger'>You begin craving a whiff from a turbo inhaler.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
 	medical_record_text = "Patient is a turbo addict."
 	reagent_type = /datum/reagent/drug/turbo
