@@ -97,11 +97,7 @@
 
 /datum/crafting_recipe/stimpak5
 	name = "Stimpak (x5)"
-	result = list(/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak)
+	result = /obj/item/storage/box/stimpaks/stimpaks5
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 20,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 20,
 				/obj/item/reagent_containers/syringe = 5)
@@ -123,12 +119,7 @@
 
 /datum/crafting_recipe/superstimpak5
 	name = "Super Stimpak (x5)"
-	result = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-				/obj/item/reagent_containers/hypospray/medipen/stimpak/super
-				)
+	result = /obj/item/storage/box/stimpaks/superstimpaks5
 	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 5,
 				/obj/item/stack/sheet/leather = 10,
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10)
