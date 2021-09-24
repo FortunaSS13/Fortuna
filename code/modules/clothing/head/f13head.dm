@@ -154,8 +154,8 @@
 /obj/item/clothing/head/helmet/knight/f13/rider
 	name = "rider helmet" //Not raider. Rider.
 	desc = "(III) It's a fancy dark metal helmet with orange spray painted flames."
-	icon_state = "riderw"
-	item_state = "riderw"
+	icon_state = "rider"
+	item_state = "rider"
 
 /obj/item/clothing/head/helmet/f13/metalmask
 	name = "metal mask"
