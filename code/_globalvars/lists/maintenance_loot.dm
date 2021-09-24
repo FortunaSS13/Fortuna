@@ -393,9 +393,7 @@ GLOBAL_LIST_INIT(loot_t4_armor, list(
 	/obj/item/clothing/suit/armor/f13/combat/mk2,
 	/obj/item/clothing/head/helmet/f13/combat/mk2,
 	/obj/item/clothing/suit/armor/f13/power_armor/raiderpa,
-	/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm,
-	/obj/item/clothing/suit/armor/f13/power_armor/hotrod,
-	/obj/item/clothing/head/helmet/f13/power_armor/hotrod
+	/obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 ))
 
 GLOBAL_LIST_INIT(loot_t5_armor, list(
