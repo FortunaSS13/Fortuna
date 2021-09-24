@@ -41,9 +41,9 @@ SUBSYSTEM_DEF(nightcycle)
 	var/nighttime_sun_color = "#00111a"
 	var/nighttime_sun_power = 10
 	/// How does it take to get darker or brighter each step.
-	var/cycle_transition_time = 30 SECONDS
+	var/cycle_transition_time = 120 SECONDS
 	/// If defined with any number besides null it will determine how long each cycle lasts.
-	var/custom_cycle_wait = null
+	var/custom_cycle_wait = 1600 SECONDS
 	var/last_custom_cycle = 0
 
 	// Light objects
@@ -177,6 +177,7 @@ SUBSYSTEM_DEF(nightcycle)
 	var/new_junction = NONE
 	for(var/direction in GLOB.cardinals) //Cardinal case first.
 		SUNLIGHT_ADJ_IN_DIR(src, new_junction, direction, direction)
+		CHECK_TICK
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, NORTHWEST, NORTHWEST_JUNCTION)
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, NORTHEAST, NORTHEAST_JUNCTION)
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, SOUTHWEST, SOUTHWEST_JUNCTION)
