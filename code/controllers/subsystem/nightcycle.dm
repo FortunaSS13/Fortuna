@@ -116,7 +116,7 @@ SUBSYSTEM_DEF(nightcycle)
 	animate(light_object, alpha = current_sun_power, color = current_sun_color, time = cycle_transition_time)
 	for(var/key in sunlight_border_objects)
 		animate(sunlight_border_objects[key], alpha = current_sun_power, color = current_sun_color, time = cycle_transition_time)
-
+		CHECK_TICK
 
 /datum/controller/subsystem/nightcycle/proc/get_border_object(object_key)
 	. = sunlight_border_objects["[object_key]"]
@@ -177,7 +177,6 @@ SUBSYSTEM_DEF(nightcycle)
 	var/new_junction = NONE
 	for(var/direction in GLOB.cardinals) //Cardinal case first.
 		SUNLIGHT_ADJ_IN_DIR(src, new_junction, direction, direction)
-		CHECK_TICK
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, NORTHWEST, NORTHWEST_JUNCTION)
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, NORTHEAST, NORTHEAST_JUNCTION)
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, SOUTHWEST, SOUTHWEST_JUNCTION)
