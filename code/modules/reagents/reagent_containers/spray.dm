@@ -154,7 +154,7 @@
 //abraxo cleaner
 /obj/item/reagent_containers/spray/cleaner
 	name = "Abraxo cleaner"
-	desc = "Abraxo-brand non-foaming cleaner cleaner!"
+	desc = "Abraxo-brand non-foaming cleaner!"
 	volume = 100
 	list_reagents = list(/datum/reagent/abraxo_cleaner = 100)
 	amount_per_transfer_from_this = 2
