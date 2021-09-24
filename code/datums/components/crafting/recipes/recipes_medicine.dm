@@ -54,6 +54,13 @@
 	time = 20
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/bitterdrink5
+	name = "Bottle Bitterdrink (x5)"
+	result = /obj/item/storage/box/medicine/bitterdrink5
+	reqs = list(/datum/reagent/medicine/bitter_drink = 150)
+	time = 60
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/healpoultice
 	name = "Healing poultice"
 	result = /obj/item/reagent_containers/pill/patch/healpoultice
@@ -97,7 +104,7 @@
 
 /datum/crafting_recipe/stimpak5
 	name = "Stimpak (x5)"
-	result = /obj/item/storage/box/stimpaks/stimpaks5
+	result = /obj/item/storage/box/medicine/stimpaks/stimpaks5
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 20,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 20,
 				/obj/item/reagent_containers/syringe = 5)
@@ -119,7 +126,7 @@
 
 /datum/crafting_recipe/superstimpak5
 	name = "Super Stimpak (x5)"
-	result = /obj/item/storage/box/stimpaks/superstimpaks5
+	result = /obj/item/storage/box/medicine/stimpaks/superstimpaks5
 	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 5,
 				/obj/item/stack/sheet/leather = 10,
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10)
