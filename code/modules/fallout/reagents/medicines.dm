@@ -312,7 +312,7 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	reagent_state = LIQUID
 	color = "#6D6374"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	overdose_threshold = 16
+	overdose_threshold = 26
 	addiction_threshold = 6
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
@@ -330,11 +330,11 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 		M.health -= 100
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 	switch(current_cycle)
-		if(1 to 25)
+		if(1 to 30) //one syringe use side effects
 			M.confused += 10
 			M.blur_eyes(20)
 			to_chat(M, "<span class='notice'>Your head is pounding. Med-X is hard on the body. </span>")
-		if(26 to 50)
+		if(31 to 50) //more than one syringe use while its in your system equals overdose
 			M.confused +=20
 			M.blur_eyes(30)
 			M.losebreath += 8
