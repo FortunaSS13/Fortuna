@@ -620,4 +620,4 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	medical_record_text = "Patient is a buffout addict."
 	reagent_type = /datum/reagent/drug/buffout
 	drug_container_type = /obj/item/reagent_containers/pill/buffout
-  
+
