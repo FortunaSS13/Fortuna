@@ -448,7 +448,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	. = ..()
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(/datum/brain_trauma/severe/monophobia, TRAUMA_RESILIENCE_ABSOLUTE)
-  
+
 //Junkie
 
 /datum/quirk/junkie
