@@ -161,7 +161,6 @@ SUBSYSTEM_DEF(nightcycle)
 		neighbor.sunlight_state = SUNLIGHT_BORDER
 		if(neighbor.flags_1 & INITIALIZED_1)
 			neighbor.smooth_sunlight_border()
-			CHECK_TICK
 
 #define SUNLIGHT_ADJ_IN_DIR(source, junction, direction, direction_flag) \
 	do { \
