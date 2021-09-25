@@ -177,6 +177,7 @@ SUBSYSTEM_DEF(nightcycle)
 	var/new_junction = NONE
 	for(var/direction in GLOB.cardinals) //Cardinal case first.
 		SUNLIGHT_ADJ_IN_DIR(src, new_junction, direction, direction)
+		CHECK_TICK
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, NORTHWEST, NORTHWEST_JUNCTION)
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, NORTHEAST, NORTHEAST_JUNCTION)
 	SUNLIGHT_ADJ_IN_DIR(src, new_junction, SOUTHWEST, SOUTHWEST_JUNCTION)
