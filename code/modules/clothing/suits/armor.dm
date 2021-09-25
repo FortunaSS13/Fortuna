@@ -8,12 +8,12 @@
 	equip_delay_other = 40
 	max_integrity = 250
 	resistance_flags = NONE
-	armor = list("tier" = 4, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
 	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
 /obj/item/clothing/suit/armor/examine(mob/user)
 	. = ..()
-	. += "This armor provides [armor.linebullet] bullet, [armor.linelaser] energy and [armor.linemelee] melee resistance."
+	. += "This armor provides [armor.bullet] bullet, [armor.laser] energy and [armor.melee] melee resistance."
 
 /obj/item/clothing/suit/armor/Initialize()
 	. = ..()

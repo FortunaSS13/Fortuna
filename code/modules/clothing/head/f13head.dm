@@ -292,7 +292,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
+	armor = armor.modifyRating(melee = 75, bullet = 75, laser = 75)
 
 /obj/item/clothing/head/helmet/f13/power_armor/proc/powerDown()
 	powerMode -= 1
@@ -300,7 +300,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = -75, linebullet = -75, linelaser = -75)
+	armor = armor.modifyRating(melee = -75, bullet = -75, laser = -75)
 
 /obj/item/clothing/head/helmet/f13/power_armor/ComponentInitialize()
 	. = ..()
@@ -332,11 +332,11 @@
 	if(emped == 0)
 		if(ismob(loc))
 			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems.</span>")
-			armor = armor.modifyRating(linemelee = -100, linebullet = -100, linelaser = -100)
+			armor = armor.modifyRating(melee = -100, bullet = -100, laser = -100)
 			emped = 1
 			spawn(50) //5 seconds of being blind and weak
 				to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
-				armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
+				armor = armor.modifyRating(melee = 100, bullet = 100, laser = 100)
 				emped = 0
 
 /obj/item/clothing/head/helmet/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)

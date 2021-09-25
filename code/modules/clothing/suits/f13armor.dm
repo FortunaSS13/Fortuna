@@ -294,7 +294,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
+	armor = armor.modifyRating(melee = 75, bullet = 75, laser = 75)
 
 /obj/item/clothing/suit/armor/f13/power_armor/proc/powerDown(mob/user)
 	powerMode -= 1
@@ -302,7 +302,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = -75, linebullet = -75, linelaser = -75)
+	armor = armor.modifyRating(melee = -75, bullet = -75, laser = -75)
 
 /obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, mob/equipper, slot, disable_warning = 1)
 	var/mob/living/carbon/human/H = user
@@ -331,14 +331,14 @@
 			var/mob/living/L = loc
 			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
 			slowdown += 1.2
-			armor = armor.modifyRating(linemelee = -100, linebullet = -100, linelaser = -100)
+			armor = armor.modifyRating(melee = -100, bullet = -100, laser = -100)
 			emped = 1
 			if(istype(L))
 				L.update_equipment_speed_mods()
 			spawn(50) //5 seconds of being slow and weak
 				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 				slowdown -= 1.2
-				armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
+				armor = armor.modifyRating(melee = 100, bullet = 100, laser = 100)
 				emped = 0
 				if(istype(L))
 					L.update_equipment_speed_mods()
