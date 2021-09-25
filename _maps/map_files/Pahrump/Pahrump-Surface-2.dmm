@@ -603,6 +603,15 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/ncr)
+"ams" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/carpet/green,
+/area/f13/building)
 "amD" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -5454,8 +5463,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "cBO" = (
-/obj/structure/chair/middle,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/green,
 /area/f13/building)
 "cBQ" = (
 /obj/structure/simple_door/house,
@@ -5537,8 +5545,17 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "cDy" = (
-/obj/structure/sign/poster/contraband/space_cola{
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_public";
 	pixel_y = 32
+	},
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 8;
+	pixel_x = -6
+	},
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 4;
+	pixel_x = 6
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -5936,6 +5953,15 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 8;
+	pixel_x = -6;
+	pixel_y = 16
+	},
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 4;
+	pixel_x = 6
+	},
 /turf/open/floor/wood/f13/oak{
 	icon_state = "oakfloor2-broken"
 	},
@@ -5950,6 +5976,22 @@
 /obj/item/stack/f13Cash/random/low,
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
+"cOy" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 1;
+	pixel_x = -11;
+	pixel_y = 6
+	},
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 1;
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "cOC" = (
 /obj/machinery/door/window/eastright{
 	dir = 2;
@@ -5975,10 +6017,6 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/f13/building)
-"cPj" = (
-/obj/structure/chair/stool/bar,
-/turf/open/floor/carpet/green,
 /area/f13/building)
 "cPn" = (
 /obj/structure/window/fulltile/house{
@@ -6049,23 +6087,11 @@
 	},
 /area/f13/building)
 "cRf" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/toy/cards/deck,
 /obj/structure/table/wood/poker,
-/obj/item/cigbutt/cigarbutt{
-	pixel_x = -4;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/food/drinks/bottle/tequila{
-	pixel_x = -4;
-	pixel_y = 15
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	pixel_x = 8;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	pixel_x = 4;
-	pixel_y = 8
-	},
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "cRh" = (
@@ -6207,10 +6233,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
 "cUZ" = (
-/obj/structure/chair/stool/bar,
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
+/obj/item/storage/box/dice,
+/obj/structure/table/wood/poker,
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "cVe" = (
@@ -7202,10 +7226,11 @@
 	},
 /area/f13/wasteland)
 "drw" = (
-/obj/structure/chair/middle{
-	dir = 1
+/obj/effect/turf_decal/trimline/brown/line{
+	pixel_x = -21;
+	pixel_y = 22
 	},
-/turf/open/floor/carpet/red,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "dsb" = (
 /obj/structure/table/wood/settler,
@@ -7351,13 +7376,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "dve" = (
-/obj/structure/chair/right{
-	dir = 1
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 6;
+	pixel_x = 10;
+	pixel_y = 22
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
+/obj/effect/turf_decal/trimline/brown/line{
+	pixel_x = -21;
+	pixel_y = 22
 	},
-/turf/open/floor/carpet/red,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "dvg" = (
 /obj/structure/tires/five,
@@ -7534,18 +7562,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "dzI" = (
-/obj/structure/table/wood/poker,
-/obj/item/storage/box/dice{
-	pixel_x = -4;
-	pixel_y = 9
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/item/toy/cards/deck{
-	pixel_x = 4;
-	pixel_y = 2
-	},
+/obj/structure/table/wood/poker,
 /turf/open/floor/carpet/green,
 /area/f13/building)
 "dzJ" = (
@@ -7589,10 +7609,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/sign/poster/contraband/smoke{
-	pixel_x = 32
-	},
-/turf/open/floor/wood/f13/oak,
+/obj/structure/chair/stool/retro/black,
+/turf/open/floor/carpet/green,
 /area/f13/building)
 "dAo" = (
 /obj/structure/closet{
@@ -8416,9 +8434,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/floor/wood/f13/oak{
-	icon_state = "oakfloor4-broken"
-	},
+/turf/open/floor/carpet/green,
 /area/f13/building)
 "dVt" = (
 /obj/structure/window/fulltile/store{
@@ -8440,7 +8456,8 @@
 	color = "000000"
 	},
 /obj/machinery/light/small,
-/turf/open/floor/wood/f13/oak,
+/obj/structure/chair/stool/retro/black,
+/turf/open/floor/carpet/green,
 /area/f13/building)
 "dVA" = (
 /obj/structure/car/rubbish2,
@@ -8982,20 +8999,8 @@
 	},
 /area/f13/village)
 "ejT" = (
-/obj/effect/decal/fakelattice{
-	density = 1;
-	max_integrity = 5000
-	},
-/obj/structure/fluff/railing,
-/obj/structure/window/reinforced{
-	color = "#D2B48C";
-	dir = 1;
-	max_integrity = 200
-	},
-/obj/structure/curtain{
-	color = "#845f58"
-	},
-/turf/open/floor/plating/tunnel,
+/obj/structure/chair/booth,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "eku" = (
 /obj/item/instrument/guitar,
@@ -9080,13 +9085,15 @@
 /turf/closed/indestructible/f13/matrix,
 /area/f13/tunnel)
 "emC" = (
-/turf/open/floor/plasteel/stairs{
-	barefootstep = "woodbarefoot";
-	color = "#A47449";
-	footstep = "wood";
-	icon_state = "stairs-l"
+/obj/structure/stairs/north{
+	alpha = 0
 	},
-/area/f13/building)
+/turf/open/floor/plasteel/stairs/left{
+	color = "#A47449"
+	},
+/area/f13/building{
+	color = "#A47449"
+	})
 "emG" = (
 /obj/structure/chair/stool,
 /obj/structure/spider/stickyweb,
@@ -9175,17 +9182,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
-/area/f13/building)
-"enM" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plasteel/stairs{
-	barefootstep = "woodbarefoot";
-	color = "#A47449";
-	footstep = "wood";
-	icon_state = "stairs-r"
-	},
 /area/f13/building)
 "eof" = (
 /mob/living/simple_animal/hostile/handy,
@@ -9753,11 +9749,11 @@
 	},
 /area/f13/caves)
 "eBY" = (
-/turf/open/floor/plasteel/stairs{
-	barefootstep = "woodbarefoot";
-	color = "#A47449";
-	footstep = "wood";
-	icon_state = "stairs-r"
+/obj/structure/stairs/north{
+	alpha = 0
+	},
+/turf/open/floor/plasteel/stairs/left{
+	color = "#A47449"
 	},
 /area/f13/building)
 "eCh" = (
@@ -10406,7 +10402,16 @@
 	},
 /area/f13/caves)
 "ePm" = (
-/obj/structure/chair/right,
+/obj/structure/chair/left{
+	dir = 4
+	},
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_public";
+	pixel_y = 32
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "ePu" = (
@@ -10456,7 +10461,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/carpet/green,
 /area/f13/building)
 "ePY" = (
 /obj/structure/rack,
@@ -10696,10 +10701,8 @@
 /turf/open/floor/wood/f13/housewoodbroken2,
 /area/f13/building)
 "eVJ" = (
-/obj/structure/sign/poster/official/cohiba_robusto_ad{
-	pixel_y = 32
-	},
-/turf/open/floor/wood/f13/oak,
+/obj/structure/chair/stool/retro/black,
+/turf/open/floor/carpet/green,
 /area/f13/building)
 "eWA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16248,11 +16251,15 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "hqv" = (
-/obj/structure/table/booth,
-/obj/machinery/light/small{
-	dir = 8
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
 	},
-/turf/open/floor/carpet/red,
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 10;
+	pixel_x = -10;
+	pixel_y = 22
+	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "hqw" = (
 /obj/effect/turf_decal/stripes/white/line{
@@ -35216,10 +35223,10 @@
 	},
 /area/f13/ncr)
 "qcd" = (
-/obj/structure/chair/left{
-	dir = 1
+/obj/effect/turf_decal/trimline/brown/line{
+	pixel_y = 22
 	},
-/turf/open/floor/carpet/red,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "qci" = (
 /obj/effect/decal/marking,
@@ -37775,6 +37782,12 @@
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"rlF" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "rlN" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderlefttop"
@@ -47814,6 +47827,14 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
+"vRA" = (
+/obj/effect/turf_decal/trimline/brown/line{
+	dir = 1;
+	pixel_x = -11;
+	pixel_y = 6
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "vRG" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -50304,7 +50325,9 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/caves)
 "xao" = (
-/obj/structure/chair/left,
+/obj/structure/chair/right{
+	dir = 8
+	},
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "xay" = (
@@ -51864,6 +51887,12 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/ncr)
+"xKI" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/closed/wall/f13/wood,
+/area/f13/building)
 "xKV" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -85204,9 +85233,9 @@ dCV
 ydw
 cvQ
 ePm
-hqv
+cOM
 qcd
-ozq
+uzO
 ejT
 eyf
 eLM
@@ -85460,11 +85489,11 @@ uqa
 dCV
 lHo
 eCK
-cBO
+cEb
 cEb
 drw
-dVs
-ejT
+aRl
+aRl
 eBJ
 aRl
 far
@@ -85718,10 +85747,10 @@ dCV
 cWG
 eCK
 xao
-cEb
+cPg
 dve
-ozq
-ejT
+aRl
+aRl
 ozq
 aRl
 ozq
@@ -85978,8 +86007,8 @@ cDy
 cNO
 ozq
 ozq
-ejT
-uzO
+aRl
+aRl
 aRl
 ozq
 fgG
@@ -86233,8 +86262,8 @@ uRa
 kEI
 cDz
 cOM
-ozq
-aRl
+hqv
+uqa
 gCh
 gCh
 cHk
@@ -86490,10 +86519,10 @@ gVp
 eCK
 cEb
 cEb
-aRl
-nyv
+vRA
+xKI
 emC
-emC
+eBY
 aRl
 ozq
 fiy
@@ -86747,12 +86776,12 @@ mvv
 gCh
 cEH
 cPg
-ozq
-ozq
-enM
+cOy
+xKI
+eBY
 eBY
 aRl
-aRl
+rlF
 uqa
 fqi
 fuE
@@ -87259,10 +87288,10 @@ uqa
 dCV
 bZi
 uqa
-aRl
-ozq
-nJU
-aRl
+cBO
+dVs
+ams
+cBO
 uqa
 eCD
 eOP
@@ -87517,9 +87546,9 @@ dCV
 cdp
 uqa
 ePQ
-cPj
-cUZ
-ozq
+eVJ
+eVJ
+dVs
 kEI
 juG
 eOU
@@ -87776,7 +87805,7 @@ uqa
 eVJ
 cRf
 dzI
-aRl
+eVJ
 kEI
 kEI
 kEI
@@ -88030,9 +88059,9 @@ uqa
 dCV
 mvv
 uqa
-cHk
+eVJ
 cUZ
-cUZ
+dzI
 dVy
 kEI
 eDp
@@ -88287,10 +88316,10 @@ uqa
 dCV
 mvv
 gCh
-ozq
-aRl
+dVs
+eVJ
 dAn
-ozq
+dVs
 gCh
 mHj
 ydO
