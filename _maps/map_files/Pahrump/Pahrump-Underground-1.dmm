@@ -7876,6 +7876,7 @@
 /obj/structure/rack,
 /obj/item/gun/energy/laser/pistol,
 /obj/item/gun/energy/laser/pistol,
+/obj/item/gun/energy/laser/pistol,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -19350,6 +19351,10 @@
 /obj/item/stock_parts/cell/ammo/ecp,
 /obj/item/stock_parts/cell/ammo/ecp,
 /obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
+/obj/item/stock_parts/cell/ammo/ecp,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
 /obj/effect/turf_decal/stripes/red/line,
@@ -28189,9 +28194,6 @@
 	name = "cave"
 	},
 /area/f13/caves)
-"szI" = (
-/turf/closed/mineral/random/low_chance,
-/area/f13/brotherhood/offices1st)
 "szJ" = (
 /obj/structure/table{
 	layer = 2.9
@@ -28465,6 +28467,9 @@
 /obj/structure/closet/crate/secure/weapon{
 	anchored = 1
 	},
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
 /obj/item/stock_parts/cell/ammo/mfc,
 /obj/item/stock_parts/cell/ammo/mfc,
 /obj/item/stock_parts/cell/ammo/mfc,
@@ -29606,6 +29611,10 @@
 /obj/structure/closet/crate/secure/weapon{
 	anchored = 1
 	},
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/ec,
 /obj/item/stock_parts/cell/ammo/ec,
 /obj/item/stock_parts/cell/ammo/ec,
 /obj/item/stock_parts/cell/ammo/ec,
@@ -34779,9 +34788,7 @@
 	},
 /area/f13/brotherhood/operations)
 "xGV" = (
-/mob/living/simple_animal/hostile/ghoul/reaver{
-	health = 225
-	},
+/mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xHI" = (
@@ -87607,7 +87614,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+eLE
 uoO
 uoO
 uoO
@@ -87864,7 +87871,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+eLE
 uoO
 uoO
 uoO
@@ -88104,50 +88111,50 @@ eLE
 "}
 (206,1,1) = {"
 eLE
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -88361,9 +88368,9 @@ eLE
 "}
 (207,1,1) = {"
 eLE
-uoO
-uoO
-uoO
+eLE
+eLE
+eLE
 aXV
 aXV
 aXV
@@ -88403,9 +88410,9 @@ iAR
 iAR
 iAR
 iAR
-szI
-uoO
-uoO
+iAR
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -88618,7 +88625,7 @@ eLE
 "}
 (208,1,1) = {"
 eLE
-uoO
+eLE
 aXV
 aXV
 aXV
@@ -88661,8 +88668,8 @@ iAR
 iAR
 iAR
 iAR
-szI
-uoO
+iAR
+eLE
 uoO
 uoO
 uoO
@@ -88875,7 +88882,7 @@ eLE
 "}
 (209,1,1) = {"
 eLE
-uoO
+eLE
 aXV
 aXV
 bEz
@@ -88919,7 +88926,7 @@ pld
 pEG
 iAR
 iAR
-uoO
+eLE
 uoO
 uoO
 uoO
@@ -89176,15 +89183,15 @@ oRa
 pFn
 iAR
 iAR
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -89440,9 +89447,9 @@ iAR
 iAR
 iAR
 iAR
-szI
-uoO
-uoO
+iAR
+eLE
+eLE
 uoO
 aoj
 aoj
@@ -89698,8 +89705,8 @@ iAR
 iAR
 iAR
 iAR
-szI
-uoO
+iAR
+eLE
 uoO
 aoj
 aoj
@@ -89956,7 +89963,7 @@ ted
 ted
 iAR
 iAR
-uoO
+eLE
 uoO
 aoj
 aoj
@@ -90213,7 +90220,7 @@ qMn
 tzE
 iAR
 iAR
-uoO
+eLE
 uoO
 uoO
 uoO
@@ -90470,7 +90477,7 @@ qMn
 tzK
 iAR
 iAR
-uoO
+eLE
 uoO
 uoO
 uoO
