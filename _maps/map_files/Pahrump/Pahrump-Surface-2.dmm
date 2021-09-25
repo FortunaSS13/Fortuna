@@ -3163,6 +3163,7 @@
 "btv" = (
 /mob/living/simple_animal/hostile/raider/tribal{
 	desc = "A fugitive exiled from Oasis. He smells faintly of gecko.";
+	faction = list("gecko");
 	name = "Geckoman"
 	},
 /turf/open/indestructible/ground/outside/dirt{
@@ -9149,7 +9150,8 @@
 	},
 /mob/living/simple_animal/pet/dog/corgi{
 	collar_type = "Mangy corgi";
-	desc = "It's a corgi. He look's like he hasn't been eating right."
+	desc = "It's a corgi. He looks hungry";
+	name = "Ol' Scruff"
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/village)
@@ -49647,6 +49649,15 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"wNe" = (
+/mob/living/simple_animal/hostile/radroach{
+	desc = "The most trustworthy ally of the sheriff. This tough bug has survived dozens of attemprs to squish 'em. ";
+	faction = list("Dog");
+	health = 60;
+	name = "Deputy Bug"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "wNn" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -82659,7 +82670,7 @@ ydO
 mHj
 uIa
 ueA
-aRl
+wNe
 aRl
 bCR
 dCV
