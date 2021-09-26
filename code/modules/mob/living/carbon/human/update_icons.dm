@@ -801,9 +801,11 @@ use_mob_overlay_icon: if FALSE, it will always use the default_icon_file even if
 	remove_layer(ABOVE_MOB_LAYER)
 
 	var/depth = check_submerged()
-	if(!depth || lying)
+	if(!depth)
 		return
-
-	overlays_standing[ABOVE_MOB_LAYER] = image(icon = 'icons/effects/effects.dmi', icon_state = "mob_submerged", layer = ABOVE_MOB_LAYER) //TODO: Improve
+	if(lying)
+		overlays_standing[ABOVE_MOB_LAYER] = image(icon = 'icons/effects/effects.dmi', icon_state = "mob_submerged_lying", layer = ABOVE_MOB_LAYER) //TODO: Improve
+	else
+		overlays_standing[ABOVE_MOB_LAYER] = image(icon = 'icons/effects/effects.dmi', icon_state = "mob_submerged", layer = ABOVE_MOB_LAYER) //TODO: Improve
 
 	apply_layer(ABOVE_MOB_LAYER)
