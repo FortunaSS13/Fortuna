@@ -146,6 +146,7 @@
 "cX" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dc" = (
@@ -179,6 +180,7 @@
 /obj/structure/stairs/south{
 	alpha = 0
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/transparent/openspace{
 	sunlight_state = 1
 	},
@@ -657,6 +659,7 @@
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "oY" = (
@@ -865,6 +868,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tU" = (
@@ -886,12 +890,12 @@
 	},
 /area/f13/wasteland)
 "uk" = (
-/obj/structure/decoration/rag{
-	icon_state = "skulls"
+/obj/structure/chair/comfy/brown{
+	dir = 4
 	},
-/obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood,
-/area/f13/legion)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "un" = (
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
@@ -1751,6 +1755,7 @@
 	dir = 8;
 	light_color = "#d8b1b1"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Pr" = (
@@ -1846,14 +1851,12 @@
 /turf/closed/wall/rust,
 /area/f13/wasteland)
 "QT" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/chair/comfy/brown{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/chasm,
-/area/f13/village)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "QY" = (
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 5
@@ -7018,7 +7021,7 @@ PL
 PL
 PL
 PL
-vv
+yq
 LF
 rn
 GZ
@@ -7275,7 +7278,7 @@ PL
 PL
 PL
 PL
-vv
+yq
 QB
 GZ
 Pr
@@ -7532,7 +7535,7 @@ PL
 PL
 PL
 PL
-pI
+yq
 Ti
 ar
 eU
@@ -7789,7 +7792,7 @@ PL
 PL
 PL
 PL
-vv
+yq
 wH
 aA
 ar
@@ -9845,7 +9848,7 @@ PL
 PL
 PL
 PL
-vv
+fJ
 LF
 NI
 ar
@@ -10102,7 +10105,7 @@ PL
 PL
 PL
 PL
-vv
+fJ
 hK
 YK
 GZ
@@ -10359,7 +10362,7 @@ PL
 PL
 PL
 PL
-pI
+fJ
 hP
 ar
 ar
@@ -10616,7 +10619,7 @@ PL
 PL
 PL
 PL
-pI
+fJ
 wH
 we
 GZ
@@ -41111,7 +41114,7 @@ dR
 Tx
 Tx
 bY
-Tm
+dR
 Tm
 Tm
 Tm
@@ -41365,11 +41368,11 @@ mp
 dR
 hN
 Pk
-pN
+hN
 hN
 Dp
-Tm
-Tm
+dR
+dR
 Tm
 Tm
 Tm
@@ -41624,9 +41627,9 @@ hN
 dR
 dR
 dR
-pN
-Tm
-Tm
+hN
+uk
+dR
 Tm
 Tm
 Tm
@@ -41882,8 +41885,8 @@ dU
 dU
 dR
 As
-Tm
-Tm
+QT
+dR
 Tm
 Tm
 Tm
@@ -42139,8 +42142,8 @@ dU
 dU
 dR
 As
-Tm
-Tm
+uk
+dR
 Tm
 Tm
 Tm
@@ -42396,8 +42399,8 @@ dR
 dR
 dR
 hN
-Tm
-Tm
+QT
+dR
 Tm
 Tm
 Tm
@@ -42648,13 +42651,13 @@ nG
 fu
 As
 dR
-pN
+hN
 oU
-pN
-pN
+hN
+hN
 oU
-Tm
-Tm
+dR
+dR
 Tm
 Tm
 Tm
@@ -42910,7 +42913,7 @@ dR
 Tx
 Tx
 dR
-Tm
+dR
 Tm
 Tm
 Tm
@@ -52282,8 +52285,8 @@ Zp
 Zp
 Zp
 Zp
-fe
-fe
+Zp
+Zp
 Zp
 Zp
 Zp
@@ -52538,10 +52541,10 @@ PL
 PL
 PL
 PL
-Zp
-QT
-QT
-Zp
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -52795,10 +52798,10 @@ PL
 PL
 PL
 PL
-Zp
-Zp
-Zp
-Zp
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -54191,7 +54194,7 @@ iM
 iM
 Uh
 Uh
-VM
+TR
 tJ
 tJ
 tJ
@@ -54448,7 +54451,7 @@ Uh
 mm
 Uh
 Uh
-VM
+TR
 tJ
 tJ
 tJ
@@ -54705,7 +54708,7 @@ Uh
 Jf
 Un
 Sj
-VM
+TR
 tJ
 tJ
 tJ
@@ -54962,7 +54965,7 @@ Uh
 Oh
 Uh
 Uh
-VM
+TR
 tJ
 tJ
 tJ
@@ -55219,7 +55222,7 @@ Ad
 Ad
 Uh
 aS
-VM
+TR
 tJ
 tJ
 tJ
@@ -57789,7 +57792,7 @@ Uh
 Uh
 Uh
 aS
-uk
+Fy
 PL
 PL
 PL
@@ -58046,7 +58049,7 @@ fv
 Uh
 Uh
 Uh
-VM
+Fy
 PL
 PL
 PL
@@ -58303,7 +58306,7 @@ fv
 Uh
 IN
 Uh
-VM
+Fy
 PL
 PL
 PL
@@ -58560,7 +58563,7 @@ Uh
 Uh
 RU
 Uh
-VM
+Fy
 PL
 PL
 PL
@@ -58817,7 +58820,7 @@ mm
 Uh
 vN
 Sj
-uk
+Fy
 PL
 PL
 PL

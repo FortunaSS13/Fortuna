@@ -17825,9 +17825,6 @@
 	icon_state = "housebase"
 	},
 /area/f13/building)
-"hXL" = (
-/turf/open/chasm,
-/area/f13/wasteland)
 "hXM" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
@@ -83573,9 +83570,9 @@ aJb
 aJb
 gWo
 uit
-hXL
-hXL
-hXL
+hAC
+hAC
+hAC
 mEL
 wKo
 aJb
@@ -83830,9 +83827,9 @@ dqX
 dmL
 pfl
 hAC
-hXL
-hXL
-hXL
+hAC
+hAC
+hAC
 hAC
 rlN
 ehN
@@ -84087,9 +84084,9 @@ btW
 btW
 pWN
 uPP
-hXL
-hXL
-hXL
+hAC
+hAC
+hAC
 hWk
 rkr
 kaM
@@ -84859,7 +84856,7 @@ gts
 gdY
 unI
 hbW
-hOl
+erY
 hOl
 koD
 sUX

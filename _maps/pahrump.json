@@ -18,7 +18,7 @@
 	"traits":[
 		{
 			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
+			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
 			"Up": 1,
 			"Linkage" : "Cross"
 		},
@@ -33,15 +33,17 @@
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
+			"Station": 1,
 			"Up": 1,
 			"Down": -1,
 			"Linkage" : "Cross"
 		},
 		{
 			"Gravity": true,
-			"Station": 1,
+			"Baseturf": "/turf/open/transparent/openspace",
 			"Down": -1,
-			"Linkage" : "Cross"
+			"Linkage" : "Cross",
+			"Above": true
 		}
 	],
 	"minetype": "none"
