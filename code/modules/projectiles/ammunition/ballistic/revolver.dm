@@ -5,14 +5,6 @@
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/a357
 
-/*/obj/item/ammo_casing/a357/jhp
-	name = ".357 JHP bullet casing"
-	desc = "A .357 JHP bullet casing."
-
-/obj/item/ammo_casing/a357/jfp
-	name = ".357 JFP bullet casing"
-	desc = "A .357 JFP bullet casing."
-*/
 
 // .38 special
 /obj/item/ammo_casing/c38

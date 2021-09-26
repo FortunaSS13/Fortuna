@@ -134,22 +134,12 @@
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 
-/*/obj/item/ammo_box/c10mm/jhp
-	name = "ammo box (10mm JHP)"
-	ammo_type = /obj/item/ammo_casing/c10mm/jhp
-	custom_materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 1000)
-*/
 
 /obj/item/ammo_box/c10mm/fire
 	name = "ammo box (10mm Incendiary)"
 	icon_state = "10mmbox"
 	max_ammo = 20
 
-/*/obj/item/ammo_box/c10mm/ap
-	name = "ammo box (10mm AP)"
-	ammo_type = /obj/item/ammo_casing/c10mm/ap
-	custom_materials = list(/datum/material/iron = 14000, /datum/material/titanium = 3000, /datum/material/blackpowder = 1000)
-*/
 
 /obj/item/ammo_box/c10mm/improvised
 	name = "bag with reloaded 10mm bullets"
@@ -385,11 +375,6 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 11000, /datum/material/blackpowder = 1500)
 
-/*/obj/item/ammo_box/m14mm/jhp
-	name = "ammo box (14mm JHP)"
-	ammo_type = /obj/item/ammo_casing/p14mm/jhp
-	custom_materials = list(/datum/material/iron = 11000)
-*/
 
 
 //Misc.

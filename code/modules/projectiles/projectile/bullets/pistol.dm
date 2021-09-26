@@ -83,7 +83,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	armour_penetration = 0.07
 	var/extra_speed = 500
 
-
 /obj/item/projectile/bullet/c9mm/simple //for simple mobs, separate to allow balancing
 	name = "9mm bullet"
 
@@ -124,13 +123,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	armour_penetration = 0.1
 	wound_bonus = 20
 
-/*/obj/item/projectile/bullet/c45/jhp
-	name = ".45 JHP bullet"
-	damage = 37
-	armour_penetration = 0
-	wound_bonus = -30
-	bare_wound_bonus = 30
-*/
 
 /obj/item/projectile/bullet/c45/op
 	name = ".45 +P bullet"
@@ -245,13 +237,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	wound_bonus = 28
 	bare_wound_bonus = -28
 
-/*/obj/item/projectile/bullet/mm14/jhp
-	name = "14mm JHP bullet"
-	damage = 52
-	armour_penetration = 0
-	wound_bonus = -42
-	bare_wound_bonus = 42
-*/
 
 
 //////////////////////
