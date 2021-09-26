@@ -5795,7 +5795,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "dyz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5818,7 +5818,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "dyQ" = (
 /turf/open/floor/f13{
@@ -6879,7 +6879,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "ecc" = (
 /obj/machinery/light/broken{
@@ -7203,7 +7203,7 @@
 	color = "#000000";
 	light_color = "#000000"
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "ekK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7431,7 +7431,7 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "esk" = (
 /obj/structure/chair/f13chair1{
@@ -7519,7 +7519,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "eux" = (
 /obj/structure/window/reinforced/spawner/north{
@@ -7551,7 +7551,7 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "evo" = (
 /obj/structure/chair/stool/retro,
@@ -9504,7 +9504,7 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "fBJ" = (
 /obj/machinery/gibber,
@@ -9706,7 +9706,7 @@
 /obj/structure/billboard/den{
 	pixel_y = 10
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "fIS" = (
 /obj/structure/handrail/g_central{
@@ -9716,7 +9716,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "fJp" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -9752,7 +9752,7 @@
 /area/f13/bunker)
 "fJV" = (
 /obj/effect/temp_visual/steam_release,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "fKf" = (
 /obj/machinery/atmospherics/pipe/simple,
@@ -10131,7 +10131,7 @@
 	},
 /area/f13/den)
 "fUv" = (
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "fUE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10604,7 +10604,7 @@
 /area/f13/brotherhood/rnd)
 "gkm" = (
 /obj/structure/lattice/catwalk,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "gkr" = (
 /obj/structure/falsewall/reinforced{
@@ -10741,7 +10741,7 @@
 "gol" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/blood/tracks,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "gow" = (
 /obj/structure/table,
@@ -11026,7 +11026,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "gxS" = (
 /obj/structure/bonfire/prelit,
@@ -11476,7 +11476,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "gIu" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -11519,7 +11519,7 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "gJz" = (
 /obj/machinery/workbench,
@@ -13422,6 +13422,11 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"hYy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/ore_box,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
 "hYS" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -13794,7 +13799,7 @@
 "ipj" = (
 /obj/structure/flora/rock/pile/largejungle,
 /obj/structure/flora/junglebush/b,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "ips" = (
 /obj/structure/chair/f13chair1,
@@ -14056,7 +14061,7 @@
 /area/f13/caves)
 "ixH" = (
 /obj/machinery/light/small,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "ixK" = (
 /obj/machinery/newscaster,
@@ -14612,7 +14617,7 @@
 /area/f13/bunker)
 "iVx" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "iVD" = (
 /obj/structure/wreck/trash/brokenvendor,
@@ -15454,14 +15459,14 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "jGP" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
 	icon_state = "skulls"
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "jGS" = (
 /obj/machinery/door/airlock/grunge{
@@ -15795,7 +15800,7 @@
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "jQK" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -16247,7 +16252,7 @@
 "kjW" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "kkc" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -16478,7 +16483,7 @@
 "kse" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "ksi" = (
 /obj/structure/rack,
@@ -17088,7 +17093,7 @@
 /area/f13/bunker)
 "kRI" = (
 /obj/structure/flora/junglebush/b,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "kRR" = (
 /obj/effect/turf_decal/stripes/red/line{
@@ -20874,7 +20879,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "nBp" = (
-/turf/open/indestructible/ground/outside/water{
+/turf/open/water{
 	density = 1;
 	desc = "Deep lake water, filled with who knows what...";
 	name = "lake water"
@@ -21496,7 +21501,7 @@
 /area/f13/bunker)
 "nWH" = (
 /obj/structure/flora/junglebush/large,
-/turf/open/indestructible/ground/outside/water{
+/turf/open/water{
 	density = 1;
 	desc = "Deep lake water, filled with who knows what...";
 	name = "lake water"
@@ -24678,7 +24683,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "qfx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24733,7 +24738,7 @@
 "qgX" = (
 /obj/structure/glowshroom/single,
 /obj/structure/campfire/barrel,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "qhk" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -26205,7 +26210,7 @@
 /area/f13/tunnel)
 "raL" = (
 /obj/structure/debris/v1,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "rbg" = (
 /turf/closed/wall/f13/supermart,
@@ -26971,7 +26976,7 @@
 /area/f13/den)
 "rDM" = (
 /obj/structure/debris/v2,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "rDO" = (
 /obj/structure/cable{
@@ -28567,7 +28572,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "sPQ" = (
 /obj/structure/curtain{
@@ -29058,7 +29063,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "tmh" = (
 /obj/effect/decal/cleanable/oil,
@@ -29528,7 +29533,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "tCt" = (
 /obj/structure/lattice{
@@ -31072,7 +31077,7 @@
 /area/f13/tunnel)
 "uMu" = (
 /obj/structure/flora/junglebush,
-/turf/open/indestructible/ground/outside/water{
+/turf/open/water{
 	density = 1;
 	desc = "Deep lake water, filled with who knows what...";
 	name = "lake water"
@@ -31297,7 +31302,7 @@
 "uYH" = (
 /obj/structure/flora/junglebush,
 /obj/structure/bus_door,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "uYL" = (
 /obj/structure/chair/comfy/shuttle{
@@ -31625,7 +31630,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "vkp" = (
 /obj/structure/punching_bag,
@@ -32421,7 +32426,7 @@
 /area/f13/ncr)
 "vSH" = (
 /obj/structure/flora/junglebush,
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "vTm" = (
 /obj/structure/chair/comfy/shuttle{
@@ -32823,7 +32828,7 @@
 /area/f13/tunnel)
 "whI" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/indestructible/ground/outside/water{
+/turf/open/water{
 	density = 1;
 	desc = "Deep lake water, filled with who knows what...";
 	name = "lake water"
@@ -32928,9 +32933,11 @@
 	},
 /area/f13/brotherhood/rnd)
 "wkZ" = (
-/obj/structure/ore_box,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/building)
+/obj/effect/decal/remains/human,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/tunnel)
 "wlf" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/hos,
@@ -33137,7 +33144,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/den)
 "wvy" = (
 /obj/structure/table/wood/fancy/black,
@@ -33191,7 +33198,7 @@
 /obj/structure/debris/v3{
 	layer = 2
 	},
-/turf/open/indestructible/ground/outside/water{
+/turf/open/water{
 	density = 1;
 	desc = "Deep lake water, filled with who knows what...";
 	name = "lake water"
@@ -34220,7 +34227,7 @@
 	},
 /area/f13/brotherhood/rnd)
 "xmk" = (
-/turf/open/indestructible/ground/outside/water,
+/turf/open/water,
 /area/f13/caves)
 "xml" = (
 /obj/effect/decal/cleanable/dirt,
@@ -65657,7 +65664,7 @@ uoO
 uoO
 tur
 miI
-miI
+wkZ
 weW
 weW
 tur
@@ -66430,7 +66437,7 @@ rwZ
 miI
 weW
 weW
-boI
+weW
 boI
 boI
 boI
@@ -66688,10 +66695,10 @@ uwC
 weW
 weW
 boI
-wkZ
+boI
 bcX
 bdH
-bkh
+hYy
 bke
 bkE
 boI
