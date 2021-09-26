@@ -19,7 +19,6 @@
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/transparent/openspace",
-			"Dungeons": true,
 			"Up": 1,
 			"Linkage" : "Cross"
 		},
