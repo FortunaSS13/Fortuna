@@ -77,12 +77,10 @@
 	},
 /area/f13/wasteland)
 "acj" = (
-/obj/vehicle/ridden/wheelchair{
-	dir = 4
+/obj/structure/stairs/west{
+	alpha = 0
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 5
-	},
+/turf/open/floor/plasteel/stairs/left,
 /area/f13/village)
 "acn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -972,8 +970,11 @@
 	},
 /area/f13/building)
 "auj" = (
-/mob/living/simple_animal/hostile/handy/protectron,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/bed/roller,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
 /area/f13/village)
 "aut" = (
 /obj/structure/tires/five{
@@ -5286,7 +5287,7 @@
 	max_integrity = 200
 	},
 /obj/structure/barricade/bars,
-/turf/open/floor/plating,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "cvY" = (
 /obj/machinery/vending/cigarette,
@@ -9740,11 +9741,14 @@
 	pixel_x = 16;
 	pixel_y = -16
 	},
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
+	},
+/obj/item/soap/homemade,
+/obj/structure/curtain,
+/obj/machinery/shower{
+	dir = 4;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty";
@@ -9756,7 +9760,7 @@
 /obj/structure/window/fulltile/house{
 	max_integrity = 200
 	},
-/turf/open/floor/plating,
+/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "eCM" = (
 /obj/structure/barricade/sandbags,
@@ -10307,7 +10311,6 @@
 	},
 /area/f13/building)
 "eOP" = (
-/obj/item/soap/homemade,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty";
 	name = "grimy tile"
@@ -12964,6 +12967,16 @@
 	name = "metal plating"
 	},
 /area/f13/wasteland)
+"fWc" = (
+/obj/structure/barricade/bars,
+/obj/structure/window/fulltile/house{
+	max_integrity = 200
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/redchess{
+	icon_state = "redrustychess";
+	name = "tile"
+	},
+/area/f13/building)
 "fWj" = (
 /obj/item/ammo_casing/caseless{
 	dir = 6
@@ -14497,6 +14510,16 @@
 	icon_state = "verticaloutermain2"
 	},
 /area/f13/wasteland)
+"gCq" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/followers)
 "gCw" = (
 /obj/structure/car/rubbish1,
 /turf/closed/wall/r_wall/rust,
@@ -21201,6 +21224,9 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
+	},
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty";
@@ -28082,6 +28108,7 @@
 	pixel_x = -6;
 	pixel_y = 32
 	},
+/obj/structure/ladder,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "mJb" = (
@@ -31313,10 +31340,10 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/bed/roller,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 10
+/obj/structure/stairs/west{
+	alpha = 0
 	},
+/turf/open/floor/plasteel/stairs/left,
 /area/f13/village)
 "omU" = (
 /obj/structure/sink/kitchen{
@@ -42827,10 +42854,11 @@
 	},
 /area/f13/ncr)
 "tLD" = (
-/mob/living/simple_animal/hostile/handy/protectron,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+/obj/machinery/light,
+/obj/vehicle/ridden/wheelchair{
 	dir = 4
 	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
 /area/f13/village)
 "tLE" = (
 /obj/structure/closet,
@@ -49562,6 +49590,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"wNb" = (
+/obj/structure/ladder,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "wNn" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -86939,7 +86971,7 @@ ydO
 ydO
 mvv
 hIW
-iFn
+gCq
 iJR
 jKe
 jJn
@@ -87446,7 +87478,7 @@ nMl
 fBO
 bXm
 gaw
-eCK
+fWc
 mvv
 ydO
 ydO
@@ -87703,7 +87735,7 @@ fmN
 bXm
 ppd
 gaK
-eCK
+fWc
 mvv
 mHj
 ydO
@@ -88213,9 +88245,9 @@ mHj
 ydO
 kEI
 kEI
-eCK
+fWc
 kEI
-eCK
+fWc
 kEI
 kEI
 mHj
@@ -96655,7 +96687,7 @@ sPA
 pzL
 nzv
 ccZ
-auj
+pzL
 imb
 kqn
 pcG
@@ -96907,7 +96939,7 @@ qjK
 xHH
 kSQ
 bfD
-tLD
+qjK
 wKL
 bbn
 ugY
@@ -98189,8 +98221,8 @@ pcG
 pcG
 pcG
 pcG
-pcG
-pcG
+acj
+acj
 pcG
 lWM
 wZt
@@ -99211,7 +99243,7 @@ hwC
 hwC
 ieQ
 skq
-kqn
+auj
 pcG
 kNf
 eRn
@@ -99468,7 +99500,7 @@ pcG
 pcG
 ieQ
 skq
-vfA
+tLD
 pcG
 pcG
 pcG
@@ -108834,7 +108866,7 @@ fyf
 jqe
 lhW
 xXm
-xXm
+wNb
 xXm
 pBp
 mvv
