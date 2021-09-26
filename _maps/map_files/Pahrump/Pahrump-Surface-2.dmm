@@ -17017,7 +17017,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "hHk" = (
-/obj/item/ammo_casing/c9mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "horizontaloutermain1"
