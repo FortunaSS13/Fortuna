@@ -11,7 +11,7 @@
 	desc = "A .308 sporting bullet casing."
 	projectile_type = /obj/item/projectile/bullet/a762/sport
 
-/obj/item/ammo_casing/a762/ap
+/*/obj/item/ammo_casing/a762/ap
 	name = "7.62 AP bullet casing"
 	projectile_type = /obj/item/projectile/bullet/a762/ap
 
@@ -22,6 +22,7 @@
 /obj/item/ammo_casing/a762/match
 	name = "7.62 match bullet casing"
 	projectile_type = /obj/item/projectile/bullet/a762/match
+*/
 
 // 5.56mm
 /obj/item/ammo_casing/a556
@@ -30,7 +31,7 @@
 	caliber = "a556"
 	projectile_type = /obj/item/projectile/bullet/a556
 
-/obj/item/ammo_casing/a556/jhp
+/*/obj/item/ammo_casing/a556/jhp
 	name = "5.56 JHP bullet casing"
 	projectile_type = /obj/item/projectile/bullet/a556/jhp
 
@@ -41,6 +42,7 @@
 /obj/item/ammo_casing/a556/match
 	name = "5.56 match bullet casing"
 	projectile_type = /obj/item/projectile/bullet/a556/match
+*/
 
 /obj/item/ammo_casing/a556/sport //.223
 	name = ".223 bullet casing"

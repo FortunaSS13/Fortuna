@@ -5,13 +5,14 @@
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/a357
 
-/obj/item/ammo_casing/a357/jhp
+/*/obj/item/ammo_casing/a357/jhp
 	name = ".357 JHP bullet casing"
 	desc = "A .357 JHP bullet casing."
 
 /obj/item/ammo_casing/a357/jfp
 	name = ".357 JFP bullet casing"
 	desc = "A .357 JFP bullet casing."
+*/
 
 // .38 special
 /obj/item/ammo_casing/c38
@@ -27,7 +28,7 @@
 	caliber = "44"
 	projectile_type = /obj/item/projectile/bullet/m44
 
-/obj/item/ammo_casing/m44/jhp
+/*/obj/item/ammo_casing/m44/jhp
 	name = ".44 magnum JHP bullet casing"
 	desc = "A .44 magnum jacketed hollow point bullet casing."
 	projectile_type = /obj/item/projectile/bullet/m44/jhp
@@ -36,6 +37,7 @@
 	name = ".44 magnum SWC bullet casing"
 	desc = "A .44 magnum semi-wadcutter bullet casing."
 	projectile_type = /obj/item/projectile/bullet/m44/swc
+*/
 
 // .45-70 Gov't
 /obj/item/ammo_casing/c4570
@@ -44,7 +46,7 @@
 	caliber = "4570"
 	projectile_type = /obj/item/projectile/bullet/c4570
 
-/obj/item/ammo_casing/c4570/jhp
+/*/obj/item/ammo_casing/c4570/jhp
 	name = ".45-70 JHP bullet casing"
 	desc = "A .45-70 jacketed hollow point bullet casing."
 	projectile_type = /obj/item/projectile/bullet/c4570/jhp
@@ -53,6 +55,7 @@
 	name = ".45-70 SWC bullet casing"
 	desc = "A .45-70 semi-wadcutter bullet casing."
 	projectile_type = /obj/item/projectile/bullet/c4570/swc
+*/
 
 /obj/item/ammo_casing/c4570/explosive
 	name = ".45-70 explosive bullet casing"

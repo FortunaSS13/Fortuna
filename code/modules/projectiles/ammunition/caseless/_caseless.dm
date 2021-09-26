@@ -29,7 +29,7 @@
 /obj/item/ammo_casing/caseless/needle/attackby()
 	return
 */
-/obj/item/ammo_casing/caseless/needle/ap
+/*/obj/item/ammo_casing/caseless/needle/ap
 	name = "A needler round."
 	desc = "A dart for use in needler pistols."
 	icon_state = "apneedler-casing"
@@ -41,6 +41,7 @@
 	desc = "A dart for use in needler pistols."
 	caliber = "ultraneedle"
 	projectile_type = /obj/item/projectile/bullet/needle/ultra
+*/
 
 /obj/item/ammo_casing/caseless/musketball
 	name = "Musketball"
