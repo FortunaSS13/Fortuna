@@ -22070,8 +22070,8 @@
 /area/f13/wasteland)
 "jNr" = (
 /mob/living/simple_animal/hostile/radroach{
-	desc = "The most trustworthy ally of the sheriff. This tough bug has survived dozens of attemprs to squish 'em. ";
-	faction = list("Dog");
+	desc = "The most trustworthy ally of the sheriff. This tough bug has survived dozens of attempts to squish 'em. ";
+	faction = list("dog");
 	health = 60;
 	name = "Deputy Bug"
 	},
@@ -48441,6 +48441,7 @@
 "whd" = (
 /mob/living/simple_animal/hostile/handy/robobrain{
 	desc = "A next-gen cybor developed by General Atomic International. This one has police markings";
+	extra_projectiles = 2;
 	name = "police robobrain"
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -108066,7 +108067,7 @@ jQC
 bex
 wQm
 sYV
-bkY
+sYV
 sYV
 sYV
 bVT
