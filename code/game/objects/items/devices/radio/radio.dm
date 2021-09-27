@@ -134,7 +134,7 @@
 	return GLOB.inventory_state
 
 /obj/item/radio/proc/kill_switch()
-	playsound(src, 'sound/machines/twobeep.ogg', 100, 1)
+	playsound(src, 'sound/machines/buzz-sigh.ogg', 100, 1)
 	kill_switched = TRUE
 	linked_mob = null
 
