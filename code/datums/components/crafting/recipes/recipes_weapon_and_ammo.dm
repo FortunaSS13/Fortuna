@@ -190,7 +190,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
-
 /datum/crafting_recipe/flamerfuel
 	name = "Flamethrower Fuel"
 	result = /obj/item/ammo_box/jerrycan
