@@ -46,7 +46,6 @@
 	var/factionized = FALSE
 	var/linked_faction = FALSE // Which faction the radio is linked to.
 	var/mob/living/carbon/linked_mob = null // Which mob the radio is checked out to.
-	var/unique_id = null // Assigned by radio check-out console.
 
 /obj/item/radio/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] starts bouncing [src] off [user.p_their()] head! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -85,6 +84,15 @@
 	recalculateChannels()
 
 /obj/item/radio/Destroy()
+	if(factionized)
+		LAZYREMOVE(GLOB.faction_radios, src)
+		switch(linked_faction)
+			if("NCR")
+				LAZYREMOVE(GLOB.ncr_radios, src)
+			if("Legion")
+				LAZYREMOVE(GLOB.legion_radios, src)
+			if("Brotherhood of Steel")
+				LAZYREMOVE(GLOB.bos_radios, src)
 	remove_radio_all(src) //Just to be sure
 	QDEL_NULL(wires)
 	QDEL_NULL(keyslot)
