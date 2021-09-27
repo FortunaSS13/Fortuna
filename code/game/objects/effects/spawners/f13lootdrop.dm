@@ -367,9 +367,7 @@
 				/obj/effect/spawner/bundle/f13/armor/t45b,
 				/obj/effect/spawner/bundle/f13/armor/riot,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
-				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark,
-				/obj/effect/spawner/bundle/f13/armor/raiderpa,
-				/obj/effect/spawner/bundle/f13/armor/hotrodpa
+				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
 				)
 
 /obj/effect/spawner/bundle/f13/armor/t45b
@@ -512,8 +510,7 @@
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
 				/obj/item/storage/pill_bottle/chem_tin/radx,
 				/obj/item/reagent_containers/blood/radaway,
-				/obj/item/storage/pill_bottle/chem_tin/mentats,
-				/obj/item/storage/pill_bottle/chem_tin/fixer
+				/obj/item/storage/pill_bottle/chem_tin/mentats
 				)
 
 /obj/effect/spawner/lootdrop/f13/medical/wasteland
@@ -527,7 +524,6 @@
 				/obj/item/storage/pill_bottle/chem_tin/radx,
 				/obj/item/reagent_containers/blood/radaway,
 				/obj/item/storage/pill_bottle/chem_tin/mentats,
-				/obj/item/storage/pill_bottle/chem_tin/fixer,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
 				/obj/item/reagent_containers/medspray/styptic,
 				/obj/item/reagent_containers/medspray/silver_sulf,
@@ -628,7 +624,7 @@
 				/obj/item/melee/unarmed/lacerator,
 				/obj/item/melee/unarmed/maceglove,
 				/obj/item/melee/unarmed/punchdagger,
-				/obj/item/twohanded/baseball/golfclub/louisville,
+				/obj/item/twohanded/baseball/louisville,
 				/obj/item/shield/riot
 				)
 
@@ -752,7 +748,7 @@
 /obj/effect/spawner/bundle/f13/varmint
 	name = "varmint rifle and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/rifle/mag/varmint,
+				/obj/item/gun/ballistic/automatic/varmint,
 				/obj/item/ammo_box/magazine/m556/rifle
 				)
 
@@ -854,10 +850,10 @@
 	)
 
 /obj/effect/spawner/bundle/f13/guns/commando
-	name = "commando carbine and ammo spawner"
+	name = "de lisle carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/rifle/mag/commando,
-				/obj/item/ammo_box/magazine/m45exp
+				/obj/item/gun/ballistic/automatic/delisle,
+				/obj/item/ammo_box/magazine/m9mmds
 	)
 
 /obj/effect/spawner/bundle/f13/mk23
@@ -1264,8 +1260,8 @@
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/rifle/hunting/paciencia,
 				/obj/item/gun/energy/laser/solar,
-				/obj/item/gun/energy/laser/plasma/alien,
-				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
+				/obj/item/gun/energy/laser/plasma/pistol/alien,
+				/obj/item/gun/ballistic/automatic/varmint/ratslayer
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random
@@ -1910,3 +1906,4 @@
 			/obj/effect/spawner/bundle/testi = 10,
 			/obj/effect/spawner/bundle/testj = 10,
 			)
+

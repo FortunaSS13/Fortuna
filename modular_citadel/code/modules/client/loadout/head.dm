@@ -83,6 +83,7 @@
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Lieutenant",
+							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -102,6 +103,7 @@
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Lieutenant",
+							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -119,6 +121,7 @@
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Lieutenant",
+							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -136,6 +139,7 @@ datum/gear/head/steelpot_bandolier
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Lieutenant",
+							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -144,17 +148,6 @@ datum/gear/head/steelpot_bandolier
 						)
 
 
-
-datum/gear/head/steelpot_mp
-	name = "NCR MP helmet"
-	path = /obj/item/clothing/head/f13/ncr/steelpot_mp
-	cost = 2
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Sergeant",
-							"NCR Corporal"
-						)
 
 /datum/gear/head/ncr_slouch
 	name = "NCR slouch hat"
@@ -166,6 +159,7 @@ datum/gear/head/steelpot_mp
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Lieutenant",
+							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -185,6 +179,7 @@ datum/gear/head/steelpot_mp
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
 							"NCR Lieutenant",
+							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
@@ -193,21 +188,6 @@ datum/gear/head/steelpot_mp
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
-
-/datum/gear/head/ncr_recon
-	name = "NCR recon beret"
-	path = /obj/item/clothing/head/beret/ncr_recon
-	cost = 3
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Off-Duty")
-
-/datum/gear/head/ncr_scout
-	name = "NCR scout beret"
-	path = /obj/item/clothing/head/beret/ncr_scout
-	cost = 3
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Ranger",
-							"NCR Off-Duty")
 
 /datum/gear/head/ncr_campaign
 	name = "NCR campaign hat"

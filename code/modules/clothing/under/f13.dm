@@ -506,6 +506,18 @@
 	icon_state = "Biker"
 	item_state = "Biker"
 
+/obj/item/clothing/under/f13/chinasuitcosmetic
+	name = "dysfunctional chinese stealth suit"
+	desc = "(II) A matte grey set of ultralight composite above a carefully padded noise-absorbant suit. This unit, used by Chinese special forces during the great war, looks to have had it's fusion matrix removed, and is all but a fashion statement now."
+	icon_state = "stealthsuit"
+	item_state = "stealthsuit"
+	
+/obj/item/clothing/under/f13/bearvest //This is being used as Donator gear, check as to whether MidgetDragon still donating before using for anything else.
+	name = "Great Bear Vest"
+	desc = "A casual set of ripped jeans and a duster. The duster seems to have a familiar symbol spray painted on the back. The inside of the duster seems to have the letters MEB sewn on."
+	icon_state = "bearvest"
+	item_state = "bearvest"
+	
 /* //slave rags, crafted from 2 cloth- uncomment when sprites available
 /obj/item/clothing/under/f13/slaverags
 	name = "slave rags"
@@ -1520,3 +1532,9 @@
 	item_state = "scoutclothes"
 	item_color = "scoutclothes"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+
+/obj/item/clothing/under/f13/densuit
+	name = "the den outfit"
+	desc = "A dark grey, and finely pressed suit, complete with kneepads and a suspiciously golden silk shirt, only the best."
+	icon_state = "den_suit"
+	item_state = "den_suit"

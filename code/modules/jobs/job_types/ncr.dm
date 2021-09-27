@@ -151,7 +151,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP)
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -347,6 +347,77 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/trench = 1,
 		)
 
+/datum/job/ncr/f13representative
+	title = "NCR Representative"
+	flag = F13REP
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, your company or own enterprise are met through thick and thin, and have been supplied with ample amounts of money to do so."
+	supervisors = "The Captain and the NCR"
+	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
+	outfit = /datum/outfit/job/ncr/f13representative
+
+	loadout_options = list(
+		/datum/outfit/loadout/repbrahminbaron,
+		/datum/outfit/loadout/repambassador,
+		/datum/outfit/loadout/repexecutive
+		)
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/ncr
+			),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/ncr
+			)
+		)
+
+/datum/outfit/job/ncr/f13representative
+	name = "NCR Representative"
+	uniform = /obj/item/clothing/under/f13/ncr/ncr_dress
+	jobtype	= /datum/job/ncr/f13representative
+	id = /obj/item/card/id/dogtag/ncrrep
+	neck = /obj/item/storage/belt/holster/legholster
+	backpack = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/ammo_box/c45rev = 2,
+		/obj/item/storage/bag/money/small/ncr = 2,
+		/obj/item/storage/survivalkit_aid = 1
+		)
+
+/datum/outfit/loadout/repbrahminbaron
+	name = "Brahmin Baron"
+	suit = /obj/item/clothing/under/suit/burgundy
+	shoes = /obj/item/clothing/shoes/f13/cowboy
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
+
+/datum/outfit/loadout/repambassador
+	name = "Ambassador"
+	suit = /obj/item/clothing/under/rank/security/detective/grey
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1,
+		/obj/item/clothing/accessory/waistcoat = 1,
+		/obj/item/clothing/suit/toggle/lawyer/black = 1,
+		/obj/item/storage/briefcase
+		)
+
+/datum/outfit/loadout/repexecutive
+	name = "Executive"
+	suit = /obj/item/clothing/under/suit_jacket/tan
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/helmet/f13/rustedcowboyhat
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
 
 ///////////////
 /// Rangers ///
@@ -810,7 +881,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/outfit/loadout/corporaldesignatedmarksman
 	name = "Designated marksman"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
-	head = /obj/item/clothing/head/beret/ncr_recon/worn
+	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	neck = /obj/item/storage/belt/holster/legholster
 	suit_store = /obj/item/gun/ballistic/rifle/hunting/remington
 	backpack_contents = list(
@@ -1050,7 +1121,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/utilityvest
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
-		/obj/item/gun/ballistic/rifle/mag/varmint = 1,
+		/obj/item/gun/ballistic/automatic/varmint = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
 		/obj/item/shovel/trench = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
@@ -1118,7 +1189,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/cowboy
 	gloves = /obj/item/clothing/gloves/color/brown
 	id = /obj/item/card/id/dogtag/town/ncr
-	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
+	l_hand = /obj/item/gun/ballistic/automatic/varmint
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=2,
 		)

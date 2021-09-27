@@ -249,6 +249,30 @@
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
 
+//Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 5 rounds internal, short barrel (-2 damage, -100 velocity, -2 melee, less slowdown), faster firing rate
+/obj/item/gun/ballistic/rifle/enfield		
+	name = "Lee-Enfield rifle"
+	desc = "A british rifle sometimes known as the SMLE. It seems to have been re-chambered in .308."
+	icon_state = "enfield2"
+	item_state = "308"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
+	extra_damage = 4
+	extra_speed = 500
+	fire_delay = 10
+	slowdown = 0.35
+	force = 16
+	can_scope = TRUE
+	scope_state = "scope_mosin"
+	scope_x_offset = 3
+	scope_y_offset = 13
+	can_bayonet = TRUE
+	bayonet_state = "bayonet"
+	knife_x_offset = 22
+	knife_y_offset = 21
+	pump_sound = 'sound/weapons/boltpump.ogg'
+	fire_sound = 'sound/f13weapons/boltfire.ogg'
+
+
 
 
 /////////////////////////////////////
@@ -290,63 +314,6 @@
 
 /obj/item/gun/ballistic/rifle/mag/update_icon_state()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
-
-
-//Varmint rifle								Keywords: 5.56, Bolt-action, 10/20/30 round magazine, Reduced damage
-/obj/item/gun/ballistic/rifle/mag/varmint
-	name = "varmint rifle"
-	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
-	icon_state = "varmint"
-	item_state = "varmintrifle"
-	force = 18
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	fire_delay = 9
-	spread = 0
-	extra_damage = 6
-	can_bayonet = FALSE
-	scope_state = "scope_short"
-	scope_x_offset = 4
-	scope_y_offset = 12
-	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 31
-	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
-
-
-//Commando carbine							Keywords: BoS, .45 ACP, Bolt-action, 12 round magazine, Long barrel, Suppressed
-/obj/item/gun/ballistic/rifle/mag/commando
-	name = "commando carbine"
-	desc = "A integrally suppressed bolt action carbine, the few existing examples of this rare gun are mostly in Brotherhood hands. Uses .45 socom magazines."
-	icon_state = "commando"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m45exp
-	extra_damage = 9
-	fire_delay = 8
-	spread = 0
-	can_unsuppress = FALSE
-	suppressed = 1
-	scope_state = "scope_medium"
-	scope_x_offset = 6
-	scope_y_offset = 14
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-
-
-//Ratslayer									Keywords: UNIQUE, 5.56, Bolt-action, 10/20/30 round magazine, Suppressed, Scoped, Extra damage +3
-/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
-	name = "Ratslayer"
-	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
-	icon_state = "ratslayer"
-	item_state = "ratslayer"
-	extra_damage = 10
-	extra_penetration = 0.1
-	suppressed = 1
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_scope = FALSE
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 
 //Anti-Material Rifle						Keywords: .50, Bolt-action, 8 round magazine

@@ -549,6 +549,10 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "NCR Corporal"
 	icon_state = "NCR Trooper"
 
+/obj/effect/landmark/start/f13/ncrrep
+	name = "NCR Representative"
+	icon_state = "NCR Trooper"
+
 /obj/effect/landmark/start/f13/ncrmp
 	name = "NCR Military Police"
 	icon_state = "NCR Trooper"
@@ -732,6 +736,9 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/mayor
 	name = "Mayor"
+
+/obj/effect/landmark/start/f13/secretary
+	name = "Secretary"
 
 /obj/effect/landmark/start/f13/sheriff
 	name = "Sheriff"

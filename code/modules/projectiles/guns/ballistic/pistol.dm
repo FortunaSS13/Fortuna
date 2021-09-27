@@ -85,6 +85,18 @@
 	semi_auto = FALSE
 	can_automatic = FALSE
 
+//Crusader pistol
+/obj/item/gun/ballistic/automatic/pistol/n99/crusader
+	name = "\improper Crusader pistol"
+	desc = "A large-framed N99 pistol emblazoned with the colors and insignia of the Brotherhood of Steel. It feels heavy in your hand."
+	extra_penetration = 0.1
+	extra_damage = 2
+	force = 18
+	icon_state = "crusader"
+	item_state = "crusader"
+	can_attachments = FALSE
+	can_automatic = FALSE
+
 
 //Type 17								Keywords: 10mm, Semi-auto, 12/24 round magazine. Special modifiers: damage +1, spread +1
 /obj/item/gun/ballistic/automatic/pistol/type17
@@ -142,7 +154,7 @@
 	desc = "A modified Sig P225 salvaged from the boneyard. Boasts a faster rate of fire and laser-like accuracy. It has 'To Protect and Serve' etched on the side."
 	w_class = WEIGHT_CLASS_SMALL
 	extra_damage = 5
-	fire_delay = 2.6
+	fire_delay = 1.7
 	extra_speed = 100
 	spread = 0
 
@@ -309,6 +321,7 @@
 	desc = "A Swiss SIG-Sauer 14mm handgun, powerful but a little inaccurate"
 	icon_state = "pistol14"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
+	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	fire_delay = 5
 	recoil = 0.25
