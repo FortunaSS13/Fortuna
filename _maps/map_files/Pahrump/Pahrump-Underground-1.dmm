@@ -15191,10 +15191,8 @@
 /area/f13/brotherhood/archives)
 "jtx" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/rack,
-/obj/item/twohanded/sledgehammer/supersledge,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot_red,
+/obj/machinery/radioterminal/bos,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -19480,6 +19478,7 @@
 /obj/item/storage/belt/utility/full,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot_red,
+/obj/item/twohanded/sledgehammer/supersledge,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},

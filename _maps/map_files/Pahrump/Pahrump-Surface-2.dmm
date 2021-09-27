@@ -6776,6 +6776,10 @@
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/f13/building)
+"dib" = (
+/obj/machinery/radioterminal/legion,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "did" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -23004,6 +23008,14 @@
 	name = "metal plating"
 	},
 /area/f13/building)
+"kgc" = (
+/obj/effect/turf_decal/stripes/white/box,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/radioterminal/ncr,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "kgn" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -63077,7 +63089,7 @@ hOl
 hOl
 koD
 rhr
-uVw
+kgc
 xdt
 xdt
 uVw
@@ -115964,7 +115976,7 @@ vEN
 kAJ
 ezv
 seY
-seY
+dib
 vfn
 iDk
 hom

@@ -42,6 +42,12 @@
 	var/const/FREQ_LISTENING = 1
 	//FREQ_BROADCASTING = 2
 
+	var/kill_switched = FALSE // If true, the radio is essentially useless.
+	var/factionized = FALSE
+	var/linked_faction = FALSE // Which faction the radio is linked to.
+	var/mob/living/carbon/linked_mob = null // Which mob the radio is checked out to.
+	var/unique_id = null // Assigned by radio check-out console.
+
 /obj/item/radio/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] starts bouncing [src] off [user.p_their()] head! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS
@@ -95,6 +101,15 @@
 
 	for(var/ch_name in channels)
 		secure_radio_connections[ch_name] = add_radio(src, GLOB.radiochannels[ch_name])
+	if(factionized)
+		LAZYADD(GLOB.faction_radios, src)
+		switch(linked_faction)
+			if("NCR")
+				LAZYADD(GLOB.ncr_radios, src)
+			if("Legion")
+				LAZYADD(GLOB.legion_radios, src)
+			if("Brotherhood of Steel")
+				LAZYADD(GLOB.bos_radios, src)
 
 /obj/item/radio/ComponentInitialize()
 	. = ..()
@@ -109,6 +124,11 @@
 
 /obj/item/radio/ui_state(mob/user)
 	return GLOB.inventory_state
+
+/obj/item/radio/proc/kill_switch()
+	playsound(src, 'sound/machines/twobeep.ogg', 100, 1)
+	kill_switched = TRUE
+	linked_mob = null
 
 /obj/item/radio/ui_interact(mob/user, datum/tgui/ui, datum/ui_state/state)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -202,6 +222,10 @@
 /obj/item/radio/proc/talk_into_impl(atom/movable/M, message, channel, list/spans, datum/language/language)
 	if(!on)
 		return // the device has to be on
+	if(kill_switched)
+		return
+	if(factionized && !linked_mob)
+		return
 	if(!M || !message)
 		return
 	if(wires.is_cut(WIRE_TX))  // Permacell and otherwise tampered-with radios
@@ -302,6 +326,10 @@
 	// deny checks
 	if (!on || !listening || wires.is_cut(WIRE_RX))
 		return FALSE
+	if(kill_switched)
+		return FALSE
+	if(factionized && !linked_mob)
+		return
 	if (freq == FREQ_SYNDICATE && !syndie)
 		return FALSE
 	if (freq == FREQ_CENTCOM)
@@ -328,6 +356,12 @@
 		. += "<span class='notice'>It can be attached and modified.</span>"
 	else
 		. += "<span class='notice'>It cannot be modified or attached.</span>"
+	if(kill_switched)
+		. += span_warning("The radio has been disabled remotely and no longer functions!")
+	if(linked_faction)
+		. += span_notice("The radio is linked to [linked_faction]!")
+	if(factionized && !linked_mob && !kill_switched)
+		. += span_warning("This radio will not work without being checked-out at a radio terminal belonging to [linked_faction] first!")
 
 /obj/item/radio/attackby(obj/item/W, mob/user, params)
 	add_fingerprint(user)
