@@ -742,7 +742,6 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/m1n
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
-		/obj/item/m2flamethrowertank = 1,
 		)
 
 
