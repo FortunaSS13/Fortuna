@@ -5,18 +5,17 @@
 
 	telegraph_duration = 300
 	telegraph_overlay = "snow_storm"
-	telegraph_message = "<span class='userdanger'>Rain is coming to the area, bringing purity and sustenance to all life. Rejoice!</span>"
-	telegraph_sound = 'sound/ambience/acidrain_start.ogg'
+	telegraph_message = "<span class='notice'><font size=2>You hear a rainstorm gathering on the horizon</font></span>"
+	telegraph_sound = 'sound/weather/thunder.ogg' //credit: boomlibrary
 
-	weather_message = "<span class='userdanger'><i>Rain pours down around you!</i></span>"
+	weather_message = "<span class='notice'><i>You hear the crack of thunder as the rainstorm grows.</i></span>"
 	weather_overlay = "rain"
 	weather_duration_lower = 1200
 	weather_duration_upper = 2400
-	weather_sound = 'sound/ambience/acidrain_mid.ogg'
+	weather_sound = 'sound/weather/rain.ogg' //credit: soundjay.com
 
 	end_duration = 100
-	end_message = "<span class='boldannounce'>The downpour gradually slows to a light shower. The rain is over.</span>"
-	end_sound = 'sound/ambience/acidrain_end.ogg'
+	end_message = "<span class='notice'><font size=2>You start to hear the last of the rain as the sky begins to clear up.</font></span>"
 
 	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
 	protected_areas = list(/area/shuttle)
