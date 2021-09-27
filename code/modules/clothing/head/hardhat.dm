@@ -9,7 +9,7 @@
 	light_color = "#FFCC66"
 	light_on = FALSE
 	var/hat_type = "yellow" //Determines used sprites: hardhat[light_on]_[hat_type] and hardhat[light_on]_[hat_type]2 (lying down sprite)
-	armor = list("tier" = 2,"energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50)
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 20,"energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50)
 	flags_inv = 0
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	resistance_flags = FIRE_PROOF
