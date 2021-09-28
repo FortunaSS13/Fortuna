@@ -42,8 +42,7 @@
 				/obj/effect/spawner/bundle/f13/femsuit,
 	)
 
-/obj/effect/spawner/bundle/f13/worker	loot = list(
-
+/obj/effect/spawner/bundle/f13/worker
 	name = "overalls and flat cap"
 	items = list(
 				/obj/item/clothing/under/overalls,
