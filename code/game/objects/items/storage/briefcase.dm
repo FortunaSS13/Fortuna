@@ -76,7 +76,7 @@
 	name = "Oasis operating funds"
 	desc = "A box filled with both local and foreign currency, to cover unexpected purchases"
 
-// Secretary spawns with all 3 types of money for negotatiating with either side.
+// Secretary spawns with all 3 types of money for negotatiating with any side. ~225 caps worth
 /obj/item/storage/box/funds/PopulateContents()
 		new /obj/item/stack/f13Cash/random/ncr/med(src)
 		new /obj/item/stack/f13Cash/random/denarius/med(src)
