@@ -42,6 +42,7 @@ Mayor
 			/datum/job/oasis,
 			/datum/job/wasteland/f13mobboss,
 		),
+	)
 
 /datum/outfit/job/den/f13mayor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
