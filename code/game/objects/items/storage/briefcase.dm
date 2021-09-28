@@ -70,6 +70,17 @@
 	new /obj/item/paper_bin/bundlenatural(src)
 	new /obj/item/clothing/under/suit/black/skirt(src)
 	new /obj/item/pen(src)
+	new /obj/item/storage/box/funds
+	
+/obj/item/storage/box/funds
+	name = "Oasis operating funds"
+	desc = "A box filled with both local and foreign currency, to cover unexpected purchases"
+
+// Secretary spawns with all 3 types of money for negotatiating with either side.
+/obj/item/storage/box/funds/PopulateContents()
+		new /obj/item/stack/f13Cash/random/ncr/med(src)
+		new /obj/item/stack/f13Cash/random/denarius/med(src)
+		new /obj/item/stack/f13Cash/random/ncr/med(src)
 
 /obj/item/storage/box/lawyer
 	name = "Box of lawyer tools"
