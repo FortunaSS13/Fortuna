@@ -219,7 +219,6 @@
 	client << output(message, is_browser \
 		? "[id]:update" \
 		: "[id].browser:update")
-	CHECK_TICK
 
 /**
  * public
