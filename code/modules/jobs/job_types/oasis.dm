@@ -42,8 +42,6 @@ Mayor
 			/datum/job/oasis,
 			/datum/job/wasteland/f13mobboss,
 		),
-	)	backpack_contents = list(
-
 
 /datum/outfit/job/den/f13mayor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
