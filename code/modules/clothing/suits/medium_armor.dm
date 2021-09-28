@@ -336,21 +336,21 @@
 
 /obj/item/clothing/suit/armored/medium/combatmk2/knight
 	name = "brotherhood armor"
-	desc = "(V) A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 20, "fire" = 25, "acid" = 10)
 
 /obj/item/clothing/suit/armored/medium/combatmk2/senknight
 	name = "brotherhood senior knight armor"
-	desc = "(VI) A combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knight. It bears a silver stripe."
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knight. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 25, "acid" = 10)
 
 /obj/item/clothing/suit/armored/medium/combatmk2/headknight
 	name = "brotherhood knight-captain armor"
-	desc = "(VI) A combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 15, "rad" = 25, "fire" = 30, "acid" = 15)

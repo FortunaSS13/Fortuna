@@ -249,6 +249,6 @@ datum/gear/head/steelpot_bandolier
 	cost = 2
 
 /datum/gear/head/flakhelm
-	name = "(I) Flak Helmet"
+	name = "Flak Helmet"
 	path = /obj/item/clothing/head/flakhelm
 	cost = 2

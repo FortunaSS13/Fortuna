@@ -44,7 +44,7 @@
 	icon_state = "combat_coat"
 	item_state = "combat_coat"
 	desc = "A heavy armor with ballistic inserts, sewn into a padded riot police coat."
-	armor = list("melee" = 70, "bullet" = 45, "laser" = 20, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 20, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
 
 /obj/item/clothing/suit/armor/f13/kit
 	name = "armor kit"
@@ -294,7 +294,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(melee = 75, bullet = 75, laser = 75)
+	armor = armor.modifyRating(melee = 15, bullet = 15, laser = 15)
 
 /obj/item/clothing/suit/armor/f13/power_armor/proc/powerDown(mob/user)
 	powerMode -= 1
@@ -302,7 +302,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(melee = -75, bullet = -75, laser = -75)
+	armor = armor.modifyRating(melee = -15, bullet = -15, laser = -15)
 
 /obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, mob/equipper, slot, disable_warning = 1)
 	var/mob/living/carbon/human/H = user
@@ -331,14 +331,14 @@
 			var/mob/living/L = loc
 			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
 			slowdown += 1.2
-			armor = armor.modifyRating(melee = -100, bullet = -100, laser = -100)
+			armor = armor.modifyRating(melee = -25, bullet = -25, laser = -25)
 			emped = 1
 			if(istype(L))
 				L.update_equipment_speed_mods()
 			spawn(50) //5 seconds of being slow and weak
 				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 				slowdown -= 1.2
-				armor = armor.modifyRating(melee = 100, bullet = 100, laser = 100)
+				armor = armor.modifyRating(melee = 25, bullet = 25, laser = 25)
 				emped = 0
 				if(istype(L))
 					L.update_equipment_speed_mods()
@@ -623,7 +623,7 @@
 
 /obj/item/clothing/suit/armor/f13/chitinarmor
 	name = "insect chitin armor"
-	desc = "(IV) A set of light armor made of insect chitin. Tough and light, it provides some moderate protection from trauma while allowing the user to remain mobile and protected from the elements."
+	desc = "A set of light armor made of insect chitin. Tough and light, it provides some moderate protection from trauma while allowing the user to remain mobile and protected from the elements."
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "insect"
@@ -804,7 +804,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 
 /obj/item/clothing/suit/armor/f13/harpercoat
 	name = "outlaw coat"
-	desc = "A combat duster"
+	desc = "A combat duster."
 	icon_state = "harperduster"
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 

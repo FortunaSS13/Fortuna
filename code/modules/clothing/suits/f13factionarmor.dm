@@ -339,13 +339,13 @@
 /*
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
 	name = "legion orator armor"
-	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
+	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
 	icon_state = "legheavy"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
 	name = "Champion of Kanab's Armor"
-	desc = "(VI) The armor of the Champion and Conqueror of the city in Utah named Kanab. The armor is made up of pieces of Power Armor and pre-war Riot Gear, the shin guards are spraypainted a dark crimson and the Power Armour pauldron has a red trim. The symbol of a Pheonix is carefully engraved and painted upon the chest piece... I wonder what it means.."
+	desc = "The armor of the Champion and Conqueror of the city in Utah named Kanab. The armor is made up of pieces of Power Armor and pre-war Riot Gear, the shin guards are spraypainted a dark crimson and the Power Armour pauldron has a red trim. The symbol of a Pheonix is carefully engraved and painted upon the chest piece... I wonder what it means.."
 	icon_state = "palacent_excess"
 	item_state = "palacent_excess"
 */

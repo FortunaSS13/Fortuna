@@ -182,7 +182,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/excavator
 	name = "excavator power armor"
-	desc = "(VIII) Developed by Garrahan Mining Co. in collaboration with West Tek, the Excavator-class power armor was designed to protect miners from rockfalls and airborne contaminants while increasing the speed at which they could work. "
+	desc = "Developed by Garrahan Mining Co. in collaboration with West Tek, the Excavator-class power armor was designed to protect miners from rockfalls and airborne contaminants while increasing the speed at which they could work. "
 	icon_state = "excavator"
 	item_state = "excavator"
 	slowdown = 0.5 //+0.1 from helmet
@@ -225,7 +225,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
-	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
+	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
@@ -237,7 +237,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/tesla
 	name = "T-51b tesla armor"
-	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer, with the added benefit of tesla coils."
+	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer, with the added benefit of tesla coils."
 	icon_state = "t51tesla"
 	item_state = "t51tesla"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
@@ -246,7 +246,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
 	name = "T-60a power armor"
-	desc = "(XI) Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
+	desc = "Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
 	slowdown = 0.16
@@ -274,7 +274,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	name = "advanced power armor"
-	desc = "(XII) An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for its user's comfort."
+	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for its user's comfort."
 	icon_state = "advpowerarmor1"
 	item_state = "advpowerarmor1"
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 60, "energy" = 55, "bomb" = 70, "bio" = 80, "rad" = 90, "fire" = 90, "acid" = 40, "wound" = 70)
@@ -285,7 +285,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced/hellfire
 	name = "hellfire power armor"
-	desc = "(XIII) A deep black suit of Enclave-manufactured heavy power armor, based on pre-war designs such as the T-51 and improving off of data gathered by post-war designs such as the X-01. Most commonly fielded on the East Coast, no suit rivals it's strength."
+	desc = "A deep black suit of Enclave-manufactured heavy power armor, based on pre-war designs such as the T-51 and improving off of data gathered by post-war designs such as the X-01. Most commonly fielded on the East Coast, no suit rivals it's strength."
 	icon_state = "hellfire"
 	item_state = "hellfire"
 	melee_block_threshold = 50

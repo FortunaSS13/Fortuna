@@ -7,7 +7,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/shields_righthand.dmi'
 	item_flags = ITEM_CAN_BLOCK
 	block_parry_data = /datum/block_parry_data/shield
-	armor = list("linemelee" = 150, "linebullet" = 150, "linelaser" = 150, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 70)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 70)
 	/// Shield flags
 	var/shield_flags = SHIELD_FLAGS_DEFAULT
 	/// Last shieldbash world.time
@@ -267,7 +267,7 @@ obj/item/shield/riot/bullet_proof
 	desc = "Kevlar coated surface makes this riot shield a lot better for blocking projectiles."
 	icon_state = "shield_bulletproof"
 	item_state = "shield_bulletproof"
-	armor = list("linemelee" = 80, "linebullet" = 400, "laser" = 0, "energy" = 0, "bomb" = -40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
+	armor = list("melee" = 30, "bullet" = 80, "laser" = 0, "energy" = 0, "bomb" = -40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
 	max_integrity = 350
 	custom_materials = list(/datum/material/plastic=8000, /datum/material/titanium=1000)
 	repair_material = /obj/item/stack/sheet/mineral/titanium
@@ -325,7 +325,7 @@ obj/item/shield/riot/bullet_proof
 	desc = "A large shield made of glued and welded sheets of metal. Heavy and clumsy, but at least its handle is wrapped in some cloth."
 	icon_state = "shield_scrap"
 	item_state = "shield_scrap"
-	armor = list("linemelee" = 70, "linebullet" = 70, "linelaser" = 70, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 80)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 80)
 	max_integrity = 250
 	force = 13
 	custom_materials = list(/datum/material/iron = 16000)
