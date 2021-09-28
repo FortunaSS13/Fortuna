@@ -627,7 +627,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/rag
 	backpack_contents = list(/obj/item/storage/bag/trash = 1, /obj/item/reagent_containers/food/drinks/bottle/whiskey = 1,
 	/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
-	/obj/item/ammo_box/a556/stripper,
+	/obj/item/ammo_box/a556/stripper = 1,
 	/obj/item/twohanded/spear/scrapspear = 1,
 	)
 
