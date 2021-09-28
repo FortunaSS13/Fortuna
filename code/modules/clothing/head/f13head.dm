@@ -54,7 +54,7 @@
 	desc = "An old military grade pre-war combat helmet."
 	icon_state = "combat_helmet"
 	item_state = "combat_helmet"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 35, "energy" = 60, "bomb" = 25, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 0, "wound" = 0)
 	strip_delay = 50
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
@@ -79,7 +79,8 @@
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
 	icon_state = "combat_helmet_mk2"
 	item_state = "combat_helmet_mk2"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 60, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 39, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 0)
+	slowdown = 0.05
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/dark
 	name = "reinforced combat helmet"
@@ -95,7 +96,7 @@
 	name = "broken riot helmet"
 	icon_state = "ranger_broken"
 	desc = "An old riot police helmet, out of use around the time of the war."
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 20, "energy" = 50, "bomb" = 39, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
+	armor = list("melee" = 70, "bullet" = 35, "laser" = 30, "energy" = 50, "bomb" = 39, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
@@ -108,6 +109,7 @@
 	desc = "A prewar combat helmet issued to S.W.A.T. personnel."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
+	armor = list("melee" = 55, "bullet" = 25, "laser" = 25, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/environmental
 	name = "environmental armor helmet"
@@ -130,7 +132,7 @@
 	desc = "A sulphite raider helmet, affixed with thick anti-ballistic glass over the eyes."
 	icon_state = "sulphite_helm"
 	item_state = "sulphite_helm"
-	armor = list("melee" = 55, "bullet" = 40, "laser" = 50, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 50, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 100, "acid" = 20)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
@@ -149,7 +151,8 @@
 	desc = "An iron helmet forged by tribal warriors, with a unique design to protect the face from arrows and axes."
 	icon_state = "metalhelmet_r"
 	item_state = "metalhelmet_r"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 25, "bomb" = 16, "bio" = 0, "rad" = 0)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 50, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = 0.3
 
 /obj/item/clothing/head/helmet/knight/f13/rider
 	name = "rider helmet" //Not raider. Rider.
@@ -165,7 +168,7 @@
 	toggle_message = "You lower"
 	alt_toggle_message = "You raise"
 	can_toggle = 1
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 45, "energy" = 40, "bomb" = 40, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 40, "bomb" = 40, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE
 	strip_delay = 80
 	actions_types = list(/datum/action/item_action/toggle)
@@ -188,7 +191,8 @@
 	desc = "A reinforced metal hockey mask."
 	icon_state = "metal_mask2"
 	item_state = "metal_mask2"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 55, "energy" = 50, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 30, "bullet" = 36, "laser" = 40, "energy" = 50, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = 0.05
 
 /obj/item/clothing/head/helmet/f13/tesla
 	name = "tesla helmet"
@@ -360,7 +364,7 @@
 	desc = "It's a salvaged T-45b power armor helmet."
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
-	armor = list("melee" = 75, "bullet" = 60, "laser" = 35, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 75, "bullet" = 60, "laser" = 35, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 80)
 //	darkness_view = 0
 	armor_block_chance = 25
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
@@ -433,7 +437,7 @@
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 75, "bullet" = 70, "laser" = 45, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
+	armor = list("melee" = 85, "bullet" = 63, "laser" = 50, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 100, "acid" = 0, "wound" = 95)
 	armor_block_chance = 60
 	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
@@ -471,7 +475,7 @@
 	desc = "It's a T-51b power helmet, typically used by the Brotherhood. It looks somewhat charming."
 	icon_state = "t51bhelmet0"
 	item_state = "t51bhelmet0"
-	armor = list("melee" = 75, "bullet" = 70, "laser" = 50, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+	armor = list("melee" = 95, "bullet" = 75, "laser" = 60, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 100, "acid" = 0, "wound" = 95)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	armor_block_chance = 70
 	deflection_chance = 10 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.

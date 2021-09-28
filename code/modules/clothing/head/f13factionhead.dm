@@ -99,6 +99,7 @@
 	item_state = "blastmaster"
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 25, "bomb" = 90, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 25)
 
 /obj/item/clothing/head/helmet/f13/raider/blastmaster/Initialize()
 	. = ..()
@@ -110,6 +111,7 @@
 	icon_state = "yankee"
 	item_state = "yankee"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/raider/yankee/Initialize()
 	. = ..()
@@ -138,6 +140,7 @@
 	item_state = "psychotic"
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 5)
 
 /obj/item/clothing/head/helmet/f13/raider/psychotic/Initialize()
 	. = ..()
@@ -148,7 +151,7 @@
 	desc = "A leather cap cobbled together adorned with a bighorner skull, perfect for any drug-fueled frenzy."
 	icon_state = "fiend"
 	item_state = "fiend"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/fiend_reinforced
@@ -156,7 +159,7 @@
 	desc = "A leather cap cobbled together adorned with a bighorner skull, perfect for any drug-fueled frenzy. This helmet has been reinforced with metal plates under its skull"
 	icon_state = "fiend"
 	item_state = "fiend"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/raidermetal
@@ -165,7 +168,8 @@
 	icon_state = "raidermetal"
 	item_state = "raidermetal"
 	can_toggle = TRUE
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 45, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 20, "acid" = 0)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 46, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 20, "acid" = 0)
+	slowdown = 0.2
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE
 	strip_delay = 80
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
@@ -393,7 +397,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-combat"
 	item_state = "legion-combat"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 45, "bullet" = 30, "laser" = 35, "energy" = 60, "bomb" = 25, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/legion
 	name = "reinforced Legion combat helmet"
@@ -402,7 +406,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-combat2"
 	item_state = "legion-combat2"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 45, "energy" = 40, "bomb" = 39, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 0)
 
 //NCR
 
@@ -593,21 +597,21 @@
 	desc = "A brown beret, issued to members of the NCR Recon Rangers."
 	icon_state = "scoutberet"
 	item_state = "scoutberet"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/f13/trailranger
 	name = "NCR trail ranger hat"
 	desc = "A rustic, homely style cowboy hat worn by NCR trail rangers. Yeehaw!"
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
 	desc = "An NCR ranger hat, standard issue amongst all but the most elite rangers."
 	icon_state = "drillhat"
 	item_state = "drill_hat"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
 	name = "NCR patrol helmet"
@@ -616,18 +620,21 @@
 	item_state = "ncr_patrol_helmet"
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = null
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr
 	name = "NCR combat helmet"
 	desc = "An old military grade pre-war combat helmet, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_helmet"
 	item_state = "ncr_helmet"
+	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 60, "bomb" = 25, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
 	name = "reinforced NCR combat helmet"
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_helmet"
 	item_state = "ncr_helmet"
+	armor = list("melee" = 40, "bullet" = 60, "laser" = 45, "energy" = 40, "bomb" = 39, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	name = "ranger combat helmet"
@@ -707,14 +714,14 @@
 	desc = "An old degraded pre-war combat helmet, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 45, "energy" = 60, "bomb" = 25, "bio" = 60, "rad" = 60, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight helmet"
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 60, "energy" = 40, "bomb" = 39, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"
@@ -767,7 +774,7 @@
 	name = "sheriff hat"
 	desc = "A black cowboy hat with a snakeskin band."
 	icon_state = "sheriffhat"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 	
 /obj/item/clothing/head/f13/town/commissioner
 	name = "commissioner's hat"
@@ -790,6 +797,7 @@
 	icon_state = "khan"
 	item_state = "khan"
 	armor = list("melee" = 30, "bullet" = 20, "laser" = 15, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	slowdown = 0.1
 	flags_inv = HIDEEARS|HIDEHAIR
 	strip_delay = 20
 

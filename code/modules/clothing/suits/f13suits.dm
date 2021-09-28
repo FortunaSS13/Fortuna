@@ -309,7 +309,7 @@
 	name = "deathclaw cloak"
 	icon_state = "clawsuitcloak"
 	desc = "A staunch, practical cloak made out of sinew and skin from the fearsome deathclaw."
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 25, "energy" = 30, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 60)
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
@@ -317,7 +317,7 @@
 	name = "deathclaw cloak hood"
 	icon_state = "clawheadcloak"
 	desc = "A protective & concealing hood."
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
 /obj/item/clothing/suit/hooded/parka/medical
