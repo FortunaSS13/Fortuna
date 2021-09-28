@@ -42,7 +42,8 @@
 				/obj/effect/spawner/bundle/f13/femsuit,
 	)
 
-/obj/effect/spawner/bundle/f13/worker
+/obj/effect/spawner/bundle/f13/worker	loot = list(
+
 	name = "overalls and flat cap"
 	items = list(
 				/obj/item/clothing/under/overalls,
@@ -832,7 +833,7 @@
 	name = "police revolver and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/police,
-				/obj/item/ammo_box/c38
+				/obj/item/ammo_box/a357
 	)
 
 /obj/effect/spawner/bundle/f13/laserpistol
@@ -1269,11 +1270,11 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 = 5,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 = 25,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4 = 25,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 = 25,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6 = 9,
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7 = 1
 			)
