@@ -70,7 +70,7 @@
 	new /obj/item/paper_bin/bundlenatural(src)
 	new /obj/item/clothing/under/suit/black/skirt(src)
 	new /obj/item/pen(src)
-	new /obj/item/storage/box/funds
+	new /obj/item/storage/box/funds(src)
 	
 /obj/item/storage/box/funds
 	name = "Oasis operating funds"
