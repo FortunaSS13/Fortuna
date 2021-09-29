@@ -200,8 +200,8 @@
 	
 //Police revolver					Keywords: .357, Double action, 6 rounds cylinder, Pocket Pistol 
 /obj/item/gun/ballistic/revolver/police
-	name = ".38 police revolver"
-	desc = "Pre-war double action police revolver in .38 calibre."
+	name = "police revolver"
+	desc = "Pre-war double action police revolver in .357 calibre."
 	icon_state = "police"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	w_class = WEIGHT_CLASS_SMALL
