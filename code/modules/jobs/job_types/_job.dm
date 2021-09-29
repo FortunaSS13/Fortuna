@@ -357,7 +357,7 @@
 
 	if(J.faction && ears)
 		var/obj/item/radio/T = H.get_item_by_slot(SLOT_EARS)
-		if(istype(T))
+		if(istype(T) && T.factionized)
 			T.linked_mob = H
 
 /datum/outfit/job/get_chameleon_disguise_info()
