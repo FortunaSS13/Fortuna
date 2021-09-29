@@ -85,6 +85,7 @@
 
 /obj/item/radio/Destroy()
 	if(factionized)
+		linked_mob = null
 		LAZYREMOVE(GLOB.faction_radios, src)
 		switch(linked_faction)
 			if("NCR")
