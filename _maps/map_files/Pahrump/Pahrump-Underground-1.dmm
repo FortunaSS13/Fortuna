@@ -12823,16 +12823,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"hBC" = (
-/obj/machinery/camera/autoname{
-	dir = 8;
-	name = "Armory Camera";
-	network = list("BoS");
-	pixel_x = -1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/brotherhood/armory)
 "hBF" = (
 /obj/effect/turf_decal/stripes/white/line{
 	pixel_x = -6
@@ -13811,6 +13801,12 @@
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/autoname{
+	dir = 8;
+	name = "Armory Camera";
+	network = list("BoS");
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/brotherhood/armory)
 "iro" = (
@@ -17340,7 +17336,6 @@
 	},
 /area/f13/bunker)
 "lgA" = (
-/obj/structure/chair/bench,
 /obj/effect/landmark/start/f13/Knight,
 /obj/effect/landmark/start/f13/initiate,
 /obj/structure/chair/f13foldupchair{
@@ -99510,7 +99505,7 @@ jKY
 jKY
 jKY
 jKY
-hBC
+jKY
 iqY
 lzF
 mMk
