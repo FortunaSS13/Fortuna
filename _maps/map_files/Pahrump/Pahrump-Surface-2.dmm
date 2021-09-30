@@ -1280,6 +1280,17 @@
 /mob/living/simple_animal/hostile/handy,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/village)
+"aCv" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	pixel_x = -17;
+	pixel_y = 24;
+	terminal = "NCRSGTTerminal2"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "aCN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -3192,6 +3203,7 @@
 "btv" = (
 /mob/living/simple_animal/hostile/raider/tribal{
 	desc = "A fugitive exiled from Oasis. He smells faintly of gecko.";
+	faction = list("gecko");
 	name = "Geckoman"
 	},
 /turf/open/indestructible/ground/outside/dirt{
@@ -4730,6 +4742,17 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
+"cgN" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	pixel_x = -17;
+	pixel_y = 24;
+	terminal = "NCRCMDTerminal"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "chb" = (
 /obj/structure/simple_door/metal/fence{
 	dir = 8
@@ -5328,6 +5351,13 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"cvZ" = (
+/obj/machinery/msgterminal/legion{
+	pixel_x = 4;
+	pixel_y = 31
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "cwa" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -7540,6 +7570,18 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"dyU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	dir = 4;
+	pixel_x = -24;
+	pixel_y = -2;
+	terminal = "NCR1STSGTTerminal"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "dyZ" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/white,
@@ -9189,7 +9231,8 @@
 	},
 /mob/living/simple_animal/pet/dog/corgi{
 	collar_type = "Mangy corgi";
-	desc = "It's a corgi. He look's like he hasn't been eating right."
+	desc = "It's a corgi. He looks hungry";
+	name = "Ol' Scruff"
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/village)
@@ -11357,6 +11400,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/ncr)
+"fil" = (
+/obj/effect/landmark/start/f13/orator,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/legion)
 "fiy" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -11647,6 +11694,17 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/building)
+"fow" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/msgterminal/ncr{
+	pixel_x = -17;
+	pixel_y = 24;
+	terminal = "NCRSGTTerminal1"
+	},
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "foz" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13/wood,
@@ -14213,7 +14271,6 @@
 "gtM" = (
 /obj/structure/rack,
 /obj/item/storage/pill_bottle/mannitol,
-/obj/item/storage/pill_bottle/chem_tin/fixer,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -16376,6 +16433,11 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"hqX" = (
+/obj/structure/table/wood,
+/obj/item/storage/book/bible,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "hrh" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
@@ -18095,6 +18157,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
+"icR" = (
+/obj/effect/landmark/start/f13/legate,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/legion)
 "icU" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/wood/f13/oak,
@@ -22155,6 +22221,16 @@
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/wasteland)
+"jNr" = (
+/mob/living/simple_animal/hostile/radroach{
+	desc = "The most trustworthy ally of the sheriff. This tough bug has survived dozens of attempts to squish 'em. ";
+	faction = list("neutral");
+	health = 60;
+	name = "Deputy Bug";
+	social_faction = list("neutral")
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "jNs" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/stripes/white/box,
@@ -29636,6 +29712,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"nqk" = (
+/obj/machinery/msgterminal/oasis/followers,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/followers)
 "nqo" = (
 /obj/item/reagent_containers/blood/radaway,
 /turf/open/indestructible/ground/outside/desert,
@@ -36313,6 +36395,7 @@
 /area/f13/building)
 "qBs" = (
 /mob/living/simple_animal/hostile/handy/protectron{
+	faction = list("gecko");
 	name = "police protectron"
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -40018,6 +40101,10 @@
 "soZ" = (
 /obj/structure/simple_door/tent,
 /turf/open/indestructible/ground/outside/wood,
+/area/f13/building)
+"spf" = (
+/obj/machinery/msgterminal/oasis,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "spw" = (
 /mob/living/simple_animal/hostile/handy,
@@ -48529,6 +48616,7 @@
 "whd" = (
 /mob/living/simple_animal/hostile/handy/robobrain{
 	desc = "A next-gen cybor developed by General Atomic International. This one has police markings";
+	faction = list("gecko");
 	name = "police robobrain"
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -57021,15 +57109,15 @@ kzs
 kzs
 jGz
 rrE
-aIS
+fow
 tvE
 aIS
 rrE
-aIS
+aCv
 tvE
 aIS
 rrE
-aIS
+cgN
 xIo
 vzw
 xEc
@@ -58311,7 +58399,7 @@ aIS
 aIS
 uzG
 aIS
-aIS
+dyU
 uEK
 rrE
 wJz
@@ -78203,7 +78291,7 @@ aRl
 aRl
 hgc
 hyb
-rpu
+spf
 rpu
 rpu
 ueA
@@ -82835,7 +82923,7 @@ ydO
 mHj
 uIa
 ueA
-aRl
+jNr
 aRl
 bCR
 dCV
@@ -86941,7 +87029,7 @@ ydO
 mHj
 mvv
 hIW
-iFn
+nqk
 iJR
 jKe
 jJn
@@ -107744,7 +107832,7 @@ sQX
 sQX
 koD
 doP
-rkZ
+hqX
 wYv
 xrO
 sYX
@@ -108162,8 +108250,8 @@ jQC
 bex
 wQm
 sYV
-bkY
 sYV
+bkY
 sYV
 bVT
 fyf
@@ -111179,7 +111267,7 @@ asj
 jei
 xys
 hom
-wPS
+cvZ
 wPS
 xXq
 lkc
@@ -111437,7 +111525,7 @@ yir
 qKU
 hom
 wSA
-tUc
+icR
 dRs
 lNv
 lNv
@@ -111694,7 +111782,7 @@ oxA
 mpu
 hom
 unJ
-cjV
+fil
 dRs
 lNv
 wfG
