@@ -134,7 +134,7 @@
 
 
 /obj/machinery/smartfridge/proc/accept_check(obj/item/O)
-	if(istype(O, /obj/item/reagent_containers/food/snacks/grown/) || istype(O, /obj/item/seeds/) || istype(O, /obj/item/grown/))
+	if(istype(O, /obj/item/reagent_containers/food/snacks/grown/) || istype(O, /obj/item/seeds/) || istype(O, /obj/item/grown/ || istype(O, /obj/item/reagent_containers/hypospray/medipen/stimpak/)))
 		return TRUE
 	return FALSE
 
