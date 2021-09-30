@@ -4688,8 +4688,12 @@
 	},
 /area/f13/tunnel)
 "cSY" = (
-/turf/open/water,
-/area/f13/caves)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/autodrobe,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/brotherhood/dorms)
 "cTd" = (
 /obj/machinery/rnd/destructive_analyzer,
 /obj/machinery/light/fo13colored/Aqua{
@@ -5792,13 +5796,6 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/carpet,
 /area/f13/followers)
-"dyx" = (
-/obj/structure/handrail/g_central{
-	dir = 1;
-	pixel_y = 23
-	},
-/turf/open/water,
-/area/f13/den)
 "dyz" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul/glowing,
@@ -7428,13 +7425,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
-"esc" = (
-/obj/structure/handrail/g_central{
-	dir = 4;
-	pixel_x = 20
-	},
-/turf/open/water,
-/area/f13/den)
 "esk" = (
 /obj/structure/chair/f13chair1{
 	dir = 8
@@ -8273,10 +8263,6 @@
 /obj/machinery/telecomms/server/presets/engineering,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
-"eQQ" = (
-/obj/structure/lattice/catwalk,
-/turf/open/water,
-/area/f13/den)
 "eRs" = (
 /obj/item/storage/trash_stack,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -10134,9 +10120,6 @@
 	icon_state = "white"
 	},
 /area/f13/den)
-"fUv" = (
-/turf/open/water,
-/area/f13/den)
 "fUE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/hatch{
@@ -11474,13 +11457,6 @@
 "gIf" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
-/area/f13/den)
-"gIt" = (
-/obj/structure/handrail/g_central{
-	dir = 8;
-	pixel_x = -20
-	},
-/turf/open/water,
 /area/f13/den)
 "gIu" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -55970,8 +55946,8 @@ xOn
 xOn
 xOn
 xOn
-eQQ
-eQQ
+gkm
+gkm
 xOn
 xOn
 xOn
@@ -58014,8 +57990,8 @@ kUN
 kUN
 kUN
 fns
-fUv
-fUv
+xOn
+xOn
 kUN
 xOn
 xOn
@@ -58271,8 +58247,8 @@ eHs
 ePn
 ffk
 eFq
-dyx
-fUv
+qJj
+xOn
 kUN
 xOn
 xOn
@@ -58528,7 +58504,7 @@ ccw
 eld
 fIf
 cBZ
-dyx
+qJj
 ixH
 kUN
 dFm
@@ -58785,8 +58761,8 @@ ccw
 eRs
 fIf
 dlU
-fUv
-fUv
+xOn
+xOn
 kUN
 wnQ
 wnQ
@@ -59042,8 +59018,8 @@ ccw
 lWO
 vgV
 cBZ
-fUv
-fUv
+xOn
+xOn
 kUN
 wnQ
 wnQ
@@ -59299,8 +59275,8 @@ eay
 cTL
 dGp
 dmS
-dyx
-fUv
+qJj
+xOn
 kUN
 xOn
 xOn
@@ -59556,8 +59532,8 @@ ccw
 ccw
 ccw
 dmS
-dyx
-fUv
+qJj
+xOn
 kUN
 xOn
 xOn
@@ -59813,7 +59789,7 @@ eHA
 cUj
 ccw
 cBZ
-dyx
+qJj
 ixH
 pRQ
 xOn
@@ -60070,8 +60046,8 @@ efa
 eSF
 ccw
 ugQ
-fUv
-fUv
+xOn
+xOn
 pRQ
 xOn
 xOn
@@ -60327,8 +60303,8 @@ egL
 cUk
 ccw
 dlU
-fUv
-fUv
+xOn
+xOn
 pRQ
 xOn
 xOn
@@ -60584,8 +60560,8 @@ ccw
 eHs
 ccw
 dmS
-dyx
-fUv
+qJj
+xOn
 pRQ
 awV
 xOn
@@ -60841,8 +60817,8 @@ cLd
 vgV
 fgx
 cAV
-dyx
-fUv
+qJj
+xOn
 pRQ
 xOn
 xOn
@@ -61098,7 +61074,7 @@ eHK
 cUo
 fIf
 fos
-fUv
+xOn
 ixH
 dcv
 xOn
@@ -61355,8 +61331,8 @@ eIn
 eUi
 fIf
 dmS
-fUv
-fUv
+xOn
+xOn
 pRQ
 xOn
 xOn
@@ -61612,8 +61588,8 @@ eIU
 eVu
 vgV
 dlU
-dyx
-fUv
+qJj
+xOn
 pRQ
 awV
 xOn
@@ -61869,8 +61845,8 @@ cLg
 cLd
 fIf
 fpi
-fUv
-fUv
+xOn
+xOn
 pRQ
 wnQ
 xOn
@@ -62126,8 +62102,8 @@ kUN
 cVP
 vgV
 cBZ
-dyx
-fUv
+qJj
+xOn
 kUN
 xOn
 xto
@@ -62383,8 +62359,8 @@ cMl
 kiE
 fIf
 cBZ
-dyx
-fUv
+qJj
+xOn
 kUN
 htm
 iSU
@@ -62640,7 +62616,7 @@ vgV
 fIf
 vgV
 cBZ
-dyx
+qJj
 ixH
 kUN
 fzj
@@ -62897,19 +62873,19 @@ ehc
 dzl
 vgV
 cBZ
-dyx
-fUv
+qJj
+xOn
 kUN
 xmT
 cUo
 cUo
 cUo
 vgV
-eQQ
-eQQ
-eQQ
-eQQ
-eQQ
+gkm
+gkm
+gkm
+gkm
+gkm
 xOn
 xOn
 xOn
@@ -63154,19 +63130,19 @@ kUN
 rcZ
 fIf
 fpD
-dyx
-fUv
+qJj
+xOn
 kUN
 blS
 vgV
 cUo
 cUo
 vgV
-eQQ
-eQQ
-eQQ
-eQQ
-eQQ
+gkm
+gkm
+gkm
+gkm
+gkm
 xOn
 xOn
 xOn
@@ -63412,7 +63388,7 @@ eWL
 fIf
 cAV
 fBl
-esc
+htm
 kUN
 kUN
 guO
@@ -63692,8 +63668,8 @@ uoO
 uoO
 uoO
 hQE
-cSY
-cSY
+xmk
+xmk
 hQE
 uoO
 uoO
@@ -63949,8 +63925,8 @@ uoO
 uoO
 uoO
 hQE
-cSY
-cSY
+xmk
+xmk
 hQE
 uoO
 uoO
@@ -64444,25 +64420,25 @@ fIG
 gkm
 gkm
 ebJ
-gIt
-gIt
-gIt
-gIt
-gIt
-gIt
-gIt
-gIt
-gIt
-gIt
+rDt
+rDt
+rDt
+rDt
+rDt
+rDt
+rDt
+rDt
+rDt
+rDt
 vkj
 tmc
-fUv
-fUv
-fUv
-fUv
-fUv
-fUv
-fUv
+xOn
+xOn
+xOn
+xOn
+xOn
+xOn
+xOn
 weW
 weW
 weW
@@ -64701,16 +64677,16 @@ fIS
 gkm
 gkm
 gxB
-esc
-esc
-esc
-esc
-fUv
-fUv
-fUv
-fUv
-esc
-esc
+htm
+htm
+htm
+htm
+xOn
+xOn
+xOn
+xOn
+htm
+htm
 sPK
 gkm
 qfj
@@ -64962,10 +64938,10 @@ ccw
 gUq
 ccw
 ccw
-dyx
-fUv
-fUv
-esc
+qJj
+xOn
+xOn
+htm
 mZU
 gMZ
 kUN
@@ -65219,9 +65195,9 @@ gIu
 ekg
 hjc
 ccw
-dyx
-fUv
-fUv
+qJj
+xOn
+xOn
 lMp
 pjR
 qDc
@@ -65476,9 +65452,9 @@ fIf
 gVs
 hjW
 ccw
-dyx
-fUv
-fUv
+qJj
+xOn
+xOn
 mZU
 efa
 rRP
@@ -65733,9 +65709,9 @@ ejX
 gVu
 ewc
 ccw
-dyx
-fUv
-fUv
+qJj
+xOn
+xOn
 mZU
 efa
 gDU
@@ -65990,9 +65966,9 @@ eay
 etd
 etd
 ite
-dyx
-fUv
-fUv
+qJj
+xOn
+xOn
 mZU
 flC
 efa
@@ -66247,9 +66223,9 @@ ekg
 fIf
 vgV
 dmS
-dyx
-fUv
-fUv
+qJj
+xOn
+xOn
 oYU
 iMa
 bMt
@@ -66500,12 +66476,12 @@ fLW
 ekg
 vgV
 dyH
-gIt
+rDt
 vkj
 vgV
 cAV
-dyx
-fUv
+qJj
+xOn
 kUN
 kUN
 kUN
@@ -66756,13 +66732,13 @@ lWO
 fLW
 fIf
 vgV
-dyx
+qJj
 eku
 euv
 fIf
 dmS
-dyx
-fUv
+qJj
+xOn
 lwb
 fsN
 fuE
@@ -67019,7 +66995,7 @@ euZ
 vgV
 dmS
 fBl
-esc
+htm
 wYo
 ftm
 gtx
@@ -68047,7 +68023,7 @@ ewe
 hOB
 ccw
 gkm
-dyx
+qJj
 uIm
 goO
 fOp
@@ -68304,7 +68280,7 @@ fIf
 cBZ
 ecm
 jGs
-dyx
+qJj
 flP
 fws
 fOr
@@ -68560,8 +68536,8 @@ gJz
 ewX
 eGM
 ccw
-fUv
-fUv
+xOn
+xOn
 uIm
 fwA
 gza
@@ -68817,8 +68793,8 @@ kUN
 exn
 kUN
 kUN
-fUv
-fUv
+xOn
+xOn
 uIm
 ntg
 fuE
@@ -69074,8 +69050,8 @@ oaU
 eAi
 dpu
 kUN
-fUv
-fUv
+xOn
+xOn
 wYo
 fwZ
 fuE
@@ -69331,8 +69307,8 @@ ezs
 gWf
 hOE
 kUN
-fUv
-fUv
+xOn
+xOn
 wYo
 fyB
 fuE
@@ -69588,7 +69564,7 @@ ezs
 goz
 eGX
 kUN
-fUv
+xOn
 kjW
 wYo
 wYo
@@ -69737,9 +69713,9 @@ eLE
 uoO
 uoO
 hBz
-cSY
-cSY
-cSY
+xmk
+xmk
+xmk
 uoO
 uoO
 eLE
@@ -69979,7 +69955,7 @@ xVz
 xVz
 hBz
 jii
-cSY
+xmk
 xVz
 uoO
 uoO
@@ -69996,7 +69972,7 @@ xVz
 hBz
 jii
 jii
-cSY
+xmk
 xVz
 uoO
 eLE
@@ -70235,11 +70211,11 @@ uoO
 xVz
 hBz
 jii
-cSY
-cSY
+xmk
+xmk
 jii
 eYS
-cSY
+xmk
 jii
 hBz
 hBz
@@ -70250,8 +70226,8 @@ uoO
 uoO
 xVz
 xVz
-cSY
-cSY
+xmk
+xmk
 hBz
 xBs
 hBz
@@ -70495,11 +70471,11 @@ xVz
 xVz
 xVz
 jii
-cSY
+xmk
 moI
-cSY
-cSY
-cSY
+xmk
+xmk
+xmk
 xVz
 xVz
 xVz
@@ -70507,7 +70483,7 @@ uoO
 xVz
 jii
 jii
-cSY
+xmk
 hBz
 rkW
 rFn
@@ -70753,16 +70729,16 @@ uoO
 uoO
 ggZ
 eYS
-cSY
+xmk
 jii
 jii
-cSY
-cSY
-cSY
+xmk
+xmk
+xmk
 hBz
 xVz
 pEw
-cSY
+xmk
 xVz
 xVz
 xBs
@@ -71014,11 +70990,11 @@ xVz
 mYI
 hBz
 xVz
-cSY
-cSY
+xmk
+xmk
 jii
-cSY
-cSY
+xmk
+xmk
 hBz
 hBz
 uoO
@@ -71272,7 +71248,7 @@ mZL
 nsZ
 xVz
 xVz
-cSY
+xmk
 hBz
 xVz
 xVz
@@ -83555,7 +83531,7 @@ uoO
 uoO
 uoO
 evI
-cSY
+xmk
 evI
 uoO
 uoO
@@ -91285,7 +91261,7 @@ aXV
 uTy
 uTy
 aXV
-dTR
+cSY
 ovL
 dTR
 bBc
