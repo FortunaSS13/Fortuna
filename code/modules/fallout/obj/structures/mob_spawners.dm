@@ -9,7 +9,7 @@
 	var/mob_types = list(/mob/living/simple_animal/hostile/carp)
 	var/spawn_delay = 0
 	//make spawn_time's multiples of 10. The SS runs on 10 seconds.
-	var/spawn_time = 30 SECONDS
+	var/spawn_time = 20 SECONDS
 	var/coverable = TRUE
 	var/covered = FALSE
 	var/obj/covertype
@@ -17,17 +17,23 @@
 	var/spawn_text = "emerges from"
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
+	var/radius = 10
+	var/spawnsound //specify an audio file to play when a mob emerges from the spawner
 
 /obj/structure/nest/Initialize()
 	. = ..()
 	GLOB.mob_nests += src
-
+	
 /obj/structure/nest/Destroy()
 	GLOB.mob_nests -= src
 	visible_message("[src] collapses!")
 	. = ..()
 
 /obj/structure/nest/proc/spawn_mob()
+	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
+	if(!H?.client)
+		return FALSE
+	CHECK_TICK
 	if(covered)
 		return FALSE
 	if(world.time < spawn_delay)
@@ -41,6 +47,8 @@
 	spawned_mobs += L
 	L.nest = src
 	visible_message("<span class='danger'>[L] [spawn_text] [src].</span>")
+	if(spawnsound)
+		playsound(src, spawnsound, 30, 1)
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HARM)	
@@ -119,9 +127,52 @@
 		cut_overlays()*/
 
 //the nests themselves
+/*
+	var/list/cazadors 	= list(/mob/living/simple_animal/hostile/cazador = 5,
+					/mob/living/simple_animal/hostile/cazador/young = 3,)
+
+	var/list/ghouls 	= list(/mob/living/simple_animal/hostile/ghoul = 5, 
+					/mob/living/simple_animal/hostile/ghoul/reaver = 3, 
+					/mob/living/simple_animal/hostile/ghoul/glowing = 1)
+
+	var/list/deathclaw 	= list(/mob/living/simple_animal/hostile/deathclaw = 19, 
+					/mob/living/simple_animal/hostile/deathclaw/mother = 1)
+
+	var/list/scorpion	= list(/mob/living/simple_animal/hostile/radscorpion = 1,
+					/mob/living/simple_animal/hostile/radscorpion/black = 1)
+
+	var/list/radroach	= list(/mob/living/simple_animal/hostile/radroach = 1)
+
+	var/list/fireant	= list(/mob/living/simple_animal/hostile/fireant = 1,
+					/mob/living/simple_animal/hostile/giantant = 1)
+
+	var/list/wanamingo 	= list(/mob/living/simple_animal/hostile/alien = 1)
+
+	var/list/molerat	= list(/mob/living/simple_animal/hostile/molerat = 1)
+
+	var/list/mirelurk	= list(/mob/living/simple_animal/hostile/mirelurk = 2,
+					/mob/living/simple_animal/hostile/mirelurk/hunter = 1,
+					/mob/living/simple_animal/hostile/mirelurk/baby = 5)
+	
+	var/list/raider		= list(/mob/living/simple_animal/hostile/raider = 5,
+					/mob/living/simple_animal/hostile/raider/firefighter = 2,
+					/mob/living/simple_animal/hostile/raider/baseball = 2,
+					/mob/living/simple_animal/hostile/raider/ranged = 2,
+					/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged = 1,
+					/mob/living/simple_animal/hostile/raider/ranged/biker = 1,
+					/mob/living/simple_animal/hostile/raider/ranged/boss = 1,
+					/mob/living/simple_animal/hostile/raider/legendary = 1)
+
+	var/list/protectron	= list(/mob/living/simple_animal/hostile/handy/protectron = 5,
+					/mob/living/simple_animal/hostile/handy = 3)
+
+	var/list/cazador	= list(/mob/living/simple_animal/hostile/cazador = 5,
+					/mob/living/simple_animal/hostile/cazador/young = 3,)
+
+*/
 /obj/structure/nest/ghoul
 	name = "ghoul nest"
-	max_mobs = 2
+	max_mobs = 5
 	mob_types = list(/mob/living/simple_animal/hostile/ghoul = 5, 
 					/mob/living/simple_animal/hostile/ghoul/reaver = 3, 
 					/mob/living/simple_animal/hostile/ghoul/glowing = 1)
@@ -142,12 +193,12 @@
 
 /obj/structure/nest/radroach
 	name = "radroach nest"
-	max_mobs = 2
+	max_mobs = 5
 	mob_types = list(/mob/living/simple_animal/hostile/radroach = 1)
 
 /obj/structure/nest/fireant
 	name = "fireant nest"
-	max_mobs = 2
+	max_mobs = 5
 	mob_types = list(/mob/living/simple_animal/hostile/fireant = 1,
 					/mob/living/simple_animal/hostile/giantant = 1)
 
@@ -159,17 +210,17 @@
 
 /obj/structure/nest/molerat
 	name = "molerat nest"
-	max_mobs = 2
+	max_mobs = 5
 	mob_types = list(/mob/living/simple_animal/hostile/molerat = 1)
 	spawn_time = 20 SECONDS //They just love tunnelin'.. And are pretty soft
 
 /obj/structure/nest/mirelurk
 	name = "mirelurk nest"
-	max_mobs = 2
+	max_mobs = 5
 	mob_types = list(/mob/living/simple_animal/hostile/mirelurk = 2,
 					/mob/living/simple_animal/hostile/mirelurk/hunter = 1,
 					/mob/living/simple_animal/hostile/mirelurk/baby = 5)
-	
+
 /obj/structure/nest/raider
 	name = "narrow tunnel"
 	desc = "A crude tunnel used by raiders to travel across the wasteland."
@@ -179,6 +230,7 @@
 	spawnsound = 'sound/effects/bin_close.ogg'
 	mob_types = list(/mob/living/simple_animal/hostile/raider = 5,
 					/mob/living/simple_animal/hostile/raider/firefighter = 2,
+
 					/mob/living/simple_animal/hostile/raider/baseball = 5,
 					/mob/living/simple_animal/hostile/raider/ranged = 2,
 					/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged = 1,
@@ -190,18 +242,14 @@
 /obj/structure/nest/protectron
 	name = "protectron pod"
 	desc = "An old robot storage system. This one looks like it is connected to space underground."
-	destroyable = 1
 	max_mobs = 5
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "scanner_modified"
-	mob_types = list(/mob/living/simple_animal/hostile/handy/protectron = 5,
-					/mob/living/simple_animal/hostile/handy = 3,
-					/mob/living/simple_animal/hostile/handy/gutsy = 1)
+	mob_types = list(/mob/living/simple_animal/hostile/handy/protectron = 5)
 
 /obj/structure/nest/securitron
 	name = "securitron pod"
 	desc = "An old securitron containment pod system. This one looks like it is connected to a storage system underground."
-	destroyable = 1
 	max_mobs = 5
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "scanner_modified"
@@ -211,12 +259,10 @@
 	name = "assaultron pod"
 	desc = "An old assaultron containment pod system. This one looks like it is connected to a storage system underground."
 	spawn_time = 40 SECONDS
-	destroyable = 1
 	max_mobs = 5
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "scanner_modified"
 	mob_types = list(/mob/living/simple_animal/hostile/handy/assaultron = 5)
-			
 
 /obj/structure/nest/cazador
 	name = "cazador nest"
@@ -237,7 +283,6 @@
 /obj/structure/nest/supermutant
 	name = "supermutant den"
 	spawn_time = 30 SECONDS
-	destroyable = 1
 	max_mobs = 2
 	mob_types = list(/mob/living/simple_animal/hostile/supermutant/meleemutant = 5,
 					/mob/living/simple_animal/hostile/supermutant/rangedmutant = 2,
@@ -249,4 +294,3 @@
 	max_mobs = 2
 	mob_types = list(/mob/living/simple_animal/hostile/stalker = 5,
 					/mob/living/simple_animal/hostile/stalkeryoung = 5)
-
