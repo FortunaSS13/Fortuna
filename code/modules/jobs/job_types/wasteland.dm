@@ -754,7 +754,7 @@ Raider
 	id = /obj/item/card/id/dogtag/town/legion
 	l_hand = /obj/item/shield/riot/buckler
 	backpack_contents = list(
-		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/melee/onehanded/machete = 1,
 		)
 
 /datum/outfit/loadout/ncrcitizen
