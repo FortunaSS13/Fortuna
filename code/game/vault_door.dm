@@ -21,6 +21,10 @@ GLOBAL_LIST_EMPTY(vault_doors)
 	..()
 	LAZYADD(GLOB.vault_doors, src)
 
+/obj/structure/vaultdoor/Destroy()
+	..()
+	LAZYREMOVE(GLOB.vault_doors, src)
+
 /obj/structure/vaultdoor/blob_act()
 	ex_act(4)
 	return
