@@ -5,10 +5,12 @@
 	overdose_threshold = 20
 	addiction_threshold = 15
 
-
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
+		if(prob(50))
+			var/M.addiction_random = -6
+			addiction_threshold == (M.addiction_random += addiction_threshold)
 		to_chat(M, "<span class='notice'>You feel an exhilarating high, the flow of time around you slowing to a crawl!</span>")
 
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
@@ -154,7 +156,7 @@
 	reagent_state = LIQUID
 	color = "#FF0000"
 	overdose_threshold = 15
-	addiction_threshold = 12.5
+	addiction_threshold = 20
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 
