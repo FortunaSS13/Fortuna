@@ -9,8 +9,8 @@
 	..()
 	if(isliving(M))
 		if(prob(50))
-			var/M.addiction_random = -6
-			addiction_threshold == (M.addiction_random += addiction_threshold)
+			var/addiction_random = -6
+			addiction_threshold == (addiction_random += addiction_threshold)
 		to_chat(M, "<span class='notice'>You feel an exhilarating high, the flow of time around you slowing to a crawl!</span>")
 
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
