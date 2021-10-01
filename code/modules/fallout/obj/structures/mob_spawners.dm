@@ -230,7 +230,6 @@
 	spawnsound = 'sound/effects/bin_close.ogg'
 	mob_types = list(/mob/living/simple_animal/hostile/raider = 5,
 					/mob/living/simple_animal/hostile/raider/firefighter = 2,
-
 					/mob/living/simple_animal/hostile/raider/baseball = 5,
 					/mob/living/simple_animal/hostile/raider/ranged = 2,
 					/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged = 1,
