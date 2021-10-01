@@ -138,7 +138,7 @@
 		if(hellbound)
 			. += "<span class='warning'>[t_His] soul seems to have been ripped out of [t_his] body.  Revival is impossible.</span>"
 		if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(FALSE, TRUE))
-			. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_his] soul has departed...</span>"
+			. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life and resuscitation is not possible...</span>"
 		else
 			. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life...</span>"
 
@@ -467,4 +467,5 @@
 			new_text = replacetext(new_text, "[pronoun_replacement] is", "[pronoun_replacement] [p_are()]") //To make sure something become "They are" or "She is", not "They are" and "She are"
 			dat += "[new_text]\n" //dat.Join("\n") doesn't work here, for some reason
 	if(dat.len)
-		return dat.Join()
+		dat.Join()
+		return 
