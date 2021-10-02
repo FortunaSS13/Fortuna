@@ -133,7 +133,11 @@
 
 /turf/proc/set_temperature()
 
+<<<<<<< HEAD
 /turf/proc/Initialize_Atmos(times_fired)
+=======
+/turf/proc/Initalize_Atmos(times_fired)
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 	CALCULATE_ADJACENT_TURFS(src)
 
 /turf/Destroy(force)

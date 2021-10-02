@@ -126,6 +126,11 @@
 #define FIRE_PRIORITY_CHAT			400
 #define FIRE_PRIORITY_OVERLAYS		500
 #define FIRE_PRIORITY_CALLBACKS		600
+<<<<<<< HEAD
+=======
+// #define FIRE_PRIORITY_EXPLOSIONS	666
+#define FIRE_PRIORITY_TIMER			700
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 #define FIRE_PRIORITY_INPUT			1000 // This must always always be the max highest priority. Player input must never be lost.
 
 // SS runlevels
@@ -167,4 +172,17 @@
 			A.add_overlays = null;\
 		}\
 		A.flags_1 &= ~OVERLAY_QUEUED_1;\
+<<<<<<< HEAD
 	} while (FALSE)
+=======
+	} while(FALSE)
+
+/**
+	Create a new timer and add it to the queue.
+	* Arguments:
+	* * callback the callback to call on timer finish
+	* * wait deciseconds to run the timer for
+	* * flags flags for this timer, see: code\__DEFINES\subsystems.dm
+*/
+#define addtimer(args...) _addtimer(args, file = __FILE__, line = __LINE__)
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)

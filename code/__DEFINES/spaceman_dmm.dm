@@ -29,4 +29,8 @@
 #endif
 
 /proc/enable_debugging()
+<<<<<<< HEAD
 	CRASH("Auxtools not found")
+=======
+    CRASH("Auxtools not found")
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)

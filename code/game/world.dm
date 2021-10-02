@@ -18,7 +18,6 @@ GLOBAL_LIST(topic_status_cache)
 #ifdef REFERENCE_TRACKING
 	enable_reference_tracking()
 #endif
-
 	world.Profile(PROFILE_START)
 	log_world("World loaded at [TIME_STAMP("hh:mm:ss", FALSE)]!")
 
@@ -271,6 +270,7 @@ GLOBAL_LIST(topic_status_cache)
 
 	log_world("World rebooted at [TIME_STAMP("hh:mm:ss", FALSE)]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
+	AUXTOOLS_SHUTDOWN(AUXMOS)
 	..()
 
 /world/Del()

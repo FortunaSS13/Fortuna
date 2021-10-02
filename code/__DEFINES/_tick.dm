@@ -1,6 +1,15 @@
 /// Percentage of tick to leave for master controller to run
 #define MAPTICK_MC_MIN_RESERVE 70
+<<<<<<< HEAD
 #define MAPTICK_LAST_INTERNAL_TICK_USAGE (world.map_cpu)
+=======
+/// internal_tick_usage is updated every tick by extools
+#if DM_VERSION > 513
+#define MAPTICK_LAST_INTERNAL_TICK_USAGE world.map_cpu
+#else
+#define MAPTICK_LAST_INTERNAL_TICK_USAGE 50
+#endif
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 /// Tick limit while running normally
 #define TICK_BYOND_RESERVE 2
 #define TICK_LIMIT_RUNNING (max(100 - TICK_BYOND_RESERVE - MAPTICK_LAST_INTERNAL_TICK_USAGE, MAPTICK_MC_MIN_RESERVE))
@@ -18,6 +27,9 @@
 
 /// Returns true if tick_usage is above the limit
 #define TICK_CHECK ( TICK_USAGE > Master.current_ticklimit )
+
+#define TICK_REMAINING_MS ((Master.current_ticklimit - TICK_USAGE) * world.tick_lag)
+
 /// runs stoplag if tick_usage is above the limit
 #define CHECK_TICK ( TICK_CHECK ? stoplag() : 0 )
 

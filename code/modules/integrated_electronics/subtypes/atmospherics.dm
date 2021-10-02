@@ -131,8 +131,15 @@
 	var/pressure_delta = target_pressure - target_air.return_pressure()
 	if(pressure_delta > 0.1)
 		var/transfer_moles = (pressure_delta*target_air.return_volume()/(source_air.return_temperature() * R_IDEAL_GAS_EQUATION))*PUMP_EFFICIENCY
+<<<<<<< HEAD
 		var/datum/gas_mixture/removed = source_air.remove(transfer_moles)
 		target_air.merge(removed)
+=======
+		if(istype(snowflake)) //Snowflake check for tanks specifically, because tank ruptures are handled in a very snowflakey way that expects all tank interactions to be handled via the tank's procs
+			snowflake.assume_air_moles(source_air, transfer_moles)
+		else
+			source_air.transfer_to(target_air, transfer_moles)
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 
 
 // - volume pump - // **Works**
@@ -180,9 +187,16 @@
 	//The second part of the min caps the pressure built by the volume pumps to the max pump pressure
 	var/transfer_ratio = min(transfer_rate,target_air.return_volume()*PUMP_MAX_PRESSURE/source_air.return_pressure())/source_air.return_volume()
 
+<<<<<<< HEAD
 	var/datum/gas_mixture/removed = source_air.remove_ratio(transfer_ratio * PUMP_EFFICIENCY)
 
 	target_air.merge(removed)
+=======
+	if(istype(snowflake))
+		snowflake.assume_air_ratio(source_air, transfer_ratio * PUMP_EFFICIENCY)
+	else
+		source_air.transfer_ratio_to(target_air, transfer_ratio * PUMP_EFFICIENCY)
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 
 
 // - gas vent - // **works**
@@ -370,7 +384,7 @@ obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 
 	for(var/filtered_gas in removed.get_gases())
 		//Get the name of the gas and see if it is in the list
-		if(GLOB.meta_gas_names[filtered_gas] in wanted)
+		if(GLOB.gas_data.names[filtered_gas] in wanted)
 			//The gas that is put in all the filtered out gases
 			filtered_out.set_temperature(removed.return_temperature())
 			filtered_out.set_moles(filtered_gas, removed.get_moles(filtered_gas))
@@ -449,10 +463,21 @@ obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 	if(transfer_moles <= 0)
 		return
 
+<<<<<<< HEAD
 	var/datum/gas_mixture/mix = source_1_gases.remove(transfer_moles * gas_percentage)
 	output_gases.merge(mix)
 	mix = source_2_gases.remove(transfer_moles * (1-gas_percentage))
 	output_gases.merge(mix)
+=======
+	var/snowflakecheck = istype(gas_output, /obj/item/tank)
+
+	if(snowflakecheck)
+		gas_output.assume_air_moles(source_1_gases, transfer_moles * gas_percentage)
+		gas_output.assume_air_moles(source_2_gases, transfer_moles * (1-gas_percentage))
+	else
+		source_1_gases.transfer_to(output_gases, transfer_moles * gas_percentage)
+		source_2_gases.transfer_to(output_gases, transfer_moles * (1-gas_percentage))
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 
 
 // - integrated tank - // **works**
