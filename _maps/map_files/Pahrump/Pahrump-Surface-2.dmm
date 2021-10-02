@@ -1332,11 +1332,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "aDw" = (
-/obj/structure/nest/molerat{
-	max_mobs = 1
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/nest/ghoul{
+	max_mobs = 2;
+	radius = 5
 	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "aDx" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -1633,14 +1635,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aKD" = (
-/obj/machinery/light/small/broken{
-	dir = 4
-	},
 /obj/structure/nest/ghoul{
-	max_mobs = 2
+	layer = 2.7;
+	max_mobs = 1;
+	radius = 4
 	},
-/turf/open/floor/f13/wood,
-/area/f13/village)
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/wasteland)
 "aLg" = (
 /obj/structure/debris/v3,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -2045,12 +2046,6 @@
 	dir = 1
 	},
 /area/f13/village)
-"aVF" = (
-/obj/structure/nest/ghoul{
-	max_mobs = 2
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "aVY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/comfy/black{
@@ -2812,15 +2807,6 @@
 	icon_state = "hole"
 	},
 /area/f13/wasteland)
-"blQ" = (
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/village)
 "blS" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/light/small/broken{
@@ -5034,10 +5020,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"cnX" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/f13/wood,
-/area/f13/village)
 "coh" = (
 /obj/machinery/door/poddoor/preopen{
 	id = 61
@@ -9424,16 +9406,6 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
-"esJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "floordirty"
-	},
-/area/f13/building)
 "esK" = (
 /obj/item/storage/trash_stack,
 /obj/effect/decal/cleanable/dirt,
@@ -16608,13 +16580,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
-"hwy" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/structure/nest/ghoul{
-	max_mobs = 2
-	},
-/turf/open/floor/f13/wood,
-/area/f13/village)
 "hwC" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/wasteland)
@@ -34756,17 +34721,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"pUY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/building)
 "pVg" = (
 /turf/open/floor/plasteel/chapel{
 	dir = 10
@@ -43041,11 +42995,6 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
-"tYJ" = (
-/obj/structure/chair/wood,
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/f13/wood,
-/area/f13/village)
 "tZs" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -57560,7 +57509,7 @@ uRa
 mvv
 mvv
 mvv
-aDw
+mvv
 mvv
 bpD
 fyf
@@ -68600,7 +68549,7 @@ anC
 fyf
 pcG
 pLp
-hwy
+hXk
 uDw
 pcG
 ntl
@@ -69888,7 +69837,7 @@ gDZ
 slr
 xDH
 hXk
-hXk
+aDw
 hXk
 dmJ
 mvv
@@ -70657,7 +70606,7 @@ fyf
 pcG
 uRJ
 uRJ
-aqv
+uRJ
 uRJ
 uRJ
 uRJ
@@ -78656,11 +78605,11 @@ qGZ
 ydQ
 eBc
 pYH
-cnX
+uRJ
 iFb
 cbk
 uRJ
-tYJ
+jTq
 hzK
 srw
 bFJ
@@ -79929,7 +79878,7 @@ vqv
 trd
 qGZ
 jMC
-aVF
+fyf
 fyf
 fyf
 fyf
@@ -80194,7 +80143,7 @@ gjP
 nHP
 stG
 faW
-faW
+aKD
 nHP
 stG
 lrQ
@@ -80685,7 +80634,7 @@ uRJ
 iFb
 naU
 vzM
-aqv
+uRJ
 uhB
 uRJ
 uRJ
@@ -81741,7 +81690,7 @@ ijg
 ugo
 rjD
 ijg
-cnX
+uRJ
 uRJ
 iFb
 gAU
@@ -85964,7 +85913,7 @@ sGp
 jPa
 iUW
 cEc
-esJ
+bZT
 cZN
 iVw
 gts
@@ -85973,7 +85922,7 @@ kbf
 oJU
 dvz
 iiU
-pUY
+hjw
 gOL
 hfl
 vMR
@@ -88407,7 +88356,7 @@ cdc
 dFQ
 koD
 gjP
-aKD
+wyI
 jdE
 uRJ
 uRJ
@@ -97434,7 +97383,7 @@ cpK
 gjP
 gva
 uRJ
-blQ
+jxq
 uRJ
 jnX
 iFb

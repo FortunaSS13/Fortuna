@@ -5,7 +5,7 @@
 	icon = 'icons/mob/nest_new.dmi'
 	icon_state = "hole"
 	var/list/spawned_mobs = list()
-	var/max_mobs = 5
+	var/max_mobs = 3
 	var/mob_types = list(/mob/living/simple_animal/hostile/carp)
 	var/spawn_delay = 0
 	//make spawn_time's multiples of 10. The SS runs on 10 seconds.
