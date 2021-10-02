@@ -133,7 +133,9 @@
 
 /turf/proc/set_temperature()
 
-/turf/proc/Initialize_Atmos(times_fired)
+
+/turf/proc/Initalize_Atmos(times_fired)
+
 	CALCULATE_ADJACENT_TURFS(src)
 
 /turf/Destroy(force)
