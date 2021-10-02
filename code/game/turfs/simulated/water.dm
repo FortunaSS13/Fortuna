@@ -17,7 +17,7 @@
 	heavyfootstep = FOOTSTEP_WATER
 
 
-	var/depth = 1 // Higher numbers indicates deeper water.
+	depth = 1 // Higher numbers indicates deeper water.
 
 // Largely ported from citadels HRP branch
 
@@ -52,11 +52,9 @@
 		return 0
 	if(locate(/obj/structure/lattice/catwalk) in loc)
 		return 0
-	var/turf/open/water/T = loc
-	var/turf/open/indestructible/ground/outside/water/Y
-	if(istype(Y))
-		return Y.depth
-	if(istype(T))
+	loc = get_turf(src)
+	if(istype(loc, /turf/open/indestructible/ground/outside/water) || istype(loc, /turf/open/water))
+		var/turf/open/T = loc
 		return T.depth
 	return 0
 
