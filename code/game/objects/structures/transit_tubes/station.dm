@@ -149,9 +149,13 @@
 		pod_moving = 0
 		if(!QDELETED(pod))
 			var/datum/gas_mixture/floor_mixture = loc.return_air()
+<<<<<<< HEAD
 			var/tot_volume = pod.air_contents.return_volume() + floor_mixture.return_volume()
 			pod.air_contents.merge(floor_mixture.remove_ratio(1))
 			floor_mixture.merge(pod.air_contents.remove_ratio(floor_mixture.return_volume()/tot_volume))
+=======
+			equalize_all_gases_in_list(list(pod.air_contents,floor_mixture))
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 			air_update_turf()
 
 /obj/structure/transit_tube/station/init_tube_dirs()

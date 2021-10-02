@@ -584,6 +584,12 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 /obj/structure/window/plasma/reinforced/unanchored
 	anchored = FALSE
 
+<<<<<<< HEAD
+=======
+/obj/structure/window/plasma/reinforced/BlockThermalConductivity()
+	return TRUE
+
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 /obj/structure/window/reinforced/tinted
 	name = "tinted window"
 	icon_state = "twindow"
