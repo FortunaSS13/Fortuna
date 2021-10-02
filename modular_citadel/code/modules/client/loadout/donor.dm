@@ -21,3 +21,9 @@
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
 	ckeywhitelist = list("midgetdragon")
 	
+/datum/gear/donator/kits/galloping_ghost
+	name = "Cracked Hood"
+	path = /obj/item/clothing/head/fingerhood
+	category = LOADOUT_CATEGORY_UNIFORM
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
+	ckeywhitelist = list("Galloping_Ghost")
