@@ -829,7 +829,9 @@
 	pixel_x = 4;
 	pixel_y = -3
 	},
-/obj/structure/nest/radroach,
+/obj/structure/nest/radroach{
+	max_mobs = 2
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "aqZ" = (
@@ -1277,16 +1279,6 @@
 	icon_state = "verticaloutermain2top"
 	},
 /area/f13/wasteland)
-"aCt" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/closed/wall/f13/ruins,
-/area/f13/building)
 "aCv" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -1391,6 +1383,7 @@
 "aFb" = (
 /obj/structure/nest/protectron{
 	layer = 3;
+	max_mobs = 2;
 	pixel_y = 20
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -5813,7 +5806,8 @@
 "cHt" = (
 /obj/structure/nest/raider{
 	max_mobs = 2;
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = -1
 	},
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/building)
@@ -5927,14 +5921,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/caves)
-"cKN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13/wood,
-/area/f13/clinic)
 "cLo" = (
 /obj/structure/bookcase,
 /turf/open/floor/f13/wood{
@@ -6343,13 +6329,6 @@
 /obj/item/defibrillator/primitive,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"cWr" = (
-/obj/structure/nest/raider{
-	pixel_x = -1;
-	pixel_y = 29
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "cWy" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/dirt,
@@ -7017,7 +6996,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
 "dlY" = (
-/obj/structure/nest/protectron,
+/obj/structure/nest/protectron{
+	max_mobs = 2
+	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -7917,13 +7898,6 @@
 	},
 /turf/open/indestructible/ground/outside/savannah/topcenter,
 /area/f13/wasteland)
-"dGK" = (
-/obj/structure/nest/ghoul,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/building)
 "dGL" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -11787,17 +11761,6 @@
 /obj/structure/bookcase,
 /turf/open/floor/wood/f13/old/ruinedstraightwest,
 /area/f13/building)
-"fqg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/building)
 "fqi" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/drinkingglasses,
@@ -12619,16 +12582,6 @@
 /obj/structure/closet/crate,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13/wood,
-/area/f13/building)
-"fJc" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
 /area/f13/building)
 "fJg" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -35488,12 +35441,6 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
-"qnz" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
 "qnE" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain1"
@@ -43044,7 +42991,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "tXe" = (
-/obj/structure/nest/ghoul,
+/obj/structure/nest/ghoul{
+	max_mobs = 1
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tXt" = (
@@ -46670,12 +46619,6 @@
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
-"vCc" = (
-/mob/living/simple_animal/hostile/gecko,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
 "vCh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -47649,14 +47592,6 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"vYi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/ghoul{
-	layer = 2.07;
-	max_mobs = 2
-	},
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "vYn" = (
 /obj/structure/chair/stool,
 /turf/open/floor/wood/f13/oak,
@@ -59284,7 +59219,7 @@ dCV
 rXj
 rXj
 rXj
-dGK
+mZD
 mZD
 rXj
 ryY
@@ -82151,7 +82086,7 @@ rAY
 eJo
 nTa
 tKZ
-cWr
+aRl
 eJo
 jFE
 kuo
@@ -84834,7 +84769,7 @@ fyf
 gts
 lDE
 iPf
-spw
+vYv
 vIx
 gts
 vSd
@@ -85220,7 +85155,7 @@ unI
 hbW
 cdc
 erY
-vCc
+erY
 fAt
 erY
 hOl
@@ -85989,7 +85924,7 @@ sYX
 kGc
 unI
 hbW
-vCc
+erY
 erY
 erY
 fAt
@@ -87292,7 +87227,7 @@ sYX
 glY
 sYX
 jbj
-vYi
+sHp
 euq
 xWu
 dcQ
@@ -87846,7 +87781,7 @@ sGp
 hZJ
 oDG
 hIQ
-fJc
+kRe
 umX
 sGp
 hAC
@@ -88097,7 +88032,7 @@ kRe
 caL
 acn
 caL
-fqg
+oDG
 kbf
 sGp
 fzx
@@ -90906,7 +90841,7 @@ koD
 qnE
 sGp
 tzk
-vYi
+sHp
 sHp
 sHp
 sHp
@@ -90926,7 +90861,7 @@ eKN
 ghQ
 aNU
 tkg
-eKN
+wcA
 wcA
 sGp
 fTF
@@ -93971,7 +93906,7 @@ gcK
 vCB
 vIr
 ioh
-cKN
+lda
 eXw
 kSi
 asu
@@ -93990,7 +93925,7 @@ pud
 vwn
 pEs
 wFp
-vYi
+sHp
 xWu
 gft
 sHp
@@ -101410,7 +101345,7 @@ cpK
 unI
 hbW
 erY
-qnz
+erY
 erY
 fAt
 erY
@@ -109022,7 +108957,7 @@ wcw
 mMu
 sSr
 svR
-aCt
+xBx
 eSy
 mKk
 wLX
