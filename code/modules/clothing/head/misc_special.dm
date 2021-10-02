@@ -314,6 +314,28 @@
 	if(!warped)
 		warp_up()
 
+/obj/item/clothing/head/fingerhood
+	name = "cracked radiation hood"
+	icon_state = "rad_cracked"
+	item_state = "rad_cracked"
+	desc = "(II) A skin tight radiation hood with an opaque face mask. A long crack is running down the center. It smells of mentats."
+	flags_inv = HIDEFACE
+	flash_protect = 2
+	armor = list("tier" = 2,"energy" = 30, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	strip_delay = 60
+	equip_delay_other = 60
+	speechspan = SPAN_ROBOT
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	mutantrace_variation = STYLE_MUZZLE
+
+/obj/item/clothing/head/fingerhood/equipped(mob/user, slot)
+	if(ishuman(user) && slot == SLOT_HEAD)
+		to_chat(user, "<span class='userdanger'><B>Your mind floods with forbidden knowledge!!</B></span>")
+		user.playsound_local(user, 'sound/machines/clockcult/ark_scream.ogg', 50, 1)
+		ADD_TRAIT(src, TRAIT_NODROP, CURSED_MASK_TRAIT)
+	..()
+
 /obj/item/clothing/head/flakhelm	//Actually the M1 Helmet
 	name = "flak helmet"
 	icon_state = "m1helm"
