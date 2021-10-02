@@ -276,15 +276,14 @@
 	return FALSE
 
 /atom/proc/assume_air(datum/gas_mixture/giver)
-<<<<<<< HEAD
-=======
+
 	return null
 
 /atom/proc/assume_air_moles(datum/gas_mixture/giver, moles)
 	return null
 
 /atom/proc/assume_air_ratio(datum/gas_mixture/giver, ratio)
->>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
+
 	return null
 
 /atom/proc/assume_air_moles(datum/gas_mixture/giver, moles)
