@@ -460,7 +460,6 @@
 /obj/item/clothing/head/helmet/armyhelmet
 	name = "steel helmet"
 	desc = "(III) a steel helmet, inspired by several pre-war designs. It provides some protection against impacts, cuts, and low-velocity bullets."
-	icon = 'icons/fallout/obj/clothing/helmets.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon_state = "armyhelmet"
 	item_state = "armyhelmet"
