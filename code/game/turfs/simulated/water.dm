@@ -53,6 +53,9 @@
 	if(locate(/obj/structure/lattice/catwalk) in loc)
 		return 0
 	var/turf/open/water/T = loc
+	var/turf/open/indestructible/ground/outside/water/Y
+	if(istype(Y))
+		return Y.depth
 	if(istype(T))
 		return T.depth
 	return 0

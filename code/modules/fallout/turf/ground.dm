@@ -264,6 +264,11 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "riverwater_motion"
 	slowdown = 2
+	var/depth = 1
+
+/turf/open/indestructible/ground/outside/water/Initialize()
+	. = ..()
+	update_icon()
 
 /turf/open/indestructible/ground/outside/water/Entered(atom/movable/AM, atom/oldloc)
 	if(istype(AM, /mob/living))
