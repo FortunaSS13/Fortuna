@@ -318,7 +318,7 @@
     name = "cracked radiation hood"
     icon_state = "rad_cracked"
     item_state = "rad_cracked"
-    desc = "(II) A skin tight radiation hood with an opaque face mask. A long crack is running down the center.'"
+    desc = "(II) A skin tight radiation hood with an opaque face mask. A long crack is running down the center. It smells of mentats."
     clothing_flags = THICKMATERIAL
     flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
     flash_protect = 2
