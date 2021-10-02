@@ -7,6 +7,11 @@
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 	rad_insulation = RAD_MEDIUM_INSULATION
 
+<<<<<<< HEAD
+=======
+/turf/closed/Initialize()
+	. = ..()
+>>>>>>> 5204f5a6d9 (Merge pull request #13991 from Putnam3145/auxtools-atmos)
 
 /turf/closed/Initialize()
 	. = ..()
