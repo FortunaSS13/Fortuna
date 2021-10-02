@@ -26,4 +26,4 @@
 	path = /obj/item/clothing/head/fingerhood
 	category = LOADOUT_CATEGORY_UNIFORM
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
-	ckeywhitelist = list("Galloping_Ghost")
+	ckeywhitelist = list("galloping_ghost")
