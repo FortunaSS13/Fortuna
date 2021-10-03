@@ -501,7 +501,7 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 /datum/reagent/medicine/mentat/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		if(prob(33))
+		if(prob(50))
 			addiction_random = 7
 			addiction_threshold = (addiction_random -= addiction_threshold)
 
