@@ -22,7 +22,10 @@
 		/obj/item/reagent_containers/hypospray/medipen/psycho,
 		/obj/item/reagent_containers/hypospray/medipen/medx,
 		/obj/item/reagent_containers/inhaler/jet,
-		/obj/item/reagent_containers/inhaler/turbo
+		/obj/item/reagent_containers/inhaler/turbo,
+		/obj/item/reagent_containers/pill/buffout,
+		/obj/item/reagent_containers/pill/fixer,
+		/obj/item/reagent_containers/pill/mentat,
 		)
 
 	var/static/radial_examine = image(icon = 'icons/mob/radial.dmi', icon_state = "radial_examine")

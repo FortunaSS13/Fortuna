@@ -432,7 +432,10 @@
 		/obj/item/reagent_containers/hypospray/medipen/psycho,
 		/obj/item/reagent_containers/hypospray/medipen/medx,
 		/obj/item/reagent_containers/inhaler/jet,
-		/obj/item/reagent_containers/inhaler/turbo
+		/obj/item/reagent_containers/inhaler/turbo,
+		/obj/item/reagent_containers/pill/buffout,
+		/obj/item/reagent_containers/pill/fixer,
+		/obj/item/reagent_containers/pill/mentat,
 		)
 
 /obj/item/reagent_containers/glass/mortar/examine(mob/user)
