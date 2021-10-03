@@ -32,13 +32,13 @@
 /obj/structure/nest/proc/spawn_mob()
 	if(!can_fire)
 		return FALSE
-	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
-	if(!H?.client)
-		return FALSE
-	CHECK_TICK
 	if(covered)
 		return FALSE
 	if(spawned_mobs.len >= max_mobs)
+		return FALSE
+	CHECK_TICK
+	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
+	if(!H?.client)
 		return FALSE
 	toggle_fire(FALSE)
 	addtimer(CALLBACK(src, .proc/toggle_fire), spawn_time)
