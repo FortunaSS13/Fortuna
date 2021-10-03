@@ -20,7 +20,7 @@
 		M.confused += 2
 
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
-	M.adjustStaminaLoss(-20, 0)
+	M.adjustStaminaLoss(-40, 0)
 	M.set_drugginess(20)
 	M.Jitter(2)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(10))
@@ -49,7 +49,7 @@
 /datum/reagent/drug/jet/addiction_act_stage2(mob/living/M)
 	M.Dizzy(5)
 	if(prob(10))
-		M.set_disgust(60)
+		M.set_disgust(30)
 	if(prob(40))
 		M.emote(pick("twitch","drool","moan"))
 	M.blur_eyes(5)
@@ -59,12 +59,11 @@
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 4, i++)
 			step(M, pick(GLOB.cardinals))
-	M.set_disgust(90)
-	M.blur_eyes(5)
+	M.set_disgust(50)
 	M.Dizzy(10)
 	if(prob(10))
 		M.adjustStaminaLoss(20, 0)
-	if(prob(40))
+	if(prob(20))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
@@ -73,16 +72,13 @@
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
 	M.set_disgust(150)
-	M.blur_eyes(20)
-	if(prob(10))
-		M.adjustBruteLoss(5, 0)
-	if(prob(5))
-		M.adjustToxLoss(5, 0)
+	M.blur_eyes(10)
+	M.adjustBruteLoss(2, 0)
+	M.adjustToxLoss(2, 0)
 	if(prob(10))
 		M.adjustStaminaLoss(200, 0)
 		M.visible_message("<span class='danger'>[M] heaves with exhaustion, collapsing to the ground!</span>")
-
-	if(prob(50))
+	if(prob(30))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 	. = TRUE
@@ -122,10 +118,10 @@
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i in 1 to 4)
 			step(M, pick(GLOB.cardinals))
-	if(prob(20))
+	if(prob(10))
 		M.emote("laugh")
 	if(prob(5))
-		to_chat(M, "<spawn class='notice'>Your heart begins to fail as a stabbing pain appears in your chest, beating fast enough to shred the muscle within!</span>")
+		to_chat(M, "<spawn class='notice'>A stabbing pain appears in your chest, heart beating too fast for it to handle!</span>")
 		M.adjustOrganLoss(ORGAN_SLOT_HEART, 5)
 	if(prob(33))
 		M.visible_message("<span class='danger'>[M]'s hands flip out and flail everywhere!</span>")
@@ -166,6 +162,7 @@
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(20)
 	M.Dizzy(20)
+	M.adjustBruteLoss(5)
 	if(prob(20))
 		shake_camera(M, 10, 3)
 		M.emote(pick("twitch","drool","moan"))
@@ -230,7 +227,6 @@
 /datum/reagent/drug/psycho/addiction_act_stage1(mob/living/M)
 	M.hallucination += 10
 	M.Jitter(5)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1)
 	if(prob(20))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -239,7 +235,6 @@
 	M.hallucination += 20
 	M.Jitter(10)
 	M.Dizzy(10)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1)
 	if(prob(30))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -250,8 +245,9 @@
 		for(var/i = 0, i < 2, i++)
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(15)
+	M.hallucination += 10
 	M.Dizzy(15)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
 	if(prob(40))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -264,7 +260,7 @@
 	M.Jitter(50)
 	M.Dizzy(50)
 	M.adjustToxLoss(5)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 15)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
 	if(prob(50))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -323,7 +319,7 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage1(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles ache slightly.</span>")
-	M.adjustBruteLoss(1.5)
+
 	if(prob(15))
 		M.emote(pick("twitch"))
 	..()
@@ -331,7 +327,7 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage2(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles feel incredibly sore.</span>")
-	M.adjustBruteLoss(4)
+	M.adjustBruteLoss(2)
 	if(prob(30))
 		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding.</span>")
 		M.drop_all_held_items()
@@ -341,7 +337,6 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage3(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
-	M.adjustBruteLoss(7.5)
 	M.maxHealth -= 1.5
 	M.health -= 1.5
 	if(prob(50))
@@ -353,15 +348,16 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage4(mob/living/M)
 	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
-	M.adjustBruteLoss(12.5)
-	M.maxHealth -= 5
-	M.health -= 5
+	M.adjustBruteLoss(5)
+	M.hallucination += 10
+	M.maxHealth -= 10
+	M.health -= 10
 	if(prob(90))
 		to_chat(M, "<span class='danger'>You can't even keep control of your muscles anymore!</span>")
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(25))
 		step(M, pick(GLOB.cardinals))
-	M.adjustOrganLoss(ORGAN_SLOT_HEART, 20)
+	M.adjustOrganLoss(ORGAN_SLOT_HEART, 5)
 	..()
 	return
