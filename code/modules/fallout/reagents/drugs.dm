@@ -282,8 +282,8 @@
 		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
 		ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth += 25
-		M.health += 25
+		M.maxHealth += 15
+		M.health += 15
 		if(prob(5))
 			addiction_random = 7
 			addiction_threshold = (addiction_random -= addiction_threshold)
@@ -295,8 +295,8 @@
 		to_chat(M, "<span class='notice'>You feel weaker.</span>")
 		REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth -= 25
-		M.health -= 25
+		M.maxHealth -= 15
+		M.health -= 15
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
