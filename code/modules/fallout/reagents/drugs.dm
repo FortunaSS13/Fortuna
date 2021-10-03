@@ -8,7 +8,7 @@
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		if(prob(33))
+		if(prob(50))
 			addiction_random = 6
 			addiction_threshold = (addiction_random -= addiction_threshold)
 		to_chat(M, "<span class='notice'>You feel a euphoric rush wash over your body, muscles tensing up and heartrate increasing tenfold!</span>")
@@ -100,7 +100,7 @@
 	..()
 	ADD_TRAIT(M, TRAIT_IGNORESLOWDOWN, "[type]")
 	if(isliving(M))
-		if(prob(66))
+		if(prob(50))
 			addiction_random = 6
 			addiction_threshold = (addiction_random -= addiction_threshold)
 
@@ -202,6 +202,10 @@
 		var/mob/living/carbon/C = L
 		rage = new()
 		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
+	if(isliving(L))
+		if(prob(5))
+			addiction_random = 12
+			addiction_threshold = (addiction_random -= addiction_threshold)
 
 /datum/reagent/drug/psycho/on_mob_delete(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
@@ -272,7 +276,7 @@
 	color = "#FF9900"
 	reagent_state = SOLID
 	overdose_threshold = 20
-	addiction_threshold = 11
+	addiction_threshold = 15
 	metabolization_rate = 1.25 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 
@@ -284,6 +288,10 @@
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
 		M.maxHealth += 25
 		M.health += 25
+		if(prob(5))
+			addiction_random = 7
+			addiction_threshold = (addiction_random -= addiction_threshold)
+
 
 /datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/human/M)
 	..()

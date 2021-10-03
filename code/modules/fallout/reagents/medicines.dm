@@ -96,7 +96,7 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	M.adjustOxyLoss(12*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 	. = TRUE
-	
+
 /datum/reagent/medicine/longpork_stew
 	name = "longpork stew"
 	description = "A dish sworn by some to have unusual healing properties. To most it just tastes disgusting. What even is longpork anyways?..."
@@ -134,7 +134,7 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	reagent_state = SOLID
 	color =  "#7f7add"
 	taste_description = "heaven."
-	metabolization_rate = 0.7 * REAGENTS_METABOLISM 
+	metabolization_rate = 0.7 * REAGENTS_METABOLISM
 	overdose_threshold = 30 //hard to OD on, besides if you use too much it kills you when it wears off
 
 /datum/reagent/medicine/berserker_powder/on_mob_life(mob/living/carbon/M)
@@ -497,6 +497,13 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	reagent_state = SOLID
 	overdose_threshold = 25
 	addiction_threshold = 15
+
+/datum/reagent/medicine/mentat/on_mob_add(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		if(prob(33))
+			addiction_random = 7
+			addiction_threshold = (addiction_random -= addiction_threshold)
 
 /datum/reagent/medicine/mentat/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
