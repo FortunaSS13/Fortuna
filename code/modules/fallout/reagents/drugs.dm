@@ -198,6 +198,7 @@
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
 		rage = new()
+		L.add_client_colour(/datum/client_colour/glass_colour/red)
 		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	if(isliving(L))
 		if(prob(5))
@@ -208,6 +209,7 @@
 	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
 	if(rage)
 		QDEL_NULL(rage)
+	L.remove_client_colour(/datum/client_colour/glass_colour/red)
 	..()
 
 /datum/reagent/drug/psycho/overdose_process(mob/living/carbon/human/M)
@@ -282,8 +284,8 @@
 		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
 		ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth += 15
-		M.health += 15
+		M.maxHealth += 25
+		M.health += 25
 		if(prob(5))
 			addiction_random = 7
 			addiction_threshold = (addiction_random -= addiction_threshold)
@@ -295,8 +297,8 @@
 		to_chat(M, "<span class='notice'>You feel weaker.</span>")
 		REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth -= 15
-		M.health -= 15
+		M.maxHealth -= 25
+		M.health -= 25
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
