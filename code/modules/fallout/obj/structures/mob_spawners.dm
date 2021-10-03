@@ -292,7 +292,7 @@
 
 //Event Nests
 /obj/structure/nest/zombieghoul
-	name = "mutated ghoul nest"
+	name = "ravenous ghoul nest"
 	max_mobs = 5
 	mob_types = list(/mob/living/simple_animal/hostile/ghoul/zombie = 5, 
 					/mob/living/simple_animal/hostile/ghoul/zombie/reaver = 3, 
