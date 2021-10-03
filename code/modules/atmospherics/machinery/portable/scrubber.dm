@@ -34,19 +34,7 @@
 	..()
 	if(!on)
 		return
-/*
-	if(holding)
-		scrub(holding.air_contents)
-	else
-		var/turf/T = get_turf(src)
-		scrub(T.return_air())
 
-/obj/machinery/portable_atmospherics/scrubber/proc/scrub(var/datum/gas_mixture/mixture)
-	mixture.scrub_into(air_contents, volume_rate / mixture.return_volume(), scrubbing)
-
-	if(!holding)
-		air_update_turf()
-*/
 /obj/machinery/portable_atmospherics/scrubber/emp_act(severity)
 	. = ..()
 	if(. & EMP_PROTECT_SELF)
@@ -126,12 +114,7 @@
 		return
 
 	..()
-/*
-	if(!holding)
-		var/turf/T = get_turf(src)
-		for(var/turf/AT in T.GetAtmosAdjacentTurfs(alldir = TRUE))
-			scrub(AT.return_air())
-*/
+
 /obj/machinery/portable_atmospherics/scrubber/huge/attackby(obj/item/W, mob/user)
 	if(default_unfasten_wrench(user, W))
 		if(!movable)
