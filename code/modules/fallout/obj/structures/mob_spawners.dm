@@ -31,7 +31,7 @@
 
 /obj/structure/nest/proc/spawn_mob()
 	if(!can_fire)
-		return
+		return FALSE
 	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
 	if(!H?.client)
 		return FALSE
