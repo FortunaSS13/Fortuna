@@ -33,6 +33,7 @@
 	if(!can_fire)
 		return FALSE
 	if(covered)
+		can_fire = FALSE
 		return FALSE
 	if(spawned_mobs.len >= max_mobs)
 		return FALSE
