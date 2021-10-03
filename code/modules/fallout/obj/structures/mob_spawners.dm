@@ -30,17 +30,20 @@
 	. = ..()
 
 /obj/structure/nest/proc/spawn_mob()
-	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
-	if(!H?.client)
-		return FALSE
-	CHECK_TICK
 	if(covered)
 		return FALSE
 	if(world.time < spawn_delay)
 		return 0
-	spawn_delay = world.time + spawn_time
+	CHECK_TICK
 	if(spawned_mobs.len >= max_mobs)
 		return FALSE
+	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
+	CHECK_TICK
+	if(!H?.client)
+		return FALSE
+
+	spawn_delay = world.time + spawn_time
+
 	var/chosen_mob_type = pickweight(mob_types)
 	var/mob/living/simple_animal/L = new chosen_mob_type(src.loc)
 	L.flags_1 |= (flags_1 & ADMIN_SPAWNED_1)	//If we were admin spawned, lets have our children count as that as well.
@@ -180,9 +183,16 @@
 /obj/structure/nest/deathclaw
 	name = "deathclaw nest"
 	max_mobs = 1
-	spawn_time = 50 SECONDS
+	spawn_time = 60 SECONDS
 	mob_types = list(/mob/living/simple_animal/hostile/deathclaw = 19, 
 					/mob/living/simple_animal/hostile/deathclaw/mother = 1)
+
+/obj/structure/nest/deathclawlegendary
+	name = "legendary deathclaw nest"
+	max_mobs = 1
+	spawn_time = 120 SECONDS
+	mob_types = list(/mob/living/simple_animal/hostile/deathclaw/legendary = 5)
+
 
 /obj/structure/nest/scorpion
 	name = "scorpion nest"
