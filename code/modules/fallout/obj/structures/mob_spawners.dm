@@ -19,6 +19,7 @@
 	layer = BELOW_OBJ_LAYER
 	var/radius = 10
 	var/spawnsound //specify an audio file to play when a mob emerges from the spawner
+	var/spawn_once
 
 /obj/structure/nest/Initialize()
 	. = ..()
@@ -52,6 +53,10 @@
 	visible_message("<span class='danger'>[L] [spawn_text] [src].</span>")
 	if(spawnsound)
 		playsound(src, spawnsound, 30, 1)
+	if(spawn_once) //if the subtype has TRUE, call destroy() after we spawn our first mob
+		Destroy()
+		return
+
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HARM)	
@@ -184,14 +189,15 @@
 	name = "deathclaw nest"
 	max_mobs = 1
 	spawn_time = 60 SECONDS
-	mob_types = list(/mob/living/simple_animal/hostile/deathclaw = 19, 
-					/mob/living/simple_animal/hostile/deathclaw/mother = 1)
+	mob_types = list(/mob/living/simple_animal/hostile/deathclaw = 5)
 
 /obj/structure/nest/deathclawlegendary
 	name = "legendary deathclaw nest"
 	max_mobs = 1
 	spawn_time = 120 SECONDS
-	mob_types = list(/mob/living/simple_animal/hostile/deathclaw/legendary = 5)
+	spawn_once = TRUE
+	mob_types = list(/mob/living/simple_animal/hostile/deathclaw/legendary = 5,
+					/mob/living/simple_animal/hostile/deathclaw/mother = 5)
 
 
 /obj/structure/nest/scorpion
