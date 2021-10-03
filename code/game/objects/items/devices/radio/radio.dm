@@ -353,7 +353,7 @@
 	for (var/ch_name in channels)
 		channels[ch_name] = 0
 	on = FALSE
-	addtimer(CALLBACK(src, .proc/end_emp_effect, curremp), 20 SECONDS)
+	addtimer(CALLBACK(src, .proc/end_emp_effect, curremp), 2 SECONDS)
 
 /obj/item/radio/proc/end_emp_effect(curremp)
 	if(emped != curremp) //Don't fix it if it's been EMP'd again
