@@ -306,9 +306,6 @@
 #include "code\controllers\subsystem\augury.dm"
 #include "code\controllers\subsystem\autotransfer.dm"
 #include "code\controllers\subsystem\blackbox.dm"
-
-#include "code\controllers\subsystem\blackmarket.dm"
-
 #include "code\controllers\subsystem\callback.dm"
 #include "code\controllers\subsystem\chat.dm"
 #include "code\controllers\subsystem\communications.dm"
@@ -1030,7 +1027,6 @@
 #include "code\game\objects\items\blueprints.dm"
 #include "code\game\objects\items\body_egg.dm"
 #include "code\game\objects\items\bodybag.dm"
-#include "code\game\objects\items\boombox.dm"
 #include "code\game\objects\items\broom.dm"
 #include "code\game\objects\items\candle.dm"
 #include "code\game\objects\items\cardboard_cutouts.dm"
@@ -3622,7 +3618,6 @@
 #include "code\modules\vending\engivend.dm"
 #include "code\modules\vending\f13nukacola.dm"
 #include "code\modules\vending\games.dm"
-#include "code\modules\vending\kinkmate.dm"
 #include "code\modules\vending\liberation.dm"
 #include "code\modules\vending\liberation_toy.dm"
 #include "code\modules\vending\magivend.dm"

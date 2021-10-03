@@ -282,12 +282,6 @@
 /atom/proc/assume_air_moles(datum/gas_mixture/giver, moles)
 	return null
 
-/atom/proc/assume_air_ratio(datum/gas_mixture/giver, ratio)
-
-	return null
-
-/atom/proc/assume_air_moles(datum/gas_mixture/giver, moles)
-	return null
 
 /atom/proc/assume_air_ratio(datum/gas_mixture/giver, ratio)
 	return null

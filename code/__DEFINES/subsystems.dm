@@ -88,6 +88,7 @@
 #define INIT_ORDER_INSTRUMENTS		53
 #define INIT_ORDER_MAPPING			50
 #define INIT_ORDER_ECONOMY			45
+#define INIT_ORDER_TIMETRACK		47
 #define INIT_ORDER_NETWORKS			40
 #define INIT_ORDER_HOLODECK			35
 #define INIT_ORDER_ATOMS			30
@@ -183,14 +184,13 @@
 		var/list/rm = A.remove_overlays;\
 		if(LAZYLEN(rm)){\
 			A.overlays -= rm;\
-			A.remove_overlays = null;\
+			rm.Cut();\
 		}\
 		if(LAZYLEN(ad)){\
 			A.overlays |= ad;\
-			A.add_overlays = null;\
+			ad.Cut();\
 		}\
 		A.flags_1 &= ~OVERLAY_QUEUED_1;\
-
 	} while(FALSE)
 
 /**

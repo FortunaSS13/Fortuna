@@ -19,7 +19,7 @@
 
 /obj/item/integrated_circuit/atmospherics/Initialize()
 	air_contents = new(volume)
-	. = ..()
+	return ..()
 
 /obj/item/integrated_circuit/atmospherics/return_air()
 	return air_contents
@@ -115,10 +115,10 @@
 		source_air = air_contents
 
 	// Move gas from one place to another
-	move_gas(source_air, target_air)
+	move_gas(source_air, target_air, (istype(target, /obj/item/tank) ? target : null))
 	air_update_turf()
 
-/obj/item/integrated_circuit/atmospherics/pump/proc/move_gas(datum/gas_mixture/source_air, datum/gas_mixture/target_air)
+/obj/item/integrated_circuit/atmospherics/pump/proc/move_gas(datum/gas_mixture/source_air, datum/gas_mixture/target_air, obj/item/tank/snowflake)
 
 	// No moles = nothing to pump
 	if(source_air.total_moles() <= 0  || target_air.return_pressure() >= PUMP_MAX_PRESSURE)
@@ -131,12 +131,10 @@
 	var/pressure_delta = target_pressure - target_air.return_pressure()
 	if(pressure_delta > 0.1)
 		var/transfer_moles = (pressure_delta*target_air.return_volume()/(source_air.return_temperature() * R_IDEAL_GAS_EQUATION))*PUMP_EFFICIENCY
-
 		if(istype(snowflake)) //Snowflake check for tanks specifically, because tank ruptures are handled in a very snowflakey way that expects all tank interactions to be handled via the tank's procs
 			snowflake.assume_air_moles(source_air, transfer_moles)
 		else
 			source_air.transfer_to(target_air, transfer_moles)
-
 
 
 // - volume pump - // **Works**
@@ -169,7 +167,7 @@
 		direction = SOURCE_TO_TARGET
 	target_pressure = min(PUMP_MAX_VOLUME,abs(new_amount))
 
-/obj/item/integrated_circuit/atmospherics/pump/volume/move_gas(datum/gas_mixture/source_air, datum/gas_mixture/target_air)
+/obj/item/integrated_circuit/atmospherics/pump/volume/move_gas(datum/gas_mixture/source_air, datum/gas_mixture/target_air, obj/item/tank/snowflake)
 	// No moles = nothing to pump
 	if(source_air.total_moles() <= 0)
 		return
@@ -184,12 +182,10 @@
 	//The second part of the min caps the pressure built by the volume pumps to the max pump pressure
 	var/transfer_ratio = min(transfer_rate,target_air.return_volume()*PUMP_MAX_PRESSURE/source_air.return_pressure())/source_air.return_volume()
 
-
 	if(istype(snowflake))
 		snowflake.assume_air_ratio(source_air, transfer_ratio * PUMP_EFFICIENCY)
 	else
 		source_air.transfer_ratio_to(target_air, transfer_ratio * PUMP_EFFICIENCY)
-
 
 
 // - gas vent - // **works**
@@ -234,7 +230,7 @@
 /obj/item/integrated_circuit/atmospherics/connector
 	name = "integrated connector"
 	desc = "Creates an airtight seal with standard connectors found on the floor, \
-			allowing the assembly to exchange gases with a pipe network."
+		 	allowing the assembly to exchange gases with a pipe network."
 	extended_desc = "This circuit will automatically attempt to locate and connect to ports on the floor beneath it when activated. \
 					You <b>must</b> set a target before connecting."
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
@@ -293,7 +289,7 @@
 	activate_pin(2)
 
 // Required for making the connector port script work
-obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
+/obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 	return air_contents
 
 
@@ -386,9 +382,20 @@ obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 			removed.set_moles(filtered_gas, 0)
 
 	//Check if the pressure is high enough to put stuff in filtered, or else just put it back in the source
-	var/datum/gas_mixture/target = (filtered_air.return_pressure() < target_pressure ? filtered_air : source_air)
-	target.merge(filtered_out)
-	contaminated_air.merge(removed)
+	if(filtered_air.return_pressure() < target_pressure)
+		if(istype(filtered, /obj/item/tank))
+			filtered.assume_air(filtered_out)
+		else
+			filtered_air.merge(filtered_out)
+	else
+		if(istype(source, /obj/item/tank))
+			source.assume_air(filtered_out)
+		else
+			source_air.merge(filtered_out)
+	if(istype(contaminants, /obj/item/tank))
+		contaminants.assume_air(removed)
+	else
+		contaminated_air.merge(removed)
 
 
 /obj/item/integrated_circuit/atmospherics/pump/filter/Initialize()
@@ -456,7 +463,6 @@ obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 	if(transfer_moles <= 0)
 		return
 
-
 	var/snowflakecheck = istype(gas_output, /obj/item/tank)
 
 	if(snowflakecheck)
@@ -465,7 +471,6 @@ obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 	else
 		source_1_gases.transfer_to(output_gases, transfer_moles * gas_percentage)
 		source_2_gases.transfer_to(output_gases, transfer_moles * (1-gas_percentage))
-
 
 
 // - integrated tank - // **works**
@@ -703,7 +708,7 @@ obj/item/integrated_circuit/atmospherics/connector/portableConnectorReturnAir()
 /obj/item/integrated_circuit/input/tank_slot/process()
 	push_pressure()
 
-/obj/item/integrated_circuit/input/tank_slot/attackby(obj/item/tank/internals/I, mob/living/user)
+/obj/item/integrated_circuit/input/tank_slot/attackby(var/obj/item/tank/internals/I, var/mob/living/user)
 	//Check if it truly is a tank
 	if(!istype(I,/obj/item/tank/internals))
 		to_chat(user,"<span class='warning'>The [I.name] doesn't seem to fit in here.</span>")

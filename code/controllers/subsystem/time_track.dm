@@ -1,7 +1,8 @@
 SUBSYSTEM_DEF(time_track)
 	name = "Time Tracking"
-	wait = 1 SECONDS
-	flags = SS_NO_INIT|SS_NO_TICK_CHECK
+	wait = 10
+	flags = SS_NO_TICK_CHECK
+	init_order = INIT_ORDER_TIMETRACK
 	runlevels = RUNLEVEL_LOBBY | RUNLEVELS_DEFAULT
 
 	var/time_dilation_current = 0
@@ -15,7 +16,6 @@ SUBSYSTEM_DEF(time_track)
 	var/last_tick_realtime = 0
 	var/last_tick_byond_time = 0
 	var/last_tick_tickcount = 0
-
 
 /datum/controller/subsystem/time_track/Initialize(start_timeofday)
 	. = ..()
@@ -48,10 +48,15 @@ SUBSYSTEM_DEF(time_track)
 		)
 	)
 
+/datum/controller/subsystem/time_track/fire()
 
-	var/stat_time_text
-	var/time_dilation_text
+	var/current_realtime = REALTIMEOFDAY
+	var/current_byondtime = world.time
+	var/current_tickcount = world.time/world.tick_lag
+	GLOB.glide_size_multiplier = (current_byondtime - last_tick_byond_time) / (current_realtime - last_tick_realtime)
 
+	if(times_fired % 10)	// everything else is once every 10 seconds
+		return
 
 	if (!first_run)
 		var/tick_drift = max(0, (((current_realtime - last_tick_realtime) - (current_byondtime - last_tick_byond_time)) / world.tick_lag))
@@ -94,4 +99,3 @@ SUBSYSTEM_DEF(time_track)
 			length(SSair.high_pressure_delta)
 		)
 	)
-

@@ -135,7 +135,6 @@
 
 
 /turf/proc/Initalize_Atmos(times_fired)
-
 	CALCULATE_ADJACENT_TURFS(src)
 
 /turf/Destroy(force)

@@ -78,8 +78,6 @@
 		return FALSE
 
 	var/weight = getweight(user, STAM_COST_ATTACK_MOB_MULT)
-	if(!user.UseStaminaBuffer(weight, warn = TRUE))
-		return FALSE
 	var/turf/T = get_turf(src)
 	if(!T)
 		return FALSE
@@ -122,7 +120,7 @@
 
 	log_combat(user, target, "power fisted", src)
 
-	var/weight = getweight(user, STAM_COST_ATTACK_MOB_MULT)
+	weight = getweight(user, STAM_COST_ATTACK_MOB_MULT)
 	if(weight)
 		user.adjustStaminaLossBuffered(weight)
 	return TRUE

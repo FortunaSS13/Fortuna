@@ -336,10 +336,6 @@ we use a hook instead
 		analyzer_results = new
 	analyzer_results["fusion"] = instability
 
-/datum/gas_mixture/proc/set_analyzer_results(instability)
-	if(!analyzer_results)
-		analyzer_results = new
-	analyzer_results["fusion"] = instability
 
 //Mathematical proofs:
 /*
