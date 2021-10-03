@@ -51,7 +51,7 @@
 	if(spawnsound)
 		playsound(src, spawnsound, 30, 1)
 
-/obj/structure/nest/proc/toggle_fire(var/fire = TRUE)
+/obj/structure/nest/proc/toggle_fire(fire = TRUE)
 	can_fire = fire
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
