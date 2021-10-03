@@ -5,9 +5,9 @@
 	icon = 'icons/mob/nest_new.dmi'
 	icon_state = "hole"
 	var/list/spawned_mobs = list()
-	var/max_mobs = 5
+	var/max_mobs = 3
+	var/can_fire = TRUE
 	var/mob_types = list(/mob/living/simple_animal/hostile/carp)
-	var/spawn_delay = 0
 	//make spawn_time's multiples of 10. The SS runs on 10 seconds.
 	var/spawn_time = 20 SECONDS
 	var/coverable = TRUE
@@ -30,17 +30,19 @@
 	. = ..()
 
 /obj/structure/nest/proc/spawn_mob()
+	if(!can_fire)
+		return FALSE
+	if(covered)
+		can_fire = FALSE
+		return FALSE
+	if(spawned_mobs.len >= max_mobs)
+		return FALSE
+	CHECK_TICK
 	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
 	if(!H?.client)
 		return FALSE
-	CHECK_TICK
-	if(covered)
-		return FALSE
-	if(world.time < spawn_delay)
-		return 0
-	spawn_delay = world.time + spawn_time
-	if(spawned_mobs.len >= max_mobs)
-		return FALSE
+	toggle_fire(FALSE)
+	addtimer(CALLBACK(src, .proc/toggle_fire), spawn_time)
 	var/chosen_mob_type = pickweight(mob_types)
 	var/mob/living/simple_animal/L = new chosen_mob_type(src.loc)
 	L.flags_1 |= (flags_1 & ADMIN_SPAWNED_1)	//If we were admin spawned, lets have our children count as that as well.
@@ -49,6 +51,9 @@
 	visible_message("<span class='danger'>[L] [spawn_text] [src].</span>")
 	if(spawnsound)
 		playsound(src, spawnsound, 30, 1)
+
+/obj/structure/nest/proc/toggle_fire(fire = TRUE)
+	can_fire = fire
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HARM)	
@@ -180,7 +185,7 @@
 /obj/structure/nest/deathclaw
 	name = "deathclaw nest"
 	max_mobs = 1
-	spawn_time = 50 SECONDS
+	spawn_time = 60 SECONDS
 	mob_types = list(/mob/living/simple_animal/hostile/deathclaw = 19, 
 					/mob/living/simple_animal/hostile/deathclaw/mother = 1)
 
@@ -225,7 +230,6 @@
 	name = "narrow tunnel"
 	desc = "A crude tunnel used by raiders to travel across the wasteland."
 	max_mobs = 5
-	icon = 'icons/fallout/objects/decals.dmi'
 	icon_state = "ventblue"
 	spawnsound = 'sound/effects/bin_close.ogg'
 	mob_types = list(/mob/living/simple_animal/hostile/raider = 5,
@@ -242,7 +246,6 @@
 	name = "protectron pod"
 	desc = "An old robot storage system. This one looks like it is connected to space underground."
 	max_mobs = 5
-	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "scanner_modified"
 	mob_types = list(/mob/living/simple_animal/hostile/handy/protectron = 5)
 
@@ -250,7 +253,6 @@
 	name = "securitron pod"
 	desc = "An old securitron containment pod system. This one looks like it is connected to a storage system underground."
 	max_mobs = 5
-	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "scanner_modified"
 	mob_types = list(/mob/living/simple_animal/hostile/securitron = 5)
 					
@@ -259,7 +261,6 @@
 	desc = "An old assaultron containment pod system. This one looks like it is connected to a storage system underground."
 	spawn_time = 40 SECONDS
 	max_mobs = 5
-	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "scanner_modified"
 	mob_types = list(/mob/living/simple_animal/hostile/handy/assaultron = 5)
 
