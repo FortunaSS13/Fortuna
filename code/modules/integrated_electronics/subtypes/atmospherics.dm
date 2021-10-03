@@ -229,10 +229,8 @@
 // - integrated connector - // Can connect and disconnect properly
 /obj/item/integrated_circuit/atmospherics/connector
 	name = "integrated connector"
-	desc = "Creates an airtight seal with standard connectors found on the floor, \
-		 	allowing the assembly to exchange gases with a pipe network."
-	extended_desc = "This circuit will automatically attempt to locate and connect to ports on the floor beneath it when activated. \
-					You <b>must</b> set a target before connecting."
+	desc = "Creates an airtight seal with standard connectors found on the floor, allowing the assembly to exchange gases with a pipe network."
+	extended_desc = "This circuit will automatically attempt to locate and connect to ports on the floor beneath it when activated. You <b>must</b> set a target before connecting."
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 	inputs = list(
 			"target" = IC_PINTYPE_REF
