@@ -196,22 +196,22 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 
 /datum/reagent/proc/addiction_act_stage1(mob/living/M)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/withdrawal_light, name)
-	if(prob(30))
-		to_chat(M, "<span class='notice'>You feel like having some [name] right about now.</span>")
+	if(prob(10))
+		to_chat(M, "<span class='danger'>You feel like having some [name] right about now.</span>")
 
 /datum/reagent/proc/addiction_act_stage2(mob/living/M)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/withdrawal_medium, name)
-	if(prob(30))
-		to_chat(M, "<span class='notice'>You feel like you need [name]. You just can't get enough.</span>")
+	if(prob(20))
+		to_chat(M, "<span class='danger'>You feel like you need [name]. You just can't get enough.</span>")
 
 /datum/reagent/proc/addiction_act_stage3(mob/living/M)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/withdrawal_severe, name)
-	if(prob(30))
+	if(prob(25))
 		to_chat(M, "<span class='danger'>You have an intense craving for [name].</span>")
 
 /datum/reagent/proc/addiction_act_stage4(mob/living/M)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/withdrawal_critical, name)
-	if(prob(30))
+	if(prob(25))
 		to_chat(M, "<span class='boldannounce'>You're not feeling good at all! You really need some [name].</span>")
 
 /**

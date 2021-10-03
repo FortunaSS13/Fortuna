@@ -1,24 +1,28 @@
 /datum/reagent/drug/jet
-	name = "Jet Inhalant"
+	name = "Jet"
 	description = "A chemical used to induce a euphoric high derived from brahmin dung. Fast-acting, powerful, and highly addictive."
 	color = "#60A584" // rgb: 96, 165, 132
-	overdose_threshold = 20
-	addiction_threshold = 12.5
+	overdose_threshold = 10
+	addiction_threshold = 9
 
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
+		if(prob(33))
+			addiction_random = 6
+			addiction_threshold = (addiction_random -= addiction_threshold)
+		to_chat(M, "<span class='notice'>You feel a euphoric rush wash over your body, muscles tensing up and heartrate increasing tenfold!</span>")
 
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You come down from your high. The wild ride is unfortunately over...</span>")
+		to_chat(M, "<span class='notice'>Time begins to return to normal speed around you as the high fades...</span>")
 		M.confused += 2
-	
+
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-20, 0)
 	M.set_drugginess(20)
+	M.Jitter(2)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(10))
 		step(M, pick(GLOB.cardinals))
 	if(prob(12))
@@ -37,25 +41,29 @@
 	..()
 
 /datum/reagent/drug/jet/addiction_act_stage1(mob/living/M)
+	M.Dizzy(1)
 	if(prob(20))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
 /datum/reagent/drug/jet/addiction_act_stage2(mob/living/M)
 	M.Dizzy(5)
-	M.adjustToxLoss(1, 0)
-	if(prob(30))
+	if(prob(10))
+		M.set_disgust(60)
+	if(prob(40))
 		M.emote(pick("twitch","drool","moan"))
+	M.blur_eyes(5)
 	..()
 
 /datum/reagent/drug/jet/addiction_act_stage3(mob/living/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 4, i++)
 			step(M, pick(GLOB.cardinals))
-	M.adjustToxLoss(3, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
-	M.set_disgust(60)
+	M.set_disgust(90)
+	M.blur_eyes(5)
 	M.Dizzy(10)
+	if(prob(10))
+		M.adjustStaminaLoss(20, 0)
 	if(prob(40))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -64,27 +72,37 @@
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
-	M.adjustToxLoss(5, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
-	M.set_disgust(100)
-	M.Dizzy(15)
+	M.set_disgust(150)
+	M.blur_eyes(20)
+	if(prob(10))
+		M.adjustBruteLoss(5, 0)
+	if(prob(5))
+		M.adjustToxLoss(5, 0)
+	if(prob(10))
+		M.adjustStaminaLoss(200, 0)
+		M.visible_message("<span class='danger'>[M] heaves with exhaustion, collapsing to the ground!</span>")
+
 	if(prob(50))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 	. = TRUE
 
 /datum/reagent/drug/turbo
-	name = "Turbo Inhalant"
+	name = "Turbo"
 	description = "A chemical compound that, when inhaled, vastly increases the user's reflexes and slows their perception of time. Carries a risk of addiction and extreme nausea and toxin damage if overdosed."
 	reagent_state = LIQUID
 	color = "#FAFAFA"
-	overdose_threshold = 14
-	addiction_threshold = 9
+	overdose_threshold = 10
+	addiction_threshold = 5
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 
 /datum/reagent/drug/turbo/on_mob_add(mob/M)
 	..()
 	ADD_TRAIT(M, TRAIT_IGNORESLOWDOWN, "[type]")
+	if(isliving(M))
+		if(prob(66))
+			addiction_random = 6
+			addiction_threshold = (addiction_random -= addiction_threshold)
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
 	REMOVE_TRAIT(M, TRAIT_IGNORESLOWDOWN, "[type]")
@@ -106,6 +124,9 @@
 			step(M, pick(GLOB.cardinals))
 	if(prob(20))
 		M.emote("laugh")
+	if(prob(5))
+		to_chat(M, "<spawn class='notice'>Your heart begins to fail as a stabbing pain appears in your chest, beating fast enough to shred the muscle within!</span>")
+		M.adjustOrganLoss(ORGAN_SLOT_HEART, 5)
 	if(prob(33))
 		M.visible_message("<span class='danger'>[M]'s hands flip out and flail everywhere!</span>")
 		M.drop_all_held_items()
@@ -115,14 +136,16 @@
 
 /datum/reagent/drug/turbo/addiction_act_stage1(mob/living/M)
 	M.Jitter(5)
-	if(prob(20))
+	if(prob(10))
+		shake_camera(M, 10, 1)
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
 /datum/reagent/drug/turbo/addiction_act_stage2(mob/living/M)
 	M.Jitter(10)
 	M.Dizzy(10)
-	if(prob(30))
+	if(prob(20))
+		shake_camera(M, 10, 2)
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
@@ -132,7 +155,8 @@
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(15)
 	M.Dizzy(15)
-	if(prob(40))
+	if(prob(20))
+		shake_camera(M, 10, 2)
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
@@ -142,19 +166,19 @@
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(20)
 	M.Dizzy(20)
-	M.adjustToxLoss(6, 0)
-	if(prob(50))
+	if(prob(20))
+		shake_camera(M, 10, 3)
 		M.emote(pick("twitch","drool","moan"))
 	..()
 	. = TRUE
 
 /datum/reagent/drug/psycho
-	name = "Psycho Fluid"
+	name = "Psycho"
 	description = "Makes the user hit harder and shrug off slight stuns, but causes slight brain damage and carries a risk of addiction."
 	reagent_state = LIQUID
 	color = "#FF0000"
 	overdose_threshold = 15
-	addiction_threshold = 12.5
+	addiction_threshold = 20
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 
@@ -243,7 +267,7 @@
 	return
 
 /datum/reagent/drug/buffout
-	name = "Buffout Powder"
+	name = "Buffout"
 	description = "A powerful steroid which increases the user's strength and endurance."
 	color = "#FF9900"
 	reagent_state = SOLID
