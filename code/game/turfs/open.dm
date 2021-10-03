@@ -201,7 +201,7 @@
 			flash_color(L, flash_color = "#C80000", flash_time = 10)
 
 
-/turf/open/Initalize_Atmos(times_fired)
+/turf/open/Initialize_Atmos(times_fired)
 	update_visuals()
 	ImmediateCalculateAdjacentTurfs()
 

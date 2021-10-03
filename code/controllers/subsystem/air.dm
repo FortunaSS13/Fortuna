@@ -118,7 +118,7 @@ SUBSYSTEM_DEF(air)
 	SSair.can_fire = 0
 	message_admins("Air reset begun.")
 	for(var/turf/open/T in world)
-		T.Initalize_Atmos(0)
+		T.Initialize_Atmos(0)
 		CHECK_TICK
 	message_admins("Air reset done.")
 	SSair.can_fire = 1
