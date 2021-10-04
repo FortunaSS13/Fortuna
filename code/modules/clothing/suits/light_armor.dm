@@ -68,7 +68,7 @@
 	desc = "Poorly maintained, this patched vest will still still stop some bullets, but don't expect any miracles. The ballistic nylon used in its construction is inferior to kevlar, and very weak to acid, but still quite tough."
 	icon_state = "vest_flak"
 	item_state = "vest_flak"
-	armor = list("melee" = 0, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -50)
+	armor = list("melee" = 0, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -50)
 
 /obj/item/clothing/suit/armored/light/vest/kevlar
 	name = "kevlar vest"
@@ -293,16 +293,15 @@
 	desc = "Stylish and has discrete lead plates inserted, just in case someone brings a laser to a fistfight."
 	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 0, "acid" = 0)
 	
-//////////
-// Oasis//
-/////////
+////////////////
+// Oasis/Town//
+//////////////
 
 /obj/item/clothing/suit/armored/light/town
 	name = "town trenchcoat"
 	desc = "A non-descript black trenchcoat."
 	icon_state = "towntrench"
 	item_state = "hostrench"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5)
 
 /obj/item/clothing/suit/armored/light/town/mayor
@@ -310,12 +309,12 @@
 	desc = "A symbol of the mayor's authority (or lack thereof)."
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5)
 	
-/obj/item/clothing/suit/armored/light/vest/town
-	name = "flak vest"
+/obj/item/clothing/suit/armored/light/town/vest
+	name = "Oasis flak vest"
 	desc = "A refurbished flak vest, repaired by the Oasis Police Department. The ballistic nylon has a much tougher weave, but it still will not take acid or most high-powered rounds."
 	icon_state = "vest_flak"
 	item_state = "vest_flak"
-	armor = list("melee" = 10, "bullet" = 30, "laser" = 10, "energy" = 0, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -50)
+	armor = list("melee" = 10, "bullet" = 30, "laser" = 10, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -50)
 	
 ////////////
 // LEGION //
