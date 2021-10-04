@@ -419,7 +419,7 @@ obj/machinery/portable_atmospherics/canister/welder_act(mob/living/user, obj/ite
 					var/list/danger = list()
 					for(var/id in air_contents.get_gases())
 						var/gas = air_contents.get_moles(id)
-						if(!GLOB.gas_data.flags[id] & GAS_FLAG_DANGEROUS)
+						if(!GLOB.gas_data.flags[id] && GAS_FLAG_DANGEROUS)
 							continue
 						if(gas > (GLOB.gas_data.visibility[id] || MOLES_GAS_VISIBLE)) //if moles_visible is undefined, default to default visibility
 							danger[GLOB.gas_data.names[id]] = gas //ex. "plasma" = 20
