@@ -1,4 +1,4 @@
-/*
+ /*
 What are the archived variables for?
 	Calculations are done using the archived variables with the results merged into the regular variables.
 	This prevents race conditions that arise based on the order of tile processing.
@@ -104,14 +104,12 @@ GLOBAL_LIST_INIT(auxtools_atmos_initialized,FALSE)
 		message_admins("[key_name(usr)] modified gas mixture [REF(src)]: Changed volume to [volume].")
 		set_volume(volume)
 
-
 /*
 we use a hook instead
 /datum/gas_mixture/Del()
 	__gasmixture_unregister()
 	. = ..()
 	*/
-
 
 /datum/gas_mixture/proc/__gasmixture_unregister()
 /datum/gas_mixture/proc/__gasmixture_register()
@@ -139,7 +137,6 @@ we use a hook instead
 /datum/gas_mixture/proc/get_moles(gas_type)
 /datum/gas_mixture/proc/set_moles(gas_type, moles)
 
-
 // VV WRAPPERS - EXTOOLS HOOKED PROCS DO NOT TAKE ARGUMENTS FROM CALL() FOR SOME REASON.
 /datum/gas_mixture/proc/vv_set_moles(gas_type, moles)
 	return set_moles(gas_type, moles)
@@ -153,7 +150,6 @@ we use a hook instead
 	return react(holder)
 
 /datum/gas_mixture/proc/scrub_into(datum/gas_mixture/target, ratio, list/gases)
-
 /datum/gas_mixture/proc/mark_immutable()
 /datum/gas_mixture/proc/get_gases()
 /datum/gas_mixture/proc/multiply(factor)
@@ -229,13 +225,11 @@ we use a hook instead
 	//Makes this mix have the same temperature and gas ratios as the giver, but with the same pressure, accounting for volume.
 	//Returns: null
 
-
 /datum/gas_mixture/proc/get_oxidation_power(temp)
 	//Gets how much oxidation this gas can do, optionally at a given temperature.
 
 /datum/gas_mixture/proc/get_fuel_amount(temp)
 	//Gets how much fuel for fires (not counting trit/plasma!) this gas has, optionally at a given temperature.
-
 
 /proc/equalize_all_gases_in_list(list/L)
 	//Makes every gas in the given list have the same pressure, temperature and gas proportions.
@@ -267,14 +261,14 @@ we use a hook instead
 	return 1
 
 /datum/gas_mixture/parse_gas_string(gas_string)
+	gas_string = SSair.preprocess_gas_string(gas_string)
+
 	var/list/gas = params2list(gas_string)
 	if(gas["TEMP"])
 		var/temp = text2num(gas["TEMP"])
 		gas -= "TEMP"
-
 		if(!isnum(temp) || temp < 2.7)
 			temp = 2.7
-
 		set_temperature(temp)
 	clear()
 	for(var/id in gas)
@@ -336,7 +330,6 @@ we use a hook instead
 		analyzer_results = new
 	analyzer_results["fusion"] = instability
 
-
 //Mathematical proofs:
 /*
 get_breath_partial_pressure(gas_pp) --> gas_pp/total_moles()*breath_pp = pp
@@ -380,7 +373,6 @@ get_true_breath_pressure(pp) --> gas_pp = pp/breath_pp*total_moles()
 	to_chat(src, "Operations per second: [100000 / (total_time/1000)]")
 */
 
-
 /// Releases gas from src to output air. This means that it can not transfer air to gas mixture with higher pressure.
 /// a global proc due to rustmos
 /proc/release_gas_to(datum/gas_mixture/input_air, datum/gas_mixture/output_air, target_pressure)
@@ -404,4 +396,3 @@ get_true_breath_pressure(pp) --> gas_pp = pp/breath_pp*total_moles()
 
 		return TRUE
 	return FALSE
-
