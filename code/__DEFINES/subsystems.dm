@@ -200,4 +200,3 @@
 	* * wait deciseconds to run the timer for
 	* * flags flags for this timer, see: code\__DEFINES\subsystems.dm
 */
-#define addtimer(args...) _addtimer(args, file = __FILE__, line = __LINE__)

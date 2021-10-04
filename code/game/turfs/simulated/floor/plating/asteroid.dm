@@ -137,7 +137,7 @@
 	turf_type = /turf/open/floor/plating/asteroid/airless
 
 
-#define SPAWN_MEGAFAUNA "bluh bluh huge boss"
+
 #define SPAWN_BUBBLEGUM 6
 
 /turf/open/floor/plating/asteroid/airless/cave
