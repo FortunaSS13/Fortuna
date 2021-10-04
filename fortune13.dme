@@ -18,7 +18,7 @@
 #include "_maps\templates\dungeons\dungeons.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
-#include "code\__DEFINES\_auxmos.dm"
+#include "code\__DEFINES\_auxtools.dm"
 #include "code\__DEFINES\_globals.dm"
 #include "code\__DEFINES\_helpers.dm"
 #include "code\__DEFINES\_protect.dm"
