@@ -61,7 +61,7 @@
 	if(reagents.total_volume && (ignore_flags || M.can_inject(user, 1))) // Ignore flag should be checked first or there will be an error message.
 		to_chat(M, "<span class='warning'>You feel a rush of air in the back of your throat!</span>")
 		playsound(src, 'sound/f13effects/inhaler.ogg', 50, 0)
-		new /obj/effect/temp_visual/small_smoke(get_turf(M))
+		new /obj/effect/temp_visual/small_smoke/halfsecond(get_turf(M))
 		to_chat(user, "<span class='notice'>You make [M] inhale the [src].</span>")
 		resetshake(user)
 
