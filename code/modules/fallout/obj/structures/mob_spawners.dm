@@ -6,8 +6,8 @@
 	icon_state = "hole"
 	var/list/spawned_mobs = list()
 	var/max_mobs = 3
+	var/can_fire = TRUE
 	var/mob_types = list(/mob/living/simple_animal/hostile/carp)
-	var/spawn_delay = 0
 	//make spawn_time's multiples of 10. The SS runs on 10 seconds.
 	var/spawn_time = 20 SECONDS
 	var/coverable = TRUE
@@ -31,20 +31,19 @@
 	. = ..()
 
 /obj/structure/nest/proc/spawn_mob()
-	if(covered)
+	if(!can_fire)
 		return FALSE
-	if(world.time < spawn_delay)
-		return 0
+	if(covered)
+		can_fire = FALSE
+		return FALSE
 	CHECK_TICK
 	if(spawned_mobs.len >= max_mobs)
 		return FALSE
 	var/mob/living/carbon/human/H = locate(/mob/living/carbon/human) in range(radius, get_turf(src))
-	CHECK_TICK
 	if(!H?.client)
 		return FALSE
-
-	spawn_delay = world.time + spawn_time
-
+	toggle_fire(FALSE)
+	addtimer(CALLBACK(src, .proc/toggle_fire), spawn_time)
 	var/chosen_mob_type = pickweight(mob_types)
 	var/mob/living/simple_animal/L = new chosen_mob_type(src.loc)
 	L.flags_1 |= (flags_1 & ADMIN_SPAWNED_1)	//If we were admin spawned, lets have our children count as that as well.
@@ -57,6 +56,9 @@
 		Destroy()
 		return
 
+
+/obj/structure/nest/proc/toggle_fire(fire = TRUE)
+	can_fire = fire
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HARM)	
