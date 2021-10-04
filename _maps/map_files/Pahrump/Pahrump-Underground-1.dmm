@@ -23798,7 +23798,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "pHv" = (
-/obj/machinery/telecomms/server/presets/enclave,
+/obj/machinery/telecomms/server/presets/khan,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
 "pIc" = (

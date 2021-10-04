@@ -15,7 +15,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_VAULT = RADIO_TOKEN_VAULT,
 	RADIO_CHANNEL_NCR = RADIO_TOKEN_NCR,
 	RADIO_CHANNEL_BOS = RADIO_TOKEN_BOS,
-	RADIO_CHANNEL_KHAN = RADIO_TOKEN_ENCLAVE,
+	RADIO_CHANNEL_KHAN = RADIO_TOKEN_KHAN,
 	RADIO_CHANNEL_TOWN = RADIO_TOKEN_TOWN,
 	RADIO_CHANNEL_DEN = RADIO_TOKEN_DEN,
 	RADIO_CHANNEL_LEGION = RADIO_TOKEN_LEGION,
@@ -345,7 +345,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/headset_khan
-	name = "khan radio headset"
+	name = "Khan radio headset"
 	desc = "This is used by the Great Khans.\nTo access the Khan channel, use :z."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_khan

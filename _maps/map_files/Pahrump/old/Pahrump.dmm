@@ -30856,7 +30856,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "ciZ" = (
-/obj/machinery/telecomms/server/presets/enclave,
+/obj/machinery/telecomms/server/presets/khan,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
 "cja" = (

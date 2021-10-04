@@ -61,9 +61,9 @@
 #define RADIO_KEY_BOS "q"
 #define RADIO_TOKEN_BOS ":q"
 
-#define RADIO_CHANNEL_KHAN "Enclave"
-#define RADIO_KEY_ENCLAVE "z"
-#define RADIO_TOKEN_ENCLAVE ":z"
+#define RADIO_CHANNEL_KHAN "Khan"
+#define RADIO_KEY_KHAN "z"
+#define RADIO_TOKEN_KHAN ":z"
 
 #define RADIO_CHANNEL_TOWN "Town"
 #define RADIO_KEY_TOWN "f"
@@ -97,7 +97,7 @@
 #define FREQ_VAULT 1361 //Vault
 #define FREQ_NCR 1363 //NCR
 #define FREQ_BOS 1365 //BOS
-#define FREQ_KHAN 1367 //ENCLAVE
+#define FREQ_KHAN 1367 //KHAN
 #define FREQ_TOWN 1369 //TOWN
 #define FREQ_LEGION 1371 //LEGIO
 #define FREQ_RANGER 1373 //Ranger
