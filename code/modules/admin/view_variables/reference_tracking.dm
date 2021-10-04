@@ -157,6 +157,25 @@ GLOBAL_LIST_EMPTY(deletion_failures)
 	SSgarbage.can_fire = TRUE
 	SSgarbage.update_nextfire(reset_time = TRUE)
 
+
+/datum/verb/qdel_then_find_references()
+	set category = "Debug"
+	set name = "qdel() then Find References"
+	set src in world
+
+	qdel(src, TRUE) //force a qdel
+	if(!running_find_references)
+		find_references(TRUE)
+
+
+/datum/verb/qdel_then_if_fail_find_references()
+	set category = "Debug"
+	set name = "qdel() then Find References if GC failure"
+	set src in world
+
+	qdel_and_find_ref_if_fail(src, TRUE)
+
+
 /datum/proc/DoSearchVar(potential_container, container_name, recursive_limit = 64, search_time = world.time)
 	#ifdef REFERENCE_TRACKING_DEBUG
 	if(!found_refs && SSgarbage.should_save_refs)
