@@ -119,7 +119,7 @@
 
 /obj/machinery/telecomms/server/presets/enclave
 	id = "Enclave Server"
-	freq_listening = list(FREQ_ENCLAVE)
+	freq_listening = list(FREQ_KHAN)
 	autolinkers = list("enclave")
 
 /obj/machinery/telecomms/server/presets/town

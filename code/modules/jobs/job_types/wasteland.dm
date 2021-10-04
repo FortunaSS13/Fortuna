@@ -25,7 +25,7 @@
 	jobtype = /datum/job/wasteland/enclavespy
 	backpack = /obj/item/storage/backpack/satchel/leather
 	head = 			/obj/item/clothing/head/helmet/f13/combat/enclave
-	ears = 			/obj/item/radio/headset/headset_enclave
+	//ears = 			/obj/item/radio/headset/headset_enclave
 	glasses = 		/obj/item/clothing/glasses/night
 	uniform =		/obj/item/clothing/under/f13/navy
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/enclave
@@ -65,7 +65,7 @@
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/wasteland/enclavesgt
 	backpack = /obj/item/storage/backpack/satchel/enclave
-	ears = 			/obj/item/radio/headset/headset_enclave
+	//ears = 			/obj/item/radio/headset/headset_enclave
 	glasses = 		/obj/item/clothing/glasses/night
 	uniform =		/obj/item/clothing/under/f13/enclave/peacekeeper
 	accessory =     /obj/item/clothing/accessory/ncr/SGT
@@ -113,7 +113,7 @@
 	jobtype = /datum/job/wasteland/enclavesci
 	backpack = /obj/item/storage/backpack/satchel/enclave
 	head = 			/obj/item/clothing/head/helmet/f13/envirosuit
-	ears = 			/obj/item/radio/headset/headset_enclave
+	//ears = 			/obj/item/radio/headset/headset_enclave
 	glasses = 		/obj/item/clothing/glasses/night
 	mask =			/obj/item/clothing/mask/breath/medical
 	gloves = 		/obj/item/clothing/gloves/color/latex/nitrile
@@ -170,7 +170,7 @@
 	jobtype = /datum/job/wasteland/enclavelt
 	backpack = /obj/item/storage/backpack/satchel/enclave
 	head = /obj/item/clothing/head/helmet/f13/helmet/enclave/officer
-	ears = /obj/item/radio/headset/headset_enclave
+	//ears = /obj/item/radio/headset/headset_enclave
 	glasses = /obj/item/clothing/glasses/night
 	mask = /obj/item/clothing/mask/gas/enclave
 	uniform = /obj/item/clothing/under/f13/enclave/officer
@@ -247,7 +247,7 @@ Great Khan
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/ninemil
 	id = /obj/item/card/id/khantattoo
-	ears = /obj/item/radio/headset
+	ears = /obj/item/radio/headset/headset_khan
 	belt = /obj/item/melee/onehanded/machete
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
