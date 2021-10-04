@@ -173,7 +173,7 @@
 
 /obj/item/encryptionkey/headset_khan
 	name = "Khan radio encryption key"
-	desc = "An encryption key for a radio headset.  To access the Khan channel, use :z."
+	desc = "An encryption key for a radio headset.  To access the Khan channel, use :j."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_KHAN = 1)
 

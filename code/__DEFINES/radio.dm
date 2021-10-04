@@ -62,8 +62,8 @@
 #define RADIO_TOKEN_BOS ":q"
 
 #define RADIO_CHANNEL_KHAN "Khan"
-#define RADIO_KEY_KHAN "z"
-#define RADIO_TOKEN_KHAN ":z"
+#define RADIO_KEY_KHAN "j"
+#define RADIO_TOKEN_KHAN ":j"
 
 #define RADIO_CHANNEL_TOWN "Town"
 #define RADIO_KEY_TOWN "f"
