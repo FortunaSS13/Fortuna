@@ -271,7 +271,6 @@
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
-	var/obj/effect/overlay/water/river/top
 
 /turf/open/indestructible/ground/outside/water/Initialize()
 	. = ..()
@@ -300,9 +299,6 @@
 
 /turf/open/indestructible/ground/outside/water/update_icon()
 	. = ..()
-	if(locate(/obj/structure/) in src.contents)
-		return
-	top = new /obj/effect/overlay/water/river(src)
 
 /turf/open/indestructible/ground/outside/snow
 	initial_gas_mix = "o2=22;n2=82;TEMP=285"
