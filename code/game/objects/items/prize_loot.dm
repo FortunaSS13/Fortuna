@@ -3,28 +3,12 @@
 	desc = "A set of tools dedicated to lockpicking, intended for the novice to the master."
 	icon = 'icons/obj/fallout/lockbox.dmi'
 	icon_state = "basic_lockpick"
-	var/pick_integrity = 5
-	var/required_luck = 0
 
 /obj/item/lockpick_set/advanced
 	icon_state = "advanced_lockpick"
-	pick_integrity = 15
-	required_luck = 5
 
 /obj/item/lockpick_set/master
 	icon_state = "master_lockpick"
-	pick_integrity = -1 //limitless power
-	required_luck = 9
-
-/obj/item/lockpick_set/proc/use_duration(mob/user)
-	if(!pick_integrity || user.client.prefs.special_l < required_luck)
-		return FALSE
-	pick_integrity--
-	return TRUE
-
-/obj/item/lockpick_set/examine(mob/user)
-	. = ..()
-	. += "[src] requires at least [required_luck] luck to be used. If used by someone less qualified, it will break!"
 
 /obj/item/locked_box
 	name = "locked box"
