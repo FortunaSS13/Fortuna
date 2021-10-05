@@ -203,8 +203,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		// M1919, military ripper
-		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, AMR
+		/datum/outfit/loadout/palacent,		// aer12, military ripper
+		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, AMR, military ripper
 		/datum/outfit/loadout/centurion,	// 14mm pistol, Powerfist
 		)
 
@@ -241,10 +241,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
-	suit_store = /obj/item/gun/ballistic/automatic/m1919
+	suit_store = /obj/item/gun/energy/laser/aer12
 	backpack_contents = list(
 		/obj/item/melee/powered/ripper/prewar = 1,
-		/obj/item/ammo_box/magazine/mm762 = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		)
 
 /datum/outfit/loadout/rangerhunter
@@ -256,7 +256,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/magazine/amr = 1,
 		/obj/item/ammo_box/c4570 = 3,
 		/obj/item/gun/ballistic/revolver/hunting = 1,
-		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/melee/powered/ripper/prewar = 1,
 		)
 
 /datum/outfit/loadout/centurion
@@ -430,8 +430,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
@@ -506,8 +506,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
 	supervisors = "the Veteran Decanus and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
@@ -654,8 +654,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	title = "Veteran Legionnaire"
 	flag = F13VETLEGIONARY
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "A hardened warrior, obeying the orders from the Decanus and Centurion is second nature, as is fighting the profligates. If no officers are present, make sure the younger warriors act like proper Legionaires."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
@@ -734,8 +734,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	title = "Prime Legionnaire"
 	flag = F13LEGIONARY
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
@@ -814,8 +814,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	title = "Recruit Legionnaire"
 	flag = F13RECRUITLEG
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion. Respect the soldiers of higher rank."
 	supervisors = "the Decani and Centurion."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
@@ -886,8 +886,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = " The Slavemaster is a legionnaire temporarily assigned to keeping slaves and prisoners in check."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
