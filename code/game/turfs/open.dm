@@ -11,6 +11,7 @@
 	var/barefootstep = null
 	var/clawfootstep = null
 	var/heavyfootstep = null
+	var/depth = 0
 
 /turf/open/ComponentInitialize()
 	. = ..()
@@ -52,6 +53,7 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = TRUE
+	var/hardness = 1
 
 /turf/open/indestructible/Melt()
 	to_be_destroyed = FALSE
