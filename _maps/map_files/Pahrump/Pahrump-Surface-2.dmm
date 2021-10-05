@@ -1391,6 +1391,7 @@
 "aFb" = (
 /obj/structure/nest/protectron{
 	layer = 3;
+	max_mobs = 2;
 	pixel_y = 20
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -2148,13 +2149,18 @@
 	},
 /area/f13/building)
 "aYk" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /obj/structure/nest/protectron{
 	layer = 3;
 	max_mobs = 1;
 	pixel_y = 20
 	},
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/village)
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "aYG" = (
 /obj/structure/decoration/clock{
 	pixel_y = 30
@@ -5042,8 +5048,14 @@
 	},
 /area/f13/building)
 "cnX" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/f13/wood,
+/obj/structure/nest/protectron{
+	layer = 3;
+	max_mobs = 2;
+	pixel_y = 20
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
 /area/f13/village)
 "coh" = (
 /obj/machinery/door/poddoor/preopen{
@@ -9660,13 +9672,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "exC" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/ghoul{
+	layer = 2.07;
+	max_mobs = 1
 	},
-/mob/living/simple_animal/hostile/handy,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "exG" = (
 /obj/structure/simple_door/house,
@@ -17322,16 +17333,13 @@
 	},
 /area/f13/ncr)
 "hKL" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/nest/ghoul{
+	max_mobs = 2
 	},
-/obj/structure/chair/f13chair2{
-	dir = 1
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleslab"
 	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/building)
+/area/f13/wasteland)
 "hLd" = (
 /obj/structure/chair/stool/bar,
 /obj/effect/decal/cleanable/dirt,
@@ -18575,14 +18583,6 @@
 /obj/item/storage/backpack,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"ipQ" = (
-/mob/living/simple_animal/hostile/handy,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
-	},
-/area/f13/building)
 "ipR" = (
 /obj/structure/closet,
 /obj/item/clothing/mask/luchador/rudos,
@@ -18664,8 +18664,12 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
 "ira" = (
-/obj/structure/closet,
-/obj/item/reagent_containers/glass/rag/towel,
+/obj/structure/nest/protectron{
+	layer = 3;
+	max_mobs = 1;
+	name = "towel boy pod";
+	pixel_y = 20
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/village)
 "irC" = (
@@ -20216,7 +20220,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "iYf" = (
-/mob/living/simple_animal/hostile/handy,
+/obj/structure/nest/securitron,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -26807,6 +26811,7 @@
 	color = "#363636"
 	},
 /obj/structure/chair/f13chair2,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -35671,7 +35676,6 @@
 	color = "#363636"
 	},
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -42984,15 +42988,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"tVB" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/mob/living/simple_animal/hostile/handy,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/building)
 "tVF" = (
 /obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria{
@@ -43092,11 +43087,6 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
-"tYJ" = (
-/obj/structure/chair/wood,
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/f13/wood,
-/area/f13/village)
 "tZs" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -49895,10 +49885,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
-"xcp" = (
-/obj/structure/nest/ghoul,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xcq" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -78721,11 +78707,11 @@ qGZ
 ydQ
 eBc
 pYH
-cnX
+uRJ
 iFb
 cbk
 uRJ
-tYJ
+jTq
 hzK
 srw
 bFJ
@@ -80262,7 +80248,7 @@ faW
 faW
 nHP
 stG
-lrQ
+hKL
 faW
 nHP
 hAC
@@ -81806,7 +81792,7 @@ ijg
 ugo
 rjD
 ijg
-cnX
+uRJ
 uRJ
 iFb
 gAU
@@ -92845,7 +92831,7 @@ pcG
 pcG
 pcG
 pcG
-aYk
+ihA
 ihA
 ihA
 ihA
@@ -92985,7 +92971,7 @@ swx
 hfh
 vjt
 nDI
-ipQ
+nzk
 eJZ
 sGp
 fyf
@@ -100290,7 +100276,7 @@ pcG
 pcG
 pcG
 pcG
-skq
+cnX
 bcV
 pcG
 pcG
@@ -101200,7 +101186,7 @@ gcK
 ktB
 gcK
 ggK
-xcp
+ggK
 ggK
 tvL
 wOS
@@ -103359,14 +103345,14 @@ dMW
 tFU
 lqQ
 otv
-exC
+otv
 otv
 tOW
 wOj
 jxp
 maa
 qsh
-hKL
+bfO
 otv
 otv
 xOD
@@ -104151,7 +104137,7 @@ bBZ
 tFU
 ngU
 lFh
-ept
+exC
 vof
 kIf
 tFU
@@ -110311,7 +110297,7 @@ bZN
 wiC
 rTr
 kYG
-kYG
+aYk
 kYG
 wrV
 kYG
@@ -110558,7 +110544,7 @@ wrV
 wrV
 wrV
 oIi
-tVB
+kYG
 kYG
 kYG
 fyh
