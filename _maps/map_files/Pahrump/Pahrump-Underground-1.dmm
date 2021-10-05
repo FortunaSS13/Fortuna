@@ -19805,7 +19805,7 @@
 /area/f13/brotherhood/mining)
 "mYI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/deathclaw,
+/obj/structure/nest/deathclawlegendary,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mYV" = (
@@ -30964,9 +30964,6 @@
 /area/f13/den)
 "uPH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/portable_atmospherics/canister/oxygen{
-	pixel_y = 2
-	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/offices1st)
 "uPT" = (
@@ -69973,7 +69970,7 @@ cSY
 hBz
 xBs
 hBz
-xVz
+avu
 eLE
 uoO
 uoO
