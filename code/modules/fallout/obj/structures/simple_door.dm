@@ -40,6 +40,7 @@
 	if(padlock)
 		padlock.forceMove(get_turf(src))
 		padlock = null
+	//fortuna edit
 	investigate_log("Door '[src]' destroyed at [AREACOORD(src)]. Last fingerprints: [src.fingerprintshidden]", INVESTIGATE_DESTROYED)
 	message_admins("Door '[src]' destroyed at [AREACOORD(src)]. Last fingerprints: [src.fingerprintshidden]")
 	log_game("Door '[src]' destroyed at [AREACOORD(src)]. Last fingerprints: [src.fingerprintshidden]")
