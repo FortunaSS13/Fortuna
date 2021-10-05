@@ -116,10 +116,6 @@
 		if(!locked)
 			return
 		var/obj/item/lockpick_set/lockpickW = W
-		if(!lockpickW.use_duration(user))
-			to_chat(user, "<span class='warning'>[lockpickW] breaks while trying to unlock [src]")
-			qdel(lockpickW)
-			return
 		var/success_after_tier = max(100 - (lock_tier * 20), 0) //the higher the lock tier, the harder it is, down to a max of 0
 		var/success_after_skill = min((user.client.prefs.special_l * 5) + success_after_tier, 100) //the higher the persons luck, the better, up to a max of 100, with 50 added
 		if(!prob(success_after_skill))
