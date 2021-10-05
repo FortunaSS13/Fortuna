@@ -17,12 +17,12 @@ Mayor
 
 /datum/job/oasis
 	exp_type = EXP_TYPE_OASIS
+	faction = FACTION_OASIS
 
 /datum/job/oasis/f13mayor
 	title = "Mayor"
 	flag = F13MAYOR
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis"
@@ -78,7 +78,6 @@ Mayor
 	title = "Secretary"
 	flag = F13SECRETARY
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Mayor"
@@ -128,7 +127,6 @@ Mayor
 	flag = F13SHERIFF
 	department_flag = DEP_OASIS
 	head_announce = list("Security")
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis Government"
@@ -215,7 +213,6 @@ Mayor
 	title = "Deputy"
 	flag = F13DEPUTY
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Police Department"
@@ -283,7 +280,7 @@ Mayor
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/bean = 1,
 		/obj/item/ammo_box/shotgun/buck = 1,
-		/obj/item/ammo_box/c38 = 3,
+		/obj/item/ammo_box/a357 = 3,
 		/obj/item/flashlight/seclite = 1,
 		)
 
@@ -311,7 +308,6 @@ Mayor
 	title = "Farmer"
 	flag = F13FARMER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Government & Police Department"
@@ -365,7 +361,6 @@ Mayor
 	title = "Prospector"
 	flag = F13PROSPECTOR
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Government & Police Department"
@@ -427,7 +422,6 @@ Mayor
 	title = "Doctor"
 	flag = F13DENDOC
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "law and order"
@@ -477,7 +471,6 @@ Mayor
 	title = "Barkeep"
 	flag = F13BARKEEP
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Oasis Government & Police Department"
@@ -559,7 +552,6 @@ Mayor
 	title = "Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 8
 	spawn_positions = 8
 	supervisors = "Oasis Government & Police Department"
@@ -615,7 +607,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	backpack_contents = list(/obj/item/reagent_containers/food/drinks/flask = 1,
 	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-	/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+	/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
 	)
 
 /datum/outfit/loadout/bum
@@ -626,7 +618,8 @@ Mayor
 	gloves = /obj/item/clothing/gloves/f13/handwraps
 	shoes = /obj/item/clothing/shoes/f13/rag
 	backpack_contents = list(/obj/item/storage/bag/trash = 1, /obj/item/reagent_containers/food/drinks/bottle/whiskey = 1,
-	/obj/item/gun/ballistic/automatic/hobo/zipgun = 1,
+	/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
+	/obj/item/ammo_box/a556/stripper = 1,
 	/obj/item/twohanded/spear/scrapspear = 1,
 	)
 
@@ -638,7 +631,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/fancy
 	backpack_contents = list(/obj/item/reagent_containers/food/drinks/bottle/champagne = 1,
 	/obj/item/gun/ballistic/revolver/police = 1,
-	/obj/item/ammo_box/c38 = 2,
+	/obj/item/ammo_box/a357 = 2,
 	)
 
 /datum/outfit/loadout/propergent
@@ -695,7 +688,6 @@ Mayor
 /datum/job/wasteland/f13detective
 	title = "Detective"
 	flag = F13DETECTIVE
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	description = "As a Detective you are a private eye who assists clients to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the valley, but for finding answers. Your life is already over, make the ending mean something."
@@ -742,7 +734,7 @@ Mayor
 		/obj/item/detective_scanner=1,
 		/obj/item/storage/box/gloves=1,
 		/obj/item/storage/box/evidence=1,
-		/obj/item/ammo_box/c38=2)
+		/obj/item/ammo_box/a357=2)
 
 /*--------------------------------------------------------------*/
 
@@ -751,14 +743,12 @@ Mayor
 	title = "Banker"
 	flag = F13BANKER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "law and order"
 	description = "No matter where society lurks, profit and fortune are there to be made! It is up to you to distribute caps and earn interest while safekeeping items of value for the wastelands denizens! Ensure you make a profit and make your money back no matter the cost. You are to work alongside the Town, and should not be attempting to harm the residents of Oasis."
 	selection_color = "#dcba97"
 	enforces = "You are in a Job meant for encouraging roleplay with others, do not abandon your post or hoard money unless absolutely necessary. Do not use the caps provided for yourself."
-
 	outfit = /datum/outfit/job/den/f13banker
 
 	loadout_options = list(
@@ -832,7 +822,6 @@ Mayor
 	title = "Shopkeeper"
 	flag = F13SHOPKEEPER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "free hand of the market"
