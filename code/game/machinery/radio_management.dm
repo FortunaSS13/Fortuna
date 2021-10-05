@@ -6,11 +6,6 @@ GLOBAL_LIST_EMPTY(ncr_radios)
 GLOBAL_LIST_EMPTY(legion_radios)
 GLOBAL_LIST_EMPTY(bos_radios)
 
-// These should be removed when global defines for factions are added.
-#define FACTION_NCR "NCR"
-#define FACTION_LEGION "Legion"
-#define FACTION_BROTHERHOOD "Brotherhood of Steel"
-
 /obj/machinery/radioterminal
 	name = "radio control"
 	desc = "A terminal used to remotely disable radios that may have been lost."
@@ -117,7 +112,3 @@ GLOBAL_LIST_EMPTY(bos_radios)
 	name = "Brotherhood radio control"
 	assigned_faction = FACTION_BROTHERHOOD
 	req_one_access = list(ACCESS_BROTHERHOOD_COMMAND)
-
-#undef FACTION_NCR
-#undef FACTION_LEGION
-#undef FACTION_BROTHERHOOD
