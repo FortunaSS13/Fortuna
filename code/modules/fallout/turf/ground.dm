@@ -300,6 +300,8 @@
 
 /turf/open/indestructible/ground/outside/water/update_icon()
 	. = ..()
+	if(locate(/obj/structure/) in src.contents)
+		return
 	top = new /obj/effect/overlay/water/river(src)
 
 /turf/open/indestructible/ground/outside/snow
