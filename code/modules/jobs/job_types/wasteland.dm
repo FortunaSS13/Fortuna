@@ -715,7 +715,6 @@ Raider
 	glasses = /obj/item/clothing/glasses/f13/biker
 	l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents =  list(/obj/item/storage/box/vendingmachine=1,
-							/obj/item/stack/f13Cash/random/med = 2,
 							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
 
 //end new
@@ -1222,7 +1221,6 @@ datum/job/wasteland/f13dendoctor
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/desert
 	r_hand = /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
 	backpack_contents = list(
-							/obj/item/ammo_box/m44box/swc=2
 							)
 
 /datum/outfit/loadout/bounty_hunter
