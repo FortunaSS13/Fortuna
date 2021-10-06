@@ -793,7 +793,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		return
 
 	var/disable_faction = input(usr, "Which faction do you want to toggle?", "Toggle") as null | anything in GLOB.faction_list
-	if(disable_faction in SSjob.disabled_factions) // A sanity check is not needed to see if it's a valid faction
+	if(LAZYISIN(SSjob.disabled_faction, disable_faction)) 
 		LAZYREMOVE(SSjob.disabled_factions, disable_faction)
 	else
 		LAZYADD(SSjob.disabled_factions, disable_faction)
