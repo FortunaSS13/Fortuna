@@ -82,7 +82,9 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/datum/admins/proc/open_borgopanel,
 	/datum/admins/proc/toggle_sleep,
 	/datum/admins/proc/toggle_sleep_area,
+	/datum/admins/proc/toggle_faction_join
 	)
+
 GLOBAL_LIST_INIT(admin_verbs_ban, list(/client/proc/unban_panel, /client/proc/DB_ban_panel, /client/proc/stickybanpanel))
 GLOBAL_PROTECT(admin_verbs_ban)
 GLOBAL_LIST_INIT(admin_verbs_sounds, list(/client/proc/play_local_sound, /client/proc/play_sound, /client/proc/manual_play_web_sound, /client/proc/set_round_end_sound))
@@ -780,3 +782,20 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 				perp.SetAdminSleep(remove = TRUE)
 			log_admin("[key_name(usr)] has unslept everyone in view.")
 			message_admins("[ADMIN_TPMONTY(usr)] has unslept everyone in view.")
+
+/datum/admins/proc/toggle_faction_join()
+	set category = "Admin.Game"
+	set name = "Toggle Faction Join"
+
+	if(!check_rights(R_ADMIN))
+		message_admins("[ADMIN_TPMONTY(usr)] tried to use toggle_faction_join() without admin perms.")
+		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use toggle_faction_join() without admin perms.")
+		return
+
+	var/disable_faction = input(usr, "Which faction do you want to toggle?", "Toggle") as null | anything in GLOB.faction_list
+	if(disable_faction in SSjob.disabled_factions) // A sanity check is not needed to see if it's a valid faction
+		LAZYREMOVE(SSjob.disabled_factions, disable_faction)
+	else
+		LAZYADD(SSjob.disabled_factions, disable_faction)
+
+	message_admins("[ADMIN_TPMONTY(usr)] toggled joining for the [disable_faction] faction!")

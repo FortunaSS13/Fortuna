@@ -443,6 +443,11 @@
 		alert(src, get_job_unavailable_error_message(error, rank))
 		return FALSE
 
+	var/datum/job/job = SSjob.GetJob(rank)
+	if(job.faction && job.faction in SSjob.disabled_factions)
+		alert(src, "An administrator has disabled late join spawning as the [job.faction] faction!")
+		return FALSE
+
 	if(SSticker.late_join_disabled)
 		alert(src, "An administrator has disabled late join spawning.")
 		return FALSE
@@ -468,8 +473,6 @@
 	var/equip = SSjob.EquipRank(character, rank, TRUE)
 	if(isliving(equip))	//Borgs get borged in the equip, so we need to make sure we handle the new mob.
 		character = equip
-
-	var/datum/job/job = SSjob.GetJob(rank)
 
 	if(job && !job.override_latejoin_spawn(character))
 		SSjob.SendToLateJoin(character)
