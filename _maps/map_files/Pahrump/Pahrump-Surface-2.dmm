@@ -3302,7 +3302,6 @@
 	},
 /area/f13/building)
 "bvO" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -3458,7 +3457,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bzB" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop3"
 	},
@@ -11277,7 +11275,6 @@
 	},
 /area/f13/building)
 "feD" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
 	},
@@ -13797,7 +13794,6 @@
 	},
 /area/f13/tunnel)
 "gjI" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
 	icon_state = "outerpavement"
@@ -16557,7 +16553,6 @@
 	},
 /area/f13/village)
 "hto" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
@@ -17117,7 +17112,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "hHk" = (
-/obj/item/ammo_casing/c9mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "horizontaloutermain1"
@@ -17799,7 +17793,6 @@
 	},
 /area/f13/wasteland)
 "hVB" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -19270,7 +19263,6 @@
 	},
 /area/f13/followers)
 "iFT" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -26729,7 +26721,6 @@
 	},
 /area/f13/village)
 "lYi" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright2bottom"
 	},
@@ -28096,7 +28087,6 @@
 	},
 /area/f13/building)
 "mHW" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
 	},
@@ -33525,7 +33515,6 @@
 	},
 /area/f13/wasteland)
 "pqO" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -35770,7 +35759,6 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "qvQ" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
@@ -49885,7 +49873,6 @@
 	},
 /area/f13/ncr)
 "xbX" = (
-/obj/item/ammo_casing/c10mm/ap,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
