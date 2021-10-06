@@ -328,8 +328,8 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
-		M.maxHealth -= 30
-		M.health -= 30
+		M.maxHealth -= 50
+		M.health -= 50
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 	switch(current_cycle)
 		if(1 to 25)
