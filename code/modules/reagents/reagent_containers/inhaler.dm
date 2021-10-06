@@ -90,3 +90,9 @@
 	icon_state = "bandaid_turbo"
 	desc = "A jet inhaler crudely duct-taped to a can of HairStylez hairspray. This doesn't look healthy!"
 	list_reagents = list(/datum/reagent/drug/turbo = 20)
+
+/obj/item/reagent_containers/inhaler/addictol
+	name = "addictol inhaler"
+	icon_state = "bandaid_addictol"
+	desc = "A blue inhaler with a white A across the front of the cylinder. Addictol - by junkies, for junkies!"
+	list_reagents = list(/datum/reagent/medicine/addictol = 20)

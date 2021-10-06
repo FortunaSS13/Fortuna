@@ -596,6 +596,16 @@ datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	..()
 	. = TRUE
 
+/datum/reagent/medicine/addictol
+	name = "Addictol"
+	description = "A medicine delivered via a metered-dose inhaler that sates addictions, allowing junkies to live without being affected by withdrawal symptoms for a period of time."
+	reagent_state = LIQUID
+	color = "#30D5C8"
+
+/datum/reagent/medicine/addictol/on_mob_life(mob/living/carbon/M)
+	sate_addiction(M)
+	return
+
 /datum/reagent/medicine/gaia
 	name = "Gaia Extract"
 
