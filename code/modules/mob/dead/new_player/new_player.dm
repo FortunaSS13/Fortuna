@@ -444,7 +444,7 @@
 		return FALSE
 
 	var/datum/job/job = SSjob.GetJob(rank)
-	if(job.faction && job.faction in SSjob.disabled_factions)
+	if(job.faction && (job.faction in SSjob.disabled_factions))
 		alert(src, "An administrator has disabled spawning as the [job.faction] faction!")
 		return FALSE
 
