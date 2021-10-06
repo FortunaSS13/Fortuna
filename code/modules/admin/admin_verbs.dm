@@ -797,5 +797,6 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		LAZYREMOVE(SSjob.disabled_factions, disable_faction)
 	else
 		LAZYADD(SSjob.disabled_factions, disable_faction)
-
+	
+	log_admin("[key_name(usr)] has toggled joining for the [disable_faction] faction.")
 	message_admins("[ADMIN_TPMONTY(usr)] toggled joining for the [disable_faction] faction!")
