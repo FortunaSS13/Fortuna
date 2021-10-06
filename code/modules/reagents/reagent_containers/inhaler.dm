@@ -33,20 +33,17 @@
 	return
 
 /obj/item/reagent_containers/inhaler/proc/shakeinhaler(mob/living/user)
-	if(shaken == FALSE)
-		if(do_after(user, 25, target = src))
-			to_chat(user, "<span class='warning'>You shake up the [src]!</span>")
-			shaken = TRUE
-			return
-		else
-			return
+	if(!shaken && do_after(user, 25, target = src))
+		to_chat(user, "<span class='warning'>You shake up the [src]!</span>")
+		shaken = TRUE
+		return
 
 /obj/item/reagent_containers/inhaler/attack(mob/living/M, mob/user)
 	if(shaken == FALSE)
-		to_chat(user, "<span class='warning'>[src] needs shaking!</span>")
+		to_chat(user, "<span class='warning'>The [src] needs shaking!</span>")
 		return
 	if(!reagents.total_volume)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, "<span class='warning'>The [src] is empty!</span>")
 		return
 	if(!iscarbon(M))
 		return
@@ -74,7 +71,7 @@
 			else
 				trans = reagents.copy_to(M, amount_per_transfer_from_this)
 
-			to_chat(user, "<span class='notice'>[trans] unit\s inhaled.  [reagents.total_volume] unit\s remaining in [src].</span>")
+			to_chat(user, "<span class='notice'>[trans] unit\s inhaled. [reagents.total_volume] unit\s remaining in \The [src].</span>")
 
 
 			log_combat(user, M, "inhaled", src, "([contained])")
