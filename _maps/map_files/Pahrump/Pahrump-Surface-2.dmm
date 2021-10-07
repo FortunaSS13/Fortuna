@@ -17800,7 +17800,7 @@
 	},
 /area/f13/wasteland)
 "hVB" = (
-/obj/structure/anvil,
+/obj/structure/anvil/obtainable/basic,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
