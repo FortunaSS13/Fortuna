@@ -707,7 +707,7 @@
 	var/location = get_turf(holder.my_atom)
 	for(var/i in 1 to multiplier)
 		new /obj/item/stack/sheet/plastic(location)
-
+/*
 /datum/chemical_reaction/pax
 	name = "pax"
 	id = /datum/reagent/pax
