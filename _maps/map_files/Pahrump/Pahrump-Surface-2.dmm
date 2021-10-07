@@ -3468,7 +3468,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/caves)
+/area/f13/legion)
 "bzH" = (
 /obj/structure/table/wood/fancy,
 /obj/item/candle,
@@ -4003,10 +4003,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bMP" = (
-/obj/structure/destructible/tribal_torch/lit,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/smartfridge/bottlerack/alchemy_rack,
 /turf/open/floor/f13/wood,
-/area/f13/caves)
+/area/f13/legion)
 "bNg" = (
 /obj/structure/fence{
 	dir = 4
@@ -4637,8 +4637,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/village)
 "cdc" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/smartfridge/bottlerack/alchemy_rack,
+/obj/structure/simple_door/metal/barred,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "cde" = (
@@ -9453,9 +9452,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "erY" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/f13/wood,
-/area/f13/caves)
+/obj/structure/reagent_dispensers/barrel/explosive,
+/turf/open/indestructible/ground/inside/subway{
+	name = "stone floor"
+	},
+/area/f13/legion)
 "esc" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -11278,11 +11279,10 @@
 	},
 /area/f13/building)
 "feD" = (
-/obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "feK" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -13798,10 +13798,12 @@
 	},
 /area/f13/tunnel)
 "gjI" = (
+/obj/structure/table/wood,
+/obj/item/melee/smith/hammer/toolbox,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "gjN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -15654,12 +15656,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr)
 "hbW" = (
-/obj/structure/table/wood,
-/obj/item/melee/smith/hammer/toolbox,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "hbY" = (
 /obj/structure/table,
 /obj/item/newspaper,
@@ -16558,11 +16559,11 @@
 	},
 /area/f13/village)
 "hto" = (
-/obj/structure/destructible/tribal_torch/lit,
+/obj/structure/rack,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "htx" = (
 /obj/structure/curtain{
 	color = "#845f58"
@@ -17118,11 +17119,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "hHk" = (
-/obj/structure/rack,
+/obj/machinery/workbench/forge,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "hHm" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -17799,11 +17800,11 @@
 	},
 /area/f13/wasteland)
 "hVB" = (
-/obj/machinery/workbench/forge,
+/obj/structure/anvil,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "hVN" = (
 /obj/structure/rack,
 /turf/open/floor/f13/wood,
@@ -18159,11 +18160,11 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "idu" = (
-/obj/structure/anvil,
+/obj/structure/furnace,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "idH" = (
 /obj/effect/turf_decal/stripes/white/box,
 /obj/machinery/autolathe,
@@ -19271,11 +19272,11 @@
 	},
 /area/f13/followers)
 "iFT" = (
-/obj/structure/furnace,
+/obj/structure/barricade/bars,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
-/area/f13/caves)
+/area/f13/legion)
 "iGB" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -22675,12 +22676,6 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
-"jZE" = (
-/obj/structure/barricade/bars,
-/turf/open/indestructible/ground/inside/subway{
-	name = "stone floor"
-	},
-/area/f13/caves)
 "jZM" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/f13/wood,
@@ -114535,7 +114530,7 @@ hom
 mgg
 xNm
 xNm
-cdc
+bMP
 uNK
 dpK
 sSm
@@ -115560,7 +115555,7 @@ unp
 ggK
 ggK
 gcK
-mTd
+hom
 yaI
 jmv
 xNm
@@ -115817,16 +115812,16 @@ unp
 ggK
 ggK
 gcK
-mTd
+hom
 xNm
 wqz
 xNm
-mTd
-feD
-hHk
-hHk
+hom
+erY
 hto
-mTd
+hto
+hbW
+hom
 gcK
 gcK
 gcK
@@ -116074,16 +116069,16 @@ unp
 ggK
 rwv
 gcK
-mTd
+hom
 bzB
-bjB
-bjB
-mTd
-gjI
-gjI
-gjI
-hVB
-jZE
+xNm
+xNm
+hom
+feD
+feD
+feD
+hHk
+iFT
 gcK
 gcK
 gcK
@@ -116331,16 +116326,16 @@ unp
 ggK
 ggK
 gcK
-mTd
-bMP
-bjB
-bjB
-erY
-gjI
-gjI
-gjI
-gjI
-jZE
+hom
+ylR
+xNm
+xNm
+cdc
+feD
+feD
+feD
+feD
+iFT
 gcK
 gcK
 gcK
@@ -116588,16 +116583,16 @@ unp
 gCL
 ggK
 gcK
-mTd
-mTd
-mTd
-mTd
-mTd
-hbW
+hom
+hom
+hom
+hom
+hom
 gjI
-gjI
-idu
-mTd
+feD
+feD
+hVB
+hom
 gcK
 gcK
 gcK
@@ -116849,12 +116844,12 @@ gcK
 gcK
 gcK
 gcK
-mTd
-hto
-gjI
-gjI
-iFT
-mTd
+hom
+hbW
+feD
+feD
+idu
+hom
 gcK
 gcK
 gcK
@@ -117106,12 +117101,12 @@ gcK
 gcK
 gcK
 gcK
-mTd
-mTd
-mTd
-mTd
-mTd
-mTd
+hom
+hom
+hom
+hom
+hom
+hom
 gcK
 gcK
 gcK
