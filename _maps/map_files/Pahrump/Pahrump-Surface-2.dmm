@@ -13799,7 +13799,7 @@
 /area/f13/tunnel)
 "gjI" = (
 /obj/structure/table/wood,
-/obj/item/melee/smith/hammer/toolbox,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
