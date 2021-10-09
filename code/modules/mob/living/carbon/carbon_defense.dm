@@ -49,8 +49,7 @@
 		if(BODY_ZONE_CHEST)
 			return // Gutting the chest with a projectile would just be weird.
 		if(BODY_ZONE_HEAD)
-			if(head) // If any kind of headgear is worn, no decap.
-				return
+			return // Removes projectile decapitations entirely, because dumb.
 	var/obj/item/bodypart/affecting = get_bodypart(def_zone)
 	if(!affecting?.dismemberable || affecting.get_damage() < (affecting.max_damage - P.dismemberment))
 		return
@@ -188,8 +187,6 @@
 				updatehealth()
 
 /mob/living/carbon/proc/dismembering_strike(mob/living/attacker, dam_zone)
-	if(!attacker.limb_destroyer)
-		return dam_zone
 	var/obj/item/bodypart/affecting
 	if(dam_zone && attacker.client)
 		affecting = get_bodypart(ran_zone(dam_zone))

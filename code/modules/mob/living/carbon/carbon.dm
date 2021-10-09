@@ -65,7 +65,6 @@
 		if(H)
 			H.update_icon()
 
-
 /mob/living/carbon/activate_hand(selhand) //l/r OR 1-held_items.len
 	if(!selhand)
 		selhand = (active_hand_index % held_items.len)+1
@@ -91,6 +90,13 @@
 
 	if(!all_wounds || !(user.a_intent == INTENT_HELP || user == src))
 		return ..()
+	
+	if(lying && user!= src && (user.a_intent == INTENT_HELP) && (I.get_sharpness()) && (user.zone_selected == BODY_ZONE_HEAD))
+		if(I.get_sharpness())
+			playsound(loc, 'sound/weapons/slice.ogg', 50, 1, -1)
+			user.visible_message("[user] starts slicing through \the neck of [src].", "<span class='notice'>You start beheading [src]...</span>", "<span class='italics'>You hear the sound of a blade grinding against bone and flesh.</span>")
+			if(do_after(user, 300, target = src))
+				
 
 	for(var/i in shuffle(all_wounds))
 		var/datum/wound/W = i

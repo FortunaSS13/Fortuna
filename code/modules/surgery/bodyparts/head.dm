@@ -40,7 +40,7 @@
 
 /obj/item/bodypart/head/can_dismember(obj/item/I)
 	// Can't decap people alive or with some kind of headgear. Balance reasons.
-	if(owner && (owner.stat != DEAD || owner.head))
+	if(owner)
 		return FALSE
 	return ..()
 
