@@ -329,15 +329,24 @@
 	. = ..()
 	if(. & EMP_PROTECT_SELF)
 		return
-	if(emped == 0)
-		if(ismob(loc))
-			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems.</span>")
-			armor = armor.modifyRating(linemelee = -100, linebullet = -100, linelaser = -100)
-			emped = 1
-			spawn(50) //5 seconds of being blind and weak
-				to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
-				armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
-				emped = 0
+	emped++
+	var/curremp = emped
+	if(ismob(loc))
+		to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems.</span>")
+		armor = armor.modifyRating(linemelee = -100, linebullet = -100, linelaser = -100)
+		addtimer(CALLBACK(src, .proc/end_emp_effect, curremp), 5 SECONDS)
+
+/obj/item/clothing/head/helmet/f13/power_armor/proc/end_emp_effect(curremp)
+	if(emped != curremp) //Don't fix it if it's been EMP'd again
+		return FALSE
+	if(ismob(loc))
+		var/mob/living/L = loc
+		emped = FALSE
+		to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
+		armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
+		if(istype(L))
+			L.update_equipment_speed_mods()
+	return TRUE
 
 /obj/item/clothing/head/helmet/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	. = ..()
@@ -646,19 +655,19 @@
 /obj/item/clothing/head/f13/chinese_soldier
 	name = "chinese side cap"
 	desc = "(I) A People's Liberation Army side cap, worn by enlisted and non-commissioned officers."
-	icon_state = "chinese_solder"
+	icon_state = "chinese_s"
 	item_state = "secsoft"
 
 /obj/item/clothing/head/f13/chinese_officer
 	name = "chinese officer cap"
 	desc = "(I) A People's Liberation Army cap, worn by low ranking officers."
-	icon_state = "chinese_officer"
+	icon_state = "chinese_o"
 	item_state = "secsoft"
 
 /obj/item/clothing/head/f13/chinese_general
 	name = "chinese peaked cap"
 	desc = "(I) A People's Liberation Army peaked cap, worn by high ranking officers and commanders."
-	icon_state = "chinese_general"
+	icon_state = "chinese_c"
 	item_state = "fedora"
 
 /obj/item/clothing/head/f13/stormchaser
@@ -967,8 +976,9 @@
 /obj/item/clothing/head/f13/ranger_hat/banded
 	name = "banded cowboy hat"
 	desc = "(II) A grey cowboy hat with a hat band decorated with brassen rings."
-	icon_state = "ranger_banded_hat"
-	item_state = "ranger_banded_hat"
+	icon = 'icons/mob/clothing/head.dmi'
+	icon_state = "ranger_hat_grey_banded"
+	item_state = "ranger_hat_grey_banded"
 
 /obj/item/clothing/head/f13/ranger_hat/tan
 	name = "tan cowboy hat"
