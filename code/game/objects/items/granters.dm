@@ -788,6 +788,12 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/scoutcarbine)
 
+/obj/item/book/granter/crafting_recipe/manual/denvr
+	name = "den vr configuration"
+	icon_state = "book"
+	remarks = list("Never make dreams...", "Don't pick from an empty list...", "Runtimes are not good for cardio...", "Report an issue to a nearby technician, and expect to be told to post it to their terminal...", "Probably don't adjust the default safety settings.", "Clean up any messes left in the pod before the next use.")
+	crafting_recipe_types = list(/datum/crafting_recipe/set_vrboard/den)
+
 /obj/item/book/granter/trait/chemistry
 	name = "Big Book of Science"
 	desc = "This heavy textbook can teach basic chemistry, but saw more use as a blunt weapon shortly after the Collapse."
@@ -875,6 +881,37 @@
 	traitname = "punching"
 	remarks = list("Keep your fists up...", "Don't clench your thumb in your fist, or you might break it...", "Turn into your punch, and put your body weight behind it...", "Footwork is everything, make sure to step into your punches...", "Aim for their jaw for an easy K-O...")
 */
+
+/obj/item/book/granter/trait/medical
+	name = "Medical Booklet"
+	desc = "An instruction manual on basic medicine!"
+	granted_trait = null
+	pages_to_mastery = 0
+	time_per_page = 0
+
+/obj/item/book/granter/trait/medical/attack_self(mob/user)
+	var/list/choices = list("Big Book of Science","First Aid Pamphlet")
+	if(granted_trait == null)
+		var/choice = input("Choose a trait:") in choices
+		switch(choice)
+			if(null)
+				return 0
+			if("First Aid Pamphlet")
+				granted_trait = TRAIT_SURGERY_LOW
+				traitname = "minor surgery"
+				remarks = list("Keep your hands and any injuries clean!", "While bandages help to seal a wound, they do not heal a wound.", "Remain calm, focus on the task at hand, stop the bleeding.", "An open wound can lead to easy infection of said wound.", "Keep track of your home's first aid kit, restock used components regularly.", "If a body part has been lost, ice and transport it with the injured to a hospital.",)
+			if("Big Book of Science")
+				granted_trait = TRAIT_CHEMWHIZ
+				traitname = "chemistry"
+				crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+				remarks = list("Always ensure a safe working environment, promptly clean any chemical mess.", "Improperly stored chemicals can quickly lead to safety hazards.", "Do not abuse chemicals for recreational use in the laboratory!", "Labcoats and goggles not only protect you from burns, but give an aura of authority.", "Keep your laboratory clean and organized, utilize cabinets and shelves.", "Potassium and water should not be mixed, or they will react violently.")
+	return ..()
+
+
+/obj/item/book/granter/trait/medical/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
 
 /obj/item/book/granter/trait/selection
 	name = "Burned Book"
