@@ -30,6 +30,7 @@
 
 	var/stored_power = 0//Power to deploy per tick
 	var/datum/looping_sound/supermatter/soundloop //fortuna edit. adds reactor sounds
+
 /obj/machinery/power/am_control_unit/Initialize()
 	. = ..()
 	linked_shielding = list()
@@ -72,15 +73,8 @@
 	return
 
 /obj/machinery/power/am_control_unit/proc/produce_power()
-<<<<<<< Updated upstream
-	if(prob(10))
-		playsound(src.loc, 'sound/machines/sm/loops/calm.ogg', 25, 1)
-||||||| constructed merge base
-	playsound(src.loc, 'sound/effects/bang.ogg', 25, 1)
-=======
 	soundloop.mid_sounds = list('sound/machines/sm/loops/calm.ogg' = 1) //fortuna edit
 	//playsound(src.loc, 'sound/effects/bang.ogg', 25, 1) //fortuna edit
->>>>>>> Stashed changes
 	var/core_power = reported_core_efficiency//Effectively how much fuel we can safely deal with
 	if(core_power <= 0)
 		return 0//Something is wrong
@@ -101,15 +95,9 @@
 		for(var/obj/machinery/am_shielding/AMS in linked_cores)
 			AMS.stability -= core_damage
 			AMS.check_stability(1)
-<<<<<<< Updated upstream
-		if(prob(10))
-			playsound(src.loc, 'sound/machines/sm/loops/calm.ogg', 25, 1)
-	CHECK_TICK
-||||||| constructed merge base
-		playsound(src.loc, 'sound/effects/bang.ogg', 50, 1)
-=======
 		//playsound(src.loc, 'sound/effects/bang.ogg', 50, 1) //fortuna edit
->>>>>>> Stashed changes
+	CHECK_TICK
+
 	return
 
 
