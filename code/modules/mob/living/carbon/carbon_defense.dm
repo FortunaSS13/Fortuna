@@ -522,7 +522,7 @@
 
 /mob/living/proc/preparedecap(mob/living/target)
   if(!incapacitated() && Adjacent(target)) && lying(target))
-    if(do_after(user, 120, target = src))
+    if(do_after(user, 600, target = src))
       REMOVE_TRAIT(target, NO_DECAP, "[type]")
 	  log_combat("[src] prepared [target] for decapitation!")
       user.visible_message("<span class='danger'>[user] is preparing to behead [target]!</span>")
