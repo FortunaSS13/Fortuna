@@ -531,3 +531,4 @@
   else
     to_chat(src, "<span class='notice'>You cannot prepare this person for decapitation.</span>")
     return
+
