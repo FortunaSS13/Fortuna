@@ -191,10 +191,10 @@
 
 /obj/structure/guillotine/post_buckle_mob(mob/living/M)
 	if (!istype(M, /mob/living/carbon/human))
-		return
-
-	var/mob/living/carbon/human/H = M
-
+		var/mob/living/carbon/human/H = M
+		if(HAS_TRAIT(src, TRAIT_STUNIMMUNE))
+			REMOVE_TRAIT(M, NO_DECAP, "[type]")
+			return
 	if (H.dna)
 		if (H.dna.species)
 			var/datum/species/S = H.dna.species
@@ -216,6 +216,7 @@
 /obj/structure/guillotine/post_unbuckle_mob(mob/living/M)
 	M.regenerate_icons()
 	M.pixel_y -= -GUILLOTINE_HEAD_OFFSET // Move their body back
+	M.add_trait(NO_DECAP)
 	M.layer -= GUILLOTINE_LAYER_DIFF
 	..()
 
