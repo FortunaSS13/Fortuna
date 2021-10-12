@@ -506,3 +506,48 @@
 	visible_message("<span class='danger'>[attack_message]</span>",\
 		"<span class='userdanger'>[attack_message_local]</span>", null, COMBAT_MESSAGE_RANGE)
 	return TRUE
+	
+// Allows player to activate a verb on a downed character, priming them for a beheading with a Y/N rule prompt.
+
+/mob/living/verb/preparedecap(mob/living/target in (view(1) - usr))
+	set category = "IC"
+	set name = "Prepare Decapitation"
+	var/confirm = alert("Are you sure you wish to prepare this person for decapitation? It will take one minute to do so, and you will then need to cut their head off normally. Decapitations fall under rule 3.5 - You may not behead someone without at least one emote describing the action. Beheading for the sole purpose of preventing revival is prohibited.", "Confirm Decapitation", "Yes", "No")
+	if(confirm == "Yes")
+		log_admin("DECAPITATION: [key_name(usr)] has started preparing to decapitate [target]!.")
+		preparedecap(target)
+
+/mob/living/proc/preparedecap(mob/living/target)
+	if(!incapacitated() && Adjacent(target))
+		if(do_after(user, 600, target = src))
+			REMOVE_TRAIT(target, NO_DECAP, "[type]")
+			log_combat("[src] prepared [target] for decapitation!")
+			user.visible_message("<span class='danger'>[user] is preparing to behead [target]!</span>")
+			target.adjustBruteLoss(40)
+	return
+	else
+		to_chat(src, "<span class='notice'>You cannot prepare this person for decapitation.</span>")
+		return
+		
+/mob/living/verb/decapitate(mob/living/target in (view(1) - usr))
+	set category = "IC"
+	set name = "Decapitate"
+	var/confirm = alert("Are you sure you wish to decapitate this person? It will take one minute to do so. Decapitations fall under rule 3.5 - You may not behead someone without at least one emote describing the action. Beheading for the sole purpose of preventing revival is prohibited.", "Confirm Decapitation", "Yes", "No")
+	if(confirm == "Yes")
+		log_admin("DECAPITATION: [key_name(usr)] has begun to decapitate [target]!")
+		decapitate(target)
+
+/mob/living/proc/decapitate(mob/living/target)
+	if(!incapacitated() && Adjacent(target) && lying(target))
+		user.visible_message("<span class='danger'>[user] is attempting to decapitate [target]!</span>")
+		if(do_after(user, 600, target = src))
+			REMOVE_TRAIT(target, NO_DECAP, "[type]")
+			log_combat("[src] prepared [target] for decapitation!")
+			user.visible_message("<span class='danger'>[user] decapitates [target]! How horrible!</span>")
+			target.adjustBruteLoss(100)
+			head.dismember()
+	return
+	else
+		to_chat(src, "<span class='notice'>You cannot decapitate this person.</span>")
+		return
+
