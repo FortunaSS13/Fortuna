@@ -48,9 +48,8 @@
 	switch(def_zone)
 		if(BODY_ZONE_CHEST)
 			return // Gutting the chest with a projectile would just be weird.
-		if(BODY_ZONE_HEAD)
-			if(head) // If any kind of headgear is worn, no decap.
-				return
+		if(BODY_ZONE_HEAD) // Bullets decapitating is also weird.
+			return
 	var/obj/item/bodypart/affecting = get_bodypart(def_zone)
 	if(!affecting?.dismemberable || affecting.get_damage() < (affecting.max_damage - P.dismemberment))
 		return
