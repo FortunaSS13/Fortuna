@@ -509,3 +509,23 @@
 	visible_message("<span class='danger'>[attack_message]</span>",\
 		"<span class='userdanger'>[attack_message_local]</span>", null, COMBAT_MESSAGE_RANGE)
 	return TRUE
+	
+// Allows player to activate a verb on a downed character, priming them for a beheading with a Y/N rule prompt.
+
+/mob/living/verb/preparedecap(mob/living/target in (view(1) - usr))
+  set category = "IC"
+	set name = "Prepare Decapitation"
+	var/confirm = alert("Are you sure you wish to prepare this person for decapitation? It will take one minute to do so.", "Confirm Suicide", "Yes", "No")
+  if(confirm == "Yes")
+    preparedecap(target)
+
+/mob/living/proc/preparedecap(mob/living/target)
+  if(!incapacitated() && Adjacent(target)) && lying(target))
+    if(do_after(user, 50, target = src))
+      REMOVE_TRAIT(target, NO_DECAP, "[type]")
+      user.visible_message("<span class='danger'>[user] is preparing to behead [target]!</span>")
+      target.adjustBruteLoss(40)
+      return
+  else
+    to_chat(src, "<span class='notice'>You cannot prepare this person for decapitation.</span>")
+    return
