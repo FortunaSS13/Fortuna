@@ -120,7 +120,7 @@
 
 /obj/item/fishyegg/lobster
 	name = "lobster fish egg"
-	icon_state = "lobster_eggs"
+	icon_state = "catfish_eggs"
 
 /obj/item/fishyegg/shrimp
 	name = "shrimp fish egg"
