@@ -515,14 +515,16 @@
 /mob/living/verb/preparedecap(mob/living/target in (view(1) - usr))
   set category = "IC"
 	set name = "Prepare Decapitation"
-	var/confirm = alert("Are you sure you wish to prepare this person for decapitation? It will take one minute to do so.", "Confirm Suicide", "Yes", "No")
+	var/confirm = alert("Are you sure you wish to prepare this person for decapitation? It will take one minute to do so, and you will then need to cut their head off normally. Decapitations fall under rule 3.5 - You may not behead someone without at least one emote describing the action. Beheading for the sole purpose of preventing revival is prohibited.", "Confirm Decapitation", "Yes", "No")
   if(confirm == "Yes")
+  	log_admin("DECAPITATION: [key_name(usr)] has started preparing to decapitate [target]!.")
     preparedecap(target)
 
 /mob/living/proc/preparedecap(mob/living/target)
   if(!incapacitated() && Adjacent(target)) && lying(target))
-    if(do_after(user, 50, target = src))
+    if(do_after(user, 120, target = src))
       REMOVE_TRAIT(target, NO_DECAP, "[type]")
+	  log_combat("[src] prepared [target] for decapitation!")
       user.visible_message("<span class='danger'>[user] is preparing to behead [target]!</span>")
       target.adjustBruteLoss(40)
       return
