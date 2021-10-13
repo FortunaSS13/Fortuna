@@ -16,15 +16,18 @@
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 
-
+	//fortuna edit
 	depth = 1 // Higher numbers indicates deeper water.
 
-// Largely ported from citadels HRP branch
+
+// Fortuna edit. Below is Largely ported from citadels HRP branch
 
 /turf/open/water/Initialize()
 	. = ..()
 	update_icon()
 
+/turf/open/water/update_icon()
+	. = ..()
 
 /turf/open/water/Entered(atom/movable/AM, atom/oldloc)
 	if(istype(AM, /mob/living))
@@ -77,3 +80,4 @@
 	adjust_fire_stacks(-amount * 5)
 	for(var/atom/movable/AM in contents)
 		AM.water_act(amount)
+
