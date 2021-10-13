@@ -469,7 +469,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/where_accessory
 	var/obj/item/accessory_type //If this is null, it won't be spawned.
 	var/obj/item/accessory_instance
-	var/tick_counter = 0
 
 /datum/quirk/junkie/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -488,7 +487,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		for(var/i in 1 to 7)
 			var/obj/item/reagent_containers/pill/P = new(drug_instance)
 			P.icon_state = pill_state
-			P.list_reagents = list("[reagent_id]" = 1)
+			P.reagents.add_reagent(reagent_id, 1)
 
 	if (accessory_type)
 		accessory_instance = new accessory_type(current_turf)
@@ -512,19 +511,15 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/junkie/on_process()
 	var/mob/living/carbon/human/H = quirk_holder
-	if (tick_counter == 60) //Halfassed optimization, increase this if there's slowdown due to this quirk
-		var/in_list = FALSE
-		for (var/datum/reagent/entry in H.reagents.addiction_list)
-			if(istype(entry, reagent_type))
-				in_list = TRUE
-				break
-		if(!in_list)
-			H.reagents.addiction_list += reagent_instance
-			reagent_instance.addiction_stage = 0
-			to_chat(quirk_holder, "<span class='danger'>You thought you kicked it, but you suddenly feel like you need [reagent_instance.name] again...")
-		tick_counter = 0
-	else
-		++tick_counter
+	var/in_list = FALSE
+	for (var/datum/reagent/entry in H.reagents.addiction_list)
+		if(istype(entry, reagent_type))
+			in_list = TRUE
+			break
+	if(!in_list)
+		LAZYADD(H.reagents.addiction_list, reagent_instance)
+		reagent_instance.addiction_stage = 0
+		to_chat(quirk_holder, "<span class='danger'>You thought you kicked it, but you suddenly feel like you need [reagent_instance.name] again...")
 
 /*
 /datum/quirk/junkie/smoker
@@ -565,6 +560,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Jet Addict"
 	desc = "The jet will make you jittery!"
 	value = -2
+	locked = FALSE
 	gain_text = "<span class='danger'>You begin craving a whiff from a jet inhaler.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in jet.</span>"
 	medical_record_text = "Patient is a jet addict."
@@ -575,6 +571,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Psycho Addict"
 	desc = "KILL! DEATH! DESTROY!"
 	value = -2
+	locked = FALSE
 	gain_text = "<span class='danger'>You begin craving a shot of psycho.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in psycho.</span>"
 	medical_record_text = "Patient is a psycho addict."
@@ -585,6 +582,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Turbo Addict"
 	desc = "See, old Jesus Mordino wanted something that the Redding miners would get addicted to fast AND make them work harder. So, I said, 'no prob,' right?"
 	value = -2
+	locked = FALSE
 	gain_text = "<span class='danger'>You begin craving a whiff from a turbo inhaler.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
 	medical_record_text = "Patient is a turbo addict."
@@ -595,6 +593,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Med-X Addict"
 	desc = "Five doses? Nice. A fella could put himself out of his misery with five doses."
 	value = -2
+	locked = FALSE
 	gain_text = "<span class='danger'>You begin craving a shot of med-x.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in med-x.</span>"
 	medical_record_text = "Patient is a med-x addict."
@@ -605,6 +604,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Mentats Addict"
 	desc = "To be fair, you have to have a very high IQ to understand Hegelian dialectics."
 	value = -2
+	locked = FALSE
 	gain_text = "<span class='danger'>You begin craving a mentat pill.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in mentats.</span>"
 	medical_record_text = "Patient is a mentats addict."
@@ -615,6 +615,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	name = "Buffout Addict"
 	desc = "Experiment Two: Punch through TEN boards. Results: I'm invincible! This is like, some comic-book level strength."
 	value = -2
+	locked = FALSE
 	gain_text = "<span class='danger'>You begin craving a buffout pill.</span>"
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in buffout.</span>"
 	medical_record_text = "Patient is a buffout addict."
