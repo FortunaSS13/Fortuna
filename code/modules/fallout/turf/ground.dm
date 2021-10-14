@@ -250,7 +250,7 @@
 	icon_state = "rubblefull"
 	icon = 'icons/fallout/turfs/ground.dmi'
 //	step_sounds = list("human" = "erikafootsteps")
-
+	var/hardness = 40 //fortuna edit.
 /turf/open/indestructible/ground/outside/wood
 	name = "\proper wood planks"
 	icon_state = "housewood1"
