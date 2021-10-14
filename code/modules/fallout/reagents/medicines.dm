@@ -599,6 +599,7 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	name = "Addictol"
 	description = "A medicine delivered via a metered-dose inhaler that sates addictions, allowing junkies to live without being affected by withdrawal symptoms for a period of time."
 	reagent_state = LIQUID
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	color = "#30D5C8"
 
 /datum/reagent/medicine/addictol/on_mob_life(mob/living/carbon/M)
