@@ -36,10 +36,10 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	var/overdose_threshold = 0
 	var/addiction_threshold = 0
 	var/addiction_stage = 0
-	var/addiction_stage1_end = 10
-	var/addiction_stage2_end = 20
-	var/addiction_stage3_end = 30
-	var/addiction_stage4_end = 40
+	var/addiction_stage1_end = 20
+	var/addiction_stage2_end = 40
+	var/addiction_stage3_end = 60
+	var/addiction_stage4_end = 80
 	var/overdosed = 0 // You fucked up and this is now triggering its overdose effects, purge that shit quick.
 	var/self_consuming = FALSE  //I think this uhhh, makes weird stuff happen when metabolising, but... doesn't seem to do what I think, so I'm gonna leave it.
 	//Fermichem vars:
