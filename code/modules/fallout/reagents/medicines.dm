@@ -602,6 +602,7 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	color = "#30D5C8"
 
 /datum/reagent/medicine/addictol/on_mob_life(mob/living/carbon/M)
+	M.set_disgust(0)
 	sate_addiction(M)
 	return
 
