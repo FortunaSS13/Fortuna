@@ -200,7 +200,7 @@
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
 		rage = new()
-		M.set_disgust(0)
+		L.set_disgust(0)
 		L.add_client_colour(/datum/client_colour/glass_colour/red)
 		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	if(isliving(L))
