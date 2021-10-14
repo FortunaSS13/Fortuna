@@ -63,10 +63,12 @@
 
 /obj/item/clothing/suit/armor/f13/raider/badlands
 	name = "badlands raider armor"
-	desc = "(III) A leather top with a bandolier over it and a straps that cover the arms."
+	desc = "(II*) A leather top with a bandolier over it and a straps that cover the arms."
 	icon_state = "badlands"
 	item_state = "badlands"
-
+	armor = list("tier" = 2, "linemelee" = 25, "linelaser" =  15, "linebullet = 15", "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+	
 /obj/item/clothing/suit/armor/f13/raider/badlands/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
