@@ -13,7 +13,7 @@
 	density = TRUE
 	blocks_air = 1
 	layer = EDGED_TURF_LAYER
-	var/indestructible = 0
+	var/indestructible = 0 //fortuna edit
 	initial_temperature = 293.15
 	// base_icon_state = "smoothrocks"
 	smooth_icon = 'icons/turf/smoothrocks.dmi'
