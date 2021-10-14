@@ -8,6 +8,7 @@
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
+		M.set_disgust(0)
 		if(prob(50))
 			addiction_random = 6
 			addiction_threshold = (addiction_random -= addiction_threshold)
@@ -96,6 +97,7 @@
 	..()
 	ADD_TRAIT(M, TRAIT_IGNORESLOWDOWN, "[type]")
 	if(isliving(M))
+		M.set_disgust(0)
 		if(prob(50))
 			addiction_random = 6
 			addiction_threshold = (addiction_random -= addiction_threshold)
@@ -198,6 +200,7 @@
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
 		rage = new()
+		M.set_disgust(0)
 		L.add_client_colour(/datum/client_colour/glass_colour/red)
 		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	if(isliving(L))
@@ -286,6 +289,7 @@
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
 		M.maxHealth += 25
 		M.health += 25
+		M.set_disgust(0)
 		if(prob(5))
 			addiction_random = 7
 			addiction_threshold = (addiction_random -= addiction_threshold)
