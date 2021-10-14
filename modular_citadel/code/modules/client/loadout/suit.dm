@@ -110,7 +110,7 @@
 							"Barkeep",
 							)
 /datum/gear/suit/hazardvest
-	name = "Hazard Vest)
+	name = "Hazard Vest"
 	path = /obj/item/clothing/suit/hazardvest
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JOBS
 	cost = 2
