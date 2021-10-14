@@ -253,6 +253,11 @@ GLOBAL_LIST_INIT(storage_treasurer_can_hold, typecacheof(list(
 	/obj/item/key,
 	/obj/item/melee/onehanded/knife,
 	/obj/item/paper,
+	/obj/item/folder,
+	/obj/item/storage/bag/money/small,
+	/obj/item/binoculars,
+	obj/item/lipstick,
+	/obj/item/pen,
 	)))
 
 GLOBAL_LIST_INIT(storage_holdout_can_hold, typecacheof(list(
