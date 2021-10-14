@@ -90,7 +90,7 @@
 	reagent_state = LIQUID
 	color = "#FAFAFA"
 	overdose_threshold = 10
-	addiction_threshold = 5
+	addiction_threshold = 9
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 
 /datum/reagent/drug/turbo/on_mob_add(mob/M)
@@ -99,7 +99,7 @@
 	if(isliving(M))
 		M.set_disgust(0)
 		if(prob(50))
-			addiction_random = 6
+			addiction_random = 7
 			addiction_threshold = (addiction_random -= addiction_threshold)
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
