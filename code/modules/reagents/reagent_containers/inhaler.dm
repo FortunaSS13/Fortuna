@@ -85,8 +85,9 @@
 /obj/item/reagent_containers/inhaler/turbo
 	name = "turbo inhaler"
 	icon_state = "bandaid_turbo"
+	amount_per_transfer_from_this = 3
 	desc = "A jet inhaler crudely duct-taped to a can of HairStylez hairspray. This doesn't look healthy!"
-	list_reagents = list(/datum/reagent/drug/turbo = 20)
+	list_reagents = list(/datum/reagent/drug/turbo = 12)
 
 /obj/item/reagent_containers/inhaler/addictol
 	name = "addictol inhaler"
