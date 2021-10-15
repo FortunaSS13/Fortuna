@@ -261,7 +261,7 @@
 			spread = 15
 			extra_damage = 0
 			extra_penetration = 0
-			fire_delay = 1
+			fire_delay = 6
 			to_chat(user, "<span class='notice'>You prepare to fan the hammer for a rapid burst of shots.</span>")
 		if(1)
 			select = 0
