@@ -1137,4 +1137,4 @@ datum/status_effect/pacify
 /obj/screen/alert/status_effect/superstimdebuff
     name = "Super Stim Debuff"
     desc = "The powerful chemicals in the super stimpak have left your body, and now you're feeling the pain. For three minutes, you'll be less accurate and have less 25% less health."
-        icon_state = "regenerative_core" //placeholder
+    icon_state = "regenerative_core" //placeholder
