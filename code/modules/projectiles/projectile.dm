@@ -278,7 +278,7 @@
 				playsound(loc, hitsound, volume, 1, -1)
 			L.visible_message("<span class='danger'>[L] is hit by \a [src][organ_hit_text]!</span>", \
 					"<span class='userdanger'>[L] is hit by \a [src][organ_hit_text]!</span>", null, COMBAT_MESSAGE_RANGE)
-		if(candink && def_zone == BODY_ZONE_HEAD)
+		if(candink && def_zone == BODY_ZONE_HEAD) //fortuna edit
 			var/playdink = rand(1, 10)
 			if(playdink <= 3)
 				playsound(src, 'sound/weapons/dink.ogg', 30, 1)
