@@ -54,48 +54,39 @@
 	. = TRUE
 
 /datum/reagent/medicine/stimpak/super_stimpak
-	name = "super stim chemicals"
+    name = "super stim chemicals"
 
-	description = "Chemicals found in pre-war stimpaks."
-	reagent_state = LIQUID
-	color = "#e50d0d"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 20
-	addiction_threshold = 16
+    description = "Chemicals found in pre-war stimpaks."
+    reagent_state = LIQUID
+    color = "#e50d0d"
+    metabolization_rate = 0.05 * REAGENTS_METABOLISM
+    overdose_threshold = 8
 
 datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
-	if(M.health < 0)					//Functions as epinephrine.
-		M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-	if(M.oxyloss > 35)
-		M.setOxyLoss(35, 0)
-	if(M.losebreath >= 4)
-		M.losebreath -= 2
-	if(M.losebreath < 0)
-		M.losebreath = 0
-	M.adjustStaminaLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-	. = 1
-	if(prob(20))
-		M.AdjustAllImmobility(-20, 0)
-		M.AdjustUnconscious(-20, 0)
-	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0 && M.getToxLoss() == 0 && M.getOxyLoss() == 0)
-		metabolization_rate = 1000 * REAGENTS_METABOLISM //instant metabolise if it won't help you, prevents prehealing before combat
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
-		M.adjustBruteLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustFireLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-		M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
-		. = TRUE
-	..()
+    if(M.health < 0)                    //Functions as epinephrine.
+        M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+        M.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+        M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+    if(M.oxyloss > 35)
+        M.setOxyLoss(35, 0)
+    if(M.losebreath >= 4)
+        M.losebreath -= 2
+    if(M.losebreath < 0)
+        M.losebreath = 0
 
-/datum/reagent/medicine/super_stimpak/overdose_process(mob/living/M)
-	M.adjustToxLoss(10*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(12*REAGENTS_EFFECT_MULTIPLIER)
-	..()
-	. = TRUE
+
+/datum/reagent/medicine/stimpak/super_stimpak/reaction_mob(mob/living/M, method=INJECT, reac_volume, show_message = 1)
+if(iscarbon(M) && M.stat != DEAD)
+        if(method in list(TOUCH, VAPOR, INGEST))
+            M.adjustToxLoss(0.5*reac_volume)
+            if(show_message)
+                to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+        else
+            M.adjustBruteLoss(-20 * reac_volume)
+            M.adjustFireLoss(-20 * reac_volume)
+
+/datum/reagent/medicine/stimpak/super_stimpak/on_mob_delete(mob/living/carbon/human/M)
+        M.apply_status_effect(/datum/status_effect/superstimdebuff)
 	
 /datum/reagent/medicine/longpork_stew
 	name = "longpork stew"
