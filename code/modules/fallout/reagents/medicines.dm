@@ -54,13 +54,12 @@
 	. = TRUE
 
 /datum/reagent/medicine/stimpak/super_stimpak
-    name = "super stim chemicals"
-
-    description = "Chemicals found in pre-war stimpaks."
-    reagent_state = LIQUID
-    color = "#e50d0d"
-    metabolization_rate = 0.05 * REAGENTS_METABOLISM
-    overdose_threshold = 8
+   name = "super stim chemicals"
+   description = "Chemicals found in pre-war stimpaks."
+   reagent_state = LIQUID
+   color = "#e50d0d"
+   metabolization_rate = 0.05 * REAGENTS_METABOLISM
+   overdose_threshold = 8
 
 datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
     if(M.health < 0)                    //Functions as epinephrine.
