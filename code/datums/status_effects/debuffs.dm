@@ -1116,7 +1116,7 @@ datum/status_effect/pacify
 	else if(fake_msg)
 		to_chat(owner, fake_msg)
 	msg_stage++
-	
+
 /datum/status_effect/superstimdebuff
     id = "superstimdebuff"
     duration = 1800 // 3 minutes in deciseconds
@@ -1124,17 +1124,17 @@ datum/status_effect/pacify
 
 /datum/status_effect/superstimdebuff/on_apply()
     owner.ADD_TRAIT(owner, POOR_AIM, src)
-        owner.maxHealth -= 35
-        owner.Health -= 35
+    owner.maxHealth -= 35
+    owner.Health -= 35
     return ..()
 
 /datum/status_effect/superstimdebuff/on_remove()
     owner.maxHealth += 35
-        owner.Health += 35
-        owner.REMOVE_TRAIT(owner, POOR_AIM, src)
+    owner.Health += 35
+    owner.REMOVE_TRAIT(owner, POOR_AIM, src)
     return ..()
 
 /obj/screen/alert/status_effect/superstimdebuff
     name = "Super Stim Debuff"
     desc = "The powerful chemicals in the super stimpak have left your body, and now you're feeling the pain. For three minutes, you'll be less accurate and have less 25% less health."
-        icon_state = "regenerative_core" //placeholder
+    icon_state = "regenerative_core" //placeholder
