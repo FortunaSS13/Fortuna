@@ -55,7 +55,6 @@
 
 /datum/reagent/medicine/stimpak/super_stimpak
    name = "super stim chemicals"
-
    description = "Chemicals found in pre-war stimpaks."
    reagent_state = LIQUID
    color = "#e50d0d"
