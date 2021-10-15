@@ -18,7 +18,7 @@
 	var/limit = 10
 	var/speed = 1
 	var/list/holdingitems
-	var/blacklistchems = list(
+	var/blacklistchems = list( // fortuna addition
 		/obj/item/reagent_containers/hypospray/medipen/psycho,
 		/obj/item/reagent_containers/hypospray/medipen/medx,
 		/obj/item/reagent_containers/inhaler/jet,

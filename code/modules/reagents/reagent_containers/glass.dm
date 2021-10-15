@@ -428,7 +428,7 @@
 	spillable = TRUE
 	var/obj/item/grinded
 	var/mortar_mode = MORTAR_JUICE
-	var/blacklistchems = list(
+	var/blacklistchems = list( // fortuna addition
 		/obj/item/reagent_containers/hypospray/medipen/psycho,
 		/obj/item/reagent_containers/hypospray/medipen/medx,
 		/obj/item/reagent_containers/inhaler/jet,

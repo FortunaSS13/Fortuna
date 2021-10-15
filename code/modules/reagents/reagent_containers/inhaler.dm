@@ -1,4 +1,4 @@
-/obj/item/reagent_containers/inhaler
+/obj/item/reagent_containers/inhaler // all a fortuna addition
 	name = "inhaler"
 	desc = "A generic inhaler."
 	icon = 'icons/obj/chemical.dmi'
