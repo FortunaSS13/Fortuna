@@ -36,7 +36,6 @@ export const MESSAGE_TYPE_EVENTCHAT = 'eventchat';
 export const MESSAGE_TYPE_ADMINLOG = 'adminlog';
 export const MESSAGE_TYPE_ATTACKLOG = 'attacklog';
 export const MESSAGE_TYPE_DEBUG = 'debug';
-export const MESSAGE_TYPE_LOOC = 'looc';
 
 // Metadata for each message type
 export const MESSAGE_TYPES = [
@@ -86,7 +85,7 @@ export const MESSAGE_TYPES = [
     selector: '.ooc, .adminooc, .oocplain, .adminobserverooc',
   },
   {
-    type: MESSAGE_TYPE_LOOC,
+    type: 'looc',
     name: 'LOOC',
     description: 'Local Out of Character message.',
     selector: '.filter_looc, .looc',
