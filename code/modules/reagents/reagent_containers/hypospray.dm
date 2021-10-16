@@ -194,7 +194,7 @@
 	list_reagents = null
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super
-        desc = "The super stimpak is a more advanced version of the regular stimpak. While it heals more severe wounds instantly, it also has unpleasant, though blessedly temporary, side effects. Don't take more than four in a short period of time."
+    desc = "The super stimpak is a more advanced version of the regular stimpak. While it heals more severe wounds instantly, it also has unpleasant, though blessedly temporary, side effects. Don't take more than four in a short period of time."
     icon_state = "superstimpakpen"
     amount_per_transfer_from_this = 2
     volume = 2
