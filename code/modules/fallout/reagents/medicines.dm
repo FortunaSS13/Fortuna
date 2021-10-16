@@ -63,25 +63,25 @@
 
 datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	if(M.health < 0)                    //Functions as epinephrine.
-    M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-    M.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-    M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
 	if(M.oxyloss > 35)
-    M.setOxyLoss(35, 0)
+	M.setOxyLoss(35, 0)
 	if(M.losebreath >= 4)
-    M.losebreath -= 2
+	M.losebreath -= 2
 	if(M.losebreath < 0)
-    M.losebreath = 0
+	M.losebreath = 0
 
 /datum/reagent/medicine/stimpak/super_stimpak/reaction_mob(mob/living/M, method=INJECT, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 	if(method in list(TOUCH, VAPOR, INGEST))
-    M.adjustToxLoss(0.5*reac_volume)
+	M.adjustToxLoss(0.5*reac_volume)
 	if(show_message)
-    to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+	to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	else
-    M.adjustBruteLoss(-20 * reac_volume)
-    M.adjustFireLoss(-20 * reac_volume)
+	M.adjustBruteLoss(-20 * reac_volume)
+	M.adjustFireLoss(-20 * reac_volume)
 
 /datum/reagent/medicine/stimpak/super_stimpak/on_mob_delete(mob/living/carbon/human/M)
 	M.apply_status_effect(/datum/status_effect/superstimdebuff)
