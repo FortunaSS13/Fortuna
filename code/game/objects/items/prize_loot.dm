@@ -4,12 +4,6 @@
 	icon = 'icons/obj/fallout/lockbox.dmi'
 	icon_state = "basic_lockpick"
 
-/obj/item/lockpick_set/advanced
-	icon_state = "advanced_lockpick"
-
-/obj/item/lockpick_set/master
-	icon_state = "master_lockpick"
-
 /obj/item/locked_box
 	name = "locked box"
 	desc = "An object that contains objects that may be useful."
