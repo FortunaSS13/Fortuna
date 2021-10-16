@@ -295,7 +295,7 @@
 		return
 	if(prob(30))
 		visible_message(span_danger("\The [src] lets out a vicious war cry!"))
-		sleep(3)
+		addtimer(3)
 		Charge()
 	if(prob(85) || Proj.damage > 30)
 		return ..()
@@ -334,7 +334,7 @@
 	setDir(get_dir(src, T))
 	var/obj/effect/temp_visual/decoy/D = new /obj/effect/temp_visual/decoy(loc,src)
 	animate(D, alpha = 0, color = "#FF0000", transform = matrix()*2, time = 1)
-	sleep(3)
+	addtimer(3)
 	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, .proc/charge_end))
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/rain/proc/charge_end(list/effects_to_destroy)
@@ -423,7 +423,7 @@
 			to_chat(L, "<span class='userdanger'>You're hit by the nightkin's release of energy!</span>")
 			hit_things += L
 		previousturf = J
-		sleep(1)
+		addtimer(1)
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/rain
 	name = "nightkin rain lord"
