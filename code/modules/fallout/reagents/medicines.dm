@@ -64,8 +64,8 @@
 datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
     if(M.health < 0)                    //Functions as epinephrine.
         M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-        M.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-        M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+    	M.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
+    	M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
     if(M.oxyloss > 35)
         M.setOxyLoss(35, 0)
     if(M.losebreath >= 4)
