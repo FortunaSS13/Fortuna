@@ -54,12 +54,12 @@
 	. = TRUE
 
 /datum/reagent/medicine/stimpak/super_stimpak
-   name = "super stim chemicals"
-   description = "Chemicals found in pre-war stimpaks."
-   reagent_state = LIQUID
-   color = "#e50d0d"
-   metabolization_rate = 0.05 * REAGENTS_METABOLISM
-   overdose_threshold = 8
+   	name = "super stim chemicals"
+   	description = "Chemicals found in pre-war stimpaks."
+   	reagent_state = LIQUID
+   	color = "#e50d0d"
+   	metabolization_rate = 0.05 * REAGENTS_METABOLISM
+   	overdose_threshold = 8
 
 datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
     if(M.health < 0)                    //Functions as epinephrine.
@@ -77,12 +77,12 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 /datum/reagent/medicine/stimpak/super_stimpak/reaction_mob(mob/living/M, method=INJECT, reac_volume, show_message = 1)
     if(iscarbon(M) && M.stat != DEAD)
     if(method in list(TOUCH, VAPOR, INGEST))
-    M.adjustToxLoss(0.5*reac_volume)
-    if(show_message)
-    to_chat(M, "<span class='warning'>You don't feel so good...</span>")
-    else
-    M.adjustBruteLoss(-20 * reac_volume)
-    M.adjustFireLoss(-20 * reac_volume)
+   		 M.adjustToxLoss(0.5*reac_volume)
+  	if(show_message)
+   	 	to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+   		else
+    	M.adjustBruteLoss(-20 * reac_volume)
+   		M.adjustFireLoss(-20 * reac_volume)
 
 /datum/reagent/medicine/stimpak/super_stimpak/on_mob_delete(mob/living/carbon/human/M)
      M.apply_status_effect(/datum/status_effect/superstimdebuff)
