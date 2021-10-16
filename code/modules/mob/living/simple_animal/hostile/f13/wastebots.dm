@@ -317,7 +317,7 @@
 
 //Junkers
 /mob/living/simple_animal/hostile/handy/gutsy/flamer
-	name = "mr. burnsy"
+	name = "Mr. Burnsy"
 	desc = "A modified mr. gutsy, equipped with a more precise flamer, ditching it's plasma weaponry."
 	color = "#B85C00"
 	projectilesound = 'sound/magic/fireball.ogg'
