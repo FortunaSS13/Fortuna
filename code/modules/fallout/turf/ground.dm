@@ -271,7 +271,7 @@
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
-	
+
 /turf/open/indestructible/ground/outside/water/Initialize()
 	. = ..()
 	update_icon()
@@ -297,6 +297,8 @@
 			to_chat(L, "<span class='warning'>You climb out of \the [src].</span>")
 	..()
 
+/turf/open/indestructible/ground/outside/water/update_icon()
+	. = ..()
 
 /turf/open/indestructible/ground/outside/snow
 	initial_gas_mix = "o2=22;n2=82;TEMP=285"
