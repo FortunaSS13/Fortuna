@@ -1118,21 +1118,21 @@ datum/status_effect/pacify
 	msg_stage++
 
 /datum/status_effect/superstimdebuff
-    id = "superstimdebuff"
-    duration = 1800 // 3 minutes in deciseconds
-    alert_type = /obj/screen/alert/status_effect/superstimdebuff
+	id = "superstimdebuff"
+	duration = 1800 // 3 minutes in deciseconds
+	alert_type = /obj/screen/alert/status_effect/superstimdebuff
 
 /datum/status_effect/superstimdebuff/on_apply()
-    owner.ADD_TRAIT(owner, POOR_AIM, src)
-    owner.maxHealth -= 35
-    owner.Health -= 35
-    return ..()
+	owner.ADD_TRAIT(owner, POOR_AIM, src)
+	owner.maxHealth -= 35
+	owner.Health -= 35
+	return ..()
 
 /datum/status_effect/superstimdebuff/on_remove()
-    owner.maxHealth += 35
-    owner.Health += 35
-    owner.REMOVE_TRAIT(owner, POOR_AIM, src)
-    return ..()
+	owner.maxHealth += 35
+	owner.Health += 35
+	owner.REMOVE_TRAIT(owner, POOR_AIM, src)
+	return ..()
 
 /obj/screen/alert/status_effect/superstimdebuff
 	name = "Super Stim Debuff"
