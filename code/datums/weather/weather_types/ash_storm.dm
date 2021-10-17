@@ -121,7 +121,7 @@
 	desc = "A mysterious red cloud, incredibly dangerous to most living things."
 
 	telegraph_message = "<span class='boldwarning'>On the horizon, a thick red cloud can be seen approaching the area. It is unlike anything you've ever seen before. Seek shelter, lest you want to find out what's in store for yourself.</span>"
-	telegraph_duration = 30 //Change to 3000 when done testing
+	telegraph_duration = 3000
 	telegraph_overlay = "light_ash"
 
 	weather_message = "<span class='userdanger'><i>The red cloud is here, and it is incredibly dangerous to be in! Get inside!</i></span>"
