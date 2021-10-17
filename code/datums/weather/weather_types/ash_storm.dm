@@ -137,6 +137,8 @@
 	protect_indoors = TRUE
 	target_trait = ZTRAIT_STATION
 
+	probability = 0
+
 /datum/weather/ash_storm/dust_event/weather_act(mob/living/L)
 	if(is_ash_immune(L))
 		return
