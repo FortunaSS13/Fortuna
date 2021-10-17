@@ -685,7 +685,7 @@ Mayor
 /*----------------------------------------------------------------
 --							Detective							--
 ----------------------------------------------------------------*/
-/datum/job/wasteland/f13detective
+/datum/job/oasis/f13detective
 	title = "Detective"
 	flag = F13DETECTIVE
 	total_positions = 1
