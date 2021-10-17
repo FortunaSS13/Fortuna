@@ -173,28 +173,27 @@
 	desc = "A red and black flag with a sword surrounded in gears and wings, in a dazzling gold."
 	icon_state = "bosflag"
 	item_state = "bosflag"
-	faction = "BOS"
+	faction = FACTION_BROTHERHOOD
 
 /obj/item/flag/legion
 	name = "Legion flag"
 	desc = "A flag with a golden bull, the symbol of Caesar's Legion."
 	icon_state = "legionflag"
 	item_state = "legionflag"
-	faction = "Legion"
+	faction = FACTION_LEGION
 
 /obj/item/flag/oasis
 	name = "Oasis flag"
 	desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis."
 	icon_state = "oasisflag"
 	item_state = "oasisflag"
-	faction = "Oasis"
 
 /obj/item/flag/followers
 	name = "Followers of the Apocalypse flag"
 	desc = "A white flag with the black Follower's of the Apocalpyse cross on it."
 	icon_state = "followersflag"
 	item_state = "followersflag"
-	faction = "Followers"
+	faction = FACTION_FOLLOWERS
 
 /obj/item/flag/locust
 	name = "Locust flag"
@@ -202,6 +201,13 @@
 	icon_state = "locustflag"
 	item_state = "locustflag"
 	faction = "Locust"
+
+/obj/item/flag/yuma
+	name = "Yuma banner"
+	desc = "A banner depicting three rivers meeting at its center, overlaid with an ear of corn."
+	icon_state = "cornflag"
+	item_state = "cornflag"
+	faction = "Oasis"
 
 /obj/item/flag/vtcc
 	name = "Vault-Tec Cityscape Coalition flag"
@@ -220,32 +226,32 @@
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/flag = alert(user, "Please choose which faction flag you wish to create.", "NCR", "Legion", "Oasis", "BOS",)
+				var/flag = alert(user, "Please choose which faction flag you wish to create.", "NCR", "Legion", "Yuma", "BOS",)
 				switch(flag)
-					if("NCR")
+					if(FACTION_NCR)
 						name = "NCR flag"
 						desc = "A flag with a two headed bear, the symbol of the New California Republic."
 						icon_state = "ncrflag"
 						item_state = "ncrflag"
 						faction = "NCR"
-					if("Legion")
+					if(FACTION_LEGION)
 						name = "Legion flag"
 						desc = "A flag with a golden bull, the symbol of Caesar's Legion."
 						icon_state = "legionflag"
 						item_state = "legionflag"
-						faction = "Legion"
-					if("Oasis")
-						name = "Oasis flag"
-						desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis."
-						icon_state = "oasisflag"
-						item_state = "oasisflag"
-						faction = "Oasis"
-					if("BOS")
+						faction = FACTION_LEGION
+					if("Yuma")
+						name = "Yuma flag"
+						desc = "A banner depicting three rivers meeting at its center, overlaid with an ear of corn."
+						icon_state = "cornflag"
+						item_state = "cornflag"
+						faction = FACTION_OASIS
+					if(FACTION_BROTHERHOOD)
 						name = "BOS flag"
 						desc = "A red and black flag with a sword surrounded in gears and wings, in a dazzling gold."
 						icon_state = "bosflag"
 						item_state = "bosflag"
-						faction = "BOS"
+						faction = FACTION_BROTHERHOOD
 				update_icon()
 	else
 		attack_hand(user)

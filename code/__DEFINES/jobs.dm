@@ -1,3 +1,16 @@
+//Globa job defines
+
+//Defines Factions
+#define FACTION_NCR "NCR"
+#define FACTION_LEGION "Legion"
+#define FACTION_BROTHERHOOD "BOS"
+#define FACTION_OASIS "Town"
+#define FACTION_ENCLAVE "Enclave"
+#define FACTION_WASTELAND "Wastelander"
+#define FACTION_RAIDERS "Raiders"
+#define FACTION_TRIBE "Tribe"
+#define FACTION_VAULT "Vault"
+#define FACTION_FOLLOWERS "Followers"
 
 #define ENGSEC			(1<<0)
 
@@ -62,6 +75,7 @@
 #define F13VETRANGER	 (1<<14)
 #define F13RANGER	 	 (1<<15)
 #define F13MP            (1<<16)
+#define F13REP           (1<<17)
 
 #define LEGION			(1<<4)
 
@@ -107,11 +121,12 @@
 #define F13PROSPECTOR	(1<<4)
 #define F13DEPUTY		(1<<5)
 #define F13MAYOR		(1<<6)
-#define F13PREACHER		(1<<7)
-#define F13SHOPKEEPER	(1<<8)
-#define F13FAITHFUL		(1<<9) // WHAT IS BITFLAG. WHAT DOES IT DO. WHERE IS THIS INFO USED.
-#define F13BANKER		(1<<10)	// IDK MAN BUT IT SEEMS IMPORTANT
-#define F13BARKEEP		(1<<11)
+#define F13SECRETARY    (1<<7)
+#define F13PREACHER		(1<<8)
+#define F13SHOPKEEPER	(1<<9)
+#define F13FAITHFUL		(1<<10) // WHAT IS BITFLAG. WHAT DOES IT DO. WHERE IS THIS INFO USED.
+#define F13BANKER		(1<<11)	// IDK MAN BUT IT SEEMS IMPORTANT
+#define F13BARKEEP		(1<<12)
 
 #define VAULT			(1<<7)
 
@@ -311,3 +326,7 @@
 #define JOB_DISPLAY_ORDER_FOLLOWERGUARD 113
 #define JOB_DISPLAY_ORDER_FOLLOWERVOLUNTEER 114
 #define JOB_DISPLAY_ORDER_PROFESSOR 115
+
+#define JOB_DISPLAY_ORDER_SECRETARY 116
+#define JOB_DISPLAY_ORDER_REPRESENTATIVE 117
+

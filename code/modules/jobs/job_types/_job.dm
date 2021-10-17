@@ -157,8 +157,8 @@
 		if(H.dna.species.id != "human")
 			H.set_species(/datum/species/human)
 			H.apply_pref_name("human", preference_source)
-	// F13 EDIT: GHOULS CANNOT BE LEGION, BROTHERHOOD OR VAULT
-	if((title in GLOB.legion_positions) || (title in GLOB.vault_positions) || (title in GLOB.brotherhood_positions))
+	// F13 EDIT: GHOULS CANNOT BE LEGION, BROTHERHOOD, TRIBAL OR VAULT
+	if((title in GLOB.legion_positions) || (title in GLOB.vault_positions) || (title in GLOB.brotherhood_positions) || (title in GLOB.tribal_positions))
 		if(H.dna.species.id == "ghoul")
 			H.set_species(/datum/species/human)
 			H.apply_pref_name("human", H.client)
@@ -169,7 +169,7 @@
 	var/datum/outfit/job/O = outfit_override || outfit
 	if(O)
 		H.equipOutfit(O, visualsOnly, preference_source) //mob doesn't have a client yet.
-	
+
 	//If we have any additional loadouts, notify the player
 	if(!visualsOnly && LAZYLEN(loadout_options))
 		H.enable_loadout_select()
@@ -206,7 +206,7 @@
 /datum/job/proc/announce_head(mob/living/carbon/human/H, channels) //tells the given channel that the given mob is the new department head. See communications.dm for valid channels.
 	if(H && GLOB.announcement_systems.len)
 		//timer because these should come after the captain announcement
-		SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, H.job, channels), 1))
+		SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/_addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, H.job, channels), 1))
 
 //If the configuration option is set to require players to be logged as old enough to play certain jobs, then this proc checks that they are, otherwise it just returns 1
 /datum/job/proc/player_old_enough(client/C)

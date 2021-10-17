@@ -349,7 +349,7 @@
 	glow_color = "#FFB3DA"
 
 
-
+/*
 /datum/plant_gene/trait/teleport
 	// Makes plant teleport people when squashed or slipped on.
 	// Teleport radius is calculated as max(round(potency*rate), 1)
@@ -373,7 +373,7 @@
 	else
 		new /obj/effect/decal/cleanable/molten_object(T) //Leave a pile of goo behind for dramatic effect...
 		qdel(G)
-
+*/
 /datum/plant_gene/trait/maxchem
 	// 2x to max reagents volume.
 	name = "Densified Chemicals"
@@ -388,8 +388,6 @@
 
 /datum/plant_gene/trait/repeated_harvest/can_add(obj/item/seeds/S)
 	if(!..())
-		return FALSE
-	if(istype(S, /obj/item/seeds/replicapod))
 		return FALSE
 	return TRUE
 

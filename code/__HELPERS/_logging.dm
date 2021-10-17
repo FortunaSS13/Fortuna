@@ -136,6 +136,10 @@
 	if (CONFIG_GET(flag/log_telecomms))
 		WRITE_LOG(GLOB.world_telecomms_log, "TCOMMS: [text]")
 
+/proc/log_terminal(text) // will make a unique toggle config flag for this eventually
+	if (CONFIG_GET(flag/log_telecomms))
+		WRITE_LOG(GLOB.world_terminal_log, "TERMINAL: [text]")
+
 /proc/log_chat(text)
 	if (CONFIG_GET(flag/log_pda))
 		//same thing here
@@ -196,6 +200,10 @@
 
 /proc/log_mapping(text)
 	WRITE_LOG(GLOB.world_map_error_log, text)
+
+/proc/log_perf(list/perf_info)
+	. = "[perf_info.Join(",")]\n"
+	WRITE_LOG_NO_FORMAT(GLOB.perf_log, .)
 
 /proc/log_reagent(text)
 	WRITE_LOG(GLOB.reagent_log, text)

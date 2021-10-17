@@ -6,6 +6,7 @@ Main doors: ACCESS_CAPTAIN 20
 /datum/job/bos //do NOT use this for anything, it's just to store faction datums.
 	department_flag = BOS
 	selection_color = "#95a5a6"
+	faction = FACTION_BROTHERHOOD
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
@@ -50,7 +51,6 @@ Elder
 /datum/job/bos/f13elder
 	title = "Elder"
 	flag = F13ELDER
-	faction = "BOS"
 	head_announce = list("Security")
 	supervisors = "the high elders"
 	selection_color = "#7f8c8d"
@@ -94,7 +94,6 @@ Head Paladin
 /datum/job/bos/f13sentinel
 	title = "Head Paladin"
 	flag = F13SENTINEL
-	faction = "BOS"
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
@@ -193,7 +192,6 @@ Head Scribe
 	title = "Head Scribe"
 	flag = F13HEADSCRIBE
 	head_announce = list("Security")
-	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
@@ -262,7 +260,6 @@ Head Knight
 	title = "Head Knight"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
-	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
@@ -307,6 +304,8 @@ Head Knight
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	id =			/obj/item/card/id/dogtag
 	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
+		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
@@ -339,7 +338,6 @@ Star Paladin
 /datum/job/bos/f13seniorpaladin
 	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
-	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
 	description = "As the Chapter's senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
@@ -399,6 +397,7 @@ Star Paladin
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/melee/powerfist = 1,
+		/obj/item/tank/internals/oxygen = 1,
 	)
 
 /datum/outfit/loadout/spaladina
@@ -423,7 +422,6 @@ Paladin
 /datum/job/bos/f13paladin
 	title = "Paladin"
 	flag = F13PALADIN
-	faction = "BOS"
 	total_positions = 2
 	spawn_positions = 2
 	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
@@ -533,7 +531,6 @@ Senior Scribe
 /datum/job/bos/f13seniorscribe
 	title = "Senior Scribe"
 	flag = F13SENIORSCRIBE
-	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the bunker's seniormost medical and scientific expert in the bunker, sans the Head Scribe themselves. You are trained in both medicine and engineering, while also having extensive studies of the old world to assist in pinpointing what technology would be useful to the Brotherhood and its interests."
@@ -595,9 +592,8 @@ Scribe
 /datum/job/bos/f13scribe
 	title = "Scribe"
 	flag = F13SCRIBE
-	faction = "BOS"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "You answer directly to the Senior Scribe, tasked with researching and reverse-engineering recovered technologies from the old world, while maintaining the brotherhoods scientific archives. You may also be given a trainee to assign duties to."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -674,7 +670,6 @@ Senior Knight
 /datum/job/bos/f13seniorknight
 	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
-	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You report directly to the Head Knight. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
@@ -752,9 +747,8 @@ Knight
 /datum/job/bos/f13knight
 	title = "Knight"
 	flag = F13KNIGHT
-	faction = "BOS"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -845,7 +839,6 @@ Initiate
 /datum/job/bos/f13initiate
 	title = "Initiate"
 	flag = F13INITIATE
-	faction = "BOS"
 	total_positions = 3
 	spawn_positions = 3
 	description = "Either recently inducted or born into the Brotherhood, you have since proven yourself worthy of assignment to the Chapter. You are to assist your superiors and receive training how they deem fit. You are NEVER allowed to leave the bunker without the direct supervision of a superior; doing so may result in exile or transferrence back the Valley."
@@ -930,29 +923,15 @@ Off-Duty
 /datum/job/bos/f13offdutybos
 	title = "BoS Off-Duty"
 	flag = F13OFFDUTYBOS
-	faction = "BOS"
 	total_positions = 3
 	spawn_positions = 3
-	description = "Whether operating in disguise or simply enjoying time from the off-shift, you are still a member of the Brotherhood and must abide by the Codex and follow the orders of your superiors. That being said, while off-duty your orders do not take precedence and you should resist issuing them when another of your rank is currently on duty, and if one does not exist, commit to going on-duty. You have a duty to safeguard what equipment you are given, especially your holotags. Ideally, you should be paired with one or more fellow off-duty members; and you would know where the bunker in the region is."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
+	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
+	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."	
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
 
-	loadout_options = list(
-	/datum/outfit/loadout/offa, //Junior Knight
-	/datum/outfit/loadout/offb, //Knight
-	/datum/outfit/loadout/offc, //Star Knight
-	/datum/outfit/loadout/offd, //Head Knight
-	/datum/outfit/loadout/offe, //Junior Scribe
-	/datum/outfit/loadout/offf, //Scribe
-	/datum/outfit/loadout/offg, //Senior Scribe
-	/datum/outfit/loadout/offh, //Head Scribe
-	/datum/outfit/loadout/offi, //Junior Paladin
-	/datum/outfit/loadout/offj, //Paladin
-	/datum/outfit/loadout/offk, //Star Paladin
-	/datum/outfit/loadout/offl, //Head Paladin
-	)
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/bos/f13offdutybos
 
@@ -974,76 +953,4 @@ Off-Duty
 		/obj/item/stack/medical/gauze=1,
 		/obj/item/encryptionkey/headset_bos=1,
 		/obj/item/melee/onehanded/knife/survival=1
-		)
-
-/datum/outfit/loadout/offa
-	name = "Junior Knight"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight=1
-		)
-
-/datum/outfit/loadout/offb
-	name = "Knight"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight=1
-		)
-
-/datum/outfit/loadout/offc
-	name = "Senior Knight"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorknight=1
-		)
-
-/datum/outfit/loadout/offd
-	name = "Knight-Captain"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knightcaptain=1
-		)
-
-/datum/outfit/loadout/offe
-	name = "Junior Scribe"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorscribe=1
-		)
-
-/datum/outfit/loadout/offf
-	name = "Scribe"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/scribe=1
-		)
-
-/datum/outfit/loadout/offg
-	name = "Senior Scribe"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorscribe=1
-		)
-
-/datum/outfit/loadout/offh
-	name = "Head Scribe"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/headscribe=1
-		)
-
-/datum/outfit/loadout/offi
-	name = "Junior Paladin"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorpaladin=1
-		)
-
-/datum/outfit/loadout/offj
-	name = "Paladin"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/paladin=1
-		)
-
-/datum/outfit/loadout/offk
-	name = "Senior Paladin"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorpaladin=1
-		)
-
-/datum/outfit/loadout/offl
-	name = "Sentinel"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/sentinel=1
 		)

@@ -17,7 +17,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr //do NOT use this for anything, it's just to store faction datums
 	department_flag = NCR
 	selection_color = "#ffeeaa"
-	faction = "NCR"
+	faction = FACTION_NCR
 	exp_type = EXP_TYPE_NCR
 
 	access = list(ACCESS_NCR)
@@ -57,7 +57,6 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13colonel
 	title = "NCR Colonel"
 	flag = F13COLONEL
-	faction = "NCR"
 	head_announce = list("Security")
 	supervisors = "The Republic Senate, High Command"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS)
@@ -103,7 +102,6 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13aide
 	title = "NCR Personal Aide"
 	flag = F13COLONEL
-	faction = "NCR"
 	supervisors = "The Colonel"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
 	req_admin_notify = 1
@@ -151,7 +149,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP)
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -347,6 +345,77 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/trench = 1,
 		)
 
+/datum/job/ncr/f13representative
+	title = "NCR Representative"
+	flag = F13REP
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, your company or own enterprise are met through thick and thin, and have been supplied with ample amounts of money to do so."
+	supervisors = "The Captain and the NCR"
+	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
+	outfit = /datum/outfit/job/ncr/f13representative
+
+	loadout_options = list(
+		/datum/outfit/loadout/repbrahminbaron,
+		/datum/outfit/loadout/repambassador,
+		/datum/outfit/loadout/repexecutive
+		)
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/ncr
+			),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/ncr
+			)
+		)
+
+/datum/outfit/job/ncr/f13representative
+	name = "NCR Representative"
+	uniform = /obj/item/clothing/under/f13/ncr/ncr_dress
+	jobtype	= /datum/job/ncr/f13representative
+	id = /obj/item/card/id/dogtag/ncrrep
+	neck = /obj/item/storage/belt/holster/legholster
+	backpack = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/ammo_box/c45rev = 2,
+		/obj/item/storage/bag/money/small/ncr = 2,
+		/obj/item/storage/survivalkit_aid = 1
+		)
+
+/datum/outfit/loadout/repbrahminbaron
+	name = "Brahmin Baron"
+	suit = /obj/item/clothing/under/suit/burgundy
+	shoes = /obj/item/clothing/shoes/f13/cowboy
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
+
+/datum/outfit/loadout/repambassador
+	name = "Ambassador"
+	suit = /obj/item/clothing/under/rank/security/detective/grey
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1,
+		/obj/item/clothing/accessory/waistcoat = 1,
+		/obj/item/clothing/suit/toggle/lawyer/black = 1,
+		/obj/item/storage/briefcase
+		)
+
+/datum/outfit/loadout/repexecutive
+	name = "Executive"
+	suit = /obj/item/clothing/under/suit_jacket/tan
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/helmet/f13/rustedcowboyhat
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
 
 ///////////////
 /// Rangers ///
@@ -622,6 +691,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13combatengineer
@@ -680,9 +750,9 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13mp
 	title = "NCR Military Police"
 	flag = F13MP
-	total_positions = 1
-	spawn_positions = 1
-	description = "You are tasked with the supervision of the NCRA to maintain internal order and disciplice and to prevent any warcrimes from happening."
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are NOT allowed to participate in front-line combat outside the base/embassy. You are tasked with the supervision of the NCRA to maintain internal order and disciplice and to prevent any warcrimes from happening."
 	supervisors = "NCRA Officers"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
@@ -977,6 +1047,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13logisticsofficer		// Rockwell, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
@@ -1043,6 +1114,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 
 // Logistics soldier
 /datum/outfit/loadout/rearlog

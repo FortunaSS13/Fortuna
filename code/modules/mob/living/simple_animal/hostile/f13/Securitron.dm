@@ -21,8 +21,8 @@
 	move_to_delay = 5
 	stat_attack = SOFT_CRIT
 	robust_searching = TRUE
-	maxHealth = 300
-	health = 300
+	maxHealth = 250
+	health = 250
 	blood_volume = 0
 	del_on_death = TRUE
 	healable = FALSE
@@ -33,15 +33,16 @@
 	harm_intent_damage = 8
 	melee_damage_lower = 5
 	melee_damage_upper = 10
-	minimum_distance = 4
-	retreat_distance = 7
+	minimum_distance = 1
+	retreat_distance = 4
+	extra_projectiles = 2
 	attack_verb_simple = "punches"
 	attack_sound = "punch"
 	a_intent = "harm"
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	vision_range = 12
 	aggro_vision_range = 15
-	projectiletype = /obj/item/projectile/bullet/a556/ap/simple
+	projectiletype = /obj/item/projectile/bullet/c9mm/simple
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	emote_taunt = list("readies its arm gun")
 	check_friendly_fire = TRUE
@@ -58,7 +59,7 @@
 /mob/living/simple_animal/hostile/securitron/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] securitron invoked bullet_act() without a projectile")
-	if(prob(10) && health > 1)
+	if(prob(5) && health > 1)
 		visible_message(span_danger("\The [src] releases a defensive flashbang!"))
 		var/flashbang_turf = get_turf(src)
 		if(!flashbang_turf)
