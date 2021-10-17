@@ -614,6 +614,9 @@ obj/item/melee/onehanded/knife/switchblade
 		if(HAS_TRAIT(user, TRAIT_IRONFIST))
 			H.dna.species.punchdamagehigh = 4
 			H.dna.species.punchdamagelow = 11
+		if(HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES_1) | HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES_2 | HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES_3)))
+			H.dna.species.punchdamagehigh = 1
+			H.dna.species.punchdamagelow = 7
 		H.dna.species.attack_sound = 'sound/weapons/punch1.ogg'
 		H.dna.species.attack_verb = "punch"
 

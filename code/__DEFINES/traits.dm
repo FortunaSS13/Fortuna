@@ -184,7 +184,9 @@
 #define TRAIT_SELF_AWARE		"self_aware"
 #define TRAIT_FREERUNNING		"freerunning"
 #define TRAIT_SKITTISH			"skittish"
-#define TRAIT_POOR_AIM			"poor_aim"
+#define TRAIT_POOR_AIM_1		"poor_aim_1"
+#define TRAIT_POOR_AIM_2		"poor_aim_2"
+#define TRAIT_POOR_AIM_3		"poor_aim_3"
 #define TRAIT_INSANE_AIM		"insane_aim" //they don't miss. they never miss. it was all part of their immaculate plan.
 #define TRAIT_PROSOPAGNOSIA		"prosopagnosia"
 #define TRAIT_DRUNK_HEALING		"drunk_healing"
@@ -199,6 +201,9 @@
 #define TRAIT_EMPATH			"empath"
 #define TRAIT_FRIENDLY			"friendly"
 #define TRAIT_BIG_LEAGUES		"big_leagues"
+#define TRAIT_LITTLE_LEAGUES_1	"little_leagues_1"
+#define TRAIT_LITTLE_LEAGUES_2	"little_leagues_2"
+#define TRAIT_LITTLE_LEAGUES_3	"little_leagues_3"
 #define TRAIT_TRAPPER			"trapper"
 #define TRAIT_IRONFIST			"iron_fist"
 #define TRAIT_SNOB				"snob"
@@ -258,6 +263,9 @@
 #define TRAIT_MACHINE_SPIRITS	"machine_spirits" //for tribe unique functions.
 #define TRAIT_HARD_YARDS        "hard_yards"
 #define	TRAIT_LIFEGIVER			"lifegiver"
+#define TRAIT_WEAKENED_1		"weakened_1" // fortuna adddition, reduced health by 5 points
+#define TRAIT_WEAKENED_2		"weakened_2" // fortuna addition, reduced health by 10 points
+#define TRAIT_WEAKENED_3		"weakened_3" // fortuna addition, reduced health by 20 points
 #define TRAIT_MARS_TEACH		"mars_teachings" //for legion unique functions
 
 #define TRAIT_SURGERY_LOW		"lowsurgery"

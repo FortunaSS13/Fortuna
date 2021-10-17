@@ -134,7 +134,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You feel awake again.</span>"
 	medical_record_text = "Patient has abnormal sleep study results and is difficult to wake up."
 
-/datum/quirk/brainproblems
+/*/datum/quirk/brainproblems // Fortuna removal, brain damage pretty bad for RP.
 	name = "Brain Tumor"
 	desc = "You have a little friend in your brain that is slowly destroying it. Better bring some mannitol!"
 	value = -3
@@ -143,7 +143,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	medical_record_text = "Patient has a tumor in their brain that is slowly driving them to brain death."
 
 /datum/quirk/brainproblems/on_process()
-	quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.2)
+	quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.2)*/
 
 /datum/quirk/nearsighted //t. errorage
 	name = "Nearsighted"
@@ -162,7 +162,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	if(!H.equip_to_slot_if_possible(glasses, SLOT_GLASSES))
 		H.put_in_hands(glasses)
 
-/datum/quirk/nyctophobia
+/* /datum/quirk/nyctophobia // Fortuna removal, just RP it.
 	name = "Nyctophobia"
 	desc = "As far as you can remember, you've always been afraid of the dark. While in the dark without a light source, you instinctually act careful, and constantly feel a sense of dread."
 	value = -1
@@ -181,8 +181,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "nyctophobia", /datum/mood_event/nyctophobia)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "nyctophobia")
+*/
 
-/datum/quirk/lightless
+/* /datum/quirk/lightless // Fortuna removal, just RP it.
 	name = "Light Sensitivity"
 	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition."
 	value = -1
@@ -197,11 +198,12 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "brightlight", /datum/mood_event/brightlight)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "brightlight")
+*/
 
 /datum/quirk/nonviolent
 	name = "Pacifist"
 	desc = "The thought of violence makes you sick. So much so, in fact, that you can't hurt anyone."
-	value = -2
+	value = -3
 	mob_trait = TRAIT_PACIFISM
 	gain_text = "<span class='danger'>You feel repulsed by the thought of violence!</span>"
 	lose_text = "<span class='notice'>You think you can defend yourself again.</span>"
@@ -246,17 +248,21 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 				if(I.fingerprintslast == quirk_holder.ckey)
 					quirk_holder.put_in_hands(I)
 
+/* Fortuna removal, replaced with 3 tiers of poor aim.
 /datum/quirk/poor_aim
 	name = "Poor Aim"
 	desc = "You're terrible with guns and can't line up a straight shot to save your life. Dual-wielding is right out."
 	value = -1
 	mob_trait = TRAIT_POOR_AIM
 	medical_record_text = "Patient possesses a strong tremor in both hands."
+*/
+
+
 
 /datum/quirk/prosopagnosia
 	name = "Prosopagnosia"
 	desc = "You have a mental disorder that prevents you from being able to recognize faces at all."
-	value = -1
+	value = -2
 	mob_trait = TRAIT_PROSOPAGNOSIA
 	medical_record_text = "Patient suffers from prosopagnosia, and cannot recognize faces."
 
@@ -285,7 +291,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	to_chat(quirk_holder, "<span class='big bold info'>Please note that your dissociation syndrome does NOT give you the right to attack people or otherwise cause any interference to \
 	the round. You are not an antagonist, and the rules will treat you the same as other crewmembers.</span>")
 
-/datum/quirk/social_anxiety
+/*/datum/quirk/social_anxiety // Fortuna removal. Dumb trait that isn't much good for RP.
 	name = "Social Anxiety"
 	desc = "Talking to people is very difficult for you, and you often stutter or even lock up."
 	value = -1
@@ -354,7 +360,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	description = "<span class='warning'>Sometimes eye contact makes me so nervous...</span>\n"
 	mood_change = -5
 	timeout = 3 MINUTES
+*/ 
 
+/* // Fortuna removal
 /datum/quirk/phobia
 	name = "Phobia"
 	desc = "You've had a traumatic past, one that has scarred you for life, and cripples you when dealing with your greatest fears."
@@ -372,6 +380,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/phobia/remove()
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(phobia, TRAUMA_RESILIENCE_ABSOLUTE)
+*/
 
 /datum/quirk/mute
 	name = "Mute"
@@ -422,14 +431,14 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/blindness/remove()
 	quirk_holder?.cure_blind(ROUNDSTART_TRAIT)
 
-/datum/quirk/coldblooded
+/*/datum/quirk/coldblooded // Fortuna removal, temperature makes very little difference on server.
 	name = "Cold-blooded"
 	desc = "Your body doesn't create its own internal heat, requiring external heat regulation."
 	value = -2
 	medical_record_text = "Patient is ectothermic."
 	mob_trait = TRAIT_COLDBLOODED
 	gain_text = "<span class='notice'>You feel cold-blooded.</span>"
-	lose_text = "<span class='notice'>You feel more warm-blooded.</span>"
+	lose_text = "<span class='notice'>You feel more warm-blooded.</span>"*/
 
 /datum/quirk/monophobia
 	name = "Monophobia"
@@ -448,3 +457,94 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	. = ..()
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(/datum/brain_trauma/severe/monophobia, TRAUMA_RESILIENCE_ABSOLUTE)
+
+/datum/quirk/weakened_1 // Fortuna additions (I-III)
+	name = "Weakened I"
+	desc = "You're a little delicate, reducing your maximum health by 5 points."
+	value = -2
+	mob_trait = TRAIT_WEAKENED_1
+	gain_text = "<span class='notice'>Your body feels a little less resilient to damage.</span>"
+	lose_text = "<span class='danger'>You start feeling more resilient to damage.</span>"
+
+/datum/quirk/weakened_1/on_spawn()
+	var/mob/living/carbon/human/mob_tar = quirk_holder
+	mob_tar.maxHealth -= 5
+	mob_tar.health -= 5
+
+/datum/quirk/weakened_2
+	name = "Weakened II"
+	desc = "You're unprepared for the Wasteland, reducing your maximum health by 10 points."
+	value = -3
+	mob_trait = TRAIT_WEAKENED_2
+	gain_text = "<span class='notice'>Your body feels considerably less resilient to damage.</span>"
+	lose_text = "<span class='danger'>You start feeling a lot more resilient to damage.</span>"
+
+/datum/quirk/weakened_2/on_spawn()
+	var/mob/living/carbon/human/mob_tar = quirk_holder
+	mob_tar.maxHealth -= 10
+	mob_tar.health -= 10
+
+/datum/quirk/weakened_3
+	name = "Weakened III"
+	desc = "You're already dead. Your maximum health is reduced by 20 points."
+	value = -4
+	mob_trait = TRAIT_WEAKENED_3
+	gain_text = "<span class='notice'>You start feeling like a breeze could blow you over.</span>"
+	lose_text = "<span class='danger'>You start feeling incredibly resilient.</span>"
+
+/datum/quirk/weakened_3/on_spawn()
+	var/mob/living/carbon/human/mob_tar = quirk_holder
+	mob_tar.maxHealth -= 20
+	mob_tar.health -= 20
+
+/datum/quirk/littleleagues_1
+	name = "Little Leagues I"
+	desc = "Decreases the damage dealt by melee weapons and fists by a small amount."
+	value = -2
+	mob_trait = TRAIT_LITTLE_LEAGUES_1
+	gain_text = "<span class='notice'>You begin swinging weapons with reduced force.</span>"
+	lose_text = "<span class='danger'>You begin swingingg weapons with greater force.</span>"
+
+/datum/quirk/littleleagues_2
+	name = "Little Leagues II"
+	desc = "Decreases the damage dealt by melee weapons and fists by a fair amount."
+	value = -3
+	mob_trait = TRAIT_LITTLE_LEAGUES_2
+	gain_text = "<span class='notice'>You begin swinging weapons with reduced force.</span>"
+	lose_text = "<span class='danger'>You begin swingingg weapons with greater force.</span>"
+
+/datum/quirk/littleleagues_3
+	name = "Little Leagues III"
+	desc = "Decreases the damage dealt by melee weapons and fists by a large amount."
+	value = -4
+	mob_trait = TRAIT_LITTLE_LEAGUES_3
+	gain_text = "<span class='notice'>You begin swinging weapons with reduced force.</span>"
+	lose_text = "<span class='danger'>You begin swingingg weapons with greater force.</span>"
+
+/datum/quirk/poor_aim_1 // Fortuna additions (poor aim I-III)
+	name = "Poor Aim I"
+	desc = "You are a little inaccurate with firearms."
+	value = -2
+	mob_trait = TRAIT_POOR_AIM_1
+
+/datum/quirk/poor_aim_2
+	name = "Poor Aim II"
+	desc = "You are inaccurate with firearms."
+	value = -3
+	mob_trait = TRAIT_POOR_AIM_2
+
+/datum/quirk/poor_aim_3
+	name = "Poor Aim III"
+	desc = "You are absolutely useless with firearms, heavily reducing your accuracy."
+	value = -4
+	mob_trait = TRAIT_POOR_AIM_3
+
+/datum/quirk/closeandpersonal
+	name = "Close and Personal"
+	desc = "Guns are for losers! You are unable to use firearms, restricting you to melee combat."
+	value = -3
+	mob_trait = TRAIT_NOGUNS
+
+
+
+

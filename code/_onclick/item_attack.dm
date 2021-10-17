@@ -90,6 +90,10 @@
 		return
 
 	var/bigleagues = force*0.45
+	var/little_leagues_1 = force*0.15 // fottuna additions, new quirks
+	var/little_leagues_2 = force*0.30
+	var/little_leagues_3 = force*0.45
+
 	var/buffout = force*0.55
 	//var/regular = force*(user.special_s/100)//SPECIAL integration
 
@@ -100,6 +104,15 @@
 	
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
 		force += buffout
+
+	if (force >= 5 && HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES_1))
+		force -= little_leagues_1
+
+	if (force >= 5 && HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES_2))
+		force -= little_leagues_2
+
+	if (force >= 5 && HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES_2))
+		force -= little_leagues_3
 
 	if(!force)
 		playsound(loc, 'sound/weapons/tap.ogg', get_clamped_volume(), 1, -1)

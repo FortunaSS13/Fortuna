@@ -913,7 +913,7 @@
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
 
-/obj/item/book/granter/trait/selection
+/*/obj/item/book/granter/trait/selection // Fortuna removal
 	name = "Burned Book"
 	desc = "Pulled from the ashes of the old world, it feels warm to the touch. It looks to be in poor condition."
 	granted_trait = null
@@ -954,3 +954,4 @@
 /obj/item/book/granter/trait/selection/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+*/

@@ -266,7 +266,6 @@
 	mob_trait = TRAIT_TRAPPER
 	gain_text = "<span class='notice'>You learn the secrets of butchering!</span>"
 	lose_text = "<span class='danger'>You forget how to slaughter animals.</span>"
-	locked = TRUE
 
 /datum/quirk/bigleagues
 	name = "Big Leagues"
@@ -275,7 +274,6 @@
 	mob_trait = TRAIT_BIG_LEAGUES
 	gain_text = "<span class='notice'>You feel like swinging for the fences!</span>"
 	lose_text = "<span class='danger'>You feel like bunting.</span>"
-	locked = TRUE
 
 /datum/quirk/chemwhiz
 	name = "Chem Whiz"
@@ -284,16 +282,14 @@
 	mob_trait = TRAIT_CHEMWHIZ
 	gain_text = "<span class='notice'>The mysteries of chemistry are revealed to you.</span>"
 	lose_text = "<span class='danger'>You forget how the periodic table works.</span>"
-	locked = TRUE
 
 /datum/quirk/pa_wear
 	name = "PA Wear"
 	desc = "You've being around the wastes and have learned the importance of defense."
-	value = 3
+	value = 2
 	mob_trait = TRAIT_PA_WEAR
 	gain_text = "<span class='notice'>You realize how to use Power Armor.</span>"
 	lose_text = "<span class='danger'>You forget how Power Armor works.</span>"
-	locked = TRUE
 
 /datum/quirk/hard_yards
 	name = "Hard Yards"
@@ -325,8 +321,7 @@
 	mob_trait = TRAIT_IRONFIST
 	gain_text = "<span class='notice'>Your fists feel furious!</span>"
 	lose_text = "<span class='danger'>Your fists feel calm again.</span>"
-	locked = TRUE
-
+	
 /datum/quirk/iron_fist/on_spawn()
 	var/mob/living/carbon/human/mob_tar = quirk_holder
 	mob_tar.dna.species.punchdamagelow = 4
@@ -341,16 +336,15 @@
 	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
 
 /datum/quirk/surgerylow
-	name = "Minor Surgery"
+	name = "Surgeon I"
 	desc = "You are a somewhat adequate medical practicioner, capable of performing minor surgery."
-	value = 1
+	value = 2
 	mob_trait = TRAIT_SURGERY_LOW
 	gain_text = "<span class='notice'>You feel yourself discovering the basics of the human body.</span>"
 	lose_text = "<span class='danger'>You forget how to perform even the simplest surgery.</span>"
-	locked = TRUE
 
 /datum/quirk/surgerymid
-	name = "Intermediate Surgery"
+	name = "Surgeon II"
 	desc = "You are a skilled medical practicioner, capable of performing most surgery."
 	value = 1
 	mob_trait = TRAIT_SURGERY_MID
@@ -359,7 +353,7 @@
 	locked = TRUE
 
 /datum/quirk/surgeryhigh
-	name = "Complex Surgery"
+	name = "Surgeon III"
 	desc = "You are an expert practicioner, capable of performing almost all surgery."
 	value = 1
 	mob_trait = TRAIT_SURGERY_HIGH
