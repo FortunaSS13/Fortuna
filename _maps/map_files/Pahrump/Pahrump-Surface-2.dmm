@@ -31468,11 +31468,6 @@
 	id = "followerwindows";
 	name = "followers shutters"
 	},
-/obj/machinery/door/poddoor/shutters{
-	id = "followerwindows";
-	name = "followers shutters";
-	state_open = 1
-	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -86966,7 +86961,7 @@ ydO
 ydO
 ydO
 mvv
-oqA
+nWu
 iJp
 iJR
 jKe
@@ -87223,7 +87218,7 @@ mHj
 ydO
 ydO
 mvv
-oqA
+nWu
 iJR
 iJR
 jKe
