@@ -30,7 +30,7 @@
 	if(H)
 		var/datum/species/species = H.dna.species
 		species.liked_food &= ~LONGPORK
-		species.disliked_food |= LONGPORK /*
+		species.disliked_food |= LONGPORK */
 
 /datum/quirk/tribal
 	name = "Former Tribal"
