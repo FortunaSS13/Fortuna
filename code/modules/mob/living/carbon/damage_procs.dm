@@ -5,7 +5,9 @@
 	var/hit_percent = (100-blocked)/100
 	if(!forced && hit_percent <= 0)
 		return 0
-
+	var/mob/living/carbon/C
+	if(HAS_TRAIT(C, TRAIT_REVERSE_BLOODY_MESS) && prob(50))
+		C.gib()
 	var/obj/item/bodypart/BP = null
 	if(!spread_damage)
 		if(isbodypart(def_zone)) //we specified a bodypart object

@@ -497,6 +497,27 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	mob_tar.maxHealth -= 20
 	mob_tar.health -= 20
 
+/datum/quirk/weakened_hardcore
+	name = "Weakened IIII - HARDCORE"
+	desc = "Only for the brave of heart. Your maximum health is reduced by 75 points."
+	value = -10
+	mob_trait = TRAIT_WEAKENED_HARDCORE
+	gain_text = "<span class='notice'>You feel that any single bit of damage might kill you.</span>"
+	lose_text = "<span class='danger'>You start feeling incredibly resilient.</span>"
+
+/datum/quirk/weakened_hardcore/on_spawn()
+	var/mob/living/carbon/human/mob_tar = quirk_holder
+	mob_tar.maxHealth -= 75
+	mob_tar.health -= 75
+
+/datum/quirk/reverse_bloody_mess
+	name = "Reverse Bloody Mess - HARDCORE"
+	desc = "Only for the brave of heart. Each time you take brute damage, you have a 5% chance of being gibbed."
+	value = -10
+	mob_trait = TRAIT_REVERSE_BLOODY_MESS
+	gain_text = "<span class='notice'>You feel like you're barely holding yourself together! The slightest damage, and you might explode!</span>"
+	lose_text = "<span class='danger'>You start feeling a little solid.</span>"
+
 /datum/quirk/littleleagues_1
 	name = "Little Leagues I"
 	desc = "Decreases the damage dealt by melee weapons and fists by a small amount."
@@ -544,7 +565,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	desc = "Guns are for losers! You are unable to use firearms, restricting you to melee combat."
 	value = -3
 	mob_trait = TRAIT_NOGUNS
-
+	
 //Junkie
 /datum/quirk/junkie
 	name = "Junkie"
@@ -737,3 +758,15 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		var/datum/species/species = H.dna.species
 		species.liked_food &= ~LONGPORK
 		species.disliked_food |= LONGPORK
+
+/datum/quirk/bad_crafting_1
+	name = "Bad Crafting I"
+	desc = "You craft a little slower than everyone else, and cannot construct anything."
+	value = -1
+	mob_trait = TRAIT_BAD_CRAFTING_1
+
+/datum/quirk/bad_crafting_2
+	name = "Bad Crafting II"
+	desc = "You are incapable of crafting by hand and cannot construct anything."
+	value = -2
+	mob_trait = TRAIT_BAD_CRAFTING_2

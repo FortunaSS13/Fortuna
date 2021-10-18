@@ -188,6 +188,9 @@
 #define TRAIT_POOR_AIM_1		"poor_aim_1"
 #define TRAIT_POOR_AIM_2		"poor_aim_2"
 #define TRAIT_POOR_AIM_3		"poor_aim_3"
+#define TRAIT_BAD_CRAFTING_1	"bad_crafting_1"
+#define TRAIT_BAD_CRAFTING_2	"bad_crafting_2"
+#define TRAIT_REVERSE_BLOODY_MESS "reverse_bloody_mess"
 #define TRAIT_INSANE_AIM		"insane_aim" //they don't miss. they never miss. it was all part of their immaculate plan.
 #define TRAIT_PROSOPAGNOSIA		"prosopagnosia"
 #define TRAIT_DRUNK_HEALING		"drunk_healing"
@@ -267,6 +270,7 @@
 #define TRAIT_WEAKENED_1		"weakened_1" // fortuna adddition, reduced health by 5 points
 #define TRAIT_WEAKENED_2		"weakened_2" // fortuna addition, reduced health by 10 points
 #define TRAIT_WEAKENED_3		"weakened_3" // fortuna addition, reduced health by 20 points
+#define TRAIT_WEAKENED_HARDCORE "weakened_hardcore" // fortuna addition, reduced health by 75 points
 #define TRAIT_MARS_TEACH		"mars_teachings" //for legion unique functions
 
 #define TRAIT_SURGERY_LOW		"lowsurgery"
