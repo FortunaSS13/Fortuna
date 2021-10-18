@@ -17,9 +17,12 @@
 	var/quality = 0	//affects mood, typically higher for mixed drinks with more complex recipes
 
 /datum/reagent/consumable/on_mob_life(mob/living/carbon/M)
-	if(!HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD))
+	if(!HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD) && !HAS_TRAIT(M, TRAIT_LONGPORKLOVER))
 		current_cycle++
 		M.adjust_nutrition(nutriment_factor, max_nutrition)
+	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER) && !HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD))
+		current_cycle++
+		M.adjust_nutrition((nutriment_factor/4), (max_nutrition/4))
 	M.CheckBloodsuckerEatFood(nutriment_factor)
 	holder?.remove_reagent(type, metabolization_rate)
 
@@ -875,4 +878,15 @@
 	taste_mult = 2
 	taste_description = "fizzy sweetness"
 	value = REAGENT_VALUE_COMMON
+	
+/datum/reagent/consumable/nutriment/cannibalnutriment
+	name = "Cannibal Nutriment"
+	description = "Nutriment that interacts with TRAIT_LONGPORKLOVER, so cannibals can be properly satiated by only human meat."
+	taste_description = "sharp metallic"
+	color = "#8B0000"
+	value = REAGENT_VALUE_COMMON
 
+/datum/reagent/consumable/nutriment/cannibalnutriment/on_mob_life(mob/living/carbon/M)
+	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER) && !HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD))
+		current_cycle++
+		M.adjust_nutrition((nutriment_factor/4), (max_nutrition/4))
