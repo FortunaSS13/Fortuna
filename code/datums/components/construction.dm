@@ -20,7 +20,7 @@
 	update_parent(index)
 
 /datum/component/construction/proc/examine(datum/source, mob/user, list/examine_list)
-	if(desc && !HAS_TRAIT(user, TRAIT_NO_CONSTRUCTION)
+	if(desc && !HAS_TRAIT(user, TRAIT_NO_CONSTRUCTION)>
 		examine_list += desc
 
 /datum/component/construction/proc/on_step()
