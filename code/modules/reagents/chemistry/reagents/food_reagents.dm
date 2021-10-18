@@ -885,8 +885,50 @@
 	taste_description = "sharp metallic"
 	color = "#8B0000"
 	value = REAGENT_VALUE_COMMON
+	addiction_threshold = 5
+	overdose_threshold = 100
+	
+/datum/reagent/consumable/nutriment/cannibalnutriment/addiction_act_stage1(mob/living/M)
+	if(prob(5))
+		M.emote(pick("twitch","drool","moan"))
+	if(prob(5))
+		to_chat(M, "<span class='userdanger'>You start sucking at your lips, craving something fresh and bloody.</span>")
+		M.Dizzy(10)
+	..()
+		
+/datum/reagent/consumable/nutriment/cannibalnutriment/addiction_act_stage2(mob/living/M)
+	if(prob(10))
+		M.emote(pick("twitch","drool","moan"))
+	if(prob(10))
+		to_chat(M, "<span class='userdanger'>Your stomach starts to aggressively rumble - no regular food will sate your needs.</span>")
+		M.visible_message("<span class='danger'>[M] growls, hungrily.</span>")
+		M.Dizzy(20)
+	..()
+		
+/datum/reagent/consumable/nutriment/cannibalnutriment/addiction_act_stage3(mob/living/M)
+	if(prob(20))
+		M.emote(pick("twitch","drool","moan"))
+	M.hallucination += 20
+	M.Jitter(5)
+	if(prob(5))
+		to_chat(M, "<span class='userdanger'>You grow desperate for the taste of human meat, nearly at the breaking point!.</span>")
+		M.visible_message("<span class='danger'>[M] begins to drool and snarl, eyes lingering on nearby faces.</span>")
+		M.Dizzy(10)
+	..()
+		
+/datum/reagent/consumable/nutriment/cannibalnutriment/addiction_act_stage4(mob/living/M)
+	if(prob(20))
+		M.emote(pick("twitch","drool","moan"))
+	to_chat(M, "<span class='userdanger'>You break down into a cannibalistic rage, your hunger reaching the breaking point! CONSUME!</span>")
+	M.add_client_colour(/datum/client_colour/glass_colour/red)
+	M.hallucination += 20
+	M.Jitter(15)
+	..()
 
 /datum/reagent/consumable/nutriment/cannibalnutriment/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER) && !HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD))
 		current_cycle++
 		M.adjust_nutrition((nutriment_factor/4), (max_nutrition/4))
+		M.remove_client_colour(/datum/client_colour/glass_colour/red)
+
+
