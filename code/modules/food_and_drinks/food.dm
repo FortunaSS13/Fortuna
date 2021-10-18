@@ -52,10 +52,10 @@
 				SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "breakfast", /datum/mood_event/breakfast)
 			last_check_time = world.time
 			
-/obj/item/reagent_containers/food/proc/On_Consume(mob/living/eater) // Cannibalism check, Fortuna addition
+/*/obj/item/reagent_containers/food/proc/On_Consume(mob/living/eater) // Cannibalism check, Fortuna addition, currently unsused.
 	if(!eater)
 		return
 	if(eater && HAS_TRAIT(eater, TRAIT_LONGPORKLOVER_2) && !foodtype(LONGPORK))
 		to_chat(eater, "<span class='warning'>You smell the [src] and feel totally unsatisfied - you've got the dark craving, and only human meat will sate your hunger!</span>")
-		return
+		return */
 
