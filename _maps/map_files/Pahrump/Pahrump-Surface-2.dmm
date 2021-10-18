@@ -5265,6 +5265,13 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"ctu" = (
+/obj/structure/rack,
+/obj/item/storage/box/disks_plantgene,
+/turf/open/floor/f13{
+	icon_state = "greendirtyfull"
+	},
+/area/f13/followers)
 "ctJ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -19241,6 +19248,11 @@
 /obj/structure/decoration/smokeold{
 	pixel_y = 32
 	},
+/obj/machinery/button/door{
+	id = "followerwindows";
+	name = "window shutters";
+	pixel_y = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -28659,10 +28671,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "mWH" = (
-/obj/structure/table/reinforced,
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/followers)
 "mWI" = (
@@ -30391,14 +30400,6 @@
 	icon_state = "outerbordercorner"
 	},
 /area/f13/wasteland)
-"nPi" = (
-/obj/machinery/button/door{
-	id = "soupkitchen";
-	name = "door shutters";
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
-/area/f13/followers)
 "nPo" = (
 /obj/structure/barricade/tentclothedge,
 /turf/open/indestructible/ground/outside/dirt{
@@ -30693,8 +30694,16 @@
 	},
 /area/f13/building)
 "nWu" = (
-/obj/machinery/microwave/stove,
-/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "followerwindows";
+	name = "followers shutters";
+	state_open = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
 /area/f13/followers)
 "nWy" = (
 /obj/structure/chair{
@@ -30936,13 +30945,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/legion)
-"oei" = (
-/obj/structure/rack,
-/obj/item/storage/box/disks_plantgene,
-/turf/open/floor/f13{
-	icon_state = "greendirtyfull"
-	},
-/area/f13/followers)
 "oen" = (
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/cocoon,
@@ -30967,15 +30969,6 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland)
-"ofK" = (
-/obj/machinery/light,
-/obj/structure/sign/departments/botany{
-	pixel_y = -32
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/followers)
 "ofL" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4"
@@ -31469,16 +31462,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "oqA" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/machinery/defibrillator_mount/loaded{
-	pixel_y = -30
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "followerwindows";
+	name = "followers shutters"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "whitedirtysolid"
+/obj/machinery/door/poddoor/shutters{
+	id = "followerwindows";
+	name = "followers shutters";
+	state_open = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
 /area/f13/followers)
 "oqH" = (
@@ -47771,6 +47767,15 @@
 	dir = 1
 	},
 /area/f13/village)
+"wdK" = (
+/obj/machinery/light,
+/obj/structure/sign/departments/botany{
+	pixel_y = -32
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/followers)
 "wdT" = (
 /obj/structure/simple_door/wood,
 /obj/structure/decoration/rag,
@@ -48066,9 +48071,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "wmJ" = (
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/hydroponics/constructable,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -48101,7 +48104,14 @@
 	},
 /area/f13/wasteland)
 "wnn" = (
-/obj/machinery/hydroponics/constructable,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	id = "soupkitchen";
+	name = "door shutters";
+	pixel_y = 32
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -84653,7 +84663,7 @@ lMY
 xAm
 xAm
 xAm
-nWu
+xAm
 ybx
 dCV
 uqa
@@ -85164,10 +85174,10 @@ jJn
 jJn
 lmm
 ybx
-nPi
-xAm
-xAm
-oei
+wmJ
+xUO
+xUO
+wmJ
 ybx
 dCV
 uqa
@@ -85424,7 +85434,7 @@ ybx
 wnn
 xUO
 xUO
-wnn
+wdK
 ybx
 dCV
 uqa
@@ -85681,7 +85691,7 @@ ybx
 wmJ
 xUO
 xUO
-ofK
+wmJ
 ybx
 dCV
 uqa
@@ -85933,12 +85943,12 @@ iFl
 jbY
 jKe
 kHg
-jJn
-iuz
-wnn
+xUO
+vad
 xUO
 xUO
-wnn
+xUO
+ctu
 ybx
 dCV
 uqa
@@ -86185,7 +86195,7 @@ ydO
 ydO
 mHj
 mvv
-hIW
+nWu
 nqk
 iJR
 jKe
@@ -86442,7 +86452,7 @@ ydO
 ydO
 ydO
 mvv
-hIW
+oqA
 iFn
 iJR
 jKe
@@ -86956,7 +86966,7 @@ ydO
 ydO
 ydO
 mvv
-hIW
+oqA
 iJp
 iJR
 jKe
@@ -86967,7 +86977,7 @@ xiy
 mua
 nbI
 oiw
-oqA
+osB
 ybx
 dCV
 uqa
@@ -87213,7 +87223,7 @@ mHj
 ydO
 ydO
 mvv
-hIW
+oqA
 iJR
 iJR
 jKe

@@ -4360,6 +4360,7 @@
 	},
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
+/obj/item/defibrillator/primitive,
 /turf/open/floor/plating/f13,
 /area/f13/followers)
 "cKO" = (
@@ -8180,7 +8181,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "eNf" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/machinery/computer/terminal{
@@ -10506,8 +10507,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "gfI" = (
-/turf/closed/wall/f13/supermart,
-/area/f13/caves)
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "ggm" = (
 /obj/item/gun/ballistic/automatic/tribalbow{
 	desc = "A simple wooden bow with small pieces of turquiose. This one looks particularly blood-covered. Who the fuck brings a /BOW/ to a /BUNKER/"
@@ -12165,7 +12169,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "gXb" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbear1"
@@ -13035,12 +13039,6 @@
 /obj/structure/closet/crate/miningcar,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"hJi" = (
-/obj/structure/frame/machine,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
 /area/f13/caves)
 "hJL" = (
 /turf/open/indestructible/ground/inside/dirt,
@@ -20396,7 +20394,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "niU" = (
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/mining)
@@ -24847,11 +24845,6 @@
 	dir = 9
 	},
 /area/f13/brotherhood/mining)
-"qlp" = (
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/caves)
 "qma" = (
 /obj/structure/kitchenspike_frame{
 	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
@@ -32596,12 +32589,6 @@
 /obj/machinery/light,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"wev" = (
-/obj/machinery/light,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/caves)
 "weA" = (
 /obj/item/crowbar{
 	pixel_x = 31
@@ -34382,7 +34369,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "xsy" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/bronze,
@@ -75441,8 +75428,8 @@ uoO
 uoO
 uoO
 uoO
-gfI
-gfI
+rbg
+rbg
 rbg
 rbg
 rbg
@@ -75454,7 +75441,7 @@ rbg
 rbg
 cXP
 ufQ
-vLK
+gfI
 tFh
 tFh
 gRD
@@ -75697,8 +75684,8 @@ uoO
 uoO
 uoO
 uoO
-gfI
-gfI
+rbg
+rbg
 eMR
 niF
 eMR
@@ -75711,7 +75698,7 @@ fal
 rbg
 ufQ
 ufQ
-vLK
+gfI
 tFh
 tFh
 tFh
@@ -75954,10 +75941,10 @@ uoO
 aoj
 aoj
 aoj
-gfI
-qlp
-qlp
-qlp
+rbg
+uug
+uug
+uug
 eMR
 rbg
 kEv
@@ -75968,7 +75955,7 @@ faq
 rbg
 ufQ
 ufQ
-vLK
+gfI
 tFh
 dLs
 tFh
@@ -76211,11 +76198,11 @@ uoO
 aoj
 aoj
 aoj
-gfI
+rbg
 gWY
-qlp
-qlp
-wev
+uug
+uug
+hgW
 rbg
 xZl
 uug
@@ -76468,11 +76455,11 @@ uoO
 aoj
 aoj
 aoj
-gfI
-qlp
-qlp
-qlp
-qlp
+rbg
+uug
+uug
+uug
+uug
 xjD
 uug
 uug
@@ -76725,10 +76712,10 @@ uoO
 aoj
 aoj
 uoO
-gfI
+rbg
 gWY
-qlp
-qlp
+uug
+uug
 xsx
 rbg
 jcb
@@ -76982,11 +76969,11 @@ uoO
 aoj
 aoj
 uoO
-gfI
-qlp
-qlp
-qlp
-hJi
+rbg
+uug
+uug
+uug
+uNq
 rbg
 uNq
 mPx
@@ -77239,8 +77226,8 @@ uoO
 uoO
 uoO
 uoO
-gfI
-gfI
+rbg
+rbg
 rbg
 rbg
 rbg
