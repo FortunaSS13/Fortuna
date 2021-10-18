@@ -10,7 +10,7 @@
 	lose_text = "<span class='danger'>You don't feel as resistant to alcohol anymore. Somehow.</span>"
 	medical_record_text = "Patient demonstrates a high tolerance for alcohol."
 
-/datum/quirk/horrifying_tastes
+/*/datum/quirk/horrifying_tastes
 	name = "Horrifying Tastes"
 	desc = "You enjoy a fine sort of meal not often appreciated by your peers. To serve man, in all it's forms is your life's work. Put bluntly - you are a cannibal. Consuming human flesh doesn't bother you, and dishes such as longpork stew will heal you."
 	mob_trait = TRAIT_LONGPORKLOVER
@@ -30,7 +30,7 @@
 	if(H)
 		var/datum/species/species = H.dna.species
 		species.liked_food &= ~LONGPORK
-		species.disliked_food |= LONGPORK
+		species.disliked_food |= LONGPORK /*
 
 /datum/quirk/tribal
 	name = "Former Tribal"
