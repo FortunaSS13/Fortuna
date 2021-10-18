@@ -24051,6 +24051,13 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/ncr)
+"kIa" = (
+/obj/structure/rack,
+/obj/item/clothing/head/helmet/armyhelmet,
+/obj/item/clothing/head/helmet/armyhelmet,
+/obj/item/clothing/head/helmet/armyhelmet,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
 "kIf" = (
 /obj/structure/table/reinforced,
 /obj/item/bodypart/l_leg/robot,
@@ -75395,7 +75402,7 @@ hAk
 hAk
 tkS
 dCV
-nIP
+kIa
 xYI
 khy
 iPZ
