@@ -34,6 +34,7 @@
 				if(foodtype & H.dna.species.toxic_food)
 					to_chat(H,"<span class='warning'>What the hell was that thing?!</span>")
 					H.adjust_disgust(25 + 30 * fraction)
+					H.adjustToxLoss(3, 0)
 					SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "toxic_food", /datum/mood_event/disgusting_food)
 				else if((foodtype & H.dna.species.disliked_food) || food_quality <= 30)
 					to_chat(H,"<span class='notice'>That didn't taste very good...</span>")
@@ -50,3 +51,11 @@
 			if((foodtype & BREAKFAST) && world.time - SSticker.round_start_time < STOP_SERVING_BREAKFAST)
 				SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "breakfast", /datum/mood_event/breakfast)
 			last_check_time = world.time
+			
+/obj/item/reagent_containers/food/proc/On_Consume(mob/living/eater) // Cannibalism check, Fortuna addition
+	if(!eater)
+		return
+	if(eater && HAS_TRAIT(eater, TRAIT_LONGPORKLOVER_2) && !foodtype(LONGPORK))
+		to_chat(eater, "<span class='warning'>You smell the [src] and feel totally unsatisfied - you've got the dark craving, and only human meat will sate your hunger!</span>")
+		return
+
