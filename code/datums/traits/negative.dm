@@ -545,6 +545,188 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -3
 	mob_trait = TRAIT_NOGUNS
 
+//Junkie
+/datum/quirk/junkie
+	name = "Junkie"
+	desc = "You can't get enough of hard drugs."
+	value = -2
+	gain_text = "<span class='danger'>You suddenly feel the craving for drugs.</span>"
+	lose_text = "<span class='notice'>You feel like you should kick your drug habit.</span>"
+	medical_record_text = "Patient has a history of hard drugs."
+	var/drug_list = list(/datum/reagent/drug/crank, /datum/reagent/drug/krokodil, /datum/reagent/medicine/morphine, /datum/reagent/drug/happiness, /datum/reagent/drug/methamphetamine) //List of possible IDs
+	var/datum/reagent/reagent_type //!If this is defined, reagent_id will be unused and the defined reagent type will be instead.
+	var/datum/reagent/reagent_instance //! actual instanced version of the reagent
+	var/where_drug //! Where the drug spawned
+	var/obj/item/drug_container_type //! If this is defined before pill generation, pill generation will be skipped. This is the type of the pill bottle.
+	var/obj/item/drug_instance //! instanced version of the container
+	var/where_accessory //! where the accessory spawned
+	var/obj/item/accessory_type //! If this is null, an accessory won't be spawned.
+	var/obj/item/accessory_instance //! instanced version of the accessory
+	var/process_interval = 30 SECONDS //! how frequently the quirk processes
+	var/next_process = 0 //! ticker for processing
 
+/datum/quirk/junkie/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	if (!reagent_type)
+		reagent_type = pick(drug_list)
+	reagent_instance = new reagent_type()
+	H.reagents.addiction_list.Add(reagent_instance)
+	var/current_turf = get_turf(quirk_holder)
+	if (!drug_container_type)
+		drug_container_type = /obj/item/storage/pill_bottle
+	drug_instance = new drug_container_type(current_turf)
+	if (istype(drug_instance, /obj/item/storage/pill_bottle))
+		var/pill_state = "pill[rand(1,20)]"
+		for(var/i in 1 to 7)
+			var/obj/item/reagent_containers/pill/P = new(drug_instance)
+			P.icon_state = pill_state
+			P.reagents.add_reagent(reagent_type, 1)
 
+	if (accessory_type)
+		accessory_instance = new accessory_type(current_turf)
+	var/list/slots = list(
+		"in your left pocket" = SLOT_L_STORE,
+		"in your right pocket" = SLOT_R_STORE,
+		"in your backpack" = SLOT_IN_BACKPACK
+	)
+	where_drug = H.equip_in_one_of_slots(drug_instance, slots, FALSE) || "at your feet"
+	if (accessory_instance)
+		where_accessory = H.equip_in_one_of_slots(accessory_instance, slots, FALSE) || "at your feet"
+	announce_drugs()
 
+/datum/quirk/junkie/post_add()
+	if(where_drug == "in your backpack" || where_accessory == "in your backpack")
+		var/mob/living/carbon/human/H = quirk_holder
+		SEND_SIGNAL(H.back, COMSIG_TRY_STORAGE_SHOW, H)
+
+/datum/quirk/junkie/proc/announce_drugs()
+	to_chat(quirk_holder, "<span class='boldnotice'>There is a [drug_instance.name] of [reagent_instance.name] [where_drug]. Better hope you don't run out...</span>")
+
+/datum/quirk/junkie/on_process()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(world.time > next_process)
+		next_process = world.time + process_interval
+		if(!H.reagents.addiction_list.Find(reagent_instance))
+			if(!reagent_instance)
+				reagent_instance = new reagent_type()
+			else
+				reagent_instance.addiction_stage = 0
+			LAZYADD(H.reagents.addiction_list, reagent_instance)
+			to_chat(quirk_holder, "<span class='danger'>You thought you kicked it, but you suddenly feel like you need [reagent_instance.name] again...</span>")
+/*
+/datum/quirk/junkie/smoker
+	name = "Smoker"
+	desc = "Sometimes you just really want a smoke. Probably not great for your lungs."
+	value = -1
+	gain_text = "<span class='danger'>You could really go for a smoke right about now.</span>"
+	lose_text = "<span class='notice'>You feel like you should quit smoking.</span>"
+	medical_record_text = "Patient is a current smoker."
+	reagent_type = /datum/reagent/drug/nicotine
+	accessory_type = /obj/item/lighter/greyscale
+/datum/quirk/junkie/smoker/on_spawn()
+	drug_container_type = pick(/obj/item/storage/fancy/cigarettes,
+		/obj/item/storage/fancy/cigarettes/cigpack_midori,
+		/obj/item/storage/fancy/cigarettes/cigpack_uplift,
+		/obj/item/storage/fancy/cigarettes/cigpack_robust,
+		/obj/item/storage/fancy/cigarettes/cigpack_robustgold,
+		/obj/item/storage/fancy/cigarettes/cigpack_carp,
+		/obj/item/storage/fancy/cigarettes/cigars,
+		/obj/item/storage/fancy/cigarettes/cigars/cohiba,
+		/obj/item/storage/fancy/cigarettes/cigars/havana)
+	. = ..()
+/datum/quirk/junkie/smoker/announce_drugs()
+	to_chat(quirk_holder, "<span class='boldnotice'>There is a [drug_instance.name] [where_drug], and a lighter [where_accessory]. Make sure you get your favorite brand when you run out.</span>")
+/datum/quirk/junkie/smoker/on_process()
+	. = ..()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/I = H.get_item_by_slot(SLOT_WEAR_MASK)
+	if (istype(I, /obj/item/clothing/mask/cigarette))
+		var/obj/item/storage/fancy/cigarettes/C = drug_instance
+		if(istype(I, C.spawn_type))
+			SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "wrong_cigs")
+			return
+		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "wrong_cigs", /datum/mood_event/wrong_brand)
+*/
+
+/datum/quirk/junkie/jet
+	name = "Chem Addict - Jet"
+	desc = "The jet will make you jittery!"
+	value = -2
+	locked = FALSE
+	gain_text = "<span class='danger'>You begin craving a whiff from a jet inhaler.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in jet.</span>"
+	medical_record_text = "Patient is a jet addict."
+	reagent_type = /datum/reagent/drug/jet
+	drug_container_type = /obj/item/reagent_containers/pill/patch/jet
+
+/datum/quirk/junkie/psycho
+	name = "Chem Addict - Psycho"
+	desc = "KILL! DEATH! DESTROY!"
+	value = -2
+	locked = FALSE
+	gain_text = "<span class='danger'>You begin craving a shot of psycho.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in psycho.</span>"
+	medical_record_text = "Patient is a psycho addict."
+	reagent_type = /datum/reagent/drug/psycho
+	drug_container_type = /obj/item/reagent_containers/hypospray/medipen/psycho
+
+/datum/quirk/junkie/turbo
+	name = "Chem Addict - Turbo"
+	desc = "See, old Jesus Mordino wanted something that the Redding miners would get addicted to fast AND make them work harder. So, I said, 'no prob,' right?"
+	value = -2
+	locked = FALSE
+	gain_text = "<span class='danger'>You begin craving a whiff from a turbo inhaler.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
+	medical_record_text = "Patient is a turbo addict."
+	reagent_type = /datum/reagent/drug/turbo
+	drug_container_type = /obj/item/reagent_containers/pill/patch/turbo
+
+/datum/quirk/junkie/medx
+	name = "Chem Addict - Med-X"
+	desc = "Five doses? Nice. A fella could put himself out of his misery with five doses."
+	value = -2
+	locked = FALSE
+	gain_text = "<span class='danger'>You begin craving a shot of med-x.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in med-x.</span>"
+	medical_record_text = "Patient is a med-x addict."
+	reagent_type = /datum/reagent/medicine/medx
+	drug_container_type = /obj/item/reagent_containers/syringe/medx
+
+/datum/quirk/junkie/mentats
+	name = "Chem Addict - Mentats"
+	desc = "To be fair, you have to have a very high IQ to understand Hegelian dialectics."
+	value = -2
+	locked = FALSE
+	gain_text = "<span class='danger'>You begin craving a mentat pill.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in mentats.</span>"
+	medical_record_text = "Patient is a mentats addict."
+	reagent_type = /datum/reagent/medicine/mentat
+	drug_container_type = /obj/item/reagent_containers/pill/mentat
+
+/datum/quirk/junkie/buffout
+	name = "Chem Addict - Buffout"
+	desc = "Experiment Two: Punch through TEN boards. Results: I'm invincible! This is like, some comic-book level strength."
+	value = -2
+	locked = FALSE
+	gain_text = "<span class='danger'>You begin craving a buffout pill.</span>"
+	lose_text = "<span class='notice'>You regret your life decisions and lose interest in buffout.</span>"
+	medical_record_text = "Patient is a buffout addict."
+	reagent_type = /datum/reagent/drug/buffout
+	drug_container_type = /obj/item/reagent_containers/pill/buffout
+	
+/datum/quirk/junkie/darkcravings
+	name = "Dark Cravings"
+	desc = "You enjoy a fine sort of meal not often appreciated by your peers. Regular food doesn't sate your hunger as well as human flesh, and you've a nasty addiction to it. Longpork stew provides healing when consumed."
+	mob_trait = TRAIT_LONGPORKLOVER
+	value = -2
+	gain_text = "<span class='notice'>You have an insatiable hunger for the flesh of your fellow man.</span>"
+	lose_text = "<span class='notice'>The terrible hunger fades - you feel peace at last.</span>"
+	medical_record_text = "Patient refuses to comment on their dietary preferences."
+	reagent_type = /datum/reagent/consumable/nutriment/cannibalnutriment
+	drug_container_type = /obj/item/reagent_containers/food/snacks/meat/slab/human
+
+/datum/quirk/junkie/darkcravings/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/datum/species/species = H.dna.species
+	species.liked_food |= LONGPORK
+	species.toxic_food &= ~LONGPORK
