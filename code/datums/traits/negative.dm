@@ -716,7 +716,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	
 /datum/quirk/junkie/darkcravings
 	name = "Dark Cravings"
-	desc = "You enjoy a fine sort of meal not often appreciated by your peers. Regular food doesn't sate your hunger as well as human flesh, and you've a nasty addiction to it. Longpork stew provides healing when consumed."
+	desc = "This quirk is intended for Outlaws, do not escalate on people just to eat them outside of this role. You enjoy a fine sort of meal not often appreciated by your peers. Regular food doesn't sate your hunger as well as human flesh, and you've a nasty addiction to it. Longpork stew provides healing when consumed."
 	mob_trait = TRAIT_LONGPORKLOVER
 	value = -2
 	gain_text = "<span class='notice'>You have an insatiable hunger for the flesh of your fellow man.</span>"
@@ -730,3 +730,10 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/datum/species/species = H.dna.species
 	species.liked_food |= LONGPORK
 	species.toxic_food &= ~LONGPORK
+
+/datum/quirk/junkie/darkcravings/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(H)
+		var/datum/species/species = H.dna.species
+		species.liked_food &= ~LONGPORK
+		species.disliked_food |= LONGPORK
