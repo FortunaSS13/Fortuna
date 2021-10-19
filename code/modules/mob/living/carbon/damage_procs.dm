@@ -6,7 +6,7 @@
 	if(!forced && hit_percent <= 0)
 		return 0
 	var/mob/living/carbon/C
-	if(HAS_TRAIT(C, TRAIT_REVERSE_BLOODY_MESS) && prob(50))
+	if(HAS_TRAIT(C, TRAIT_REVERSE_BLOODY_MESS))
 		C.gib()
 	var/obj/item/bodypart/BP = null
 	if(!spread_damage)

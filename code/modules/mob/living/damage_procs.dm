@@ -145,8 +145,8 @@
 	if(!forced && (status_flags & GODMODE))
 		return FALSE
 	bruteloss = clamp((bruteloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)
-	var/mob/living/carbon/human/A
-	if(prob(5) && HAS_TRAIT(A, TRAIT_REVERSE_BLOODY_MESS))
+	var/mob/living/carbon/A
+	if(HAS_TRAIT(A, TRAIT_REVERSE_BLOODY_MESS))
 		A.gib()
 	if(updating_health)
 		updatehealth()

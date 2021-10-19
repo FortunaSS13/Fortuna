@@ -142,7 +142,10 @@
 		. = (amount)
 
 /obj/item/stack/attack_self(mob/user)
-	interact(user)
+	if(HAS_TRAIT(user, TRAIT_BAD_CRAFTING_2))
+		to_chat(src, "<span class='warning'>You're bad at crafting, and cannot do this!</span>")
+	else
+		interact(user)
 
 /obj/item/stack/interact(mob/user, sublist)
 	ui_interact(user, sublist)

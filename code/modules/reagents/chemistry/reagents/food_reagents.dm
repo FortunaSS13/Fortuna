@@ -886,7 +886,7 @@
 	color = "#8B0000"
 	value = REAGENT_VALUE_COMMON
 	addiction_threshold = 5
-	overdose_threshold = 100
+	overdose_threshold = 30
 	
 /datum/reagent/consumable/nutriment/cannibalnutriment/addiction_act_stage1(mob/living/M)
 	if(prob(5))
@@ -928,7 +928,9 @@
 /datum/reagent/consumable/nutriment/cannibalnutriment/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_LONGPORKLOVER) && !HAS_TRAIT(M, TRAIT_NO_PROCESS_FOOD))
 		current_cycle++
-		M.adjust_nutrition((nutriment_factor/4), (max_nutrition/4))
+		M.adjust_nutrition(nutriment_factor, max_nutrition)
 		M.remove_client_colour(/datum/client_colour/glass_colour/red)
+		M.CheckBloodsuckerEatFood(nutriment_factor)
+	holder?.remove_reagent(type, metabolization_rate)
 
 

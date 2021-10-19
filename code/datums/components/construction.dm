@@ -20,7 +20,7 @@
 	update_parent(index)
 
 /datum/component/construction/proc/examine(datum/source, mob/user, list/examine_list)
-	if(desc && !HAS_TRAIT(user, TRAIT_NO_CONSTRUCTION))
+	if(desc)
 		examine_list += desc
 
 /datum/component/construction/proc/on_step()
@@ -67,47 +67,44 @@
 	var/target_index = index + diff
 	var/list/current_step = steps[index]
 	var/list/target_step
-	if(HAS_TRAIT(user, TRAIT_NO_CONSTRUCTION))
-		to_chat(src, "<span class='warning'>You're bad at construction, and cannot do this!</span>")
-	else
-		if(target_index > 0 && target_index <= steps.len)
-			target_step = steps[target_index]
+	if(target_index > 0 && target_index <= steps.len)
+		target_step = steps[target_index]
 
-		. = TRUE
+	. = TRUE
 
-		if(I.tool_behaviour)
-			. = I.use_tool(parent, user, 0, volume=50)
+	if(I.tool_behaviour)
+		. = I.use_tool(parent, user, 0, volume=50)
 
-		else if(diff == FORWARD)
-			switch(current_step["action"])
-				if(ITEM_DELETE)
-					. = user.transferItemToLoc(I, parent)
-					if(.)
-						qdel(I)
+	else if(diff == FORWARD)
+		switch(current_step["action"])
+			if(ITEM_DELETE)
+				. = user.transferItemToLoc(I, parent)
+				if(.)
+					qdel(I)
 
-				if(ITEM_MOVE_INSIDE)
-					. = user.transferItemToLoc(I, parent)
+			if(ITEM_MOVE_INSIDE)
+				. = user.transferItemToLoc(I, parent)
 
-				// Using stacks
-				else if(istype(I, /obj/item/stack))
-					. = I.use_tool(parent, user, 0, volume=50, amount=current_step["amount"])
+			// Using stacks
+			else if(istype(I, /obj/item/stack))
+				. = I.use_tool(parent, user, 0, volume=50, amount=current_step["amount"])
 
 
-		// Going backwards? Undo the last action. Drop/respawn the items used in last action, if any.
-		if(. && diff == BACKWARD && target_step && !target_step["no_refund"])
-			var/target_step_key = target_step["key"]
+	// Going backwards? Undo the last action. Drop/respawn the items used in last action, if any.
+	if(. && diff == BACKWARD && target_step && !target_step["no_refund"])
+		var/target_step_key = target_step["key"]
 
-			switch(target_step["action"])
-				if(ITEM_DELETE)
-					new target_step_key(drop_location())
+		switch(target_step["action"])
+			if(ITEM_DELETE)
+				new target_step_key(drop_location())
 
-				if(ITEM_MOVE_INSIDE)
-					var/obj/item/located_item = locate(target_step_key) in parent
-					if(located_item)
-						located_item.forceMove(drop_location())
+			if(ITEM_MOVE_INSIDE)
+				var/obj/item/located_item = locate(target_step_key) in parent
+				if(located_item)
+					located_item.forceMove(drop_location())
 
-				else if(ispath(target_step_key, /obj/item/stack))
-					new target_step_key(drop_location(), target_step["amount"])
+			else if(ispath(target_step_key, /obj/item/stack))
+				new target_step_key(drop_location(), target_step["amount"])
 
 /datum/component/construction/proc/spawn_result()
 	// Some constructions result in new components being added.
