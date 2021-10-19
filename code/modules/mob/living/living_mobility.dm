@@ -45,6 +45,9 @@
 		TOGGLE_BITFIELD(combat_flags, COMBAT_FLAG_INTENTIONALLY_RESTING)
 		to_chat(src, "<span class='notice'>You are now attempting to [(combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) ? "[!resting ? "lay down and ": ""]stay down" : "[resting ? "get up and ": ""]stay up"].</span>")
 		if((combat_flags & COMBAT_FLAG_INTENTIONALLY_RESTING) && !resting)
+			if(istype(src.get_item_by_slot(SLOT_WEAR_SUIT),/obj/item/clothing/suit/armor/f13/power_armor))
+				to_chat(src, "<span class='notice'>You cannot lie down in that heavy armor!</span>")
+				return
 			set_resting(TRUE, FALSE)
 		else
 			resist_a_rest()
