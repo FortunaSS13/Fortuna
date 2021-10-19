@@ -62,8 +62,8 @@ Key procs
 		id = "[type]" //We turn the path into a string.
 
 /**
-  * Returns new multiplicative movespeed after modification.
-  */
+* Returns new multiplicative movespeed after modification.
+*/
 /datum/movespeed_modifier/proc/apply_multiplicative(existing, mob/target)
 	if(!complex_calculation || (multiplicative_slowdown > 0))		// we aren't limiting how much things can slowdown.. yet.
 		return existing + multiplicative_slowdown
@@ -256,9 +256,9 @@ GLOBAL_LIST_EMPTY(movespeed_modification_cache)
 		. += M.multiplicative_slowdown
 
 /**
-  * Gets the movespeed modifier datum of a modifier on a mob. Returns null if not found.
-  * DANGER: IT IS UP TO THE PERSON USING THIS TO MAKE SURE THE MODIFIER IS NOT MODIFIED IF IT HAPPENS TO BE GLOBAL/CACHED.
-  */
+* Gets the movespeed modifier datum of a modifier on a mob. Returns null if not found.
+* DANGER: IT IS UP TO THE PERSON USING THIS TO MAKE SURE THE MODIFIER IS NOT MODIFIED IF IT HAPPENS TO BE GLOBAL/CACHED.
+*/
 /mob/proc/get_movespeed_modifier_datum(id)
 	return movespeed_modification[id]
 
