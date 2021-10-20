@@ -770,3 +770,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	desc = "You are incapable of crafting by hand and cannot construct anything."
 	value = -2
 	mob_trait = TRAIT_BAD_CRAFTING_2
+	
+/datum/quirk/chem_intolerance
+	name = "First Time User"
+	desc = "You've never tried addictive chems of any variety and aren't prepared to do so now. The stages of addiction progress faster, and you're more likely to get addicted and overdose!"
+	value = -1
+	mob_trait = TRAIT_CHEM_INTOLERANCE
