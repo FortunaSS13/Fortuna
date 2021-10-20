@@ -244,6 +244,8 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 /datum/reagent/proc/chemintolerance(mob/living/carbon/M) // fortuna addition
 	for(var/datum/reagent/A in M.reagents.addiction_list)
 		if(!isnull(A.addiction_stage))
+			A.addiction_threshold = (addiction_threshold * 0.75)
+			A.overdose_threshold = (overdose_threshold * 0.75)
 			A.addiction_stage1_end = 10
 			A.addiction_stage2_end = 20
 			A.addiction_stage3_end = 30
