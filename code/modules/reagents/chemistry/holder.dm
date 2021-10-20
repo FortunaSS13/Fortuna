@@ -324,7 +324,7 @@
 			addiction_tick = 1
 			for(var/addiction in cached_addictions)
 				var/datum/reagent/R = addiction
-				if(HAS_TRAIT(C, TRAIT_CHEM_INTOLERANCE)
+				if(HAS_TRAIT(C, TRAIT_CHEM_INTOLERANCE))
 					C.chemintolerance()
 				if(C && R)
 					R.addiction_stage++
