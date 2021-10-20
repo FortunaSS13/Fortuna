@@ -618,50 +618,47 @@ Mayor
 	/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
 	)
 
-/datum/outfit/loadout/bum
-	name = "Bum"
+/datum/outfit/loadout/groundskeeper
+	name = "groundskeeper"
 	mask = /obj/item/clothing/mask/facewrap
-	neck = /obj/item/clothing/neck/mantle/poncho
-	uniform = /obj/item/clothing/under/f13/rag
-	gloves = /obj/item/clothing/gloves/f13/handwraps
-	shoes = /obj/item/clothing/shoes/f13/rag
-	backpack_contents = list(/obj/item/storage/bag/trash = 1, /obj/item/reagent_containers/food/drinks/bottle/whiskey = 1,
+	belt = /obj/item/storage/belt
+	suit = /obj/item/clothing/under/f13/mechanic
+	gloves = /obj/item/clothing/gloves/color/yellow
+	backpack_contents = list(/obj/item/storage/bag/trash = 1, /obj/item/reagent_containers/spray/cleaner = 1,
 	/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
-	/obj/item/ammo_box/a556/stripper = 1,
-	/obj/item/twohanded/spear/scrapspear = 1,
+	/obj/item/ammo_box/a556/stripper = 2,
+
 	)
 
-/datum/outfit/loadout/properlady
-	name = "Proper Lady"
-	head = /obj/item/clothing/head/beret/black
-	suit = /obj/item/clothing/under/sailordress
-	gloves = /obj/item/clothing/gloves/f13/lace
-	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack_contents = list(/obj/item/reagent_containers/food/drinks/bottle/champagne = 1,
-	/obj/item/gun/ballistic/revolver/police = 1,
-	/obj/item/ammo_box/a357 = 2,
+/datum/outfit/loadout/artisan
+	name = "Artisan"
+	glasses = /obj/item/clothing/glasses/welding
+	suit = /obj/item/clothing/under/f13/petrochico
+	belt = /obj/item/storage/belt/utility
+	gloves = /obj/item/clothing/gloves/f13/blacksmith
+	backpack_contents = list(/obj/item/twohanded/sledgehammer = 1,
+	/obj/item/stack/sheet/metal/twenty = 1,
 	)
 
-/datum/outfit/loadout/propergent
-	name = "Respectable Gent"
+/datum/outfit/loadout/hunter
+	name = "Hunter"
 	head = /obj/item/clothing/head/f13/beaver
 	suit = /obj/item/clothing/suit/f13/cowboybvest
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack_contents = list(/obj/item/storage/box/matches = 1,
+	backpack_contents = list(/obj/item/fishingrod = 1,
 	/obj/item/storage/fancy/cigarettes/cigars = 1,
 	/obj/item/gun/ballistic/revolver/widowmaker = 1,
-	/obj/item/ammo_box/shotgun/improvised = 2,
+	/obj/item/ammo_box/shotgun/buck = 2,
 	)
 
-/datum/outfit/loadout/hombre
-	name = "Hombre"
-	head = /obj/item/clothing/head/f13/cowboy
-	suit = /obj/item/clothing/suit/f13/duster
-	uniform = /obj/item/clothing/under/f13/cowboyb
+/datum/outfit/loadout/militia
+	name = "Militia"
+	head = /obj/item/clothing/head/helmet/armyhelmet
+	suit = /obj/item/clothing/suit/armor/f13/metalarmor/steelbib
+	uniform = /obj/item/clothing/under/f13/mercc
 	r_hand = /obj/item/gun/ballistic/rifle/hunting
 	gloves = /obj/item/clothing/gloves/f13/leather
-	shoes = /obj/item/clothing/shoes/f13/cowboy
 	backpack_contents = list(/obj/item/ammo_box/a308 = 2,
 	)
 /*
@@ -687,7 +684,8 @@ Mayor
 	/obj/item/clothing/under/suit/black_really = 1,
 	/obj/item/clothing/gloves/evening = 1,
 	/obj/item/clothing/gloves/color/white = 1,
-	/obj/item/melee/unarmed/brass = 1,
+	/obj/item/gun/ballistic/revolver/police = 1,
+	/obj/item/ammo_box/a357 = 1,
 	)
 
 /*----------------------------------------------------------------
