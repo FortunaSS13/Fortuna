@@ -570,10 +570,10 @@ Mayor
 
 	loadout_options = list(
 		/datum/outfit/loadout/provisioner,
-		/datum/outfit/loadout/bum,
-		/datum/outfit/loadout/properlady,
-		/datum/outfit/loadout/propergent,
-		/datum/outfit/loadout/hombre,
+		/datum/outfit/loadout/groundskeeper,
+		/datum/outfit/loadout/artisan,
+		/datum/outfit/loadout/outdoorsman,
+		/datum/outfit/loadout/militia,
 		/datum/outfit/loadout/singer,
 	)
 	access = list(ACCESS_BAR)
@@ -640,8 +640,8 @@ Mayor
 	/obj/item/stack/sheet/metal/twenty = 1,
 	)
 
-/datum/outfit/loadout/hunter
-	name = "Hunter"
+/datum/outfit/loadout/outdoorsman
+	name = "outdoorsman"
 	head = /obj/item/clothing/head/f13/beaver
 	suit = /obj/item/clothing/suit/f13/cowboybvest
 	uniform = /obj/item/clothing/under/f13/bartenderalt
