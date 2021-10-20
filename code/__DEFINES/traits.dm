@@ -186,6 +186,7 @@
 #define TRAIT_SELF_AWARE		"self_aware"
 #define TRAIT_FREERUNNING		"freerunning"
 #define TRAIT_SKITTISH			"skittish"
+//#define TRAIT_POOR_AIM		"poor_aim" Fortuna removal, replaced with tiered
 #define TRAIT_POOR_AIM_1		"poor_aim_1"
 #define TRAIT_POOR_AIM_2		"poor_aim_2"
 #define TRAIT_POOR_AIM_3		"poor_aim_3"
