@@ -732,8 +732,10 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 /mob/living/carbon/proc/chemintolerance(mob/living/carbon/M) // fortuna addition, for quirk
 	for(var/datum/reagent/A in M.reagents.addiction_list)
 		if(!isnull(A.addiction_stage))
-			A.addiction_threshold = (addiction_threshold * 0.75)
-			A.overdose_threshold = (overdose_threshold * 0.75)
+		var/chemintolerance_addiction = addiction_threshold*0.25
+		var/chemintolerance_overdose = addiction_threshold*0.25
+			A.addiction_threshold -= chemintolerance_addiction
+			A.overdose_threshold -= chemintolerance_overdose
 			A.addiction_stage1_end = 10
 			A.addiction_stage2_end = 20
 			A.addiction_stage3_end = 30
