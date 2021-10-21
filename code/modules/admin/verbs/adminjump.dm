@@ -2,7 +2,7 @@
 	set name = "Jump to Area"
 	set desc = "Area to jump to"
 	set category = "Admin.Game"
-	if(!src.holder)
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		to_chat(src, "Only administrators may use this command.", confidential = TRUE)
 		return
 
@@ -29,7 +29,7 @@
 /client/proc/jumptoturf(turf/T in world)
 	set name = "Jump to Turf"
 	set category = "Admin.Game"
-	if(!src.holder)
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		to_chat(src, "Only administrators may use this command.", confidential = TRUE)
 		return
 
@@ -43,7 +43,7 @@
 	set category = "Admin.Game"
 	set name = "Jump to Mob"
 
-	if(!src.holder)
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		to_chat(src, "Only administrators may use this command.", confidential = TRUE)
 		return
 
@@ -100,7 +100,7 @@
 	set category = "Admin.Game"
 	set name = "Get Mob"
 	set desc = "Mob to teleport"
-	if(!src.holder)
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		to_chat(src, "Only administrators may use this command.", confidential = TRUE)
 		return
 
@@ -117,7 +117,7 @@
 	set name = "Get Key"
 	set desc = "Key to teleport"
 
-	if(!src.holder)
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		to_chat(src, "Only administrators may use this command.", confidential = TRUE)
 		return
 

@@ -25,7 +25,7 @@
 
 	if(!ismob(M))
 		return
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_subtle_message() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_subtle_message() without admin perms.")
 		return
@@ -56,7 +56,7 @@
 /client/proc/admin_headset_message(mob/M in GLOB.mob_list, sender = null)
 	var/mob/living/carbon/human/H = M
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager tweaking
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use admin_headset_message() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use admin_headset_message() without admin perms.")
 		return
@@ -69,7 +69,7 @@
 		return
 
 	if (!sender)
-		sender = input("Who is the message from?", "Sender") as null|anything in list(RADIO_CHANNEL_CENTCOM,RADIO_CHANNEL_SYNDICATE)
+		sender = input("Who is the message from?", "Sender") as null|anything in list(RADIO_CHANNEL_NCR,RADIO_CHANNEL_VAULT,RADIO_CHANNEL_LEGION,RADIO_CHANNEL_DEN,RADIO_CHANNEL_BOS)
 		if(!sender)
 			return
 
@@ -137,7 +137,7 @@
 	set category = "Admin.Events"
 	set name = "Global Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_world_narrate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_world_narrate() without admin perms.")
 		return
@@ -155,7 +155,7 @@
 	set category = "Admin.Events"
 	set name = "Direct Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_direct_narrate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_direct_narrate() without admin perms.")
 		return
@@ -182,7 +182,7 @@
 	set category = "Admin.Events"
 	set name = "Local Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_local_narrate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_local_narrate() without admin perms.")
 		return

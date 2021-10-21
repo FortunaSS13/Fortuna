@@ -2458,14 +2458,14 @@
 		if(istype(charter))
 			charter.reject_proposed(usr)
 	else if(href_list["jumpto"])
-		if(!isobserver(usr) && !check_rights(R_ADMIN))
+		if(!isobserver(usr) && !check_rights(R_SPAWN)) //fortuna edit. event manager change
 			return
 
 		var/mob/M = locate(href_list["jumpto"])
 		usr.client.jumptomob(M)
 
 	else if(href_list["getmob"])
-		if(!check_rights(R_ADMIN))
+		if(!check_rights(R_SPAWN))
 			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): getmob without admin perms.")
 			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): getmob without admin perms.")
 			return
@@ -2485,7 +2485,7 @@
 		usr.client.sendmob(M)
 
 	else if(href_list["narrateto"])
-		if(!check_rights(R_ADMIN))
+		if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): narrateto without admin perms.")
 			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): narrateto without admin perms.")
 			return
