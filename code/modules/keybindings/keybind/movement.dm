@@ -132,7 +132,7 @@
 	var/list/client/is_down = list()
 
 /datum/keybinding/living/hold_sprint/can_use(client/user)
-	return ishuman(user.mob) || iscyborg(user.mob)
+	iscyborg(user.mob)
 
 /datum/keybinding/living/hold_sprint/down(client/user)
 	var/mob/living/L = user.mob
