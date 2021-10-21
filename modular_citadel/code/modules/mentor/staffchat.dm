@@ -1,7 +1,7 @@
 //fortuna edit. simply changes mentor chat to staff chat as opposed to making an entirely new chat system needlessly
 /client/proc/cmd_staff_say(msg as text)
 	set category = "OOC"
-	set name = "Staff" //Gave this shit a shorter name so you only have to time out "msay" rather than "mentor say" to use it --NeoFite
+	set name = "Staff"
 	set hidden = 1
 	if(!is_mentor())
 		return

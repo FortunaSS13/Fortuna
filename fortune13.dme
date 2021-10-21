@@ -3685,7 +3685,7 @@
 #include "modular_citadel\code\modules\mentor\mentor_verbs.dm"
 #include "modular_citadel\code\modules\mentor\mentorhelp.dm"
 #include "modular_citadel\code\modules\mentor\mentorpm.dm"
-#include "modular_citadel\code\modules\mentor\mentorsay.dm"
+#include "modular_citadel\code\modules\mentor\staffchat.dm"
 #include "modular_citadel\code\modules\mob\cit_emotes.dm"
 #include "modular_citadel\code\modules\mob\living\damage_procs.dm"
 #include "modular_citadel\code\modules\mob\living\living.dm"
