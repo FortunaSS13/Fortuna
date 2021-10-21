@@ -547,7 +547,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	set category = "Special Verbs"
 	set name = "Rejuvenate"
 
-	if(!check_rights(R_SPAWN)) //fortuna edit. for event managers to be able to use it as well
+	if(!check_rights(R_ADMIN))
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_rejuvenate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_rejuvenate() without admin perms.")
 		return
@@ -613,7 +613,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	set category = "Admin"
 	set name = "Delete"
 
-	if(!check_rights(R_SPAWN)) //fortuna edit. for our event managers to use this as well
+	if(!check_rights(R_SPAWN|R_DEBUG))
 		return
 
 	admin_delete(A)
