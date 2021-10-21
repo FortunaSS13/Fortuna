@@ -352,6 +352,9 @@ Follower Volunteer
 
 	outfit = /datum/outfit/job/followers/f13followerguard
 
+	loadout_options = list(/datum/outfit/loadout/guard_ranged,
+	/datum/outfit/loadout/guard_close
+	)
 	access = list(ACCESS_FOLLOWER, ACCESS_MILITARY)
 	minimal_access = list(ACCESS_FOLLOWER, ACCESS_MILITARY)
 
