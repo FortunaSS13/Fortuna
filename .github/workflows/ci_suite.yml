@@ -63,64 +63,6 @@ jobs:
           python3 tools/ci/template_dm_generator.py
           tools/build/build dm -DCIBUILDING -DCITESTING -DALL_MAPS
 
-  auxtools_tg:
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
-    name: Build Auxtools_tg
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          repository: 'willox/auxtools_tg'
-          ref: '83b317412033f6ac28ac6c1ffbb08ef3d524202e'
-          path: 'auxtools_tg'
-
-      - name: Cache cargo registry
-        uses: actions/cache@v2
-        with:
-          path: ~/.cargo/registry
-          key: auxtools_tg-registry-${{ hashFiles('auxtools_tg/Cargo.lock') }}
-
-      - name: Cache cargo index
-        uses: actions/cache@v2
-        with:
-          path: ~/.cargo/git
-          key: auxtools_tg-index-${{ hashFiles('auxtools_tg/Cargo.lock') }}
-
-      - name: Cache cargo build
-        id: auxtools_tg-cache
-        uses: actions/cache@v2
-        with:
-          path: auxtools_tg/target
-          key: auxtools_tg-build-target-${{ hashFiles('auxtools_tg/Cargo.lock') }}
-
-      - name: Install Ubuntu Deps
-        if: steps.auxtools_tg-cache.outputs.cache-hit != 'true'
-        run: |
-          sudo dpkg --add-architecture i386
-          sudo apt-get update
-          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386
-
-      - uses: actions-rs/toolchain@v1
-        if: steps.auxtools_tg-cache.outputs.cache-hit != 'true'
-        with:
-          profile: minimal
-          toolchain: ${{env.toolchain}}
-          target: ${{env.target}}
-          override: true
-
-      - name: Build
-        if: steps.auxtools_tg-cache.outputs.cache-hit != 'true'
-        run: |
-          cargo build --manifest-path auxtools_tg/Cargo.toml --target=${{env.target}} --release --verbose
-          ldd auxtools_tg/target/${{env.target}}/release/libauxtools_tg.so
-      
-      - name: Upload libauxtools_tg artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: libauxtools_tg
-          path: auxtools_tg/target/${{env.target}}/release/libauxtools_tg.so
-  
   auxmos:
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     name: Build Auxmos
@@ -193,11 +135,20 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v2
-      - name: Setup cache
+      - name: Restore BYOND cache
         uses: actions/cache@v2
         with:
           path: ~/BYOND
           key: ${{ runner.os }}-byond-${{ secrets.CACHE_PURGE_KEY }}
+      - name: Restore Yarn cache
+        uses: actions/cache@v2
+        with:
+          path: tgui/.yarn/cache
+          key: ${{ runner.os }}-yarn-${{ secrets.CACHE_PURGE_KEY }}-${{ hashFiles('tgui/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ secrets.CACHE_PURGE_KEY }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - name: Setup database
         run: |
           sudo systemctl start mysql
@@ -211,11 +162,15 @@ jobs:
           sudo apt update || true
           sudo apt install -o APT::Immediate-Configure=false libssl1.1:i386
           bash tools/ci/install_rust_g.sh
+      - name: Install auxmos
+        run: |
+          sudo apt update || true
+          bash tools/ci/install_auxmos.sh
       - name: Compile and run tests
         run: |
           bash tools/ci/install_byond.sh
           source $HOME/BYOND/byond/bin/byondsetup
-          tools/build/build -DCIBUILDING
+          tools/build/build --ci -DCIBUILDING
           bash tools/ci/run_server.sh
 
   test_windows:

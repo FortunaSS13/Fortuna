@@ -17,12 +17,12 @@ Mayor
 
 /datum/job/oasis
 	exp_type = EXP_TYPE_OASIS
+	faction = FACTION_OASIS
 
 /datum/job/oasis/f13mayor
 	title = "Mayor"
 	flag = F13MAYOR
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis"
@@ -78,7 +78,6 @@ Mayor
 	title = "Secretary"
 	flag = F13SECRETARY
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Mayor"
@@ -154,7 +153,6 @@ Mayor
 	flag = F13SHERIFF
 	department_flag = DEP_OASIS
 	head_announce = list("Security")
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis Government"
@@ -241,7 +239,6 @@ Mayor
 	title = "Deputy"
 	flag = F13DEPUTY
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Police Department"
@@ -337,7 +334,6 @@ Mayor
 	title = "Farmer"
 	flag = F13FARMER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Government & Police Department"
@@ -391,7 +387,6 @@ Mayor
 	title = "Prospector"
 	flag = F13PROSPECTOR
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Government & Police Department"
@@ -453,7 +448,6 @@ Mayor
 	title = "Doctor"
 	flag = F13DENDOC
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "law and order"
@@ -503,7 +497,6 @@ Mayor
 	title = "Barkeep"
 	flag = F13BARKEEP
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Oasis Government & Police Department"
@@ -585,7 +578,6 @@ Mayor
 	title = "Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 8
 	spawn_positions = 8
 	supervisors = "Oasis Government & Police Department"
@@ -717,27 +709,26 @@ Mayor
 /*----------------------------------------------------------------
 --							Detective							--
 ----------------------------------------------------------------*/
-/datum/job/wasteland/f13detective
+/datum/job/oasis/f13detective
 	title = "Detective"
 	flag = F13DETECTIVE
-	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
 	description = "As a Detective you are a private eye who assists clients to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the valley, but for finding answers. Your life is already over, make the ending mean something."
 	supervisors = "paying clients"
 	selection_color = "#dcba97"
-	outfit = /datum/outfit/job/wasteland/f13detective
+	outfit = /datum/outfit/job/oasis/f13detective
 
 	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/wasteland/f13detective,
+			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/wasteland/f13detective,
+			/datum/job/oasis/f13detective,
 			/datum/job/wasteland/f13mobboss,
 		),
 		/datum/matchmaking_pref/mentor = list(
@@ -746,9 +737,9 @@ Mayor
 	)
 
 
-/datum/outfit/job/wasteland/f13detective
+/datum/outfit/job/oasis/f13detective
 	name = "Detective"
-	jobtype = /datum/job/wasteland/f13detective
+	jobtype = /datum/job/oasis/f13detective
 	suit = /obj/item/clothing/suit/det_suit/grey
 	ears = /obj/item/radio/headset/headset_town
 	uniform = /obj/item/clothing/under/f13/detectivealt
@@ -776,7 +767,6 @@ Mayor
 	title = "Banker"
 	flag = F13BANKER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "law and order"
@@ -856,7 +846,6 @@ Mayor
 	title = "Shopkeeper"
 	flag = F13SHOPKEEPER
 	department_flag = DEP_OASIS
-	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "free hand of the market"

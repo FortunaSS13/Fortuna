@@ -1,7 +1,6 @@
 SUBSYSTEM_DEF(blackbox)
 	name = "Blackbox"
 	wait = 6000
-	flags = SS_NO_TICK_CHECK
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
 	init_order = INIT_ORDER_BLACKBOX
 
@@ -168,6 +167,8 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "legion")
 		if(FREQ_RANGER)
 			record_feedback("tally", "radio_usage", 1, "ranger")
+		if(FREQ_KHANS)
+			record_feedback("tally", "radio_usage", 1, "khans")
 		else
 			record_feedback("tally", "radio_usage", 1, "other")
 
