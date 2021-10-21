@@ -112,7 +112,11 @@
 
 	for(var/ch_name in channels)
 		secure_radio_connections[ch_name] = add_radio(src, GLOB.radiochannels[ch_name])
-	if(factionized) //fortuna addition. radio management.
+	Factionize() //add our radio to the factionized list through a proc
+
+//fortuna addition. radio management proc that allows us to re-add manageable radios after being killswitched or upon creation
+/obj/item/radio/proc/Factionize()
+	if(factionized)
 		LAZYADD(GLOB.faction_radios, src)
 		switch(linked_faction)
 			if(FACTION_NCR)

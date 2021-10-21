@@ -96,6 +96,8 @@ GLOBAL_LIST_EMPTY(bos_radios)
 		if(new_radio.factionized && new_radio.linked_faction == assigned_faction && !new_radio.linked_mob)
 			to_chat(user, "<span class='notice'>The radio has been linked!</span>")
 			new_radio.linked_mob = user
+			new_radio.kill_switched = FALSE
+			new_radio.Factionize()
 		return
 
 /obj/machinery/radioterminal/ncr
