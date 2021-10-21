@@ -693,6 +693,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13combatengineer
@@ -1049,6 +1050,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13logisticsofficer		// Rockwell, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
@@ -1115,6 +1117,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 
 // Logistics soldier
 /datum/outfit/loadout/rearlog
