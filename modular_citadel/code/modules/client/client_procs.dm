@@ -36,8 +36,8 @@
 		add_mentor_verbs()
 		mentor_memo_output("Show")
 
-/client/proc/is_mentor() // admins are mentors too.
-	if(mentor_datum || check_rights_for(src, R_ADMIN,0))
+/client/proc/is_mentor() // admins and event staff are mentors too.
+	if(mentor_datum || check_rights_for(src, R_ADMIN,0) || check_rights_for(src, R_SPAWN,0)) //fortuna edit. adds r_spawn as an OR to let in event staff
 		return TRUE
 
 /client/verb/togglerightclickstuff()
