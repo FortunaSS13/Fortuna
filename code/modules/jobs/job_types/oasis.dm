@@ -127,7 +127,7 @@ Mayor
 		/obj/item/pda = 1,
 		)
 
-	/datum/outfit/loadout/pr
+/datum/outfit/loadout/pr
 	name = "Public Relations"
 	backpack_contents = list(
 		/obj/item/megaphone = 1,
@@ -138,7 +138,7 @@ Mayor
 		/obj/item/storage/crayons = 1,
 		)
 		
-	/datum/outfit/loadout/pw
+/datum/outfit/loadout/pw
 	name = "Public Works"
 	backpack_contents = list(
 		/obj/item/clothing/head/hardhat = 1,
