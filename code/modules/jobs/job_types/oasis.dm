@@ -84,10 +84,15 @@ Mayor
 	supervisors = "The Mayor"
 	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
 	selection_color = "#d7b088"
-
 	exp_requirements = 800
 
 	outfit = /datum/outfit/job/den/f13secretary
+	
+	loadout_options = list(
+	/datum/outfit/loadout/pr,
+	/datum/outfit/loadout/pw,
+	)
+	
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	matchmaking_allowed = list(
@@ -111,6 +116,7 @@ Mayor
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	r_hand = /obj/item/storage/briefcase/secretary
+	l_hand = /obj/item/book/granter/trait/selection
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/flashlight/seclite
 	shoes = 		/obj/item/clothing/shoes/f13/fancy
@@ -121,6 +127,26 @@ Mayor
 		/obj/item/pda = 1,
 		)
 
+	/datum/outfit/loadout/pr
+	name = "Public Relations"
+	backpack_contents = list(
+		/obj/item/megaphone = 1,
+		/obj/item/reagent_containers/food/snacks/store/cake/birthday = 1,
+		/obj/item/clothing/accessory/medal/ribbon = 1,
+		/obj/item/clothing/gloves/color/latex/nitrile = 1,
+		/obj/item/camera = 1,
+		/obj/item/storage/crayons = 1,
+		)
+		
+	/datum/outfit/loadout/pw
+	name = "Public Works"
+	backpack_contents = list(
+		/obj/item/clothing/head/hardhat = 1,
+		/obj/item/clothing/suit/hazardvest = 1,
+		/obj/item/stack/sheet/metal/twenty = 1,
+		/obj/item/stack/sheet/glass/ten = 1,
+		/obj/item/stack/sheet/mineral/concrete/ten = 1
+		)
 /*--------------------------------------------------------------*/
 
 /datum/job/oasis/f13sheriff
