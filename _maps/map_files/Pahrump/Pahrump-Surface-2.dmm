@@ -45534,9 +45534,8 @@
 	},
 /area/f13/village)
 "vad" = (
-/obj/machinery/door/airlock/medical{
-	name = "Botany";
-	req_one_access_txt = "124"
+/obj/machinery/door/airlock/medical/glass{
+	name = "Botany"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
