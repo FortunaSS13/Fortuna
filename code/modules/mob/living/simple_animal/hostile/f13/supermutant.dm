@@ -257,7 +257,7 @@
 	name = "super mutant rain cultist"
 	desc = "A super mutant covered in blue markings that has been indoctrinated into the Cult Of Rain. This one wields a sledgehammer blessed by the rain gods."
 	color = "#6B87C0"
-	speak_chance = 20
+	speak_chance = 10
 	speak = list("The rain cleanses!", "Sacrifices for the rain gods!", "The thunder guides my fury!", "I am become the storm, destroyer of all heretics!", "The priests will be pleased with my sacrifices!")
 	maxHealth = 450
 	health = 450
@@ -269,7 +269,7 @@
 	name = "super mutant rain cultist"
 	desc = "A super mutant covered in blue markings that has been indoctrinated into the Cult Of Rain. This one wields a hunting rifle blessed by the rain gods."
 	color = "#6B87C0"
-	speak_chance = 20
+	speak_chance = 10
 	speak = list("The rain cleanses!", "Sacrifices for the rain gods!", "The thunder guides my fury!", "I am become the storm, destroyer of all heretics!", "The priests will be pleased with my sacrifices!")
 	maxHealth = 450
 	health = 450
@@ -281,7 +281,7 @@
 	name = "nightkin berserker rain priest"
 	desc = "A nightkin that spreads the word of the Cult Of Rain. They are covered in dark blue markings, indicating that they have been blessed by the rain god Odile."
 	color = "#6666FF"
-	speak_chance = 20
+	speak_chance = 10
 	speak = list("The rain speaks through me!", "Witness the gifts of rain!", "The great flood will come upon us! Do not fear it!", "My life for the rain gods!", "The rain gods can always use more sacrifices!")
 	maxHealth = 450
 	health = 450
@@ -372,7 +372,7 @@
 	name = "nightkin guardian rain priest"
 	desc = "A nightkin that spreads the word of the Cult Of Rain. They are covered in dark blue markings, indicating that they have been blessed by the rain god Ignacio."
 	color = "#6666FF"
-	speak_chance = 20
+	speak_chance = 10
 	speak = list("The rain speaks through me!", "Witness the gifts of rain!", "The great flood will come upon us! Do not fear it!", "My life for the rain gods!", "The rain gods can always use more sacrifices!")
 	maxHealth = 450
 	health = 450
@@ -429,11 +429,11 @@
 	name = "nightkin rain lord"
 	desc = "A nightkin that writes the word of the Cult Of Rain. They are covered in dark blue markings and are adorned in pieces of bone armor, indicating that they are blessed by the rain god Hyacinth."
 	color = "#6666FF"
-	speak_chance = 20
+	speak_chance = 10
 	speak = list("The great flood will come, I will make sure of it!", "Rain god Odile, I call upon you for wrath!", "Rain god Hyacinth, I call upon you for a tranquil mind!", "Rain god Ignacio, I call upon you for protection!", "The storm rages within!")
 	maxHealth = 550
 	health = 550
-	damage_coeff = list(BRUTE = 0.5, BURN = -1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
+	damage_coeff = list(BRUTE = 0.5, BURN = 0.5, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 	melee_damage_lower = 60
 	melee_damage_upper = 70
 	extra_projectiles = 1
