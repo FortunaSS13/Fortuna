@@ -100,6 +100,7 @@
 */
 
 // Killer Tomato
+/* Fortuna edit: Killer Tomato disabled
 /obj/item/seeds/tomato/killer
 	name = "pack of killer-tomato seeds"
 	desc = "These seeds grow into killer-tomato plants."
@@ -148,3 +149,4 @@
 			K.health = K.maxHealth
 			K.visible_message("<span class='notice'>The Killer Tomato growls as it suddenly awakens.</span>")
 			qdel(src)
+*/
