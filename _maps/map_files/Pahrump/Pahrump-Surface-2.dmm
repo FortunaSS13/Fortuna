@@ -5265,6 +5265,13 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"ctu" = (
+/obj/structure/rack,
+/obj/item/storage/box/disks_plantgene,
+/turf/open/floor/f13{
+	icon_state = "greendirtyfull"
+	},
+/area/f13/followers)
 "ctJ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -19245,6 +19252,11 @@
 /obj/structure/decoration/smokeold{
 	pixel_y = 32
 	},
+/obj/machinery/button/door{
+	id = "followerwindows";
+	name = "window shutters";
+	pixel_y = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -24043,6 +24055,13 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/ncr)
+"kIa" = (
+/obj/structure/rack,
+/obj/item/clothing/head/helmet/armyhelmet,
+/obj/item/clothing/head/helmet/armyhelmet,
+/obj/item/clothing/head/helmet/armyhelmet,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
 "kIf" = (
 /obj/structure/table/reinforced,
 /obj/item/bodypart/l_leg/robot,
@@ -28663,9 +28682,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "mWH" = (
+<<<<<<< HEAD
 /obj/machinery/light{
 	dir = 8
 	},
+=======
+>>>>>>> upstream/master
 /obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/followers)
@@ -30689,9 +30711,18 @@
 	},
 /area/f13/building)
 "nWu" = (
+<<<<<<< HEAD
 /obj/machinery/light,
 /obj/structure/sign/departments/botany{
 	pixel_y = -32
+=======
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "followerwindows";
+	name = "followers shutters";
+	state_open = 1
+>>>>>>> upstream/master
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -31454,16 +31485,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "oqA" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/reagent_containers/medspray/sterilizine,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/machinery/defibrillator_mount/loaded{
-	pixel_y = -30
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "followerwindows";
+	name = "followers shutters"
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "whitedirtysolid"
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
 /area/f13/followers)
 "oqH" = (
@@ -47755,6 +47784,15 @@
 	dir = 1
 	},
 /area/f13/village)
+"wdK" = (
+/obj/machinery/light,
+/obj/structure/sign/departments/botany{
+	pixel_y = -32
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/followers)
 "wdT" = (
 /obj/structure/simple_door/wood,
 /obj/structure/decoration/rag,
@@ -75390,7 +75428,7 @@ hAk
 hAk
 tkS
 dCV
-nIP
+kIa
 xYI
 khy
 iPZ
@@ -85424,7 +85462,11 @@ ybx
 wnn
 xUO
 xUO
+<<<<<<< HEAD
 nWu
+=======
+wdK
+>>>>>>> upstream/master
 ybx
 dCV
 uqa
@@ -85933,12 +85975,21 @@ iFl
 jbY
 jKe
 kHg
+<<<<<<< HEAD
 jJn
+vad
+=======
+>>>>>>> upstream/master
+xUO
 vad
 xUO
 xUO
-xUO
+<<<<<<< HEAD
 wem
+=======
+xUO
+ctu
+>>>>>>> upstream/master
 ybx
 dCV
 uqa
@@ -86185,7 +86236,7 @@ ydO
 ydO
 mHj
 mvv
-hIW
+nWu
 nqk
 iJR
 jKe
@@ -86442,7 +86493,7 @@ ydO
 ydO
 ydO
 mvv
-hIW
+oqA
 iFn
 iJR
 jKe
@@ -86956,7 +87007,7 @@ ydO
 ydO
 ydO
 mvv
-hIW
+nWu
 iJp
 iJR
 jKe
@@ -86967,7 +87018,7 @@ xiy
 mua
 nbI
 oiw
-oqA
+osB
 ybx
 dCV
 uqa
@@ -87213,7 +87264,7 @@ mHj
 ydO
 ydO
 mvv
-hIW
+nWu
 iJR
 iJR
 jKe
