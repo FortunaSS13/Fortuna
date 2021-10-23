@@ -397,6 +397,9 @@
 /obj/structure/rack,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"apl" = (
+/turf/closed/mineral/random/protective_area,
+/area/f13/tunnel)
 "aqj" = (
 /obj/structure/table{
 	layer = 2.9
@@ -4354,6 +4357,7 @@
 	},
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
+/obj/item/defibrillator/primitive,
 /turf/open/floor/plating/f13,
 /area/f13/followers)
 "cKO" = (
@@ -8174,7 +8178,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "eNf" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/machinery/computer/terminal{
@@ -10131,7 +10135,9 @@
 	},
 /area/f13/den)
 "fTM" = (
-/obj/structure/rack,
+/obj/structure/rack{
+	layer = 2.6
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -10500,8 +10506,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "gfI" = (
-/turf/closed/wall/f13/supermart,
-/area/f13/caves)
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "ggm" = (
 /obj/item/gun/ballistic/automatic/tribalbow{
 	desc = "A simple wooden bow with small pieces of turquiose. This one looks particularly blood-covered. Who the fuck brings a /BOW/ to a /BUNKER/"
@@ -12022,8 +12031,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/radioterminal/bos{
+	dir = 8;
+	pixel_x = 27;
+	pixel_y = 1
 	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -12159,7 +12170,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "gXb" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbear1"
@@ -13029,12 +13040,6 @@
 /obj/structure/closet/crate/miningcar,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"hJi" = (
-/obj/structure/frame/machine,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
 /area/f13/caves)
 "hJL" = (
 /turf/open/indestructible/ground/inside/dirt,
@@ -20390,7 +20395,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "niU" = (
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/mining)
@@ -24842,11 +24847,6 @@
 	dir = 9
 	},
 /area/f13/brotherhood/mining)
-"qlp" = (
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/caves)
 "qma" = (
 /obj/structure/kitchenspike_frame{
 	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
@@ -25662,6 +25662,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"qLA" = (
+/obj/machinery/telecomms/server/presets/khans,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "qLD" = (
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
@@ -26928,6 +26932,9 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
+"rDk" = (
+/turf/closed/mineral/random/protective_area,
+/area/f13/caves)
 "rDt" = (
 /obj/structure/handrail/g_central{
 	dir = 8;
@@ -32588,12 +32595,6 @@
 /obj/machinery/light,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"wev" = (
-/obj/machinery/light,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/caves)
 "weA" = (
 /obj/item/crowbar{
 	pixel_x = 31
@@ -34374,7 +34375,7 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/caves)
+/area/f13/followers)
 "xsy" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/bronze,
@@ -35220,6 +35221,21 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/f13/tcoms)
+"yce" = (
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/machinery/light/small{
+	dir = 4;
+	layer = 2.7;
+	pixel_y = 17
+	},
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "ycl" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -35701,37 +35717,37 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
@@ -35745,7 +35761,7 @@ uoO
 uoO
 uoO
 uoO
-hkD
+apl
 uoO
 uoO
 eoy
@@ -35958,7 +35974,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -35988,7 +36004,7 @@ cNj
 cNj
 cNj
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -36061,14 +36077,14 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 aoj
@@ -36215,7 +36231,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lMT
 mdv
@@ -36245,7 +36261,7 @@ qtT
 qtT
 sdw
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -36318,27 +36334,27 @@ uoO
 aoj
 aoj
 aoj
-eLE
+rDk
 fLU
 fLU
 fLU
 fLU
 fLU
 fLU
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 uoO
 aoj
 aoj
@@ -36472,7 +36488,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lPY
 lYi
@@ -36502,7 +36518,7 @@ vEV
 wKo
 qtT
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -36575,7 +36591,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 eDV
 eDV
@@ -36595,7 +36611,7 @@ fLU
 fLU
 fLU
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -36729,7 +36745,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lSo
 lYi
@@ -36759,7 +36775,7 @@ sfi
 wQS
 qtT
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -36829,10 +36845,10 @@ uoO
 uoO
 uoO
 aoj
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
 fLU
 eIg
 hQf
@@ -36852,7 +36868,7 @@ odO
 qju
 bOX
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -36986,7 +37002,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lXy
 lYi
@@ -37016,7 +37032,7 @@ sfi
 wRA
 qtT
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -37086,7 +37102,7 @@ uoO
 uoO
 uoO
 aoj
-eLE
+rDk
 fLU
 fLU
 fLU
@@ -37109,7 +37125,7 @@ pQX
 qju
 wAC
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -37243,7 +37259,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lXF
 mhc
@@ -37273,7 +37289,7 @@ sfi
 wTF
 qtT
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -37343,7 +37359,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 ajl
 cSq
@@ -37366,7 +37382,7 @@ pQX
 hjf
 fAi
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -37500,7 +37516,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -37530,7 +37546,7 @@ sfi
 wTF
 qtT
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -37600,7 +37616,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 cnN
 cSq
@@ -37623,7 +37639,7 @@ pQX
 qju
 ctZ
 fLU
-eLE
+rDk
 uoO
 uoO
 aoj
@@ -37757,7 +37773,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lXT
 mhD
@@ -37787,7 +37803,7 @@ sfi
 wTF
 qtT
 cNj
-uoO
+rDk
 uoO
 uoO
 uoO
@@ -37857,7 +37873,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 cPA
 dlz
@@ -37880,7 +37896,7 @@ pQX
 qju
 hOr
 fLU
-eLE
+rDk
 uoO
 aoj
 aoj
@@ -38014,7 +38030,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 jLk
 lYi
@@ -38044,7 +38060,7 @@ vFa
 wVc
 qtT
 cNj
-uoO
+rDk
 uoO
 uoO
 uoO
@@ -38114,7 +38130,7 @@ lnr
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 fLU
 fLU
@@ -38137,7 +38153,7 @@ fLU
 fLU
 fLU
 fLU
-eLE
+rDk
 uoO
 aoj
 aoj
@@ -38271,7 +38287,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+rDk
 cNj
 xgj
 xgj
@@ -38301,7 +38317,7 @@ qtT
 qtT
 sgJ
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -38371,11 +38387,11 @@ lnr
 lnr
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
 fLU
 aCo
 dbx
@@ -38389,12 +38405,12 @@ fPm
 iaS
 gHA
 fLU
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 uoO
 aoj
 aoj
@@ -38528,7 +38544,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+rDk
 cNj
 xgj
 xgj
@@ -38558,7 +38574,7 @@ cNj
 cNj
 cNj
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -38632,7 +38648,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 mjz
 dbx
@@ -38646,7 +38662,7 @@ izb
 eXF
 duE
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -38785,7 +38801,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lYi
 lYi
@@ -38815,7 +38831,7 @@ vKm
 wXl
 lYi
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -38889,7 +38905,7 @@ lnr
 uoO
 uoO
 uoO
-eLE
+rDk
 fLU
 fLU
 fMS
@@ -38903,7 +38919,7 @@ clz
 vaH
 nAC
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -39042,7 +39058,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lXT
 mjJ
@@ -39072,7 +39088,7 @@ vKF
 oUK
 xrr
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -39146,7 +39162,7 @@ lnr
 lnr
 uoO
 uoO
-eLE
+rDk
 fLU
 lIx
 vaH
@@ -39160,7 +39176,7 @@ shk
 tZg
 mHK
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -39299,7 +39315,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -39329,7 +39345,7 @@ vKT
 rTM
 lYi
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -39403,7 +39419,7 @@ lnr
 lnr
 rzg
 uoO
-eLE
+rDk
 fLU
 ndp
 vaH
@@ -39417,10 +39433,10 @@ joi
 wNk
 wgm
 fLU
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
@@ -39556,7 +39572,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 lzd
 lYu
 mkd
@@ -39586,7 +39602,7 @@ vNF
 lYi
 lYi
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -39660,7 +39676,7 @@ lnr
 lnr
 lnr
 uoO
-eLE
+rDk
 fLU
 qeH
 vaH
@@ -39677,7 +39693,7 @@ fLU
 fLU
 fLU
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -39813,7 +39829,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 lZJ
 mko
@@ -39843,7 +39859,7 @@ lYi
 lYi
 lYi
 cNj
-uoO
+rDk
 uoO
 uoO
 uoO
@@ -39934,7 +39950,7 @@ fLU
 tJI
 rLv
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40070,7 +40086,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 maF
 mkC
@@ -40100,7 +40116,7 @@ vPB
 lYi
 lYi
 cNj
-uoO
+rDk
 uoO
 uoO
 uoO
@@ -40191,7 +40207,7 @@ nTC
 xWI
 lXQ
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40327,7 +40343,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -40357,7 +40373,7 @@ vQx
 lYi
 lYi
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40448,7 +40464,7 @@ fLU
 muF
 fAY
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40584,8 +40600,8 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
+rDk
+rDk
 cNj
 sWt
 sno
@@ -40614,7 +40630,7 @@ vQU
 lYi
 lYi
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40705,7 +40721,7 @@ fLU
 fLU
 fLU
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40842,7 +40858,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 cAS
 end
@@ -40871,7 +40887,7 @@ oGU
 wXr
 xwD
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -40959,10 +40975,10 @@ nAC
 vfV
 jad
 fLU
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
@@ -41099,7 +41115,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 lDG
 end
@@ -41128,7 +41144,7 @@ cNj
 cNj
 cNj
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -41216,7 +41232,7 @@ fLU
 fLU
 fLU
 fLU
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -41356,7 +41372,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 end
 end
@@ -41377,15 +41393,15 @@ gzN
 iOg
 fXF
 cNj
-eLE
-uoO
-uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
@@ -41469,11 +41485,11 @@ lnr
 ijW
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 aoj
@@ -41613,7 +41629,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 ieF
 end
@@ -41634,7 +41650,7 @@ xgj
 tnf
 xgj
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -41870,7 +41886,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 end
 gMM
@@ -41891,7 +41907,7 @@ tnf
 tnf
 pXO
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -42127,7 +42143,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 lDG
 gMM
@@ -42148,7 +42164,7 @@ xgj
 xgj
 tnf
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -42384,7 +42400,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 kwa
 gMM
@@ -42405,7 +42421,7 @@ ksi
 gCJ
 fXF
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -42501,7 +42517,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -42641,7 +42657,7 @@ uoO
 aoj
 uoO
 aoj
-eLE
+rDk
 cNj
 sWt
 sno
@@ -42662,7 +42678,7 @@ cNj
 cNj
 cNj
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -42758,7 +42774,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -42898,7 +42914,7 @@ uoO
 aoj
 uoO
 aoj
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -42919,7 +42935,7 @@ wKh
 xfD
 wKh
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -43015,7 +43031,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -43155,7 +43171,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 iuC
 end
@@ -43176,7 +43192,7 @@ tnf
 tnf
 mjI
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -43272,7 +43288,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -43412,7 +43428,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 klh
 end
@@ -43433,7 +43449,7 @@ xgj
 uQY
 fyq
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -43669,7 +43685,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 klh
 end
@@ -43690,7 +43706,7 @@ hvc
 pbQ
 cXf
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -43926,7 +43942,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 end
 end
@@ -43947,7 +43963,7 @@ tGo
 eqM
 xgj
 cNj
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -44183,7 +44199,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 bIf
 fFc
@@ -44204,7 +44220,7 @@ lPu
 trV
 ueW
 cNj
-eLE
+rDk
 aoj
 aoj
 aoj
@@ -44440,7 +44456,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 tBH
 fFc
@@ -44461,7 +44477,7 @@ cNj
 cNj
 cNj
 cNj
-eLE
+rDk
 aoj
 aoj
 aoj
@@ -44697,7 +44713,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 end
 fFc
@@ -44718,7 +44734,7 @@ deQ
 deQ
 deQ
 deQ
-eLE
+rDk
 aoj
 aoj
 aoj
@@ -44954,7 +44970,7 @@ uoO
 uoO
 aoj
 aoj
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -44975,7 +44991,7 @@ wAZ
 lYd
 ucE
 deQ
-eLE
+rDk
 aoj
 aoj
 aoj
@@ -45211,16 +45227,16 @@ uoO
 uoO
 uoO
 aoj
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 cNj
 xkX
 vrv
@@ -45232,7 +45248,7 @@ deQ
 rsh
 pyX
 deQ
-eLE
+rDk
 aoj
 aoj
 aoj
@@ -45477,7 +45493,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 cNj
 cNj
 cNj
@@ -45489,7 +45505,7 @@ deQ
 deQ
 deQ
 deQ
-eLE
+rDk
 aoj
 aoj
 aoj
@@ -45734,19 +45750,19 @@ uoO
 uoO
 aoj
 aoj
-aoj
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-aoj
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
+rDk
 aoj
 aoj
 aoj
@@ -53203,7 +53219,7 @@ lnr
 lnr
 lnr
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -53460,7 +53476,7 @@ lnr
 lnr
 lnr
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -53717,17 +53733,17 @@ lnr
 lnr
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
@@ -53974,20 +53990,20 @@ uoO
 lnr
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 eoy
@@ -54231,10 +54247,10 @@ uoO
 lnr
 lnr
 uoO
-eLE
-eLE
-eLE
-eLE
+rDk
+rDk
+rDk
+rDk
 uoO
 uoO
 uoO
@@ -54244,7 +54260,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -54501,7 +54517,7 @@ uoO
 lnr
 lnr
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -54758,7 +54774,7 @@ lnr
 lnr
 lnr
 uoO
-eLE
+rDk
 uoO
 uoO
 uoO
@@ -55015,8 +55031,8 @@ lnr
 lnr
 lnr
 uoO
-eLE
-eLE
+rDk
+rDk
 uoO
 uoO
 lnr
@@ -55273,8 +55289,8 @@ lnr
 lnr
 uoO
 uoO
-eLE
-eLE
+rDk
+rDk
 uoO
 doi
 lnr
@@ -55531,7 +55547,7 @@ lnr
 lnr
 uoO
 uoO
-eLE
+rDk
 uoO
 uoO
 lnr
@@ -55788,7 +55804,7 @@ lnr
 lnr
 lnr
 uoO
-eLE
+rDk
 uoO
 uoO
 gpM
@@ -75433,8 +75449,8 @@ uoO
 uoO
 uoO
 uoO
-gfI
-gfI
+rbg
+rbg
 rbg
 rbg
 rbg
@@ -75446,7 +75462,7 @@ rbg
 rbg
 cXP
 ufQ
-vLK
+gfI
 tFh
 tFh
 gRD
@@ -75689,8 +75705,8 @@ uoO
 uoO
 uoO
 uoO
-gfI
-gfI
+rbg
+rbg
 eMR
 niF
 eMR
@@ -75703,7 +75719,7 @@ fal
 rbg
 ufQ
 ufQ
-vLK
+gfI
 tFh
 tFh
 tFh
@@ -75946,10 +75962,10 @@ uoO
 aoj
 aoj
 aoj
-gfI
-qlp
-qlp
-qlp
+rbg
+uug
+uug
+uug
 eMR
 rbg
 kEv
@@ -75960,7 +75976,7 @@ faq
 rbg
 ufQ
 ufQ
-vLK
+gfI
 tFh
 dLs
 tFh
@@ -76203,11 +76219,11 @@ uoO
 aoj
 aoj
 aoj
-gfI
+rbg
 gWY
-qlp
-qlp
-wev
+uug
+uug
+hgW
 rbg
 xZl
 uug
@@ -76460,11 +76476,11 @@ uoO
 aoj
 aoj
 aoj
-gfI
-qlp
-qlp
-qlp
-qlp
+rbg
+uug
+uug
+uug
+uug
 xjD
 uug
 uug
@@ -76717,10 +76733,10 @@ uoO
 aoj
 aoj
 uoO
-gfI
+rbg
 gWY
-qlp
-qlp
+uug
+uug
 xsx
 rbg
 jcb
@@ -76974,11 +76990,11 @@ uoO
 aoj
 aoj
 uoO
-gfI
-qlp
-qlp
-qlp
-hJi
+rbg
+uug
+uug
+uug
+uNq
 rbg
 uNq
 mPx
@@ -77231,8 +77247,8 @@ uoO
 uoO
 uoO
 uoO
-gfI
-gfI
+rbg
+rbg
 rbg
 rbg
 rbg
@@ -88105,8 +88121,8 @@ eLE
 "}
 (206,1,1) = {"
 eLE
-eLE
-eLE
+rDk
+rDk
 eLE
 eLE
 eLE
@@ -98626,7 +98642,7 @@ dEa
 qxO
 fpJ
 dxw
-qLD
+qLA
 liS
 rbE
 qLD
@@ -100464,7 +100480,7 @@ gsd
 eEL
 flq
 fTM
-gsd
+yce
 gUm
 sNW
 dMW
