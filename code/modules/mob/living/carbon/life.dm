@@ -728,17 +728,5 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		return
 
 	heart.beating = !status
-	
-/mob/living/carbon/proc/chemintolerance(mob/living/carbon/M) // fortuna addition, for quirk
-	for(var/datum/reagent/A in M.reagents.addiction_list)
-		var/chemintolerance_addiction = A.addiction_threshold*0.25
-		var/chemintolerance_overdose = A.addiction_threshold*0.25
-		if(!isnull(A.addiction_stage) && !isnull(A.addiction_threshold) && !isnull(A.overdose_threshold))
-			A.addiction_threshold -= chemintolerance_addiction
-			A.overdose_threshold -= chemintolerance_overdose
-			A.addiction_stage1_end = 10
-			A.addiction_stage2_end = 20
-			A.addiction_stage3_end = 30
-			A.addiction_stage4_end = 40
 
 

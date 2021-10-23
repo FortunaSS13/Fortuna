@@ -128,6 +128,8 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 			M.reagents.remove_reagent(type, (impureVol), FALSE)
 		M.reagents.add_reagent(impure_chem, impureVol, FALSE, other_purity = 1-cached_purity)
 		log_reagent("MOB ADD: on_mob_add() (mixed purity): merged [volume - impureVol] of [type] and [volume] of [impure_chem]")
+	if(HAS_TRAIT(L, TRAIT_CHEM_INTOLERANCE))
+		chemintolerance()
 
 // Called when this reagent is removed while inside a mob
 /datum/reagent/proc/on_mob_delete(mob/living/L)
@@ -213,6 +215,19 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/withdrawal_critical, name)
 	if(prob(30))
 		to_chat(M, "<span class='boldannounce'>You're not feeling good at all! You really need some [name].</span>")
+
+
+/datum/reagent/proc/chemintolerance(mob/living/M) // fortuna addition
+	for(var/datum/reagent/A in M.reagents.addiction_list)
+		var/chemintolerance_addiction = A.addiction_threshold * 0.25
+		var/chemintolerance_overdose = A.overdose_threshold * 0.25
+		if(!isnull(A.addiction_stage))
+			A.addiction_stage1_end = 10
+			A.addiction_stage2_end = 20
+			A.addiction_stage3_end = 30
+			A.addiction_stage4_end = 40
+			A.addiction_threshold -= chemintolerance_addiction
+			A.overdose_threshold -= chemintolerance_overdose
 
 /**
  * New, standardized method for chemicals to affect hydroponics trays.
