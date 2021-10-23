@@ -45,7 +45,7 @@
 	underlays += underlay_appearance
 	return TRUE
 
-
+/* Fortuna edit: disables transparent glass floors
 /turf/open/transparent/glass
 	name = "Glass floor"
 	desc = "Dont jump on it, or do, I'm not your mom."
@@ -95,3 +95,4 @@
 			new floor_tile(src, 2)
 		ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
 	return TRUE
+*/
