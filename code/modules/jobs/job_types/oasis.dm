@@ -662,6 +662,7 @@ Mayor
 	name = "Outdoorsman"
 	head = /obj/item/clothing/head/f13/beaver
 	suit = /obj/item/clothing/suit/f13/cowboybvest
+	belt = /obj/item/storage/belt/bandolier
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	shoes = /obj/item/clothing/shoes/f13/fancy
 	backpack_contents = list(/obj/item/fishingrod = 1,
