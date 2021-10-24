@@ -760,6 +760,9 @@
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		)
 
+/obj/effect/mob_spawn/human/fallout13/ncr/special(mob/living/new_spawn)
+	new_spawn.real_name = random_unique_name(gender)
+
 /obj/effect/mob_spawn/human/fallout13/legion
 	name = "Prime Legionnaire Spawn"
 	desc = "An entry point for prime legionaries of Caesar's Legion to join a battle."
@@ -819,6 +822,9 @@
 		/obj/item/clothing/accessory/bos/paladin=1
 		)
 
+/obj/effect/mob_spawn/human/fallout13/bos/special(mob/living/new_spawn)
+	new_spawn.real_name = random_unique_name(gender)
+
 /obj/effect/mob_spawn/human/fallout13/raider
 	name = "Raider Spawn"
 	desc = "An entry point for raiders to join a battle."
@@ -837,3 +843,6 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		)
+
+/obj/effect/mob_spawn/human/fallout13/raider/special(mob/living/new_spawn)
+	new_spawn.real_name = random_unique_name(gender)
