@@ -127,17 +127,17 @@
 		if(broken || burnt)
 			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
 			return
-		/obj/item/stack/sheet/mineral/concrete/G = C
-		if (G.get_amount() < 2)
+		/obj/item/stack/sheet/mineral/concrete/O = C
+		if (O.get_amount() < 2)
 			to_chat(user, "<span class='warning'>You need two concrete bags to make a concrete floor!</span>")
 			return
 		else
 			to_chat(user, "<span class='notice'>You pouring concrete on to the floor...</span>")
 			if(do_after(user, 5, target = src))
-				if (G.get_amount() >= 2 && !istype(src, /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid))
+				if (O.get_amount() >= 2 && !istype(src, /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid))
 					PlaceOnTop(/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid, flags = CHANGETURF_INHERIT_AIR)
 					playsound(src, 'sound/items/deconstruct.ogg', 80, 1)
-					G.use(2)
+					O.use(2)
 					to_chat(user, "<span class='notice'>You smooth the floor with concrete.</span>")
 				return
 
