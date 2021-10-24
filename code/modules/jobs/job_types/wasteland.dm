@@ -485,10 +485,10 @@ Raider
 		/obj/item/book/granter/trait/trekking = 1)
 
 /datum/outfit/loadout/raider_badlands
-    name = "Fiend"
-    suit = /obj/item/clothing/suit/armor/f13/raider/badlands
-    head = /obj/item/clothing/head/helmet/f13/fiend
-    backpack_contents = list(
+	name = "Fiend"
+	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
+	head = /obj/item/clothing/head/helmet/f13/fiend
+	backpack_contents = list(
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
