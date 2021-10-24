@@ -2,47 +2,41 @@
 	category = LOADOUT_CATEGORY_HANDS
 	slot = SLOT_HANDS
 
-/datum/gear/hands/backpackold
+/datum/gear/hands/backpack
 	name = "hiking backpack"
 	path = /obj/item/storage/backpack/old  
 	cost = 3
 
-/datum/gear/hands/duffelbag
+/datum/gear/hands/backpack/duffel
 	name = "duffelbag"
 	path = /obj/item/storage/backpack/duffelbag 
-	cost = 3
 
-/datum/gear/hands/explorerbag
+/datum/gear/hands/backpack/explorer
 	name = "explorer backpack"
 	path = /obj/item/storage/backpack/explorer 
-	cost = 3
 
-/datum/gear/hands/explorersatchel
+/datum/gear/hands/backpack/explorer/satchel
 	name = "explorer satchel"
 	path = /obj/item/storage/backpack/satchel/explorer
-	cost = 3
 
-/datum/gear/hands/trekker
+/datum/gear/hands/backpack/trekker
 	name = "trekker backpack"
 	path = /obj/item/storage/backpack/trekker 
-	cost = 3
 
-/datum/gear/hands/trekkersatchel
+/datum/gear/hands/backpack/trekker/satchel
 	name = "trekker satchel"
 	path = /obj/item/storage/backpack/satchel/trekker
-	cost = 3
 
-/datum/gear/hands/secbackpack
+/datum/gear/hands/backpack/sec
 	name = "security backpack"
 	path = /obj/item/storage/backpack/security 
 	cost = 4
 
-/datum/gear/hands/secsatchel
+/datum/gear/hands/backpack/sec/satchel
 	name = "security satchel"
 	path = /obj/item/storage/backpack/satchel/sec 
-	cost = 4
 
-/datum/gear/hands/trophy
+/datum/gear/hands/backpack/trophy
 	name = "trophy rack"
 	path = /obj/item/storage/backpack/cultpack 
 	cost = 3
