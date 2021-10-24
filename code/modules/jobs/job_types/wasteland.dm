@@ -454,7 +454,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/shishkebabpack = 1,
+		/obj/item/twohanded/fireaxe/bmprsword = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
 		/obj/item/megaphone=1,
 		/obj/item/book/granter/trait/bigleagues = 1)
