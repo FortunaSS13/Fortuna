@@ -127,7 +127,7 @@
 		if(broken || burnt)
 			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
 			return
-		/obj/item/stack/sheet/mineral/concrete/G = C
+		/obj/item/stack/sheet/mineral/concrete/C = C
 		if (C.get_amount() < 2)
 			to_chat(user, "<span class='warning'>You need two concrete bags to make a concrete floor!</span>")
 			return
