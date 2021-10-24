@@ -69,7 +69,7 @@
 
 /datum/gear/shoes/cowboy
 	name = "cowboy boots"
-	path = obj/item/clothing/shoes/f13/cowboy
+	path = /obj/item/clothing/shoes/f13/cowboy
 
 /datum/gear/shoes/cowboy/obj/item/clothing/shoes/cowboyboots/black 
 	name = "black cowboy boots"
