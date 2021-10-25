@@ -89,11 +89,6 @@
 	path = /obj/item/clothing/mask/rat/fox
 	cost = 3
 
-/datum/gear/mask/pig
-	name = "pig mask"
-	path = /obj/item/clothing/mask/gas/pig
-	cost = 3
-
 /datum/gear/mask/scarecrow
 	name = "scarecrow mask"
 	path = /obj/item/clothing/mask/scarecrow 
