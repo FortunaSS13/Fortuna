@@ -343,8 +343,6 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage3(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
-	M.maxHealth -= 1.5
-	M.health -= 1.5
 	if(prob(50))
 		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding. You're not even sure if you can control your arms!</span>")
 		M.drop_all_held_items()
@@ -356,8 +354,6 @@
 	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
 	M.adjustBruteLoss(5)
 	M.hallucination += 10
-	M.maxHealth -= 10
-	M.health -= 10
 	if(prob(90))
 		to_chat(M, "<span class='danger'>You can't even keep control of your muscles anymore!</span>")
 		M.drop_all_held_items()
