@@ -2689,6 +2689,13 @@
 	icon_state = "verticalleftborderleft3"
 	},
 /area/f13/wasteland)
+"biF" = (
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_bar";
+	pixel_x = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "bjg" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -5531,14 +5538,6 @@
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"cBd" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Botany"
-	},
-/turf/open/floor/f13{
-	icon_state = "greendirtyfull"
-	},
-/area/f13/followers)
 "cBq" = (
 /obj/structure/rack,
 /obj/item/storage/backpack,
@@ -5638,18 +5637,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"cDy" = (
-/obj/structure/sign/poster/contraband/space_cola{
-	pixel_y = 32
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "cDz" = (
 /obj/structure/chair/left{
 	dir = 4
 	},
 /obj/structure/sign/painting/library{
-	persistence_id = "oasis_public";
+	persistence_id = "oasis_bar";
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/red,
@@ -7708,7 +7701,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/sign/poster/contraband/smoke{
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_bar";
 	pixel_x = 32
 	},
 /turf/open/floor/wood/f13/oak,
@@ -10611,6 +10605,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_bar";
+	pixel_y = 32
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "ePY" = (
@@ -10850,7 +10848,8 @@
 /turf/open/floor/wood/f13/housewoodbroken2,
 /area/f13/building)
 "eVJ" = (
-/obj/structure/sign/poster/official/cohiba_robusto_ad{
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_bar";
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/oak,
@@ -15566,6 +15565,10 @@
 "gZi" = (
 /obj/item/reagent_containers/food/snacks/grown/pumpkin{
 	pixel_y = 16
+	},
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_public";
+	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
@@ -23442,6 +23445,15 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/ncr)
+"krf" = (
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_public";
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/building)
 "krk" = (
 /obj/structure/simple_door/metal/ventilation,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -25367,13 +25379,13 @@
 	},
 /area/f13/followers)
 "lof" = (
-/obj/machinery/door/airlock/medical{
-	name = "Clinic";
-	req_one_access_txt = "124"
-	},
 /obj/machinery/door/poddoor/shutters{
 	id = "followershutters";
 	name = "followers shutters"
+	},
+/obj/machinery/door/airlock/medical{
+	name = "Clinic";
+	req_one_access_txt = "124"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -26403,12 +26415,12 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "lQQ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
 /obj/machinery/door/airlock/medical{
 	name = "Operating Room";
 	req_one_access_txt = "124"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "whitedirtysolid"
@@ -27892,6 +27904,16 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
+	},
+/area/f13/building)
+"mAD" = (
+/obj/structure/fence,
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_public";
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
 	},
 /area/f13/building)
 "mBd" = (
@@ -35546,6 +35568,15 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"qox" = (
+/obj/structure/sign/painting/library{
+	persistence_id = "oasis_bar";
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor4-broken"
+	},
+/area/f13/building)
 "qoK" = (
 /obj/structure/flora/tree/tall{
 	icon_state = "tree_3";
@@ -45560,7 +45591,8 @@
 /area/f13/village)
 "vad" = (
 /obj/machinery/door/airlock/medical/glass{
-	name = "botany"
+	name = "Botany";
+	req_one_access_txt = "124"
 	},
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
@@ -78234,7 +78266,7 @@ dCV
 dCV
 kfY
 dCV
-ueA
+krf
 ydO
 ydO
 ydO
@@ -78752,7 +78784,7 @@ kTf
 ydO
 mHj
 kEI
-mZn
+mAD
 mZn
 mZn
 kEI
@@ -85422,7 +85454,7 @@ uqa
 dCV
 mvv
 kEI
-cDy
+eVJ
 cNO
 ozq
 ozq
@@ -86218,7 +86250,7 @@ iJR
 jKe
 jJn
 jJn
-cBd
+vad
 xUO
 xUO
 xUO
@@ -86707,7 +86739,7 @@ uqa
 dCV
 bZi
 uqa
-aRl
+eVJ
 ozq
 nJU
 aRl
@@ -87478,7 +87510,7 @@ uqa
 dCV
 mvv
 uqa
-cHk
+qox
 cUZ
 cUZ
 dVy
@@ -87736,9 +87768,9 @@ dCV
 mvv
 gCh
 ozq
-aRl
+biF
 dAn
-ozq
+dAn
 gCh
 mHj
 ydO
