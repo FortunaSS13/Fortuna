@@ -318,9 +318,9 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
-		M.maxHealth += 50
-		M.health += 50
 		ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+		ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
+		ADD_TRAIT(M, TRAIT_HEAVY_SLEEPER, "[type]")
 		if(prob(50))
 			addiction_random = 7
 			addiction_threshold = (addiction_random -= addiction_threshold)
@@ -328,9 +328,9 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
-		M.maxHealth -= 50
-		M.health -= 50
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+		REMOVE_TRAIT(M, TRAIT_NOSOFTCRIT, "[type]")
+		REMOVE_TRAIT(M, TRAIT_HEAVY_SLEEPER, "[type]")
 	switch(current_cycle)
 		if(1 to 25)
 			M.confused += 10
