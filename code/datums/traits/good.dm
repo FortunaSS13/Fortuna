@@ -291,14 +291,14 @@
 	gain_text = "<span class='notice'>You realize how to use Power Armor.</span>"
 	lose_text = "<span class='danger'>You forget how Power Armor works.</span>"
 
-/datum/quirk/hard_yards
-	name = "Hard Yards"
+/*
+	name = "Hard Yards" // Fortuna removal
 	desc = "You've put them in, now reap the rewards."
 	value = 3
 	mob_trait = TRAIT_HARD_YARDS
 	gain_text = "<span class='notice'>Rain or shine, nothing slows you down.</span>"
 	lose_text = "<span class='danger'>You walk with a less sure gait, the ground seeming less firm somehow.</span>"
-	locked = TRUE
+	locked = TRUE*/
 
 /datum/quirk/lifegiver
 	name = "Lifegiver"

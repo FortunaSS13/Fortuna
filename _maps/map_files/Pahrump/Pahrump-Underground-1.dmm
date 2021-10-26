@@ -4130,7 +4130,6 @@
 /area/f13/den)
 "cCG" = (
 /obj/structure/rack,
-/obj/item/book/granter/trait/trekking,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -10432,7 +10431,6 @@
 "gcD" = (
 /obj/structure/barricade/bars,
 /obj/structure/table,
-/obj/item/book/granter/trait/trekking,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "gcE" = (
@@ -15969,7 +15967,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/obj/item/book/granter/trait/trekking,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtyfull"
 	},

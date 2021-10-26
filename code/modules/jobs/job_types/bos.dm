@@ -128,7 +128,7 @@ Head Paladin
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src) // Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	if(H.mind)
@@ -382,7 +382,7 @@ Star Paladin
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 
 /datum/outfit/job/bos/f13seniorpaladin
 	name =	"Senior Paladin"
@@ -469,7 +469,7 @@ Paladin
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 
 /datum/outfit/job/bos/f13paladin
 	name =	"Paladin"

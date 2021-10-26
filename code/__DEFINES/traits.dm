@@ -263,7 +263,7 @@
 #define TRAIT_CYBERNETICIST		"Cyberneticist" //Utilizes powerful cybernetics
 #define TRAIT_CYBERNETICIST_EXPERT	"Cyberneticist Expert" //Can augument people into robots directly
 #define TRAIT_MACHINE_SPIRITS	"machine_spirits" //for tribe unique functions.
-#define TRAIT_HARD_YARDS        "hard_yards"
+//#define TRAIT_HARD_YARDS        "hard_yards"// Fortuna removal
 #define	TRAIT_LIFEGIVER			"lifegiver"
 #define TRAIT_WEAKENED_1		"weakened_1" // fortuna adddition, reduced health by 5 points
 #define TRAIT_WEAKENED_2		"weakened_2" // fortuna addition, reduced health by 10 points

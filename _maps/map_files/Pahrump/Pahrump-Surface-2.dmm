@@ -21669,7 +21669,6 @@
 /area/f13/wasteland)
 "jBy" = (
 /obj/structure/rack,
-/obj/item/book/granter/trait/trekking,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},

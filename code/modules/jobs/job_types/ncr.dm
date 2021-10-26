@@ -114,7 +114,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 
 /datum/outfit/job/ncr/f13aide	// NCR Flag, Desert Eagle
 	name = "NCR Personal Aide"
@@ -165,7 +165,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_NOSLIPALL, src)
@@ -447,7 +447,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
@@ -527,7 +527,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
@@ -785,7 +785,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 
 
 // COMBAT MEDIC

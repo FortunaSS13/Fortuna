@@ -2388,7 +2388,6 @@
 /area/space)
 "gA" = (
 /obj/structure/table/wood,
-/obj/item/book/granter/trait/trekking,
 /obj/machinery/light/small,
 /turf/open/floor/f13/wood,
 /area/space)

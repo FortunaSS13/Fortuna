@@ -228,7 +228,7 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 
@@ -325,7 +325,7 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 
 /*--------------------------------------------------------------*/
 

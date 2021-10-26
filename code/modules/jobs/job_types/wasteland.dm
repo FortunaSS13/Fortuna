@@ -87,7 +87,7 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/job/wasteland/enclavesci
@@ -194,7 +194,7 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
 /datum/outfit/job/wasteland/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1221,7 +1221,7 @@ datum/job/wasteland/f13dendoctor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 
 /datum/outfit/loadout/desert_ranger
@@ -1289,5 +1289,5 @@ datum/job/wasteland/f13dendoctor
 
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+//	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)// Fortuna removal
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
