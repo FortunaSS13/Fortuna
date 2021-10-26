@@ -218,7 +218,7 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	for(var/datum/reagent/A in M.reagents.addiction_list)
 		if(!isnull(A.addiction_stage))
 			A.addiction_stage = -15
-      
+
 /**
  * New, standardized method for chemicals to affect hydroponics trays.
  * Defined on a per-chem level as opposed to by the tray.
