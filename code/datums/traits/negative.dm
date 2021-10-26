@@ -134,7 +134,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You feel awake again.</span>"
 	medical_record_text = "Patient has abnormal sleep study results and is difficult to wake up."
 
-/*/datum/quirk/brainproblems // Fortuna removal, brain damage pretty bad for RP.
+/datum/quirk/brainproblems
 	name = "Brain Tumor"
 	desc = "You have a little friend in your brain that is slowly destroying it. Better bring some mannitol!"
 	value = -3
@@ -143,7 +143,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	medical_record_text = "Patient has a tumor in their brain that is slowly driving them to brain death."
 
 /datum/quirk/brainproblems/on_process()
-	quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.2)*/
+	quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.2)
 
 /datum/quirk/nearsighted //t. errorage
 	name = "Nearsighted"
@@ -162,7 +162,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	if(!H.equip_to_slot_if_possible(glasses, SLOT_GLASSES))
 		H.put_in_hands(glasses)
 
-/* /datum/quirk/nyctophobia // Fortuna removal, just RP it.
+/datum/quirk/nyctophobia
 	name = "Nyctophobia"
 	desc = "As far as you can remember, you've always been afraid of the dark. While in the dark without a light source, you instinctually act careful, and constantly feel a sense of dread."
 	value = -1
@@ -181,9 +181,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "nyctophobia", /datum/mood_event/nyctophobia)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "nyctophobia")
-*/
 
-/* /datum/quirk/lightless // Fortuna removal, just RP it.
+/datum/quirk/lightless
 	name = "Light Sensitivity"
 	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition."
 	value = -1
@@ -198,7 +197,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "brightlight", /datum/mood_event/brightlight)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "brightlight")
-*/
 
 /datum/quirk/nonviolent
 	name = "Pacifist"
@@ -248,17 +246,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 				if(I.fingerprintslast == quirk_holder.ckey)
 					quirk_holder.put_in_hands(I)
 
-/* Fortuna removal, replaced with 3 tiers of poor aim.
-/datum/quirk/poor_aim
-	name = "Poor Aim"
-	desc = "You're terrible with guns and can't line up a straight shot to save your life. Dual-wielding is right out."
-	value = -1
-	mob_trait = TRAIT_POOR_AIM
-	medical_record_text = "Patient possesses a strong tremor in both hands."
-*/
-
-
-
 /datum/quirk/prosopagnosia
 	name = "Prosopagnosia"
 	desc = "You have a mental disorder that prevents you from being able to recognize faces at all."
@@ -291,7 +278,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	to_chat(quirk_holder, "<span class='big bold info'>Please note that your dissociation syndrome does NOT give you the right to attack people or otherwise cause any interference to \
 	the round. You are not an antagonist, and the rules will treat you the same as other crewmembers.</span>")
 
-/*/datum/quirk/social_anxiety // Fortuna removal. Dumb trait that isn't much good for RP.
+/datum/quirk/social_anxiety
 	name = "Social Anxiety"
 	desc = "Talking to people is very difficult for you, and you often stutter or even lock up."
 	value = -1
@@ -360,9 +347,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	description = "<span class='warning'>Sometimes eye contact makes me so nervous...</span>\n"
 	mood_change = -5
 	timeout = 3 MINUTES
-*/ 
 
-/* // Fortuna removal
 /datum/quirk/phobia
 	name = "Phobia"
 	desc = "You've had a traumatic past, one that has scarred you for life, and cripples you when dealing with your greatest fears."
@@ -380,7 +365,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/phobia/remove()
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(phobia, TRAUMA_RESILIENCE_ABSOLUTE)
-*/
 
 /datum/quirk/mute
 	name = "Mute"
@@ -431,10 +415,10 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/blindness/remove()
 	quirk_holder?.cure_blind(ROUNDSTART_TRAIT)
 
-/*/datum/quirk/coldblooded // Fortuna removal, temperature makes very little difference on server.
+/datum/quirk/coldblooded
 	name = "Cold-blooded"
 	desc = "Your body doesn't create its own internal heat, requiring external heat regulation."
-	value = -2
+	value = -1
 	medical_record_text = "Patient is ectothermic."
 	mob_trait = TRAIT_COLDBLOODED
 	gain_text = "<span class='notice'>You feel cold-blooded.</span>"
@@ -510,14 +494,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	mob_tar.maxHealth -= 75
 	mob_tar.health -= 75
 
-/datum/quirk/reverse_bloody_mess
-	name = "Reverse Bloody Mess - HARDCORE"
-	desc = "Only for the brave of heart. Each time you take brute damage, you have a 5% chance of being gibbed."
-	value = -10
-	mob_trait = TRAIT_REVERSE_BLOODY_MESS
-	gain_text = "<span class='notice'>You feel like you're barely holding yourself together! The slightest damage, and you might explode!</span>"
-	lose_text = "<span class='danger'>You start feeling a little solid.</span>"
-
 /datum/quirk/littleleagues_1
 	name = "Little Leagues I"
 	desc = "Decreases the damage dealt by melee weapons and fists by a small amount."
@@ -554,9 +530,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -3
 	mob_trait = TRAIT_POOR_AIM_2
 
-/datum/quirk/poor_aim_3
+/datum/quirk/poor_aim
 	name = "Poor Aim III"
-	desc = "You are absolutely useless with firearms, heavily reducing your accuracy."
+	desc = "You're terrible with guns and can't line up a straight shot to save your life. Dual-wielding is right out."
 	value = -4
 	mob_trait = TRAIT_POOR_AIM_3
 
@@ -566,7 +542,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = -3
 	mob_trait = TRAIT_NOGUNS
 	
-//Junkie
+//Junkie - All added by Fortuna
 /datum/quirk/junkie
 	name = "Junkie"
 	desc = "You can't get enough of hard drugs."
