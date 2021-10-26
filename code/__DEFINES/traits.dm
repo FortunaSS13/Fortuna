@@ -119,7 +119,6 @@
 #define TRAIT_NOGUNS			"no_guns"
 #define TRAIT_NOHUNGER			"no_hunger"
 #define TRAIT_EASYDISMEMBER		"easy_dismember"
-#define TRAIT_CHEM_INTOLERANCE	"chem_intolerance"
 #define TRAIT_LIMBATTACHMENT 	"limb_attach"
 #define TRAIT_NOLIMBDISABLE		"no_limb_disable"
 #define TRAIT_EASYLIMBDISABLE	"easy_limb_disable"
@@ -190,9 +189,6 @@
 #define TRAIT_POOR_AIM_1		"poor_aim_1"
 #define TRAIT_POOR_AIM_2		"poor_aim_2"
 #define TRAIT_POOR_AIM_3		"poor_aim_3"
-#define TRAIT_BAD_CRAFTING_1	"bad_crafting_1"
-#define TRAIT_BAD_CRAFTING_2	"bad_crafting_2"
-#define TRAIT_REVERSE_BLOODY_MESS "reverse_bloody_mess"
 #define TRAIT_INSANE_AIM		"insane_aim" //they don't miss. they never miss. it was all part of their immaculate plan.
 #define TRAIT_PROSOPAGNOSIA		"prosopagnosia"
 #define TRAIT_DRUNK_HEALING		"drunk_healing"
