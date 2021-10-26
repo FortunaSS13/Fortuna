@@ -424,7 +424,7 @@
 	path = /obj/item/clothing/under/f13/mprostitute 
 	cost = 3
 
-/datum/gear/uniform/prostitute/male
+/datum/gear/uniform/prostitute/female
 	name = "female prostitute outfit"
 	path = /obj/item/clothing/under/f13/fprostitute 
 
