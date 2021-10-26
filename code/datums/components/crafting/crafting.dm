@@ -201,13 +201,6 @@
 	if(check_contents(a, R, contents))
 		if(check_tools(a, R, contents))
 			//If we're a mob we'll try a do_after; non mobs will instead instantly construct the item
-			if(ismob(a) && HAS_TRAIT(usr, TRAIT_BAD_CRAFTING_1) && !do_after(a, (R.time * 2), target = a))
-				return "."
-			if(ismob(a) && HAS_TRAIT(usr, TRAIT_BAD_CRAFTING_2))
-				to_chat(usr, "<span class='warning'>You're bad at crafting, failing to produce anything!]</span>")
-				return
-			if(ismob(a) && !do_after(a, R.time, target = a) && !HAS_TRAIT(usr, TRAIT_BAD_CRAFTING_2) && !HAS_TRAIT(usr, TRAIT_BAD_CRAFTING_1))
-				return "."
 			contents = get_surroundings(a)
 			if(!check_contents(a, R, contents))
 				return ", missing component."
