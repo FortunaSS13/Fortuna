@@ -422,7 +422,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	medical_record_text = "Patient is ectothermic."
 	mob_trait = TRAIT_COLDBLOODED
 	gain_text = "<span class='notice'>You feel cold-blooded.</span>"
-	lose_text = "<span class='notice'>You feel more warm-blooded.</span>"*/
+	lose_text = "<span class='notice'>You feel more warm-blooded.</span>"
 
 /datum/quirk/monophobia
 	name = "Monophobia"
