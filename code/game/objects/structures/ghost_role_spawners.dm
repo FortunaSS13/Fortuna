@@ -849,3 +849,9 @@
 /obj/effect/mob_spawn/human/fallout13/raider/special(mob/living/new_spawn)
 	new_spawn.real_name = random_unique_name(gender)
 	to_chat(new_spawn, "<span class='userdanger'>You are a raider, therefore, an antagonist! You must maintain immersion and roleplay according. Remember, you are still beholden to escalation rules!</span>")
+
+/obj/effect/mob_spawn/human/fallout13/raider/Initialize(mapload)
+	. = ..()
+	var/area/A = get_area(src)
+	if(A)
+		notify_ghosts("A small gang of raiders are arriving at \the [A.name].", source = src, action=NOTIFY_ATTACK, flashwindow = FALSE, ignore_key = POLL_IGNORE_RAIDER, ignore_dnr_observers = FALSE)
