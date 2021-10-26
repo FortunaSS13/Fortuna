@@ -654,7 +654,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in jet.</span>"
 	medical_record_text = "Patient is a jet addict."
 	reagent_type = /datum/reagent/drug/jet
-	drug_container_type = /obj/item/reagent_containers/pill/patch/jet
+	drug_container_type = /obj/item/reagent_containers/inhaler/jet
 
 /datum/quirk/junkie/psycho
 	name = "Chem Addict - Psycho"
@@ -676,7 +676,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in turbo.</span>"
 	medical_record_text = "Patient is a turbo addict."
 	reagent_type = /datum/reagent/drug/turbo
-	drug_container_type = /obj/item/reagent_containers/pill/patch/turbo
+	drug_container_type = /obj/item/reagent_containers/inhaler/turbo
 
 /datum/quirk/junkie/medx
 	name = "Chem Addict - Med-X"
@@ -687,7 +687,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	lose_text = "<span class='notice'>You regret your life decisions and lose interest in med-x.</span>"
 	medical_record_text = "Patient is a med-x addict."
 	reagent_type = /datum/reagent/medicine/medx
-	drug_container_type = /obj/item/reagent_containers/syringe/medx
+	drug_container_type = /obj/item/reagent_containers/hypospray/medipen/medx
 
 /datum/quirk/junkie/mentats
 	name = "Chem Addict - Mentats"
