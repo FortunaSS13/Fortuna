@@ -837,12 +837,15 @@
 	uniform = /obj/item/clothing/under/f13/ravenharness
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/raider
 	head = /obj/item/clothing/head/helmet/f13/combat/mk2/raider
+	ears = /obj/item/radio/headset
 	belt = /obj/item/storage/belt/military/assault
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/ammo_box/magazine/greasegun = 4,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 
 /obj/effect/mob_spawn/human/fallout13/raider/special(mob/living/new_spawn)
 	new_spawn.real_name = random_unique_name(gender)
+	to_chat(new_spawn, "<span class='userdanger'>You are a raider, therefore, an antagonist! You must maintain immersion and roleplay according. Remember, you are still beholden to escalation rules!</span>")
