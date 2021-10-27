@@ -4512,9 +4512,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/f13/underground/cave)
-"fKD" = (
-/turf/closed/mineral/random/low_chance,
-/area/f13/vault)
 "fLt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -26251,7 +26248,7 @@ kcN
 mAN
 mAN
 mAN
-fKD
+bsh
 bsh
 bsh
 bsh
@@ -26508,7 +26505,7 @@ mAN
 mAN
 mAN
 mAN
-fKD
+bsh
 bsh
 bsh
 bsh
@@ -26764,8 +26761,8 @@ mAN
 mAN
 mAN
 mAN
-fKD
-fKD
+bsh
+bsh
 bsh
 bsh
 bsh
@@ -27020,9 +27017,9 @@ mAN
 mAN
 mAN
 mAN
-fKD
-fKD
-fKD
+bsh
+bsh
+bsh
 soK
 bsh
 bsh
@@ -27277,9 +27274,9 @@ mAN
 mAN
 mAN
 mAN
-fKD
-fKD
-fKD
+bsh
+bsh
+bsh
 soK
 bsh
 bsh
@@ -27534,9 +27531,9 @@ mAN
 mAN
 mAN
 mAN
-fKD
-fKD
-fKD
+bsh
+bsh
+bsh
 bsh
 bsh
 bsh
@@ -27792,8 +27789,8 @@ mAN
 mAN
 mAN
 mAN
-fKD
-fKD
+bsh
+bsh
 bsh
 bsh
 bsh
@@ -28050,7 +28047,7 @@ mAN
 mAN
 mAN
 mAN
-fKD
+bsh
 bsh
 bsh
 bsh
