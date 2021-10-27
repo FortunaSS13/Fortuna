@@ -1241,6 +1241,40 @@
 	zoom_out_amt = 13
 	can_scope = FALSE
 
+//experimental laser test
+
+/obj/item/gun/ballistic/automatic/laser
+	name = "\improper AER9 laser rifle"
+	desc = "A pre-war laser rifle. Still intact."
+	icon_state = "laser"
+	item_state = "laser-rifle9"
+	can_scope = TRUE
+	scope_state = "AEP7_scope"
+	scope_x_offset = 12
+	scope_y_offset = 20
+	slowdown = 0.3
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
+	/obj/item/ammo_box/magazine/recharge/mfc
+	fire_delay = 1
+	
+
+/obj/item/ammo_box/magazine/recharge/mfc
+	desc = "It's a microfusion battery. Yes, I promise. Look, i'm a coder, not a spriter."
+	ammo_type = /obj/item/ammo_casing/caseless/laser/aer9
+	max_ammo = 20
+
+/obj/item/ammo_casing/caseless/laser/aer9
+	projectile_type = /obj/projectile/beam/aer9
+
+/obj/projectile/beam/aer9
+	damage = 25
+	armour_penetration = 0.44
+	hitscan = TRUE
+	tracer_type = /obj/effect/projectile/tracer/laser
+	muzzle_type = /obj/effect/projectile/muzzle/laser
+	impact_type = /obj/effect/projectile/impact/laser
 
 // BETA STUFF // =Obsolete
 /obj/item/gun/ballistic/automatic/smgtesting
