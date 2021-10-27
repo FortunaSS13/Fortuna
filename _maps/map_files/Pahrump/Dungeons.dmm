@@ -779,9 +779,7 @@
 /area/f13/bunker)
 "aVl" = (
 /obj/structure/fence{
-	dir = 4;
-	icon_state = "straight";
-	tag = "icon-metal_fence3"
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
