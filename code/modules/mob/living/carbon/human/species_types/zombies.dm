@@ -101,6 +101,7 @@
 	id = "ghoulzombies"
 	limbs_id = "ghoul"
 	say_mod = "rasps"
+	inherent_traits = list(TRAIT_NODECAP, TRAIT_NIGHT_VISION)
 	mutanthands = /obj/item/ghoul_zombie_hand
 	brutemod = 0.5
 	burnmod = 0.5
