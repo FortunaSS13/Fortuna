@@ -479,6 +479,15 @@
 	dir = 10;
 	icon_state = "camera"
 	},
+/obj/structure/table/glass,
+/obj/item/storage/box/monkeycubes,
+/obj/item/storage/box/monkeycubes,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "aCK" = (
@@ -26236,7 +26245,7 @@ kcN
 kcN
 kcN
 kcN
-kcN
+vAC
 kcN
 kcN
 kcN
