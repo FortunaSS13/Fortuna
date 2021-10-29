@@ -1124,8 +1124,8 @@ datum/status_effect/pacify
 
 /datum/status_effect/superstimdebuff/on_apply()
 	ADD_TRAIT(owner, TRAIT_POOR_AIM, src)
-	owner.maxhealth -= 35
-	owner.Health -= 35
+	owner.health -= 35
+	owner.health -= 35
 	return ..()
 
 /datum/status_effect/superstimdebuff/on_remove()
