@@ -257,8 +257,8 @@ Great Khan
 	l_pocket = /obj/item/storage/bag/money/small/khan
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/reagent_containers/pill/patch/jet = 2,
-		/obj/item/reagent_containers/syringe/medx = 1,
+		/obj/item/reagent_containers/inhaler/jet = 2,
+		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		)
 	head = /obj/item/clothing/head/helmet/f13/khan
@@ -492,9 +492,11 @@ Raider
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
-		/obj/item/reagent_containers/pill/patch/turbo = 2,
+		/obj/item/reagent_containers/inhaler/turbo = 2,
 		/obj/item/reagent_containers/syringe/medx = 1,
 		/obj/item/book/granter/trait/bigleagues = 1)
+		/obj/item/reagent_containers/hypospray/medipen/psycho=1,
+
 
 /datum/outfit/loadout/raider_painspike
 	name = "Painspike"
