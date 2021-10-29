@@ -135,6 +135,7 @@
 				/obj/item/stack/sheet/leather = 2,
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 2)
 	tools = list(TOOL_WORKBENCH)
+	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation)
 	time = 50
 	category = CAT_MEDICAL
 	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
@@ -147,6 +148,7 @@
 				/obj/item/stack/sheet/leather = 10,
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10)
 	tools = list(TOOL_WORKBENCH)
+	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation)
 	time = 60
 	category = CAT_MEDICAL
 	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
