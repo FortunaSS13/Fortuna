@@ -492,7 +492,7 @@
 /obj/structure/table,
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/armor/tier5,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "jd" = (
@@ -2395,7 +2395,7 @@
 	},
 /area/f13/bunker)
 "Sv" = (
-/mob/living/simple_animal/hostile/handy/sentrybot,
+/mob/living/simple_animal/hostile/securitron/sentrybot,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)

@@ -52,6 +52,7 @@
 
 /obj/item/projectile/beam/weak
 	damage = 25
+	armour_penetration = 0.1
 
 /obj/item/projectile/beam/weak/penetrator
 	armour_penetration = 0.35
@@ -276,6 +277,10 @@
 	is_reflectable = TRUE
 	pixels_per_second = TILES_TO_PIXELS(50)
 
+//Securitrons Beam
+/obj/item/projectile/beam/laser/pistol/ultraweak
+	damage = 15 //quantity over quality
+
 //Alrem's plasmacaster
 /obj/item/projectile/f13plasma/plasmacaster/arlem
 	name = "plasma bolt"
@@ -380,16 +385,19 @@
 /obj/item/projectile/beam/laser/rcw //RCW
 	name = "rapidfire beam"
 	icon_state = "xray"
-	damage = 40
+	damage = 30
 	armour_penetration = 0.25
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
 	light_color = LIGHT_COLOR_GREEN
 
-/obj/item/projectile/plasma/alien
+/obj/item/projectile/f13plasma/pistol/alien
 	name = "alien projectile"
 	icon_state = "ion"
 	damage = 90 //horrifyingly powerful, but very limited ammo
 	armour_penetration = 0.8
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
+	light_range = 2
+	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/laer //Elder's/Unique LAER
 	name = "advanced laser beam"

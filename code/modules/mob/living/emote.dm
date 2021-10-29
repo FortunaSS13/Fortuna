@@ -111,6 +111,8 @@
 		var/mob/living/L = user
 		L.SetSleeping(200)
 
+
+/* Fortuna edit: flapping your wings disabled
 /datum/emote/living/flap
 	key = "flap"
 	key_third_person = "flaps"
@@ -137,6 +139,7 @@
 	message = "flaps their wings ANGRILY!"
 	restraint_check = TRUE
 	wing_time = 10
+*/
 
 /datum/emote/living/frown
 	key = "frown"
@@ -385,12 +388,16 @@
 	key_third_person = "surrenders"
 	message = "puts their hands on their head and falls to the ground, they surrender!"
 	emote_type = EMOTE_AUDIBLE
+	stat_allowed = UNCONSCIOUS
+	restraint_check = FALSE
 
 /datum/emote/living/surrender/run_emote(mob/user, params)
 	. = ..()
 	if(. && isliving(user))
 		var/mob/living/L = user
-		L.DefaultCombatKnockdown(200)
+		L.Knockdown(200)
+		L.Paralyze(200)
+		playsound(L, 'sound/f13effects/surrender1.ogg', 80, 1)
 
 /datum/emote/living/sway
 	key = "sway"
@@ -506,6 +513,7 @@
 
 	to_chat(user, message)
 
+/* Fortuna edit: beep disabled
 /datum/emote/sound/beep
 	key = "beep"
 	key_third_person = "beeps"
@@ -513,6 +521,7 @@
 	message_param = "beeps at %t."
 	sound = 'sound/machines/twobeep.ogg'
 	mob_type_allowed_typecache = list(/mob/living/brain, /mob/living/silicon, /mob/living/carbon/human)
+*/
 
 /datum/emote/living/circle
 	key = "circle"

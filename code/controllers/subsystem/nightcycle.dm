@@ -41,9 +41,9 @@ SUBSYSTEM_DEF(nightcycle)
 	var/nighttime_sun_color = "#00111a"
 	var/nighttime_sun_power = 10
 	/// How does it take to get darker or brighter each step.
-	var/cycle_transition_time = 30 SECONDS
+	var/cycle_transition_time = 120 SECONDS
 	/// If defined with any number besides null it will determine how long each cycle lasts.
-	var/custom_cycle_wait = null
+	var/custom_cycle_wait = 1600 SECONDS
 	var/last_custom_cycle = 0
 
 	// Light objects
@@ -84,39 +84,44 @@ SUBSYSTEM_DEF(nightcycle)
 
 	switch (new_time)
 		if (SUNRISE)
+			message_admins("Transitioning into dawn...")
 			current_sun_color = sunrise_sun_color
 			current_sun_power = sunrise_sun_power
 		if (MORNING)
+			message_admins("Transitioning into midmorning...")
 			current_sun_color = morning_sun_color
 			current_sun_power = morning_sun_power
 			for(var/obj/structure/lamp_post/lamp as anything in GLOB.lamppost)
 				lamp.icon_state = "[initial(lamp.icon_state)]"
 				lamp.set_light_on(FALSE)
 		if (DAYTIME)
+			message_admins("Transitioning into midday...")
 			current_sun_color = daytime_sun_color
 			current_sun_power = daytime_sun_power
 		if (AFTERNOON)
+			message_admins("Transitioning into afternoon...")
 			current_sun_color = afternoon_sun_color
 			current_sun_power = afternoon_sun_power
 		if (SUNSET)
+			message_admins("Transitioning into sunset...")
 			current_sun_color = sunset_sun_color
 			current_sun_power = sunset_sun_power
 			for(var/obj/structure/lamp_post/lamp as anything in GLOB.lamppost)
 				lamp.icon_state = "[initial(lamp.icon_state)]-on"
 				lamp.set_light_on(TRUE)
 		if(NIGHTTIME)
+			message_admins("Transitioning into late night...")
 			current_sun_color = nighttime_sun_color
 			current_sun_power = nighttime_sun_power
 		else
 			CRASH("Invalid new_time returned from STATION_TIME()")
 
 	current_time = new_time
-
 	var/atom/movable/sunlight/light_object = sunlight_source_object
 	animate(light_object, alpha = current_sun_power, color = current_sun_color, time = cycle_transition_time)
 	for(var/key in sunlight_border_objects)
 		animate(sunlight_border_objects[key], alpha = current_sun_power, color = current_sun_color, time = cycle_transition_time)
-
+		CHECK_TICK
 
 /datum/controller/subsystem/nightcycle/proc/get_border_object(object_key)
 	. = sunlight_border_objects["[object_key]"]
@@ -161,7 +166,6 @@ SUBSYSTEM_DEF(nightcycle)
 		neighbor.sunlight_state = SUNLIGHT_BORDER
 		if(neighbor.flags_1 & INITIALIZED_1)
 			neighbor.smooth_sunlight_border()
-
 
 #define SUNLIGHT_ADJ_IN_DIR(source, junction, direction, direction_flag) \
 	do { \

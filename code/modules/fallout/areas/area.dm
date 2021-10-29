@@ -2,7 +2,7 @@
 
 /area
 	var/open_space = 0
-//	var/list/ambientmusic = list('sound/misc/null.ogg')
+	var/list/ambientmusic = list('sound/misc/null.ogg')
 //	var/ambience_area =  list('sound/f13ambience/wasteland.ogg')
 	ambientsounds = list('sound/misc/null.ogg')
 	var/environment = -1
@@ -22,7 +22,7 @@
 	name = "Wasteland"
 	icon_state = "wasteland"
 //	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_wasteland.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_world.ogg','sound/misc/null.ogg')
+	ambientmusic = WASTELAND_AMBIENCE
 	ambientsounds = list('sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg', \
 	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg','sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg')
 	outdoors = 1
@@ -30,6 +30,9 @@
 	blob_allowed = 0
 	environment = 19
 	grow_chance = 45
+
+/area/f13/wasteland/event
+	name = "Wasteland (Event)"
 
 /area/f13/forest
 	name = "Forest"
@@ -453,6 +456,26 @@
 /area/f13/brotherhood/medical
 	name = "Brotherhood of Steel Medbay"//Brother Hood
 	icon_state = "brotherhoodmedbay"
+
+/area/f13/brotherhood/operating
+	name = "Brotherhood of Steel Operating Room"//Brother Hood
+	icon_state = "brotherhoodoperating"
+
+/area/f13/brotherhood/chemistry
+	name = "Brotherhood of Steel Chemistry Lab"//Brother Hood
+	icon_state = "brotherhoodchemistry"
+
+/area/f13/brotherhood/dorms
+	name = "Brotherhood of Steel Dormitories"//Brother Hood
+	icon_state = "brotherhooddorms"
+
+/area/f13/brotherhood/armory
+	name = "Brotherhood of Steel Armory"//Brother Hood
+	icon_state = "brotherhoodarmory"
+
+/area/f13/brotherhood/archives
+	name = "Brotherhood of Steel Archives"//Brother Hood
+	icon_state = "brotherhoodarchives"
 
 /area/f13/brotherhood/operations
 	name = "Brotherhood of Steel Operations Department"//Brother Hood

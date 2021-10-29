@@ -29,6 +29,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	RADIO_KEY_LEGION = RADIO_CHANNEL_LEGION,
 	RADIO_KEY_RANGER = RADIO_CHANNEL_RANGER,
 	RADIO_KEY_DEN = RADIO_CHANNEL_DEN,
+	RADIO_KEY_KHANS = RADIO_CHANNEL_KHANS,
 
 	// Admin
 	MODE_KEY_ADMIN = MODE_ADMIN,
@@ -386,6 +387,10 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	if(clockcultslurring)
 		message = CLOCK_CULT_SLUR(message)
+	
+	var/end_char = copytext(message, length(message), length(message) + 1)
+	if(!(end_char in list(".", "?", "!", "-", "~", ",", "_", "+", "|", "*")))
+		message += "."
 
 	message = capitalize(message)
 

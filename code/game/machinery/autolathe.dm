@@ -8,8 +8,8 @@
 	icon_state = "autolathe"
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 10
-	active_power_usage = 100
+	idle_power_usage = 30
+	active_power_usage = 300
 	circuit = /obj/item/circuitboard/machine/autolathe
 	layer = BELOW_OBJ_LAYER
 
@@ -67,7 +67,7 @@
 	QDEL_NULL(wires)
 	return ..()
 
-/obj/machinery/autolathe/ui_interact(mob/user)	
+/obj/machinery/autolathe/ui_interact(mob/user)
 	if(isliving(user))
 		var/mob/living/L = user
 		if(tooadvanced == TRUE)
@@ -78,7 +78,7 @@
 				. = ..()
 		else
 			. = ..()
-	
+
 	if(!is_operational())
 		return
 
@@ -608,9 +608,6 @@
 			to_chat(user, "<span class='notice'>You upgrade [src] with advanced ammunition schematics.</span>")
 			advanced = 1
 			qdel(O)
-	if(panel_open)
-		default_deconstruction_crowbar(O)
-		return TRUE
 	else
 		attack_hand(user)
 		return TRUE
@@ -684,7 +681,7 @@
 	if(advanced)
 		new /obj/item/book/granter/crafting_recipe/gunsmith_four(src)
 	return
-	
+
 /obj/machinery/autolathe/ammo/unlocked
 	simple = 1
 	basic = 1

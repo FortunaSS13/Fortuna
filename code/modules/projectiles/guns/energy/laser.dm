@@ -354,7 +354,7 @@
 	desc = "A modified AER9 equipped with a refraction kit that spreads its bolts. It is usually only given to high-ranking soldiers within the Brotherhood, due to its level of technology, as well as its reputation of friendly fire."
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
-	fire_delay = 3
+	fire_delay = 5
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
@@ -526,7 +526,7 @@
 
 
 //Alien Blaster
-/obj/item/gun/energy/laser/plasma/alien
+/obj/item/gun/energy/laser/plasma/pistol/alien
 	name = "alien blaster"
 	slowdown = 0.2
 	item_state = "alienblaster"
@@ -535,7 +535,8 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/plasma/alien)
+	can_charge = FALSE
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/alien)
 	cell_type = /obj/item/stock_parts/cell/ammo/alien //unchargeable, but removable
 
 

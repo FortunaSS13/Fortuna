@@ -20,6 +20,18 @@
 		/obj/item/stock_parts/scanning_module = 2,
 		/obj/item/stack/sheet/glass = 2)
 
+/obj/item/circuitboard/machine/vr_sleeper/bos
+	name = "Brotherhood VR Sleeper (Machine Board)"
+	build_path = /obj/machinery/vr_sleeper/bos
+
+/obj/item/circuitboard/machine/vr_sleeper/followers
+	name = "Followers VR Sleeper (Machine Board)"
+	build_path = /obj/machinery/vr_sleeper/followers
+
+/obj/item/circuitboard/machine/vr_sleeper/den
+	name = "Den VR Sleeper (Machine Board)"
+	build_path = /obj/machinery/vr_sleeper/den
+
 /obj/item/circuitboard/machine/announcement_system
 	name = "Announcement System (Machine Board)"
 	build_path = /obj/machinery/announcement_system
@@ -1108,11 +1120,6 @@
 		/obj/item/stock_parts/capacitor = 1,
 		/obj/item/stack/cable_coil = 5,
 		/obj/item/reagent_containers/glass/beaker = 6) //So it can hold lots of chems
-
-/obj/item/circuitboard/machine/kinkmate
-	name = "Kinkmate Vendor (Machine Board)"
-	build_path = /obj/machinery/vending/kink
-	req_components = list(/obj/item/stock_parts/micro_laser = 200)
 
 /obj/item/circuitboard/machine/autolathe/toy
 	name = "Autolathe (Machine Board)"

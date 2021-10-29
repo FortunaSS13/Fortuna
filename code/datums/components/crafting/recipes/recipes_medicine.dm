@@ -3,7 +3,7 @@
 	result = /obj/item/stack/medical/gauze/adv/one
 	time = 50
 	reqs = list(/obj/item/stack/medical/gauze = 1,
-				/datum/reagent/space_cleaner/sterilizine = 10)
+				/datum/reagent/abraxo_cleaner/sterilizine = 10)
 	category = CAT_MEDICAL
 	blacklist = list(/obj/item/stack/medical/gauze/improvised)
 
@@ -54,6 +54,13 @@
 	time = 20
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/bitterdrink5
+	name = "Bottle Bitterdrink (x5)"
+	result = /obj/item/storage/box/medicine/bitterdrink5
+	reqs = list(/datum/reagent/medicine/bitter_drink = 150)
+	time = 60
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/healpoultice
 	name = "Healing poultice"
 	result = /obj/item/reagent_containers/pill/patch/healpoultice
@@ -95,6 +102,16 @@
 	time = 45
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/stimpak5
+	name = "Stimpak (x5)"
+	result = /obj/item/storage/box/medicine/stimpaks/stimpaks5
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 20,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 20,
+				/obj/item/reagent_containers/syringe = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/superstimpak
 	name = "Super Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
@@ -103,6 +120,18 @@
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 2)
 	tools = list(TOOL_WORKBENCH)
 	time = 50
+	category = CAT_MEDICAL
+	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom)
+
+/datum/crafting_recipe/superstimpak5
+	name = "Super Stimpak (x5)"
+	result = /obj/item/storage/box/medicine/stimpaks/superstimpaks5
+	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 5,
+				/obj/item/stack/sheet/leather = 10,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
 	category = CAT_MEDICAL
 	blacklist = list(/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom)
@@ -118,7 +147,7 @@
 
 /datum/crafting_recipe/jet
 	name = "Jet"
-	result = /obj/item/reagent_containers/pill/patch/jet
+	result = /obj/item/reagent_containers/inhaler/jet
 	reqs = list(/obj/item/clothing/mask/cigarette = 1,
 				/datum/reagent/consumable/milk = 10,
 				/obj/item/toy/crayon/spraycan = 1)
@@ -129,7 +158,7 @@
 
 /datum/crafting_recipe/turbo
 	name = "Turbo"
-	result = /obj/item/reagent_containers/pill/patch/turbo
+	result = /obj/item/reagent_containers/inhaler/turbo
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
 				/obj/item/reagent_containers/food/snacks/grown/agave = 2,
 				/datum/reagent/consumable/ethanol/whiskey = 15)
@@ -151,7 +180,7 @@
 
 /datum/crafting_recipe/medx
 	name = "Med-X"
-	result = /obj/item/reagent_containers/syringe/medx
+	result = /obj/item/reagent_containers/hypospray/medipen/medx
 	reqs = list(/obj/item/reagent_containers/syringe = 1,
 				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 2,
 				/obj/item/reagent_containers/food/snacks/grown/datura = 2,

@@ -6,8 +6,8 @@
 	layer = BELOW_OBJ_LAYER
 	density = TRUE
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 5
-	active_power_usage = 100
+	idle_power_usage = 15
+	active_power_usage = 300
 	circuit = /obj/item/circuitboard/machine/microwave
 	pass_flags = PASSTABLE
 	light_color = LIGHT_COLOR_YELLOW
@@ -141,14 +141,14 @@
 
 	if(istype(O, /obj/item/reagent_containers/spray))
 		var/obj/item/reagent_containers/spray/clean_spray = O
-		if(clean_spray.reagents.has_reagent(/datum/reagent/space_cleaner, clean_spray.amount_per_transfer_from_this))
-			clean_spray.reagents.remove_reagent(/datum/reagent/space_cleaner, clean_spray.amount_per_transfer_from_this,1)
+		if(clean_spray.reagents.has_reagent(/datum/reagent/abraxo_cleaner, clean_spray.amount_per_transfer_from_this))
+			clean_spray.reagents.remove_reagent(/datum/reagent/abraxo_cleaner, clean_spray.amount_per_transfer_from_this,1)
 			playsound(loc, 'sound/effects/spray3.ogg', 50, 1, -6)
 			user.visible_message("[user] has cleaned \the [src].", "<span class='notice'>You clean \the [src].</span>")
 			dirty = 0
 			update_icon()
 		else
-			to_chat(user, "<span class='warning'>You need more space cleaner!</span>")
+			to_chat(user, "<span class='warning'>You need more cleaning agent!</span>")
 		return TRUE
 
 	if(istype(O, /obj/item/soap))

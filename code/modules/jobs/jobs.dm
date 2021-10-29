@@ -151,6 +151,7 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 
 GLOBAL_LIST_INIT(oasis_positions, list(
 	"Mayor",
+	"Secretary",
 	"Sheriff",
 	"Doctor",
 	"Citizen",
@@ -159,17 +160,18 @@ GLOBAL_LIST_INIT(oasis_positions, list(
 	"Farmer",
 	"Prospector",
 	"Detective",
-	"Preacher",
 	"Barkeep",
 ))
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
+	"Legion Orator",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
+	"Legion Orator",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
@@ -194,6 +196,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Captain",
 	"NCR Lieutenant",
 	"NCR Veteran Ranger",
+	"NCR Representative",
 	"NCR Ranger",
 	"NCR Sergeant First Class",
 	"NCR Heavy Trooper",
@@ -225,6 +228,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Great Khan",
 	"Faithful",
 	"Vigilante",
+	"Preacher",
 	"Wastelander",
 ))
 

@@ -188,7 +188,7 @@
 		return
 	if(!A)
 		return
-	var/range = input("Range:", "Narrate to mobs within how many tiles:", 7) as num|null
+	var/range = input("Range:", "Narrate to mobs within how many tiles:", 50) as num|null
 	if(!range)
 		return
 	var/msg = input("Message:", text("Enter the text you wish to appear to everyone within view:")) as text|null
@@ -1144,16 +1144,10 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	if(!weather_type)
 		return
 
-	var/z_level = input("Z-Level to target? Leave blank to target current Z-Level.", "Z-Level")  as num|null
-	if(!isnum(z_level))
-		if(!src.mob)
-			return
-		z_level = src.mob.z
+	SSweather.run_weather(weather_type)
 
-	SSweather.run_weather(weather_type, z_level)
-
-	message_admins("[key_name_admin(usr)] started weather of type [weather_type] on the z-level [z_level].")
-	log_admin("[key_name(usr)] started weather of type [weather_type] on the z-level [z_level].")
+	message_admins("[key_name_admin(usr)] started weather of type [weather_type].")
+	log_admin("[key_name(usr)] started weather of type [weather_type].")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Run Weather")
 
 /client/proc/mass_zombie_infection()

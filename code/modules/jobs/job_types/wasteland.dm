@@ -4,7 +4,7 @@
 /datum/job/wasteland/enclavespy
 	title = "Enclave Private"
 	flag = F13USPRIVATE
-	faction = "Enclave"
+	faction = FACTION_ENCLAVE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are an undercover operative for the remnants of the Enclave. You are to remain concealed and attempt to present the Enclave in a positive light to the population of the wasteland unless overt action is absolutely necessary."
@@ -46,7 +46,7 @@
 /datum/job/wasteland/enclavesgt
 	title = "Enclave Sergeant"
 	flag = F13USSGT
-	faction = "Enclave"
+	faction = FACTION_ENCLAVE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are in charge of the recruiting for the remnants of the Enclave. You are to recruit all those interested to your cause."
@@ -93,7 +93,7 @@
 /datum/job/wasteland/enclavesci
 	title = "Enclave Scientist"
 	flag = F13USSCIENTIST
-	faction = "Enclave"
+	faction = FACTION_ENCLAVE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You're responsible for the maintenance of the base, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in proficiency, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
@@ -149,7 +149,7 @@
 /datum/job/wasteland/enclavelt
 	title = "Enclave Lieutenant"
 	flag = F13USLT
-	faction = "Enclave"
+	faction = FACTION_ENCLAVE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are the Lieutenant in charge of commanding the remnants of the Enclave forces in the area. You are to recruit all those interested to your cause."
@@ -214,7 +214,7 @@ Great Khan
 	flag = F13USPRIVATE
 	department_head = list("Captain")
 	head_announce = list("Security")
-	faction = "Wastelander"
+	faction = FACTION_WASTELAND
 	total_positions = 6
 	spawn_positions = 6
 	description = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
@@ -247,7 +247,7 @@ Great Khan
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/ninemil
 	id = /obj/item/card/id/khantattoo
-	ears = /obj/item/radio/headset
+	ears = /obj/item/radio/headset/headset_khans
 	belt = /obj/item/melee/onehanded/machete
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/explorer
@@ -257,8 +257,8 @@ Great Khan
 	l_pocket = /obj/item/storage/bag/money/small/khan
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/reagent_containers/pill/patch/jet = 2,
-		/obj/item/reagent_containers/syringe/medx = 1,
+		/obj/item/reagent_containers/inhaler/jet = 2,
+		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		)
 	head = /obj/item/clothing/head/helmet/f13/khan
@@ -275,6 +275,9 @@ Great Khan
 		GLOB.all_gangs |= GK
 		GK.add_member(H)
 		H.gang = GK
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
+
 
 /datum/outfit/loadout/pusher
 	name = "Chemist"
@@ -307,8 +310,8 @@ Raider
 	flag = F13RAIDER
 	department_head = list("Captain")
 	head_announce = list("Security")
-	faction = "Wastelander"
-	social_faction = "Raiders"
+	faction = FACTION_WASTELAND
+	social_faction = FACTION_RAIDERS
 	total_positions = 12
 	spawn_positions = 12
 	description = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. You have more freedom than anyone else in the wastes, and are not bound by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting, fun, and engaging for others- this means that whatever path you pursue should be more nuanced and flavorful than simple highway robbery or slavery. (Adminhelp if you require help setting up your character for the round.)"
@@ -429,8 +432,9 @@ Raider
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 
-	H.social_faction = "Raiders"
+	H.social_faction = FACTION_RAIDERS
 	add_verb(H, /mob/living/proc/creategang)
 
 /datum/outfit/loadout/raider_supafly
@@ -484,7 +488,7 @@ Raider
 		/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
 		/obj/item/ammo_box/magazine/m22,
 		/obj/item/reagent_containers/hypospray/medipen/psycho=1,
-		/obj/item/reagent_containers/pill/patch/turbo=1)
+		/obj/item/reagent_containers/inhaler/turbo=1)
 
 /datum/outfit/loadout/raider_painspike
 	name = "Painspike"
@@ -568,7 +572,7 @@ Raider
 /datum/job/wasteland/f13wastelander
 	title = "Wastelander"
 	flag = F13WASTELANDER
-	faction = "Wastelander"
+	faction = FACTION_WASTELAND
 	total_positions = -1
 	spawn_positions = -1
 	description = "You arrive in Yuma Valley, hoping to escape your past, the war, or perhaps something worse. But you’ve seen the torchlight and heard the bark of the military officers. You haven’t escaped anything. Try to survive, establish your own settlement, make your own legend. Suffer well and die gladly."
@@ -582,18 +586,18 @@ Raider
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/wasteland/f13detective,
+			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/wasteland/f13detective,
+			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/wasteland/f13wastelander,
 		),
 		/datum/matchmaking_pref/disciple = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/wasteland/f13detective,
+			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/patron = list(
 			/datum/job/wasteland/f13wastelander,
@@ -612,6 +616,7 @@ Raider
 	/datum/outfit/loadout/settler,
 	/datum/outfit/loadout/warrior,
 	/datum/outfit/loadout/ncrcitizen,
+	/datum/outfit/loadout/legioncivilian,
 	/datum/outfit/loadout/wastelander_desert_ranger)
 
 /datum/outfit/job/wasteland/f13wastelander
@@ -712,7 +717,6 @@ Raider
 	glasses = /obj/item/clothing/glasses/f13/biker
 	l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents =  list(/obj/item/storage/box/vendingmachine=1,
-							/obj/item/stack/f13Cash/caps/threefivezero=1,
 							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
 
 //end new
@@ -739,6 +743,20 @@ Raider
 		/obj/item/melee/onehanded/machete/scrapsabre = 1,
 		)
 
+/datum/outfit/loadout/legioncivilian
+	name = "Legion Civilian"
+	uniform = /obj/item/clothing/under/f13/doctor
+	shoes = /obj/item/clothing/shoes/f13/fancy
+	suit = /obj/item/clothing/suit/curator
+	head = /obj/item/clothing/head/scarecrow_hat
+	gloves = /obj/item/clothing/gloves/color/black
+	glasses = /obj/item/clothing/glasses/welding
+	id = /obj/item/card/id/dogtag/town/legion
+	l_hand = /obj/item/shield/riot/buckler
+	backpack_contents = list(
+		/obj/item/melee/onehanded/machete = 1,
+		)
+
 /datum/outfit/loadout/ncrcitizen
 	name = "NCR Citizen"
 	uniform = /obj/item/clothing/under/f13/ncrcaravan
@@ -746,7 +764,7 @@ Raider
 	head = /obj/item/clothing/head/f13/cowboy
 	gloves = /obj/item/clothing/gloves/color/brown
 	id = /obj/item/card/id/dogtag/town/ncr
-	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
+	l_hand = /obj/item/gun/ballistic/automatic/varmint
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=2)
 
@@ -765,8 +783,8 @@ Raider
 /datum/job/wasteland/f13enforcer
 	title = "Den Mob Enforcer"
 	flag = F13ENFORCER
-	faction = "Wastelander"
-	social_faction = "Raiders"
+	faction = FACTION_WASTELAND
+	social_faction = FACTION_RAIDERS
 	total_positions = 6
 	spawn_positions = 6
 	description = "The mob rules in Yuma. A hitman for the Den's Boss, you are a highly loyal enforcer charged with keeping order among the outlaw groups inhabiting the Den."
@@ -785,6 +803,164 @@ Raider
 		/datum/outfit/loadout/bodyguard,
 		)
 
+//Wasteland Preacher
+/datum/job/wasteland/f13preacher
+	title = "Preacher"
+	flag = F13PREACHER
+	faction = FACTION_WASTELAND
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "God"
+	description = "You are the last bastion of faith in this God-forsaken Wasteland. Spread your word and preach to the faithless."
+	selection_color = "#dcba97"
+
+	outfit = /datum/outfit/job/wasteland/f13preacher
+
+	access = list()		//we can expand on this and make alterations as people suggest different loadouts
+	minimal_access = list()
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/wasteland/f13wastelander,
+			/datum/job/oasis/f13detective,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/wasteland/f13wastelander,
+			/datum/job/oasis/f13detective,
+		),
+		/datum/matchmaking_pref/mentor = list(
+			/datum/job/wasteland/f13wastelander,
+		),
+		/datum/matchmaking_pref/disciple = list(
+			/datum/job/wasteland/f13wastelander,
+			/datum/job/oasis/f13detective,
+		),
+		/datum/matchmaking_pref/patron = list(
+			/datum/job/wasteland/f13wastelander,
+			/datum/job/wasteland/f13mobboss,
+		),
+		/datum/matchmaking_pref/protegee = list(
+			/datum/job/wasteland/f13wastelander,
+		),
+	)
+
+/datum/job/wasteland/f13preacher/after_spawn(mob/living/H, mob/M)
+	. = ..()
+	if(H.mind)
+		H.mind.isholy = TRUE
+
+	var/obj/item/storage/book/bible/booze/B = new
+
+	if(GLOB.religion)
+		B.deity_name = GLOB.deity
+		B.name = GLOB.bible_name
+		B.icon_state = GLOB.bible_icon_state
+		B.item_state = GLOB.bible_item_state
+		to_chat(H, "There is already an established religion onboard the station. You are an acolyte of [GLOB.deity]. Defer to the Chaplain.")
+		H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
+		var/nrt = GLOB.holy_weapon_type || /obj/item/nullrod
+		var/obj/item/nullrod/N = new nrt(H)
+		H.put_in_hands(N)
+		return
+
+	var/new_religion = DEFAULT_RELIGION
+	if(M.client && M.client.prefs.custom_names["religion"])
+		new_religion = M.client.prefs.custom_names["religion"]
+
+	var/new_deity = DEFAULT_DEITY
+	if(M.client && M.client.prefs.custom_names["deity"])
+		new_deity = M.client.prefs.custom_names["deity"]
+
+	B.deity_name = new_deity
+
+
+	switch(lowertext(new_religion))
+		if("christianity") // DEFAULT_RELIGION
+			B.name = pick("The Holy Bible","The Dead Sea Scrolls")
+		if("buddhism")
+			B.name = "The Sutras"
+		if("clownism","honkmother","honk","honkism","comedy")
+			B.name = pick("The Holy Joke Book", "Just a Prank", "Hymns to the Honkmother")
+		if("chaos")
+			B.name = "The Book of Lorgar"
+		if("cthulhu")
+			B.name = "The Necronomicon"
+		if("hinduism")
+			B.name = "The Vedas"
+		if("homosexuality")
+			B.name = pick("Guys Gone Wild","Coming Out of The Closet")
+		if("imperium")
+			B.name = "Uplifting Primer"
+		if("islam")
+			B.name = "Quran"
+		if("judaism")
+			B.name = "The Torah"
+		if("lampism")
+			B.name = "Fluorescent Incandescence"
+		if("lol", "wtf", "gay", "penis", "ass", "poo", "badmin", "shitmin", "deadmin", "cock", "cocks", "meme", "memes")
+			B.name = pick("Woodys Got Wood: The Aftermath", "War of the Cocks", "Sweet Bro and Hella Jef: Expanded Edition","F.A.T.A.L. Rulebook")
+			H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 100) // starts off dumb as fuck
+		if("monkeyism","apism","gorillism","primatism")
+			B.name = pick("Going Bananas", "Bananas Out For Harambe")
+		if("mormonism")
+			B.name = "The Book of Mormon"
+		if("pastafarianism")
+			B.name = "The Gospel of the Flying Spaghetti Monster"
+		if("rastafarianism","rasta")
+			B.name = "The Holy Piby"
+		if("satanism")
+			B.name = "The Unholy Bible"
+		if("science")
+			B.name = pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition")
+		if("scientology")
+			B.name = pick("The Biography of L. Ron Hubbard","Dianetics")
+		if("servicianism", "partying")
+			B.name = "The Tenets of Servicia"
+			B.deity_name = pick("Servicia", "Space Bacchus", "Space Dionysus")
+			B.desc = "Happy, Full, Clean. Live it and give it."
+		if("subgenius")
+			B.name = "Book of the SubGenius"
+		if("toolboxia","greytide")
+			B.name = pick("Toolbox Manifesto","iGlove Assistants")
+		if("weeaboo","kawaii")
+			B.name = pick("Fanfiction Compendium","Japanese for Dummies","The Manganomicon","Establishing Your O.T.P")
+		else
+			B.name = "The Holy Book of [new_religion]"
+
+	GLOB.religion = new_religion
+	GLOB.bible_name = B.name
+	GLOB.deity = B.deity_name
+
+	H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
+
+	SSblackbox.record_feedback("text", "religion_name", 1, "[new_religion]", 1)
+	SSblackbox.record_feedback("text", "religion_deity", 1, "[new_deity]", 1)
+
+
+/datum/outfit/job/wasteland/f13preacher
+	name = "Preacher"
+	jobtype = /datum/job/wasteland/f13preacher
+
+	id = null
+	ears = /obj/item/radio/headset
+	belt = null
+	uniform = /obj/item/clothing/under/f13/chaplain
+	backpack_contents = list(/obj/item/camera/spooky = 1)
+	backpack =		/obj/item/storage/backpack/cultpack
+	satchel = 		/obj/item/storage/backpack/cultpack
+	l_hand = 		/obj/item/nullrod
+	gloves =		/obj/item/clothing/gloves/fingerless
+	shoes = 		/obj/item/clothing/shoes/jackboots
+	backpack = 		/obj/item/storage/backpack/cultpack
+	satchel = 		/obj/item/storage/backpack/cultpack
+	r_hand = 		/obj/item/gun/ballistic/revolver/m29
+	r_pocket = /obj/item/flashlight/flare
+	backpack_contents = list(
+		/obj/item/ammo_box/m44=2, \
+		/obj/item/reagent_containers/food/drinks/flask=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
+		/obj/item/storage/fancy/candle_box, \
+		/obj/item/storage/bag/money/small/settler)
+//end preacher
 
 /datum/outfit/job/wasteland/f13enforcer
 	name = "Den Mob Enforcer"
@@ -796,7 +972,7 @@ Raider
 	ears = /obj/item/radio/headset/headset_den
 	l_pocket = /obj/item/melee/onehanded/knife/switchblade
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	backpack =	/obj/item/storage/backpack/satchel
 	satchel =  /obj/item/storage/backpack/satchel
 	gloves =  /obj/item/clothing/gloves/color/white
@@ -822,6 +998,8 @@ Raider
 		DM.add_member(H)
 		H.gang = DM
 
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
+
 /datum/outfit/loadout/hitman
 	name = "Hitman"
 	r_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
@@ -846,8 +1024,8 @@ Raider
 /datum/job/wasteland/f13mobboss
 	title = "Den Mob Boss"
 	flag = F13MOBBOSS
-	faction = "Wastelander"
-	social_faction = "Raiders"
+	faction = FACTION_WASTELAND
+	social_faction = FACTION_RAIDERS
 	total_positions = 1
 	spawn_positions = 1
 	description = "The mob rules in Yuma, and you're on top. Keeping the loose association of Khans, outlaws, and other no-goods together you maintain order in The Den by force. Ensure that all inhabitants of the Den obey their rules, and spread your influence over the wasteland. Be careful though - even your own men can't be trusted."
@@ -864,7 +1042,7 @@ Raider
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/oasis/f13mayor,
 			/datum/job/oasis/f13sheriff,
-			/datum/job/wasteland/f13detective,
+			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/patron = list(
 			/datum/job/wasteland/f13wastelander,
@@ -882,7 +1060,7 @@ Raider
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/melee/onehanded/knife/switchblade
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/raider
 	backpack =	/obj/item/storage/backpack/satchel
 	satchel = 	/obj/item/storage/backpack/satchel
@@ -894,12 +1072,14 @@ Raider
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/restraints/handcuffs=1, \
 		/obj/item/ammo_box/magazine/m10mm_p90=2, \
-		/obj/item/storage/bag/money/small/raider/mobboss)
+		/obj/item/storage/bag/money/small/raider/mobboss, \
+		/obj/item/book/granter/crafting_recipe/manual/denvr)
 
-/datum/outfit/job/wasteland/f13mobboss/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/wasteland/f13mobboss/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+
 
 /datum/outfit/job/wasteland/f13mobboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -915,8 +1095,8 @@ Raider
 datum/job/wasteland/f13dendoctor
 	title = "Den Doctor"
 	flag = F13DENDOCTOR
-	faction = "Wastelander"
-	social_faction = "Raiders"
+	faction = FACTION_WASTELAND
+	social_faction = FACTION_RAIDERS
 	total_positions = 2
 	spawn_positions = 2
 	description = "While you prioritize providing medical treatment in emergency situations, you are still trained in combat and have the additional role as a loyal combanteer to the Den."
@@ -944,7 +1124,7 @@ datum/job/wasteland/f13dendoctor
 	shoes = /obj/item/clothing/shoes/laceup
 	ears = /obj/item/radio/headset/headset_den
 	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/suit/white
+	uniform = /obj/item/clothing/under/f13/densuit
 	backpack =	/obj/item/storage/backpack/medic
 	gloves =  /obj/item/clothing/gloves/color/white
 	head = /obj/item/clothing/head/beret/durathread
@@ -967,6 +1147,8 @@ datum/job/wasteland/f13dendoctor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/psycho)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/buffout)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
+
 
 /datum/outfit/job/wasteland/f13dendoctor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1007,7 +1189,7 @@ datum/job/wasteland/f13dendoctor
 /datum/job/wasteland/f13vigilante
 	title = "Vigilante"
 	flag = F13VIGILANTE
-	faction = "Wastelander"
+	faction = FACTION_WASTELAND
 	total_positions = 0
 	spawn_positions = 0
 	description = "You have come a long way to reach this god forsaken place... it is now your job to protect its inhabitants from all sorts of injustice. Your moral codex requires you to help anyone in need and to never harm an innocent. Always try to capture and reeducate criminals instead of killing. Do not get involved in the conflicts between the major factions, that is not your fight."
@@ -1055,7 +1237,6 @@ datum/job/wasteland/f13dendoctor
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/desert
 	r_hand = /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
 	backpack_contents = list(
-							/obj/item/ammo_box/m44box/swc=2
 							)
 
 /datum/outfit/loadout/bounty_hunter
@@ -1077,7 +1258,7 @@ datum/job/wasteland/f13dendoctor
 /datum/job/wasteland/f13adminboos
 	title = "Death"
 	flag = F13ADMINBOOS
-	faction = "Wastelander"
+	faction = FACTION_WASTELAND
 	total_positions = 0
 	spawn_positions = 0
 	description = ""

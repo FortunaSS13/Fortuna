@@ -10,7 +10,7 @@
 	volume = 30
 	possible_transfer_amounts = list()
 	resistance_flags = ACID_PROOF
-	reagent_flags = OPENCONTAINER
+//	reagent_flags = OPENCONTAINER
 	slot_flags = ITEM_SLOT_BELT
 	var/ignore_flags = 0
 	var/infinite = FALSE
@@ -93,7 +93,7 @@
 	amount_per_transfer_from_this = 15
 	volume = 15
 	ignore_flags = 1 //so you can medipen through hardsuits
-	reagent_flags = DRAWABLE
+//	reagent_flags = DRAWABLE
 	flags_1 = null
 	list_reagents = list(/datum/reagent/medicine/epinephrine = 10, /datum/reagent/preservahyde = 3, /datum/reagent/medicine/coagulant = 2)
 	custom_premium_price = PRICE_ALMOST_EXPENSIVE
@@ -198,7 +198,7 @@
 	desc = "The super version comes in a hypodermic, but with an additional vial containing more powerful drugs than the basic model and a leather belt to strap the needle to the injured limb."
 	icon_state = "superstimpakpen"
 	amount_per_transfer_from_this = 10
-	list_reagents = list(/datum/reagent/medicine/super_stimpak = 10)
+	list_reagents = list(/datum/reagent/medicine/stimpak/super_stimpak = 10)
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
 	desc = "The super version comes in a hypodermic, but with an additional vial to inject more drugs than the basic model and a leather belt to strap the needle to a limb. This particular one will deliver a tailored cocktail."
@@ -328,6 +328,14 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
+
+/obj/item/reagent_containers/hypospray/medipen/medx
+	name = "Med-X"
+	desc = "A short-lasting shot of Med-X applied via hypodermic needle."
+	icon_state = "medx"
+	volume = 5
+	amount_per_transfer_from_this = 5
+	list_reagents = list(/datum/reagent/medicine/medx = 5)
 
 /obj/item/hypospray/mkii/Initialize()
 	. = ..()

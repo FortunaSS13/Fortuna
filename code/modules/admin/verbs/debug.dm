@@ -304,6 +304,7 @@
 	var/list/areas_with_air_alarm = list()
 	var/list/sub_areas_air_alarm = list()
 	var/list/areas_with_RC = list()
+	var/list/areas_with_MT = list()
 	var/list/areas_with_light = list()
 	var/list/areas_with_LS = list()
 	var/list/areas_with_intercom = list()
@@ -363,6 +364,15 @@
 			continue
 		if(!(A.type in areas_with_RC))
 			areas_with_RC.Add(A.type)
+		CHECK_TICK
+
+	for(var/obj/machinery/msgterminal/MT in GLOB.machines)
+		var/area/A = get_area(MT)
+		if(!A)
+			dat += "Skipped over [MT] in invalid location, [MT.loc].<br>"
+			continue
+		if(!(A.type in areas_with_MT))
+			areas_with_MT.Add(A.type)
 		CHECK_TICK
 
 	for(var/obj/machinery/light/L in GLOB.machines)
@@ -600,7 +610,7 @@
 		if(Rad.anchored)
 			if(!Rad.loaded_tank)
 				var/obj/item/tank/internals/plasma/Plasma = new/obj/item/tank/internals/plasma(Rad)
-				Plasma.air_contents.set_moles(/datum/gas/plasma,70)
+				Plasma.air_contents.set_moles(GAS_PLASMA,70)
 				Rad.drainratio = 0
 				Rad.loaded_tank = Plasma
 				Plasma.forceMove(Rad)

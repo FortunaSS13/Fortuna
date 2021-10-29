@@ -4,8 +4,8 @@
 	icon = 'icons/obj/power.dmi'
 	icon_state = "ccharger"
 	use_power = IDLE_POWER_USE
-	idle_power_usage = 5
-	active_power_usage = 60
+	idle_power_usage = 15
+	active_power_usage = 180
 	power_channel = EQUIP
 	circuit = /obj/item/circuitboard/machine/cell_charger
 	pass_flags = PASSTABLE
@@ -34,6 +34,7 @@
 
 /obj/machinery/cell_charger/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stock_parts/cell) && !panel_open)
+		var/obj/item/stock_parts/cell/C = W
 		if(stat & BROKEN)
 			to_chat(user, "<span class='warning'>[src] is broken!</span>")
 			return
@@ -42,6 +43,9 @@
 			return
 		if(charging)
 			to_chat(user, "<span class='warning'>There is already a cell in the charger!</span>")
+			return
+		if(!C.cancharge)
+			to_chat(user, "<span class='warning'>The cell isn't compatible with this charger!</span>")
 			return
 		else
 			var/area/a = loc.loc // Gets our locations location, like a dream within a dream

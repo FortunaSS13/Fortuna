@@ -42,6 +42,7 @@
 			. += "<span class='info'>[attached_light] looks like it can be <b>unscrewed</b> from [src].</span>"
 	else if(can_flashlight)
 		. += "It has a mounting point for a <b>seclite</b>."
+	. += "This helmet provides [armor.linebullet] bullet, [armor.linelaser] energy and [armor.linemelee] melee resistance."
 
 /obj/item/clothing/head/helmet/handle_atom_del(atom/A)
 	if(A == attached_light)
@@ -455,3 +456,12 @@
 	icon_state = "policehelm"
 	dynamic_hair_suffix = ""
 	armor = list("tier" = 2)
+	
+/obj/item/clothing/head/helmet/armyhelmet
+	name = "steel helmet"
+	desc = "(III) a steel helmet, inspired by several pre-war designs. It provides some protection against impacts, cuts, and medium-velocity bullets."
+	icon = 'icons/fallout/clothing/helmets.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
+	icon_state = "armyhelmet"
+	item_state = "armyhelmet"
+	armor = list("tier" = 3, "linebullet" = 25, "linemelee" = 25, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)

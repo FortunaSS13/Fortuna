@@ -1,18 +1,21 @@
-## Desert Rose 2
+## Fallout Fortuna
 Based and maintained from Citadel Station.
 
-[![Build Status](https://github.com/DesertRose2/desertrose/actions/workflows/ci_suite.yml/badge.svg?branch=master&event=push)](https://github.com/DesertRose2/desertrose/actions) 
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/DesertRose2/desertrose.svg)](http://isitmaintained.com/project/DesertRose2/desertrose "Percentage of issues still open") 
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/DesertRose2/desertrose.svg)](http://isitmaintained.com/project/DesertRose2/desertrose "Average time to resolve an issue")
+[![CI Suite](https://github.com/FortunaSS13/Fortuna/actions/workflows/ci_suite.yml/badge.svg?branch=master&event=push)](https://github.com/FortunaSS13/Fortuna/actions/workflows/ci_suite.yml)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/FortunaSS13/Fortuna.svg)](http://isitmaintained.com/project/FortunaSS13/Fortuna "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/FortunaSS13/Fortuna.svg)](http://isitmaintained.com/project/FortunaSS13/Fortuna "Average time to resolve an issue")
 
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/pretty-risque.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-**Desert Rose Information**  
-* **Website:** <http://desertrosefallout13.boards.net/>
-* **Code:** <https://github.com/DesertRose2/desertrose>
-* **Prerebase Code:** <https://github.com/judgex/desertrose>
-* **Wiki:** <https://desert-rose-fallout-13.fandom.com/wiki/Desert_Rose_-_Fallout_13_Wiki>
-* **Discord:** <https://discord.gg/ag9nmm5H6S>
+**Fortuna Information**  
+* **Code:** <https://github.com/FortunaSS13/Fortuna>
+* **Wiki:** <https://f13wiki.herma.moe/index.php/Main_Page>
+* **Discord:** <https://discord.gg/54DkKxyf9z>
+All relevant forum content takes place on the Discord!
+
+**Desert Rose Information**
+* **Code** <https://github.com/DesertRose2/desertrose>
+* **Legacy Code** <https://github.com/judgex/desertrose>
 
 **Citadel Station Information**  
 * **Website:** <http://citadel-station.net>
