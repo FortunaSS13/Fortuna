@@ -495,7 +495,6 @@ Raider
 		/obj/item/reagent_containers/inhaler/turbo = 2,
 		/obj/item/reagent_containers/syringe/medx = 1,
 		/obj/item/book/granter/trait/bigleagues = 1)
-		/obj/item/reagent_containers/hypospray/medipen/psycho=1,
 
 
 /datum/outfit/loadout/raider_painspike
