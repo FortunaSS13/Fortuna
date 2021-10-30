@@ -102,9 +102,11 @@
 	limbs_id = "ghoul"
 	say_mod = "rasps"
 	mutanthands = /obj/item/ghoul_zombie_hand
-	brutemod = 0.5
-	burnmod = 0.5
-	armor = 50
+	brutemod = 0.7
+	burnmod = 0.7
+	heal_rate = 8
+	armor = 0
+	speedmod = 1.3
 
 /datum/species/zombie/infectious/ghoul/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
