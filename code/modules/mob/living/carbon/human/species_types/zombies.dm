@@ -105,7 +105,6 @@
 	mutanthands = /obj/item/ghoul_zombie_hand
 	brutemod = 0.5
 	burnmod = 0.5
-	armor = 50
 
 /datum/species/zombie/infectious/ghoul/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
