@@ -333,7 +333,7 @@
 	name = "Med-X"
 	desc = "A short-lasting shot of Med-X applied via hypodermic needle."
 	icon_state = "medx"
-	volume = 5
+	volume = 15
 	amount_per_transfer_from_this = 5
 	list_reagents = list(/datum/reagent/medicine/medx = 5)
 
