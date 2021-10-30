@@ -21,13 +21,14 @@
 	build_path = /obj/item/radio/headset
 	category = list("initial", "T-Comm")
 
-/datum/design/bounced_radio
+/*/datum/design/bounced_radio
 	name = "Station Bounced Radio"
 	id = "bounced_radio"
 	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 75, /datum/material/glass = 25)
 	build_path = /obj/item/radio/off
 	category = list("initial", "T-Comm")
+*/
 
 /datum/design/intercom_frame
 	name = "Intercom Frame"
