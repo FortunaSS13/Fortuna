@@ -142,7 +142,7 @@
 		. = (amount)
 
 /obj/item/stack/attack_self(mob/user)
-		interact(user)
+	interact(user)
 
 /obj/item/stack/interact(mob/user, sublist)
 	ui_interact(user, sublist)
