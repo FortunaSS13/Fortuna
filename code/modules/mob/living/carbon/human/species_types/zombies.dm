@@ -1,4 +1,4 @@
-#define REGENERATION_DELAY 60  // After taking damage, how long it takes for automatic regeneration to begin
+#define REGENERATION_DELAY 30  // After taking damage, how long it takes for automatic regeneration to begin
 
 /datum/species/zombie
 	// 1spooky
@@ -102,9 +102,12 @@
 	limbs_id = "ghoul"
 	say_mod = "rasps"
 	mutanthands = /obj/item/ghoul_zombie_hand
-	brutemod = 0.5
-	burnmod = 0.5
-	armor = 50
+	brutemod = 0.7
+	inherent_traits = list(TRAIT_RESISTCOLD,TRAIT_NOSOFTCRIT,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_RADIMMUNE,TRAIT_EASYDISMEMBER,TRAIT_LIMBATTACHMENT,TRAIT_NOBREATH,TRAIT_NODEATH,TRAIT_FAKEDEATH,TRAIT_NOPULSE,TRAIT_NODECAP)
+	burnmod = 0.7
+	armor = 0
+	heal_rate = 4
+	mutanttongue = /obj/item/organ/tongue/zombie/ghoul
 
 /datum/species/zombie/infectious/ghoul/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()

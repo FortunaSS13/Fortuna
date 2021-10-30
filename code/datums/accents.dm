@@ -56,7 +56,7 @@
 			message_list[insertpos] = inserttext + "..."
 
 		if(prob(20) && message_list.len > 3)
-			message_list.Insert(insertpos, "[pick("BRAINS", "Brains", "Braaaiinnnsss", "BRAAAIIINNSSS")]...")
+			message_list.Insert(insertpos, "[pick("Flesh", "Fleeeesh", "Huuuuungry", "MEAT")]...")
 
 	speech_args[SPEECH_MESSAGE] = jointext(message_list, " ")
 	return speech_args

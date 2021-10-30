@@ -134,6 +134,9 @@
 	maxHealth = 65 //Stop! It's already dead...!
 	initial_accents = list(/datum/accent/zombie)
 
+/obj/item/organ/tongue/zombie/ghoul
+	say_mod = "rasps"
+
 /obj/item/organ/tongue/alien
 	name = "alien tongue"
 	desc = "According to leading xenobiologists the evolutionary benefit of having a second mouth in your mouth is \"that it looks badass\"."
@@ -206,13 +209,6 @@
 /obj/item/organ/tongue/robot/could_speak_language(language)
 	return ..() || electronics_magic
 
-/obj/item/organ/tongue/fluffy
-	name = "fluffy tongue"
-	desc = "OwO what's this?"
-	icon_state = "tonguefluffy"
-	taste_sensitivity = 10 // extra sensitive and inquisitive uwu
-	maxHealth = 35 //Sensitive tongue!
-	initial_accents = list(/datum/accent/fluffy)
 
 /obj/item/organ/tongue/cybernetic
 	name = "cybernetic tongue"
