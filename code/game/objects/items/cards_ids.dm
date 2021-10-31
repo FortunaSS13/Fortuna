@@ -972,7 +972,7 @@
 
 /obj/item/card/id/dogtag/ncrtrooper
 	name = "trooper's tags"
-	desc = "A dog tag proving enlistment."
+	desc = "A meaningless dogtag showcasing a rank in a now-dead army. You don't even get paid for this anymore."
 	icon_state = "ncrdogtagrecruit"
 
 /obj/item/card/id/dogtag/ncrmp
@@ -982,12 +982,12 @@
 
 /obj/item/card/id/dogtag/ncrht
 	name = "heavy trooper's tags"
-	desc = "A dog tag proving the elite status of the heavy trooper."
+	desc = "A meaningless dogtag showcasing an elite rank in a now-dead army."
 	icon_state = "ncrdogtagrecruit"
 
 /obj/item/card/id/dogtag/ncrsergeant
 	name = "sergeant's tags"
-	desc = "A chevron decorated dog tag showing NCO-ship."
+	desc = "A meaningless chevron dogtag showcasing a rank in a now-dead army."
 	icon_state = "ncrdogtagsergeant"
 
 /obj/item/card/id/dogtag/ncrrep
@@ -997,7 +997,7 @@
 
 /obj/item/card/id/dogtag/ncrlieutenant
 	name = "lieutenant's tags"
-	desc = "A silver bar dog tag that denotes a member of the NCR military with a lieutenant commission."
+	desc = "A silver bar dog tag that denotes a member of the NCR military with a lieutenant commission. Not that you're going to be paid anymore."
 	icon_state = "ncrdogtagofficer"
 
 /obj/item/card/id/dogtag/ncrcaptain
@@ -1007,12 +1007,12 @@
 
 /obj/item/card/id/dogtag/ncrranger
 	name = "ranger badge"
-	desc = "A badge formed out of a Legion denarius that invokes fear in those who see it, belonging to someone with a big iron on their hip."
+	desc = "A badge formed out of a Legion denarius that invokes fear in those who see it. The symbol of the Rangers, once, now doomed to fade to obscurity."
 	icon_state = "ranger"
 
 /obj/item/card/id/dogtag/ncrvetranger
 	name = "veteran ranger badge"
-	desc = "A badge formed out of a Legion aureus that is worn by the most feared men and women of the Republic."
+	desc = "A badge formed out of a Legion aureus that is worn by the most feared men and women of the Republic. The last one, specifically, in the now-dead republic."
 	icon_state = "vetranger"
 
 /obj/item/card/id/dogtag/ncrcolonel
@@ -1035,14 +1035,14 @@
 
 /obj/item/card/id/dogtag/legrecruit
 	name = "recruit medallion"
-	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a recruit."
+	desc = "A silver disc stamped with the Legion's Bull insignia. A reminder of better times, when Caesar still lived."
 	icon_state = "legionmedallionrecruit"
 	item_state = "card-id_leg"
 	assignment = "recruit medallion"
 
 /obj/item/card/id/dogtag/legprime
 	name = "prime medallion"
-	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a prime."
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a prime. A reminder of better times, when Caesar still lived."
 	icon_state = "legionmedallionprime"
 	item_state = "card-id_leg"
 	assignment = "prime medallion"
@@ -1056,7 +1056,7 @@
 
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"
-	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a veteran, and reeks of iron."
+	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a veteran-a symbol of the Legion's ferocity, doomed to be swallowed by the uncaring hordes."
 	icon_state = "legionmedallionveteran"
 	item_state = "card-id_leg"
 	assignment = "veteran medallion"
@@ -1115,14 +1115,14 @@
 
 /obj/item/card/id/rusted
 	name = "rusted tags"
-	desc = "Decrepit uncared for NCR dogtags, kept as a reminder to something."
+	desc = "Decrepit uncared for NCR dogtags, kept as a reminder to something now consumed by the hordes."
 	icon_state = "rustedncrtag"
 	item_state = "rustedncrtag"
 	uses_overlays = FALSE
 
 /obj/item/card/id/rusted/rustedmedallion
 	name = "rusted medallion"
-	desc = "A battered and unkempt legion medallion, kept as a reminder to something."
+	desc = "A battered and unkempt legion medallion, kept as a reminder to something now damned by Mars."
 	icon_state = "rustedmedallion"
 	item_state = "rustedmedallion"
 	uses_overlays = FALSE

@@ -241,7 +241,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	)
 
 /datum/outfit/job/ncr/f13lieutenant		// Marksman Rifle, Binoculars, Bayonet, 9mm sidearm
-	name = "NCR Lieutenant"
+	name = "NCRA Remnant Lieutenant"
 	jobtype	= /datum/job/ncr/f13lieutenant
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -697,7 +697,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13combatengineer
-	name = "NCR Combat Engineer"
+	name = "NCRA Remnant Combat Engineer"
 	jobtype = /datum/job/ncr/f13combatengineer
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	uniform = /obj/item/clothing/under/f13/ncr
@@ -791,7 +791,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // COMBAT MEDIC
 
 /datum/job/ncr/f13combatmedic
-	title = "NCR Combat Medic"
+	title = "NCRA Remnant Combat Medic"
 	flag = F13COMBATMEDIC
 	total_positions = 1
 	spawn_positions = 1
