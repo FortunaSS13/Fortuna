@@ -331,9 +331,9 @@
 	name = "bola"
 	desc = "A restraining device designed to be thrown at the target. Upon connecting with said target, it will wrap around their legs, making it difficult for them to move quickly."
 	icon_state = "bola"
-	breakouttime = 0.5//easy to apply, easy to break out of
+	breakouttime = 1.5//easy to apply, easy to break out of
 	gender = NEUTER
-	slowdown = 0.4
+	slowdown = 1.3
 	var/knockdown = 0
 
 /obj/item/restraints/legcuffs/bola/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first = 0, datum/callback/callback)
