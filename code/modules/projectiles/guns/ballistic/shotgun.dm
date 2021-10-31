@@ -100,7 +100,7 @@
 //Caravan shotgun							Keywords: Shotgun, Double barrel, saw-off, extra damage +1
 /obj/item/gun/ballistic/revolver/caravan_shotgun
 	name = "caravan shotgun"
-	desc = "An common over-under double barreled shotgun made in the post-war era."
+	desc = "An common over-under double barreled shotgun made in the post-war era. A zombie-killing classic."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
@@ -135,7 +135,7 @@
 //Widowmaker				Keywords: Shotgun, Double barrel, saw-off
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "Winchester Widowmaker"
-	desc = "Old-world Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture"
+	desc = "Old-world Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture. Also perfect for living up to narrative cliches about killing zombies!"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
@@ -232,7 +232,7 @@
 //Trench shotgun					Keywords: Shotgun, Pump-action, 5 rounds, Bayonet, Extra firemode, Extra damage +1
 /obj/item/gun/ballistic/shotgun/trench
 	name = "trench shotgun"
-	desc = "A military shotgun designed for close-quarters fighting, equipped with a bayonet lug."
+	desc = "Buckshot distance of the ghoul hordes is probably not where you want to be, but it's your choice."
 	icon_state = "trench"
 	item_state = "shotguntrench"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench

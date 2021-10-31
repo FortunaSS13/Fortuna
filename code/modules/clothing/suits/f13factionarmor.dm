@@ -159,7 +159,7 @@
 
 /obj/item/clothing/suit/armor/f13/raider/raidermetal
 	name = "metal raider armor"
-	desc = "(V) A suit of welded, fused metal plates. Looks bulky, with great protection."
+	desc = "(V) A suit of welded, fused metal plates. Looks bulky, with great protection. Not that it will do much good, anymore."
 	icon_state = "raider_metal"
 	item_state = "raider_metal"
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
@@ -232,7 +232,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	name = "legion explorer armor"
-	desc = "(III) Armor based on layered strips of laminated linen and leather, the technique giving it surprising resilience for low weight."
+	desc = "(III) Armor based on layered strips of laminated linen and leather. Good for running away before the ghouls catch you. Not so good for stopping them from eating you."
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "legion_explorer"
@@ -244,7 +244,7 @@
 	name = "legion vexillarius armor"
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	slowdown = -0.12
-	desc = "(IV) Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
+	desc = "(IV) Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance. Which is probably not a good thing, actually, if you want to remain un-eaten."
 	icon_state = "legion_vex"
 	item_state = "legion_vex"
 
@@ -257,7 +257,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/centurion
 	name = "legion centurion armor"
-	desc = "(VI) Every Centurion is issued some of the best armor available in the Legion, and adds better pieces from slain opponents over time."
+	desc = "(VI) Every Centurion is issued some of the best armor available in the Legion, and adds better pieces from slain opponents over time. This is probably the last piece of such armor remaining on the planet that hasn't been...chewed through."
 	icon = 'icons/fallout/clothing/armored_heavy.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "legion_centurion"
@@ -269,7 +269,7 @@
 	name = "paladin-slayer centurion armor"
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi' // Inconsistent naming, clean all of the sprites and code up sometime
-	desc = "(VI) A Centurion able to defeat a Brotherhood Paladin gets the honorific title 'Paladin-Slayer', and adds bits of the looted armor to his own."
+	desc = "(VI) Oh, how you long for the days when Paladins were the worst threat you had to face. What good is a tin can against the hordes of the dead?"
 	icon_state = "legion_palacent"
 	item_state = "legion_palacent"
 	slowdown = -0.13
@@ -279,7 +279,7 @@
 	name = "ranger-hunter centurion armor"
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
-	desc = "(V) Centurions who have led many patrols and ambushes against NCR Rangers have a distinct look from the many looted pieces of Ranger armor, and are often experienced in skirmishing."
+	desc = "(V) Centurions who have led many patrols and ambushes against NCR Rangers have a distinct look from the many looted pieces of Ranger armor, and are often experienced in skirmishing. This serves them well, now that horrors cover the wastes."
 	icon_state = "legion_rangercent"
 	item_state = "legion_rangercent"
 	slowdown = -0.2
@@ -337,7 +337,7 @@
 //NCR
 /obj/item/clothing/suit/armor/f13/utilityvest
 	name = "utility vest"
-	desc = "(II) A practical vest with pockets for tools and such."
+	desc = "(II) A practical vest with pockets for tools and such. Not very practical for avoiding ghoul bites."
 	icon_state = "vest_utility"
 	item_state = "vest_utility"
 	icon = 'icons/fallout/clothing/suits_utility.dmi'
@@ -347,7 +347,7 @@
 
 /obj/item/clothing/suit/armor/f13/ncrarmor
 	name = "NCR patrol vest"
-	desc = "(III) A standard issue NCR Infantry vest."
+	desc = "(III) A standard issue NCR Infantry vest. Won't be seeing any more of these made."
 	icon_state = "ncr_infantry_vest"
 	item_state = "ncr_infantry_vest"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
@@ -359,14 +359,14 @@
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	name = "NCR mantle vest"
-	desc = "(III) A standard issue NCR Infantry vest with a mantle on the shoulder."
+	desc = "(III) A standard issue NCR Infantry vest with a mantle on the shoulder. Reminders of better times."
 	icon_state = "ncr_standard_mantle"
 	item_state = "ncr_standard_mantle"
 	armor = list("tier" = 3, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	name = "NCR reinforced patrol vest"
-	desc = "(III) A standard issue NCR Infantry vest reinforced with a groinpad."
+	desc = "(III) A standard issue NCR Infantry vest reinforced with a groinpad. You know, in case they bite low."
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
 	armor = list("tier" = 3, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
@@ -476,7 +476,7 @@
 
 /obj/item/clothing/suit/armor/f13/trailranger
 	name = "ranger vest"
-	desc = "(IV) A quaint little jacket and scarf worn by NCR trail rangers."
+	desc = "(IV) A quaint little jacket and scarf worn by NCR trail rangers. At least you'll look stylish when you're eaten."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
@@ -484,14 +484,14 @@
 
 /obj/item/clothing/suit/armor/f13/modif_r_vest
 	name = "subdued ranger vest"
-	desc = "(V) A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
+	desc = "(V) For that 'I really wish I wasn't in the middle of a second apocalypse' edgy goth look."
 	icon_state = "modif_r_vest"
 	item_state = "modif_r_vest"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
 	name = "ranger patrol armor"
-	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by. Won't be seeing any more of these made."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -517,7 +517,7 @@
 
 /obj/item/clothing/suit/armor/f13/rangercombat
 	name = "veteran ranger combat armor"
-	desc = "(VII) The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
+	desc = "(VII) Twenty years of service just to get a set of riot armor and then to be eaten alive. Great. You should have become a doctor."
 	icon_state = "ranger"
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
@@ -580,7 +580,7 @@
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
 	name = "brotherhood knight-captain armor"
-	desc = "(VI) A combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
+	desc = "(VI) A combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery, so you can look pretentious when you die to the hordes."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
 	armor = list("tier" = 6, "energy" = 45, "bomb" = 60, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -635,14 +635,14 @@
 
 /obj/item/clothing/suit/armor/f13/town/deputy
 	name = "deputy trenchcoat"
-	desc = "(V) An armored trench coat with added shoulderpads, a chestplate, and legguards."
+	desc = "(V) An armored trench coat with added shoulderpads, a chestplate, and legguards. A symbol of hope and law, now that all other law has been, well, eaten."
 	icon_state = "towntrench_medium"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 35, "fire" = 80, "acid" = 0)
 
 //Great Khan
 /obj/item/clothing/suit/armor/khan_jacket
 	name = "khan armored jacket"
-	desc = "(IV) The symbol of the greatest pushers."
+	desc = "(IV) The symbol of the greatest pushers. Maybe with the apocalypse going on, people will finally buy your Jet? Maybe? Please?"
 	icon_state = "khan_jacket"
 	item_state = "khan_jacket"
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)

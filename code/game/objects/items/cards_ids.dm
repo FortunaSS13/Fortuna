@@ -1001,8 +1001,8 @@
 	icon_state = "ncrdogtagofficer"
 
 /obj/item/card/id/dogtag/ncrcaptain
-	name = "captain's tags"
-	desc = "A dog tag that demands respect from all those subordinate to it. This one belongs to an NCR captain."
+	name = "colonel's tags"
+	desc = "A dog tag that demands respect from all those subordinate to it. This one belongs to an NCR captain. Someone's attached a sticky note to it that says 'COLONEL' in all caps."
 	icon_state = "ncrdogtagcaptain"
 
 /obj/item/card/id/dogtag/ncrranger
@@ -1062,8 +1062,8 @@
 	assignment = "veteran medallion"
 
 /obj/item/card/id/dogtag/legcenturion
-	name = "centurion medallion"
-	desc = "A golden disc awarded to the most fierce men in the whole legion. If you are close enough to read the insignia you won't be alive much longer."
+	name = "legate medallion"
+	desc = "A golden disc awarded to the most fierce men in the whole legion. Now that Lanius is dead, this technically belongs to the Legate, not the Centurion."
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"

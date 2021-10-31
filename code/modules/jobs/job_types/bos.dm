@@ -12,6 +12,8 @@ Main doors: ACCESS_CAPTAIN 20
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	outfit = /datum/outfit/job/bos/
 	exp_type = EXP_TYPE_BROTHERHOOD
+	forbids = "The Brotherhood of Steel Forbids: Ghouls. Ravenous ghouls. Breaking the Codex. Breaking the Chain-That-Binds. Allowing humanity to die, once again, to the horrors of uncontrolled technology."
+	enforces = "The Brotherhood of Steel Expects: You to die to the encroaching hordes, probably."
 
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
 
@@ -92,15 +94,13 @@ Head Paladin
 */
 
 /datum/job/bos/f13sentinel
-	title = "Head Paladin"
+	title = "Brotherhood Remnant Head Paladin"
 	flag = F13SENTINEL
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the elder"
+	description = "You WERE the acting field commander until the Brotherhood of Steel regained its strength. There is no hope of that now. Humanity is dying, and you are the last line of defense."
+	supervisors = "There is no Elder. You are all that is left."
 	selection_color = "#7f8c8d"
 
 	exp_requirements = 1500
@@ -189,15 +189,13 @@ Head Scribe
 */
 
 /datum/job/bos/f13headscribe
-	title = "Head Scribe"
+	title = "Brotherhood Remnant Head Scribe"
 	flag = F13HEADSCRIBE
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the elder"
+	description = "Lost Hills has fallen. The NCRA has fallen. The world is consumed in a tide of rotting flesh. Find a solution."
+	supervisors = "There is no Elder. You are all that is left."
 	selection_color = "#7f8c8d"
 
 	exp_requirements = 1500
@@ -257,15 +255,13 @@ Head Knight
 */
 
 /datum/job/bos/f13knightcap
-	title = "Head Knight"
+	title = "Brotherhood Remnant Head Knight"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the elder"
+	description = "The Brotherhood is dying, faced by innumerable, horrible outside threats from the surface, and failure means the destruction of humanity itself. In short, nothing's changed."
+	supervisors = "There is no Elder. You are all that's left."
 	selection_color = "#7f8c8d"
 
 	exp_requirements = 1500
@@ -338,13 +334,11 @@ Star Paladin
 */
 
 /datum/job/bos/f13seniorpaladin
-	title = "Senior Paladin"
+	title = "Brotherhood Remnant Senior Paladin"
 	flag = F13SENIORPALADIN
 	total_positions = 1
 	spawn_positions = 1
-	description = "As the Chapter's senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "Uncontrolled technology has once again damned all of humanity. You are the first line of defense and the last hope for this tortured planet. Help the Blind, where you can-but do not trust them. This latest incident is proof in the truth of the Codex."
 	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
@@ -422,13 +416,11 @@ Paladin
 */
 
 /datum/job/bos/f13paladin
-	title = "Paladin"
+	title = "Brotherhood Remnant Paladin"
 	flag = F13PALADIN
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "You answer directly to the Senior Paladin. You are the Brotherhood-and humanity's-first line of defense against the enroaching hordes."
 	supervisors = "the Senior Paladin and Head Paladin"
 	selection_color = "#95a5a6"
 	exp_requirements = 450
@@ -531,13 +523,11 @@ Senior Scribe
 */
 
 /datum/job/bos/f13seniorscribe
-	title = "Senior Scribe"
+	title = "Brotherhood Remnant Senior Scribe"
 	flag = F13SENIORSCRIBE
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the bunker's seniormost medical and scientific expert in the bunker, sans the Head Scribe themselves. You are trained in both medicine and engineering, while also having extensive studies of the old world to assist in pinpointing what technology would be useful to the Brotherhood and its interests."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "This horror is unlike anything you have ever seen. Lost Hills is silent. The world has been consumed by the hordes. If it is up to anyone to save it, it is the Brotherhood of Steel-and you are their brightest minds."
 	supervisors = "the Head Scribe"
 	selection_color = "#95a5a6"
 
@@ -592,13 +582,11 @@ Scribe
 */
 
 /datum/job/bos/f13scribe
-	title = "Scribe"
+	title = "Brotherhood Remnant Scribe"
 	flag = F13SCRIBE
 	total_positions = 3
 	spawn_positions = 3
-	description = "You answer directly to the Senior Scribe, tasked with researching and reverse-engineering recovered technologies from the old world, while maintaining the brotherhoods scientific archives. You may also be given a trainee to assign duties to."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "After many years, once again the Blind have damned the world. Discover a cure, if you can. Hold the line until the end, if you cannot."
 	supervisors = "the Senior Scribe and Head Scribe"
 	selection_color = "#95a5a6"
 
@@ -670,13 +658,11 @@ Senior Knight
 */
 
 /datum/job/bos/f13seniorknight
-	title = "Senior Knight"
+	title = "Brotherhood Remnant Senior Knight"
 	flag = F13SENIORKNIGHT
 	total_positions = 1
 	spawn_positions = 1
 	description = "You report directly to the Head Knight. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Knight"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
@@ -749,13 +735,11 @@ Knight
 */
 
 /datum/job/bos/f13knight
-	title = "Knight"
+	title = "Brotherhood Remnant Knight"
 	flag = F13KNIGHT
 	total_positions = 3
 	spawn_positions = 3
-	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
-	forbids = "TheBrotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "You are the Brotherhood Knight, the veritable lifeblood of your organization-and now, one of the last, best hopes for this tortured planet. The apocalypse has come again."
 	supervisors = "the Senior Knight, and Head Knight"
 	selection_color = "#95a5a6"
 
@@ -847,9 +831,7 @@ Initiate
 	flag = F13INITIATE
 	total_positions = 3
 	spawn_positions = 3
-	description = "Either recently inducted or born into the Brotherhood, you have since proven yourself worthy of assignment to the Chapter. You are to assist your superiors and receive training how they deem fit. You are NEVER allowed to leave the bunker without the direct supervision of a superior; doing so may result in exile or transferrence back the Valley."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "Either recently inducted or born into the Brotherhood, you have since proven yourself worthy of assignment to the Chapter. You are to assist your superiors and receive training how they deem fit. It's probably not a good idea to go outside alone, unless you enjoy being eaten."
 	supervisors = "the scribes, knights, or Paladins"
 	selection_color = "#95a5a6"
 
@@ -931,9 +913,7 @@ Off-Duty
 	flag = F13OFFDUTYBOS
 	total_positions = 3
 	spawn_positions = 3
-	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."	
-	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	description = "You've decided to slack off during the apocalypse. Surely this will have no negative reprecussions whatsoever."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
 

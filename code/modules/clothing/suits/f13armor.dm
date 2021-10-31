@@ -385,7 +385,7 @@
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
 	powered = FALSE
 	name = "salvaged NCR power armor"
-	desc = "(VIII) It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has brown paint trimmed along the edge and a two headed bear painted onto the chestplate."
+	desc = "(VIII) General Oliver's legacy. Because being slow is exactly what you want when being chased by zombie hordes, yeah."
 	icon_state = "ncrpowerarmor"
 	item_state = "ncrpowerarmor"
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
@@ -438,7 +438,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
-	desc = "(IX) Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
+	desc = "(IX) What good is a steel coffin against the innumerable hordes? Plenty good, actually."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
 	slowdown = 0.24
@@ -484,7 +484,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/tesla
 	name = "T-51b tesla armor"
-	desc = "(X) The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer, with the added benefit of tesla coils."
+	desc = "(X) The pinnacle of pre-war technology, and now, the steel backbone of humanity's defense. Or just a steel coffin, if you suck."
 	icon_state = "t51tesla"
 	item_state = "t51tesla"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25

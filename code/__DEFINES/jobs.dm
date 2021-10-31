@@ -1,16 +1,16 @@
 //Globa job defines
 
 //Defines Factions
-#define FACTION_NCR "NCR"
-#define FACTION_LEGION "Legion"
-#define FACTION_BROTHERHOOD "BOS"
+#define FACTION_NCR "NCR Remnants"
+#define FACTION_LEGION "Legion Remnants"
+#define FACTION_BROTHERHOOD "Brotherhood Remnants"
 #define FACTION_OASIS "Town"
 #define FACTION_ENCLAVE "Enclave"
-#define FACTION_WASTELAND "Wastelander"
+#define FACTION_WASTELAND "Survivors"
 #define FACTION_RAIDERS "Raiders"
 #define FACTION_TRIBE "Tribe"
 #define FACTION_VAULT "Vault"
-#define FACTION_FOLLOWERS "Followers"
+#define FACTION_FOLLOWERS "Followers Remnants"
 
 #define ENGSEC			(1<<0)
 

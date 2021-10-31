@@ -329,7 +329,7 @@
 //Carl Gustaf			Keywords: 10mm, Automatic, 36 rounds
 /obj/item/gun/ballistic/automatic/smg/cg45
 	name = "Carl Gustaf 10mm"
-	desc = "Post-war submachine gun made in workshops in Phoenix, a copy of a simple old foreign design."
+	desc = "All the workshops in Phoenix have been consumed, along with Phoenix itself. You will never again see one of these guns built. Which is probably a good thing, because they suck."
 	icon_state = "cg45"
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
@@ -571,7 +571,7 @@
 //Ratslayer									Keywords: UNIQUE, 5.56, 10/20/30 round magazine, Suppressed, Scoped, Extra damage +3
 /obj/item/gun/ballistic/automatic/varmint/ratslayer
 	name = "Ratslayer"
-	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
+	desc = "You know, it would have been nice if this was the Ghoulslayer instead. Just saying."
 	icon_state = "ratslayer"
 	item_state = "ratslayer"
 	extra_damage = 10
@@ -586,7 +586,7 @@
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
-	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel. With the NCR gone, that's the last you'll see of these guns."
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	extra_damage = 4
@@ -799,7 +799,7 @@
 //SKS				Keywords: LEGION, .308, Semi-auto, 10 rounds internal, Penetration +0.1
 /obj/item/gun/ballistic/automatic/m1garand/sks
 	name = "SKS"
-	desc = "Old hunting rifle taken from disovered stockpiles and refurbished in Phoenix workshops. The standard heavy rifle of the Legion, still rare. .308, semi-auto only, internal magazine."
+	desc = "If the Legion watches old zombie movies, now is probably the time to take some advice from them and start aiming for the head."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
@@ -821,7 +821,7 @@
 //DKS 501 sniper rifle				Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed +500, Fire delay +1
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
-	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
+	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert. Unfortunately, it's not very suited for dealing with a horde of ravenous ghouls, but you win some you lose some."
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
@@ -1035,7 +1035,7 @@
 //R84 Light machinegun				Keywords: NCR, 5.56mm, Automatic, 60 rounds, Damage decrease (bullethose)
 /obj/item/gun/ballistic/automatic/r84
 	name = "R84 LMG"
-	desc = "A light machinegun using 60 round belts fed from an ammobox, its one of the few heavy weapons designs NCR has produced."
+	desc = "A light machinegun using 60 round belts fed from an ammobox. Perfect for turning hordes of ghouls into swiss cheese."
 	icon_state = "R84"
 	item_state = "R84"
 	slowdown = 1

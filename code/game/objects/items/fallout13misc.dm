@@ -163,34 +163,34 @@
 
 /obj/item/flag/ncr
 	name = "NCR flag"
-	desc = "A flag with a two headed bear, the symbol of the New California Republic."
+	desc = "A flag with a two headed bear, the symbol of the New California Republic-not that it exists anymore.."
 	icon_state = "ncrflag"
 	item_state = "ncrflag"
 	faction = "NCR"
 
 /obj/item/flag/bos
 	name = "Brotherhood of Steel flag"
-	desc = "A red and black flag with a sword surrounded in gears and wings, in a dazzling gold."
+	desc = "A red and black flag with a sword surrounded in gears and wings, in a dazzling gold. Too bad this is the last Chapter on the planet."
 	icon_state = "bosflag"
 	item_state = "bosflag"
 	faction = FACTION_BROTHERHOOD
 
 /obj/item/flag/legion
 	name = "Legion flag"
-	desc = "A flag with a golden bull, the symbol of Caesar's Legion."
+	desc = "A flag with a golden bull, the symbol of what was once Caesar's Legion, before they were all eaten."
 	icon_state = "legionflag"
 	item_state = "legionflag"
 	faction = FACTION_LEGION
 
 /obj/item/flag/oasis
 	name = "Oasis flag"
-	desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis."
+	desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis-now likely one of the last holdouts of human life in the wasteland."
 	icon_state = "oasisflag"
 	item_state = "oasisflag"
 
 /obj/item/flag/followers
 	name = "Followers of the Apocalypse flag"
-	desc = "A white flag with the black Follower's of the Apocalpyse cross on it."
+	desc = "FOLLOWERS OPEN I'M INFECTED OPEN PLEASE"
 	icon_state = "followersflag"
 	item_state = "followersflag"
 	faction = FACTION_FOLLOWERS

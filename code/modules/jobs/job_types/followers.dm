@@ -5,7 +5,7 @@
 	access = list(ACCESS_FOLLOWER)
 	minimal_access = list(ACCESS_FOLLOWER)
 	forbids = "Aligning oneself with a faction exclusively. Acting in an aggressive and violent way on the offensive, not in defense. Abandoning your facility, peers, and community."
-	enforces = "Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
+	enforces = "Working with whoever you can to try to turn back the tide of this infection. Yes, this includes the Legion."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish medical outposts throughout the wasteland","Leadership recommends the following goal for this week: Experiment with and improve medical techniques and equipment", "Leadership recommends the following goal for this week: Replenish the operation's funds through donations and sales.")
 
 /datum/outfit/job/followers
@@ -36,7 +36,7 @@
 Administrator
 */
 /datum/job/followers/f13leadpractitioner
-	title = "Followers Administrator"
+	title = "Followers Remnant Administrator"
 	flag = F13LEADPRACTITIONER
 	department_flag = FOLLOWERS
 	head_announce = list("Security")
@@ -44,9 +44,8 @@ Administrator
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "No one."
-	description = "You are the Follower Administrator. You are the administrator for the on-site followers. While there is no tradtional chain of command that is used, you have been chosen to lead due to your expert knowledge in the field of medicine and other general knowledges. Make sure that the supplies donated are being put to use, help secure more donations, and fill in as needed whenever short staffed or if the clinic is busy."
+	description = "You are the Follower Administrator. You are the administrator for the Followers of the Apocalypse-and probably the last living Followers Administrator on the planet. Have fun with that one, chief."
 	forbids = "Causing harm to others except in times of self-defense."
-	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. Legion is our mistake and its our job to correct the mistake by speaking of the truth, but recognize that the best way to fight the legion is to teach them and sometimes that can mean helping them.Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
 	selection_color = "#FF95FF"
 	exp_requirements = 1500
 
@@ -138,16 +137,15 @@ Professor
 Practitioner
 */
 /datum/job/followers/f13practitioner
-	title = "Followers Doctor"
+	title = "Followers Remnant Doctor"
 	flag = F13PRACTITIONER
 	department_flag = FOLLOWERS
 	faction = "Followers"
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "Followers having no strict command structure, don't report to anyone- though they will look to the Administrator for guidance."
-	description ="You are a Followers Doctor. As a Followers Doctor it is your responsibility to maintain working order in the hospital and to manage its staff and to treat patients who come in regardless of whether or not they can afford care. Some Doctors are known for leaving the hospital to look for injured or those who need help who may not come to a health facility, however it is key that those who do travel around to give aid keep in touch with the rest of staff and if there are no other able physicans or chemist that they stay to offer the best aid possible."
+	description ="You are a Followers Doctor. Drapes scalpel hemostat hemostat hemostat hemostat hemostat cautery. Try not to be eaten by your patients mid-operation."
 	forbids = "Causing harm to others except in times of self-defense."
-	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. Legion is our mistake and its our job to correct the mistake by speaking of the truth, but recognize that the best way to fight the legion is to teach them and sometimes that can mean helping them.Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
 	selection_color = "#FFDDFF"
 	exp_requirements = 600
 
@@ -256,9 +254,8 @@ Follower Volunteer
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "Followers having no strict command structure, don't report to anyone- though they will look to the Administrator for guidance and the other Doctors as well."
-	description = "You are a Follower Volunteer. As a Volunteer, you make sure they get connected to the right people to find treatment, assist in the functions of the hospital, learn from senior Followers, and utilize first aid to the best of your capacity when Doctors are not present."
+	description = "You've chosen to volunteer for the Followers of the Apocalypse in Yuma to contend with the increase in patients. You know, the flesh-eating ones."
 	forbids = "Causing harm to others except in times of self-defense."
-	enforces = "Followers are not fond of the NCR due to their corruption, but they will help them. They dislike the Brotherhood for hoarding tech, but will make deals to work with them if it furthers the spreading of knowledge. Legion is our mistake and its our job to correct the mistake by speaking of the truth, but recognize that the best way to fight the legion is to teach them and sometimes that can mean helping them. Preaching humanitarianism and valuing human life. Assist and provide medical services to any who require it, regardless of faction. Provide free education for all those who are willing to learn."
 	selection_color = "#FFDDFF"
 	outfit = /datum/outfit/job/followers/f13followervolunteer
 	loadout_options = list(

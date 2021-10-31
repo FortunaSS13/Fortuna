@@ -26,7 +26,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis"
-	description = "You are the benevolent tyrant of Oasis, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
+	description = "You are the leadership of Oasis in these trying, ghoul-filled times. Try to be a beacon of leadership."
 	selection_color = "#d7b088"
 
 	exp_requirements = 1500
@@ -81,7 +81,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Mayor"
-	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
+	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor. Also, you kill the hordes with him."
 	selection_color = "#d7b088"
 	exp_requirements = 800
 
@@ -156,7 +156,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis Government"
-	description = "You are the Mayor's best friend, you helped them get where they are. While they handle civil matters, you've been rewarded with more hands-on work, as preferred. With your loyal patrolmen, you maintain your claim to authority by keeping the peace, and protecting the citizens from threats within and without. Never leave Oasis undefended, and don't let its people die out. You have nowhere left to go, if this town falls, so will you."
+	description = "You are the biggest iron in Oasis and probably the closest thing to 'the law' remaining on the planet. If the town falls, so does humanity. Try NOT to let it fall."
 	selection_color = "#d7b088"
 	exp_requirements = 1500
 
@@ -337,7 +337,7 @@ Mayor
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Government & Police Department"
-	description = "Growing up in the Oasis, you have an endless love for the sacred Oak, for nowhere in the valley is the soil as fertile, the bounty as rich. Behind the safety of the walls, you grow crops, medicines, and raise livestock. The community depends on you, you are a manifestation of the Oak’s will."
+	description = "You have long considered Oasis the cradle of civilization in the wastes. Now it is all that remains. Oh, and your farm. Your farm is here too. That's nice."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/den/f13farmer
@@ -390,7 +390,7 @@ Mayor
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Oasis Government & Police Department"
-	description = "Prospecting is a complicated business, some call it scrounging or looting, but there is more to it than sifting through rubble - few can boast the skills you possess in mining and delving through the ruins of the fallen empire. Not many survive this line of business, and the pay has always been uncertain, but perhaps today you'll strike gold."
+	description = "Prospecting is a complicated business, some call it scrounging or looting, but there is more to it than sifting through rubble - few can boast the skills you possess in mining and delving through the ruins of the fallen empire. Not many survive this line of business, and the pay has always been uncertain, but perhaps today you'll strike gold. Or be eaten by ghouls. Probably the second, honestly. This sucks."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/den/f13prospector
@@ -581,7 +581,7 @@ Mayor
 	total_positions = 8
 	spawn_positions = 8
 	supervisors = "Oasis Government & Police Department"
-	description = "You are a citizen living in the Town of Oasis - as the name suggests, it is a somewhat safe place amidst the chaos of the continent. Treat it as such, be sure to follow the laws of the land and do not associate with those who have a tendency not to, or you are likely to face exile. Remember that Oasis is your home, and that you should not be leaving to explore the Wastes."
+	description = "You are a citizen living in the Town of Oasis - as the name suggests, it is a somewhat safe place, especially now that innumerable hordes of the hungry damned batter on the gates. Contribute to its survival."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/den/f13settler
@@ -715,7 +715,7 @@ Mayor
 	flag = F13DETECTIVE
 	total_positions = 1
 	spawn_positions = 1
-	description = "As a Detective you are a private eye who assists clients to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the valley, but for finding answers. Your life is already over, make the ending mean something."
+	description = "Nobody needs a sleuth anymore. The culprit is always 'the giant hordes of innumerable ghouls.' God you need a smoke."
 	supervisors = "paying clients"
 	selection_color = "#dcba97"
 	outfit = /datum/outfit/job/oasis/f13detective

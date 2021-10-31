@@ -186,13 +186,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 // CENTURION
 
 /datum/job/CaesarsLegion/Legionnaire/f13centurion
-	title = "Legion Centurion"
+	title = "Legion Remnants Legate"
 	flag = F13CENTURION
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the camp commander and strongest soldier. Use your officers, the Decanii, to delegate tasks, make sure you lead and give orders. Take no disrespect, you are the dominus. If you prove a fool or weak, expect to be dispatched by a stronger subordinate."
-	supervisors = "the Legate"
+	description = "You were once the leader of this local encampment. Now? Caesar is dead. The Legion is dead. Mars has damned you all. This camp is all that remains of the Legion, and Yuma all that remains of humanity. On the bright side, now that Lanius is dead, you're technically the Legate!"
+	supervisors = "Nobody. You are all that's left."
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CENTURION
@@ -221,7 +221,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		H.mind.AddSpell(S)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	name = "Legion Centurion"
+	name = "Legion Remnant Legate"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id = /obj/item/card/id/dogtag/legcenturion
 	mask = /obj/item/clothing/mask/bandana/legion/legcenturion
@@ -238,7 +238,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/palacent
-	name = "Paladin-Slayer Centurion"
+	name = "Paladin-Slayer Legate"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
 	suit_store = /obj/item/gun/ballistic/automatic/m1919
@@ -248,7 +248,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/rangerhunter
-	name = "Ranger-Hunter Centurion"
+	name = "Ranger-Hunter Legate"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
@@ -284,12 +284,12 @@ commented out pending rework*/
 // VETERAN DECANUS
 
 /datum/job/CaesarsLegion/Legionnaire/f13decanvet
-	title = "Legion Veteran Decanus"
+	title = "Legion Remnant Veteran Decanus"
 	flag = F13DECANVET
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the Centurion, his second in command. Lead the camp, ensure its defended, keep track of the Explorers and use your veterans to their full potential."
-	supervisors = "the Centurion"
+	description = "You answer directly to the Legate, who is now, in lieu of the rest of the Legion being devoured, probably all that's left. Caesar is dead. Mars has damned you all. World is a fuck. Command your veterans, and try to preserve what little remains of mankind."
+	supervisors = "the Legate"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	exp_requirements = 900
@@ -355,12 +355,12 @@ commented out pending rework*/
 // PRIME DECANUS
 
 /datum/job/CaesarsLegion/Legionnaire/f13decan
-	title = "Legion Prime Decanus"
+	title = "Legion Remnant Prime Decanus"
 	flag = F13DECAN
 	total_positions = 1
 	spawn_positions = 1
-	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
-	supervisors = "the Veteran Decanus and the Centurion"
+	description = "A experienced officer, often commanding the camp. With the rest of the Legion outside of Yuma destroyed, the survival of humanity itself depends on you doing your job properly."
+	supervisors = "the Veteran Decanus and the Legate"
 	display_order = JOB_DISPLAY_ORDER_DECAN
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND)
@@ -430,12 +430,12 @@ commented out pending rework*/
 // RECRUIT DECANUS
 
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
-	title = "Legion Recruit Decanus"
+	title = "Legion Remnant Recruit Decanus"
 	flag = F13DECANREC
 	total_positions = 1
 	spawn_positions = 1
-	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
-	supervisors = "the Prime/Veteran Decanus and the Centurion"
+	description = "Once a mere junior officer, now, amidst this second apocalypse, you are...still a junior officer. Oh well. Lead your recruits. Try not to get them all eaten."
+	supervisors = "the Prime/Veteran Decanus and the Legate"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
 	exp_requirements = 600
@@ -506,12 +506,12 @@ commented out pending rework*/
 // VEXILLARIUS
 
 /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
-	title = "Legion Vexillarius"
+	title = "Legion Remnant Vexillarius"
 	flag = F13VEXILLARIUS
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
-	supervisors = "the Veteran Decanus and Centurion"
+	description = "You are a Veteran of proven bravery. With Caesar dead, the role falls to you to keep the morale of the camp alive."
+	supervisors = "the Veteran Decanus and Legate"
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 	exp_requirements = 720
@@ -578,12 +578,12 @@ commented out pending rework*/
 //EXPLORER
 
 /datum/job/CaesarsLegion/Legionnaire/f13explorer
-	title = "Legion Explorer"
+	title = "Legion Remnant Explorer"
 	flag = F13EXPLORER
 	total_positions = 2
 	spawn_positions = 2
-	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
-	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
+	description = "Mars has damned you all. Caesar is dead. The dead themselves rise to devour the living. Scout for the hordes and work to keep humanity alive"
+	supervisors = "the Veteran Decanus and Legate must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	exp_requirements = 300
@@ -658,8 +658,8 @@ commented out pending rework*/
 	flag = F13VETLEGIONARY
 	total_positions = 3
 	spawn_positions = 3
-	description = "A hardened warrior, obeying the orders from the Decanus and Centurion is second nature, as is fighting the profligates. If no officers are present, make sure the younger warriors act like proper Legionaires."
-	supervisors = "the Decani and Centurion"
+	description = "A hardened warrior, obeying the orders from the Decanus and Legate is second nature. Your experience will help you, when it comes time to face against the hordes."
+	supervisors = "the Decani and Legate"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	exp_requirements = 600
@@ -738,8 +738,8 @@ commented out pending rework*/
 	flag = F13LEGIONARY
 	total_positions = 4
 	spawn_positions = 4
-	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
-	supervisors = "the Decani and Centurion"
+	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who were once meant to build the future with blood and sacrifice for Caesar. There is no future now. Only death."
+	supervisors = "the Decani and Legate"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	exp_requirements = 120
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
@@ -818,8 +818,8 @@ commented out pending rework*/
 	flag = F13RECRUITLEG
 	total_positions = 5
 	spawn_positions = 5
-	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion. Respect the soldiers of higher rank."
-	supervisors = "the Decani and Centurion."
+	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, are expected to follow every whim of the Decanii and your Legate, and to top it off, ghouls are eating all of humanity."
+	supervisors = "the Decani and Legate."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 
@@ -886,12 +886,12 @@ commented out pending rework*/
 // SLAVEMASTER  Kind off duty, camp defender, making sure slaves and prisoners are in order.
 
 /datum/job/CaesarsLegion/Legionnaire/f13slavemaster
-	title = "Legion Slavemaster"
+	title = "Legion Remnant Slavemaster"
 	flag = F13SLAVEMASTER
 	total_positions = 1
 	spawn_positions = 1
-	description = " The Slavemaster is a legionnaire temporarily assigned to keeping slaves and prisoners in check."
-	supervisors = "the Centurion."
+	description = "This is the worst apocalypse EVER. You can't enslave zombies. All they do is bite."
+	supervisors = "the Legate."
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster
 	exp_requirements = 300
@@ -930,12 +930,12 @@ commented out pending rework*/
 // FORGE MASTER
 
 /datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Chainsaw, Extra materials, Blueprints
-	title = "Legion Forgemaster"
+	title = "Legion Remnant Forgemaster"
 	flag = F13CAMPFOLLOWER
 	total_positions = 1
 	spawn_positions = 1
 	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
-	supervisors = "the Centurion."
+	supervisors = "the Legate."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
 	exp_requirements = 300
@@ -983,8 +983,8 @@ commented out pending rework*/
 	flag = F13AUXILIA
 	total_positions = 2
 	spawn_positions = 2
-	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
-	supervisors = "the Centurion"
+	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion-now that it has been consumed by the hordes, their loyalty falls to the Legate."
+	supervisors = "the Legate"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
 	exp_requirements = 600

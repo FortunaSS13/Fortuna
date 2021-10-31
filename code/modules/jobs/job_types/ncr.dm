@@ -22,8 +22,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
-	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
-	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
+	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation. Deep frying things. Just because you are all that's left of the NCR doesn't mean you shouldn't act like a soldier, dammit."
+	enforces = "The Republic is dead. Kimball is dead. There is no hope."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
 
 /datum/outfit/job/ncr
@@ -142,13 +142,13 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // CAPTAIN
 
 /datum/job/ncr/f13captain
-	title = "NCR Captain"
+	title = "NCR Remnant Colonel"
 	flag = F13CAPTAIN
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
-	supervisors = "Colonel"
+	description = "You are the commanding officer of your company-and now that the rest of the NCRA has been devoured, you've given yourself a promotion to Colonel. No cool armor, though. Shame. Command your rangers and troopers. Try to hold the line."
+	supervisors = "Nobody. You are all that is left."
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
@@ -198,7 +198,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/elcapitan
-	name = "El Capitan"
+	name = "El Colonel"
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m14mm = 3,
@@ -223,8 +223,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. You are the XO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
-	supervisors = "Captain"
+	description = "You are the direct superior to the NCOs and Enlisted, and beneath the Colonel, who is now all that remains of the NCRA-and the NCR itself. Have fun with that one, chief."
+	supervisors = "Colonel"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
@@ -277,7 +277,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13SERGEANT
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
+	description = "You are the direct superior to the enlisted troops, who are now all that remains of the NCRA. Have fun, chief."
 	supervisors = "Lieutenant and Above"
 	selection_color = "#fff5cc"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
@@ -429,8 +429,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13VETRANGER
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
-	supervisors = "NCRA Captain, High Command"
+	description = "You answer directly to the Captain, who has now been promoted to Colonel in lieu of every last remaining member of the NCRA being eaten alive outside of Yuma. You are also the last living Veteran Ranger. Your objectives have not changed-do what the Colonel tells you to do, protect the innocent, eliminate slavers."
+	supervisors = "NCRA Colonel"
 	selection_color = "#ffeeaa"
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
@@ -505,11 +505,11 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // NCR Ranger
 
 /datum/job/ncr/f13ranger
-	title = "NCR Ranger"
+	title = "NCR Ranger Remnant"
 	flag = F13RANGER
 	total_positions = 2
 	spawn_positions = 2
-	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
+	description = "As an NCR Ranger, you are the premier special forces unit of the NCRA. You're also the last living Rangers, now that Camp Golf has been devoured."
 	supervisors = "Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER
@@ -622,11 +622,11 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // HEAVY TROOPER
 
 /datum/job/ncr/f13heavytrooper
-	title = "NCR Heavy Trooper"
+	title = "NCRA Remnant Heavy Trooper"
 	flag = F13HEAVYTROOPER
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the most elite of the enlisted, sergeant in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. General Oliver praises you and your other Heavy Troopers, prove to him you're no exception to the rule."
+	description = "General Oliver is dead. Your armor won't help you anymore. Hold the line."
 	supervisors = "Lieutenant and Above"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
@@ -658,7 +658,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // COMBAT ENGINEER
 
 /datum/job/ncr/f13combatengineer
-	title = "NCR Combat Engineer"
+	title = "NCRA Remnant Combat Engineer"
 	flag = F13COMBATENGINEER
 	total_positions = 1
 	spawn_positions = 1
@@ -750,11 +750,11 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // MILITARY POLICE
 
 /datum/job/ncr/f13mp
-	title = "NCR Military Police"
+	title = "NCRA Military Police"
 	flag = F13MP
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are NOT allowed to participate in front-line combat outside the base/embassy. You are tasked with the supervision of the NCRA to maintain internal order and disciplice and to prevent any warcrimes from happening."
+	description = "With the death of the NCR, anarchy reigns. Try to keep order inside of the camp. Good luck."
 	supervisors = "NCRA Officers"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
@@ -811,7 +811,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13combatmedic		// M1A1 Carbine, Survival knife
-	name = "NCR Combat Medic"
+	name = "NCRA Remnant Combat Medic"
 	jobtype = /datum/job/ncr/f13combatmedic
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
@@ -844,7 +844,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // CORPORAL
 
 /datum/job/ncr/f13corporal
-	title = "NCR Corporal"
+	title = "NCRA Remnant Corporal"
 	flag = F13CORPORAL
 	total_positions = 2
 	spawn_positions = 2
@@ -907,11 +907,11 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // TROOPER
 
 /datum/job/ncr/f13trooper
-	title = "NCR Trooper"
+	title = "NCRA Remnant Trooper"
 	flag = F13TROOPER
 	total_positions = 8
 	spawn_positions = 8
-	description = "You are the backbone of the NCR Army. Obey your the NCOs and officers, no matter if you are a conscript or a volounteer you are expected to follow military discipline."
+	description = "You are the backbone of the NCRA. You might be a volunteer, or a conscript-it does not matter now. Everything outside of Yuma is gone. The NCRA is dead. You are all that is left. God help you."
 	supervisors = "Corporals and Above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
@@ -974,8 +974,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13MEDICALOFFICER
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
-	supervisors = "Captain and Above"
+	description = "You are the lead medical professional in Camp Miller, and also the last living medical professional in the entire NCRA. Do your best to contain the infection."
+	supervisors = "Colonel and nobody else"
 	selection_color = "#fff5cc"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
@@ -1032,7 +1032,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the lead engineering professional in Camp Miller, you do not have any command authority beyond the logistical side. Your duties are to ensure your outpost is well defended, the armory is in order, and you always have supplies. Organize the rear echelon to offload the frontline officers and make things happen."
-	supervisors = "Captain and Above"
+	supervisors = "Colonel and nobody else, everyone's dead, Jim."
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
@@ -1086,7 +1086,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13REARECHELON
 	total_positions = 4
 	spawn_positions = 4
-	description = "You are the support element sent to assist the Camp Miller garrison. You are essential specialized support staff to help sustain the base via supply or specialized skills. You are not allowed to leave base unless given an explicit order by the CO or the current acting CO."
+	description = "You are the support element sent to assist the Camp Miller garrison. Count your lucky stars you made it here in time-everyone else has been eaten. You are next."
 	supervisors = "Logistics/Medical officer first, regular chain of command after that."
 	selection_color = "#fff5cc"
 	exp_type = EXP_TYPE_NCR

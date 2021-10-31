@@ -47,7 +47,7 @@
 	full_w_class = WEIGHT_CLASS_TINY
 	resistance_flags = FLAMMABLE
 	var/flavor_desc =	"A standard Nuka-Cola bottle cap featuring 21 crimps and ridges,\
-					A common unit of exchange, backed by water in the Hub."
+					A common unit of exchange, once backed by water in the Hub. Now they're just bottle caps."
 	var/value = CASH_CAP
 	var/flippable = TRUE
 	var/cooldown = 0
@@ -160,7 +160,7 @@
 	icon_state = "denarius"
 	flavor_desc =	"The inscriptions are in Latin,\n\
 		'Caesar Dictator' on the front and\n\
-		'Magnum Chasma' on the back."
+		'Magnum Chasma' on the back. Won't be seeing any more of these, now that Flagstaff is gone."
 	value = CASH_DEN * CASH_CAP
 	merge_type = /obj/item/stack/f13Cash/denarius
 
@@ -199,7 +199,7 @@
 	icon_state = "aureus"
 	flavor_desc = 	"The inscriptions are in Latin,\n\
 					'Aeternit Imperi' on the front and\n\
-					'Pax Per Bellum' on the back."
+					'Pax Per Bellum' on the back. Soon, there will be nobody left alive to speak Latin to understand how pretentious this is."
 	value = CASH_AUR * CASH_CAP
 	merge_type = /obj/item/stack/f13Cash/aureus
 
@@ -221,7 +221,7 @@
 /obj/item/stack/f13Cash/ncr
 	name = "NCR Dollar"
 	singular_name = "NCR Dollar"  /* same for denarius, we can pretend the legion can't latin properly */
-	flavor_desc = "Paper money used by the NCR."
+	flavor_desc = "Now that the NCR has been destroyed, their money is finally valuable enough to serve its intended purpose...toilet paper."
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "ncr" /* 10 points to whoever writes flavour text for each bill */
 	value = CASH_NCR * CASH_CAP
