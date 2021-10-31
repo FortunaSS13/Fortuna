@@ -248,8 +248,7 @@ GLOBAL_LIST_INIT(trash_tool, list(
 	/obj/item/screwdriver = 5,
 	/obj/item/wirecutters = 5,
 	/obj/item/wrench = 5,
-	/obj/item/stack/cable_coil/random = 5,
-	/obj/item/radio/off = 5
+	/obj/item/stack/cable_coil/random = 5
 ))
 
 GLOBAL_LIST_INIT(trash_misc, list(
