@@ -210,6 +210,7 @@
 	melee_damage_lower = 5 //severely reduced melee damage here because its silly to have a ranged mob also be a cqc master
 	melee_damage_upper = 10
 	extra_projectiles = 0 //removed extra projectiles to make these easier to deal with on super lowpop
+	stat_attack = CONSCIOUS
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -314,3 +315,22 @@
 	del_on_death = FALSE
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 	dextrous = TRUE
+
+//Junkers
+/mob/living/simple_animal/hostile/handy/gutsy/flamer
+	name = "Mr. Burnsy"
+	desc = "A modified mr. gutsy, equipped with a more precise flamer, ditching it's plasma weaponry."
+	color = "#B85C00"
+	projectilesound = 'sound/magic/fireball.ogg'
+	projectiletype = /obj/item/projectile/bullet/incendiary/shotgun
+	extra_projectiles = 1
+
+/mob/living/simple_animal/hostile/handy/assaultron/laser
+	name = "red eye assaultron"
+	desc = "A modified assaultron. It's eye has been outfitted with a deadly laser."
+	color = "#B85C00"
+	ranged = TRUE
+	retreat_distance = null
+	minimum_distance = 1
+	projectilesound = 'sound/weapons/laser.ogg'
+	projectiletype = /obj/item/projectile/beam/laser/lasgun
