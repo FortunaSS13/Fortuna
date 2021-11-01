@@ -518,11 +518,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "NCR Colonel"
 
 /obj/effect/landmark/start/f13/ncrcaptain
-	name = "NCR Captain"
+	name = "NCR Remnant Colonel"
 	icon_state = "NCR Captain"
 
 /obj/effect/landmark/start/f13/ncrlieutenant
-	name = "NCR Lieutenant"
+	name = "NCRA Remnant Lieutenant"
 	icon_state = "NCR Lieutenant"
 
 obj/effect/landmark/start/f13/ncrlogisticsofficer
@@ -538,15 +538,15 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrsergeant
-	name = "NCR Sergeant"
+	name = "NCR Remnant Sergeant"
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrheavytrooper
-	name = "NCR Heavy Trooper"
+	name = "NCRA Remnant Heavy Trooper"
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrcorporal
-	name = "NCR Corporal"
+	name = "NCRA Remnant Corporal"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrrep
@@ -554,19 +554,19 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrmp
-	name = "NCR Military Police"
+	name = "NCRA Military Police"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrcombatengineer
-	name = "NCR Combat Engineer"
+	name = "NCRA Remnant Combat Engineer"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrcombatmedic
-	name = "NCR Combat Medic"
+	name = "NCRA Remnant Combat Medic"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrtrooper
-	name = "NCR Trooper"
+	name = "NCRA Remnant Trooper"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrveteranranger
@@ -574,7 +574,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "NCR Veteran Ranger"
 
 /obj/effect/landmark/start/f13/ncrranger
-	name = "NCR Ranger"
+	name = "NCR Ranger Remnant"
 	icon_state = "NCR Patrol Ranger"
 
 /obj/effect/landmark/start/f13/ncrrearechelon
@@ -592,24 +592,24 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Legate"
 
 /obj/effect/landmark/start/f13/centurion
-	name = "Legion Centurion"
+	name = "Legion Remnants Legate"
 	icon_state = "Centurion"
 
 /obj/effect/landmark/start/f13/orator
 	name = "Legion Orator"
 
 /obj/effect/landmark/start/f13/slavemaster
-	name = "Legion Slavemaster"
+	name = "Legion Remnant Slavemaster"
 
 /obj/effect/landmark/start/f13/priestess
 	name = "Priestess of Mars"
 
 /obj/effect/landmark/start/f13/decanvet
-	name = "Legion Veteran Decanus"
+	name = "Legion Remnant Veteran Decanus"
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/vexillarius
-	name = "Legion Vexillarius"
+	name = "Legion Remnant Vexillarius"
 	icon_state = "Vexillarius"
 
 /obj/effect/landmark/start/f13/vetlegionary
@@ -617,7 +617,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/decan
-	name = "Legion Prime Decanus"
+	name = "Legion Remnant Prime Decanus"
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/legionary
@@ -625,7 +625,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/decanrec
-	name = "Legion Recruit Decanus"
+	name = "Legion Remnant Recruit Decanus"
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/recleg
@@ -633,7 +633,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/explorer
-	name = "Legion Explorer"
+	name = "Legion Remnant Explorer"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/venator
@@ -645,7 +645,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Wastelander"
 
 /obj/effect/landmark/start/f13/campfollower
-	name = "Legion Forgemaster"
+	name = "Legion Remnant Forgemaster"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/slave
@@ -659,39 +659,39 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Elder"
 
 /obj/effect/landmark/start/f13/headscribe
-	name = "Head Scribe"
+	name = "Brotherhood Remnant Head Scribe"
 	icon_state = "Head Scribe"
 
 /obj/effect/landmark/start/f13/seniorscribe
-	name = "Senior Scribe"
+	name = "Brotherhood Remnant Senior Scribe"
 	icon_state = "Head Scribe"
 
 /obj/effect/landmark/start/f13/sentinel
-	name = "Head Paladin"
+	name = "Brotherhood Remnant Head Paladin"
 	icon_state = "Paladin"
 
 /obj/effect/landmark/start/f13/knightcap
-	name = "Head Knight"
+	name = "Brotherhood Remnant Head Knight"
 	icon_state = "Initiate Knight"
 
 /obj/effect/landmark/start/f13/seniorknight
-	name = "Senior Knight"
+	name = "Brotherhood Remnant Senior Knight"
 	icon_state = "Initiate Knight"
 
 /obj/effect/landmark/start/f13/seniorpaladin
-	name = "Senior Paladin"
+	name = "Brotherhood Remnant Senior Paladin"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/paladin
-	name = "Paladin"
+	name = "Brotherhood Remnant Paladin"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/scribe
-	name = "Scribe"
+	name = "Brotherhood Remnant Scribe"
 	icon_state = "Scribe"
 
 /obj/effect/landmark/start/f13/Knight
-	name = "Knight"
+	name = "Brotherhood Remnant Knight"
 	icon_state = "Initiate Knight"
 
 /obj/effect/landmark/start/f13/initiate

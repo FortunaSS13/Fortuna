@@ -49,18 +49,18 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 
 GLOBAL_LIST_INIT(command_positions, list(
 	"Elder",
-	"Head Scribe",
-	"Head Paladin",
-	"Head Knight",
+	"Brotherhood Remnant Head Scribe",
+	"Brotherhood Remnant Head Paladin",
+	"Brotherhood Remnant Head Knight",
 
 	"Enclave Lieutenant",
 
-	"NCR Captain",
-	"NCR Lieutenant",
+	"NCR Remnant Colonel",
+	"NCRA Remnant Lieutenant",
 
 	"Legate",
-	"Legion Centurion",
-	"Legion Veteran Decanus",
+	"Legion Remnants Legate",
+	"Legion Remnant Veteran Decanus",
 
 	"Overseer",
 	"Chief of Security",
@@ -72,7 +72,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Shaman",
 	"Head Hunter",
 
-	"Followers Administrator",
+	"Followers Remnant Administrator",
 
 	"Den Mob Boss",
 	))
@@ -83,20 +83,20 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 //NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
-"Head Scribe",
+"Brotherhood Remnant Head Scribe",
 "Elder",
-"Head Paladin",
-"Head Knight",
-"Head Scribe",
-"Senior Paladin",
-"Paladin",
-"Senior Knight",
-"Knight",
-"Senior Scribe",
-"Scribe",
+"Brotherhood Remnant Head Paladin",
+"Brotherhood Remnant Head Knight",
+"Brotherhood Remnant Head Scribe",
+"Brotherhood Remnant Senior Paladin",
+"Brotherhood Remnant Paladin",
+"Brotherhood Remnant Senior Knight",
+"Brotherhood Remnant Knight",
+"Brotherhood Remnant Senior Scribe",
+"Brotherhood Remnant Scribe",
 "BoS Off-Duty",
 
-"Legion Centurion",
+"Legion Remnants Legate",
 "Legion Venator",
 "Legion Veteran Decanus",
 "Veteran Legionnaire",
@@ -122,9 +122,9 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Druid",
 "Hunter",
 
-"Followers Administrator",
-"Followers Doctor",
-"Followers Guard",
+"Followers Remnant Administrator",
+"Followers Remnant Doctor",
+"Followers Remnant Guard",
 
 "Cyborg",
 "Overseer",
@@ -136,15 +136,15 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Head Paladin",
-	"Head Knight",
-	"Head Scribe",
-	"Senior Paladin",
-	"Paladin",
-	"Senior Knight",
-	"Knight",
-	"Senior Scribe",
-	"Scribe",
+	"Brotherhood Remnant Head Paladin",
+	"Brotherhood Remnant Head Knight",
+	"Brotherhood Remnant Head Scribe",
+	"Brotherhood Remnant Senior Paladin",
+	"Brotherhood Remnant Paladin",
+	"Brotherhood Remnant Senior Knight",
+	"Brotherhood Remnant Knight",
+	"Brotherhood Remnant Senior Scribe",
+	"Brotherhood Remnant Scribe",
 	"Initiate",
 	"BoS Off-Duty",
 ))
@@ -166,23 +166,23 @@ GLOBAL_LIST_INIT(oasis_positions, list(
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
 	"Legion Orator",
-	"Legion Centurion",
-	"Legion Veteran Decanus",
+	"Legion Remnants Legate",
+	"Legion Remnant Veteran Decanus",
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Orator",
-	"Legion Centurion",
-	"Legion Veteran Decanus",
-	"Legion Prime Decanus",
-	"Legion Recruit Decanus",
-	"Legion Vexillarius",
-	"Legion Explorer",
+	"Legion Remnants Legate",
+	"Legion Remnant Veteran Decanus",
+	"Legion Remnant Prime Decanus",
+	"Legion Remnant Recruit Decanus",
+	"Legion Remnant Vexillarius",
+	"Legion Remnant Explorer",
 	"Veteran Legionnaire",
 	"Prime Legionnaire",
 	"Recruit Legionnaire",
-	"Legion Forgemaster",
-	"Legion Slavemaster",
+	"Legion Remnant Forgemaster",
+	"Legion Remnant Slavemaster",
 	"Legion Auxilia",
 	"Legion Slave",
 	"Legion Venator",
@@ -193,19 +193,19 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
-	"NCR Captain",
-	"NCR Lieutenant",
+	"NCR Remnant Colonel",
+	"NCRA Remnant Lieutenant",
 	"NCR Veteran Ranger",
 	"NCR Representative",
-	"NCR Ranger",
+	"NCR Ranger Remnant",
 	"NCR Sergeant First Class",
-	"NCR Heavy Trooper",
-	"NCR Military Police",
-	"NCR Sergeant",
-	"NCR Corporal",
-	"NCR Combat Medic",
-	"NCR Combat Engineer",
-	"NCR Trooper",
+	"NCRA Remnant Heavy Trooper",
+	"NCRA Military Police",
+	"NCR Remnant Sergeant",
+	"NCRA Remnant Corporal",
+	"NCRA Remnant Combat Medic",
+	"NCRA Remnant Combat Engineer",
+	"NCRA Remnant Trooper",
 	"NCR Medical Officer",
 	"NCR Logistics Officer",
 	"NCR Rear Echelon",
@@ -259,10 +259,10 @@ GLOBAL_LIST_INIT(tribal_positions, list(
 ))
 
 GLOBAL_LIST_INIT(followers_positions, list(
-	"Followers Administrator",
-	"Followers Doctor",
-	"Followers Guard",
-	"Followers Volunteer",
+	"Followers Remnant Administrator",
+	"Followers Remnant Doctor",
+	"Followers Remnant Guard",
+	"Followers Remnant Volunteer",
 	"Followers Scientist",
 ))
 
@@ -300,13 +300,13 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_FOLLOWERS = list("titles" = followers_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
-	EXP_TYPE_RANGER = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
+	EXP_TYPE_RANGER = list("titles" = list("NCR Veteran Ranger","NCR Ranger Remnant")),
 	EXP_TYPE_SCRIBE = list("titles" = list("Scribe")),
 	EXP_TYPE_DECANUS = list("titles" = list("Legion Decanus")),
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
-	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
+	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Remnant Administrator")),
+	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCRA Remnant Lieutenant","NCR Sergeant First Class","NCR Remnant Colonel", "NCR Veteran Ranger"))
 ))
 
 GLOBAL_LIST_INIT(exp_specialmap, list(

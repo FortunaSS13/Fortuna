@@ -66,7 +66,7 @@ Administrator
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 
 /datum/outfit/job/followers/f13leadpractitioner
-	name =	"Followers Administrator"
+	name =	"Followers Remnant Administrator"
 	jobtype =	/datum/job/followers/f13leadpractitioner
 	id =	/obj/item/card/id/silver
 	chemwhiz =	TRUE
@@ -183,7 +183,7 @@ Practitioner
 
 
 /datum/outfit/job/followers/f13practitioner
-	name =	"Followers Doctor"
+	name =	"Followers Remnant Doctor"
 	jobtype =	/datum/job/followers/f13practitioner
 	uniform =	/obj/item/clothing/under/f13/followers
 	id =	/obj/item/card/id/silver
@@ -247,7 +247,7 @@ Follower Volunteer
 */
 
 /datum/job/followers/f13followervolunteer
-	title = "Followers Volunteer"
+	title = "Followers Remnant Volunteer"
 	flag = F13FOLLOWERVOLUNTEER
 	department_flag = FOLLOWERS
 	faction = "Followers"
@@ -279,7 +279,7 @@ Follower Volunteer
 	//the follower volunteer doesn't need more access as it is already stored in the /datum/job/followers
 
 /datum/outfit/job/followers/f13followervolunteer
-	name = "Followers Volunteer"
+	name = "Followers Remnant Volunteer"
 	jobtype = /datum/job/followers/f13followervolunteer
 	id = 		/obj/item/card/id/silver
 	uniform = 	/obj/item/clothing/under/f13/followers
@@ -336,7 +336,7 @@ Follower Volunteer
 // Follower Guard
 
 /datum/job/followers/f13followerguard
-	title = "Followers Guard"
+	title = "Followers Remnant Guard"
 	flag = F13FOLLOWERGUARD
 	department_flag = FOLLOWERS
 	faction = "Followers"
@@ -357,7 +357,7 @@ Follower Volunteer
 	minimal_access = list(ACCESS_FOLLOWER, ACCESS_MILITARY)
 
 /datum/outfit/job/followers/f13followerguard
-	name =	"Followers Guard"
+	name =	"Followers Remnant Guard"
 	jobtype =	/datum/job/followers/f13followerguard
 	belt =	/obj/item/storage/belt/military/followers
 	id =	/obj/item/card/id/silver

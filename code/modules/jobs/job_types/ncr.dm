@@ -219,7 +219,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // LIEUTENANT
 
 /datum/job/ncr/f13lieutenant
-	title = "NCR Lieutenant"
+	title = "NCRA Remnant Lieutenant"
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
@@ -273,7 +273,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 // SERGEANT
 
 /datum/job/ncr/f13sergeant
-	title = "NCR Sergeant"
+	title = "NCR Remnant Sergeant"
 	flag = F13SERGEANT
 	total_positions = 2
 	spawn_positions = 2
