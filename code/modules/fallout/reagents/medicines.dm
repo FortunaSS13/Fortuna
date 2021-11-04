@@ -58,7 +58,7 @@
 	description = "Rapidly heals damage when injected. A poor man's stimpak."
 	reagent_state = LIQUID
 
-/datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/stimpak/imitation/on_mob_life(mob/living/carbon/M)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
 		metabolization_rate = 1000 * REAGENTS_METABOLISM //instant metabolise if it won't help you, prevents prehealing before combat
 	M.adjustBruteLoss(-2.5*REAGENTS_EFFECT_MULTIPLIER)
