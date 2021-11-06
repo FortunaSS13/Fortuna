@@ -86,7 +86,7 @@
 		R.use(4)		
 
 		if(!covered)
-			new /obj/effect/spawner/lootdrop/f13/weapon/gun/random(src.loc)
+			new /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low(src.loc)
 			to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
 
 		covered = TRUE
@@ -114,7 +114,7 @@
 		W.use(4)		
 
 		if(!covered)
-			new /obj/effect/spawner/lootdrop/f13/weapon/gun/random(src.loc)
+			new /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low(src.loc)
 			to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
 
 		covered = TRUE
