@@ -180,7 +180,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	bare_wound_bonus = -14
 
 // 3 ricochets, more than enough to kill anything that moves
-/obj/projectile/bullet/a357/ricochet
+/obj/item/projectile/bullet/a357/ricochet
 	name = ".357 ricochet bullet"
 	damage = 30
 	armour_penetration = 0.15
