@@ -57,13 +57,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/vault)
-"acG" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/f13/underground/cave)
 "acN" = (
 /obj/structure/chair/stool{
 	dir = 8;
@@ -694,8 +687,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/box,
-/obj/structure/nest/protectron{
-	radius = 30
+/obj/structure/nest/securitron{
+	max_mobs = 4;
+	spawn_time = 30
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
@@ -730,7 +724,7 @@
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "aQB" = (
@@ -1564,6 +1558,11 @@
 /obj/structure/flora/junglebush/b,
 /turf/open/water,
 /area/f13/bunker)
+"bUJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/bunker)
 "bUN" = (
 /obj/machinery/door/airlock/security{
 	name = "Brig";
@@ -2089,7 +2088,7 @@
 "cFH" = (
 /obj/structure/rack,
 /obj/item/holosign_creator/security,
-/obj/item/gun/energy/laser/wattz,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -3355,6 +3354,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/engine,
 /area/f13/vault)
+"ejj" = (
+/obj/machinery/button/door{
+	id = 1349;
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/bunker)
 "ejG" = (
 /obj/structure/simple_door/tent,
 /turf/open/indestructible/ground/outside/dirt,
@@ -3525,7 +3531,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
 "evR" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "ewu" = (
@@ -3657,7 +3663,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/hooded/wintercoat/security,
 /obj/item/storage/backpack/security,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -5005,7 +5011,7 @@
 	desc = "After YEARS of research, prototyping, and testing, the brotherhood created the sequel to the table. Advanced flat surface technology at work!";
 	name = "advanced table"
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/unique,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "gqm" = (
@@ -5816,7 +5822,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/unique,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "hlY" = (
@@ -6079,7 +6085,7 @@
 	desc = "After YEARS of research, prototyping, and testing, the brotherhood created the sequel to the table. Advanced flat surface technology at work!";
 	name = "advanced table"
 	},
-/obj/effect/spawner/lootdrop/f13/armor/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "hBK" = (
@@ -6251,7 +6257,7 @@
 /area/f13/underground/cave)
 "hMy" = (
 /obj/structure/table/glass,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "hNJ" = (
@@ -6438,7 +6444,7 @@
 /area/f13/vault)
 "idi" = (
 /obj/effect/decal/remains/human,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "idu" = (
@@ -6449,6 +6455,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/bunker)
+"ien" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
+/turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "ies" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6567,10 +6578,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/vault)
 "ina" = (
-/obj/item/gun/energy/laser/aer9,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
+/obj/machinery/door/poddoor/ert{
+	id = 1349
 	},
+/turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "inP" = (
 /obj/structure/mirror,
@@ -7622,8 +7633,10 @@
 /turf/open/floor/plasteel/neutral,
 /area/f13/vault)
 "jQJ" = (
-/obj/structure/wreck/trash/machinepile,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/doorButtons/vaultButton{
+	id = 2
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "jRj" = (
@@ -7745,7 +7758,7 @@
 /area/f13/vault)
 "kbS" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -8142,7 +8155,7 @@
 /obj/structure/chair/office/light{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
@@ -8815,7 +8828,7 @@
 	},
 /area/f13/wasteland)
 "luZ" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /obj/effect/decal/remains/human,
 /turf/open/water,
 /area/f13/underground/cave)
@@ -9178,7 +9191,7 @@
 "lZM" = (
 /obj/item/trash/f13/dandyapples,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier7,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
 "lZS" = (
@@ -9192,7 +9205,7 @@
 "maf" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/unique,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
 /turf/open/floor/pod/dark,
 /area/f13/underground/cave)
 "mao" = (
@@ -9698,11 +9711,11 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "reddirtyfull"
 	},
@@ -10934,7 +10947,7 @@
 	},
 /area/f13/vault)
 "ogo" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "ogw" = (
@@ -11086,7 +11099,7 @@
 "orx" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/pod/dark,
 /area/f13/underground/cave)
 "orV" = (
@@ -11134,7 +11147,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/vault)
 "ouy" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "ouI" = (
@@ -11518,7 +11531,7 @@
 /area/f13/bunker)
 "oUE" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "oUH" = (
@@ -11535,8 +11548,10 @@
 	},
 /area/f13/bunker)
 "oVK" = (
-/obj/structure/vault_door/old,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/vault_door/old{
+	icon_state = "oldopen"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "oWk" = (
@@ -11746,7 +11761,7 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
 "piW" = (
@@ -12241,7 +12256,7 @@
 "pSy" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/tier4,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 1
@@ -12319,8 +12334,8 @@
 /area/f13/bunker)
 "pWt" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/armor/random_high,
-/obj/effect/spawner/lootdrop/f13/armor/random_high,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "pXf" = (
@@ -12696,7 +12711,7 @@
 "qxc" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -13094,7 +13109,9 @@
 	},
 /area/f13/bunker)
 "qTX" = (
-/obj/structure/nest/assaultron,
+/obj/structure/nest/assaultron{
+	max_mobs = 3
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "qUc" = (
@@ -13233,7 +13250,7 @@
 /area/f13/bunker)
 "rbT" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "rcL" = (
@@ -13740,7 +13757,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "rEj" = (
@@ -13825,7 +13842,7 @@
 "rHD" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "rHL" = (
@@ -13958,7 +13975,7 @@
 /obj/item/clothing/under/f13/vault{
 	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults. It's made of sturdy leather.<br>This particular jumpsuit has the number 132 on the back."
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
 "rSc" = (
@@ -14370,9 +14387,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/f13/mre,
 /obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "sCd" = (
@@ -14515,7 +14532,7 @@
 /area/f13/bunker)
 "sNT" = (
 /obj/structure/table/wood/settler,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
 /area/f13/underground/cave)
 "sOK" = (
@@ -15825,7 +15842,7 @@
 /area/f13/bunker)
 "uJM" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "uKd" = (
@@ -17737,7 +17754,7 @@
 /area/f13/bunker)
 "xaJ" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -18451,6 +18468,7 @@
 "xWl" = (
 /obj/structure/rack,
 /obj/machinery/light,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -33240,7 +33258,7 @@ xKX
 lXO
 laE
 qqm
-ina
+laE
 mFc
 xKX
 hqJ
@@ -34784,7 +34802,7 @@ qCr
 xRY
 vtn
 dMU
-xRY
+xKX
 ebT
 vtn
 pxN
@@ -35298,7 +35316,7 @@ qAC
 vtn
 vtn
 lAp
-xRY
+xKX
 nnF
 vtn
 vtn
@@ -40168,7 +40186,7 @@ qCr
 vtn
 vtn
 qCr
-xpJ
+xKX
 bSg
 pVK
 xpJ
@@ -40243,7 +40261,7 @@ pxN
 pxN
 kxj
 qCr
-raL
+vtn
 vtn
 pxN
 vtn
@@ -40497,9 +40515,9 @@ vtn
 vtn
 xRY
 xRY
-raL
 vtn
-raL
+vtn
+bUJ
 vtn
 pxN
 vdq
@@ -40682,7 +40700,7 @@ qAC
 xRY
 uAn
 qCr
-pVK
+jON
 aVC
 xpJ
 qsf
@@ -40757,7 +40775,7 @@ vtn
 pxN
 raL
 qCr
-raL
+vtn
 vtn
 rVz
 vtn
@@ -41191,9 +41209,9 @@ xKX
 xKX
 xKX
 xKX
-wUe
-wUe
-wUe
+ina
+ina
+ina
 xKX
 xKX
 xKX
@@ -41448,9 +41466,9 @@ heT
 xKX
 xKX
 xKX
-wUe
-wUe
-wUe
+ina
+ina
+ina
 xKX
 xKX
 xKX
@@ -41713,7 +41731,7 @@ lwP
 jON
 qau
 wxC
-xpJ
+ejj
 hVK
 bFa
 xpJ
@@ -47876,7 +47894,7 @@ oUE
 rDE
 pWt
 hlU
-oUE
+ien
 aNv
 fyC
 xKX
@@ -58484,7 +58502,7 @@ aRY
 hmv
 xyb
 kbS
-acG
+kbS
 uIZ
 iKL
 uIZ

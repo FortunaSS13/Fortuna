@@ -445,7 +445,7 @@
 			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 1,
 			)
 
-/obj/effect/spawner/lootdrop/f13/armor/random_high
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
 	name = "high tier random armor loot"
 	lootcount = 1
 
