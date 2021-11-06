@@ -8,7 +8,7 @@
 /obj/item/ammo_casing/a357/ricochet
 	name = ".357 ricochet bullet casing"
 	desc = "A .357 ricochet bullet casing."
-	projectile_type = /obj/projectile/bullet/a357/ricochet
+	projectile_type = /obj/item/projectile/bullet/a357/ricochet
 
 
 // .38 special
