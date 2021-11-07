@@ -5099,7 +5099,7 @@
 "cnX" = (
 /obj/structure/nest/protectron{
 	layer = 3;
-	max_mobs = 2;
+	max_mobs = 1;
 	pixel_y = 20
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
@@ -6082,6 +6082,12 @@
 /obj/item/storage/money_stack/legion,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
+"cOj" = (
+/obj/structure/table/wood/settler,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/turf/open/floor/wood/f13/oak,
+/area/f13/bar)
 "cOk" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -12381,7 +12387,8 @@
 /obj/structure/nest/raider{
 	max_mobs = 1;
 	pixel_x = -1;
-	pixel_y = 29
+	pixel_y = 29;
+	spawn_time = 10
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
@@ -15066,6 +15073,15 @@
 "gIH" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/wood/f13/oak,
+/area/f13/building)
+"gIW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/mob/living/simple_animal/hostile/handy,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
 /area/f13/building)
 "gIZ" = (
 /obj/structure/rack,
@@ -21414,11 +21430,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/nest/protectron{
-	layer = 3;
-	max_mobs = 1;
-	pixel_y = 20
-	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building)
 "jts" = (
@@ -27756,6 +27767,7 @@
 /area/f13/building)
 "mrY" = (
 /obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/indestructible/ground/outside/ruins{
 	dir = 10;
 	icon_state = "rubble"
@@ -38202,11 +38214,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ryS" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain2bottom"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/wasteland)
+/mob/living/simple_animal/hostile/eyebot,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "ryT" = (
 /obj/structure/chair/wood/worn{
 	dir = 8
@@ -38910,7 +38923,7 @@
 	max_mobs = 3;
 	pixel_x = -1;
 	pixel_y = 29;
-	spawn_time = 20
+	spawn_time = 30
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
@@ -38960,7 +38973,7 @@
 "rTO" = (
 /obj/structure/nest/raider/ranged{
 	pixel_y = -32;
-	spawn_time = 20
+	spawn_time = 10
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop0"
@@ -42588,6 +42601,18 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/ncr)
+"tEZ" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/mob/living/simple_animal/hostile/eyebot,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "tFn" = (
 /obj/structure/spider/stickyweb,
 /obj/machinery/light/broken,
@@ -46832,6 +46857,7 @@
 "vDm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/bar)
 "vDq" = (
@@ -47030,6 +47056,7 @@
 "vHb" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/f13/brahmin,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "vHe" = (
@@ -47732,6 +47759,12 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
+"vYL" = (
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright0"
+	},
+/area/f13/wasteland)
 "vYN" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -50877,6 +50910,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
+"xyC" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2left"
+	},
+/area/f13/wasteland)
 "xyX" = (
 /obj/structure/closet/fridge/standard,
 /turf/open/floor/wood/f13/oak,
@@ -69291,7 +69330,7 @@ ykH
 kBU
 xuy
 uBx
-uBx
+cOj
 xuy
 xuy
 ofS
@@ -79006,7 +79045,7 @@ dkF
 jnX
 uRJ
 jTq
-bMg
+mTy
 fTz
 dVb
 jMC
@@ -82156,7 +82195,7 @@ bFJ
 bFJ
 bFJ
 bFJ
-gdY
+xyC
 gdY
 gdY
 uaf
@@ -82411,11 +82450,11 @@ ees
 ees
 ees
 ees
+kKo
 ees
+vYL
 ees
-ees
-ees
-ees
+kKo
 ees
 ees
 ees
@@ -83182,7 +83221,7 @@ dmL
 sgz
 qQV
 sgz
-ryS
+kjQ
 fDz
 ehN
 ehN
@@ -97748,7 +97787,7 @@ gjP
 qnE
 qnE
 ieQ
-skq
+cnX
 kqn
 pcG
 pcG
@@ -104179,7 +104218,7 @@ tFU
 pIM
 bQX
 uEj
-bQX
+ryS
 ept
 bQX
 bBZ
@@ -104451,7 +104490,7 @@ qnt
 tQK
 xPD
 dit
-bfO
+otv
 gtD
 otv
 izb
@@ -104948,7 +104987,7 @@ kZQ
 jgF
 tFU
 jto
-bQX
+ryS
 ept
 eqC
 koe
@@ -105224,7 +105263,7 @@ rKC
 dit
 otv
 nxZ
-uOD
+tEZ
 uOD
 dCb
 qvQ
@@ -105479,7 +105518,7 @@ jUl
 wGC
 wQk
 dit
-bfO
+gIW
 qnb
 otv
 kYQ

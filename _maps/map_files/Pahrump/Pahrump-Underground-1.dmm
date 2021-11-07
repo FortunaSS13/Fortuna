@@ -353,7 +353,7 @@
 /area/f13/caves)
 "anW" = (
 /obj/machinery/button/door{
-	id = "soup";
+	id = "salad";
 	name = "Door Control";
 	pixel_y = -26
 	},
@@ -363,12 +363,12 @@
 /turf/closed/mineral/random/high_chance,
 /area/f13/caves)
 "aon" = (
-/obj/machinery/door/poddoor/preopen{
-	id = soup
-	},
 /obj/effect/mine/stun,
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood,
+/obj/machinery/door/poddoor{
+	id = "salad"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "aoq" = (
@@ -397,7 +397,7 @@
 /area/f13/den)
 "apa" = (
 /obj/machinery/button/door{
-	id = "soup";
+	id = "salad";
 	name = "Door Control";
 	pixel_y = 26
 	},
@@ -11741,8 +11741,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "gNC" = (
-/obj/structure/nest/supermutant{
-	spawn_time = 200
+/obj/structure/nest/supermutant/melee{
+	max_mobs = 1;
+	spawn_time = 10
 	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -13249,7 +13250,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/caves)
 "hQG" = (
-/mob/living/simple_animal/hostile/deathclaw/mother,
+/obj/structure/nest/deathclaw/mother,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "hQS" = (
@@ -15285,10 +15286,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"jwA" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "jwZ" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtyfull"
@@ -29310,6 +29307,7 @@
 /area/f13/caves)
 "twj" = (
 /obj/machinery/button/door{
+	id = "room54";
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
@@ -75450,7 +75448,7 @@ aBb
 aBb
 aBb
 wMr
-jwA
+rZF
 aBb
 tMD
 aBb

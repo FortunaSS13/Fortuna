@@ -50,9 +50,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "bR" = (
-/obj/structure/statue/sandstone/assistant,
-/turf/open/floor/mineral/gold,
-/area/f13/caves)
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "bU" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf,
 /obj/structure/spacevine{
@@ -165,7 +167,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 5
 	},
 /turf/open/water,
@@ -221,7 +223,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
 "gv" = (
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "gy" = (
@@ -263,7 +265,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -385,7 +387,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "ku" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/water,
@@ -459,7 +461,7 @@
 	},
 /area/f13/bunker)
 "my" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 9
 	},
 /turf/open/water,
@@ -502,7 +504,7 @@
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -520,7 +522,7 @@
 "of" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/grass/wasteland,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -618,7 +620,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "sk" = (
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "sl" = (
@@ -699,13 +701,13 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "ux" = (
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/water,
 /area/f13/bunker)
 "uP" = (
@@ -746,16 +748,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "vH" = (
-/obj/item/coin/gold,
-/turf/open/floor/mineral/gold,
-/area/f13/caves)
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "vS" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_2";
 	pixel_x = 25;
 	pixel_y = 18
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/grass,
@@ -802,7 +806,7 @@
 /area/f13/radiation)
 "xE" = (
 /obj/effect/decal/remains/human,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -831,7 +835,7 @@
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -929,7 +933,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Av" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/grass,
@@ -1014,7 +1018,7 @@
 	name = "vines"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -1027,7 +1031,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/grass,
@@ -1078,7 +1082,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -1099,12 +1103,12 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "EJ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -1278,8 +1282,9 @@
 /turf/open/floor/plasteel/stairs,
 /area/f13/bunker)
 "JJ" = (
-/obj/structure/fluff/railing{
-	dir = 6
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
 	},
 /turf/open/water,
 /area/f13/bunker)
@@ -1296,7 +1301,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -1330,7 +1335,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "KL" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/water,
@@ -1403,8 +1408,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Nj" = (
-/turf/open/floor/mineral/gold,
-/area/f13/caves)
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
 "Nm" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/indestructible/ground/inside/mountain,
@@ -1446,14 +1454,14 @@
 /area/f13/bunker)
 "Or" = (
 /obj/structure/glowshroom/single,
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "Ou" = (
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/water,
@@ -1472,7 +1480,7 @@
 /area/f13/tunnel)
 "PY" = (
 /mob/living/simple_animal/hostile/bloatfly,
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "Qv" = (
@@ -1556,7 +1564,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -1658,8 +1666,9 @@
 /area/f13/tunnel)
 "VQ" = (
 /obj/structure/flora/wasteplant/wild_xander,
-/obj/structure/fluff/railing{
-	dir = 10
+/obj/structure/railing{
+	dir = 10;
+	layer = 4.1
 	},
 /turf/open/water,
 /area/f13/bunker)
@@ -1673,7 +1682,7 @@
 /area/f13/caves)
 "Ws" = (
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -3613,9 +3622,9 @@ vp
 ZX
 ZX
 Kc
-vH
-Nj
-Nj
+ZX
+ZX
+ZX
 ZX
 Kc
 ZX
@@ -3675,9 +3684,9 @@ XS
 mG
 ZX
 Kc
-Nj
-bR
-Nj
+ZX
+ZX
+ZX
 ZX
 ZX
 ZX
@@ -3737,9 +3746,9 @@ XS
 Vi
 Kc
 Kc
-Nj
-vH
-Nj
+ZX
+ZX
+ZX
 ZX
 ZX
 ZX
@@ -4187,8 +4196,8 @@ Iz
 yZ
 of
 Cz
-ms
-ms
+bR
+bR
 Ge
 nZ
 kj
@@ -4197,7 +4206,7 @@ nJ
 Ws
 Ws
 DK
-ms
+bR
 Xm
 Kr
 zE
@@ -4313,7 +4322,7 @@ kv
 kv
 FZ
 FZ
-Xa
+vH
 Ye
 GJ
 Ey
@@ -4375,7 +4384,7 @@ kv
 FZ
 kv
 kv
-Xa
+vH
 Ye
 GJ
 Ey
@@ -4685,7 +4694,7 @@ FZ
 kv
 kv
 kv
-Xa
+vH
 Ye
 GJ
 Ey
@@ -4753,7 +4762,7 @@ GJ
 zG
 EJ
 vS
-NO
+Nj
 hs
 hs
 Xm
