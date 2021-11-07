@@ -1036,8 +1036,11 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "blC" = (
-/obj/structure/vault_door/old,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/vault_door/old{
+	density = 0;
+	icon_state = "oldopen"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "blH" = (
@@ -11550,6 +11553,7 @@
 "oVK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/vault_door/old{
+	density = 0;
 	icon_state = "oldopen"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
