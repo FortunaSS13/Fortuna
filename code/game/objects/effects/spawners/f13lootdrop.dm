@@ -747,7 +747,6 @@
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/police_pistol,
 				/obj/effect/spawner/bundle/f13/m1carbine
-				/obj/effect/spawner/bundle/f13/guns/commando,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
@@ -771,6 +770,7 @@
 				/obj/effect/spawner/bundle/f13/trenchshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
 				/obj/effect/spawner/bundle/f13/thatgun,
+				/obj/effect/spawner/bundle/f13/guns/commando,
 				/obj/item/gun/ballistic/automatic/smg/american180
 				)
 
