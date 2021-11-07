@@ -98,7 +98,7 @@
 
 /obj/item/reagent_containers/food/snacks/pie/bearypie
 	name = "beary pie"
-	desc = "Was the pun really worth killing a Yao Guai over?"
+	desc = "No brown bears, this is a good sign."
 	icon_state = "bearypie"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 3)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 3)

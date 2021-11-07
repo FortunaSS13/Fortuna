@@ -380,20 +380,6 @@
 		return
 	new/obj/effect/decal/cleanable/salt(T)
 
-/datum/reagent/consumable/brocjuice
-	name = "Broc Flower Juice"
-	description = "The juice of a ground-up broc flower."
-	nutriment_factor = 1 * REAGENTS_METABOLISM
-	color = "#302000" // rgb: 48, 32, 0
-	taste_description = "flowers"
-
-/datum/reagent/consumable/xanderjuice
-	name = "Xander Root Juice"
-	description = "Ground up xander root, mashed into juicy pulp."
-	nutriment_factor = 1 * REAGENTS_METABOLISM
-	color = "#302000" // rgb: 48, 32, 0
-	taste_description = "dirt"
-
 /datum/reagent/consumable/blackpepper
 	name = "Black Pepper"
 	description = "A powder ground from peppercorns. *AAAACHOOO*"
@@ -525,7 +511,7 @@
 	nutriment_factor = 12 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_UNCOMMON
 	color = "#302000" // rgb: 48, 32, 0
-	taste_description = "corn"
+	taste_description = "slime"
 
 /datum/reagent/consumable/cornoil/reaction_turf(turf/open/T, reac_volume)
 	if (!istype(T))

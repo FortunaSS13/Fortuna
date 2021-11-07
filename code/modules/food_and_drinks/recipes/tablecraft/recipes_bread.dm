@@ -22,7 +22,7 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/store/bread/meat
 	subcategory = CAT_BREAD
-
+/*
 /datum/crafting_recipe/food/banananutbread
 	name = "Banana nut bread"
 	reqs = list(
@@ -44,7 +44,6 @@
 	result = /obj/item/reagent_containers/food/snacks/store/bread/spidermeat
 	subcategory = CAT_BREAD
 	
-/*
 /datum/crafting_recipe/food/xenomeatbread
 	name = "Xenomeat bread"
 	reqs = list(
@@ -63,7 +62,7 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/jelliedtoast/slime
 	subcategory = CAT_BREAD
-*/
+
 /datum/crafting_recipe/food/butterdog
 	name = "Butterdog"
 	reqs = list(
@@ -81,6 +80,7 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/twobread
 	subcategory = CAT_BREAD
+*/
 
 /datum/crafting_recipe/food/tofubread
 	name = "Tofu bread"
