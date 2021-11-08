@@ -342,13 +342,6 @@
 	build_path = /obj/item/ammo_box/a762box/rubber
 	category = list("initial", "Basic Ammo")
 
-/datum/design/ammolathe/
-	name = "5.56mm rubber ammo box"
-	id = "a556rubber"
-	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/ammo_box/a556/rubber
-	category = list("initial", "Basic Ammo")
-
 /* --Tier 3 Ammo and Magazines -- */
 //Tier 3 Magazines
 
@@ -578,7 +571,7 @@
 
 /datum/design/ammolathe/a762uraniumtipped
 	name = "7.62 uranium-tipped ammo box"
-	id = "a556uranium"
+	id = "a762uranium"
 	materials = list(/datum/material/iron = 40000, /datum/material/titanium = 15000, /datum/material/blackpowder = 5000, /datum/material/uranium = 4000)
 	build_path = /obj/item/ammo_box/a762box/uraniumtipped
 	category = list("initial", "Advanced Ammo")
