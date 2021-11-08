@@ -1272,7 +1272,6 @@
 	zoom_out_amt = 13
 	can_scope = FALSE
 
-
 // BETA STUFF // =Obsolete
 /obj/item/gun/ballistic/automatic/smgtesting
 	name = "SMG"
