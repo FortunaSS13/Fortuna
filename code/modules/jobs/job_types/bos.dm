@@ -407,6 +407,8 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 3,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 	)
 
 /datum/outfit/loadout/spaladinc
@@ -415,6 +417,8 @@ Star Paladin
 		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23=1,
+		/obj/item/ammo_box/magazine/m45exp=2,
 	)
 
 /*
@@ -765,7 +769,9 @@ Knight
 	/datum/outfit/loadout/knighta, //AER9
 	/datum/outfit/loadout/knightb, //R82
 	/datum/outfit/loadout/knightc,
-	/datum/outfit/loadout/knightd
+	/datum/outfit/loadout/knightd,
+	/datum/outfit/loadout/knighte,
+	/datum/outfit/loadout/knightf
 	)
 
 	outfit = /datum/outfit/job/bos/f13knight
@@ -819,11 +825,19 @@ Knight
 	name = "Junior Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/automatic/delisle/commando=1,
-		/obj/item/ammo_box/magazine/m45exp=2,
+		/obj/item/gun/ballistic/automatic/service/r82=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		)
 
 /datum/outfit/loadout/knightc
+	name = "Junior Knight-Infiltrator"
+	backpack_contents = list(
+		/obj/item/clothing/accessory/bos/juniorknight=1,
+		/obj/item/gun/ballistic/automatic/smg/mp5,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		)
+
+/datum/outfit/loadout/knightd
 	name = "Footknight"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight=1,
@@ -831,12 +845,20 @@ Knight
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		)
 
-/datum/outfit/loadout/knightd
+/datum/outfit/loadout/knighte
 	name = "Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/automatic/delisle/commando=1,
-		/obj/item/ammo_box/magazine/m45exp=2,
+		/obj/item/gun/ballistic/automatic/service/r82=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
+		)
+
+/datum/outfit/loadout/knightf
+	name = "Knight-Infiltrator"
+	backpack_contents = list(
+		/obj/item/clothing/accessory/bos/knight=1,
+		/obj/item/gun/ballistic/automatic/smg/mp5,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		)
 /*
 Initiate
@@ -932,7 +954,7 @@ Off-Duty
 	total_positions = 3
 	spawn_positions = 3
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."	
+	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
