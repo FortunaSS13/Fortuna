@@ -692,6 +692,8 @@
 /obj/item/ammo_box/a50MG/penetrator
 	name = "anti-materiel penetrator ammo rack (.50MG)"
 	desc = "5 rounds of penetrator .50 MG, when you really want something dead and it's on the other side of a wall."
+	ammo_type = /obj/item/ammo_casing/a50MG/penetrator
+	icon_state = "50ap"
 
 
 ////////////////////////////////
