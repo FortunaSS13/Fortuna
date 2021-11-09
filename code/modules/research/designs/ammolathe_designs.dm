@@ -315,30 +315,35 @@
 /datum/design/ammolathe/a45rubber
 	name = ".45 ACP rubber ammo box"
 	id = "a45rubber"
+	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
 	build_path = /obj/item/ammo_box/c45/rubber
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/a9mmrubber
 	name = "9mm rubber ammo box"
 	id = "a9mmrubber"
+	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
 	build_path = /obj/item/ammo_casing/c9mm/rubber
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/a10mmrubber
 	name = "10mm rubber ammo box"
 	id = "a10mmrubber"
+	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
 	build_path = /obj/item/ammo_box/c10mm/rubber
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/a22rubber
 	name = ".22 rubber ammo box"
 	id = "m22rubber"
+	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
 	build_path = /obj/item/ammo_box/m22
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/a762rubber
 	name = "7.62 rubber ammo box"
 	id = "a762_lathe_rubber"
+	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
 	build_path = /obj/item/ammo_box/a762box/rubber
 	category = list("initial", "Basic Ammo")
 
