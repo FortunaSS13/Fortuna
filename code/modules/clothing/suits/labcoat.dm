@@ -92,6 +92,6 @@
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
-	desc = "(II) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
+	desc = "(III) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	armor = list("tier" = 3, "energy" = 35, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
