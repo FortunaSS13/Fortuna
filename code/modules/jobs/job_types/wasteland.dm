@@ -492,7 +492,7 @@ Raider
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
-		/obj/item/reagent_containers/inhaler/turbo = 2,
+		/obj/item/reagent_containers/pill/patch/turbo = 2,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/book/granter/trait/bigleagues = 1)
 
@@ -517,7 +517,7 @@ Raider
 	suit_store = /obj/item/gun/energy/laser/wattz
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec=1,
-		/obj/item/reagent_containers/inhaler/jet = 3,
+		/obj/item/reagent_containers/pill/patch/jet = 3,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/storage/pill_bottle/aranesp = 1,
 		/obj/item/storage/pill_bottle/happy = 1
