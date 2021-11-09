@@ -6190,6 +6190,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oakbroken,
 /area/f13/building)
+"cQJ" = (
+/obj/structure/closet/crate/bin,
+/obj/item/stack/f13Cash/random/low,
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "cRd" = (
 /obj/structure/barricade/tentclothedge,
 /turf/open/indestructible/ground/outside/dirt{
@@ -17349,7 +17354,7 @@
 	layer = 2.07;
 	max_mobs = 1
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "hIr" = (
@@ -21163,7 +21168,7 @@
 /obj/item/clothing/glasses/sunglasses/big,
 /obj/item/clothing/under/f13/gentlesuit,
 /obj/item/clothing/shoes/f13/fancy,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "jmt" = (
@@ -22085,6 +22090,16 @@
 "jIn" = (
 /turf/open/floor/carpet/red,
 /area/f13/legion)
+"jIr" = (
+/obj/item/bedsheet,
+/obj/structure/bed/old,
+/obj/item/stack/f13Cash/random/low{
+	pixel_y = -5
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/village)
 "jIB" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop3"
@@ -78544,7 +78559,7 @@ uaf
 dkg
 dkg
 cpK
-hwC
+gcK
 gcK
 gcK
 gcK
@@ -78800,7 +78815,7 @@ qGZ
 trd
 uaf
 dkg
-hwC
+gcK
 gcK
 gcK
 gcK
@@ -79056,7 +79071,7 @@ dkg
 eme
 lae
 dkg
-hwC
+gcK
 gcK
 gcK
 gcK
@@ -79313,7 +79328,7 @@ dkg
 uaf
 uaf
 dkg
-hwC
+gcK
 gcK
 gcK
 gcK
@@ -79569,7 +79584,7 @@ dkg
 dkg
 dkg
 dkg
-hwC
+gcK
 gcK
 gcK
 gcK
@@ -86809,7 +86824,7 @@ hDQ
 fQW
 pcG
 hpc
-cpH
+cQJ
 pcG
 hlo
 nSK
@@ -97084,7 +97099,7 @@ onU
 pJd
 pJd
 fwG
-gPy
+jIr
 gjP
 gjP
 gjP

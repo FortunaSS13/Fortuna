@@ -413,7 +413,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "lI" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/structure/closet,
 /obj/structure/closet,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -647,8 +647,7 @@
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high,
 /turf/open/floor/plating/tunnel,
 /area/f13/radiation)
 "tD" = (
@@ -1138,7 +1137,7 @@
 "LH" = (
 /obj/effect/decal/waste,
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "LJ" = (
