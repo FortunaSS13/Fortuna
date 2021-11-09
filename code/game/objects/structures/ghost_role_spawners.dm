@@ -842,7 +842,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 4,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 
