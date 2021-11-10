@@ -790,11 +790,11 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh
 	name = "superhigh tier ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/citykiller = 15,
-				/obj/effect/spawner/bundle/f13/riotshotgun = 20,
+				/obj/effect/spawner/bundle/f13/riotshotgun = 23,
 				/obj/effect/spawner/bundle/f13/bozar = 8,
-				/obj/effect/spawner/bundle/f13/amr = 15,
+				/obj/effect/spawner/bundle/f13/amr = 16,
 				/obj/effect/spawner/bundle/f13/rangemaster = 20,
-				/obj/effect/spawner/bundle/f13/gauss = 14,
+				/obj/effect/spawner/bundle/f13/gauss = 10,
 				/obj/effect/spawner/bundle/f13/fnfal = 8
 				)
 
