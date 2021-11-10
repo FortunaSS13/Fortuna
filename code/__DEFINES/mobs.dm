@@ -337,7 +337,7 @@
 #define SILENCE_RANGED_MESSAGE (1<<0)
 
 //Respawn timer
-#define RESPAWN_TIMER 600
+#define RESPAWN_TIMER 3000
 
 ///Define for spawning megafauna instead of a mob for cave gen
 #define SPAWN_MEGAFAUNA "bluh bluh huge boss"
