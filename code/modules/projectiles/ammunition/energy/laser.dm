@@ -145,7 +145,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 	projectile_type = /obj/item/projectile/beam/laser/pistol/wattz/hitscan
 	e_cost = 53.33 //30 shots, as per FNV
 
-/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto
+/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/pistol/wattz/magneto/hitscan
 	e_cost = 53.33 //30 shots, as per FNV
 
