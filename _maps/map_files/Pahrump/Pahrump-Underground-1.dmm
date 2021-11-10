@@ -18459,14 +18459,10 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/caves)
 "lMT" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 8;
-	pixel_x = -6
-	},
-/turf/open/floor/carpet,
 /area/f13/ncr)
 "lMY" = (
 /obj/structure/barricade/wooden,
@@ -18565,16 +18561,6 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/brotherhood/operations)
-"lPY" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	dir = 4;
-	pixel_x = 6
-	},
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "lQT" = (
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/indestructible/ground/inside/mountain,
@@ -18592,17 +18578,6 @@
 /obj/machinery/light,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/f13/tcoms)
-"lSo" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/item/storage/box/cups,
-/obj/structure/table,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "lSs" = (
 /obj/structure/flora/grass/wasteland,
 /obj/effect/decal/cleanable/dirt{
@@ -18695,27 +18670,6 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
-"lXy" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/structure/table,
-/obj/item/storage/fancy/donut_box,
-/turf/open/floor/carpet,
-/area/f13/ncr)
-"lXF" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/structure/table,
-/turf/open/floor/carpet,
-/area/f13/ncr)
 "lXQ" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
@@ -20903,15 +20857,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
-"nzl" = (
-/obj/structure/chair/wood/normal{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "nzs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
@@ -30822,12 +30767,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/tunnel)
-"usN" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/ncr)
 "utd" = (
 /obj/structure/decoration/vent{
 	desc = "An exhaust ventilation system designed to keep the air safe via several stages of filtering. This one has soot and some ashes on the bars."
@@ -32277,11 +32216,6 @@
 	dir = 8;
 	pixel_x = -6
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/structure/reagent_dispensers/water_cooler,
-/obj/structure/table,
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "vFa" = (
@@ -32292,10 +32226,6 @@
 	dir = 4;
 	pixel_x = 6
 	},
-/obj/effect/turf_decal/trimline/yellow/line{
-	pixel_y = -6
-	},
-/obj/structure/closet/crate/bin,
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "vFi" = (
@@ -33586,6 +33516,21 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"wKo" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 8;
+	pixel_x = -6
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	pixel_y = -6
+	},
+/obj/structure/reagent_dispensers/water_cooler,
+/obj/structure/table,
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "wKF" = (
 /obj/structure/table,
 /obj/item/trash/plate,
@@ -33778,6 +33723,17 @@
 /obj/item/trash/f13/steak,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"wQS" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	pixel_y = -6
+	},
+/obj/item/storage/box/cups,
+/obj/structure/table,
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "wRa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
@@ -33798,6 +33754,17 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/followers)
+"wRA" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	pixel_y = -6
+	},
+/obj/structure/table,
+/obj/item/storage/fancy/donut_box,
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "wRQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/random,
@@ -33835,6 +33802,16 @@
 /obj/machinery/chem_dispenser,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/bunker)
+"wTF" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	pixel_y = -6
+	},
+/obj/structure/table,
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "wTR" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/tinted/fulltile,
@@ -33852,6 +33829,20 @@
 "wUF" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/brotherhood/mining)
+"wVc" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 4;
+	pixel_x = 6
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	pixel_y = -6
+	},
+/obj/structure/closet/crate/bin,
+/turf/open/floor/carpet,
+/area/f13/ncr)
 "wVn" = (
 /obj/machinery/light{
 	pixel_x = -16
@@ -36639,9 +36630,9 @@ sJm
 ttW
 ttW
 ttW
-lMT
+ttW
 vEV
-qtT
+wKo
 qtT
 cNj
 rDk
@@ -36896,9 +36887,9 @@ sJA
 tuO
 tuO
 tuO
+tuO
 sfi
-lSo
-qtT
+wQS
 qtT
 cNj
 rDk
@@ -37153,9 +37144,9 @@ sNB
 tuO
 tuO
 tuO
+tuO
 sfi
-lXy
-qtT
+wRA
 qtT
 cNj
 rDk
@@ -37411,8 +37402,8 @@ sfi
 sfi
 sfi
 sfi
-lXF
-qtT
+sfi
+wTF
 qtT
 cNj
 rDk
@@ -37667,9 +37658,9 @@ sNB
 tuO
 tuO
 tuO
+tuO
 sfi
-lXF
-qtT
+wTF
 qtT
 cNj
 rDk
@@ -37924,9 +37915,9 @@ sJA
 tuO
 tuO
 tuO
+tuO
 sfi
-lXF
-qtT
+wTF
 qtT
 cNj
 rDk
@@ -38181,9 +38172,9 @@ sSe
 tvw
 tvw
 tvw
-lPY
+tvw
 vFa
-qtT
+wVc
 qtT
 cNj
 rDk
@@ -38951,7 +38942,7 @@ rwf
 sSt
 txg
 rwf
-rwf
+lMT
 cNj
 rDk
 rDk
@@ -40487,7 +40478,7 @@ qta
 rWM
 gHE
 cNj
-rwf
+lMT
 rKJ
 rKJ
 rKJ
