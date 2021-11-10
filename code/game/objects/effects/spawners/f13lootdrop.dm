@@ -696,8 +696,8 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high
 	name = "high tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/plasmarifle = 25,
-				/obj/effect/spawner/bundle/f13/tribeam = 5,
-				/obj/effect/spawner/bundle/f13/rcw = 25,
+				/obj/effect/spawner/bundle/f13/tribeam = 10,
+				/obj/effect/spawner/bundle/f13/rcw = 20,
 				/obj/effect/spawner/bundle/f13/aer14 = 20,
 				/obj/effect/spawner/bundle/f13/plasmaglock = 25
 				)
