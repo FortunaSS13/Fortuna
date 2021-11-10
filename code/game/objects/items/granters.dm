@@ -769,7 +769,7 @@
 /obj/item/book/granter/crafting_recipe/blueprint/m1carbine
 	name = "m1 carbine blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/gun/lsw)
+	crafting_recipe_types = list(/datum/crafting_recipe/m1carbine)
 
 /obj/item/book/granter/crafting_recipe/blueprint/pps
 	name = "ppsh-41 blueprint"
