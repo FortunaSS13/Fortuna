@@ -226,7 +226,7 @@
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/flag = alert(user, "Please choose which faction flag you wish to create.", "NCR", "Legion", "Yuma", "BOS", "Followers",)
+				var/flag = alert(user, "Please choose which faction flag you wish to create.", "NCR", "Legion", "Yuma", "BOS", "Followers")
 				switch(flag)
 					if(FACTION_NCR)
 						name = "NCR flag"
