@@ -63,7 +63,7 @@
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/exwelder
-	name = "Experimental Welding Tool"
+	name = "Regenerating Welding Tool"
 	desc = "An experimental welder capable of self-fuel generation."
 	id = "exwelder"
 	build_type = PROTOLATHE
