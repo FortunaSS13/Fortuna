@@ -2,12 +2,15 @@
 #define FOOTSTEP_FLOOR "floor"
 #define FOOTSTEP_PLATING "plating"
 #define FOOTSTEP_CARPET "carpet"
-#define FOOTSTEP_SAND "sand"
+#define FOOTSTEP_SAND "dirt"
 #define FOOTSTEP_GRASS "grass"
 #define FOOTSTEP_WATER "water"
 #define FOOTSTEP_LAVA "lava"
 #define FOOTSTEP_MEAT "meat"
 #define FOOTSTEP_RUST "rust"
+#define FOOTSTEP_LOOSE_SAND "sand"
+#define FOOTSTEP_SNOW "snow"
+#define FOOTSTEP_GRAVEL "gravel"
 
 //barefoot sounds
 #define FOOTSTEP_WOOD_BAREFOOT "woodbarefoot"

@@ -146,11 +146,11 @@
 						)
 
 //For sculpting with more precision, the random picking does not work very well. Slowdown 0.5 instead of 1. No random armor or gunpowder or titanium. Use directions for control. - Pebbles
-/turf/open/indestructible/ground/outside/desert/new
+/turf/open/indestructible/ground/outside/desert/sonora
 	icon = 'icons/fallout/turfs/wasteland.dmi'
 	icon_state = "desertsmooth"
 	slowdown = 0.5
-	var/list/loots = list(
+	list/loots = list(
 						/obj/item/stack/crafting/metalparts/five = 30,
 						/obj/item/stack/sheet/mineral/limestone/twenty = 10,
 						)
@@ -158,14 +158,17 @@
 	barefootstep = FOOTSTEP_LOOSE_SAND
 	clawfootstep = FOOTSTEP_LOOSE_SAND
 
-/turf/open/indestructible/ground/outside/desert/new/coarse
+/turf/open/indestructible/ground/outside/desert/sonora/coarse
 	icon_state = "desertcoarse"
+	slowdown = 0.6
 
-/turf/open/indestructible/ground/outside/desert/new/coarse2
+/turf/open/indestructible/ground/outside/desert/sonora/coarse2
 	icon_state = "desertcoarse2"
+	slowdown = 0.6
 
-/turf/open/indestructible/ground/outside/desert/new/rough
+/turf/open/indestructible/ground/outside/desert/sonora/rough
 	icon_state = "desertrough"
+	slowdown = 1
 
 /turf/open/indestructible/ground/outside/desert/Initialize()
 	. = ..()
@@ -203,12 +206,12 @@
 	resistance_flags = INDESTRUCTIBLE
 
 // Two edge smootheners for the new desert turf
-/obj/effect/overlay/desert/new/edge
+/obj/effect/overlay/desert/sonora/edge
 	name = "desert edge"
 	icon = 'icons/fallout/turfs/wasteland.dmi'
 	icon_state = "desertedge"
 
-/obj/effect/overlay/desert/new/edge/corner
+/obj/effect/overlay/desert/sonora/edge/corner
 	icon_state = "desertcorner"
 
 /turf/open/indestructible/ground/outside/desert/proc/plantGrass(Plantforce = FALSE)
