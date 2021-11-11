@@ -19,7 +19,6 @@
 	icon_state = "straight"
 	barricade = TRUE
 	proj_pass_rate = 95
-
 	var/cuttable = TRUE
 	var/hole_size= NO_HOLE
 	var/invulnerable = FALSE
