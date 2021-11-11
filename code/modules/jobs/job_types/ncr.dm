@@ -316,11 +316,12 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 
 /datum/outfit/loadout/sergeantrifleman
 	name = "Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/service
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
 	head = /obj/item/clothing/head/f13/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 		/obj/item/storage/box/ration/menu_two = 1,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
 		)
 
 /datum/outfit/loadout/sergeantrecon
