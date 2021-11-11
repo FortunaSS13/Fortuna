@@ -668,6 +668,10 @@
 /obj/item/chair/wood/narsie_act()
 	return
 
+//Temporary compilation stuff, obsolete
+/obj/structure/chair/wood/modern
+/obj/structure/chair/wood/worn
+
 /obj/structure/chair/old
 	name = "strange chair"
 	desc = "You sit in this. Either by will or force. Looks REALLY uncomfortable."
