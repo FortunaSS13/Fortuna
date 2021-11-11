@@ -145,6 +145,27 @@
 						/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high = 3
 						)
 
+//For sculpting with more precision, the random picking does not work very well. Slowdown 0.5 instead of 1. No random armor or gunpowder or titanium. Use directions for control. - Pebbles
+/turf/open/indestructible/ground/outside/desert/new
+	icon = 'icons/fallout/turfs/wasteland.dmi'
+	icon_state = "desertsmooth"
+	slowdown = 0.5
+	var/list/loots = list(
+						/obj/item/stack/crafting/metalparts/five = 30,
+						/obj/item/stack/sheet/mineral/limestone/twenty = 10,
+						)
+	footstep = FOOTSTEP_LOOSE_SAND
+	barefootstep = FOOTSTEP_LOOSE_SAND
+	clawfootstep = FOOTSTEP_LOOSE_SAND
+
+/turf/open/indestructible/ground/outside/desert/new/coarse
+	icon_state = "desertcoarse"
+
+/turf/open/indestructible/ground/outside/desert/new/coarse2
+	icon_state = "desertcoarse2"
+
+/turf/open/indestructible/ground/outside/desert/new/rough
+	icon_state = "desertrough"
 
 /turf/open/indestructible/ground/outside/desert/Initialize()
 	. = ..()
@@ -180,6 +201,15 @@
 	layer = ABOVE_OPEN_TURF_LAYER
 	anchored = TRUE
 	resistance_flags = INDESTRUCTIBLE
+
+// Two edge smootheners for the new desert turf
+/obj/effect/overlay/desert/new/edge
+	name = "desert edge"
+	icon = 'icons/fallout/turfs/wasteland.dmi'
+	icon_state = "desertedge"
+
+/obj/effect/overlay/desert/new/edge/corner
+	icon_state = "desertcorner"
 
 /turf/open/indestructible/ground/outside/desert/proc/plantGrass(Plantforce = FALSE)
 	var/Weight = 0
@@ -306,6 +336,9 @@
 	icon = 'icons/turf/snow.dmi'
 	desc = "Looks cold."
 	icon_state = "snow"
+	footstep = FOOTSTEP_SNOW
+	barefootstep = FOOTSTEP_SNOW
+	clawfootstep = FOOTSTEP_SNOW
 
 /turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
 	contents_explosion(severity, target)
@@ -418,6 +451,7 @@
 	anchored = TRUE
 	resistance_flags = INDESTRUCTIBLE
 
+
 /turf/open/indestructible/ground/outside/roaddirt
 	name = "road"
 	icon_state = "innermiddle"
@@ -430,8 +464,55 @@
 	icon = 'icons/fallout/turfs/sidewalkdirt.dmi'
 //	step_sounds = list("human" = "erikafootsteps")
 
+//Obsolete but used in yucky Pahrump
 /turf/open/indestructible/ground/outside/graveldirt
 	name = "gravel"
 	icon_state = "graveldirt"
 	icon = 'icons/fallout/turfs/ground.dmi'
 //	step_sounds = list("human" = "erikafootsteps")
+
+// New gravel, organized. Use directions for control. - Pebbles
+/turf/open/indestructible/ground/outside/gravel
+	name = "gravel"
+	icon_state = "gravel"
+	icon = 'icons/fallout/turfs/gravel.dmi'
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
+
+/turf/open/indestructible/ground/outside/gravel/alt
+	name = "gravel"
+	icon_state = "gravel_alt"
+
+/turf/open/indestructible/ground/outside/gravel/path_desert
+	name = "gravel path"
+	icon_state = "path_desert"
+
+/turf/open/indestructible/ground/outside/gravel/path_desert/intersection
+	name = "gravel path"
+	icon_state = "path_desert_intersection"
+
+/turf/open/indestructible/ground/outside/gravel/path_desert/end
+	name = "gravel path"
+	icon_state = "path_desert_end"
+
+/turf/open/indestructible/ground/outside/gravel/path_dirt
+	name = "gravel path"
+	icon_state = "path_dirt"
+
+/turf/open/indestructible/ground/outside/gravel/path_dirt/intersection
+	name = "gravel path"
+	icon_state = "path_dirt_intersection"
+
+/turf/open/indestructible/ground/outside/gravel/path_dirt/end
+	name = "gravel path"
+	icon_state = "path_dirt_end"
+
+// Two edge smootheners for the new gravel turf
+/obj/effect/overlay/gravel/edge
+	name = "gravel edge"
+	icon = 'icons/fallout/turfs/gravel.dmi'
+	icon_state = "graveledge"
+
+/obj/effect/overlay/gravel/edge/corner
+	icon_state = "gravelcorner"

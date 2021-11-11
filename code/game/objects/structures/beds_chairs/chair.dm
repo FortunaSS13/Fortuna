@@ -415,20 +415,17 @@
 /obj/structure/chair/stool/bar
 	name = "bar stool"
 	desc = "It has some unsavory stains on it..."
-	icon = 'icons/obj/chairs.dmi'
 	icon_state = "bar"
 	item_chair = /obj/item/chair/stool/bar
 
 /obj/structure/chair/stool/f13stool
 	name = "bar stool"
-	icon = 'icons/obj/chairs.dmi'
 	desc = "It has some unsavory stains on it..."
 	icon_state = "f13stool"
 	item_chair = /obj/item/chair/stool/bar
 
 /obj/item/chair/stool/bar
 	name = "bar stool"
-	icon = 'icons/obj/chairs.dmi'
 	icon_state = "bar_toppled"
 	item_state = "stool_bar"
 	origin_type = /obj/structure/chair/stool/bar
@@ -552,6 +549,7 @@
 
 /obj/item/chair/stool
 	name = "stool"
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "stool_toppled"
 	item_state = "stool"
 	origin_type = /obj/structure/chair/stool
@@ -682,6 +680,7 @@
 /obj/structure/chair/brass
 	name = "brass chair"
 	desc = "A spinny chair made of brass. It looks uncomfortable."
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "brass_chair"
 	max_integrity = 150
 	buildstacktype = /obj/item/stack/tile/brass
@@ -720,6 +719,7 @@
 	name = "brass chair"
 	desc = "A spinny chair made of bronze. It has little cogs for wheels!"
 	anchored = FALSE
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "brass_chair"
 	buildstacktype = /obj/item/stack/sheet/bronze
 	buildstackamount = 1
@@ -735,6 +735,7 @@
 /obj/structure/chair/booth
 	name = "single booth"
 	desc = "A lone-some diner-styled booth."
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "booth_single"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
@@ -759,6 +760,7 @@
 /obj/structure/chair/left
 	name = "booth"
 	desc = "A diner-styled end booth."
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "booth_leftend"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
@@ -783,6 +785,7 @@
 /obj/structure/chair/west_middle
 	name = "booth"
 	desc = "A diner-styled end booth."
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "booth_west_middle"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
@@ -801,6 +804,7 @@
 /obj/structure/chair/middle
 	name = "booth"
 	desc = "A diner-styled middle booth."
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "booth_middle"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
@@ -825,6 +829,7 @@
 /obj/structure/chair/right
 	name = "booth"
 	desc = "A diner-styled end booth."
+	icon = 'icons/obj/chairs.dmi'
 	icon_state = "booth_rightend"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
