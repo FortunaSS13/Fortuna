@@ -221,6 +221,17 @@
 	custom_materials = list(/datum/material/iron = 2000, /datum/material/blackpowder = 500)	
 	icon_state = "improvshotbag"
 
+//5mm
+/obj/item/ammo_box/m5mmbox
+	name = "ammo box (5mm FMJ)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "556box"
+	multiple_sprites = 2
+	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/m5mm
+	max_ammo = 60
+	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 1500)
 
 //7.62x51, .308 Winchester
 /obj/item/ammo_box/a308box
