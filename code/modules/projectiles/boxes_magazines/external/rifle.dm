@@ -88,6 +88,20 @@
 		icon_state = "enbloc-8"
 	else
 		icon_state = "enbloc-[ammo_count()]"
+		
+/obj/item/ammo_box/magazine/m5mm
+	name = "Assault Rifle Magazine (5mm)"
+	icon_state = "r30"
+	caliber = "m5mm"
+	ammo_type = /obj/item/projectile/bullet/m5mm
+	max_ammo = 30
+	multiple_sprites = 2
+	
+/obj/item/ammo_box/magazine/m5mm/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/m473/empty
+	start_empty = 1
 
 /obj/item/ammo_box/magazine/garand308/empty
 	start_empty = 1
