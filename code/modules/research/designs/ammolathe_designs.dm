@@ -399,6 +399,13 @@
 	materials = list(/datum/material/iron = 14000, /datum/material/blackpowder = 2000)
 	build_path = /obj/item/ammo_box/c45/op
 	category = list("initial", "Intermediate Ammo")*/
+	
+/datum/design/ammolathe/m5mm
+	name = "5mm FMJ ammo box"
+	id = "m5mm"
+	materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 3000)
+	build_path = /obj/item/ammo_box/m5mmbox
+	category = list("initial", "Intermediate Ammo")
 
 /* --Tier 4 Ammo and Magazines-- */
 //Tier 4 Magazines
@@ -407,6 +414,13 @@
 	id = "m10mm_p90"
 	materials = list(/datum/material/iron = 6000)
 	build_path = /obj/item/ammo_box/magazine/m10mm_p90/empty
+	category = list("initial", "Advanced Magazines")
+	
+/datum/design/ammolathe/m5mm
+	name = "empty assault rifle magazine (15mm)"
+	id = "rifleassault5mm"
+	materials = list(/datum/material/iron = 8000)
+	build_path = /obj/item/ammo_box/magazine/m5mm/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/rifleassault556
