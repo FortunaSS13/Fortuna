@@ -147,3 +147,20 @@
 			L.adjustStaminaLossBuffered(4)
 		return
 	L.adjustToxLoss(7.5)
+
+/datum/weather/ash_storm/sandstorm
+	name = "sandstorm"
+	desc = "A passing sand storm blankets the area in harmless sands."
+
+	telegraph_message = "<span class='userdanger'>A sandstorm is coming to the area, decreasing the overall visibility outside.</span>"
+
+	weather_message = "<span class='userdanger'>Sand wafts down around you like a grotesque snow. The sandstorm is here...</span>"
+
+	end_message = "<span class='boldannounce'>The sandstorm slows, and eventually stops. Another layer of sand to the ground beneath your feet.</span>"
+	end_sound = null
+
+	target_trait = ZTRAIT_STATION
+
+	aesthetic = TRUE
+
+	probability = 8
