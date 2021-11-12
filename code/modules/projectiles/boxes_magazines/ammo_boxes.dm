@@ -89,11 +89,19 @@
 
 /obj/item/ammo_box/c9mm/wounding
 	name = "ammo box (9mm wounding)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "9mmbox"
+	multiple_sprites = 2
+	caliber = "9mm"
 	desc = "A box full of 9mm wounding bullets. They do more damage the closer you are."
 	ammo_type = /obj/item/ammo_casing/c9mm/wounding
 
 /obj/item/ammo_box/c9mm/rubber
 	name = "ammo box (9mm rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "9mmbox"
+	multiple_sprites = 2
+	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm/rubber
 
 /obj/item/ammo_box/c38box
@@ -108,6 +116,9 @@
 
 /obj/item/ammo_box/c38box/rubber
 	name = "ammo box (.38 rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "38box"
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/c38/rubber
 
 /obj/item/ammo_box/c38box/improvised
@@ -135,14 +146,23 @@
 	name = "ammo box (10mm Incendiary)"
 	icon_state = "10mmbox"
 	max_ammo = 20
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "10mmbox"
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/c10mm/incendiary
 
 /obj/item/ammo_box/c10mm/rubber
 	name = "ammo box (10mm rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "10mmbox"
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/c10mm/rubber
 
 /obj/item/ammo_box/c10mm/wounding
 	name = "ammo box (10mm wounding)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "10mmbox"
+	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/c10mm/wounding
 
 /obj/item/ammo_box/c10mm/improvised
@@ -168,6 +188,9 @@
 /obj/item/ammo_box/a357box/ricochet
 	name = "ammo box (.357 Magnum ricochet)"
 	max_ammo = 6
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "357box"
+	multiple_sprites = 2
 	desc = "Six shots...more than enough to kill anything that moves."
 	ammo_type = /obj/item/ammo_casing/a357/ricochet
 
