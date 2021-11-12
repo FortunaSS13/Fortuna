@@ -74,21 +74,6 @@
 /obj/item/ammo_box/magazine/m556/rifle/extended/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/garand308
-	name = "en-bloc clip (7.62x51mm)"
-	icon_state = "enbloc-8"
-	ammo_type = /obj/item/ammo_casing/a762
-	caliber = "a762"
-	max_ammo = 8
-
-
-/obj/item/ammo_box/magazine/garand308/update_icon()
-	..()
-	if (ammo_count() >= 8)
-		icon_state = "enbloc-8"
-	else
-		icon_state = "enbloc-[ammo_count()]"
-		
 /obj/item/ammo_box/magazine/m5mm
 	name = "Assault Rifle Magazine (5mm)"
 	icon_state = "r30"
@@ -100,6 +85,20 @@
 /obj/item/ammo_box/magazine/m5mm/empty
 	start_empty = 1
 
+/obj/item/ammo_box/magazine/garand308
+	name = "en-bloc clip (7.62x51mm)"
+	icon_state = "enbloc-8"
+	ammo_type = /obj/item/ammo_casing/a762
+	caliber = "a762"
+	max_ammo = 8
+
+/obj/item/ammo_box/magazine/garand308/update_icon()
+	..()
+	if (ammo_count() >= 8)
+		icon_state = "enbloc-8"
+	else
+		icon_state = "enbloc-[ammo_count()]"
+		
 /obj/item/ammo_box/magazine/garand308/empty
 	start_empty = 1
 
