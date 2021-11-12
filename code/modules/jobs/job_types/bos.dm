@@ -144,7 +144,7 @@ Head Paladin
 	suit =			/obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head =			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	belt =			/obj/item/storage/belt/military/assault
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
@@ -301,7 +301,7 @@ Head Knight
 	accessory =		/obj/item/clothing/accessory/bos/knightcaptain
 	belt =			/obj/item/storage/belt/security/full
 	neck =			/obj/item/storage/belt/holster
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	id =			/obj/item/card/id/dogtag
 	backpack_contents = list(
@@ -392,7 +392,7 @@ Star Paladin
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	accessory =	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform =	/obj/item/clothing/under/f13/recon
-	mask =	/obj/item/clothing/mask/gas/sechailer/swat
+	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/storage/belt/holster
 
@@ -482,7 +482,7 @@ Paladin
 	suit =	/obj/item/clothing/suit/armor/f13/power_armor/t45d
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	uniform =	/obj/item/clothing/under/f13/recon
-	mask =	/obj/item/clothing/mask/gas/sechailer/swat
+	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military
 	neck =	/obj/item/storage/belt/holster
 	backpack_contents = list(
@@ -715,7 +715,7 @@ Senior Knight
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	glasses =       /obj/item/clothing/glasses/night
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	belt = 			/obj/item/storage/belt/military
 	neck =			/obj/item/storage/belt/holster
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
@@ -808,7 +808,7 @@ Knight
 	jobtype = /datum/job/bos/f13knight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	belt = 			/obj/item/storage/belt/military
 	neck =			/obj/item/storage/belt/holster
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
