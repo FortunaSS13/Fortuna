@@ -580,6 +580,7 @@
 
 /datum/crafting_recipe/gaussrifle
 	name = "M72 Gauss Rifle"
+	result = /obj/item/gun/ballistic/automatic/m72
 	reqs = list(/obj/item/stack/sheet/metal = 15,
 				/obj/item/advanced_crafting_components/flux = 1,
 				/obj/item/advanced_crafting_components/conductors = 2,
