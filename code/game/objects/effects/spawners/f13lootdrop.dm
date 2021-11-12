@@ -778,6 +778,7 @@
 	name = "high tier ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/marksman = 15,
 				/obj/effect/spawner/bundle/f13/assault_rifle = 20,
+				/obj/effect/spawner/bundle/f13/assault_carbine = 20,
 				/obj/effect/spawner/bundle/f13/r84 = 5,
 				/obj/effect/spawner/bundle/f13/guns/tommygun = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 10,
@@ -1161,8 +1162,15 @@
 /obj/effect/spawner/bundle/f13/assault_rifle
 	name = "assault rifle and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/assault_rifle,
+				/obj/item/gun/ballistic/automatic/assault_carbine,
 				/obj/item/ammo_box/magazine/m556/rifle/assault/
+				)
+				
+/obj/effect/spawner/bundle/f13/assault_carbine
+	name = "assault carbine and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_rifle,
+				/obj/item/ammo_box/magazine/m5mm
 				)
 
 /obj/effect/spawner/bundle/f13/marksman
