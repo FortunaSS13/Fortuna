@@ -100,9 +100,6 @@
 /obj/item/ammo_box/magazine/m5mm/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m473/empty
-	start_empty = 1
-
 /obj/item/ammo_box/magazine/garand308/empty
 	start_empty = 1
 
