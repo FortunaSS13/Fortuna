@@ -951,7 +951,6 @@
 	fire_delay = 3.25
 	spread = 1
 	can_attachments = FALSE
-	can_automatic = TRUE
 	semi_auto = TRUE
 	automatic_burst_overlay = FALSE
 	can_scope = FALSE
