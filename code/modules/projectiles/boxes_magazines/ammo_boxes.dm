@@ -238,11 +238,19 @@
 
 /obj/item/ammo_box/c45/rubber
 	name = "ammo box (.45 rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	caliber = ".45"
+	multiple_sprites = 2
+	icon_state = "45box"
 	ammo_type = /obj/item/ammo_casing/c45/rubber
 
 /obj/item/ammo_box/c45/incendiary
 	name = "ammo box (.45 incendiary)"
 	ammo_type = /obj/item/ammo_casing/c45/incendiary
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	caliber = ".45"
+	multiple_sprites = 2
+	icon_state = "45box"
 	desc = "It's a completely safe idea to fill up a .45 pistol with napalm cartridges. This will not backfire." //it's telling the truth
 
 /obj/item/ammo_box/c45/improvised
@@ -285,6 +293,10 @@
 
 /obj/item/ammo_box/a556/rubber
 	name = "ammo box (5.56 rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "556box"
+	multiple_sprites = 2
+	caliber = "a556"
 	ammo_type = /obj/item/ammo_casing/a556/rubber
 
 /obj/item/ammo_box/a556/uraniumtipped
@@ -350,6 +362,11 @@
 
 /obj/item/ammo_box/a762box/rubber
 	name = "ammo box (7.62x51 rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "762box"
+	multiple_sprites = 2
+	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/a762
 	ammo_type = /obj/item/ammo_casing/a762/rubber
 
 
@@ -367,6 +384,10 @@
 
 /obj/item/ammo_box/a50MGbox/rubber
 	name = "ammo box (.50 rubber)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "50box"
+	multiple_sprites = 2
+	caliber = "a50MG"
 	ammo_type = /obj/item/ammo_casing/a50MG/rubber
 
 
