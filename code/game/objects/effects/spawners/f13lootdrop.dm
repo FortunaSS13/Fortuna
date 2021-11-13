@@ -1161,16 +1161,19 @@
 /obj/effect/spawner/bundle/f13/assault_rifle
 	name = "assault rifle and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/assault_carbine,
+				/obj/item/gun/ballistic/automatic/assault_rifle,
 				/obj/item/ammo_box/magazine/m556/rifle/assault/
+				
 				)
+
 				
 /obj/effect/spawner/bundle/f13/assault_carbine
 	name = "assault carbine and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/assault_rifle,
+		items = list(
+				/obj/item/gun/ballistic/automatic/assault_carbine,
 				/obj/item/ammo_box/magazine/m5mm
 				)
+
 
 /obj/effect/spawner/bundle/f13/marksman
 	name = "marksman rifle and ammo spawner"
