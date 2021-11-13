@@ -1163,7 +1163,6 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle,
 				/obj/item/ammo_box/magazine/m556/rifle/assault/
-				
 				)
 
 				
@@ -1171,7 +1170,7 @@
 	name = "assault carbine and ammo spawner"
 		items = list(
 				/obj/item/gun/ballistic/automatic/assault_carbine,
-				/obj/item/ammo_box/magazine/m5mm
+				/obj/item/ammo_box/magazine/m5mm/
 				)
 
 
