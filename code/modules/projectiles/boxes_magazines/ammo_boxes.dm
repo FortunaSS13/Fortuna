@@ -227,7 +227,7 @@
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "556box"
 	multiple_sprites = 2
-	caliber = "a556"
+	caliber = "m5mm"
 	ammo_type = /obj/item/ammo_casing/m5mm
 	max_ammo = 60
 	w_class = WEIGHT_CLASS_NORMAL
