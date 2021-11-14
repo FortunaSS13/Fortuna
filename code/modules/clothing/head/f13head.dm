@@ -87,7 +87,8 @@
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/raider
 	name = "customized raider combat helmet"
-	desc = "(VI) A reinforced combat helmet painted black with the laser designator removed."
+	desc = "(V) A reinforced combat helmet painted black with the laser designator removed."
+	armor = list("tier" = 5, "energy" = 35, "bomb" = 45, "bio" = 30, "rad" = 5, "fire" = 50, "acid" = 35)
 	icon_state = "combat_helmet_raider"
 	item_state = "combat_helmet_raider"
 
