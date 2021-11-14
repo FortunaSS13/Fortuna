@@ -972,7 +972,7 @@
 			fire_delay = 3.75
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
+			to_chat(user, "<span class='notice'>You switch to 2-rnd burst.</span>")
 			enable_burst()
 		if(1)
 			select = 0
