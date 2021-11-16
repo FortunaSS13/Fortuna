@@ -58,8 +58,8 @@
 	opacity = FALSE
 	density = TRUE
 	explosion_block = FALSE
-	var/pass_flags = LETPASSTHROW 
-	var/proj_pass_rate = 95
+	pass_flags = LETPASSTHROW 
+	proj_pass_rate = 95
 
 /obj/machinery/door/unpowered/celldoor/update_icon()
 	if(density)
