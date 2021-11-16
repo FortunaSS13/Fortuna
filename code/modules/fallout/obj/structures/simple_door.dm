@@ -311,13 +311,15 @@
 	material_type = /obj/item/stack/sheet/metal
 	open_sound = "sound/f13machines/doorstore_open.ogg"
 	close_sound = "sound/f13machines/doorstore_close.ogg"
-	explosion_block = 2
+	explosion_block = 1.5
+	material_count = 5
 
+// Supposed to be the heaviest defensive door thats craftable without machinery. Maybe too weak still.
 /obj/structure/simple_door/metal/iron
 	name = "iron door"
 	desc = "A heavy iron door."
-	icon_state = "metal"
-	door_type = "metal"
+	icon_state = "iron"
+	door_type = "iron"
 	explosion_block = 5
 	can_hold_padlock = TRUE
 	opening_time = 12
