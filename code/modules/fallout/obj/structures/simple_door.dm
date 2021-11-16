@@ -375,7 +375,7 @@
 	opacity = FALSE
 	base_opacity = FALSE
 	can_hold_padlock = TRUE
-	var/proj_pass_rate = 95
+	proj_pass_rate = 95
 
 /obj/structure/simple_door/metal/ventilation
 	name = "ventilation system"
