@@ -308,6 +308,7 @@
 /obj/structure/simple_door/metal
 	name = "metal door"
 	icon_state = "metal"
+	door_type = "metal"
 	material_type = /obj/item/stack/sheet/metal
 	open_sound = "sound/f13machines/doorstore_open.ogg"
 	close_sound = "sound/f13machines/doorstore_close.ogg"
