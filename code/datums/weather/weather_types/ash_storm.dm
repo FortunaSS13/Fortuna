@@ -152,11 +152,11 @@
 	name = "sandstorm"
 	desc = "A passing sand storm blankets the area in harmless sands."
 
-	telegraph_message = "<span class='userdanger'>A sandstorm is coming to the area, decreasing the overall visibility outside.</span>"
+	telegraph_message = "<span class='notice'>A sandstorm is coming to the area, decreasing the overall visibility outside.</span>"
 
-	weather_message = "<span class='userdanger'>Sand wafts down around you like a grotesque snow. The sandstorm is here...</span>"
+	weather_message = "<span class='notice'>Sand wafts down around you like a grotesque snow. The sandstorm is here...</span>"
 
-	end_message = "<span class='boldannounce'>The sandstorm slows, and eventually stops. Another layer of sand to the ground beneath your feet.</span>"
+	end_message = "<span class='notice'>The sandstorm slows, and eventually stops. Another layer of sand to the ground beneath your feet.</span>"
 	end_sound = null
 
 	target_trait = ZTRAIT_STATION
