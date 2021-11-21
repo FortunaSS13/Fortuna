@@ -257,6 +257,10 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"agg" = (
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "agr" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/road{
@@ -9946,6 +9950,10 @@
 	icon_state = "horizontaloutermain2"
 	},
 /area/f13/wasteland)
+"ewD" = (
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/legion)
 "ewI" = (
 /obj/structure/table,
 /obj/item/stack/packageWrap,
@@ -15484,6 +15492,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"gMl" = (
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/indestructible/ground/inside/subway{
+	name = "stone floor"
+	},
+/area/f13/legion)
 "gMq" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -111800,7 +111814,7 @@ uqW
 oMp
 hom
 cTN
-xXm
+agg
 tBN
 rjH
 rjH
@@ -113081,7 +113095,7 @@ prP
 prP
 prP
 uqW
-uqW
+ewD
 uqW
 uqW
 okZ
@@ -117986,7 +118000,7 @@ xNm
 xNm
 cdc
 feD
-feD
+gMl
 feD
 feD
 iFT

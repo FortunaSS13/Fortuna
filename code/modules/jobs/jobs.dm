@@ -181,6 +181,7 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Veteran Legionnaire",
 	"Prime Legionnaire",
 	"Recruit Legionnaire",
+	"Legion Camp Follower",
 	"Legion Forgemaster",
 	"Legion Slavemaster",
 	"Legion Auxilia",

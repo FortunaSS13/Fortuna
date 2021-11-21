@@ -888,8 +888,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = " The Slavemaster is a legionnaire temporarily assigned to keeping slaves and prisoners in check."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
@@ -927,53 +927,136 @@ commented out pending rework*/
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 
-// FORGE MASTER
+// CAMP FOLLOWER
 
-/datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Chainsaw, Extra materials, Blueprints
-	title = "Legion Forgemaster"
+/datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Jack-Of-All-Trades
+	title = "Legion Camp Follower"
 	flag = F13CAMPFOLLOWER
-	total_positions = 1
-	spawn_positions = 1
-	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
+	total_positions = 4
+	spawn_positions = 4
+	description = "You are the Camp Follower! You are a subject of Caesar's Legion who assists a warcamp in an auxiliary fashion. You might be a cook, a farmer, or a scavenger. The Legion provides you with food, shelter, security, and payment for your services, and you are loyal to them for it. You are not a legionary, and should not fight with them unless the camp is attacked and you need to defend yourself."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
-	exp_requirements = 300
+	exp_requirements = 120
+
+	loadout_options = list(
+		/datum/outfit/loadout/forgemaster, // Tend to the forge
+		/datum/outfit/loadout/auxilia, // Do surgery, medical tasks.
+		/datum/outfit/loadout/farmer, // Tend to the farm
+		/datum/outfit/loadout/slave, // Be exactly a slave
+		/datum/outfit/loadout/trader, // Legion trader
+		)
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/CaesarsLegion,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/CaesarsLegion,
+		),
+		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
-	name = "Legion Forgemaster"
-	id = /obj/item/card/id/dogtag/legforgemaster
-	glasses = /obj/item/clothing/glasses/welding
-	belt = /obj/item/storage/belt/utility/waster/forgemaster
-	neck = /obj/item/clothing/neck/apron/labor/forge
-	gloves = /obj/item/clothing/gloves/legion/forgemaster
-	shoes = /obj/item/clothing/shoes/f13/military/plated
+	name = "Legion Camp Follower"
+	id = /obj/item/card/id/dogtag/campfollower
+	uniform = /obj/item/clothing/under/f13/settler
+	shoes = /obj/item/clothing/shoes/f13/explorer
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/stack/sheet/metal/twenty = 2,
-		/obj/item/stack/sheet/mineral/wood/twenty = 1,
-		/obj/item/stack/sheet/leather/twenty = 1,
-		/obj/item/stack/sheet/cloth/thirty = 1,
-		/obj/item/stack/sheet/prewar = 1,
-		/obj/item/weldingtool = 1,
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gladius)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionshield)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lever_action)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/brush)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionlance)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
 
+
+/datum/outfit/loadout/forgemaster
+	name = "Forgemaster"
+	neck = /obj/item/clothing/neck/mantle/treasurer
+	glasses = /obj/item/clothing/glasses/welding
+	belt = /obj/item/storage/belt/utility/waster/forgemaster
+	neck = /obj/item/clothing/neck/apron/labor/forge
+	gloves = /obj/item/clothing/gloves/legion/forgemaster
+	backpack_contents = list(
+		/obj/item/stack/sheet/metal/twenty = 2,
+		/obj/item/stack/sheet/mineral/wood/twenty = 1,
+		/obj/item/stack/sheet/leather/twenty = 1,
+		/obj/item/stack/sheet/cloth/thirty = 1,
+		/obj/item/stack/sheet/prewar = 1,
+		/obj/item/weldingtool = 1,
+		/obj/item/clothing/glasses/welding = 1,
+		/obj/item/storage/belt/utility/waster/forgemaster = 1,
+		/obj/item/clothing/neck/apron/labor/forge = 1,
+		/obj/item/clothing/gloves/legion/forgemaster = 1,
+		)
+
+/datum/outfit/loadout/auxilia
+	name = "Auxilia"
+	neck = /obj/item/clothing/neck/apron/medicus
+	gloves = /obj/item/clothing/gloves/f13/crudemedical
+	belt = /obj/item/storage/belt/medical/legion
+	backpack_contents = list(
+		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/stack/sticky_tape/surgical = 1,
+		/obj/item/stack/medical/bone_gel = 1,
+		/obj/item/book/granter/trait/midsurgery = 1,
+		/obj/item/clothing/under/f13/legauxilia = 1,
+		/obj/item/reagent_containers/glass/beaker/large = 1,
+		)
+
+/datum/outfit/loadout/farmer
+	name =	"Farmer"
+	head =	/obj/item/clothing/head/helmet/f13/vaquerohat
+	suit =	/obj/item/clothing/suit/overalls
+	belt =	/obj/item/storage/belt
+	backpack_contents = list(
+		/obj/item/hatchet = 1,
+		/obj/item/cultivator = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
+	)
+
+/datum/outfit/loadout/slave
+	name = "Slave"
+	head = /obj/item/clothing/head/f13/legion/servant
+	uniform	= /obj/item/clothing/under/f13/campfollowermale
+	gloves = /obj/item/clothing/gloves/f13/crudemedical
+	shoes =	/obj/item/clothing/shoes/roman
+	r_pocket = /obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/smelling_salts/crafted = 1,
+		/obj/item/reagent_containers/food/condiment/flour = 2,
+		/obj/item/storage/box/bowls = 1,
+		/obj/item/soap/homemade = 1,
+		/obj/item/lighter = 1,
+		)
+
+/datum/outfit/loadout/trader
+	name = "Trader"
+	uniform = /obj/item/clothing/under/f13/merchant
+	neck = /obj/item/clothing/neck/mantle/treasurer
+	shoes = /obj/item/clothing/shoes/f13/brownie
+	gloves = /obj/item/clothing/gloves/color/brown
+	l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	backpack_contents = list(
+		/obj/item/stack/sheet/metal = 50,
+		/obj/item/toy/crayon/spraycan = 1,
+		/obj/item/stack/sheet/cloth = 12,
+		/obj/item/stack/sheet/leather = 6,
+		)
 
 
 // AUXILIA - Civilians with special training. Can sow new uniforms for soldiers who lost theirs, and are loyal so they would never abuse this.
@@ -981,8 +1064,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/auxilia
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
@@ -1062,8 +1145,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
