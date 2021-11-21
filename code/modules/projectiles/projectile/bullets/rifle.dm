@@ -133,6 +133,10 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 	wound_bonus = 10
 	bare_wound_bonus = -10
 	var/extra_speed = 200
+	
+/obj/item/projectile/bullet/m5mm/simple //for simple mobs, separate to allow balancing
+	name = "5mm bullet"
+	armour_penetration = 0.21
 
 /////////////////////////
 //2 MM ELECTROMAGNETIC //
