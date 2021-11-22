@@ -5333,6 +5333,8 @@
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/medspray/synthflesh,
 /obj/item/reagent_containers/medspray/synthflesh,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/obj/item/reagent_containers/hypospray/medipen/medx,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
