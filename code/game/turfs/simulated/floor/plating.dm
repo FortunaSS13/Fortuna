@@ -66,6 +66,7 @@
 					R.use(2)
 					to_chat(user, "<span class='notice'>You reinforce the floor.</span>")
 				return
+	/* Fortuna edit: glass floors disabled
 	if(istype(C, /obj/item/stack/sheet/glass))
 		if(broken || burnt)
 			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
@@ -100,6 +101,7 @@
 					RG.use(2)
 					to_chat(user, "<span class='notice'>You add reinforced glass to the floor.</span>")
 				return
+	*/
 	else if(istype(C, /obj/item/stack/tile))
 		if(!broken && !burnt)
 			for(var/obj/O in src)
@@ -122,6 +124,25 @@
 			playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
 		else
 			to_chat(user, "<span class='warning'>This section is too damaged to support a tile! Use a welder to fix the damage.</span>")
+
+	if(istype(C, /obj/item/stack/sheet/mineral/concrete))
+		if(broken || burnt)
+			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
+			return
+		var/obj/item/stack/sheet/mineral/concrete/G = C
+		if (G.get_amount() < 2)
+			to_chat(user, "<span class='warning'>You need two concrete bags to make a concrete floor!</span>")
+			return
+		else
+			to_chat(user, "<span class='notice'>You begin pouring concrete on to the floor...</span>")
+			if(do_after(user, 5, target = src))
+				if (G.get_amount() >= 2 && !istype(src, /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid))
+					PlaceOnTop(/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid, flags = CHANGETURF_INHERIT_AIR)
+					playsound(src, 'sound/items/deconstruct.ogg', 80, 1)
+					G.use(2)
+					to_chat(user, "<span class='notice'>You smooth the floor with concrete.</span>")
+				return
+
 
 /turf/open/floor/plating/welder_act(mob/living/user, obj/item/I)
 	if((broken || burnt) && I.use_tool(src, user, 0, volume=80))

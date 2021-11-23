@@ -21,8 +21,8 @@
 	move_to_delay = 5
 	stat_attack = SOFT_CRIT
 	robust_searching = TRUE
-	maxHealth = 250
-	health = 250
+	maxHealth = 150
+	health = 150
 	blood_volume = 0
 	del_on_death = TRUE
 	healable = FALSE
@@ -42,7 +42,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	vision_range = 12
 	aggro_vision_range = 15
-	projectiletype = /obj/item/projectile/bullet/a556/ap/simple
+	projectiletype = /obj/item/projectile/bullet/c9mm/simple
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	emote_taunt = list("readies its arm gun")
 	check_friendly_fire = TRUE
@@ -78,7 +78,6 @@
 
 /mob/living/simple_animal/hostile/securitron/proc/self_destruct()
 	explosion(src,1,2,4,4)
-	qdel(src)
 
 /mob/living/simple_animal/hostile/securitron/death()
 	do_sparks(3, TRUE, src)
@@ -98,8 +97,8 @@
 	icon_state = "sentrybot"
 	icon_living = "sentrybot"
 	icon_dead = "sentrybot"
-	health = 280
-	maxHealth = 280
+	health = 210
+	maxHealth = 210
 	del_on_death = FALSE
 	melee_damage_lower = 48
 	melee_damage_upper = 72
@@ -185,3 +184,18 @@
 
 /mob/living/simple_animal/hostile/securitron/sentrybot/playable/death()
 	return ..()
+
+//Junkers
+/mob/living/simple_animal/hostile/securitron/sentrybot/suicide
+	name = "explosive sentry bot"
+	desc = "A pre-war military robot armed with a deadly gatling laser and covered in thick armor plating. Don't get too close to this one, it looks like it's rigged to blow!"
+	maxHealth = 200
+	health = 200
+	color = "#B85C00"
+	retreat_distance = null
+	minimum_distance = 1
+
+/mob/living/simple_animal/hostile/securitron/sentrybot/suicide/AttackingTarget()
+	if(ishuman(target))
+		addtimer(CALLBACK(src, .proc/do_death_beep), 1 SECONDS)
+		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)

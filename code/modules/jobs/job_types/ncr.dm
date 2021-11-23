@@ -61,7 +61,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13COLONEL
 	head_announce = list("Security")
 	supervisors = "The Republic Senate, High Command"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 
 	total_positions = 0
@@ -151,7 +151,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	spawn_positions = 0
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -225,9 +225,11 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the direct superior to everyone on  Camp Miller, as the CO. You plan patrols, training and missions, and work with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
+
+	description = "You are the direct superior to everyone on Camp Miller, as the acting CO. You plan patrols, training and missions, and work with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "High Command"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
@@ -282,6 +284,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Lieutenant and Above"
 	selection_color = "#fff5cc"
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
 	exp_requirements = 600
@@ -434,6 +437,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	supervisors = "NCRA Captain, High Command"
 	selection_color = "#ffeeaa"
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	outfit = /datum/outfit/job/ncr/f13vetranger
 	exp_requirements = 1500
 
@@ -628,7 +632,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	spawn_positions = 0
 	description = "You are the most elite of the enlisted, sergeant in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. General Oliver praises you and your other Heavy Troopers, prove to him you're no exception to the rule."
 	supervisors = "Lieutenant and Above"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
@@ -692,6 +696,10 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R82)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
+
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13combatengineer
@@ -975,6 +983,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	description = "You are the lead medical professional in Camp Miller. In the medbay, your word is god. Outside of it, your word is dirt and you have no authority. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
 	supervisors = "The Lieutenant"
 	selection_color = "#fff5cc"
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 	exp_requirements = 1500
@@ -1030,7 +1039,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	spawn_positions = 0
 	description = "You are the lead engineering professional in Camp Miller, you do not have any command authority beyond the logistical side. Your duties are to ensure your outpost is well defended, the armory is in order, and you always have supplies. Organize the rear echelon to offload the frontline officers and make things happen."
 	supervisors = "Captain and Above"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
@@ -1047,6 +1056,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
 /datum/outfit/job/ncr/f13logisticsofficer		// Rockwell, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
@@ -1099,6 +1109,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	ears = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/f13/tan
 	gloves = /obj/item/clothing/gloves/color/brown
+
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncrofficers = 1
 		)

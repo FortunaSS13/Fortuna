@@ -121,8 +121,7 @@
 	desc = "(III*) a steel breastplate, inspired by a pre-war design. It provides some protection against impacts, cuts, and medium-velocity bullets."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
-	body_parts_covered = CHEST|GROIN
-	armor = list("tier" = 3, "linebullet" = 30, "linemelee" = 30, "energy" = 30, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("tier" = 3, "linebullet" = 25, "linemelee" = 25, "energy" = 30, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = 0.05
 	strip_delay = 5
 
@@ -202,7 +201,8 @@
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
 	name = "raider combat armor"
-	desc = "(VI) An old set of reinforced combat armor with some parts supplanted with painspike armor."
+	desc = "(IV) An old set of reinforced combat armor with some parts supplanted with painspike armor. It seems less protective than a mint-condition set of combat armor."
+	armor = list("tier" = 4, "energy" = 35, "bomb" = 45, "bio" = 30, "rad" = 5, "fire" = 50, "acid" = 35)
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
