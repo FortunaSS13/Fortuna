@@ -2161,6 +2161,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"aYp" = (
+/obj/item/metaldetector,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "aYG" = (
 /obj/structure/decoration/clock{
 	pixel_y = 30
@@ -4808,7 +4812,14 @@
 "chW" = (
 /obj/structure/decoration/rag,
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/closed/wall/f13/wood,
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
 /area/f13/legion)
 "chZ" = (
 /obj/structure/chair/f13chair1,
@@ -13832,6 +13843,10 @@
 "gjP" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/village)
+"gjQ" = (
+/obj/item/flashlight/lantern,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "gke" = (
 /obj/machinery/smartfridge/bottlerack/alchemy_rack,
 /turf/open/indestructible/ground/inside/mountain,
@@ -30581,6 +30596,11 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/legion)
+"nSH" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/hardhat,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "nSK" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
@@ -32995,7 +33015,14 @@
 	icon_state = "skulls"
 	},
 /obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood,
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
 /area/f13/legion)
 "pek" = (
 /obj/structure/closet/cabinet,
@@ -33783,7 +33810,14 @@
 /area/f13/caves)
 "pyf" = (
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/closed/wall/f13/wood,
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
 /area/f13/legion)
 "pyk" = (
 /obj/structure/fluff/railing{
@@ -43151,6 +43185,7 @@
 /area/f13/bar)
 "tZT" = (
 /obj/machinery/workbench,
+/obj/item/stack/sheet/metal/twenty,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "tZW" = (
@@ -44923,6 +44958,20 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"uND" = (
+/obj/structure/decoration/rag,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
+/area/f13/legion)
 "uNK" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/f13/wood,
@@ -45238,6 +45287,16 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"uTk" = (
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
+/area/f13/legion)
 "uTn" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -50669,6 +50728,7 @@
 "xth" = (
 /obj/item/wirecutters/basic,
 /obj/item/screwdriver/crude,
+/obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xtl" = (
@@ -56924,9 +56984,9 @@ mvv
 mvv
 mvv
 rjE
-ggK
-ggK
-ggK
+gjQ
+nSH
+aYp
 gcK
 gbL
 gbL
@@ -104025,7 +104085,7 @@ ptf
 ptf
 ptf
 ptf
-hom
+uTk
 rwO
 rwO
 rwO
@@ -104287,7 +104347,7 @@ xih
 xih
 xXm
 xXm
-uNK
+qVh
 hom
 hom
 hom
@@ -104544,7 +104604,7 @@ xXm
 jgx
 xXm
 xXm
-uNK
+qVh
 jmv
 jhx
 jcB
@@ -104801,7 +104861,7 @@ xXm
 hom
 mIW
 xXm
-uNK
+qVh
 jmv
 xXm
 nrB
@@ -105315,7 +105375,7 @@ jcB
 jcB
 xXm
 xXm
-uNK
+qVh
 tOV
 xNm
 xXm
@@ -105567,12 +105627,12 @@ fyf
 fyf
 fyf
 imv
-hom
+uTk
 rwO
 rwO
 rwO
 rwO
-uNK
+qVh
 kXv
 xNm
 xXm
@@ -107623,12 +107683,12 @@ jJb
 fyf
 fyf
 imv
-hom
+uTk
 jqe
 lkp
 jqe
 jqe
-jIV
+uND
 mvv
 mvv
 mvv
@@ -108142,7 +108202,7 @@ lhW
 xXm
 xXm
 xXm
-uNK
+qVh
 mvv
 mvv
 mvv
@@ -108656,7 +108716,7 @@ xXm
 xXm
 mLc
 xXm
-uNK
+qVh
 mvv
 mvv
 mvv
@@ -109165,12 +109225,12 @@ fyf
 fyf
 fyf
 hwC
-hom
-hom
-hom
-hom
-hom
-jIV
+uTk
+uTk
+uTk
+uTk
+uTk
+uND
 mvv
 mvv
 mvv
