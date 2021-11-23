@@ -144,7 +144,7 @@ Head Paladin
 	suit =			/obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head =			/obj/item/clothing/head/helmet/f13/power_armor/t51b
 	belt =			/obj/item/storage/belt/military/assault
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/storage/belt/holster
 	backpack_contents = list(
@@ -300,7 +300,8 @@ Head Knight
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	accessory =		/obj/item/clothing/accessory/bos/knightcaptain
 	belt =			/obj/item/storage/belt/security/full
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
+	neck =			/obj/item/storage/belt/holster
+	mask =			/obj/item/clothing/mask/gas/sechailer
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	id =			/obj/item/card/id/dogtag
 	backpack_contents = list(
@@ -308,6 +309,8 @@ Head Knight
 		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_two=1
 		)
 
 /datum/outfit/loadout/capstand
@@ -389,7 +392,7 @@ Star Paladin
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	accessory =	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform =	/obj/item/clothing/under/f13/recon
-	mask =	/obj/item/clothing/mask/gas/sechailer/swat
+	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/storage/belt/holster
 
@@ -405,6 +408,8 @@ Star Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 3,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 	)
 
 /datum/outfit/loadout/spaladinc
@@ -413,6 +418,8 @@ Star Paladin
 		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 	)
 
 /*
@@ -475,8 +482,8 @@ Paladin
 	suit =	/obj/item/clothing/suit/armor/f13/power_armor/t45d
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d
 	uniform =	/obj/item/clothing/under/f13/recon
-	mask =	/obj/item/clothing/mask/gas/sechailer/swat
-	belt =	/obj/item/storage/belt/military
+	mask =	/obj/item/clothing/mask/gas/sechailer
+	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
@@ -682,6 +689,7 @@ Senior Knight
 	loadout_options = list(
 	/datum/outfit/loadout/sknighta, //AER9
 	/datum/outfit/loadout/sknightb, //Browning Auto-5
+	/datum/outfit/loadout/sknightc, //R93 PDW
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -707,8 +715,9 @@ Senior Knight
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	glasses =       /obj/item/clothing/glasses/night
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
-	belt = 			/obj/item/storage/belt/military
+	mask =			/obj/item/clothing/mask/gas/sechailer
+	belt = 			/obj/item/storage/belt/military/assault
+	neck =			/obj/item/storage/belt/holster
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	id = 			/obj/item/card/id/dogtag
 	gunsmith_one = TRUE
@@ -717,7 +726,9 @@ Senior Knight
 	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting=1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
+		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_two=1
 		)
 
 /datum/outfit/loadout/sknighta
@@ -735,6 +746,15 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/gun/ballistic/shotgun/police=1,
 		/obj/item/ammo_box/shotgun/buck=2,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
+		)
+
+/datum/outfit/loadout/sknightc
+	name = "Recon"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/r93=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		)
@@ -788,8 +808,9 @@ Knight
 	jobtype = /datum/job/bos/f13knight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
-	mask =			/obj/item/clothing/mask/gas/sechailer/swat
-	belt = 			/obj/item/storage/belt/military
+	mask =			/obj/item/clothing/mask/gas/sechailer
+	belt = 			/obj/item/storage/belt/military/assault
+	neck =			/obj/item/storage/belt/holster
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
 	id = 			/obj/item/card/id/dogtag
 	gunsmith_one = TRUE
@@ -799,6 +820,8 @@ Knight
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival=1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_two=1
 		)
 
 /datum/outfit/loadout/knighta
@@ -807,14 +830,18 @@ Knight
 		/obj/item/clothing/accessory/bos/juniorknight=1,
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
 
 /datum/outfit/loadout/knightb
 	name = "Junior Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight=1,
-		/obj/item/gun/ballistic/automatic/delisle/commando=1,
-		/obj/item/ammo_box/magazine/m45exp=2,
+		/obj/item/gun/ballistic/automatic/r93=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 		)
 
 /datum/outfit/loadout/knightc
@@ -823,14 +850,18 @@ Knight
 		/obj/item/clothing/accessory/bos/knight=1,
 		/obj/item/gun/energy/laser/aer9=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
 
 /datum/outfit/loadout/knightd
 	name = "Knight-Defender"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight=1,
-		/obj/item/gun/ballistic/automatic/delisle/commando=1,
-		/obj/item/ammo_box/magazine/m45exp=2,
+		/obj/item/gun/ballistic/automatic/r93=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=2,
 		)
 /*
 Initiate
@@ -926,7 +957,7 @@ Off-Duty
 	total_positions = 3
 	spawn_positions = 3
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
-	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."	
+	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"

@@ -137,7 +137,7 @@
 	set category = "Admin.Events"
 	set name = "Global Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_world_narrate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_world_narrate() without admin perms.")
 		return
@@ -155,7 +155,7 @@
 	set category = "Admin.Events"
 	set name = "Direct Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_direct_narrate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_direct_narrate() without admin perms.")
 		return
@@ -182,13 +182,13 @@
 	set category = "Admin.Events"
 	set name = "Local Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_local_narrate() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_local_narrate() without admin perms.")
 		return
 	if(!A)
 		return
-	var/range = input("Range:", "Narrate to mobs within how many tiles:", 7) as num|null
+	var/range = input("Range:", "Narrate to mobs within how many tiles:", 50) as num|null
 	if(!range)
 		return
 	var/msg = input("Message:", text("Enter the text you wish to appear to everyone within view:")) as text|null
@@ -204,7 +204,7 @@
 /client/proc/cmd_admin_godmode(mob/M in GLOB.mob_list)
 	set category = "Admin.Game"
 	set name = "Godmode"
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_godmode() without admin perms.")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_godmode() without admin perms.")
 		return
@@ -613,7 +613,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	set category = "Admin"
 	set name = "Delete"
 
-	if(!check_rights(R_SPAWN|R_DEBUG))
+	if(!check_rights(R_SPAWN)) //fortuna edit. event manager change
 		return
 
 	admin_delete(A)
