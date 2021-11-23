@@ -591,8 +591,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	name = "Follower's Resupply Radio"
 	icon_state = "med_idle"
 	prize_list = list(
-		new /datum/data/wasteland_equipment("Ointment",						/obj/item/stack/medical/ointment									30),
-		new /datum/data/wasteland_equipment("Bruise Pack",					/obj/item/stack/medical/bruise_pack									30),
+		new /datum/data/wasteland_equipment("Ointment",						/obj/item/stack/medical/ointment,									30),
+		new /datum/data/wasteland_equipment("Bruise Pack",					/obj/item/stack/medical/bruise_pack	,								30),
 		new /datum/data/wasteland_equipment("Soap",							/obj/item/soap/deluxe,												50),
 		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										50),
 		new /datum/data/wasteland_equipment("Advanced Mop",					/obj/item/mop/advanced,												100),
