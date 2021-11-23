@@ -586,6 +586,23 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Med-X",						/obj/item/reagent_containers/syringe/medx,							60),
 		new /datum/data/wasteland_equipment("Fixer",						/obj/item/storage/pill_bottle/chem_tin/fixer,						200)
 		)
+		
+/obj/machinery/mineral/wasteland_vendor/followerradio
+	name = "Follower's Resupply Radio"
+	icon_state = "med_idle"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("Ointment",						/obj/item/stack/medical/ointment									30),
+		new /datum/data/wasteland_equipment("Bruise Pack",					/obj/item/stack/medical/bruise_pack									30),
+		new /datum/data/wasteland_equipment("Soap",							/obj/item/soap/deluxe,												50),
+		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										50),
+		new /datum/data/wasteland_equipment("Advanced Mop",					/obj/item/mop/advanced,												100),
+		new /datum/data/wasteland_equipment("Fixer",						/obj/item/storage/pill_bottle/chem_tin/fixer,						200),
+		new /datum/data/wasteland_equipment("X-tra Large Beaker",			/obj/item/reagent_containers/glass/beaker/plastic,					500),
+		new /datum/data/wasteland_equipment("Medical HUD",					/obj/item/clothing/glasses/hud,										500),
+		new /datum/data/wasteland_equipment("Defibrillator",				/obj/item/defibrillator,											1000),
+		new /datum/data/wasteland_equipment("Integrated Toolset Implant",	/obj/item/organ/cyberimp/arm/toolset,								2000),
+		)
+
 
 /obj/machinery/mineral/wasteland_vendor/weapons
 	name = "Wasteland Vending Machine - Weapons"
