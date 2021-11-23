@@ -296,9 +296,9 @@ Great Khan
 
 /datum/outfit/loadout/brawler
 	name = "Brawler"
-	gloves =	/obj/item/melee/unarmed/brass/spiked
+	suit_store = /obj/item/twohanded/sledgehammer
+	gloves = /obj/item/melee/unarmed/brass/spiked
 	backpack_contents = list(
-		/obj/item/twohanded/sledgehammer, \
 		/obj/item/reagent_containers/pill/patch/healpoultice=2)
 
 /*
@@ -836,7 +836,7 @@ Raider
 	supervisors = "The Boss."
 	selection_color = "#ff4747"
 	exp_requirements = 600
-	exp_type = EXP_TYPE_OUTLAW
+	exp_type = EXP_TYPE_WASTELAND
 
 	outfit = /datum/outfit/job/wasteland/f13enforcer
 
