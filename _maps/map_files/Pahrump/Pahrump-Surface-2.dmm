@@ -10741,6 +10741,7 @@
 /obj/structure/rack,
 /obj/item/melee/onehanded/club/warclub,
 /obj/item/melee/onehanded/club/warclub,
+/obj/item/metaldetector,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "eSX" = (
@@ -43151,6 +43152,7 @@
 /area/f13/bar)
 "tZT" = (
 /obj/machinery/workbench,
+/obj/item/stack/sheet/metal/twenty,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "tZW" = (
