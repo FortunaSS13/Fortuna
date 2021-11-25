@@ -203,7 +203,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		// aer12, military ripper
+		/datum/outfit/loadout/palacent,		// aer9, military ripper
 		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, AMR, military ripper
 		/datum/outfit/loadout/centurion,	// 14mm pistol, Powerfist
 		)
@@ -241,7 +241,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
-	suit_store = /obj/item/gun/energy/laser/aer12
+	suit_store = /obj/item/gun/energy/laser/aer9
 	backpack_contents = list(
 		/obj/item/melee/powered/ripper/prewar = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
