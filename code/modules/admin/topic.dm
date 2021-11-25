@@ -2574,14 +2574,12 @@
 	else if(href_list["toggle_build"])
 		if(!check_rights(R_SPAWN))
 			return
-		var/mob/M = locate(href_list["toggle_build"])
-		return M?.client.togglebuildmodeself()
+		usr.client.togglebuildmodeself()
 
 	else if(href_list["toggle_invis"])
 		if(!check_rights(R_SPAWN))
 			return
-		var/mob/M = locate(href_list["toggle_invis"])
-		return M?.client.invisimin()
+		usr.client.invisimin()
 
 //fortuna addition end
 	else if(href_list["create_object"])
@@ -3062,7 +3060,7 @@
 			to_chat(usr, "You may only use this when the game is running.")
 
 	else if(href_list["create_outfit"])
-		if(!check_rights(R_ADMIN))
+		if(!check_rights(R_SPAWN))
 			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): create_outfit without admin perms.")
 			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): create_outfit without admin perms.")
 			return
