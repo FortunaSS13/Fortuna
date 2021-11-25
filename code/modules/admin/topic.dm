@@ -2570,7 +2570,20 @@
 			to_chat(usr, "This can only be used on instances on mindless mobs")
 			return
 		M.mind_initialize()
+//fortuna addition start
+	else if(href_list["toggle_build"])
+		if(!check_rights(R_SPAWN))
+			return
+		var/mob/M = locate(href_list["toggle_build"])
+		return M?.client.togglebuildmodeself()
 
+	else if(href_list["toggle_invis"])
+		if(!check_rights(R_SPAWN))
+			return
+		var/mob/M = locate(href_list["toggle_invis"])
+		return M?.client.invisimin()
+
+//fortuna addition end
 	else if(href_list["create_object"])
 		if(!check_rights(R_SPAWN))
 			return
