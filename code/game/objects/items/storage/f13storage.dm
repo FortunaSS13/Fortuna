@@ -458,3 +458,14 @@
 /obj/item/storage/box/medicine/bitterdrink5/PopulateContents()
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+
+/obj/item/storage/box/medicine/powderbox
+	name = "box of powder"
+	desc = "A box full of healing powder."
+	icon = 'icons/fallout/objects/storage.dmi'
+	icon_state = "box_simple"
+	illustration = "overlay_bitter"
+
+/obj/item/storage/box/medicine/powderbox/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
