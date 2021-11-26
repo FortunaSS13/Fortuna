@@ -95,7 +95,7 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 		M.AdjustUnconscious(-20, 0)
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0 && M.getToxLoss() == 0 && M.getOxyLoss() == 0)
 		metabolization_rate = 1000 * REAGENTS_METABOLISM //instant metabolise if it won't help you, prevents prehealing before combat
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
 		M.adjustBruteLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustFireLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
@@ -249,7 +249,7 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30
 	var/heal_factor = -1.5 //Subtractive multiplier if you do not have the perk.
-	var/heal_factor_perk = -2.5 //Multiplier if you have the right perk.
+	var/heal_factor_perk = -3.5 //Multiplier if you have the right perk.
 
 /datum/reagent/medicine/healing_powder/on_mob_life(mob/living/carbon/M)
 	var/is_tribal = FALSE
@@ -279,17 +279,8 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	..()
 	. = TRUE
 
-/datum/reagent/medicine/healing_powder/poultice
-	name = "healing poultice"
-	description = "Restores limb condition and heals rapidly."
-	color = "#C8A5DC"
-	overdose_threshold = 20
-	heal_factor = -2
-	heal_factor_perk = -4
-
 /datum/reagent/medicine/radx
 	name = "Rad-X"
-
 	description = "Reduces massive amounts of radiation and some toxin damage."
 	reagent_state = LIQUID
 	color = "#ff6100"
@@ -321,7 +312,6 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 
 /datum/reagent/medicine/medx
 	name = "Med-X"
-
 	description = "Med-X is a potent painkiller, allowing users to withstand high amounts of pain and continue functioning. Addictive. Prolonged presence in the body can cause seizures and organ damage."
 	reagent_state = LIQUID
 	color = "#6D6374"
@@ -431,31 +421,30 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 		M.Jitter(5)
 	..()
 
-/datum/reagent/medicine/legionmedx
+/datum/reagent/medicine/naturalpainkiller
 	name = "natural painkiller"
-
-	description = "Med-X is a potent painkiller, allowing users to withstand high amounts of pain and continue functioning."
+	description = "A herbal painkiller, allowing users to withstand high amounts of pain and continue functioning."
 	reagent_state = LIQUID
 	color = "#6D6374"
 	metabolization_rate = 0.7 * REAGENTS_METABOLISM
-	overdose_threshold = 14
-	addiction_threshold = 50
+	overdose_threshold = 11
+	addiction_threshold = 80
 
-/datum/reagent/medicine/legionmedx/on_mob_add(mob/M)
+/datum/reagent/medicine/naturalpainkiller/on_mob_add(mob/M)
 	..()
 	if(isliving(M))
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_HEALTHY
 		ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
 
-/datum/reagent/medicine/legionmedx/on_mob_delete(mob/M)
+/datum/reagent/medicine/naturalpainkiller/on_mob_delete(mob/M)
 	if(isliving(M))
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_NONE
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
 	..()
 
-/datum/reagent/medicine/legionmedx/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -463,20 +452,20 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 	..()
 	. = TRUE
 
-/datum/reagent/medicine/legionmedx/overdose_process(mob/living/M)
+/datum/reagent/medicine/naturalpainkiller/overdose_process(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Dizzy(2)
 		M.Jitter(2)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage1(mob/living/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage1(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Jitter(2)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage2(mob/living/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage2(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
@@ -485,7 +474,7 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 		M.Jitter(3)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage3(mob/living/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage3(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
@@ -494,7 +483,7 @@ datum/reagent/medicine/stimpak/super_stimpak/on_mob_life(mob/living/M)
 		M.Jitter(4)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage4(mob/living/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage4(mob/living/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(3*REAGENTS_EFFECT_MULTIPLIER)

@@ -1101,6 +1101,26 @@
 		. = 1
 	..()
 
+// Red powder, copy of the stimulant with nerfed speed bonus and buffout melee damage instead of taser immunity. Here for testing.
+/datum/reagent/medicine/stimulants/redpowder
+	name = "Red powder"
+	description = "Increases stun resistance and movement speed in addition to restoring minor damage and weakness. Overdose causes weakness and toxin damage. Allows for more energetic strikes."
+	color = "#78008C"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 60
+	pH = 8.7
+	value = REAGENT_VALUE_RARE
+
+/datum/reagent/medicine/stimulants/redpowder/on_mob_metabolize(mob/living/L)
+	..()
+	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
+	ADD_TRAIT(L, TRAIT_BUFFOUT_BUFF, type)
+
+/datum/reagent/medicine/stimulants/redpowder/on_mob_end_metabolize(mob/living/L)
+	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
+	REMOVE_TRAIT(L, TRAIT_BUFFOUT_BUFF, type)
+	..()
+
 /datum/reagent/medicine/insulin
 	name = "Insulin"
 	description = "Increases sugar depletion rates."

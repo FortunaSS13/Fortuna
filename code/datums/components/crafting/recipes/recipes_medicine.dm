@@ -39,11 +39,20 @@
 				/datum/reagent/medicine/silver_sulfadiazine = 10)
 	category = CAT_MEDICAL
 
+//Uses fungus instead of xander to provide variety and utilize resources thats in FO13. More important than perfect copy of F:NV recipe.
 /datum/crafting_recipe/healpowder
 	name = "Healing powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 3,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 3)
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 3)
+	time = 35
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/healpowder5
+	name = "Healing powder box (x5)"
+	result = /obj/item/reagent_containers/pill/patch/healingpowder
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 15,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 15)
 	time = 35
 	category = CAT_MEDICAL
 
@@ -55,33 +64,32 @@
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/bitterdrink5
-	name = "Bottle Bitterdrink (x5)"
+	name = "Bitterdrink box (x5)"
 	result = /obj/item/storage/box/medicine/bitterdrink5
 	reqs = list(/datum/reagent/medicine/bitter_drink = 150)
 	time = 60
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/healpoultice
-	name = "Healing poultice"
-	result = /obj/item/reagent_containers/pill/patch/healpoultice
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 2,
-				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
-				/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
-				/obj/item/reagent_containers/food/snacks/grown/pungafruit = 2)
+/datum/crafting_recipe/redpowder
+	name = "Red Powder"
+	result = /obj/item/reagent_containers/pill/patch/healingpowder/red
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy = 1,
+				/obj/item/reagent_containers/food/snacks/meat/slab/cazador_meat = 1,
+				/obj/item/reagent_containers/pill/patch/healingpowder = 1)
 	time = 45
+	always_availible = FALSE
 	category = CAT_MEDICAL
 
-/*/datum/crafting_recipe/berserkerpowder
-	name = "Berserker Powder"
-	result = /obj/item/reagent_containers/pill/patch/healingpowder/berserker
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 3,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 3,
-				/obj/item/reagent_containers/food/snacks/grown/feracactus = 3,
-				/obj/item/reagent_containers/food/snacks/grown/fungus = 3)
+/datum/crafting_recipe/whitepowder
+	name = "White Powder"
+	result = /obj/item/reagent_containers/pill/patch/healingpowder/white
+	reqs = list(/obj/item/stack/sheet/animalhide/gecko = 1,
+				/obj/item/reagent_containers/food/snacks/grown/datura = 1,
+				/obj/item/reagent_containers/pill/patch/healingpowder = 1)
 	time = 45
+	always_availible = FALSE
 	category = CAT_MEDICAL
-*/
+
 /datum/crafting_recipe/smell_salts
 	name = "Smelling salts"
 	result = /obj/item/smelling_salts/crafted
@@ -155,7 +163,7 @@
 					/obj/item/reagent_containers/hypospray/medipen/stimpak/custom)
 
 /datum/crafting_recipe/salvage_stimpak
-	name = "Salvage injector"
+	name = "Recycle syringe"
 	result = /obj/item/reagent_containers/syringe
 	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 1)
 	time = 20

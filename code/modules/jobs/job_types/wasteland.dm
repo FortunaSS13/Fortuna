@@ -299,7 +299,7 @@ Great Khan
 	suit_store = /obj/item/twohanded/sledgehammer
 	gloves = /obj/item/melee/unarmed/brass/spiked
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice=2)
+		/obj/item/reagent_containers/pill/patch/healingpowder=2)
 
 /*
 Raider

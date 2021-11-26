@@ -966,7 +966,6 @@
 	icon_state = "toolsalvage"
 	Loot = list(/obj/item/blueprint/research,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/reagent_containers/pill/patch/healpoultice,
 				/obj/item/weldingtool/advanced,
 				/obj/item/crowbar/hightech,
 				/obj/item/screwdriver/hightech,

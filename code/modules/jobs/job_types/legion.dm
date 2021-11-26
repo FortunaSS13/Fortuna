@@ -11,6 +11,8 @@ Melee		Officers only - Spatha
 			Rest - Lawnmower machete the most common
 Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns all good, very restrictive on long barrel automatics, generally limited ammo, always good melee option.
 			Avoid Police shotguns, 5,56 semis, Desert Eagle, Survival knives etc, be creative and work within the limitations to avoid powercreep and things getting bland and same.
+
+Red/White powder recipe added to noncom roles
 */
 
 /datum/job/CaesarsLegion
@@ -77,8 +79,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /obj/item/storage/box/legate/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
@@ -269,17 +271,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/magazine/m14mm = 3,
 		/obj/item/tank/internals/oxygen = 1
 		)
-
-/* /datum/outfit/loadout/berserkercenturion
-	name = 			"Praetorian Candidate"
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/centurion
-	head = 			/obj/item/clothing/head/helmet/f13/legion/centurion
-	backpack_contents = list(
-					/obj/item/melee/unarmed/sappers= 1,
-					/obj/item/book/granter/martial/berserker= 1,
-					/obj/item/reagent_containers/pill/patch/healingpowder/berserker=2)
-commented out pending rework*/
-
 
 // VETERAN DECANUS
 
@@ -925,7 +916,8 @@ commented out pending rework*/
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
-
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/redpowder)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/whitepowder)
 
 // FORGE MASTER
 
@@ -973,7 +965,8 @@ commented out pending rework*/
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/brush)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionlance)
-
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/redpowder)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/whitepowder)
 
 
 // AUXILIA - Civilians with special training. Can sow new uniforms for soldiers who lost theirs, and are loyal so they would never abuse this.
@@ -1027,7 +1020,8 @@ commented out pending rework*/
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
-
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/redpowder)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/whitepowder)
 
 /datum/outfit/loadout/auxassist
 	name = "Treasurer"
@@ -1089,6 +1083,9 @@ commented out pending rework*/
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/redpowder)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/whitepowder)
 
 /datum/outfit/job/CaesarsLegion/slave
 	name = "Legion Slave"
@@ -1109,12 +1106,10 @@ commented out pending rework*/
 	shoes =	/obj/item/clothing/shoes/roman
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
 		/obj/item/smelling_salts/crafted = 1,
 		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/food/condiment/flour = 2,
-		/obj/item/storage/box/bowls = 1,
 		/obj/item/reagent_containers/glass/beaker/large = 1,
 		/obj/item/soap/homemade = 1,
 		/obj/item/lighter = 1,
@@ -1189,7 +1184,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 3,
 		)

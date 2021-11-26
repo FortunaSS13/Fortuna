@@ -30,7 +30,7 @@
 	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/flashlight/flare/torch(src)
 

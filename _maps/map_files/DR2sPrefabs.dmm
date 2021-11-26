@@ -1832,12 +1832,11 @@
 	},
 /obj/item/reagent_containers/pill/patch/healingpowder,
 /obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/healingpowder,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/pill/patch/healpoultice,
-/obj/item/reagent_containers/pill/patch/healpoultice,
 /turf/open/floor/f13/wood,
 /area/space)
 "eO" = (
@@ -5336,7 +5335,7 @@
 /area/space)
 "py" = (
 /obj/structure/bed,
-/obj/item/stack/sheet/animalhide/geckohide,
+/obj/item/stack/sheet/animalhide/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/space)
 "pz" = (

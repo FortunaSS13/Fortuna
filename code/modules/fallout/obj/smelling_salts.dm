@@ -1,10 +1,10 @@
 //smelling salts
 /obj/item/smelling_salts
-	name = "large phial of smelling salts"
-	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in cord marking the colors of Caesars Legion,"
+	name = "phial of smelling salts"
+	desc = "A glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in cord marking the colors of Caesars Legion,"
 	w_class = WEIGHT_CLASS_NORMAL
-	icon = 'icons/obj/fallout/smelling_salts.dmi'
-	icon_state = "smelling_salts_legion"
+	icon = 'icons/fallout/objects/medicine/primitivedefib.dmi'
+	icon_state = "smelling_salts"
 	var/charges = 20
 	var/in_use = FALSE
 	var/time_to_use = 10 SECONDS // a defib is 5 seconds
@@ -15,15 +15,15 @@
 		. += "<span class='notice'>It currently has <b>[charges]</b> uses remaining.</span>"
 
 /obj/item/smelling_salts/wayfarer
-	icon_state = "smelling_salts_wayfarer"
+	icon_state = "smelling_salts_large"
 	desc = "A large glass phial of pungent smelling salts, used to revive those who have fainted.<br>It is bound in primitive cord with blue freyed tips of the Wayfarer tribe."
 
 /obj/item/smelling_salts/crafted
 	name = "small phial of smelling salts"
 	w_class = WEIGHT_CLASS_SMALL // unsure about this balance-wise, given that defibs are bulky
 	desc = "A stoppered glass phial of pungent smelling salts, used to revive those who have fainted."
-	icon_state = "smelling_salts_crafted"
-	charges = 10
+	icon_state = "smelling_salts"
+	charges = 15
 
 /obj/item/smelling_salts/attack(mob/target, mob/user)
 	if(in_use)
