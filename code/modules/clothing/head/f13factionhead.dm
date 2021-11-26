@@ -605,7 +605,7 @@
 /obj/item/clothing/head/f13/ranger
 	name = "NCR ranger campaign hat"
 	desc = "(V) An NCR ranger hat, standard issue amongst all but the most elite rangers."
-	icon_state = "drillhat"
+	icon_state = "drill_hat"
 	item_state = "drill_hat"
 	armor = list("tier" = 5, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
@@ -614,7 +614,7 @@
 	desc = "(V) A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
 	icon_state = "ncr_patrol_helmet"
 	item_state = "ncr_patrol_helmet"
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = null
 
 /obj/item/clothing/head/helmet/f13/combat/ncr
