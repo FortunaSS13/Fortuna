@@ -21693,6 +21693,12 @@
 /obj/structure/bed/old,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/village)
+"jwm" = (
+/obj/effect/landmark/start/f13/ncrveteranranger,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/wasteland)
 "jwn" = (
 /obj/item/stack/ore/slag,
 /turf/open/indestructible/ground/inside/mountain,
@@ -31329,6 +31335,12 @@
 "nZr" = (
 /mob/living/simple_animal/hostile/wolf,
 /turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"nZz" = (
+/obj/effect/landmark/start/f13/ncrcaptain,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "innershade"
+	},
 /area/f13/wasteland)
 "nZD" = (
 /obj/effect/decal/cleanable/dirt{
@@ -51432,8 +51444,8 @@ gcK
 mGC
 mGC
 unI
-qvQ
-xzM
+jwm
+nZz
 xzM
 koD
 mGC
