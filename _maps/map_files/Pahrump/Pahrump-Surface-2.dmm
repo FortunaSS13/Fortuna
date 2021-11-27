@@ -6343,6 +6343,10 @@
 	icon_state = "floordirty"
 	},
 /area/f13/followers)
+"cUc" = (
+/obj/effect/landmark/start/f13/centurion,
+/turf/open/floor/carpet/black,
+/area/f13/legion)
 "cUk" = (
 /obj/machinery/light/lampost{
 	dir = 1;
@@ -109678,7 +109682,7 @@ syr
 uXj
 hom
 mzY
-moX
+cUc
 moX
 xqQ
 oxA
