@@ -239,6 +239,37 @@
 	update_icon()
 	return
 
+/obj/item/gun/ballistic/automatic/smg/greasegun/worn
+	name = "beat up M3A1 Grease Gun"
+	desc = "What was once an inexpensive, but reliable submachine gun is now an inexpensive piece of shit. It's impressive this thing still fires at all."
+	can_attachments = FALSE
+	recoil = 0.3
+	extra_damage = -4
+	extra_penetration = -0.1
+
+/obj/item/gun/ballistic/automatic/smg/greasegun/worn/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select += 1
+			burst_size = 2
+			spread = 12.5
+			fire_delay =3.5
+			recoil = 0.3
+			weapon_weight = WEAPON_HEAVY
+			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
+			enable_burst()
+		if(1)
+			select = 0
+			burst_size = 1
+			fire_delay = 3.5
+			spread = 2
+			weapon_weight = WEAPON_HEAVY
+			recoil = 0.2
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
 
 //10mm SMG			Keywords: 10mm, Automatic, 12/24 rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
@@ -591,7 +622,7 @@
 	item_state = "servicerifle"
 	extra_damage = 4
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 4.5
+	fire_delay = 3.5
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -635,7 +666,7 @@
 	scope_state = "scope_short"
 	scope_x_offset = 4
 	scope_y_offset = 15
-	suppressor_x_offset = 26	
+	suppressor_x_offset = 26
 	suppressor_y_offset = 28
 
 
@@ -856,7 +887,7 @@
 	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
 	icon_state = "R82"
 	item_state = "R84"
-	fire_delay = 4.2
+	fire_delay = 2.5
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
@@ -910,6 +941,51 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 
+//R93 PDW		Keywords: 5.56mm, Semi-Automatic, 20 (10-50) round magazine, Pistol grip
+/obj/item/gun/ballistic/automatic/r93
+	name = "R93 PDW"
+	desc = "A lightweight assault rifle manufactured by the Brotherhood of Steel with a folding stock, based on weapons from the R-series platforms. It is generally issued to Brotherhood Knights for scouting missions."
+	icon_state = "r93"
+	item_state = "r93"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	fire_delay = 3.25
+	spread = 1
+	can_attachments = FALSE
+	semi_auto = TRUE
+	automatic_burst_overlay = FALSE
+	can_scope = FALSE
+	zoomable = TRUE
+	zoom_amt = 6
+	zoom_out_amt = 9
+	can_bayonet = FALSE
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+
+/obj/item/gun/ballistic/automatic/r93/burst_select()
+	var/mob/living/carbon/human/user = usr
+	switch(select)
+		if(0)
+			select += 1
+			burst_size = 2
+			spread = 8
+			fire_delay = 3.75
+			recoil = 0.1
+			weapon_weight = WEAPON_HEAVY
+			to_chat(user, "<span class='notice'>You switch to 2-rnd burst.</span>")
+			enable_burst()
+		if(1)
+			select = 0
+			burst_size = 1
+			fire_delay = 3.25
+			spread = 1
+			weapon_weight = WEAPON_MEDIUM
+			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
+	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+	update_icon()
+	return
+
+
 //Type 93 Chinese rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine
 /obj/item/gun/ballistic/automatic/type93
 	name = "type 93 assault rifle"
@@ -932,7 +1008,7 @@
 	name = "\improper Worn Type 56"
 	desc = "The original Type 56 was a copy of the Soviet AKM, and this is a copy of that copy produced in a garage. The bore is shot to hell, the threading is destroyed, but atleast it works."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_state = "chinese"
+	icon_state = "type93"
 	item_state = "handmade_rifle"
 	fire_delay = 5
 	spread = 13
@@ -1213,7 +1289,7 @@
 	name = "\improper M72 gauss rifle"
 	desc = "The M72 rifle is of German design. It uses an electromagnetic field to propel rounds at tremendous speed... and pierce almost any obstacle. Its range, accuracy and stopping power is almost unparalleled."
 	icon_state = "m72"
-	item_state = "shotgun"
+	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
 	burst_size = 1
@@ -1240,7 +1316,6 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	can_scope = FALSE
-
 
 // BETA STUFF // =Obsolete
 /obj/item/gun/ballistic/automatic/smgtesting
