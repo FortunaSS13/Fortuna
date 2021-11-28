@@ -1511,7 +1511,7 @@
 	req_one_access_txt = "124"
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = minedoor
+	id = "minedoor"
 	},
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
@@ -1561,7 +1561,7 @@
 	dir = 4
 	},
 /obj/machinery/button{
-	id = minedoor;
+	id = "minedoor";
 	pixel_x = 32
 	},
 /turf/open/floor/f13{
