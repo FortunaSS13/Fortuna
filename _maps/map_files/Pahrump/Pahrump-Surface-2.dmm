@@ -41482,6 +41482,7 @@
 /area/f13/village)
 "tka" = (
 /obj/item/pickaxe,
+/obj/item/metaldetector,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "tkc" = (
@@ -43153,6 +43154,10 @@
 "tZT" = (
 /obj/machinery/workbench,
 /obj/item/stack/sheet/metal/twenty,
+<<<<<<< Updated upstream
+=======
+/obj/item/stack/sheet/metal/twenty,
+>>>>>>> Stashed changes
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "tZW" = (
@@ -43662,6 +43667,7 @@
 /obj/item/flashlight/lantern,
 /obj/item/flashlight/lantern,
 /obj/item/flashlight/lantern,
+/obj/item/metaldetector,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/village)
 "ulz" = (
