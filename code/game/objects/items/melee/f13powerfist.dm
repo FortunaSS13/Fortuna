@@ -1,8 +1,8 @@
 /////////////////
 // POWER FISTS //
-/////////////////		-Uses power (gas currently) for knockback. Heavy AP, specialized for attacking heavy armor
+/////////////////		No longer uses gas. Penetrates all armor. Slower attack speed the higher the setting.
 
-// Power Fist			Keywords: Damage max 42, AP 0.5
+// Power Fist			
 /obj/item/melee/powerfist
 	name = "power fist"
 	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
@@ -12,25 +12,25 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 14
-	armour_penetration = 0.5
+	force = 25 //maximum of 50 damage.
 	throwforce = 10
 	throw_range = 3
+	throw_distance = 1
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 
 
-// Goliath				Keywords: Damage max 42, AP 0.55
+// Goliath				Massive throw distance and speed
 /obj/item/melee/powerfist/goliath
 	name = "Goliath"
-	desc = "Armored gauntlet with a piston-powered ram, this one is a experimental one captured and named by the Legion."
+	desc = "A massive, experimental metal gauntlet captured by the Legion. The piston-powered ram on top is designed to throw targets very, very far."
 	icon = 'icons/fallout/objects/melee/melee.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	armour_penetration = 0.55
+	throw_distance = 3
 
 
 // Ballistic Fist			Keywords: Damage max 42, AP 0.45, Shotgun
