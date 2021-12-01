@@ -342,6 +342,7 @@
 		return FALSE
 	if(ismob(loc))
 		var/mob/living/L = loc
+		emped = FALSE
 		armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
 		slowdown -= 1.2
 		to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
