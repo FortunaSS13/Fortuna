@@ -235,7 +235,6 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	fire_delay = 0
-	can_scope = TRUE
 	scope_state = "AEP7_scope"
 	scope_x_offset = 7
 	scope_y_offset = 22
@@ -368,7 +367,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 3
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
@@ -376,14 +375,14 @@
 
 
 //AER14 Laser rifle
-/obj/item/gun/energy/laser/aer14
+/obj/item/gun/energy/laser/aer14 //heavy ammo consumption, but better fire rate than the aer12
 	name = "\improper AER14 laser rifle"
 	desc = "A bleeding-edge, pre-war laser rifle. Extremely powerful, but eats MFCs like nothing else."
 	icon_state = "aer14"
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 2
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
