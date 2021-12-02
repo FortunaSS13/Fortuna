@@ -248,7 +248,7 @@
 	icon_gib = "bs_knight"
 	speak_chance = 0
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	faction = list(FACTION_BROTHERHOOD)
+	faction = list("BOS")
 	turns_per_move = 5
 	response_help_simple = "pokes"
 	response_disarm_simple = "shoves"
@@ -267,7 +267,6 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/bs)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("bs", "city", "vault")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
@@ -357,7 +356,6 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/ncr)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("ncr", "city", "followers", "vault")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
@@ -428,7 +426,7 @@
 	icon_living = "legion_prime"
 	icon_dead = "legion_prime"
 	icon_gib = "legion_prime"
-	faction = list("legion")
+	faction = list("Legion")
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	speak_chance = 0
 	turns_per_move = 5
@@ -449,7 +447,6 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/legion)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("hostile")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
