@@ -122,7 +122,7 @@
 //	step_sounds = list("human" = "dirtfootsteps")
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/feracactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
-	slowdown = 1
+	slowdown = 0.15
 	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
@@ -149,7 +149,6 @@
 /turf/open/indestructible/ground/outside/desert/sonora
 	icon = 'icons/fallout/turfs/wasteland.dmi'
 	icon_state = "desertsmooth"
-	slowdown = 0.5
 	list/loots = list(
 						/obj/item/stack/crafting/metalparts/five = 30,
 						/obj/item/stack/sheet/mineral/limestone/twenty = 10,
@@ -160,15 +159,12 @@
 
 /turf/open/indestructible/ground/outside/desert/sonora/coarse
 	icon_state = "desertcoarse"
-	slowdown = 0.6
 
 /turf/open/indestructible/ground/outside/desert/sonora/coarse2
 	icon_state = "desertcoarse2"
-	slowdown = 0.6
 
 /turf/open/indestructible/ground/outside/desert/sonora/rough
 	icon_state = "desertrough"
-	slowdown = 1
 
 /turf/open/indestructible/ground/outside/desert/Initialize()
 	. = ..()
@@ -256,7 +252,7 @@
 //	step_sounds = list("human" = "dirtfootsteps")
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
-	slowdown = 0.3
+	slowdown = 0.05
 	flags_1 = CAN_HAVE_NATURE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
@@ -424,7 +420,7 @@
 //	step_sounds = list("human" = "dirtfootsteps")
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
-	slowdown = 0.2
+	slowdown = 0.05
 	flags_1 = CAN_HAVE_NATURE
 
 /turf/open/indestructible/ground/inside/subway
