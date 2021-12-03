@@ -27,7 +27,7 @@
 	overheat = max(0, overheat - heat_diffusion)
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
-/obj/item/minigunpackbal/attack_hand(var/mob/living/carbon/user)
+/obj/item/minigunpackbal/attack_hand(mob/living/carbon/user)
 	if(src.loc == user)
 		if(!armed)
 			if(user.get_item_by_slot(SLOT_BACK) == src)
@@ -77,7 +77,7 @@
 	else
 		icon_state = "holstered"
 
-/obj/item/minigunpackbal/proc/attach_gun(var/mob/user)
+/obj/item/minigunpackbal/proc/attach_gun(mob/user)
 	if(!gun)
 		gun = new(src)
 	gun.forceMove(src)
