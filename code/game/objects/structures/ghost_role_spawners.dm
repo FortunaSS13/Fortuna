@@ -831,7 +831,7 @@
 /obj/effect/mob_spawn/human/fallout13/raider
 	name = "Raider Spawn"
 	desc = "An entry point for raiders to join a battle."
-	faction = "Raider"
+	faction = "raider"
 	mob_name = "Raider"
 	job_description = "Raider"
 	short_desc = "You are a vicious, bloodthirsty raider hailing from Yuma. Take what you deserve!"
