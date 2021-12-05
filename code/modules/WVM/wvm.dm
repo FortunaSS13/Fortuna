@@ -587,12 +587,10 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Fixer",						/obj/item/storage/pill_bottle/chem_tin/fixer,						200)
 		)
 		
-/obj/machinery/mineral/wasteland_vendor/followerradio
-	name = "Follower's Resupply Radio"
+/obj/machinery/mineral/wasteland_vendor/followerterminal
+	name = "Follower's Resupply Terminal"
 	icon_state = "med_idle"
 	prize_list = list(
-		new /datum/data/wasteland_equipment("Ointment",						/obj/item/stack/medical/ointment,									30),
-		new /datum/data/wasteland_equipment("Bruise Pack",					/obj/item/stack/medical/bruise_pack	,								30),
 		new /datum/data/wasteland_equipment("Soap",							/obj/item/soap/deluxe,												50),
 		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										50),
 		new /datum/data/wasteland_equipment("Advanced Mop",					/obj/item/mop/advanced,												100),
@@ -601,6 +599,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Medical HUD",					/obj/item/clothing/glasses/hud,										500),
 		new /datum/data/wasteland_equipment("Defibrillator",				/obj/item/defibrillator,											1000),
 		new /datum/data/wasteland_equipment("Integrated Toolset Implant",	/obj/item/organ/cyberimp/arm/toolset,								2000),
+		new /datum/data/wasteland_equipment("Cat Bedsheet",					/obj/item/bedsheet/runtime,											5000),
 		)
 
 
