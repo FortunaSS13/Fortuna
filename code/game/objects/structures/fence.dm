@@ -292,3 +292,4 @@
 	desc = "A pole, commonly used in traditional fertility rituals. Or by degenerates."
 	cuttable = FALSE
 	density = FALSE
+
