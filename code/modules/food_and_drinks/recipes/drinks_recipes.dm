@@ -1026,7 +1026,7 @@
 	name = "Nuka Float"
 	id = /datum/reagent/consumable/nukafloat
 	results = list(/datum/reagent/consumable/nukafloat = 15)
-	required_reagents = list(/datum/reagent/consumable/nuka_cola = 5, /datum/reagent/consumable/ice = 5, /datum/reagent/consumable/cream = 5)
+	required_reagents = list(/datum/reagent/consumable/nuka_cola = 5, /datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/cream = 5)
 
 /datum/chemical_reaction/sunsetfloat
 	name = "Sunset Float"
@@ -1266,7 +1266,7 @@
 	name = "Ol' Flakey"
 	id = "olflakey"
 	results = list(/datum/reagent/consumable/ethanol/olflakey = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/cream = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/sugar = 1)
 
 /datum/chemical_reaction/oldpossum
 	name = "Old Possum"
