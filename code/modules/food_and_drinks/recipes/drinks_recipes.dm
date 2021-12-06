@@ -1266,7 +1266,7 @@
 	name = "Ol' Flakey"
 	id = "olflakey"
 	results = list(/datum/reagent/consumable/ethanol/olflakey = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/sugar = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/acetone = 1)
 
 /datum/chemical_reaction/oldpossum
 	name = "Old Possum"
