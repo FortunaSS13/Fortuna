@@ -150,6 +150,7 @@
 /mob/living/simple_animal/hostile/Hear(message, atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, message_mode, atom/movable/source)
 	. = ..()
 	if (raw_message == attack_phrase)
+		alpha = 255
 		peaceful = FALSE
 	if (raw_message == peace_phrase)
 		peaceful = TRUE
