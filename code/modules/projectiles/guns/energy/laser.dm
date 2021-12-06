@@ -243,7 +243,7 @@
 
 /obj/item/gun/energy/laser/pistol/complianceregulator
 	name = "AEP5-CR"
-	desc = "A laser pistol that has been modified for less-than-lethal work"
+	desc = "A laser pistol that has been modified for less-than-lethal work."
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler)
 	w_class = WEIGHT_CLASS_SMALL
 
