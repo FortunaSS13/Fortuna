@@ -1,8 +1,8 @@
 /obj/item/minigunpackbal
 	name = "Minigun ammo belt"
-	desc = ""
+	desc = "The massive ammo belt for the minigun."
 	icon = 'icons/obj/guns/minigun.dmi'
-	icon_state = "holstered"
+	icon_state = "balholstered"
 	item_state = "backpack"
 	lefthand_file = 'icons/mob/inhands/equipment/backpack_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
@@ -73,9 +73,9 @@
 
 /obj/item/minigunpackbal/update_icon()
 	if(armed)
-		icon_state = "notholstered"
+		icon_state = "balnotholstered"
 	else
-		icon_state = "holstered"
+		icon_state = "balholstered"
 
 /obj/item/minigunpackbal/proc/attach_gun(mob/user)
 	if(!gun)
