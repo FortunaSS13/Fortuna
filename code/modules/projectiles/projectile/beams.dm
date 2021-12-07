@@ -322,16 +322,6 @@
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
 
-/obj/item/projectile/beam/laser/recharger/hitscan //hitscan recharger pistol
-	name = "recharger beam"
-	damage = 33
-	hitscan = TRUE
-	armour_penetration = 0.05
-	tracer_type = /obj/effect/projectile/tracer/laser
-	muzzle_type = /obj/effect/projectile/muzzle/laser
-	impact_type = /obj/effect/projectile/impact/laser
-	light_color = LIGHT_COLOR_BLUE
-
 /obj/item/projectile/beam/laser/ultra_pistol //unused
 	name = "laser beam"
 	damage = 40
