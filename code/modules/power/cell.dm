@@ -375,7 +375,7 @@
 	desc = "A high powered capacitor that can provide huge amounts of energy in an instant."
 	maxcharge = 50000
 	chargerate = 5000	//Extremely energy intensive
-
+\
 /obj/item/stock_parts/cell/beam_rifle/corrupt()
 	return
 
@@ -458,6 +458,20 @@
 	icon_state = "ultracite"
 	maxcharge = 2000
 
+/obj/item/stock_parts/cell/ammo/ultracite
+	name = "ultracite cell"
+	desc = "An advanced ultracite cell, used as ammunition for special energy weapons."
+	icon = 'icons/fallout/objects/powercells.dmi'
+	icon_state = "ultracite"
+	maxcharge = 2000
+
+/obj/item/stock_parts/cell/ammo/breeder
+	name = "microfusion breeder"
+	desc = "A miniature microfusion reactor connected to capacitor banks. This is not a removable part, you messed up."
+	icon = 'icons/fallout/objects/powercells.dmi'
+	icon_state = "ec-full"
+	maxcharge = 1000
+	
 /obj/item/stock_parts/cell/ammo/ec
 	name = "energy cell"
 	desc = "An energy cell, typically used as ammunition for small-arms energy weapons."
