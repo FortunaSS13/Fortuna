@@ -2372,7 +2372,7 @@
 	icon_state = "storewindowtop"
 	},
 /obj/structure/barricade/bars,
-/turf/open/space/basic,
+/turf/open/floor/carpet,
 /area/f13/ncr)
 "bbW" = (
 /obj/structure/simple_door/room,
@@ -17465,7 +17465,7 @@
 	icon_state = "storewindowbottom"
 	},
 /obj/structure/barricade/bars,
-/turf/open/space/basic,
+/turf/open/floor/carpet,
 /area/f13/ncr)
 "hIQ" = (
 /obj/structure/rack,
@@ -50045,11 +50045,11 @@
 /area/f13/village)
 "xGv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/curtain{
 	color = "#5c131b"
 	},
 /obj/structure/barricade/bars,
+/obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "xGD" = (
@@ -59504,12 +59504,12 @@ gcK
 gcK
 gcK
 xEc
-tNa
-tUk
-tNa
-tUk
-tNa
-tUk
+bbV
+hIB
+bbV
+hIB
+bbV
+hIB
 xEc
 xEc
 raV
