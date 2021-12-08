@@ -401,6 +401,7 @@
 	glass_name = "Nuka Quantum"
 	glass_desc = "An extremely blue and glowing combination of Nuka-Cola and (REDACTED)"
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
+	var/list/mobs_affected
 
 /datum/reagent/consumable/ethanol/nukaquantum/on_mob_life(mob/living/carbon/M)
 	M.drowsyness = 0
@@ -433,6 +434,28 @@
 		var/mob/living/carbon/C = M
 		C.cure_trauma_type(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	..()
+
+/datum/reagent/consumable/ethanol/nukaquantum/on_mob_add(mob/living/carbon/M)
+	add_reagent_light(M)
+
+/datum/reagent/consumable/ethanol/nukaquantum/on_mob_end_metabolize(mob/living/M)
+	remove_reagent_light(M)
+
+/datum/reagent/consumable/ethanol/nukaquantum/proc/on_living_holder_deletion(mob/living/source)
+	SIGNAL_HANDLER
+	remove_reagent_light(source)
+
+/datum/reagent/consumable/ethanol/nukaquantum/proc/add_reagent_light(mob/living/living_holder)
+	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj = living_holder.mob_light(_range = 2, _power = 10, _color = LIGHT_COLOR_LIGHT_CYAN)
+	LAZYSET(mobs_affected, living_holder, mob_light_obj)
+	RegisterSignal(living_holder, COMSIG_PARENT_QDELETING, .proc/on_living_holder_deletion)
+
+/datum/reagent/consumable/ethanol/nukaquantum/proc/remove_reagent_light(mob/living/living_holder)
+	UnregisterSignal(living_holder, COMSIG_PARENT_QDELETING)
+	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj = LAZYACCESS(mobs_affected, living_holder)
+	LAZYREMOVE(mobs_affected, living_holder)
+	if(mob_light_obj)
+		qdel(mob_light_obj)
 
 /datum/reagent/consumable/ethanol/nukaxtreme //this is hell
 	name = "Nuka X-Treme"
